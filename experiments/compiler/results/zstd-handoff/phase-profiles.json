@@ -1,0 +1,1243 @@
+{
+  "run_id": "20261029T205610.494160Z",
+  "timed": false,
+  "host_sha256": "6393e9c88c563154932f8e998a66ae445760f113a4a6067a77b14b2d23eb41c4",
+  "rows": [
+    {
+      "config": "release",
+      "command": [
+        "/root/source/gaia/experiments/compiler_invocation/_work/handoff-profile/build/host",
+        "physical",
+        "/usr/lib/llvm22/bin/clang",
+        "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib",
+        "-",
+        "-",
+        "/root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/release-profile",
+        "/root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/release.gcr",
+        "8",
+        "internal",
+        "/usr/lib/llvm22/bin/ld.lld",
+        "/root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/release-link.gcr",
+        "direct"
+      ],
+      "result": {
+        "correct": true,
+        "workers": 8,
+        "compiled": 30,
+        "errors": 0,
+        "warnings": 0,
+        "job_count": 30,
+        "peak_active": 8,
+        "link_calls": 1,
+        "link_result": 0,
+        "can_run_again": true,
+        "retry_result": 0,
+        "setup_ns": 782573,
+        "compile_wall_ns": 5071896156,
+        "link_ns": 6297512,
+        "workload_ns": 5079095608,
+        "peak_rss_bytes": 252416000,
+        "jobs": [
+          [
+            1753565,
+            15987442
+          ],
+          [
+            1819831,
+            186012981
+          ],
+          [
+            2101785,
+            64940013
+          ],
+          [
+            2157588,
+            310167285
+          ],
+          [
+            2408583,
+            139212065
+          ],
+          [
+            2623934,
+            23949931
+          ],
+          [
+            2942879,
+            186012182
+          ],
+          [
+            3004355,
+            85383497
+          ],
+          [
+            15994866,
+            279727192
+          ],
+          [
+            23952717,
+            174337981
+          ],
+          [
+            64943379,
+            979494281
+          ],
+          [
+            85389468,
+            2187883624
+          ],
+          [
+            139215581,
+            265538418
+          ],
+          [
+            174341107,
+            425962144
+          ],
+          [
+            186016951,
+            487192408
+          ],
+          [
+            186016978,
+            2020063706
+          ],
+          [
+            265541925,
+            2007880090
+          ],
+          [
+            279731540,
+            5072119124
+          ],
+          [
+            310170521,
+            666738807
+          ],
+          [
+            425966122,
+            1886495901
+          ],
+          [
+            487195805,
+            615036634
+          ],
+          [
+            615040121,
+            1170042214
+          ],
+          [
+            666742514,
+            2110984332
+          ],
+          [
+            979498228,
+            1119686673
+          ],
+          [
+            1119690159,
+            1724206034
+          ],
+          [
+            1170046161,
+            2888520731
+          ],
+          [
+            1724210081,
+            2106994607
+          ],
+          [
+            1886500029,
+            2971467502
+          ],
+          [
+            2007886182,
+            2251030582
+          ],
+          [
+            2020068936,
+            2511982217
+          ]
+        ],
+        "buffer_hits": 30,
+        "buffer_bytes": 916712,
+        "buffer_misses": 0,
+        "object_sizes": [
+          760,
+          6608,
+          8024,
+          9304,
+          6264,
+          784,
+          7288,
+          1776,
+          7280,
+          6136,
+          28872,
+          116760,
+          2888,
+          9648,
+          8472,
+          46640,
+          43344,
+          223264,
+          11216,
+          62808,
+          4176,
+          24800,
+          55984,
+          3808,
+          34904,
+          70664,
+          27528,
+          44664,
+          16320,
+          25728
+        ],
+        "export_ns": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "object_sha256": [
+          "a9998f0f4fea077f9a22193d3a41f252e4fd87b3f98a41e86aadc3305b8862e3",
+          "45b8d74e295962a38b5d9ae223488f24240a5ead718296ec9046013e06bcf76f",
+          "bdec1efe91ac56a9ab81acdc5b5d8767a7160913e39121b953514135f5505292",
+          "57d03f6a6225710913f2495c2bf137fc2ee22bf26d594ea7a96a814c261623e8",
+          "0657b745b9a4ff77576ec735a6df58ae876cf27a0f33e66e34b4f0c3d353e5da",
+          "d0e5791b4e19f8e4f4c1942c328e1f9e56e16c18b9133384792f35e1b4a98bd6",
+          "63306846a7f3b657e69eff542569a965810eca9fe9bdea935db44cdbd01ccf52",
+          "6907393237e41eafdcf54412e7625929fcbb281fa43200a00b50248adce570b7",
+          "e4e098b2fe639dfcc467c1875dff87c1c2e8b2e7924f651d821d1660b5babd26",
+          "d4ce2f163d867efb5e7c7dad4ad1c5439d82ab4dc4c44977e3faf5fe50aa3abd",
+          "3c483375a9fc328572a078809ba153099985105334ecc8e69b5bab1843c18e23",
+          "a4fbd50e15fac16486008b99adc24910626c7e3894236e97b80f601883cd0da4",
+          "dab1a4e283772d515bf44418ffa193ff8a01301b0244d4e0a7476d3454993bd7",
+          "fb90c944fc243c1a787dc5317d54e889bc52f8e3f21a27d29e133a381a821b43",
+          "59fdd5421e3529ff28d9778084daf86a82514dbba366fc1033665cccb2513ce4",
+          "e13715ff2b1e86d757c54e92474d5d822f9d01bad2361c2d0c8ef49c44d8191c",
+          "ae8e982205c19cc13674b9bd3d9fd32eedf4fe95b63bf0e6b0aeb0719a85e040",
+          "ceaffd3aee3f9ffc140ffd9e69331afbeeff59aafc3e238d69602bdba097a1c3",
+          "82e8d57aedbf91a4610529b5828b019cd0d1bb73123eac66c86f145c1dd319d6",
+          "361c40e87766e43cb583720fee32009a4eb450e53af1bf750d5795fa7c6902b6",
+          "d2dbf35c08bec581a9c686d4254ad7fed5b2f6e1cc3850034d36eee31a8cd421",
+          "18cb4b023930cd2023a977872f42a1b1af1de89769d616614864fe1f178cf081",
+          "c47acf53d36d33f026879466e15920cbe72265dafd0b132c92421ff2e1740c3d",
+          "1f1a069d41e1490760816401e20d6f6405e6c925859ef0dbbef36a1c9f314cfb",
+          "52a500afc6240d3eab88ad47c267619d93c3706f0cbbacb48824cf4bc2c17268",
+          "47c4d71909291ab3090977521c6360bffedf637f83d3614c81814a7944c4e8fc",
+          "b594848f00fc77aa2d9aed0bdee133173f91a24a55627b30ecfea78450e3b889",
+          "29f95761368098319091f700890c48c9dd74925b1f22e5ad39a31eaf7c9061e0",
+          "40e97ce5631cbb14767f13125570312b9ee39f6eb04745fd55a5bb6173b97f8b",
+          "fc55aee9e7ac2b09359fb7a1edecf0eb737affb374d5f2085ab9533516b3a7e0"
+        ]
+      },
+      "artifacts_sha256": {
+        "debug.o": "a9998f0f4fea077f9a22193d3a41f252e4fd87b3f98a41e86aadc3305b8862e3",
+        "entropy_common.o": "45b8d74e295962a38b5d9ae223488f24240a5ead718296ec9046013e06bcf76f",
+        "error_private.o": "bdec1efe91ac56a9ab81acdc5b5d8767a7160913e39121b953514135f5505292",
+        "fse_decompress.o": "57d03f6a6225710913f2495c2bf137fc2ee22bf26d594ea7a96a814c261623e8",
+        "pool.o": "0657b745b9a4ff77576ec735a6df58ae876cf27a0f33e66e34b4f0c3d353e5da",
+        "threading.o": "d0e5791b4e19f8e4f4c1942c328e1f9e56e16c18b9133384792f35e1b4a98bd6",
+        "xxhash.o": "63306846a7f3b657e69eff542569a965810eca9fe9bdea935db44cdbd01ccf52",
+        "zstd_common.o": "6907393237e41eafdcf54412e7625929fcbb281fa43200a00b50248adce570b7",
+        "fse_compress.o": "e4e098b2fe639dfcc467c1875dff87c1c2e8b2e7924f651d821d1660b5babd26",
+        "hist.o": "d4ce2f163d867efb5e7c7dad4ad1c5439d82ab4dc4c44977e3faf5fe50aa3abd",
+        "huf_compress.o": "3c483375a9fc328572a078809ba153099985105334ecc8e69b5bab1843c18e23",
+        "zstd_compress.o": "a4fbd50e15fac16486008b99adc24910626c7e3894236e97b80f601883cd0da4",
+        "zstd_compress_literals.o": "dab1a4e283772d515bf44418ffa193ff8a01301b0244d4e0a7476d3454993bd7",
+        "zstd_compress_sequences.o": "fb90c944fc243c1a787dc5317d54e889bc52f8e3f21a27d29e133a381a821b43",
+        "zstd_compress_superblock.o": "59fdd5421e3529ff28d9778084daf86a82514dbba366fc1033665cccb2513ce4",
+        "zstd_double_fast.o": "e13715ff2b1e86d757c54e92474d5d822f9d01bad2361c2d0c8ef49c44d8191c",
+        "zstd_fast.o": "ae8e982205c19cc13674b9bd3d9fd32eedf4fe95b63bf0e6b0aeb0719a85e040",
+        "zstd_lazy.o": "ceaffd3aee3f9ffc140ffd9e69331afbeeff59aafc3e238d69602bdba097a1c3",
+        "zstd_ldm.o": "82e8d57aedbf91a4610529b5828b019cd0d1bb73123eac66c86f145c1dd319d6",
+        "zstd_opt.o": "361c40e87766e43cb583720fee32009a4eb450e53af1bf750d5795fa7c6902b6",
+        "zstd_preSplit.o": "d2dbf35c08bec581a9c686d4254ad7fed5b2f6e1cc3850034d36eee31a8cd421",
+        "zstdmt_compress.o": "18cb4b023930cd2023a977872f42a1b1af1de89769d616614864fe1f178cf081",
+        "huf_decompress.o": "c47acf53d36d33f026879466e15920cbe72265dafd0b132c92421ff2e1740c3d",
+        "zstd_ddict.o": "1f1a069d41e1490760816401e20d6f6405e6c925859ef0dbbef36a1c9f314cfb",
+        "zstd_decompress.o": "52a500afc6240d3eab88ad47c267619d93c3706f0cbbacb48824cf4bc2c17268",
+        "zstd_decompress_block.o": "47c4d71909291ab3090977521c6360bffedf637f83d3614c81814a7944c4e8fc",
+        "cover.o": "b594848f00fc77aa2d9aed0bdee133173f91a24a55627b30ecfea78450e3b889",
+        "divsufsort.o": "29f95761368098319091f700890c48c9dd74925b1f22e5ad39a31eaf7c9061e0",
+        "fastcover.o": "40e97ce5631cbb14767f13125570312b9ee39f6eb04745fd55a5bb6173b97f8b",
+        "zdict.o": "fc55aee9e7ac2b09359fb7a1edecf0eb737affb374d5f2085ab9533516b3a7e0",
+        "libzstd.so": "f9ad7cfcde50a3c147c24c07c0b4c36708f075ff6c7d0baaef4a84be4c7288fb"
+      },
+      "event_totals_us": {
+        "Load input files": 161,
+        "Try create output file": 369,
+        "Create output files": 381,
+        "Parse input files": 248,
+        "Merge/finalize input sections": 200,
+        "Scan relocations": 349,
+        "Write sections": 2245,
+        "Commit buffer to disk": 134,
+        "Write output file": 2034,
+        "Link": 3635,
+        "ExecuteLinker": 5684,
+        "ParseDeclarationOrFunctionDefinition": 1282979,
+        "ParseFunctionDefinition": 971976,
+        "CodeGen Function": 277993,
+        "Frontend": 2763053,
+        "TargetIRAnalysis": 42837,
+        "SimplifyCFGPass": 412797,
+        "SROAPass": 127139,
+        "PassManager<Function>": 10308353,
+        "ModuleToFunctionPassAdaptor": 3771446,
+        "PostDominatorTreeAnalysis": 4803,
+        "ADCEPass": 46767,
+        "CGSCCToFunctionPassAdaptor": 6550244,
+        "PostOrderFunctionAttrsPass": 63613,
+        "PassManager<LazyCallGraph::SCC, AnalysisManager<LazyCallGraph::SCC, LazyCallGraph&>, LazyCallGraph&, CGSCCUpdateResult&>": 7294714,
+        "DevirtSCCRepeatedPass": 7324199,
+        "ModuleToPostOrderCGSCCPassAdaptor": 7367388,
+        "ModuleInlinerWrapperPass": 7393518,
+        "DeadArgumentEliminationPass": 13143,
+        "Optimizer": 11667290,
+        "RunPass": 6288177,
+        "OptFunction": 7345057,
+        "OptModule": 7371578,
+        "CodeGenPasses": 7372927,
+        "Backend": 19098080,
+        "GaiaJob": 22082046,
+        "BuildCFG": 33818,
+        "MemProfRemoveInfo": 19030,
+        "InferFunctionAttrsPass": 1736,
+        "EarlyCSEPass": 202265,
+        "IPSCCPPass": 122444,
+        "CalledValuePropagationPass": 45884,
+        "BranchProbabilityAnalysis": 54750,
+        "BlockFrequencyAnalysis": 84415,
+        "GlobalOptPass": 99809,
+        "InstCombinePass": 2252778,
+        "AlwaysInlinerPass": 117916,
+        "CallGraphAnalysis": 27289,
+        "GlobalsAA": 20268,
+        "RequireAnalysisPass<GlobalsAA, Module>": 20321,
+        "InlinerPass": 521911,
+        "JumpThreadingPass": 296549,
+        "CorrelatedValuePropagationPass": 366398,
+        "GVNPass": 958556,
+        "ConstraintEliminationPass": 87694,
+        "PassManager<Loop, AnalysisManager<Loop, LoopStandardAnalysisResults&>, LoopStandardAnalysisResults&, LPMUpdater&>": 1796757,
+        "FunctionToLoopPassAdaptor": 2340795,
+        "LoopIdiomRecognizePass": 289479,
+        "IndVarSimplifyPass": 546980,
+        "SCCPPass": 140884,
+        "DSEPass": 163578,
+        "LoopRotatePass": 123480,
+        "ReassociatePass": 40399,
+        "LICMPass": 188530,
+        "LoopFullUnrollPass": 80263,
+        "BDCEPass": 48141,
+        "MemorySSAAnalysis": 131646,
+        "MemCpyOptPass": 50252,
+        "LoopSimplifyPass": 45321,
+        "LCSSAPass": 23039,
+        "VectorCombinePass": 17340,
+        "AggressiveInstCombinePass": 9695,
+        "SimpleLoopUnswitchPass": 28890,
+        "ReversePostOrderFunctionAttrsPass": 17054,
+        "RecomputeGlobalsAAPass": 13536,
+        "LoopDeletionPass": 163547,
+        "LoopVectorizePass": 304728,
+        "LoopLoadEliminationPass": 185823,
+        "SLPVectorizerPass": 616826,
+        "LoopUnrollPass": 614047,
+        "InstSimplifyPass": 44066,
+        "Float2IntPass": 7376,
+        "InferAlignmentPass": 24129,
+        "AllocTokenPass": 26619,
+        "RunLoopPass": 964794,
+        "EvaluateAsBooleanCondition": 977,
+        "AssignmentTrackingPass": 10452,
+        "LowerExpectIntrinsicPass": 3794,
+        "DominatorTreeAnalysis": 6046,
+        "ArgumentPromotionPass": 21680,
+        "LoopInstSimplifyPass": 21856,
+        "CGProfilePass": 1564,
+        "isIntegerConstantExpr": 779,
+        "DropUnnecessaryAssumesPass": 6327,
+        "GlobalDCEPass": 2750,
+        "SpeculativeExecutionPass": 275,
+        "EvaluateKnownConstIntCheckOverflow": 287,
+        "EvaluateKnownConstInt": 368,
+        "TailCallElimPass": 5230,
+        "LoopAnalysis": 13430,
+        "InjectTLIMappings": 2753,
+        "ScalarEvolutionAnalysis": 6855,
+        "EvaluateAsInt": 708,
+        "EvaluateForOverflow": 576,
+        "PromotePass": 152,
+        "LazyCallGraphAnalysis": 1822,
+        "InnerAnalysisManagerProxy<AnalysisManager<LazyCallGraph::SCC, LazyCallGraph&>, Module>": 1147,
+        "LoopSimplifyCFGPass": 4688,
+        "AAManager": 1136,
+        "LoopAccessAnalysis": 113,
+        "LoopDistributePass": 617,
+        "BasicAA": 794,
+        "WarnMissedTransformationsPass": 899,
+        "DivRemPairsPass": 561,
+        "EvaluateAsRValue": 662,
+        "CallSiteSplittingPass": 151,
+        "LibCallsShrinkWrapPass": 274,
+        "LowerConstantIntrinsicsPass": 565,
+        "OptimizationRemarkEmitterAnalysis": 392,
+        "ExtraLoopPassManager<ShouldRunExtraSimpleLoopUnswitch>": 578,
+        "MergedLoadStoreMotionPass": 222
+      },
+      "jobs": [
+        {
+          "index": 2,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/common/error_private.c",
+          "start_us": 2082,
+          "duration_us": 62838
+        },
+        {
+          "index": 10,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/compress/huf_compress.c",
+          "start_us": 64924,
+          "duration_us": 914550
+        },
+        {
+          "index": 23,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/decompress/zstd_ddict.c",
+          "start_us": 979479,
+          "duration_us": 140188
+        },
+        {
+          "index": 24,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/decompress/zstd_decompress.c",
+          "start_us": 1119671,
+          "duration_us": 604515
+        },
+        {
+          "index": 26,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/dictBuilder/cover.c",
+          "start_us": 1724191,
+          "duration_us": 382784
+        },
+        {
+          "index": 3,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/common/fse_decompress.c",
+          "start_us": 2138,
+          "duration_us": 308009
+        },
+        {
+          "index": 18,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/compress/zstd_ldm.c",
+          "start_us": 310151,
+          "duration_us": 356568
+        },
+        {
+          "index": 22,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/decompress/huf_decompress.c",
+          "start_us": 666724,
+          "duration_us": 1444241
+        },
+        {
+          "index": 7,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/common/zstd_common.c",
+          "start_us": 2984,
+          "duration_us": 82380
+        },
+        {
+          "index": 11,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/compress/zstd_compress.c",
+          "start_us": 85370,
+          "duration_us": 2102494
+        },
+        {
+          "index": 4,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/common/pool.c",
+          "start_us": 2389,
+          "duration_us": 136803
+        },
+        {
+          "index": 12,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/compress/zstd_compress_literals.c",
+          "start_us": 139197,
+          "duration_us": 126322
+        },
+        {
+          "index": 16,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/compress/zstd_fast.c",
+          "start_us": 265523,
+          "duration_us": 1742338
+        },
+        {
+          "index": 28,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/dictBuilder/fastcover.c",
+          "start_us": 2007868,
+          "duration_us": 243143
+        },
+        {
+          "index": 1,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/common/entropy_common.c",
+          "start_us": 1800,
+          "duration_us": 184193
+        },
+        {
+          "index": 15,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/compress/zstd_double_fast.c",
+          "start_us": 185998,
+          "duration_us": 1834046
+        },
+        {
+          "index": 29,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/dictBuilder/zdict.c",
+          "start_us": 2020050,
+          "duration_us": 491913
+        },
+        {
+          "index": 6,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/common/xxhash.c",
+          "start_us": 2923,
+          "duration_us": 183069
+        },
+        {
+          "index": 14,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/compress/zstd_compress_superblock.c",
+          "start_us": 185998,
+          "duration_us": 301175
+        },
+        {
+          "index": 20,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/compress/zstd_preSplit.c",
+          "start_us": 487177,
+          "duration_us": 127840
+        },
+        {
+          "index": 21,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/compress/zstdmt_compress.c",
+          "start_us": 615021,
+          "duration_us": 555001
+        },
+        {
+          "index": 25,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/decompress/zstd_decompress_block.c",
+          "start_us": 1170027,
+          "duration_us": 1718474
+        },
+        {
+          "index": 5,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/common/threading.c",
+          "start_us": 2604,
+          "duration_us": 21326
+        },
+        {
+          "index": 9,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/compress/hist.c",
+          "start_us": 23934,
+          "duration_us": 150384
+        },
+        {
+          "index": 13,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/compress/zstd_compress_sequences.c",
+          "start_us": 174323,
+          "duration_us": 251619
+        },
+        {
+          "index": 19,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/compress/zstd_opt.c",
+          "start_us": 425948,
+          "duration_us": 1460528
+        },
+        {
+          "index": 27,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/dictBuilder/divsufsort.c",
+          "start_us": 1886481,
+          "duration_us": 1084966
+        },
+        {
+          "index": 0,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/common/debug.c",
+          "start_us": 1754,
+          "duration_us": 14218
+        },
+        {
+          "index": 8,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/compress/fse_compress.c",
+          "start_us": 15976,
+          "duration_us": 263731
+        },
+        {
+          "index": 17,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/compress/zstd_lazy.c",
+          "start_us": 279712,
+          "duration_us": 4792390
+        }
+      ],
+      "trace": "/root/source/gaia/experiments/compiler_invocation/results/zstd-handoff/compiler-release-trace.json"
+    },
+    {
+      "config": "debug",
+      "command": [
+        "/root/source/gaia/experiments/compiler_invocation/_work/handoff-profile/build/host",
+        "physical",
+        "/usr/lib/llvm22/bin/clang",
+        "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib",
+        "-",
+        "-",
+        "/root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/debug-profile",
+        "/root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/debug.gcr",
+        "8",
+        "internal",
+        "/usr/lib/llvm22/bin/ld.lld",
+        "/root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/debug-link.gcr",
+        "direct"
+      ],
+      "result": {
+        "correct": true,
+        "workers": 8,
+        "compiled": 30,
+        "errors": 0,
+        "warnings": 0,
+        "job_count": 30,
+        "peak_active": 8,
+        "link_calls": 1,
+        "link_result": 0,
+        "can_run_again": true,
+        "retry_result": 0,
+        "setup_ns": 673656,
+        "compile_wall_ns": 6857005339,
+        "link_ns": 15143997,
+        "workload_ns": 6872980063,
+        "peak_rss_bytes": 381571072,
+        "jobs": [
+          [
+            1064053,
+            19062525
+          ],
+          [
+            1126135,
+            256237784
+          ],
+          [
+            1295362,
+            76049832
+          ],
+          [
+            1295643,
+            374786933
+          ],
+          [
+            2361903,
+            181065271
+          ],
+          [
+            2385217,
+            32118682
+          ],
+          [
+            2488067,
+            234344385
+          ],
+          [
+            2634472,
+            114072752
+          ],
+          [
+            19071111,
+            348879326
+          ],
+          [
+            32126307,
+            200251670
+          ],
+          [
+            76054812,
+            1346740341
+          ],
+          [
+            114076008,
+            2970688926
+          ],
+          [
+            181069189,
+            339066758
+          ],
+          [
+            200255617,
+            508500357
+          ],
+          [
+            234348833,
+            590994771
+          ],
+          [
+            256242062,
+            3168749553
+          ],
+          [
+            339071237,
+            2911870269
+          ],
+          [
+            348883865,
+            6856611935
+          ],
+          [
+            374790840,
+            830493983
+          ],
+          [
+            508505166,
+            2688491310
+          ],
+          [
+            591000021,
+            729424025
+          ],
+          [
+            729428824,
+            1408792222
+          ],
+          [
+            830498301,
+            3156723534
+          ],
+          [
+            1346744879,
+            1510114787
+          ],
+          [
+            1408797952,
+            2209095186
+          ],
+          [
+            1510120168,
+            3969803125
+          ],
+          [
+            2209099535,
+            2664173398
+          ],
+          [
+            2664178418,
+            4109233155
+          ],
+          [
+            2688495388,
+            3007035126
+          ],
+          [
+            2911874627,
+            3532728175
+          ]
+        ],
+        "buffer_hits": 30,
+        "buffer_bytes": 3920048,
+        "buffer_misses": 0,
+        "object_sizes": [
+          2712,
+          27968,
+          15064,
+          50040,
+          22656,
+          2768,
+          28328,
+          8232,
+          37112,
+          20360,
+          146768,
+          420720,
+          16936,
+          52896,
+          61904,
+          228768,
+          221904,
+          1034640,
+          54128,
+          252936,
+          15968,
+          112544,
+          285280,
+          25088,
+          122800,
+          307792,
+          81680,
+          110872,
+          51584,
+          99600
+        ],
+        "export_ns": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "object_sha256": [
+          "0195b69b43039d760bc2c991348e0c3cfda15f1ca717b60190ca0b08cd91cb3f",
+          "0237469e1625916df1d003f2776f4c1b5732d630192fbfc54653aa889f7badb6",
+          "e7f08956588d4dd918c19dd7f671d0f0a07ca13b7edfe71a1c4f8df182d9dcf6",
+          "69b899c78bcc1bc318bb42678503683a2f15d092b11242f77849f39d3161610a",
+          "2a95719cb34c7b73280f8a1265269a006bf400aeaea185d9c13fb0db6081c4d1",
+          "9bf3ca091082181d5a18b2c4ed547c66e3af0f23c92ab02d818579c227aa5ee3",
+          "812a6b42c66cbb2590bcf8f94c72a1dd0c3d245a9005165558929b716084c351",
+          "e157101d7a252f35c966d32439eee64b1cb00e7ce439a39601d3d5f63129de9b",
+          "3175220c50bab892cb4e14dcb328be35d46ede6c29b41bd96ba9ae22aa65b64e",
+          "264de471c53f06ebd12abe364e7aee4a71ab73d9de008bc3bc6a63133f216142",
+          "6267b44f41215e4bfa7d15e9bd48d1b7bf41e33ec4c7efa0d9b23701bae62767",
+          "7801bfe4ba05996cd3783cb30f20e8ca114d80187a9f48b0f604d01537c07b64",
+          "02e8d9161f4d5ee28840844a17c410502dc70e4a6ad62ab5cf5b0a8d63b95e09",
+          "8b46195b764148bc0cf990ca13b41266f56122444b52e724489075aaf2e6fd49",
+          "9087954a60f464be55168db6b823c65741287bc5c4e7d14983c6779a394a8395",
+          "0350f0e44b4eb3455977daebd27189efd107de04df13aabe37e3edc7df950b63",
+          "3f8c43ad18f19fa6fdf3feb0524b624b8e7b633dd7579a380cb4c7359d5883a2",
+          "7807367bac56f5268110fa3dc632c0c66ffe207fd65b0819111a477ddb12716e",
+          "16742ca315f72729599b63cdf910150d7e619b72d3fbba714cfb81c16c9f69bc",
+          "78988d6042a37c6112c01b642f286472b619122e2d154fefe2977ddb9bf0c3fc",
+          "9c07e6039895385f8cbc938f3cef9c827e1e238328e9117b63464f0fd1bbd516",
+          "de6f6bade6d7ee822f30d543a49a6ea2b174d74e4321d1456787ccb09c8d9c39",
+          "997310244d18d88e2d33d81f5f72b17a5d669e7f33a1de085c7e9fa8c5043c77",
+          "3f49dddc2be63cba3e9b5952bf1b912a8e9ebfaa8fc3fcf8286c82d19dce1289",
+          "492f16236b86c16ec5c15f65277f1316537df7f5440bf661d9d0d8c16c0ce2b2",
+          "374901e4cdb1701a67618bd53a1ec7197df36924d13dff02d092abfe9ab37047",
+          "24013e2a3470c6bca9f5b13192c8859e49a668cd9e41be76703f1a940938d45f",
+          "0e6a53648df95d6fa31e818f208554f7105bf6a0d6e0bb2f4e3402a8859af33a",
+          "bb2f093e390e5ca04d893329974353bbe42b4c28efae2b673dee29dd5a8eff21",
+          "cbb86f23feebbf7372b74d8412bb1d59d00232ccb77b96faf2b0196e9c1955c5"
+        ]
+      },
+      "artifacts_sha256": {
+        "debug.o": "0195b69b43039d760bc2c991348e0c3cfda15f1ca717b60190ca0b08cd91cb3f",
+        "entropy_common.o": "0237469e1625916df1d003f2776f4c1b5732d630192fbfc54653aa889f7badb6",
+        "error_private.o": "e7f08956588d4dd918c19dd7f671d0f0a07ca13b7edfe71a1c4f8df182d9dcf6",
+        "fse_decompress.o": "69b899c78bcc1bc318bb42678503683a2f15d092b11242f77849f39d3161610a",
+        "pool.o": "2a95719cb34c7b73280f8a1265269a006bf400aeaea185d9c13fb0db6081c4d1",
+        "threading.o": "9bf3ca091082181d5a18b2c4ed547c66e3af0f23c92ab02d818579c227aa5ee3",
+        "xxhash.o": "812a6b42c66cbb2590bcf8f94c72a1dd0c3d245a9005165558929b716084c351",
+        "zstd_common.o": "e157101d7a252f35c966d32439eee64b1cb00e7ce439a39601d3d5f63129de9b",
+        "fse_compress.o": "3175220c50bab892cb4e14dcb328be35d46ede6c29b41bd96ba9ae22aa65b64e",
+        "hist.o": "264de471c53f06ebd12abe364e7aee4a71ab73d9de008bc3bc6a63133f216142",
+        "huf_compress.o": "6267b44f41215e4bfa7d15e9bd48d1b7bf41e33ec4c7efa0d9b23701bae62767",
+        "zstd_compress.o": "7801bfe4ba05996cd3783cb30f20e8ca114d80187a9f48b0f604d01537c07b64",
+        "zstd_compress_literals.o": "02e8d9161f4d5ee28840844a17c410502dc70e4a6ad62ab5cf5b0a8d63b95e09",
+        "zstd_compress_sequences.o": "8b46195b764148bc0cf990ca13b41266f56122444b52e724489075aaf2e6fd49",
+        "zstd_compress_superblock.o": "9087954a60f464be55168db6b823c65741287bc5c4e7d14983c6779a394a8395",
+        "zstd_double_fast.o": "0350f0e44b4eb3455977daebd27189efd107de04df13aabe37e3edc7df950b63",
+        "zstd_fast.o": "3f8c43ad18f19fa6fdf3feb0524b624b8e7b633dd7579a380cb4c7359d5883a2",
+        "zstd_lazy.o": "7807367bac56f5268110fa3dc632c0c66ffe207fd65b0819111a477ddb12716e",
+        "zstd_ldm.o": "16742ca315f72729599b63cdf910150d7e619b72d3fbba714cfb81c16c9f69bc",
+        "zstd_opt.o": "78988d6042a37c6112c01b642f286472b619122e2d154fefe2977ddb9bf0c3fc",
+        "zstd_preSplit.o": "9c07e6039895385f8cbc938f3cef9c827e1e238328e9117b63464f0fd1bbd516",
+        "zstdmt_compress.o": "de6f6bade6d7ee822f30d543a49a6ea2b174d74e4321d1456787ccb09c8d9c39",
+        "huf_decompress.o": "997310244d18d88e2d33d81f5f72b17a5d669e7f33a1de085c7e9fa8c5043c77",
+        "zstd_ddict.o": "3f49dddc2be63cba3e9b5952bf1b912a8e9ebfaa8fc3fcf8286c82d19dce1289",
+        "zstd_decompress.o": "492f16236b86c16ec5c15f65277f1316537df7f5440bf661d9d0d8c16c0ce2b2",
+        "zstd_decompress_block.o": "374901e4cdb1701a67618bd53a1ec7197df36924d13dff02d092abfe9ab37047",
+        "cover.o": "24013e2a3470c6bca9f5b13192c8859e49a668cd9e41be76703f1a940938d45f",
+        "divsufsort.o": "0e6a53648df95d6fa31e818f208554f7105bf6a0d6e0bb2f4e3402a8859af33a",
+        "fastcover.o": "bb2f093e390e5ca04d893329974353bbe42b4c28efae2b673dee29dd5a8eff21",
+        "zdict.o": "cbb86f23feebbf7372b74d8412bb1d59d00232ccb77b96faf2b0196e9c1955c5",
+        "libzstd.so": "2b53ef4591f488553dca2dfeb52d2176054791f9916998fc21f78ae9ca79fe04"
+      },
+      "event_totals_us": {
+        "Load input files": 167,
+        "Try create output file": 432,
+        "Create output files": 439,
+        "Parse input files": 245,
+        "Split sections": 516,
+        "Assign sections": 146,
+        "Merge/finalize input sections": 658,
+        "Scan relocations": 280,
+        "Write sections": 11574,
+        "Commit buffer to disk": 470,
+        "Write output file": 9019,
+        "Link": 11596,
+        "ExecuteLinker": 14101,
+        "ParseDeclarationOrFunctionDefinition": 1300856,
+        "ParseFunctionDefinition": 992445,
+        "EvaluateForOverflow": 744,
+        "BuildCFG": 33609,
+        "CodeGen Function": 693721,
+        "Frontend": 3195592,
+        "TargetIRAnalysis": 32818,
+        "SimplifyCFGPass": 500416,
+        "PassManager<Function>": 12200980,
+        "ModuleToFunctionPassAdaptor": 4533765,
+        "CGSCCToFunctionPassAdaptor": 7638717,
+        "PassManager<LazyCallGraph::SCC, AnalysisManager<LazyCallGraph::SCC, LazyCallGraph&>, LazyCallGraph&, CGSCCUpdateResult&>": 8801865,
+        "DevirtSCCRepeatedPass": 8836745,
+        "ModuleToPostOrderCGSCCPassAdaptor": 8890011,
+        "ModuleInlinerWrapperPass": 8922917,
+        "Optimizer": 14237167,
+        "RunPass": 11267549,
+        "OptFunction": 12441880,
+        "OptModule": 12723913,
+        "CodeGenPasses": 12728473,
+        "Backend": 27029883,
+        "GaiaJob": 30756801,
+        "DebugType": 161421,
+        "EvaluateAsInt": 1335,
+        "DebugFunction": 2685,
+        "MemProfRemoveInfo": 25361,
+        "AssignmentTrackingPass": 75214,
+        "InferFunctionAttrsPass": 1707,
+        "SROAPass": 351178,
+        "LowerExpectIntrinsicPass": 6846,
+        "EarlyCSEPass": 229785,
+        "DominatorTreeAnalysis": 10624,
+        "IPSCCPPass": 133218,
+        "CalledValuePropagationPass": 51588,
+        "BranchProbabilityAnalysis": 58431,
+        "BlockFrequencyAnalysis": 89912,
+        "GlobalOptPass": 114051,
+        "InstCombinePass": 2642715,
+        "AlwaysInlinerPass": 293879,
+        "CallGraphAnalysis": 30689,
+        "GlobalsAA": 23915,
+        "RequireAnalysisPass<GlobalsAA, Module>": 23995,
+        "LazyCallGraphAnalysis": 3635,
+        "InnerAnalysisManagerProxy<AnalysisManager<LazyCallGraph::SCC, LazyCallGraph&>, Module>": 2683,
+        "JumpThreadingPass": 463213,
+        "ArgumentPromotionPass": 31242,
+        "InlinerPass": 923256,
+        "CorrelatedValuePropagationPass": 413936,
+        "GVNPass": 1046471,
+        "PostOrderFunctionAttrsPass": 71033,
+        "ConstraintEliminationPass": 103741,
+        "SCCPPass": 165002,
+        "DSEPass": 173126,
+        "ADCEPass": 111659,
+        "MemorySSAAnalysis": 160343,
+        "ReassociatePass": 43336,
+        "MemCpyOptPass": 68903,
+        "LoopRotatePass": 169654,
+        "PassManager<Loop, AnalysisManager<Loop, LoopStandardAnalysisResults&>, LoopStandardAnalysisResults&, LPMUpdater&>": 2007687,
+        "FunctionToLoopPassAdaptor": 2633133,
+        "IndVarSimplifyPass": 602133,
+        "LoopFullUnrollPass": 108022,
+        "LICMPass": 194710,
+        "LoopIdiomRecognizePass": 309521,
+        "BDCEPass": 53666,
+        "VectorCombinePass": 32248,
+        "MergedLoadStoreMotionPass": 931,
+        "SimpleLoopUnswitchPass": 36720,
+        "LoopSimplifyPass": 59748,
+        "BasicAA": 3541,
+        "AAManager": 5270,
+        "LoopInstSimplifyPass": 21917,
+        "LoopDeletionPass": 197673,
+        "ScalarEvolutionAnalysis": 9768,
+        "DeadArgumentEliminationPass": 14124,
+        "GlobalDCEPass": 4068,
+        "ReversePostOrderFunctionAttrsPass": 18788,
+        "RecomputeGlobalsAAPass": 13826,
+        "SLPVectorizerPass": 673039,
+        "InstSimplifyPass": 54492,
+        "TailCallElimPass": 7221,
+        "LoopAccessAnalysis": 132,
+        "LoopDistributePass": 712,
+        "InferAlignmentPass": 26715,
+        "LoopLoadEliminationPass": 213848,
+        "LoopUnrollPass": 757160,
+        "LoopVectorizePass": 363651,
+        "DropUnnecessaryAssumesPass": 10984,
+        "LoopAnalysis": 19525,
+        "AllocTokenPass": 26893,
+        "CGProfilePass": 1783,
+        "RunLoopPass": 1211526,
+        "EvaluateAsRValue": 1111,
+        "PostDominatorTreeAnalysis": 5829,
+        "AggressiveInstCombinePass": 13642,
+        "Float2IntPass": 8554,
+        "LCSSAPass": 50571,
+        "InjectTLIMappings": 3962,
+        "LoopSimplifyCFGPass": 5827,
+        "LibCallsShrinkWrapPass": 376,
+        "LowerConstantIntrinsicsPass": 1802,
+        "WarnMissedTransformationsPass": 1446,
+        "DivRemPairsPass": 1482,
+        "FunctionAnalysisManagerCGSCCProxy": 303,
+        "isIntegerConstantExpr": 697,
+        "EvaluateAsBooleanCondition": 263,
+        "MemoryDependenceAnalysis": 263,
+        "DebugConstGlobalVariable": 737
+      },
+      "jobs": [
+        {
+          "index": 7,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/common/zstd_common.c",
+          "start_us": 2618,
+          "duration_us": 111439
+        },
+        {
+          "index": 11,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/compress/zstd_compress.c",
+          "start_us": 114061,
+          "duration_us": 2856612
+        },
+        {
+          "index": 5,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/common/threading.c",
+          "start_us": 2369,
+          "duration_us": 29733
+        },
+        {
+          "index": 9,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/compress/hist.c",
+          "start_us": 32111,
+          "duration_us": 168125
+        },
+        {
+          "index": 13,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/compress/zstd_compress_sequences.c",
+          "start_us": 200241,
+          "duration_us": 308244
+        },
+        {
+          "index": 19,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/compress/zstd_opt.c",
+          "start_us": 508490,
+          "duration_us": 2179986
+        },
+        {
+          "index": 28,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/dictBuilder/fastcover.c",
+          "start_us": 2688481,
+          "duration_us": 318539
+        },
+        {
+          "index": 3,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/common/fse_decompress.c",
+          "start_us": 1280,
+          "duration_us": 373491
+        },
+        {
+          "index": 18,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/compress/zstd_ldm.c",
+          "start_us": 374776,
+          "duration_us": 455702
+        },
+        {
+          "index": 22,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/decompress/huf_decompress.c",
+          "start_us": 830483,
+          "duration_us": 2326225
+        },
+        {
+          "index": 1,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/common/entropy_common.c",
+          "start_us": 1111,
+          "duration_us": 255111
+        },
+        {
+          "index": 15,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/compress/zstd_double_fast.c",
+          "start_us": 256227,
+          "duration_us": 2912507
+        },
+        {
+          "index": 4,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/common/pool.c",
+          "start_us": 2346,
+          "duration_us": 178703
+        },
+        {
+          "index": 12,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/compress/zstd_compress_literals.c",
+          "start_us": 181054,
+          "duration_us": 157997
+        },
+        {
+          "index": 16,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/compress/zstd_fast.c",
+          "start_us": 339056,
+          "duration_us": 2572799
+        },
+        {
+          "index": 29,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/dictBuilder/zdict.c",
+          "start_us": 2911860,
+          "duration_us": 620853
+        },
+        {
+          "index": 2,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/common/error_private.c",
+          "start_us": 1279,
+          "duration_us": 74755
+        },
+        {
+          "index": 10,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/compress/huf_compress.c",
+          "start_us": 76039,
+          "duration_us": 1270686
+        },
+        {
+          "index": 23,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/decompress/zstd_ddict.c",
+          "start_us": 1346731,
+          "duration_us": 163368
+        },
+        {
+          "index": 25,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/decompress/zstd_decompress_block.c",
+          "start_us": 1510105,
+          "duration_us": 2459683
+        },
+        {
+          "index": 6,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/common/xxhash.c",
+          "start_us": 2473,
+          "duration_us": 231856
+        },
+        {
+          "index": 14,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/compress/zstd_compress_superblock.c",
+          "start_us": 234333,
+          "duration_us": 356646
+        },
+        {
+          "index": 20,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/compress/zstd_preSplit.c",
+          "start_us": 590985,
+          "duration_us": 138423
+        },
+        {
+          "index": 21,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/compress/zstdmt_compress.c",
+          "start_us": 729414,
+          "duration_us": 679363
+        },
+        {
+          "index": 24,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/decompress/zstd_decompress.c",
+          "start_us": 1408783,
+          "duration_us": 800296
+        },
+        {
+          "index": 26,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/dictBuilder/cover.c",
+          "start_us": 2209085,
+          "duration_us": 455073
+        },
+        {
+          "index": 27,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/dictBuilder/divsufsort.c",
+          "start_us": 2664164,
+          "duration_us": 1445055
+        },
+        {
+          "index": 0,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/common/debug.c",
+          "start_us": 1058,
+          "duration_us": 17993
+        },
+        {
+          "index": 8,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/compress/fse_compress.c",
+          "start_us": 19056,
+          "duration_us": 329808
+        },
+        {
+          "index": 17,
+          "source": "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib/compress/zstd_lazy.c",
+          "start_us": 348868,
+          "duration_us": 6507730
+        }
+      ],
+      "trace": "/root/source/gaia/experiments/compiler_invocation/results/zstd-handoff/compiler-debug-trace.json"
+    }
+  ],
+  "build_provenance": {
+    "commands": [
+      [
+        "/usr/lib/llvm22/bin/clang++",
+        "-std=c++17",
+        "-O2",
+        "-fPIC",
+        "-I/usr/lib/llvm22/include",
+        "-I/root/source/gaia/experiments/compiler_invocation/_work/toolchain/usr/lib/llvm22/include",
+        "-c",
+        "/root/source/gaia/experiments/compiler_invocation/profile_bridge.cpp",
+        "-o",
+        "/root/source/gaia/experiments/compiler_invocation/_work/handoff-profile/build/bridge.o"
+      ],
+      [
+        "/opt/odin/nightly/odin",
+        "build",
+        "/root/source/gaia/experiments/compiler_invocation/handoff_host.odin",
+        "-file",
+        "-o:speed",
+        "-build-mode:obj",
+        "-out:/root/source/gaia/experiments/compiler_invocation/_work/handoff-profile/build/host.o"
+      ],
+      [
+        "/usr/lib/llvm22/bin/clang++",
+        "/root/source/gaia/experiments/compiler_invocation/_work/handoff-profile/build/host.o",
+        "/root/source/gaia/experiments/compiler_invocation/_work/handoff-profile/build/bridge.o",
+        "/usr/lib/llvm22/lib/libclang-cpp.so",
+        "/usr/lib/llvm22/lib/libLLVM.so.22.1",
+        "/usr/lib/llvm22/lib/liblldELF.so",
+        "/usr/lib/llvm22/lib/liblldCommon.so",
+        "-ldl",
+        "-Wl,--export-dynamic-symbol=_ZN4llvm12MemoryBuffer7getFileERKNS_5TwineEbbbSt8optionalINS_5AlignEE",
+        "-pthread",
+        "-Wl,-rpath,/usr/lib/llvm22/lib",
+        "-o",
+        "/root/source/gaia/experiments/compiler_invocation/_work/handoff-profile/build/host"
+      ]
+    ],
+    "seconds": 14.77532347899978,
+    "host_sha256": "6393e9c88c563154932f8e998a66ae445760f113a4a6067a77b14b2d23eb41c4",
+    "odin_version": "/opt/odin/nightly/odin version dev-2026-10-nightly:84bc3fc"
+  },
+  "analyzer_sha256": "5be44eedfe4c5b448f11d047b1c67b87026f76245f4cff005c6a12e1f7420775"
+}

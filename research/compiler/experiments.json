@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "path_base": "repository-root",
+  "track": "native-compiler-invocation",
+  "experiments": [
+    {
+      "id": "CC-INITIAL",
+      "run_id": "20261029T163845.341343Z",
+      "status": "measured-synthetic",
+      "report": "experiments/compiler/results/initial/REPORT.md",
+      "raw": "experiments/compiler/results/initial/results.json",
+      "findings": "experiments/compiler/FINDINGS.md",
+      "toolchain_provenance": "experiments/compiler/results/initial/toolchain-provenance.json"
+    },
+    {
+      "id": "CC-ZLIB",
+      "run_id": "20261029T165946.317034Z",
+      "status": "measured-real-c-library",
+      "report": "experiments/compiler/results/zlib/REPORT.md",
+      "raw": "experiments/compiler/results/zlib/results.json",
+      "findings": "experiments/compiler/FINDINGS.md#real-project-zlib",
+      "upstream_tests": "experiments/compiler/results/zlib/upstream-tests.json"
+    },
+    {
+      "id": "CC-POOL",
+      "run_id": "20261029T201012.673471Z",
+      "status": "measured-bounded-queue-embedded-linker",
+      "report": "experiments/compiler/results/pool-link/REPORT.md",
+      "raw": "experiments/compiler/results/pool-link/results.json",
+      "findings": "experiments/compiler/FINDINGS.md#bounded-compiler-queue-and-embedded-linker",
+      "upstream_tests": "experiments/compiler/results/pool-link/upstream-tests.json"
+    },
+    {
+      "id": "CC-HANDOFF",
+      "run_id": "20261029T203940.351942Z",
+      "status": "measured-direct-object-buffers-no-added-parallel-win",
+      "report": "experiments/compiler/results/direct-handoff/REPORT.md",
+      "raw": "experiments/compiler/results/direct-handoff/results.json",
+      "findings": "experiments/compiler/FINDINGS.md#direct-object-buffer-handoff",
+      "upstream_tests": "experiments/compiler/results/direct-handoff/upstream-tests.json",
+      "object_io_traces": "experiments/compiler/results/direct-handoff/object-io-traces.json",
+      "adapter_build": "experiments/compiler/results/direct-handoff/adapter-build.json"
+    },
+    {
+      "id": "CC-ZSTD-HANDOFF",
+      "run_id": "20261029T205610.494160Z",
+      "status": "measured-larger-c-library-no-consistent-added-handoff-win",
+      "report": "experiments/compiler/results/zstd-handoff/REPORT.md",
+      "raw": "experiments/compiler/results/zstd-handoff/results.json",
+      "phase_report": "experiments/compiler/results/zstd-handoff/PHASES.md",
+      "phase_profiles": "experiments/compiler/results/zstd-handoff/phase-profiles.json",
+      "findings": "experiments/compiler/FINDINGS.md#larger-project-process-lifetime-and-compiler-phases"
+    },
+    {
+      "id": "CC-LIFECYCLE",
+      "run_id": "20261029T210117.876902Z",
+      "status": "measured-four-build-process-reuse-and-phase-attribution",
+      "report": "experiments/compiler/results/compiler-lifecycle/REPORT.md",
+      "raw": "experiments/compiler/results/compiler-lifecycle/results.json",
+      "findings": "experiments/compiler/FINDINGS.md#larger-project-process-lifetime-and-compiler-phases"
+    },
+    {
+      "id": "CC-SCHEDULE",
+      "run_id": "20261029T232949.779224Z",
+      "status": "measured-frozen-historical-cost-dispatch-modest-wall-gain",
+      "report": "experiments/compiler/results/cost-scheduling/REPORT.md",
+      "raw": "experiments/compiler/results/cost-scheduling/results.json",
+      "findings": "experiments/compiler/FINDINGS.md#cost-aware-compiler-dispatch",
+      "compile_error_check": "experiments/compiler/results/cost-scheduling/compile-error-check.json",
+      "small_queue_checks": "experiments/compiler/results/cost-scheduling/small-queue-checks.json"
+    },
+    {
+      "id": "CC-OBJECT-CACHE",
+      "run_id": "20261029T235526.613463Z",
+      "status": "measured-local-explicit-view-object-cache",
+      "report": "experiments/compiler/results/object-cache/REPORT.md",
+      "raw": "experiments/compiler/results/object-cache/results.json",
+      "findings": "experiments/compiler/FINDINGS.md#local-compiled-object-cache",
+      "checks": "experiments/compiler/results/object-cache/checks.json",
+      "upstream_checks": "experiments/compiler/results/object-cache/upstream-checks.json"
+    },
+    {
+      "id": "CC-DEPENDENCY-JOURNAL",
+      "run_id": "20261030T003643.076432Z",
+      "status": "measured-observed-dependency-validation-and-incremental-snapshots",
+      "report": "experiments/compiler/results/dependency-cache/REPORT.md",
+      "raw": "experiments/compiler/results/dependency-cache/results.json",
+      "findings": "experiments/compiler/FINDINGS.md#dependency-journals-and-incremental-snapshots",
+      "checks": "experiments/compiler/results/dependency-cache/checks.json",
+      "upstream_checks": "experiments/compiler/results/dependency-cache/upstream-checks.json",
+      "real_header_fanout": "experiments/compiler/results/dependency-cache/fanout-check.json"
+    }
+  ],
+  "raw_evidence": {
+    "manifest": "research/evidence.json",
+    "availability": "Raw observation/profile paths refer to ignored local artifacts, absent from a clean checkout; no download has been published."
+  }
+}

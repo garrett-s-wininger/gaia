@@ -1,0 +1,431 @@
+{
+  "run_id": "20261029T203940.351942Z",
+  "timed": false,
+  "analyzer_sha256": "40cd619f6038af848545ec4225bf21f163d9ab9a5e65d0b27719a13ff112cd3c",
+  "rows": [
+    {
+      "name": "physical-8-file",
+      "generated_object_path_calls": {
+        "newfstatat": 15,
+        "openat": 30,
+        "write": 70,
+        "close": 30,
+        "rename": 15,
+        "pread64": 13,
+        "mmap": 2
+      },
+      "other_object_path_calls": {
+        "newfstatat": 105
+      },
+      "trace": "/root/source/gaia/experiments/compiler_invocation/_work/handoff-20261029T203940.351942Z/physical-8-file.strace",
+      "result": {
+        "correct": true,
+        "workers": 8,
+        "compiled": 15,
+        "errors": 0,
+        "warnings": 0,
+        "job_count": 15,
+        "peak_active": 8,
+        "link_calls": 1,
+        "link_result": 0,
+        "can_run_again": true,
+        "retry_result": 0,
+        "setup_ns": 16862252,
+        "compile_wall_ns": 2181038538,
+        "link_ns": 110562768,
+        "workload_ns": 2308738737,
+        "peak_rss_bytes": 142385152,
+        "jobs": [
+          [
+            30460672,
+            1411281342
+          ],
+          [
+            38248830,
+            1272925138
+          ],
+          [
+            38316588,
+            2175618789
+          ],
+          [
+            48199663,
+            1412646124
+          ],
+          [
+            57960383,
+            1193175574
+          ],
+          [
+            70355349,
+            1902045890
+          ],
+          [
+            81806341,
+            1161082524
+          ],
+          [
+            98484082,
+            1418055826
+          ],
+          [
+            1161084918,
+            1731357743
+          ],
+          [
+            1193178059,
+            1643332286
+          ],
+          [
+            1272926821,
+            1923532910
+          ],
+          [
+            1411283496,
+            2172230210
+          ],
+          [
+            1412646685,
+            2117605439
+          ],
+          [
+            1418056508,
+            2115273626
+          ],
+          [
+            1643334801,
+            2193510483
+          ]
+        ],
+        "buffer_hits": 0,
+        "buffer_bytes": 0,
+        "buffer_misses": 0,
+        "object_sizes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "export_ns": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "object_sha256": []
+      }
+    },
+    {
+      "name": "physical-8-buffer-file",
+      "generated_object_path_calls": {
+        "openat": 30,
+        "write": 24,
+        "close": 30,
+        "pread64": 13,
+        "mmap": 2
+      },
+      "other_object_path_calls": {
+        "newfstatat": 105
+      },
+      "trace": "/root/source/gaia/experiments/compiler_invocation/_work/handoff-20261029T203940.351942Z/physical-8-buffer-file.strace",
+      "result": {
+        "correct": true,
+        "workers": 8,
+        "compiled": 15,
+        "errors": 0,
+        "warnings": 0,
+        "job_count": 15,
+        "peak_active": 8,
+        "link_calls": 1,
+        "link_result": 0,
+        "can_run_again": true,
+        "retry_result": 0,
+        "setup_ns": 18378833,
+        "compile_wall_ns": 2044268726,
+        "link_ns": 97847695,
+        "workload_ns": 2160660937,
+        "peak_rss_bytes": 144158720,
+        "jobs": [
+          [
+            35451401,
+            1296459052
+          ],
+          [
+            40652830,
+            1401310291
+          ],
+          [
+            42221902,
+            1725960303
+          ],
+          [
+            48927177,
+            1296566246
+          ],
+          [
+            58851926,
+            1097248417
+          ],
+          [
+            70043732,
+            1708493241
+          ],
+          [
+            82443884,
+            1075309006
+          ],
+          [
+            95664393,
+            1312234835
+          ],
+          [
+            1075310960,
+            1543661459
+          ],
+          [
+            1097250281,
+            1443300629
+          ],
+          [
+            1296461116,
+            1890099887
+          ],
+          [
+            1296566727,
+            1870437559
+          ],
+          [
+            1312236799,
+            1882863056
+          ],
+          [
+            1401311934,
+            2058009389
+          ],
+          [
+            1443302463,
+            1962759055
+          ]
+        ],
+        "buffer_hits": 0,
+        "buffer_bytes": 0,
+        "buffer_misses": 0,
+        "object_sizes": [
+          2632,
+          14664,
+          26776,
+          8808,
+          4096,
+          20848,
+          6232,
+          14336,
+          2160,
+          2480,
+          2384,
+          976,
+          8568,
+          9360,
+          7904
+        ],
+        "export_ns": [
+          4199136,
+          7465219,
+          4517482,
+          3778430,
+          3591011,
+          5068105,
+          2704978,
+          3756626,
+          4816318,
+          4658112,
+          3018108,
+          2534963,
+          2185260,
+          2711838,
+          1843815
+        ],
+        "object_sha256": [
+          "4123ace19e536484cb0a64fa3bbe2edeaf58498ed660fa2b8cdb20bda13ee743",
+          "8b50dfc290454db43be8bfc6d7e5ceb0992c2418bdb1bfce63f0006c336889b6",
+          "4c8105f48db45f96519d114b2701bcc26870c97ca999f3879ae079d941bf798d",
+          "634df4216744bf0890b3afef22bebf0c3e34ad61d925575f5c6d4b374669e8e2",
+          "a7c9d6af6038849598854506d97fdd416ad69b2078f90ad0957e3ce72c867c3c",
+          "385fae790d0be76dad1940feb64796ca76f39d01a5dd12786b8db46e5e88dd00",
+          "a32f1284fe3442b32a64baaa9ebd6dcbe1983d1583023f8c52bc76df2ecfc293",
+          "f347f71cd81d9d0b86a6346923740651e8e88bcb0e55be51e07cf5391d57c024",
+          "edd1c0869be033e773f5720ba18c626293eedc698cf03fbabea8acb377613710",
+          "6c36b53b23256df276eeebf13d19a6e089e2887639598be8554460a0a6fa1d5d",
+          "8510a2a1da890d10c0b781a2655d7adef23ee9e692d939f2e44406fdd12412fa",
+          "34fc62603bc880fb78c50a38d337b55f3c5839629e20090713d8ae4b77a70b0e",
+          "ee13690156d8d04cea2cba792055ac8ff6a9783932325abef5806406080422c7",
+          "2703cae7294801304d7fa8e89ccdf8a2a1b6b2ffab464202c1ac0839dc31a136",
+          "b8eb9cedc177b336c339ca0d79f81588a8def35e1497a4862a0cab8b27e87ba4"
+        ]
+      }
+    },
+    {
+      "name": "physical-8-direct",
+      "generated_object_path_calls": {},
+      "other_object_path_calls": {
+        "newfstatat": 105
+      },
+      "trace": "/root/source/gaia/experiments/compiler_invocation/_work/handoff-20261029T203940.351942Z/physical-8-direct.strace",
+      "result": {
+        "correct": true,
+        "workers": 8,
+        "compiled": 15,
+        "errors": 0,
+        "warnings": 0,
+        "job_count": 15,
+        "peak_active": 8,
+        "link_calls": 1,
+        "link_result": 0,
+        "can_run_again": true,
+        "retry_result": 0,
+        "setup_ns": 14235385,
+        "compile_wall_ns": 2025753200,
+        "link_ns": 81890353,
+        "workload_ns": 2122177226,
+        "peak_rss_bytes": 148471808,
+        "jobs": [
+          [
+            25821622,
+            1279591213
+          ],
+          [
+            35738627,
+            1409054089
+          ],
+          [
+            36486608,
+            1685666711
+          ],
+          [
+            43430650,
+            1303444472
+          ],
+          [
+            53341376,
+            1108597880
+          ],
+          [
+            67024203,
+            1711230535
+          ],
+          [
+            78401192,
+            1058042050
+          ],
+          [
+            92214953,
+            1293209253
+          ],
+          [
+            1058043783,
+            1519093844
+          ],
+          [
+            1108599793,
+            1465252902
+          ],
+          [
+            1279593617,
+            1840507394
+          ],
+          [
+            1293211958,
+            1765877933
+          ],
+          [
+            1303446606,
+            1912111989
+          ],
+          [
+            1409056003,
+            2035757781
+          ],
+          [
+            1465255186,
+            1956084508
+          ]
+        ],
+        "buffer_hits": 15,
+        "buffer_bytes": 132224,
+        "buffer_misses": 0,
+        "object_sizes": [
+          2632,
+          14664,
+          26776,
+          8808,
+          4096,
+          20848,
+          6232,
+          14336,
+          2160,
+          2480,
+          2384,
+          976,
+          8568,
+          9360,
+          7904
+        ],
+        "export_ns": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "object_sha256": [
+          "4123ace19e536484cb0a64fa3bbe2edeaf58498ed660fa2b8cdb20bda13ee743",
+          "8b50dfc290454db43be8bfc6d7e5ceb0992c2418bdb1bfce63f0006c336889b6",
+          "4c8105f48db45f96519d114b2701bcc26870c97ca999f3879ae079d941bf798d",
+          "634df4216744bf0890b3afef22bebf0c3e34ad61d925575f5c6d4b374669e8e2",
+          "a7c9d6af6038849598854506d97fdd416ad69b2078f90ad0957e3ce72c867c3c",
+          "385fae790d0be76dad1940feb64796ca76f39d01a5dd12786b8db46e5e88dd00",
+          "a32f1284fe3442b32a64baaa9ebd6dcbe1983d1583023f8c52bc76df2ecfc293",
+          "f347f71cd81d9d0b86a6346923740651e8e88bcb0e55be51e07cf5391d57c024",
+          "edd1c0869be033e773f5720ba18c626293eedc698cf03fbabea8acb377613710",
+          "6c36b53b23256df276eeebf13d19a6e089e2887639598be8554460a0a6fa1d5d",
+          "8510a2a1da890d10c0b781a2655d7adef23ee9e692d939f2e44406fdd12412fa",
+          "34fc62603bc880fb78c50a38d337b55f3c5839629e20090713d8ae4b77a70b0e",
+          "ee13690156d8d04cea2cba792055ac8ff6a9783932325abef5806406080422c7",
+          "2703cae7294801304d7fa8e89ccdf8a2a1b6b2ffab464202c1ac0839dc31a136",
+          "b8eb9cedc177b336c339ca0d79f81588a8def35e1497a4862a0cab8b27e87ba4"
+        ]
+      }
+    }
+  ]
+}

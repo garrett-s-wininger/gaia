@@ -1,0 +1,8 @@
+{
+  "llvm_version": "22.1.8",
+  "header_package": "llvm22-22.1.8-2-x86_64.pkg.tar.zst",
+  "url": "https://fastly.mirror.pkgbuild.com/extra/os/x86_64/llvm22-22.1.8-2-x86_64.pkg.tar.zst",
+  "sha256": "367da1300fdc178a451b4b2f0ca4f0d40a23ca37bd56dfb7959d71a1074809fb",
+  "verification": "SHA-256 matched %SHA256SUM% from llvm22-22.1.8-2/desc in local /var/lib/pacman/sync/extra.db before extraction; no separate package signature verification claimed",
+  "use": "Only LLVM/LLVM-C development headers extracted into ignored workspace _work/toolchain. Existing installed Clang and LLVM libraries used. No system installation."
+}

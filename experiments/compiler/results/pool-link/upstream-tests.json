@@ -1,0 +1,58 @@
+[
+  {
+    "name": "make-1",
+    "passed": true,
+    "shared_library": true,
+    "library_recompiled": false,
+    "log": "make-1-shared-check.txt"
+  },
+  {
+    "name": "make-8",
+    "passed": true,
+    "shared_library": true,
+    "library_recompiled": false,
+    "log": "make-8-shared-check.txt"
+  },
+  {
+    "name": "memory-1-internal",
+    "passed": true,
+    "shared_library": true,
+    "library_recompiled": false,
+    "log": "memory-1-internal-shared-check.txt"
+  },
+  {
+    "name": "memory-2-internal",
+    "passed": true,
+    "shared_library": true,
+    "library_recompiled": false,
+    "log": "memory-2-internal-shared-check.txt"
+  },
+  {
+    "name": "memory-4-internal",
+    "passed": true,
+    "shared_library": true,
+    "library_recompiled": false,
+    "log": "memory-4-internal-shared-check.txt"
+  },
+  {
+    "name": "memory-8-internal",
+    "passed": true,
+    "shared_library": true,
+    "library_recompiled": false,
+    "log": "memory-8-internal-shared-check.txt"
+  },
+  {
+    "name": "memory-8-external",
+    "passed": true,
+    "shared_library": true,
+    "library_recompiled": false,
+    "log": "memory-8-external-shared-check.txt"
+  },
+  {
+    "name": "physical-8-internal",
+    "passed": true,
+    "shared_library": true,
+    "library_recompiled": false,
+    "log": "physical-8-internal-shared-check.txt"
+  }
+]

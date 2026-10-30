@@ -1,0 +1,5104 @@
+{
+  "run_id": "20261029T235526.613463Z",
+  "timed": false,
+  "host_sha256": "6addc18d02729556b719e6b0ba39edb9e4529273d50109ab1f1bbaf02e043004",
+  "host": "/root/source/gaia/experiments/compiler_invocation/_work/cache-diagnostic-fix/build/host",
+  "execution_context": {
+    "schema": "GAIA-LOCAL-C-CONTEXT-1",
+    "toolchain": {
+      "/usr/lib/llvm22/bin/clang": "b852cb4597dc56b241bcd328544b5fee60717f35f66808098cc0413946ba42f2",
+      "/usr/lib/llvm22/bin/ld.lld": "53b86825ed1635d71a5b719f87bd702497bc0c67ad6b139105adcdd8aab7e904",
+      "/usr/lib/llvm22/lib/libclang-cpp.so": "f8ad17a08eeab80c04e8c2f90986c43808fe760e30136ce199c945fe273b6cd6",
+      "/usr/lib/llvm22/lib/libLLVM.so.22.1": "abe476c377d94c4375d4d804ca555dd378c0437e7b9c01f60d51e403e8cc6d6a",
+      "/usr/lib/llvm22/lib/liblldELF.so": "773103cd194050fa4c673293bbc8a6b71d89ee0c0167155eb419ceaabc40916f"
+    },
+    "host_sha256": "6addc18d02729556b719e6b0ba39edb9e4529273d50109ab1f1bbaf02e043004",
+    "environment": {
+      "SOURCE_DATE_EPOCH": "0",
+      "TZ": "UTC",
+      "LANG": "C",
+      "LC_ALL": "C"
+    },
+    "include_environment_removed": [
+      "CPATH",
+      "C_INCLUDE_PATH",
+      "CPLUS_INCLUDE_PATH",
+      "OBJC_INCLUDE_PATH",
+      "INCLUDE",
+      "LD_PRELOAD",
+      "LD_LIBRARY_PATH",
+      "CCC_OVERRIDE_OPTIONS",
+      "LLVM_PROFILE_FILE"
+    ],
+    "contract": "Explicit immutable per-job namespace; no host fallback; known C flags; no plugins, response/PGO side inputs; volatile macros rejected."
+  },
+  "context_id": "2430014f2e086987b9017c42fcb954f794e20ad6cbc889a952a538cf18a7344d",
+  "build": {
+    "commands": [
+      [
+        "/usr/lib/llvm22/bin/clang++",
+        "-std=c++17",
+        "-O2",
+        "-fPIC",
+        "-I/usr/lib/llvm22/include",
+        "-I/root/source/gaia/experiments/compiler_invocation/_work/toolchain/usr/lib/llvm22/include",
+        "-c",
+        "/root/source/gaia/experiments/compiler_invocation/cache_bridge.cpp",
+        "-o",
+        "experiments/compiler_invocation/_work/cache-diagnostic-fix/build/bridge.o"
+      ],
+      [
+        "/opt/odin/nightly/odin",
+        "build",
+        "/root/source/gaia/experiments/compiler_invocation/cache_host.odin",
+        "-file",
+        "-o:speed",
+        "-build-mode:obj",
+        "-out:experiments/compiler_invocation/_work/cache-diagnostic-fix/build/host.o"
+      ],
+      [
+        "/usr/lib/llvm22/bin/clang++",
+        "experiments/compiler_invocation/_work/cache-diagnostic-fix/build/host.o",
+        "experiments/compiler_invocation/_work/cache-diagnostic-fix/build/bridge.o",
+        "/usr/lib/llvm22/lib/libclang-cpp.so",
+        "/usr/lib/llvm22/lib/libLLVM.so.22.1",
+        "/usr/lib/llvm22/lib/liblldELF.so",
+        "/usr/lib/llvm22/lib/liblldCommon.so",
+        "-ldl",
+        "-Wl,--export-dynamic-symbol=_ZN4llvm12MemoryBuffer7getFileERKNS_5TwineEbbbSt8optionalINS_5AlignEE",
+        "-pthread",
+        "-Wl,-rpath,/usr/lib/llvm22/lib",
+        "-o",
+        "experiments/compiler_invocation/_work/cache-diagnostic-fix/build/host"
+      ]
+    ],
+    "seconds": 15.77544232999935,
+    "host_sha256": "6addc18d02729556b719e6b0ba39edb9e4529273d50109ab1f1bbaf02e043004",
+    "odin_version": "/opt/odin/nightly/odin version dev-2026-10-nightly:84bc3fc"
+  },
+  "rows": [
+    {
+      "check": "cold-populates-valid-baseline",
+      "passed": true,
+      "result": {
+        "correct": true,
+        "workers": 8,
+        "compiled": 31,
+        "errors": 0,
+        "warnings": 0,
+        "job_count": 31,
+        "peak_active": 8,
+        "link_calls": 1,
+        "link_result": 0,
+        "can_run_again": true,
+        "retry_result": 0,
+        "setup_ns": 13946849,
+        "compile_wall_ns": 4599118619,
+        "link_ns": 42482314,
+        "workload_ns": 4655733497,
+        "peak_rss_bytes": 222269440,
+        "jobs": [
+          [
+            14769850,
+            41450293
+          ],
+          [
+            14737849,
+            222285825
+          ],
+          [
+            15231461,
+            83962538
+          ],
+          [
+            15406462,
+            283242624
+          ],
+          [
+            15907763,
+            147188200
+          ],
+          [
+            16687483,
+            44396032
+          ],
+          [
+            17309397,
+            185517990
+          ],
+          [
+            19696438,
+            99630698
+          ],
+          [
+            41994023,
+            283877412
+          ],
+          [
+            44871583,
+            211003986
+          ],
+          [
+            84457376,
+            1020645074
+          ],
+          [
+            100252316,
+            1993359248
+          ],
+          [
+            147666055,
+            245532823
+          ],
+          [
+            185940180,
+            462873357
+          ],
+          [
+            211652835,
+            452270879
+          ],
+          [
+            222857508,
+            1983535951
+          ],
+          [
+            246169479,
+            1880196724
+          ],
+          [
+            283744455,
+            4612311756
+          ],
+          [
+            284525079,
+            636001494
+          ],
+          [
+            452939195,
+            1850468834
+          ],
+          [
+            463588161,
+            585596824
+          ],
+          [
+            586060703,
+            1035708004
+          ],
+          [
+            636698163,
+            2036882094
+          ],
+          [
+            1021317628,
+            1116910128
+          ],
+          [
+            1036399685,
+            1571220767
+          ],
+          [
+            1117624912,
+            2653812523
+          ],
+          [
+            1571909181,
+            1917547271
+          ],
+          [
+            1851160835,
+            2768668681
+          ],
+          [
+            1880735365,
+            2076203357
+          ],
+          [
+            1918191682,
+            2338450129
+          ],
+          [
+            1984402974,
+            1991189834
+          ]
+        ],
+        "buffer_hits": 31,
+        "buffer_bytes": 917680,
+        "buffer_misses": 0,
+        "object_sizes": [
+          760,
+          6608,
+          8024,
+          9304,
+          6264,
+          784,
+          7288,
+          1776,
+          7280,
+          6136,
+          28872,
+          116760,
+          2888,
+          9648,
+          8472,
+          46640,
+          43344,
+          223264,
+          11216,
+          62808,
+          4176,
+          24800,
+          55984,
+          3808,
+          34904,
+          70664,
+          27528,
+          44680,
+          16320,
+          25728,
+          952
+        ],
+        "export_ns": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "object_sha256": [
+          "a9998f0f4fea077f9a22193d3a41f252e4fd87b3f98a41e86aadc3305b8862e3",
+          "45b8d74e295962a38b5d9ae223488f24240a5ead718296ec9046013e06bcf76f",
+          "bdec1efe91ac56a9ab81acdc5b5d8767a7160913e39121b953514135f5505292",
+          "57d03f6a6225710913f2495c2bf137fc2ee22bf26d594ea7a96a814c261623e8",
+          "0657b745b9a4ff77576ec735a6df58ae876cf27a0f33e66e34b4f0c3d353e5da",
+          "d0e5791b4e19f8e4f4c1942c328e1f9e56e16c18b9133384792f35e1b4a98bd6",
+          "63306846a7f3b657e69eff542569a965810eca9fe9bdea935db44cdbd01ccf52",
+          "6907393237e41eafdcf54412e7625929fcbb281fa43200a00b50248adce570b7",
+          "e4e098b2fe639dfcc467c1875dff87c1c2e8b2e7924f651d821d1660b5babd26",
+          "d4ce2f163d867efb5e7c7dad4ad1c5439d82ab4dc4c44977e3faf5fe50aa3abd",
+          "3c483375a9fc328572a078809ba153099985105334ecc8e69b5bab1843c18e23",
+          "a4fbd50e15fac16486008b99adc24910626c7e3894236e97b80f601883cd0da4",
+          "dab1a4e283772d515bf44418ffa193ff8a01301b0244d4e0a7476d3454993bd7",
+          "fb90c944fc243c1a787dc5317d54e889bc52f8e3f21a27d29e133a381a821b43",
+          "59fdd5421e3529ff28d9778084daf86a82514dbba366fc1033665cccb2513ce4",
+          "e13715ff2b1e86d757c54e92474d5d822f9d01bad2361c2d0c8ef49c44d8191c",
+          "ae8e982205c19cc13674b9bd3d9fd32eedf4fe95b63bf0e6b0aeb0719a85e040",
+          "ceaffd3aee3f9ffc140ffd9e69331afbeeff59aafc3e238d69602bdba097a1c3",
+          "82e8d57aedbf91a4610529b5828b019cd0d1bb73123eac66c86f145c1dd319d6",
+          "361c40e87766e43cb583720fee32009a4eb450e53af1bf750d5795fa7c6902b6",
+          "d2dbf35c08bec581a9c686d4254ad7fed5b2f6e1cc3850034d36eee31a8cd421",
+          "18cb4b023930cd2023a977872f42a1b1af1de89769d616614864fe1f178cf081",
+          "c47acf53d36d33f026879466e15920cbe72265dafd0b132c92421ff2e1740c3d",
+          "1f1a069d41e1490760816401e20d6f6405e6c925859ef0dbbef36a1c9f314cfb",
+          "52a500afc6240d3eab88ad47c267619d93c3706f0cbbacb48824cf4bc2c17268",
+          "47c4d71909291ab3090977521c6360bffedf637f83d3614c81814a7944c4e8fc",
+          "b594848f00fc77aa2d9aed0bdee133173f91a24a55627b30ecfea78450e3b889",
+          "fefae0725813485a0b6e0dd2ca4caa1d37a3265fe21e3a0914709950d2d78035",
+          "40e97ce5631cbb14767f13125570312b9ee39f6eb04745fd55a5bb6173b97f8b",
+          "fc55aee9e7ac2b09359fb7a1edecf0eb737affb374d5f2085ab9533516b3a7e0",
+          "d7a519576ddd7c363cfb6dc83606aa82a31f108de0eed177bc8867e7b3ed0f11"
+        ],
+        "cache_hits": 0,
+        "cache_corrupt": 0,
+        "cache_writes": 31,
+        "cache_write_errors": 0,
+        "compiler_executions": 31,
+        "ready_objects": 31,
+        "cache_keys": [
+          "1db0a9b43693dba7fed9a21b6e3c791a6c41598a5b72c5f0441e04dc16447605",
+          "e106f8a95acc10b2306e1832d1d31d67e0aa57d8457a82f327f857324ec8e42c",
+          "02ec8eb20dd90946860d4507ed0353407c23b4577a7caef5d059de8d75ed3c88",
+          "b72efc0a8dd086bfd7158fd714de8b13cd97204757b7e569055f5fae0ac1bcc6",
+          "6c2813a9a441b0778966fc8934fb7da57725e76b0efa497cd366e3db41595022",
+          "805bd9428996b736c37195b8b7c87d589a072f7c0c5d3aa3c39d4ba24410da49",
+          "b521152836378c9076f6a8b68c89f34b15398235a2455a5888dc109e8732b583",
+          "1c6f977e8b54456901bdec23684a98291515d935483a6f5943f28a972af058d0",
+          "85fb0c3297dcadcc0c40db1ce53c5449e60a9084cb1d41a1b19d5190df3014e3",
+          "2cce3505b5134f7b7232564bc7d8a575fb9f1c341681ece211d81f580e988be1",
+          "32bedfbb0a669c42fcd2681cda758774f87aef66f34496c536b4d25fef1bd8f5",
+          "9e42854778e5d7b6ea1aab6a435fa66add62c1fb9addcb30a0a0246ef82fd4f3",
+          "eeabd85a9134f9712b804690519600c369fe31da295954a02e6604768ad6ec2e",
+          "95135cdc44c2f22f8541162cf6f60573572ffd26149f22c3ad422fe2ef54d0b4",
+          "da3ec20e709876588fd822cb562a0ce059b858d4da06a938b78d2778f6b25951",
+          "a76076a524fef402f2e54da43480cd8af7f8ffa54f03c12af7ac74c9b430a034",
+          "248f729ccbb6bccd35590df31cc596d2c92fedc4988ab9c1cfb15661854e203a",
+          "c0d8d886e35eb6af6eada044c4c88fb0a3ff5d9ed0fa57b7ed72cbf86614cc58",
+          "fcfbf14529842f3d2d977110297af68194594fe63a787eb5768f98e6ffed7c94",
+          "75afcdd254bd33425d11d7491a2b1d33e4573a3567eef92100c9d3e3a1e8b84f",
+          "7e1bc4d817f560bf14cde8c50043b57df65f804e9a4bf86d00caae4bb6abd013",
+          "86a454a5515a2abd19ef37a80c98e50f987062dab1aa7778ff4bab45117d9331",
+          "e438d42a7b3bb1dcf197f2ce03c684d613696ad4308a0e342e0b8b71ae5b276a",
+          "273e2fdd7cbd05c85ad29a11c29501de82ff160d9f670103a6fe0c2ba33682a3",
+          "de15459625a814d8eb7d2e29ce43dd304ab44705cd8d7b6bbcf161fecdfbb30d",
+          "c8f2f4af9231ef609c333cef8f39f245d36c9ce936e49a1448b6a5fe4cac164e",
+          "4dc72580176b40e7d219f0cbf4fe3c3a2780fc2a873d65abb3d8d5e1a67d6226",
+          "040d0fad17a86277a2347bcf58f9bd6cdcf181f73800a2e430405bdf23d4a414",
+          "fb2d34334fcad985132c30ae4bafdcd3672f8734f099abd8743fd63690ed46fc",
+          "f674a1fd86688602d6e2bb2063701c5e6e04fc10020929f786e29c92a982caa1",
+          "b1884a2670806221b97a43b4be83f6284440682e4afaa6e893a88ba3c521f00f"
+        ]
+      }
+    },
+    {
+      "check": "warm-all-hit",
+      "passed": true,
+      "result": {
+        "correct": true,
+        "workers": 8,
+        "compiled": 0,
+        "errors": 0,
+        "warnings": 0,
+        "job_count": 31,
+        "peak_active": 0,
+        "link_calls": 1,
+        "link_result": 0,
+        "can_run_again": true,
+        "retry_result": 0,
+        "setup_ns": 13095635,
+        "compile_wall_ns": 801,
+        "link_ns": 5451010,
+        "workload_ns": 18641414,
+        "peak_rss_bytes": 66514944,
+        "jobs": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "buffer_hits": 31,
+        "buffer_bytes": 917680,
+        "buffer_misses": 0,
+        "object_sizes": [
+          760,
+          6608,
+          8024,
+          9304,
+          6264,
+          784,
+          7288,
+          1776,
+          7280,
+          6136,
+          28872,
+          116760,
+          2888,
+          9648,
+          8472,
+          46640,
+          43344,
+          223264,
+          11216,
+          62808,
+          4176,
+          24800,
+          55984,
+          3808,
+          34904,
+          70664,
+          27528,
+          44680,
+          16320,
+          25728,
+          952
+        ],
+        "export_ns": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "object_sha256": [
+          "a9998f0f4fea077f9a22193d3a41f252e4fd87b3f98a41e86aadc3305b8862e3",
+          "45b8d74e295962a38b5d9ae223488f24240a5ead718296ec9046013e06bcf76f",
+          "bdec1efe91ac56a9ab81acdc5b5d8767a7160913e39121b953514135f5505292",
+          "57d03f6a6225710913f2495c2bf137fc2ee22bf26d594ea7a96a814c261623e8",
+          "0657b745b9a4ff77576ec735a6df58ae876cf27a0f33e66e34b4f0c3d353e5da",
+          "d0e5791b4e19f8e4f4c1942c328e1f9e56e16c18b9133384792f35e1b4a98bd6",
+          "63306846a7f3b657e69eff542569a965810eca9fe9bdea935db44cdbd01ccf52",
+          "6907393237e41eafdcf54412e7625929fcbb281fa43200a00b50248adce570b7",
+          "e4e098b2fe639dfcc467c1875dff87c1c2e8b2e7924f651d821d1660b5babd26",
+          "d4ce2f163d867efb5e7c7dad4ad1c5439d82ab4dc4c44977e3faf5fe50aa3abd",
+          "3c483375a9fc328572a078809ba153099985105334ecc8e69b5bab1843c18e23",
+          "a4fbd50e15fac16486008b99adc24910626c7e3894236e97b80f601883cd0da4",
+          "dab1a4e283772d515bf44418ffa193ff8a01301b0244d4e0a7476d3454993bd7",
+          "fb90c944fc243c1a787dc5317d54e889bc52f8e3f21a27d29e133a381a821b43",
+          "59fdd5421e3529ff28d9778084daf86a82514dbba366fc1033665cccb2513ce4",
+          "e13715ff2b1e86d757c54e92474d5d822f9d01bad2361c2d0c8ef49c44d8191c",
+          "ae8e982205c19cc13674b9bd3d9fd32eedf4fe95b63bf0e6b0aeb0719a85e040",
+          "ceaffd3aee3f9ffc140ffd9e69331afbeeff59aafc3e238d69602bdba097a1c3",
+          "82e8d57aedbf91a4610529b5828b019cd0d1bb73123eac66c86f145c1dd319d6",
+          "361c40e87766e43cb583720fee32009a4eb450e53af1bf750d5795fa7c6902b6",
+          "d2dbf35c08bec581a9c686d4254ad7fed5b2f6e1cc3850034d36eee31a8cd421",
+          "18cb4b023930cd2023a977872f42a1b1af1de89769d616614864fe1f178cf081",
+          "c47acf53d36d33f026879466e15920cbe72265dafd0b132c92421ff2e1740c3d",
+          "1f1a069d41e1490760816401e20d6f6405e6c925859ef0dbbef36a1c9f314cfb",
+          "52a500afc6240d3eab88ad47c267619d93c3706f0cbbacb48824cf4bc2c17268",
+          "47c4d71909291ab3090977521c6360bffedf637f83d3614c81814a7944c4e8fc",
+          "b594848f00fc77aa2d9aed0bdee133173f91a24a55627b30ecfea78450e3b889",
+          "fefae0725813485a0b6e0dd2ca4caa1d37a3265fe21e3a0914709950d2d78035",
+          "40e97ce5631cbb14767f13125570312b9ee39f6eb04745fd55a5bb6173b97f8b",
+          "fc55aee9e7ac2b09359fb7a1edecf0eb737affb374d5f2085ab9533516b3a7e0",
+          "d7a519576ddd7c363cfb6dc83606aa82a31f108de0eed177bc8867e7b3ed0f11"
+        ],
+        "cache_hits": 31,
+        "cache_corrupt": 0,
+        "cache_writes": 0,
+        "cache_write_errors": 0,
+        "compiler_executions": 0,
+        "ready_objects": 31,
+        "cache_keys": [
+          "1db0a9b43693dba7fed9a21b6e3c791a6c41598a5b72c5f0441e04dc16447605",
+          "e106f8a95acc10b2306e1832d1d31d67e0aa57d8457a82f327f857324ec8e42c",
+          "02ec8eb20dd90946860d4507ed0353407c23b4577a7caef5d059de8d75ed3c88",
+          "b72efc0a8dd086bfd7158fd714de8b13cd97204757b7e569055f5fae0ac1bcc6",
+          "6c2813a9a441b0778966fc8934fb7da57725e76b0efa497cd366e3db41595022",
+          "805bd9428996b736c37195b8b7c87d589a072f7c0c5d3aa3c39d4ba24410da49",
+          "b521152836378c9076f6a8b68c89f34b15398235a2455a5888dc109e8732b583",
+          "1c6f977e8b54456901bdec23684a98291515d935483a6f5943f28a972af058d0",
+          "85fb0c3297dcadcc0c40db1ce53c5449e60a9084cb1d41a1b19d5190df3014e3",
+          "2cce3505b5134f7b7232564bc7d8a575fb9f1c341681ece211d81f580e988be1",
+          "32bedfbb0a669c42fcd2681cda758774f87aef66f34496c536b4d25fef1bd8f5",
+          "9e42854778e5d7b6ea1aab6a435fa66add62c1fb9addcb30a0a0246ef82fd4f3",
+          "eeabd85a9134f9712b804690519600c369fe31da295954a02e6604768ad6ec2e",
+          "95135cdc44c2f22f8541162cf6f60573572ffd26149f22c3ad422fe2ef54d0b4",
+          "da3ec20e709876588fd822cb562a0ce059b858d4da06a938b78d2778f6b25951",
+          "a76076a524fef402f2e54da43480cd8af7f8ffa54f03c12af7ac74c9b430a034",
+          "248f729ccbb6bccd35590df31cc596d2c92fedc4988ab9c1cfb15661854e203a",
+          "c0d8d886e35eb6af6eada044c4c88fb0a3ff5d9ed0fa57b7ed72cbf86614cc58",
+          "fcfbf14529842f3d2d977110297af68194594fe63a787eb5768f98e6ffed7c94",
+          "75afcdd254bd33425d11d7491a2b1d33e4573a3567eef92100c9d3e3a1e8b84f",
+          "7e1bc4d817f560bf14cde8c50043b57df65f804e9a4bf86d00caae4bb6abd013",
+          "86a454a5515a2abd19ef37a80c98e50f987062dab1aa7778ff4bab45117d9331",
+          "e438d42a7b3bb1dcf197f2ce03c684d613696ad4308a0e342e0b8b71ae5b276a",
+          "273e2fdd7cbd05c85ad29a11c29501de82ff160d9f670103a6fe0c2ba33682a3",
+          "de15459625a814d8eb7d2e29ce43dd304ab44705cd8d7b6bbcf161fecdfbb30d",
+          "c8f2f4af9231ef609c333cef8f39f245d36c9ce936e49a1448b6a5fe4cac164e",
+          "4dc72580176b40e7d219f0cbf4fe3c3a2780fc2a873d65abb3d8d5e1a67d6226",
+          "040d0fad17a86277a2347bcf58f9bd6cdcf181f73800a2e430405bdf23d4a414",
+          "fb2d34334fcad985132c30ae4bafdcd3672f8734f099abd8743fd63690ed46fc",
+          "f674a1fd86688602d6e2bb2063701c5e6e04fc10020929f786e29c92a982caa1",
+          "b1884a2670806221b97a43b4be83f6284440682e4afaa6e893a88ba3c521f00f"
+        ]
+      }
+    },
+    {
+      "check": "reject-and-repair-payload",
+      "passed": true,
+      "result": {
+        "correct": true,
+        "workers": 8,
+        "compiled": 1,
+        "errors": 0,
+        "warnings": 0,
+        "job_count": 31,
+        "peak_active": 1,
+        "link_calls": 1,
+        "link_result": 0,
+        "can_run_again": true,
+        "retry_result": 0,
+        "setup_ns": 13392524,
+        "compile_wall_ns": 14253413,
+        "link_ns": 5217347,
+        "workload_ns": 32955788,
+        "peak_rss_bytes": 107065344,
+        "jobs": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            14103614,
+            27337958
+          ]
+        ],
+        "buffer_hits": 31,
+        "buffer_bytes": 917680,
+        "buffer_misses": 0,
+        "object_sizes": [
+          760,
+          6608,
+          8024,
+          9304,
+          6264,
+          784,
+          7288,
+          1776,
+          7280,
+          6136,
+          28872,
+          116760,
+          2888,
+          9648,
+          8472,
+          46640,
+          43344,
+          223264,
+          11216,
+          62808,
+          4176,
+          24800,
+          55984,
+          3808,
+          34904,
+          70664,
+          27528,
+          44680,
+          16320,
+          25728,
+          952
+        ],
+        "export_ns": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "object_sha256": [
+          "a9998f0f4fea077f9a22193d3a41f252e4fd87b3f98a41e86aadc3305b8862e3",
+          "45b8d74e295962a38b5d9ae223488f24240a5ead718296ec9046013e06bcf76f",
+          "bdec1efe91ac56a9ab81acdc5b5d8767a7160913e39121b953514135f5505292",
+          "57d03f6a6225710913f2495c2bf137fc2ee22bf26d594ea7a96a814c261623e8",
+          "0657b745b9a4ff77576ec735a6df58ae876cf27a0f33e66e34b4f0c3d353e5da",
+          "d0e5791b4e19f8e4f4c1942c328e1f9e56e16c18b9133384792f35e1b4a98bd6",
+          "63306846a7f3b657e69eff542569a965810eca9fe9bdea935db44cdbd01ccf52",
+          "6907393237e41eafdcf54412e7625929fcbb281fa43200a00b50248adce570b7",
+          "e4e098b2fe639dfcc467c1875dff87c1c2e8b2e7924f651d821d1660b5babd26",
+          "d4ce2f163d867efb5e7c7dad4ad1c5439d82ab4dc4c44977e3faf5fe50aa3abd",
+          "3c483375a9fc328572a078809ba153099985105334ecc8e69b5bab1843c18e23",
+          "a4fbd50e15fac16486008b99adc24910626c7e3894236e97b80f601883cd0da4",
+          "dab1a4e283772d515bf44418ffa193ff8a01301b0244d4e0a7476d3454993bd7",
+          "fb90c944fc243c1a787dc5317d54e889bc52f8e3f21a27d29e133a381a821b43",
+          "59fdd5421e3529ff28d9778084daf86a82514dbba366fc1033665cccb2513ce4",
+          "e13715ff2b1e86d757c54e92474d5d822f9d01bad2361c2d0c8ef49c44d8191c",
+          "ae8e982205c19cc13674b9bd3d9fd32eedf4fe95b63bf0e6b0aeb0719a85e040",
+          "ceaffd3aee3f9ffc140ffd9e69331afbeeff59aafc3e238d69602bdba097a1c3",
+          "82e8d57aedbf91a4610529b5828b019cd0d1bb73123eac66c86f145c1dd319d6",
+          "361c40e87766e43cb583720fee32009a4eb450e53af1bf750d5795fa7c6902b6",
+          "d2dbf35c08bec581a9c686d4254ad7fed5b2f6e1cc3850034d36eee31a8cd421",
+          "18cb4b023930cd2023a977872f42a1b1af1de89769d616614864fe1f178cf081",
+          "c47acf53d36d33f026879466e15920cbe72265dafd0b132c92421ff2e1740c3d",
+          "1f1a069d41e1490760816401e20d6f6405e6c925859ef0dbbef36a1c9f314cfb",
+          "52a500afc6240d3eab88ad47c267619d93c3706f0cbbacb48824cf4bc2c17268",
+          "47c4d71909291ab3090977521c6360bffedf637f83d3614c81814a7944c4e8fc",
+          "b594848f00fc77aa2d9aed0bdee133173f91a24a55627b30ecfea78450e3b889",
+          "fefae0725813485a0b6e0dd2ca4caa1d37a3265fe21e3a0914709950d2d78035",
+          "40e97ce5631cbb14767f13125570312b9ee39f6eb04745fd55a5bb6173b97f8b",
+          "fc55aee9e7ac2b09359fb7a1edecf0eb737affb374d5f2085ab9533516b3a7e0",
+          "d7a519576ddd7c363cfb6dc83606aa82a31f108de0eed177bc8867e7b3ed0f11"
+        ],
+        "cache_hits": 30,
+        "cache_corrupt": 1,
+        "cache_writes": 1,
+        "cache_write_errors": 0,
+        "compiler_executions": 1,
+        "ready_objects": 31,
+        "cache_keys": [
+          "1db0a9b43693dba7fed9a21b6e3c791a6c41598a5b72c5f0441e04dc16447605",
+          "e106f8a95acc10b2306e1832d1d31d67e0aa57d8457a82f327f857324ec8e42c",
+          "02ec8eb20dd90946860d4507ed0353407c23b4577a7caef5d059de8d75ed3c88",
+          "b72efc0a8dd086bfd7158fd714de8b13cd97204757b7e569055f5fae0ac1bcc6",
+          "6c2813a9a441b0778966fc8934fb7da57725e76b0efa497cd366e3db41595022",
+          "805bd9428996b736c37195b8b7c87d589a072f7c0c5d3aa3c39d4ba24410da49",
+          "b521152836378c9076f6a8b68c89f34b15398235a2455a5888dc109e8732b583",
+          "1c6f977e8b54456901bdec23684a98291515d935483a6f5943f28a972af058d0",
+          "85fb0c3297dcadcc0c40db1ce53c5449e60a9084cb1d41a1b19d5190df3014e3",
+          "2cce3505b5134f7b7232564bc7d8a575fb9f1c341681ece211d81f580e988be1",
+          "32bedfbb0a669c42fcd2681cda758774f87aef66f34496c536b4d25fef1bd8f5",
+          "9e42854778e5d7b6ea1aab6a435fa66add62c1fb9addcb30a0a0246ef82fd4f3",
+          "eeabd85a9134f9712b804690519600c369fe31da295954a02e6604768ad6ec2e",
+          "95135cdc44c2f22f8541162cf6f60573572ffd26149f22c3ad422fe2ef54d0b4",
+          "da3ec20e709876588fd822cb562a0ce059b858d4da06a938b78d2778f6b25951",
+          "a76076a524fef402f2e54da43480cd8af7f8ffa54f03c12af7ac74c9b430a034",
+          "248f729ccbb6bccd35590df31cc596d2c92fedc4988ab9c1cfb15661854e203a",
+          "c0d8d886e35eb6af6eada044c4c88fb0a3ff5d9ed0fa57b7ed72cbf86614cc58",
+          "fcfbf14529842f3d2d977110297af68194594fe63a787eb5768f98e6ffed7c94",
+          "75afcdd254bd33425d11d7491a2b1d33e4573a3567eef92100c9d3e3a1e8b84f",
+          "7e1bc4d817f560bf14cde8c50043b57df65f804e9a4bf86d00caae4bb6abd013",
+          "86a454a5515a2abd19ef37a80c98e50f987062dab1aa7778ff4bab45117d9331",
+          "e438d42a7b3bb1dcf197f2ce03c684d613696ad4308a0e342e0b8b71ae5b276a",
+          "273e2fdd7cbd05c85ad29a11c29501de82ff160d9f670103a6fe0c2ba33682a3",
+          "de15459625a814d8eb7d2e29ce43dd304ab44705cd8d7b6bbcf161fecdfbb30d",
+          "c8f2f4af9231ef609c333cef8f39f245d36c9ce936e49a1448b6a5fe4cac164e",
+          "4dc72580176b40e7d219f0cbf4fe3c3a2780fc2a873d65abb3d8d5e1a67d6226",
+          "040d0fad17a86277a2347bcf58f9bd6cdcf181f73800a2e430405bdf23d4a414",
+          "fb2d34334fcad985132c30ae4bafdcd3672f8734f099abd8743fd63690ed46fc",
+          "f674a1fd86688602d6e2bb2063701c5e6e04fc10020929f786e29c92a982caa1",
+          "b1884a2670806221b97a43b4be83f6284440682e4afaa6e893a88ba3c521f00f"
+        ]
+      },
+      "healed": {
+        "correct": true,
+        "workers": 8,
+        "compiled": 0,
+        "errors": 0,
+        "warnings": 0,
+        "job_count": 31,
+        "peak_active": 0,
+        "link_calls": 1,
+        "link_result": 0,
+        "can_run_again": true,
+        "retry_result": 0,
+        "setup_ns": 12711357,
+        "compile_wall_ns": 501,
+        "link_ns": 7394813,
+        "workload_ns": 20204055,
+        "peak_rss_bytes": 66572288,
+        "jobs": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "buffer_hits": 31,
+        "buffer_bytes": 917680,
+        "buffer_misses": 0,
+        "object_sizes": [
+          760,
+          6608,
+          8024,
+          9304,
+          6264,
+          784,
+          7288,
+          1776,
+          7280,
+          6136,
+          28872,
+          116760,
+          2888,
+          9648,
+          8472,
+          46640,
+          43344,
+          223264,
+          11216,
+          62808,
+          4176,
+          24800,
+          55984,
+          3808,
+          34904,
+          70664,
+          27528,
+          44680,
+          16320,
+          25728,
+          952
+        ],
+        "export_ns": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "object_sha256": [
+          "a9998f0f4fea077f9a22193d3a41f252e4fd87b3f98a41e86aadc3305b8862e3",
+          "45b8d74e295962a38b5d9ae223488f24240a5ead718296ec9046013e06bcf76f",
+          "bdec1efe91ac56a9ab81acdc5b5d8767a7160913e39121b953514135f5505292",
+          "57d03f6a6225710913f2495c2bf137fc2ee22bf26d594ea7a96a814c261623e8",
+          "0657b745b9a4ff77576ec735a6df58ae876cf27a0f33e66e34b4f0c3d353e5da",
+          "d0e5791b4e19f8e4f4c1942c328e1f9e56e16c18b9133384792f35e1b4a98bd6",
+          "63306846a7f3b657e69eff542569a965810eca9fe9bdea935db44cdbd01ccf52",
+          "6907393237e41eafdcf54412e7625929fcbb281fa43200a00b50248adce570b7",
+          "e4e098b2fe639dfcc467c1875dff87c1c2e8b2e7924f651d821d1660b5babd26",
+          "d4ce2f163d867efb5e7c7dad4ad1c5439d82ab4dc4c44977e3faf5fe50aa3abd",
+          "3c483375a9fc328572a078809ba153099985105334ecc8e69b5bab1843c18e23",
+          "a4fbd50e15fac16486008b99adc24910626c7e3894236e97b80f601883cd0da4",
+          "dab1a4e283772d515bf44418ffa193ff8a01301b0244d4e0a7476d3454993bd7",
+          "fb90c944fc243c1a787dc5317d54e889bc52f8e3f21a27d29e133a381a821b43",
+          "59fdd5421e3529ff28d9778084daf86a82514dbba366fc1033665cccb2513ce4",
+          "e13715ff2b1e86d757c54e92474d5d822f9d01bad2361c2d0c8ef49c44d8191c",
+          "ae8e982205c19cc13674b9bd3d9fd32eedf4fe95b63bf0e6b0aeb0719a85e040",
+          "ceaffd3aee3f9ffc140ffd9e69331afbeeff59aafc3e238d69602bdba097a1c3",
+          "82e8d57aedbf91a4610529b5828b019cd0d1bb73123eac66c86f145c1dd319d6",
+          "361c40e87766e43cb583720fee32009a4eb450e53af1bf750d5795fa7c6902b6",
+          "d2dbf35c08bec581a9c686d4254ad7fed5b2f6e1cc3850034d36eee31a8cd421",
+          "18cb4b023930cd2023a977872f42a1b1af1de89769d616614864fe1f178cf081",
+          "c47acf53d36d33f026879466e15920cbe72265dafd0b132c92421ff2e1740c3d",
+          "1f1a069d41e1490760816401e20d6f6405e6c925859ef0dbbef36a1c9f314cfb",
+          "52a500afc6240d3eab88ad47c267619d93c3706f0cbbacb48824cf4bc2c17268",
+          "47c4d71909291ab3090977521c6360bffedf637f83d3614c81814a7944c4e8fc",
+          "b594848f00fc77aa2d9aed0bdee133173f91a24a55627b30ecfea78450e3b889",
+          "fefae0725813485a0b6e0dd2ca4caa1d37a3265fe21e3a0914709950d2d78035",
+          "40e97ce5631cbb14767f13125570312b9ee39f6eb04745fd55a5bb6173b97f8b",
+          "fc55aee9e7ac2b09359fb7a1edecf0eb737affb374d5f2085ab9533516b3a7e0",
+          "d7a519576ddd7c363cfb6dc83606aa82a31f108de0eed177bc8867e7b3ed0f11"
+        ],
+        "cache_hits": 31,
+        "cache_corrupt": 0,
+        "cache_writes": 0,
+        "cache_write_errors": 0,
+        "compiler_executions": 0,
+        "ready_objects": 31,
+        "cache_keys": [
+          "1db0a9b43693dba7fed9a21b6e3c791a6c41598a5b72c5f0441e04dc16447605",
+          "e106f8a95acc10b2306e1832d1d31d67e0aa57d8457a82f327f857324ec8e42c",
+          "02ec8eb20dd90946860d4507ed0353407c23b4577a7caef5d059de8d75ed3c88",
+          "b72efc0a8dd086bfd7158fd714de8b13cd97204757b7e569055f5fae0ac1bcc6",
+          "6c2813a9a441b0778966fc8934fb7da57725e76b0efa497cd366e3db41595022",
+          "805bd9428996b736c37195b8b7c87d589a072f7c0c5d3aa3c39d4ba24410da49",
+          "b521152836378c9076f6a8b68c89f34b15398235a2455a5888dc109e8732b583",
+          "1c6f977e8b54456901bdec23684a98291515d935483a6f5943f28a972af058d0",
+          "85fb0c3297dcadcc0c40db1ce53c5449e60a9084cb1d41a1b19d5190df3014e3",
+          "2cce3505b5134f7b7232564bc7d8a575fb9f1c341681ece211d81f580e988be1",
+          "32bedfbb0a669c42fcd2681cda758774f87aef66f34496c536b4d25fef1bd8f5",
+          "9e42854778e5d7b6ea1aab6a435fa66add62c1fb9addcb30a0a0246ef82fd4f3",
+          "eeabd85a9134f9712b804690519600c369fe31da295954a02e6604768ad6ec2e",
+          "95135cdc44c2f22f8541162cf6f60573572ffd26149f22c3ad422fe2ef54d0b4",
+          "da3ec20e709876588fd822cb562a0ce059b858d4da06a938b78d2778f6b25951",
+          "a76076a524fef402f2e54da43480cd8af7f8ffa54f03c12af7ac74c9b430a034",
+          "248f729ccbb6bccd35590df31cc596d2c92fedc4988ab9c1cfb15661854e203a",
+          "c0d8d886e35eb6af6eada044c4c88fb0a3ff5d9ed0fa57b7ed72cbf86614cc58",
+          "fcfbf14529842f3d2d977110297af68194594fe63a787eb5768f98e6ffed7c94",
+          "75afcdd254bd33425d11d7491a2b1d33e4573a3567eef92100c9d3e3a1e8b84f",
+          "7e1bc4d817f560bf14cde8c50043b57df65f804e9a4bf86d00caae4bb6abd013",
+          "86a454a5515a2abd19ef37a80c98e50f987062dab1aa7778ff4bab45117d9331",
+          "e438d42a7b3bb1dcf197f2ce03c684d613696ad4308a0e342e0b8b71ae5b276a",
+          "273e2fdd7cbd05c85ad29a11c29501de82ff160d9f670103a6fe0c2ba33682a3",
+          "de15459625a814d8eb7d2e29ce43dd304ab44705cd8d7b6bbcf161fecdfbb30d",
+          "c8f2f4af9231ef609c333cef8f39f245d36c9ce936e49a1448b6a5fe4cac164e",
+          "4dc72580176b40e7d219f0cbf4fe3c3a2780fc2a873d65abb3d8d5e1a67d6226",
+          "040d0fad17a86277a2347bcf58f9bd6cdcf181f73800a2e430405bdf23d4a414",
+          "fb2d34334fcad985132c30ae4bafdcd3672f8734f099abd8743fd63690ed46fc",
+          "f674a1fd86688602d6e2bb2063701c5e6e04fc10020929f786e29c92a982caa1",
+          "b1884a2670806221b97a43b4be83f6284440682e4afaa6e893a88ba3c521f00f"
+        ]
+      }
+    },
+    {
+      "check": "reject-and-repair-truncated",
+      "passed": true,
+      "result": {
+        "correct": true,
+        "workers": 8,
+        "compiled": 1,
+        "errors": 0,
+        "warnings": 0,
+        "job_count": 31,
+        "peak_active": 1,
+        "link_calls": 1,
+        "link_result": 0,
+        "can_run_again": true,
+        "retry_result": 0,
+        "setup_ns": 12558047,
+        "compile_wall_ns": 14234393,
+        "link_ns": 7111388,
+        "workload_ns": 34033895,
+        "peak_rss_bytes": 107036672,
+        "jobs": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            13324922,
+            26436187
+          ]
+        ],
+        "buffer_hits": 31,
+        "buffer_bytes": 917680,
+        "buffer_misses": 0,
+        "object_sizes": [
+          760,
+          6608,
+          8024,
+          9304,
+          6264,
+          784,
+          7288,
+          1776,
+          7280,
+          6136,
+          28872,
+          116760,
+          2888,
+          9648,
+          8472,
+          46640,
+          43344,
+          223264,
+          11216,
+          62808,
+          4176,
+          24800,
+          55984,
+          3808,
+          34904,
+          70664,
+          27528,
+          44680,
+          16320,
+          25728,
+          952
+        ],
+        "export_ns": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "object_sha256": [
+          "a9998f0f4fea077f9a22193d3a41f252e4fd87b3f98a41e86aadc3305b8862e3",
+          "45b8d74e295962a38b5d9ae223488f24240a5ead718296ec9046013e06bcf76f",
+          "bdec1efe91ac56a9ab81acdc5b5d8767a7160913e39121b953514135f5505292",
+          "57d03f6a6225710913f2495c2bf137fc2ee22bf26d594ea7a96a814c261623e8",
+          "0657b745b9a4ff77576ec735a6df58ae876cf27a0f33e66e34b4f0c3d353e5da",
+          "d0e5791b4e19f8e4f4c1942c328e1f9e56e16c18b9133384792f35e1b4a98bd6",
+          "63306846a7f3b657e69eff542569a965810eca9fe9bdea935db44cdbd01ccf52",
+          "6907393237e41eafdcf54412e7625929fcbb281fa43200a00b50248adce570b7",
+          "e4e098b2fe639dfcc467c1875dff87c1c2e8b2e7924f651d821d1660b5babd26",
+          "d4ce2f163d867efb5e7c7dad4ad1c5439d82ab4dc4c44977e3faf5fe50aa3abd",
+          "3c483375a9fc328572a078809ba153099985105334ecc8e69b5bab1843c18e23",
+          "a4fbd50e15fac16486008b99adc24910626c7e3894236e97b80f601883cd0da4",
+          "dab1a4e283772d515bf44418ffa193ff8a01301b0244d4e0a7476d3454993bd7",
+          "fb90c944fc243c1a787dc5317d54e889bc52f8e3f21a27d29e133a381a821b43",
+          "59fdd5421e3529ff28d9778084daf86a82514dbba366fc1033665cccb2513ce4",
+          "e13715ff2b1e86d757c54e92474d5d822f9d01bad2361c2d0c8ef49c44d8191c",
+          "ae8e982205c19cc13674b9bd3d9fd32eedf4fe95b63bf0e6b0aeb0719a85e040",
+          "ceaffd3aee3f9ffc140ffd9e69331afbeeff59aafc3e238d69602bdba097a1c3",
+          "82e8d57aedbf91a4610529b5828b019cd0d1bb73123eac66c86f145c1dd319d6",
+          "361c40e87766e43cb583720fee32009a4eb450e53af1bf750d5795fa7c6902b6",
+          "d2dbf35c08bec581a9c686d4254ad7fed5b2f6e1cc3850034d36eee31a8cd421",
+          "18cb4b023930cd2023a977872f42a1b1af1de89769d616614864fe1f178cf081",
+          "c47acf53d36d33f026879466e15920cbe72265dafd0b132c92421ff2e1740c3d",
+          "1f1a069d41e1490760816401e20d6f6405e6c925859ef0dbbef36a1c9f314cfb",
+          "52a500afc6240d3eab88ad47c267619d93c3706f0cbbacb48824cf4bc2c17268",
+          "47c4d71909291ab3090977521c6360bffedf637f83d3614c81814a7944c4e8fc",
+          "b594848f00fc77aa2d9aed0bdee133173f91a24a55627b30ecfea78450e3b889",
+          "fefae0725813485a0b6e0dd2ca4caa1d37a3265fe21e3a0914709950d2d78035",
+          "40e97ce5631cbb14767f13125570312b9ee39f6eb04745fd55a5bb6173b97f8b",
+          "fc55aee9e7ac2b09359fb7a1edecf0eb737affb374d5f2085ab9533516b3a7e0",
+          "d7a519576ddd7c363cfb6dc83606aa82a31f108de0eed177bc8867e7b3ed0f11"
+        ],
+        "cache_hits": 30,
+        "cache_corrupt": 1,
+        "cache_writes": 1,
+        "cache_write_errors": 0,
+        "compiler_executions": 1,
+        "ready_objects": 31,
+        "cache_keys": [
+          "1db0a9b43693dba7fed9a21b6e3c791a6c41598a5b72c5f0441e04dc16447605",
+          "e106f8a95acc10b2306e1832d1d31d67e0aa57d8457a82f327f857324ec8e42c",
+          "02ec8eb20dd90946860d4507ed0353407c23b4577a7caef5d059de8d75ed3c88",
+          "b72efc0a8dd086bfd7158fd714de8b13cd97204757b7e569055f5fae0ac1bcc6",
+          "6c2813a9a441b0778966fc8934fb7da57725e76b0efa497cd366e3db41595022",
+          "805bd9428996b736c37195b8b7c87d589a072f7c0c5d3aa3c39d4ba24410da49",
+          "b521152836378c9076f6a8b68c89f34b15398235a2455a5888dc109e8732b583",
+          "1c6f977e8b54456901bdec23684a98291515d935483a6f5943f28a972af058d0",
+          "85fb0c3297dcadcc0c40db1ce53c5449e60a9084cb1d41a1b19d5190df3014e3",
+          "2cce3505b5134f7b7232564bc7d8a575fb9f1c341681ece211d81f580e988be1",
+          "32bedfbb0a669c42fcd2681cda758774f87aef66f34496c536b4d25fef1bd8f5",
+          "9e42854778e5d7b6ea1aab6a435fa66add62c1fb9addcb30a0a0246ef82fd4f3",
+          "eeabd85a9134f9712b804690519600c369fe31da295954a02e6604768ad6ec2e",
+          "95135cdc44c2f22f8541162cf6f60573572ffd26149f22c3ad422fe2ef54d0b4",
+          "da3ec20e709876588fd822cb562a0ce059b858d4da06a938b78d2778f6b25951",
+          "a76076a524fef402f2e54da43480cd8af7f8ffa54f03c12af7ac74c9b430a034",
+          "248f729ccbb6bccd35590df31cc596d2c92fedc4988ab9c1cfb15661854e203a",
+          "c0d8d886e35eb6af6eada044c4c88fb0a3ff5d9ed0fa57b7ed72cbf86614cc58",
+          "fcfbf14529842f3d2d977110297af68194594fe63a787eb5768f98e6ffed7c94",
+          "75afcdd254bd33425d11d7491a2b1d33e4573a3567eef92100c9d3e3a1e8b84f",
+          "7e1bc4d817f560bf14cde8c50043b57df65f804e9a4bf86d00caae4bb6abd013",
+          "86a454a5515a2abd19ef37a80c98e50f987062dab1aa7778ff4bab45117d9331",
+          "e438d42a7b3bb1dcf197f2ce03c684d613696ad4308a0e342e0b8b71ae5b276a",
+          "273e2fdd7cbd05c85ad29a11c29501de82ff160d9f670103a6fe0c2ba33682a3",
+          "de15459625a814d8eb7d2e29ce43dd304ab44705cd8d7b6bbcf161fecdfbb30d",
+          "c8f2f4af9231ef609c333cef8f39f245d36c9ce936e49a1448b6a5fe4cac164e",
+          "4dc72580176b40e7d219f0cbf4fe3c3a2780fc2a873d65abb3d8d5e1a67d6226",
+          "040d0fad17a86277a2347bcf58f9bd6cdcf181f73800a2e430405bdf23d4a414",
+          "fb2d34334fcad985132c30ae4bafdcd3672f8734f099abd8743fd63690ed46fc",
+          "f674a1fd86688602d6e2bb2063701c5e6e04fc10020929f786e29c92a982caa1",
+          "b1884a2670806221b97a43b4be83f6284440682e4afaa6e893a88ba3c521f00f"
+        ]
+      },
+      "healed": {
+        "correct": true,
+        "workers": 8,
+        "compiled": 0,
+        "errors": 0,
+        "warnings": 0,
+        "job_count": 31,
+        "peak_active": 0,
+        "link_calls": 1,
+        "link_result": 0,
+        "can_run_again": true,
+        "retry_result": 0,
+        "setup_ns": 14250584,
+        "compile_wall_ns": 892,
+        "link_ns": 9118161,
+        "workload_ns": 23475629,
+        "peak_rss_bytes": 66514944,
+        "jobs": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "buffer_hits": 31,
+        "buffer_bytes": 917680,
+        "buffer_misses": 0,
+        "object_sizes": [
+          760,
+          6608,
+          8024,
+          9304,
+          6264,
+          784,
+          7288,
+          1776,
+          7280,
+          6136,
+          28872,
+          116760,
+          2888,
+          9648,
+          8472,
+          46640,
+          43344,
+          223264,
+          11216,
+          62808,
+          4176,
+          24800,
+          55984,
+          3808,
+          34904,
+          70664,
+          27528,
+          44680,
+          16320,
+          25728,
+          952
+        ],
+        "export_ns": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "object_sha256": [
+          "a9998f0f4fea077f9a22193d3a41f252e4fd87b3f98a41e86aadc3305b8862e3",
+          "45b8d74e295962a38b5d9ae223488f24240a5ead718296ec9046013e06bcf76f",
+          "bdec1efe91ac56a9ab81acdc5b5d8767a7160913e39121b953514135f5505292",
+          "57d03f6a6225710913f2495c2bf137fc2ee22bf26d594ea7a96a814c261623e8",
+          "0657b745b9a4ff77576ec735a6df58ae876cf27a0f33e66e34b4f0c3d353e5da",
+          "d0e5791b4e19f8e4f4c1942c328e1f9e56e16c18b9133384792f35e1b4a98bd6",
+          "63306846a7f3b657e69eff542569a965810eca9fe9bdea935db44cdbd01ccf52",
+          "6907393237e41eafdcf54412e7625929fcbb281fa43200a00b50248adce570b7",
+          "e4e098b2fe639dfcc467c1875dff87c1c2e8b2e7924f651d821d1660b5babd26",
+          "d4ce2f163d867efb5e7c7dad4ad1c5439d82ab4dc4c44977e3faf5fe50aa3abd",
+          "3c483375a9fc328572a078809ba153099985105334ecc8e69b5bab1843c18e23",
+          "a4fbd50e15fac16486008b99adc24910626c7e3894236e97b80f601883cd0da4",
+          "dab1a4e283772d515bf44418ffa193ff8a01301b0244d4e0a7476d3454993bd7",
+          "fb90c944fc243c1a787dc5317d54e889bc52f8e3f21a27d29e133a381a821b43",
+          "59fdd5421e3529ff28d9778084daf86a82514dbba366fc1033665cccb2513ce4",
+          "e13715ff2b1e86d757c54e92474d5d822f9d01bad2361c2d0c8ef49c44d8191c",
+          "ae8e982205c19cc13674b9bd3d9fd32eedf4fe95b63bf0e6b0aeb0719a85e040",
+          "ceaffd3aee3f9ffc140ffd9e69331afbeeff59aafc3e238d69602bdba097a1c3",
+          "82e8d57aedbf91a4610529b5828b019cd0d1bb73123eac66c86f145c1dd319d6",
+          "361c40e87766e43cb583720fee32009a4eb450e53af1bf750d5795fa7c6902b6",
+          "d2dbf35c08bec581a9c686d4254ad7fed5b2f6e1cc3850034d36eee31a8cd421",
+          "18cb4b023930cd2023a977872f42a1b1af1de89769d616614864fe1f178cf081",
+          "c47acf53d36d33f026879466e15920cbe72265dafd0b132c92421ff2e1740c3d",
+          "1f1a069d41e1490760816401e20d6f6405e6c925859ef0dbbef36a1c9f314cfb",
+          "52a500afc6240d3eab88ad47c267619d93c3706f0cbbacb48824cf4bc2c17268",
+          "47c4d71909291ab3090977521c6360bffedf637f83d3614c81814a7944c4e8fc",
+          "b594848f00fc77aa2d9aed0bdee133173f91a24a55627b30ecfea78450e3b889",
+          "fefae0725813485a0b6e0dd2ca4caa1d37a3265fe21e3a0914709950d2d78035",
+          "40e97ce5631cbb14767f13125570312b9ee39f6eb04745fd55a5bb6173b97f8b",
+          "fc55aee9e7ac2b09359fb7a1edecf0eb737affb374d5f2085ab9533516b3a7e0",
+          "d7a519576ddd7c363cfb6dc83606aa82a31f108de0eed177bc8867e7b3ed0f11"
+        ],
+        "cache_hits": 31,
+        "cache_corrupt": 0,
+        "cache_writes": 0,
+        "cache_write_errors": 0,
+        "compiler_executions": 0,
+        "ready_objects": 31,
+        "cache_keys": [
+          "1db0a9b43693dba7fed9a21b6e3c791a6c41598a5b72c5f0441e04dc16447605",
+          "e106f8a95acc10b2306e1832d1d31d67e0aa57d8457a82f327f857324ec8e42c",
+          "02ec8eb20dd90946860d4507ed0353407c23b4577a7caef5d059de8d75ed3c88",
+          "b72efc0a8dd086bfd7158fd714de8b13cd97204757b7e569055f5fae0ac1bcc6",
+          "6c2813a9a441b0778966fc8934fb7da57725e76b0efa497cd366e3db41595022",
+          "805bd9428996b736c37195b8b7c87d589a072f7c0c5d3aa3c39d4ba24410da49",
+          "b521152836378c9076f6a8b68c89f34b15398235a2455a5888dc109e8732b583",
+          "1c6f977e8b54456901bdec23684a98291515d935483a6f5943f28a972af058d0",
+          "85fb0c3297dcadcc0c40db1ce53c5449e60a9084cb1d41a1b19d5190df3014e3",
+          "2cce3505b5134f7b7232564bc7d8a575fb9f1c341681ece211d81f580e988be1",
+          "32bedfbb0a669c42fcd2681cda758774f87aef66f34496c536b4d25fef1bd8f5",
+          "9e42854778e5d7b6ea1aab6a435fa66add62c1fb9addcb30a0a0246ef82fd4f3",
+          "eeabd85a9134f9712b804690519600c369fe31da295954a02e6604768ad6ec2e",
+          "95135cdc44c2f22f8541162cf6f60573572ffd26149f22c3ad422fe2ef54d0b4",
+          "da3ec20e709876588fd822cb562a0ce059b858d4da06a938b78d2778f6b25951",
+          "a76076a524fef402f2e54da43480cd8af7f8ffa54f03c12af7ac74c9b430a034",
+          "248f729ccbb6bccd35590df31cc596d2c92fedc4988ab9c1cfb15661854e203a",
+          "c0d8d886e35eb6af6eada044c4c88fb0a3ff5d9ed0fa57b7ed72cbf86614cc58",
+          "fcfbf14529842f3d2d977110297af68194594fe63a787eb5768f98e6ffed7c94",
+          "75afcdd254bd33425d11d7491a2b1d33e4573a3567eef92100c9d3e3a1e8b84f",
+          "7e1bc4d817f560bf14cde8c50043b57df65f804e9a4bf86d00caae4bb6abd013",
+          "86a454a5515a2abd19ef37a80c98e50f987062dab1aa7778ff4bab45117d9331",
+          "e438d42a7b3bb1dcf197f2ce03c684d613696ad4308a0e342e0b8b71ae5b276a",
+          "273e2fdd7cbd05c85ad29a11c29501de82ff160d9f670103a6fe0c2ba33682a3",
+          "de15459625a814d8eb7d2e29ce43dd304ab44705cd8d7b6bbcf161fecdfbb30d",
+          "c8f2f4af9231ef609c333cef8f39f245d36c9ce936e49a1448b6a5fe4cac164e",
+          "4dc72580176b40e7d219f0cbf4fe3c3a2780fc2a873d65abb3d8d5e1a67d6226",
+          "040d0fad17a86277a2347bcf58f9bd6cdcf181f73800a2e430405bdf23d4a414",
+          "fb2d34334fcad985132c30ae4bafdcd3672f8734f099abd8743fd63690ed46fc",
+          "f674a1fd86688602d6e2bb2063701c5e6e04fc10020929f786e29c92a982caa1",
+          "b1884a2670806221b97a43b4be83f6284440682e4afaa6e893a88ba3c521f00f"
+        ]
+      }
+    },
+    {
+      "check": "reject-and-repair-entry-key",
+      "passed": true,
+      "result": {
+        "correct": true,
+        "workers": 8,
+        "compiled": 1,
+        "errors": 0,
+        "warnings": 0,
+        "job_count": 31,
+        "peak_active": 1,
+        "link_calls": 1,
+        "link_result": 0,
+        "can_run_again": true,
+        "retry_result": 0,
+        "setup_ns": 12461965,
+        "compile_wall_ns": 13213128,
+        "link_ns": 7126424,
+        "workload_ns": 32923228,
+        "peak_rss_bytes": 107147264,
+        "jobs": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            12990075,
+            25329356
+          ]
+        ],
+        "buffer_hits": 31,
+        "buffer_bytes": 917680,
+        "buffer_misses": 0,
+        "object_sizes": [
+          760,
+          6608,
+          8024,
+          9304,
+          6264,
+          784,
+          7288,
+          1776,
+          7280,
+          6136,
+          28872,
+          116760,
+          2888,
+          9648,
+          8472,
+          46640,
+          43344,
+          223264,
+          11216,
+          62808,
+          4176,
+          24800,
+          55984,
+          3808,
+          34904,
+          70664,
+          27528,
+          44680,
+          16320,
+          25728,
+          952
+        ],
+        "export_ns": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "object_sha256": [
+          "a9998f0f4fea077f9a22193d3a41f252e4fd87b3f98a41e86aadc3305b8862e3",
+          "45b8d74e295962a38b5d9ae223488f24240a5ead718296ec9046013e06bcf76f",
+          "bdec1efe91ac56a9ab81acdc5b5d8767a7160913e39121b953514135f5505292",
+          "57d03f6a6225710913f2495c2bf137fc2ee22bf26d594ea7a96a814c261623e8",
+          "0657b745b9a4ff77576ec735a6df58ae876cf27a0f33e66e34b4f0c3d353e5da",
+          "d0e5791b4e19f8e4f4c1942c328e1f9e56e16c18b9133384792f35e1b4a98bd6",
+          "63306846a7f3b657e69eff542569a965810eca9fe9bdea935db44cdbd01ccf52",
+          "6907393237e41eafdcf54412e7625929fcbb281fa43200a00b50248adce570b7",
+          "e4e098b2fe639dfcc467c1875dff87c1c2e8b2e7924f651d821d1660b5babd26",
+          "d4ce2f163d867efb5e7c7dad4ad1c5439d82ab4dc4c44977e3faf5fe50aa3abd",
+          "3c483375a9fc328572a078809ba153099985105334ecc8e69b5bab1843c18e23",
+          "a4fbd50e15fac16486008b99adc24910626c7e3894236e97b80f601883cd0da4",
+          "dab1a4e283772d515bf44418ffa193ff8a01301b0244d4e0a7476d3454993bd7",
+          "fb90c944fc243c1a787dc5317d54e889bc52f8e3f21a27d29e133a381a821b43",
+          "59fdd5421e3529ff28d9778084daf86a82514dbba366fc1033665cccb2513ce4",
+          "e13715ff2b1e86d757c54e92474d5d822f9d01bad2361c2d0c8ef49c44d8191c",
+          "ae8e982205c19cc13674b9bd3d9fd32eedf4fe95b63bf0e6b0aeb0719a85e040",
+          "ceaffd3aee3f9ffc140ffd9e69331afbeeff59aafc3e238d69602bdba097a1c3",
+          "82e8d57aedbf91a4610529b5828b019cd0d1bb73123eac66c86f145c1dd319d6",
+          "361c40e87766e43cb583720fee32009a4eb450e53af1bf750d5795fa7c6902b6",
+          "d2dbf35c08bec581a9c686d4254ad7fed5b2f6e1cc3850034d36eee31a8cd421",
+          "18cb4b023930cd2023a977872f42a1b1af1de89769d616614864fe1f178cf081",
+          "c47acf53d36d33f026879466e15920cbe72265dafd0b132c92421ff2e1740c3d",
+          "1f1a069d41e1490760816401e20d6f6405e6c925859ef0dbbef36a1c9f314cfb",
+          "52a500afc6240d3eab88ad47c267619d93c3706f0cbbacb48824cf4bc2c17268",
+          "47c4d71909291ab3090977521c6360bffedf637f83d3614c81814a7944c4e8fc",
+          "b594848f00fc77aa2d9aed0bdee133173f91a24a55627b30ecfea78450e3b889",
+          "fefae0725813485a0b6e0dd2ca4caa1d37a3265fe21e3a0914709950d2d78035",
+          "40e97ce5631cbb14767f13125570312b9ee39f6eb04745fd55a5bb6173b97f8b",
+          "fc55aee9e7ac2b09359fb7a1edecf0eb737affb374d5f2085ab9533516b3a7e0",
+          "d7a519576ddd7c363cfb6dc83606aa82a31f108de0eed177bc8867e7b3ed0f11"
+        ],
+        "cache_hits": 30,
+        "cache_corrupt": 1,
+        "cache_writes": 1,
+        "cache_write_errors": 0,
+        "compiler_executions": 1,
+        "ready_objects": 31,
+        "cache_keys": [
+          "1db0a9b43693dba7fed9a21b6e3c791a6c41598a5b72c5f0441e04dc16447605",
+          "e106f8a95acc10b2306e1832d1d31d67e0aa57d8457a82f327f857324ec8e42c",
+          "02ec8eb20dd90946860d4507ed0353407c23b4577a7caef5d059de8d75ed3c88",
+          "b72efc0a8dd086bfd7158fd714de8b13cd97204757b7e569055f5fae0ac1bcc6",
+          "6c2813a9a441b0778966fc8934fb7da57725e76b0efa497cd366e3db41595022",
+          "805bd9428996b736c37195b8b7c87d589a072f7c0c5d3aa3c39d4ba24410da49",
+          "b521152836378c9076f6a8b68c89f34b15398235a2455a5888dc109e8732b583",
+          "1c6f977e8b54456901bdec23684a98291515d935483a6f5943f28a972af058d0",
+          "85fb0c3297dcadcc0c40db1ce53c5449e60a9084cb1d41a1b19d5190df3014e3",
+          "2cce3505b5134f7b7232564bc7d8a575fb9f1c341681ece211d81f580e988be1",
+          "32bedfbb0a669c42fcd2681cda758774f87aef66f34496c536b4d25fef1bd8f5",
+          "9e42854778e5d7b6ea1aab6a435fa66add62c1fb9addcb30a0a0246ef82fd4f3",
+          "eeabd85a9134f9712b804690519600c369fe31da295954a02e6604768ad6ec2e",
+          "95135cdc44c2f22f8541162cf6f60573572ffd26149f22c3ad422fe2ef54d0b4",
+          "da3ec20e709876588fd822cb562a0ce059b858d4da06a938b78d2778f6b25951",
+          "a76076a524fef402f2e54da43480cd8af7f8ffa54f03c12af7ac74c9b430a034",
+          "248f729ccbb6bccd35590df31cc596d2c92fedc4988ab9c1cfb15661854e203a",
+          "c0d8d886e35eb6af6eada044c4c88fb0a3ff5d9ed0fa57b7ed72cbf86614cc58",
+          "fcfbf14529842f3d2d977110297af68194594fe63a787eb5768f98e6ffed7c94",
+          "75afcdd254bd33425d11d7491a2b1d33e4573a3567eef92100c9d3e3a1e8b84f",
+          "7e1bc4d817f560bf14cde8c50043b57df65f804e9a4bf86d00caae4bb6abd013",
+          "86a454a5515a2abd19ef37a80c98e50f987062dab1aa7778ff4bab45117d9331",
+          "e438d42a7b3bb1dcf197f2ce03c684d613696ad4308a0e342e0b8b71ae5b276a",
+          "273e2fdd7cbd05c85ad29a11c29501de82ff160d9f670103a6fe0c2ba33682a3",
+          "de15459625a814d8eb7d2e29ce43dd304ab44705cd8d7b6bbcf161fecdfbb30d",
+          "c8f2f4af9231ef609c333cef8f39f245d36c9ce936e49a1448b6a5fe4cac164e",
+          "4dc72580176b40e7d219f0cbf4fe3c3a2780fc2a873d65abb3d8d5e1a67d6226",
+          "040d0fad17a86277a2347bcf58f9bd6cdcf181f73800a2e430405bdf23d4a414",
+          "fb2d34334fcad985132c30ae4bafdcd3672f8734f099abd8743fd63690ed46fc",
+          "f674a1fd86688602d6e2bb2063701c5e6e04fc10020929f786e29c92a982caa1",
+          "b1884a2670806221b97a43b4be83f6284440682e4afaa6e893a88ba3c521f00f"
+        ]
+      },
+      "healed": {
+        "correct": true,
+        "workers": 8,
+        "compiled": 0,
+        "errors": 0,
+        "warnings": 0,
+        "job_count": 31,
+        "peak_active": 0,
+        "link_calls": 1,
+        "link_result": 0,
+        "can_run_again": true,
+        "retry_result": 0,
+        "setup_ns": 16308624,
+        "compile_wall_ns": 982,
+        "link_ns": 9206274,
+        "workload_ns": 25603025,
+        "peak_rss_bytes": 66486272,
+        "jobs": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "buffer_hits": 31,
+        "buffer_bytes": 917680,
+        "buffer_misses": 0,
+        "object_sizes": [
+          760,
+          6608,
+          8024,
+          9304,
+          6264,
+          784,
+          7288,
+          1776,
+          7280,
+          6136,
+          28872,
+          116760,
+          2888,
+          9648,
+          8472,
+          46640,
+          43344,
+          223264,
+          11216,
+          62808,
+          4176,
+          24800,
+          55984,
+          3808,
+          34904,
+          70664,
+          27528,
+          44680,
+          16320,
+          25728,
+          952
+        ],
+        "export_ns": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "object_sha256": [
+          "a9998f0f4fea077f9a22193d3a41f252e4fd87b3f98a41e86aadc3305b8862e3",
+          "45b8d74e295962a38b5d9ae223488f24240a5ead718296ec9046013e06bcf76f",
+          "bdec1efe91ac56a9ab81acdc5b5d8767a7160913e39121b953514135f5505292",
+          "57d03f6a6225710913f2495c2bf137fc2ee22bf26d594ea7a96a814c261623e8",
+          "0657b745b9a4ff77576ec735a6df58ae876cf27a0f33e66e34b4f0c3d353e5da",
+          "d0e5791b4e19f8e4f4c1942c328e1f9e56e16c18b9133384792f35e1b4a98bd6",
+          "63306846a7f3b657e69eff542569a965810eca9fe9bdea935db44cdbd01ccf52",
+          "6907393237e41eafdcf54412e7625929fcbb281fa43200a00b50248adce570b7",
+          "e4e098b2fe639dfcc467c1875dff87c1c2e8b2e7924f651d821d1660b5babd26",
+          "d4ce2f163d867efb5e7c7dad4ad1c5439d82ab4dc4c44977e3faf5fe50aa3abd",
+          "3c483375a9fc328572a078809ba153099985105334ecc8e69b5bab1843c18e23",
+          "a4fbd50e15fac16486008b99adc24910626c7e3894236e97b80f601883cd0da4",
+          "dab1a4e283772d515bf44418ffa193ff8a01301b0244d4e0a7476d3454993bd7",
+          "fb90c944fc243c1a787dc5317d54e889bc52f8e3f21a27d29e133a381a821b43",
+          "59fdd5421e3529ff28d9778084daf86a82514dbba366fc1033665cccb2513ce4",
+          "e13715ff2b1e86d757c54e92474d5d822f9d01bad2361c2d0c8ef49c44d8191c",
+          "ae8e982205c19cc13674b9bd3d9fd32eedf4fe95b63bf0e6b0aeb0719a85e040",
+          "ceaffd3aee3f9ffc140ffd9e69331afbeeff59aafc3e238d69602bdba097a1c3",
+          "82e8d57aedbf91a4610529b5828b019cd0d1bb73123eac66c86f145c1dd319d6",
+          "361c40e87766e43cb583720fee32009a4eb450e53af1bf750d5795fa7c6902b6",
+          "d2dbf35c08bec581a9c686d4254ad7fed5b2f6e1cc3850034d36eee31a8cd421",
+          "18cb4b023930cd2023a977872f42a1b1af1de89769d616614864fe1f178cf081",
+          "c47acf53d36d33f026879466e15920cbe72265dafd0b132c92421ff2e1740c3d",
+          "1f1a069d41e1490760816401e20d6f6405e6c925859ef0dbbef36a1c9f314cfb",
+          "52a500afc6240d3eab88ad47c267619d93c3706f0cbbacb48824cf4bc2c17268",
+          "47c4d71909291ab3090977521c6360bffedf637f83d3614c81814a7944c4e8fc",
+          "b594848f00fc77aa2d9aed0bdee133173f91a24a55627b30ecfea78450e3b889",
+          "fefae0725813485a0b6e0dd2ca4caa1d37a3265fe21e3a0914709950d2d78035",
+          "40e97ce5631cbb14767f13125570312b9ee39f6eb04745fd55a5bb6173b97f8b",
+          "fc55aee9e7ac2b09359fb7a1edecf0eb737affb374d5f2085ab9533516b3a7e0",
+          "d7a519576ddd7c363cfb6dc83606aa82a31f108de0eed177bc8867e7b3ed0f11"
+        ],
+        "cache_hits": 31,
+        "cache_corrupt": 0,
+        "cache_writes": 0,
+        "cache_write_errors": 0,
+        "compiler_executions": 0,
+        "ready_objects": 31,
+        "cache_keys": [
+          "1db0a9b43693dba7fed9a21b6e3c791a6c41598a5b72c5f0441e04dc16447605",
+          "e106f8a95acc10b2306e1832d1d31d67e0aa57d8457a82f327f857324ec8e42c",
+          "02ec8eb20dd90946860d4507ed0353407c23b4577a7caef5d059de8d75ed3c88",
+          "b72efc0a8dd086bfd7158fd714de8b13cd97204757b7e569055f5fae0ac1bcc6",
+          "6c2813a9a441b0778966fc8934fb7da57725e76b0efa497cd366e3db41595022",
+          "805bd9428996b736c37195b8b7c87d589a072f7c0c5d3aa3c39d4ba24410da49",
+          "b521152836378c9076f6a8b68c89f34b15398235a2455a5888dc109e8732b583",
+          "1c6f977e8b54456901bdec23684a98291515d935483a6f5943f28a972af058d0",
+          "85fb0c3297dcadcc0c40db1ce53c5449e60a9084cb1d41a1b19d5190df3014e3",
+          "2cce3505b5134f7b7232564bc7d8a575fb9f1c341681ece211d81f580e988be1",
+          "32bedfbb0a669c42fcd2681cda758774f87aef66f34496c536b4d25fef1bd8f5",
+          "9e42854778e5d7b6ea1aab6a435fa66add62c1fb9addcb30a0a0246ef82fd4f3",
+          "eeabd85a9134f9712b804690519600c369fe31da295954a02e6604768ad6ec2e",
+          "95135cdc44c2f22f8541162cf6f60573572ffd26149f22c3ad422fe2ef54d0b4",
+          "da3ec20e709876588fd822cb562a0ce059b858d4da06a938b78d2778f6b25951",
+          "a76076a524fef402f2e54da43480cd8af7f8ffa54f03c12af7ac74c9b430a034",
+          "248f729ccbb6bccd35590df31cc596d2c92fedc4988ab9c1cfb15661854e203a",
+          "c0d8d886e35eb6af6eada044c4c88fb0a3ff5d9ed0fa57b7ed72cbf86614cc58",
+          "fcfbf14529842f3d2d977110297af68194594fe63a787eb5768f98e6ffed7c94",
+          "75afcdd254bd33425d11d7491a2b1d33e4573a3567eef92100c9d3e3a1e8b84f",
+          "7e1bc4d817f560bf14cde8c50043b57df65f804e9a4bf86d00caae4bb6abd013",
+          "86a454a5515a2abd19ef37a80c98e50f987062dab1aa7778ff4bab45117d9331",
+          "e438d42a7b3bb1dcf197f2ce03c684d613696ad4308a0e342e0b8b71ae5b276a",
+          "273e2fdd7cbd05c85ad29a11c29501de82ff160d9f670103a6fe0c2ba33682a3",
+          "de15459625a814d8eb7d2e29ce43dd304ab44705cd8d7b6bbcf161fecdfbb30d",
+          "c8f2f4af9231ef609c333cef8f39f245d36c9ce936e49a1448b6a5fe4cac164e",
+          "4dc72580176b40e7d219f0cbf4fe3c3a2780fc2a873d65abb3d8d5e1a67d6226",
+          "040d0fad17a86277a2347bcf58f9bd6cdcf181f73800a2e430405bdf23d4a414",
+          "fb2d34334fcad985132c30ae4bafdcd3672f8734f099abd8743fd63690ed46fc",
+          "f674a1fd86688602d6e2bb2063701c5e6e04fc10020929f786e29c92a982caa1",
+          "b1884a2670806221b97a43b4be83f6284440682e4afaa6e893a88ba3c521f00f"
+        ]
+      }
+    },
+    {
+      "check": "different-context-id-invalidates-all-same-binary",
+      "passed": true,
+      "result": {
+        "correct": true,
+        "workers": 8,
+        "compiled": 31,
+        "errors": 0,
+        "warnings": 0,
+        "job_count": 31,
+        "peak_active": 8,
+        "link_calls": 1,
+        "link_result": 0,
+        "can_run_again": true,
+        "retry_result": 0,
+        "setup_ns": 11989459,
+        "compile_wall_ns": 4453868778,
+        "link_ns": 42800507,
+        "workload_ns": 4508800679,
+        "peak_rss_bytes": 223838208,
+        "jobs": [
+          [
+            13287299,
+            28789573
+          ],
+          [
+            23856939,
+            202339070
+          ],
+          [
+            13276257,
+            58143786
+          ],
+          [
+            15286968,
+            291425665
+          ],
+          [
+            14781189,
+            118756482
+          ],
+          [
+            15903780,
+            47818121
+          ],
+          [
+            16845171,
+            186425123
+          ],
+          [
+            19381680,
+            98234333
+          ],
+          [
+            29252410,
+            270329424
+          ],
+          [
+            48918306,
+            175477578
+          ],
+          [
+            59219764,
+            969466148
+          ],
+          [
+            98870408,
+            1946097119
+          ],
+          [
+            119328436,
+            222566605
+          ],
+          [
+            176089397,
+            408032851
+          ],
+          [
+            186976909,
+            406540365
+          ],
+          [
+            202938045,
+            1918969123
+          ],
+          [
+            223229922,
+            1847107644
+          ],
+          [
+            271119821,
+            4465223121
+          ],
+          [
+            292043737,
+            618349384
+          ],
+          [
+            407069167,
+            1749041210
+          ],
+          [
+            408708020,
+            511384279
+          ],
+          [
+            512150260,
+            987801939
+          ],
+          [
+            619171000,
+            1971238609
+          ],
+          [
+            970015068,
+            1079469899
+          ],
+          [
+            988539887,
+            1522533508
+          ],
+          [
+            1080559797,
+            2654780444
+          ],
+          [
+            1523336159,
+            1869066421
+          ],
+          [
+            1749782224,
+            2708661869
+          ],
+          [
+            1847854789,
+            2043056595
+          ],
+          [
+            1869797256,
+            2289668019
+          ],
+          [
+            1919645805,
+            1925902331
+          ]
+        ],
+        "buffer_hits": 31,
+        "buffer_bytes": 917680,
+        "buffer_misses": 0,
+        "object_sizes": [
+          760,
+          6608,
+          8024,
+          9304,
+          6264,
+          784,
+          7288,
+          1776,
+          7280,
+          6136,
+          28872,
+          116760,
+          2888,
+          9648,
+          8472,
+          46640,
+          43344,
+          223264,
+          11216,
+          62808,
+          4176,
+          24800,
+          55984,
+          3808,
+          34904,
+          70664,
+          27528,
+          44680,
+          16320,
+          25728,
+          952
+        ],
+        "export_ns": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "object_sha256": [
+          "a9998f0f4fea077f9a22193d3a41f252e4fd87b3f98a41e86aadc3305b8862e3",
+          "45b8d74e295962a38b5d9ae223488f24240a5ead718296ec9046013e06bcf76f",
+          "bdec1efe91ac56a9ab81acdc5b5d8767a7160913e39121b953514135f5505292",
+          "57d03f6a6225710913f2495c2bf137fc2ee22bf26d594ea7a96a814c261623e8",
+          "0657b745b9a4ff77576ec735a6df58ae876cf27a0f33e66e34b4f0c3d353e5da",
+          "d0e5791b4e19f8e4f4c1942c328e1f9e56e16c18b9133384792f35e1b4a98bd6",
+          "63306846a7f3b657e69eff542569a965810eca9fe9bdea935db44cdbd01ccf52",
+          "6907393237e41eafdcf54412e7625929fcbb281fa43200a00b50248adce570b7",
+          "e4e098b2fe639dfcc467c1875dff87c1c2e8b2e7924f651d821d1660b5babd26",
+          "d4ce2f163d867efb5e7c7dad4ad1c5439d82ab4dc4c44977e3faf5fe50aa3abd",
+          "3c483375a9fc328572a078809ba153099985105334ecc8e69b5bab1843c18e23",
+          "a4fbd50e15fac16486008b99adc24910626c7e3894236e97b80f601883cd0da4",
+          "dab1a4e283772d515bf44418ffa193ff8a01301b0244d4e0a7476d3454993bd7",
+          "fb90c944fc243c1a787dc5317d54e889bc52f8e3f21a27d29e133a381a821b43",
+          "59fdd5421e3529ff28d9778084daf86a82514dbba366fc1033665cccb2513ce4",
+          "e13715ff2b1e86d757c54e92474d5d822f9d01bad2361c2d0c8ef49c44d8191c",
+          "ae8e982205c19cc13674b9bd3d9fd32eedf4fe95b63bf0e6b0aeb0719a85e040",
+          "ceaffd3aee3f9ffc140ffd9e69331afbeeff59aafc3e238d69602bdba097a1c3",
+          "82e8d57aedbf91a4610529b5828b019cd0d1bb73123eac66c86f145c1dd319d6",
+          "361c40e87766e43cb583720fee32009a4eb450e53af1bf750d5795fa7c6902b6",
+          "d2dbf35c08bec581a9c686d4254ad7fed5b2f6e1cc3850034d36eee31a8cd421",
+          "18cb4b023930cd2023a977872f42a1b1af1de89769d616614864fe1f178cf081",
+          "c47acf53d36d33f026879466e15920cbe72265dafd0b132c92421ff2e1740c3d",
+          "1f1a069d41e1490760816401e20d6f6405e6c925859ef0dbbef36a1c9f314cfb",
+          "52a500afc6240d3eab88ad47c267619d93c3706f0cbbacb48824cf4bc2c17268",
+          "47c4d71909291ab3090977521c6360bffedf637f83d3614c81814a7944c4e8fc",
+          "b594848f00fc77aa2d9aed0bdee133173f91a24a55627b30ecfea78450e3b889",
+          "fefae0725813485a0b6e0dd2ca4caa1d37a3265fe21e3a0914709950d2d78035",
+          "40e97ce5631cbb14767f13125570312b9ee39f6eb04745fd55a5bb6173b97f8b",
+          "fc55aee9e7ac2b09359fb7a1edecf0eb737affb374d5f2085ab9533516b3a7e0",
+          "d7a519576ddd7c363cfb6dc83606aa82a31f108de0eed177bc8867e7b3ed0f11"
+        ],
+        "cache_hits": 0,
+        "cache_corrupt": 0,
+        "cache_writes": 31,
+        "cache_write_errors": 0,
+        "compiler_executions": 31,
+        "ready_objects": 31,
+        "cache_keys": [
+          "b46e0b4ef2e4ed0c00342b4ab4251c5c2f1e12ed4c4a4aaa378d0ed44e3f6d1a",
+          "4145bbacb6aa62f073bd707983527a151077a475b782739f7a4d0c5f03753e86",
+          "73890d7b1564788b30e537c7910c8c2a3a67f62813bbbdf7888bc036a0e6300a",
+          "5b85adc13632f8509b7436823945f47d7aca66fbfa781a891c9354d547cecaa4",
+          "4a3aa7fd1f404682a1a74e99f09f66714cd8dc11c63881b5694f53202004b843",
+          "b3b939deb5791920dc4181079c3666699efe71ce53032e0079305ad95e2296e8",
+          "1d28404581b43b166fb5211677b55b06c52c23bca685c09c7ebac3e9067bc2c4",
+          "54a8335b711177132bdbec0d1d7a46b827ca6283a8e5fdc307ada70e6193f4fb",
+          "80138dec57d35c9fe59d499dd136778cc4aa2fdadad4fcfbb7b823d8619615f8",
+          "af8d9959c0947c521265250b7a4f60b9cc1fe360fda6e0341f74eacfd745bd54",
+          "8282c34a1aa344ec54ca7bd18ac3ee2b1cb953fd0a6fdefa51da9a87a479c696",
+          "7ab12cb8a8617e216d466037b8ecf47b11681344108b6477b207cfc76685e28c",
+          "7fad57dc8de6fbc84888e68dc3fa6509a2246f6787f98eff3df17d7d1e3280ce",
+          "e2e534bb329e039fcfb50135e2761d015a47f896cfa1051cd6510349766b2099",
+          "7ebf064c96fdb146f9787fd3da9f87a798bbf855bfe5c5cca725d444ff178db8",
+          "93080809b3456986f3f6554af7aeff5f9aadc1954d71fd3d8f0937c25acc3ff7",
+          "a8dda1137322084051eaf04bab7efad377f9cc7fd10a93d52a3d00b0f42cd4ff",
+          "e6498a7ff5e3c5e1189994b5810b68b54695917ceb9011815f70fbe32ae8cbf4",
+          "c33def7f304c3867b18ca00c60356d770c13780b7803fe60b591114aec6d44e7",
+          "34d0ba4fce4f6e80684c3f19d8312d9a1bc5b3b92e9e1db5802729c39b67853b",
+          "000d4af40231e73b89afc7f024056d428ef92ab5a2b73493d1de2d6225ae26a0",
+          "52e26d53ac8c0c9e1d8a37a368c64b01f7e395c32b33e2e6cb8d7380b4f10801",
+          "ae2cbee6f19007b27caaea1f76403811d0fdb0e9b630b1b73e2a2af1667f6441",
+          "da47401262a583dd0701422ab904bdd041506a44cd41c769d72ff864388fde80",
+          "abe63e455c1cc657b0edf379da62bc3421b21b08234ac135c060451ebf488211",
+          "2657f883afb5de08470177a69500c47fe2e63b1894d34f692780a93f9309d24e",
+          "25154811d347a7666b28081ccb07887ac0c1bbc72b04c8f67ce247a10dc455f8",
+          "ea6f6bb1d45c9c69d6c1989e0e4ea1e60cefa9a9b2232e7eb7b2c74b2cd42e16",
+          "36b56742805e6c99b115a9c66a235f49d9a5bf89666cd8b102a16f73312f5cd8",
+          "84ca69503ead66d70893fc9a2ad5e8beb3c68e32aad108a97927bfbd80b00057",
+          "c66ae74d526d278e22b03fa775464ec530e89a1d5d9d20e20eaeba2ed0fc2399"
+        ]
+      }
+    },
+    {
+      "check": "cache-write-failure-keeps-build-usable",
+      "passed": true,
+      "result": {
+        "correct": true,
+        "workers": 8,
+        "compiled": 31,
+        "errors": 0,
+        "warnings": 0,
+        "job_count": 31,
+        "peak_active": 8,
+        "link_calls": 1,
+        "link_result": 0,
+        "can_run_again": true,
+        "retry_result": 0,
+        "setup_ns": 12001141,
+        "compile_wall_ns": 4512500344,
+        "link_ns": 5400885,
+        "workload_ns": 4530061080,
+        "peak_rss_bytes": 223166464,
+        "jobs": [
+          [
+            12847609,
+            24914954
+          ],
+          [
+            12873415,
+            182956373
+          ],
+          [
+            12832758,
+            94399417
+          ],
+          [
+            13417907,
+            290918624
+          ],
+          [
+            14191523,
+            145132510
+          ],
+          [
+            14326128,
+            26115482
+          ],
+          [
+            14348360,
+            183177902
+          ],
+          [
+            14931198,
+            94106703
+          ],
+          [
+            25433366,
+            266551216
+          ],
+          [
+            26464584,
+            158019421
+          ],
+          [
+            94688756,
+            969514777
+          ],
+          [
+            94867925,
+            1940387117
+          ],
+          [
+            145696309,
+            266578721
+          ],
+          [
+            158582919,
+            372054478
+          ],
+          [
+            183532495,
+            403622725
+          ],
+          [
+            183639547,
+            1869688381
+          ],
+          [
+            267211257,
+            1930493786
+          ],
+          [
+            267211500,
+            4523895797
+          ],
+          [
+            291521766,
+            600781918
+          ],
+          [
+            372646811,
+            1756946673
+          ],
+          [
+            404256987,
+            531406129
+          ],
+          [
+            532117366,
+            979166095
+          ],
+          [
+            601277177,
+            1956463759
+          ],
+          [
+            970252985,
+            1075101804
+          ],
+          [
+            979881991,
+            1503213301
+          ],
+          [
+            1075811890,
+            2590600314
+          ],
+          [
+            1503972079,
+            1830333816
+          ],
+          [
+            1757691194,
+            2679372735
+          ],
+          [
+            1831129043,
+            2032172842
+          ],
+          [
+            1870402865,
+            2314286278
+          ],
+          [
+            1931301537,
+            1937675776
+          ]
+        ],
+        "buffer_hits": 31,
+        "buffer_bytes": 917680,
+        "buffer_misses": 0,
+        "object_sizes": [
+          760,
+          6608,
+          8024,
+          9304,
+          6264,
+          784,
+          7288,
+          1776,
+          7280,
+          6136,
+          28872,
+          116760,
+          2888,
+          9648,
+          8472,
+          46640,
+          43344,
+          223264,
+          11216,
+          62808,
+          4176,
+          24800,
+          55984,
+          3808,
+          34904,
+          70664,
+          27528,
+          44680,
+          16320,
+          25728,
+          952
+        ],
+        "export_ns": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "object_sha256": [
+          "a9998f0f4fea077f9a22193d3a41f252e4fd87b3f98a41e86aadc3305b8862e3",
+          "45b8d74e295962a38b5d9ae223488f24240a5ead718296ec9046013e06bcf76f",
+          "bdec1efe91ac56a9ab81acdc5b5d8767a7160913e39121b953514135f5505292",
+          "57d03f6a6225710913f2495c2bf137fc2ee22bf26d594ea7a96a814c261623e8",
+          "0657b745b9a4ff77576ec735a6df58ae876cf27a0f33e66e34b4f0c3d353e5da",
+          "d0e5791b4e19f8e4f4c1942c328e1f9e56e16c18b9133384792f35e1b4a98bd6",
+          "63306846a7f3b657e69eff542569a965810eca9fe9bdea935db44cdbd01ccf52",
+          "6907393237e41eafdcf54412e7625929fcbb281fa43200a00b50248adce570b7",
+          "e4e098b2fe639dfcc467c1875dff87c1c2e8b2e7924f651d821d1660b5babd26",
+          "d4ce2f163d867efb5e7c7dad4ad1c5439d82ab4dc4c44977e3faf5fe50aa3abd",
+          "3c483375a9fc328572a078809ba153099985105334ecc8e69b5bab1843c18e23",
+          "a4fbd50e15fac16486008b99adc24910626c7e3894236e97b80f601883cd0da4",
+          "dab1a4e283772d515bf44418ffa193ff8a01301b0244d4e0a7476d3454993bd7",
+          "fb90c944fc243c1a787dc5317d54e889bc52f8e3f21a27d29e133a381a821b43",
+          "59fdd5421e3529ff28d9778084daf86a82514dbba366fc1033665cccb2513ce4",
+          "e13715ff2b1e86d757c54e92474d5d822f9d01bad2361c2d0c8ef49c44d8191c",
+          "ae8e982205c19cc13674b9bd3d9fd32eedf4fe95b63bf0e6b0aeb0719a85e040",
+          "ceaffd3aee3f9ffc140ffd9e69331afbeeff59aafc3e238d69602bdba097a1c3",
+          "82e8d57aedbf91a4610529b5828b019cd0d1bb73123eac66c86f145c1dd319d6",
+          "361c40e87766e43cb583720fee32009a4eb450e53af1bf750d5795fa7c6902b6",
+          "d2dbf35c08bec581a9c686d4254ad7fed5b2f6e1cc3850034d36eee31a8cd421",
+          "18cb4b023930cd2023a977872f42a1b1af1de89769d616614864fe1f178cf081",
+          "c47acf53d36d33f026879466e15920cbe72265dafd0b132c92421ff2e1740c3d",
+          "1f1a069d41e1490760816401e20d6f6405e6c925859ef0dbbef36a1c9f314cfb",
+          "52a500afc6240d3eab88ad47c267619d93c3706f0cbbacb48824cf4bc2c17268",
+          "47c4d71909291ab3090977521c6360bffedf637f83d3614c81814a7944c4e8fc",
+          "b594848f00fc77aa2d9aed0bdee133173f91a24a55627b30ecfea78450e3b889",
+          "fefae0725813485a0b6e0dd2ca4caa1d37a3265fe21e3a0914709950d2d78035",
+          "40e97ce5631cbb14767f13125570312b9ee39f6eb04745fd55a5bb6173b97f8b",
+          "fc55aee9e7ac2b09359fb7a1edecf0eb737affb374d5f2085ab9533516b3a7e0",
+          "d7a519576ddd7c363cfb6dc83606aa82a31f108de0eed177bc8867e7b3ed0f11"
+        ],
+        "cache_hits": 0,
+        "cache_corrupt": 0,
+        "cache_writes": 0,
+        "cache_write_errors": 31,
+        "compiler_executions": 31,
+        "ready_objects": 31,
+        "cache_keys": [
+          "1db0a9b43693dba7fed9a21b6e3c791a6c41598a5b72c5f0441e04dc16447605",
+          "e106f8a95acc10b2306e1832d1d31d67e0aa57d8457a82f327f857324ec8e42c",
+          "02ec8eb20dd90946860d4507ed0353407c23b4577a7caef5d059de8d75ed3c88",
+          "b72efc0a8dd086bfd7158fd714de8b13cd97204757b7e569055f5fae0ac1bcc6",
+          "6c2813a9a441b0778966fc8934fb7da57725e76b0efa497cd366e3db41595022",
+          "805bd9428996b736c37195b8b7c87d589a072f7c0c5d3aa3c39d4ba24410da49",
+          "b521152836378c9076f6a8b68c89f34b15398235a2455a5888dc109e8732b583",
+          "1c6f977e8b54456901bdec23684a98291515d935483a6f5943f28a972af058d0",
+          "85fb0c3297dcadcc0c40db1ce53c5449e60a9084cb1d41a1b19d5190df3014e3",
+          "2cce3505b5134f7b7232564bc7d8a575fb9f1c341681ece211d81f580e988be1",
+          "32bedfbb0a669c42fcd2681cda758774f87aef66f34496c536b4d25fef1bd8f5",
+          "9e42854778e5d7b6ea1aab6a435fa66add62c1fb9addcb30a0a0246ef82fd4f3",
+          "eeabd85a9134f9712b804690519600c369fe31da295954a02e6604768ad6ec2e",
+          "95135cdc44c2f22f8541162cf6f60573572ffd26149f22c3ad422fe2ef54d0b4",
+          "da3ec20e709876588fd822cb562a0ce059b858d4da06a938b78d2778f6b25951",
+          "a76076a524fef402f2e54da43480cd8af7f8ffa54f03c12af7ac74c9b430a034",
+          "248f729ccbb6bccd35590df31cc596d2c92fedc4988ab9c1cfb15661854e203a",
+          "c0d8d886e35eb6af6eada044c4c88fb0a3ff5d9ed0fa57b7ed72cbf86614cc58",
+          "fcfbf14529842f3d2d977110297af68194594fe63a787eb5768f98e6ffed7c94",
+          "75afcdd254bd33425d11d7491a2b1d33e4573a3567eef92100c9d3e3a1e8b84f",
+          "7e1bc4d817f560bf14cde8c50043b57df65f804e9a4bf86d00caae4bb6abd013",
+          "86a454a5515a2abd19ef37a80c98e50f987062dab1aa7778ff4bab45117d9331",
+          "e438d42a7b3bb1dcf197f2ce03c684d613696ad4308a0e342e0b8b71ae5b276a",
+          "273e2fdd7cbd05c85ad29a11c29501de82ff160d9f670103a6fe0c2ba33682a3",
+          "de15459625a814d8eb7d2e29ce43dd304ab44705cd8d7b6bbcf161fecdfbb30d",
+          "c8f2f4af9231ef609c333cef8f39f245d36c9ce936e49a1448b6a5fe4cac164e",
+          "4dc72580176b40e7d219f0cbf4fe3c3a2780fc2a873d65abb3d8d5e1a67d6226",
+          "040d0fad17a86277a2347bcf58f9bd6cdcf181f73800a2e430405bdf23d4a414",
+          "fb2d34334fcad985132c30ae4bafdcd3672f8734f099abd8743fd63690ed46fc",
+          "f674a1fd86688602d6e2bb2063701c5e6e04fc10020929f786e29c92a982caa1",
+          "b1884a2670806221b97a43b4be83f6284440682e4afaa6e893a88ba3c521f00f"
+        ]
+      }
+    },
+    {
+      "check": "compile-failure-preserves-library-and-cache",
+      "passed": true,
+      "result": {
+        "correct": false,
+        "workers": 8,
+        "compiled": 0,
+        "errors": 1,
+        "warnings": 0,
+        "job_count": 31,
+        "peak_active": 1,
+        "link_calls": 0,
+        "link_result": 0,
+        "can_run_again": true,
+        "retry_result": 0,
+        "setup_ns": 15614245,
+        "compile_wall_ns": 5917844,
+        "link_ns": 0,
+        "workload_ns": 21533592,
+        "peak_rss_bytes": 64344064,
+        "jobs": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            16535733,
+            21248774
+          ]
+        ],
+        "buffer_hits": 0,
+        "buffer_bytes": 0,
+        "buffer_misses": 0,
+        "object_sizes": [
+          760,
+          6608,
+          8024,
+          9304,
+          6264,
+          784,
+          7288,
+          1776,
+          7280,
+          6136,
+          28872,
+          116760,
+          2888,
+          9648,
+          8472,
+          46640,
+          43344,
+          223264,
+          11216,
+          62808,
+          4176,
+          24800,
+          55984,
+          3808,
+          34904,
+          70664,
+          27528,
+          44680,
+          16320,
+          25728,
+          0
+        ],
+        "export_ns": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "object_sha256": [
+          "a9998f0f4fea077f9a22193d3a41f252e4fd87b3f98a41e86aadc3305b8862e3",
+          "45b8d74e295962a38b5d9ae223488f24240a5ead718296ec9046013e06bcf76f",
+          "bdec1efe91ac56a9ab81acdc5b5d8767a7160913e39121b953514135f5505292",
+          "57d03f6a6225710913f2495c2bf137fc2ee22bf26d594ea7a96a814c261623e8",
+          "0657b745b9a4ff77576ec735a6df58ae876cf27a0f33e66e34b4f0c3d353e5da",
+          "d0e5791b4e19f8e4f4c1942c328e1f9e56e16c18b9133384792f35e1b4a98bd6",
+          "63306846a7f3b657e69eff542569a965810eca9fe9bdea935db44cdbd01ccf52",
+          "6907393237e41eafdcf54412e7625929fcbb281fa43200a00b50248adce570b7",
+          "e4e098b2fe639dfcc467c1875dff87c1c2e8b2e7924f651d821d1660b5babd26",
+          "d4ce2f163d867efb5e7c7dad4ad1c5439d82ab4dc4c44977e3faf5fe50aa3abd",
+          "3c483375a9fc328572a078809ba153099985105334ecc8e69b5bab1843c18e23",
+          "a4fbd50e15fac16486008b99adc24910626c7e3894236e97b80f601883cd0da4",
+          "dab1a4e283772d515bf44418ffa193ff8a01301b0244d4e0a7476d3454993bd7",
+          "fb90c944fc243c1a787dc5317d54e889bc52f8e3f21a27d29e133a381a821b43",
+          "59fdd5421e3529ff28d9778084daf86a82514dbba366fc1033665cccb2513ce4",
+          "e13715ff2b1e86d757c54e92474d5d822f9d01bad2361c2d0c8ef49c44d8191c",
+          "ae8e982205c19cc13674b9bd3d9fd32eedf4fe95b63bf0e6b0aeb0719a85e040",
+          "ceaffd3aee3f9ffc140ffd9e69331afbeeff59aafc3e238d69602bdba097a1c3",
+          "82e8d57aedbf91a4610529b5828b019cd0d1bb73123eac66c86f145c1dd319d6",
+          "361c40e87766e43cb583720fee32009a4eb450e53af1bf750d5795fa7c6902b6",
+          "d2dbf35c08bec581a9c686d4254ad7fed5b2f6e1cc3850034d36eee31a8cd421",
+          "18cb4b023930cd2023a977872f42a1b1af1de89769d616614864fe1f178cf081",
+          "c47acf53d36d33f026879466e15920cbe72265dafd0b132c92421ff2e1740c3d",
+          "1f1a069d41e1490760816401e20d6f6405e6c925859ef0dbbef36a1c9f314cfb",
+          "52a500afc6240d3eab88ad47c267619d93c3706f0cbbacb48824cf4bc2c17268",
+          "47c4d71909291ab3090977521c6360bffedf637f83d3614c81814a7944c4e8fc",
+          "b594848f00fc77aa2d9aed0bdee133173f91a24a55627b30ecfea78450e3b889",
+          "fefae0725813485a0b6e0dd2ca4caa1d37a3265fe21e3a0914709950d2d78035",
+          "40e97ce5631cbb14767f13125570312b9ee39f6eb04745fd55a5bb6173b97f8b",
+          "fc55aee9e7ac2b09359fb7a1edecf0eb737affb374d5f2085ab9533516b3a7e0",
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        ],
+        "cache_hits": 30,
+        "cache_corrupt": 0,
+        "cache_writes": 0,
+        "cache_write_errors": 0,
+        "compiler_executions": 1,
+        "ready_objects": 30,
+        "cache_keys": [
+          "1db0a9b43693dba7fed9a21b6e3c791a6c41598a5b72c5f0441e04dc16447605",
+          "e106f8a95acc10b2306e1832d1d31d67e0aa57d8457a82f327f857324ec8e42c",
+          "02ec8eb20dd90946860d4507ed0353407c23b4577a7caef5d059de8d75ed3c88",
+          "b72efc0a8dd086bfd7158fd714de8b13cd97204757b7e569055f5fae0ac1bcc6",
+          "6c2813a9a441b0778966fc8934fb7da57725e76b0efa497cd366e3db41595022",
+          "805bd9428996b736c37195b8b7c87d589a072f7c0c5d3aa3c39d4ba24410da49",
+          "b521152836378c9076f6a8b68c89f34b15398235a2455a5888dc109e8732b583",
+          "1c6f977e8b54456901bdec23684a98291515d935483a6f5943f28a972af058d0",
+          "85fb0c3297dcadcc0c40db1ce53c5449e60a9084cb1d41a1b19d5190df3014e3",
+          "2cce3505b5134f7b7232564bc7d8a575fb9f1c341681ece211d81f580e988be1",
+          "32bedfbb0a669c42fcd2681cda758774f87aef66f34496c536b4d25fef1bd8f5",
+          "9e42854778e5d7b6ea1aab6a435fa66add62c1fb9addcb30a0a0246ef82fd4f3",
+          "eeabd85a9134f9712b804690519600c369fe31da295954a02e6604768ad6ec2e",
+          "95135cdc44c2f22f8541162cf6f60573572ffd26149f22c3ad422fe2ef54d0b4",
+          "da3ec20e709876588fd822cb562a0ce059b858d4da06a938b78d2778f6b25951",
+          "a76076a524fef402f2e54da43480cd8af7f8ffa54f03c12af7ac74c9b430a034",
+          "248f729ccbb6bccd35590df31cc596d2c92fedc4988ab9c1cfb15661854e203a",
+          "c0d8d886e35eb6af6eada044c4c88fb0a3ff5d9ed0fa57b7ed72cbf86614cc58",
+          "fcfbf14529842f3d2d977110297af68194594fe63a787eb5768f98e6ffed7c94",
+          "75afcdd254bd33425d11d7491a2b1d33e4573a3567eef92100c9d3e3a1e8b84f",
+          "7e1bc4d817f560bf14cde8c50043b57df65f804e9a4bf86d00caae4bb6abd013",
+          "86a454a5515a2abd19ef37a80c98e50f987062dab1aa7778ff4bab45117d9331",
+          "e438d42a7b3bb1dcf197f2ce03c684d613696ad4308a0e342e0b8b71ae5b276a",
+          "273e2fdd7cbd05c85ad29a11c29501de82ff160d9f670103a6fe0c2ba33682a3",
+          "de15459625a814d8eb7d2e29ce43dd304ab44705cd8d7b6bbcf161fecdfbb30d",
+          "c8f2f4af9231ef609c333cef8f39f245d36c9ce936e49a1448b6a5fe4cac164e",
+          "4dc72580176b40e7d219f0cbf4fe3c3a2780fc2a873d65abb3d8d5e1a67d6226",
+          "040d0fad17a86277a2347bcf58f9bd6cdcf181f73800a2e430405bdf23d4a414",
+          "fb2d34334fcad985132c30ae4bafdcd3672f8734f099abd8743fd63690ed46fc",
+          "f674a1fd86688602d6e2bb2063701c5e6e04fc10020929f786e29c92a982caa1",
+          "55599549a5664d0e0ba7ea1e6c272e2fc1d9d5ffb6342b40e47609b182eff9d1"
+        ]
+      },
+      "stderr": "1 error generated.\njob 30: gaia_cache_compile_failure\n"
+    },
+    {
+      "check": "undeclared-host-header-invisible-scoped",
+      "passed": true,
+      "result": {
+        "correct": true,
+        "workers": 8,
+        "compiled": 0,
+        "errors": 0,
+        "warnings": 0,
+        "job_count": 31,
+        "peak_active": 0,
+        "link_calls": 1,
+        "link_result": 0,
+        "can_run_again": true,
+        "retry_result": 0,
+        "setup_ns": 13148565,
+        "compile_wall_ns": 1002,
+        "link_ns": 5794040,
+        "workload_ns": 19020602,
+        "peak_rss_bytes": 66576384,
+        "jobs": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "buffer_hits": 31,
+        "buffer_bytes": 917680,
+        "buffer_misses": 0,
+        "object_sizes": [
+          760,
+          6608,
+          8024,
+          9304,
+          6264,
+          784,
+          7288,
+          1776,
+          7280,
+          6136,
+          28872,
+          116760,
+          2888,
+          9648,
+          8472,
+          46640,
+          43344,
+          223264,
+          11216,
+          62808,
+          4176,
+          24800,
+          55984,
+          3808,
+          34904,
+          70664,
+          27528,
+          44680,
+          16320,
+          25728,
+          952
+        ],
+        "export_ns": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "object_sha256": [
+          "a9998f0f4fea077f9a22193d3a41f252e4fd87b3f98a41e86aadc3305b8862e3",
+          "45b8d74e295962a38b5d9ae223488f24240a5ead718296ec9046013e06bcf76f",
+          "bdec1efe91ac56a9ab81acdc5b5d8767a7160913e39121b953514135f5505292",
+          "57d03f6a6225710913f2495c2bf137fc2ee22bf26d594ea7a96a814c261623e8",
+          "0657b745b9a4ff77576ec735a6df58ae876cf27a0f33e66e34b4f0c3d353e5da",
+          "d0e5791b4e19f8e4f4c1942c328e1f9e56e16c18b9133384792f35e1b4a98bd6",
+          "63306846a7f3b657e69eff542569a965810eca9fe9bdea935db44cdbd01ccf52",
+          "6907393237e41eafdcf54412e7625929fcbb281fa43200a00b50248adce570b7",
+          "e4e098b2fe639dfcc467c1875dff87c1c2e8b2e7924f651d821d1660b5babd26",
+          "d4ce2f163d867efb5e7c7dad4ad1c5439d82ab4dc4c44977e3faf5fe50aa3abd",
+          "3c483375a9fc328572a078809ba153099985105334ecc8e69b5bab1843c18e23",
+          "a4fbd50e15fac16486008b99adc24910626c7e3894236e97b80f601883cd0da4",
+          "dab1a4e283772d515bf44418ffa193ff8a01301b0244d4e0a7476d3454993bd7",
+          "fb90c944fc243c1a787dc5317d54e889bc52f8e3f21a27d29e133a381a821b43",
+          "59fdd5421e3529ff28d9778084daf86a82514dbba366fc1033665cccb2513ce4",
+          "e13715ff2b1e86d757c54e92474d5d822f9d01bad2361c2d0c8ef49c44d8191c",
+          "ae8e982205c19cc13674b9bd3d9fd32eedf4fe95b63bf0e6b0aeb0719a85e040",
+          "ceaffd3aee3f9ffc140ffd9e69331afbeeff59aafc3e238d69602bdba097a1c3",
+          "82e8d57aedbf91a4610529b5828b019cd0d1bb73123eac66c86f145c1dd319d6",
+          "361c40e87766e43cb583720fee32009a4eb450e53af1bf750d5795fa7c6902b6",
+          "d2dbf35c08bec581a9c686d4254ad7fed5b2f6e1cc3850034d36eee31a8cd421",
+          "18cb4b023930cd2023a977872f42a1b1af1de89769d616614864fe1f178cf081",
+          "c47acf53d36d33f026879466e15920cbe72265dafd0b132c92421ff2e1740c3d",
+          "1f1a069d41e1490760816401e20d6f6405e6c925859ef0dbbef36a1c9f314cfb",
+          "52a500afc6240d3eab88ad47c267619d93c3706f0cbbacb48824cf4bc2c17268",
+          "47c4d71909291ab3090977521c6360bffedf637f83d3614c81814a7944c4e8fc",
+          "b594848f00fc77aa2d9aed0bdee133173f91a24a55627b30ecfea78450e3b889",
+          "fefae0725813485a0b6e0dd2ca4caa1d37a3265fe21e3a0914709950d2d78035",
+          "40e97ce5631cbb14767f13125570312b9ee39f6eb04745fd55a5bb6173b97f8b",
+          "fc55aee9e7ac2b09359fb7a1edecf0eb737affb374d5f2085ab9533516b3a7e0",
+          "d7a519576ddd7c363cfb6dc83606aa82a31f108de0eed177bc8867e7b3ed0f11"
+        ],
+        "cache_hits": 31,
+        "cache_corrupt": 0,
+        "cache_writes": 0,
+        "cache_write_errors": 0,
+        "compiler_executions": 0,
+        "ready_objects": 31,
+        "cache_keys": [
+          "1db0a9b43693dba7fed9a21b6e3c791a6c41598a5b72c5f0441e04dc16447605",
+          "e106f8a95acc10b2306e1832d1d31d67e0aa57d8457a82f327f857324ec8e42c",
+          "02ec8eb20dd90946860d4507ed0353407c23b4577a7caef5d059de8d75ed3c88",
+          "b72efc0a8dd086bfd7158fd714de8b13cd97204757b7e569055f5fae0ac1bcc6",
+          "6c2813a9a441b0778966fc8934fb7da57725e76b0efa497cd366e3db41595022",
+          "805bd9428996b736c37195b8b7c87d589a072f7c0c5d3aa3c39d4ba24410da49",
+          "b521152836378c9076f6a8b68c89f34b15398235a2455a5888dc109e8732b583",
+          "1c6f977e8b54456901bdec23684a98291515d935483a6f5943f28a972af058d0",
+          "85fb0c3297dcadcc0c40db1ce53c5449e60a9084cb1d41a1b19d5190df3014e3",
+          "2cce3505b5134f7b7232564bc7d8a575fb9f1c341681ece211d81f580e988be1",
+          "32bedfbb0a669c42fcd2681cda758774f87aef66f34496c536b4d25fef1bd8f5",
+          "9e42854778e5d7b6ea1aab6a435fa66add62c1fb9addcb30a0a0246ef82fd4f3",
+          "eeabd85a9134f9712b804690519600c369fe31da295954a02e6604768ad6ec2e",
+          "95135cdc44c2f22f8541162cf6f60573572ffd26149f22c3ad422fe2ef54d0b4",
+          "da3ec20e709876588fd822cb562a0ce059b858d4da06a938b78d2778f6b25951",
+          "a76076a524fef402f2e54da43480cd8af7f8ffa54f03c12af7ac74c9b430a034",
+          "248f729ccbb6bccd35590df31cc596d2c92fedc4988ab9c1cfb15661854e203a",
+          "c0d8d886e35eb6af6eada044c4c88fb0a3ff5d9ed0fa57b7ed72cbf86614cc58",
+          "fcfbf14529842f3d2d977110297af68194594fe63a787eb5768f98e6ffed7c94",
+          "75afcdd254bd33425d11d7491a2b1d33e4573a3567eef92100c9d3e3a1e8b84f",
+          "7e1bc4d817f560bf14cde8c50043b57df65f804e9a4bf86d00caae4bb6abd013",
+          "86a454a5515a2abd19ef37a80c98e50f987062dab1aa7778ff4bab45117d9331",
+          "e438d42a7b3bb1dcf197f2ce03c684d613696ad4308a0e342e0b8b71ae5b276a",
+          "273e2fdd7cbd05c85ad29a11c29501de82ff160d9f670103a6fe0c2ba33682a3",
+          "de15459625a814d8eb7d2e29ce43dd304ab44705cd8d7b6bbcf161fecdfbb30d",
+          "c8f2f4af9231ef609c333cef8f39f245d36c9ce936e49a1448b6a5fe4cac164e",
+          "4dc72580176b40e7d219f0cbf4fe3c3a2780fc2a873d65abb3d8d5e1a67d6226",
+          "040d0fad17a86277a2347bcf58f9bd6cdcf181f73800a2e430405bdf23d4a414",
+          "fb2d34334fcad985132c30ae4bafdcd3672f8734f099abd8743fd63690ed46fc",
+          "f674a1fd86688602d6e2bb2063701c5e6e04fc10020929f786e29c92a982caa1",
+          "b1884a2670806221b97a43b4be83f6284440682e4afaa6e893a88ba3c521f00f"
+        ]
+      }
+    },
+    {
+      "check": "undeclared-host-header-invisible-off",
+      "passed": true,
+      "result": {
+        "correct": true,
+        "workers": 8,
+        "compiled": 31,
+        "errors": 0,
+        "warnings": 0,
+        "job_count": 31,
+        "peak_active": 8,
+        "link_calls": 1,
+        "link_result": 0,
+        "can_run_again": true,
+        "retry_result": 0,
+        "setup_ns": 18639829,
+        "compile_wall_ns": 4533650788,
+        "link_ns": 7159786,
+        "workload_ns": 4559599527,
+        "peak_rss_bytes": 236859392,
+        "jobs": [
+          [
+            19691350,
+            32410398
+          ],
+          [
+            19758789,
+            196304496
+          ],
+          [
+            20108393,
+            74928091
+          ],
+          [
+            20091443,
+            295961128
+          ],
+          [
+            20282816,
+            139490866
+          ],
+          [
+            20552367,
+            38038963
+          ],
+          [
+            21324871,
+            186769258
+          ],
+          [
+            21678087,
+            111828874
+          ],
+          [
+            32947886,
+            255928623
+          ],
+          [
+            38604215,
+            179215605
+          ],
+          [
+            76244676,
+            941063314
+          ],
+          [
+            112384447,
+            2020006401
+          ],
+          [
+            140076586,
+            245441249
+          ],
+          [
+            179657031,
+            415926480
+          ],
+          [
+            187239890,
+            355513771
+          ],
+          [
+            196713461,
+            1797508137
+          ],
+          [
+            245897865,
+            1827706721
+          ],
+          [
+            256596047,
+            4551486223
+          ],
+          [
+            296538632,
+            605114542
+          ],
+          [
+            356032223,
+            1772361451
+          ],
+          [
+            416591430,
+            524662996
+          ],
+          [
+            525296376,
+            998519457
+          ],
+          [
+            605884962,
+            1980592740
+          ],
+          [
+            941723776,
+            1050850898
+          ],
+          [
+            1000165570,
+            1515257450
+          ],
+          [
+            1051316881,
+            2637909392
+          ],
+          [
+            1515924174,
+            1844596089
+          ],
+          [
+            1773103788,
+            2756596855
+          ],
+          [
+            1798035787,
+            2003590270
+          ],
+          [
+            1828345461,
+            2247312178
+          ],
+          [
+            1845261961,
+            1851811583
+          ]
+        ],
+        "buffer_hits": 31,
+        "buffer_bytes": 917680,
+        "buffer_misses": 0,
+        "object_sizes": [
+          760,
+          6608,
+          8024,
+          9304,
+          6264,
+          784,
+          7288,
+          1776,
+          7280,
+          6136,
+          28872,
+          116760,
+          2888,
+          9648,
+          8472,
+          46640,
+          43344,
+          223264,
+          11216,
+          62808,
+          4176,
+          24800,
+          55984,
+          3808,
+          34904,
+          70664,
+          27528,
+          44680,
+          16320,
+          25728,
+          952
+        ],
+        "export_ns": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "object_sha256": [
+          "a9998f0f4fea077f9a22193d3a41f252e4fd87b3f98a41e86aadc3305b8862e3",
+          "45b8d74e295962a38b5d9ae223488f24240a5ead718296ec9046013e06bcf76f",
+          "bdec1efe91ac56a9ab81acdc5b5d8767a7160913e39121b953514135f5505292",
+          "57d03f6a6225710913f2495c2bf137fc2ee22bf26d594ea7a96a814c261623e8",
+          "0657b745b9a4ff77576ec735a6df58ae876cf27a0f33e66e34b4f0c3d353e5da",
+          "d0e5791b4e19f8e4f4c1942c328e1f9e56e16c18b9133384792f35e1b4a98bd6",
+          "63306846a7f3b657e69eff542569a965810eca9fe9bdea935db44cdbd01ccf52",
+          "6907393237e41eafdcf54412e7625929fcbb281fa43200a00b50248adce570b7",
+          "e4e098b2fe639dfcc467c1875dff87c1c2e8b2e7924f651d821d1660b5babd26",
+          "d4ce2f163d867efb5e7c7dad4ad1c5439d82ab4dc4c44977e3faf5fe50aa3abd",
+          "3c483375a9fc328572a078809ba153099985105334ecc8e69b5bab1843c18e23",
+          "a4fbd50e15fac16486008b99adc24910626c7e3894236e97b80f601883cd0da4",
+          "dab1a4e283772d515bf44418ffa193ff8a01301b0244d4e0a7476d3454993bd7",
+          "fb90c944fc243c1a787dc5317d54e889bc52f8e3f21a27d29e133a381a821b43",
+          "59fdd5421e3529ff28d9778084daf86a82514dbba366fc1033665cccb2513ce4",
+          "e13715ff2b1e86d757c54e92474d5d822f9d01bad2361c2d0c8ef49c44d8191c",
+          "ae8e982205c19cc13674b9bd3d9fd32eedf4fe95b63bf0e6b0aeb0719a85e040",
+          "ceaffd3aee3f9ffc140ffd9e69331afbeeff59aafc3e238d69602bdba097a1c3",
+          "82e8d57aedbf91a4610529b5828b019cd0d1bb73123eac66c86f145c1dd319d6",
+          "361c40e87766e43cb583720fee32009a4eb450e53af1bf750d5795fa7c6902b6",
+          "d2dbf35c08bec581a9c686d4254ad7fed5b2f6e1cc3850034d36eee31a8cd421",
+          "18cb4b023930cd2023a977872f42a1b1af1de89769d616614864fe1f178cf081",
+          "c47acf53d36d33f026879466e15920cbe72265dafd0b132c92421ff2e1740c3d",
+          "1f1a069d41e1490760816401e20d6f6405e6c925859ef0dbbef36a1c9f314cfb",
+          "52a500afc6240d3eab88ad47c267619d93c3706f0cbbacb48824cf4bc2c17268",
+          "47c4d71909291ab3090977521c6360bffedf637f83d3614c81814a7944c4e8fc",
+          "b594848f00fc77aa2d9aed0bdee133173f91a24a55627b30ecfea78450e3b889",
+          "fefae0725813485a0b6e0dd2ca4caa1d37a3265fe21e3a0914709950d2d78035",
+          "40e97ce5631cbb14767f13125570312b9ee39f6eb04745fd55a5bb6173b97f8b",
+          "fc55aee9e7ac2b09359fb7a1edecf0eb737affb374d5f2085ab9533516b3a7e0",
+          "d7a519576ddd7c363cfb6dc83606aa82a31f108de0eed177bc8867e7b3ed0f11"
+        ],
+        "cache_hits": 0,
+        "cache_corrupt": 0,
+        "cache_writes": 0,
+        "cache_write_errors": 0,
+        "compiler_executions": 31,
+        "ready_objects": 31,
+        "cache_keys": []
+      }
+    },
+    {
+      "check": "invisible-input-does-not-invalidate-scoped-keys",
+      "passed": true,
+      "result": {
+        "correct": true,
+        "workers": 8,
+        "compiled": 0,
+        "errors": 0,
+        "warnings": 0,
+        "job_count": 31,
+        "peak_active": 0,
+        "link_calls": 1,
+        "link_result": 0,
+        "can_run_again": true,
+        "retry_result": 0,
+        "setup_ns": 14264650,
+        "compile_wall_ns": 912,
+        "link_ns": 6028640,
+        "workload_ns": 20377394,
+        "peak_rss_bytes": 66445312,
+        "jobs": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "buffer_hits": 31,
+        "buffer_bytes": 917680,
+        "buffer_misses": 0,
+        "object_sizes": [
+          760,
+          6608,
+          8024,
+          9304,
+          6264,
+          784,
+          7288,
+          1776,
+          7280,
+          6136,
+          28872,
+          116760,
+          2888,
+          9648,
+          8472,
+          46640,
+          43344,
+          223264,
+          11216,
+          62808,
+          4176,
+          24800,
+          55984,
+          3808,
+          34904,
+          70664,
+          27528,
+          44680,
+          16320,
+          25728,
+          952
+        ],
+        "export_ns": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "object_sha256": [
+          "a9998f0f4fea077f9a22193d3a41f252e4fd87b3f98a41e86aadc3305b8862e3",
+          "45b8d74e295962a38b5d9ae223488f24240a5ead718296ec9046013e06bcf76f",
+          "bdec1efe91ac56a9ab81acdc5b5d8767a7160913e39121b953514135f5505292",
+          "57d03f6a6225710913f2495c2bf137fc2ee22bf26d594ea7a96a814c261623e8",
+          "0657b745b9a4ff77576ec735a6df58ae876cf27a0f33e66e34b4f0c3d353e5da",
+          "d0e5791b4e19f8e4f4c1942c328e1f9e56e16c18b9133384792f35e1b4a98bd6",
+          "63306846a7f3b657e69eff542569a965810eca9fe9bdea935db44cdbd01ccf52",
+          "6907393237e41eafdcf54412e7625929fcbb281fa43200a00b50248adce570b7",
+          "e4e098b2fe639dfcc467c1875dff87c1c2e8b2e7924f651d821d1660b5babd26",
+          "d4ce2f163d867efb5e7c7dad4ad1c5439d82ab4dc4c44977e3faf5fe50aa3abd",
+          "3c483375a9fc328572a078809ba153099985105334ecc8e69b5bab1843c18e23",
+          "a4fbd50e15fac16486008b99adc24910626c7e3894236e97b80f601883cd0da4",
+          "dab1a4e283772d515bf44418ffa193ff8a01301b0244d4e0a7476d3454993bd7",
+          "fb90c944fc243c1a787dc5317d54e889bc52f8e3f21a27d29e133a381a821b43",
+          "59fdd5421e3529ff28d9778084daf86a82514dbba366fc1033665cccb2513ce4",
+          "e13715ff2b1e86d757c54e92474d5d822f9d01bad2361c2d0c8ef49c44d8191c",
+          "ae8e982205c19cc13674b9bd3d9fd32eedf4fe95b63bf0e6b0aeb0719a85e040",
+          "ceaffd3aee3f9ffc140ffd9e69331afbeeff59aafc3e238d69602bdba097a1c3",
+          "82e8d57aedbf91a4610529b5828b019cd0d1bb73123eac66c86f145c1dd319d6",
+          "361c40e87766e43cb583720fee32009a4eb450e53af1bf750d5795fa7c6902b6",
+          "d2dbf35c08bec581a9c686d4254ad7fed5b2f6e1cc3850034d36eee31a8cd421",
+          "18cb4b023930cd2023a977872f42a1b1af1de89769d616614864fe1f178cf081",
+          "c47acf53d36d33f026879466e15920cbe72265dafd0b132c92421ff2e1740c3d",
+          "1f1a069d41e1490760816401e20d6f6405e6c925859ef0dbbef36a1c9f314cfb",
+          "52a500afc6240d3eab88ad47c267619d93c3706f0cbbacb48824cf4bc2c17268",
+          "47c4d71909291ab3090977521c6360bffedf637f83d3614c81814a7944c4e8fc",
+          "b594848f00fc77aa2d9aed0bdee133173f91a24a55627b30ecfea78450e3b889",
+          "fefae0725813485a0b6e0dd2ca4caa1d37a3265fe21e3a0914709950d2d78035",
+          "40e97ce5631cbb14767f13125570312b9ee39f6eb04745fd55a5bb6173b97f8b",
+          "fc55aee9e7ac2b09359fb7a1edecf0eb737affb374d5f2085ab9533516b3a7e0",
+          "d7a519576ddd7c363cfb6dc83606aa82a31f108de0eed177bc8867e7b3ed0f11"
+        ],
+        "cache_hits": 31,
+        "cache_corrupt": 0,
+        "cache_writes": 0,
+        "cache_write_errors": 0,
+        "compiler_executions": 0,
+        "ready_objects": 31,
+        "cache_keys": [
+          "1db0a9b43693dba7fed9a21b6e3c791a6c41598a5b72c5f0441e04dc16447605",
+          "e106f8a95acc10b2306e1832d1d31d67e0aa57d8457a82f327f857324ec8e42c",
+          "02ec8eb20dd90946860d4507ed0353407c23b4577a7caef5d059de8d75ed3c88",
+          "b72efc0a8dd086bfd7158fd714de8b13cd97204757b7e569055f5fae0ac1bcc6",
+          "6c2813a9a441b0778966fc8934fb7da57725e76b0efa497cd366e3db41595022",
+          "805bd9428996b736c37195b8b7c87d589a072f7c0c5d3aa3c39d4ba24410da49",
+          "b521152836378c9076f6a8b68c89f34b15398235a2455a5888dc109e8732b583",
+          "1c6f977e8b54456901bdec23684a98291515d935483a6f5943f28a972af058d0",
+          "85fb0c3297dcadcc0c40db1ce53c5449e60a9084cb1d41a1b19d5190df3014e3",
+          "2cce3505b5134f7b7232564bc7d8a575fb9f1c341681ece211d81f580e988be1",
+          "32bedfbb0a669c42fcd2681cda758774f87aef66f34496c536b4d25fef1bd8f5",
+          "9e42854778e5d7b6ea1aab6a435fa66add62c1fb9addcb30a0a0246ef82fd4f3",
+          "eeabd85a9134f9712b804690519600c369fe31da295954a02e6604768ad6ec2e",
+          "95135cdc44c2f22f8541162cf6f60573572ffd26149f22c3ad422fe2ef54d0b4",
+          "da3ec20e709876588fd822cb562a0ce059b858d4da06a938b78d2778f6b25951",
+          "a76076a524fef402f2e54da43480cd8af7f8ffa54f03c12af7ac74c9b430a034",
+          "248f729ccbb6bccd35590df31cc596d2c92fedc4988ab9c1cfb15661854e203a",
+          "c0d8d886e35eb6af6eada044c4c88fb0a3ff5d9ed0fa57b7ed72cbf86614cc58",
+          "fcfbf14529842f3d2d977110297af68194594fe63a787eb5768f98e6ffed7c94",
+          "75afcdd254bd33425d11d7491a2b1d33e4573a3567eef92100c9d3e3a1e8b84f",
+          "7e1bc4d817f560bf14cde8c50043b57df65f804e9a4bf86d00caae4bb6abd013",
+          "86a454a5515a2abd19ef37a80c98e50f987062dab1aa7778ff4bab45117d9331",
+          "e438d42a7b3bb1dcf197f2ce03c684d613696ad4308a0e342e0b8b71ae5b276a",
+          "273e2fdd7cbd05c85ad29a11c29501de82ff160d9f670103a6fe0c2ba33682a3",
+          "de15459625a814d8eb7d2e29ce43dd304ab44705cd8d7b6bbcf161fecdfbb30d",
+          "c8f2f4af9231ef609c333cef8f39f245d36c9ce936e49a1448b6a5fe4cac164e",
+          "4dc72580176b40e7d219f0cbf4fe3c3a2780fc2a873d65abb3d8d5e1a67d6226",
+          "040d0fad17a86277a2347bcf58f9bd6cdcf181f73800a2e430405bdf23d4a414",
+          "fb2d34334fcad985132c30ae4bafdcd3672f8734f099abd8743fd63690ed46fc",
+          "f674a1fd86688602d6e2bb2063701c5e6e04fc10020929f786e29c92a982caa1",
+          "b1884a2670806221b97a43b4be83f6284440682e4afaa6e893a88ba3c521f00f"
+        ]
+      }
+    },
+    {
+      "check": "concurrent-publication-and-all-hit-readback",
+      "passed": true,
+      "writers": [
+        {
+          "correct": true,
+          "workers": 8,
+          "compiled": 31,
+          "errors": 0,
+          "warnings": 0,
+          "job_count": 31,
+          "peak_active": 8,
+          "link_calls": 1,
+          "link_result": 0,
+          "can_run_again": true,
+          "retry_result": 0,
+          "setup_ns": 15417115,
+          "compile_wall_ns": 5410204580,
+          "link_ns": 7242553,
+          "workload_ns": 5433193623,
+          "peak_rss_bytes": 228814848,
+          "jobs": [
+            [
+              16578323,
+              24375166
+            ],
+            [
+              18314848,
+              275836213
+            ],
+            [
+              21756872,
+              100905579
+            ],
+            [
+              24773060,
+              709887779
+            ],
+            [
+              34435934,
+              195541754
+            ],
+            [
+              40807094,
+              68495629
+            ],
+            [
+              40558300,
+              260081653
+            ],
+            [
+              34962512,
+              220586008
+            ],
+            [
+              35228854,
+              392232412
+            ],
+            [
+              69146723,
+              256926469
+            ],
+            [
+              101431877,
+              1334736060
+            ],
+            [
+              196243845,
+              2202985553
+            ],
+            [
+              221231291,
+              367875945
+            ],
+            [
+              257641706,
+              499920820
+            ],
+            [
+              260906267,
+              861988755
+            ],
+            [
+              276530259,
+              2717365034
+            ],
+            [
+              368869779,
+              3252923441
+            ],
+            [
+              392897783,
+              5425028680
+            ],
+            [
+              500624395,
+              836754582
+            ],
+            [
+              711052918,
+              3017072016
+            ],
+            [
+              837497691,
+              959869927
+            ],
+            [
+              863062220,
+              1975668640
+            ],
+            [
+              960842651,
+              2683794974
+            ],
+            [
+              1335845684,
+              1448963276
+            ],
+            [
+              1449740108,
+              2299769928
+            ],
+            [
+              1976572554,
+              3861296001
+            ],
+            [
+              2203999856,
+              2561726243
+            ],
+            [
+              2300876406,
+              3588927027
+            ],
+            [
+              2562278079,
+              2792664273
+            ],
+            [
+              2684720859,
+              3254953520
+            ],
+            [
+              2717978037,
+              2724202758
+            ]
+          ],
+          "buffer_hits": 31,
+          "buffer_bytes": 917680,
+          "buffer_misses": 0,
+          "object_sizes": [
+            760,
+            6608,
+            8024,
+            9304,
+            6264,
+            784,
+            7288,
+            1776,
+            7280,
+            6136,
+            28872,
+            116760,
+            2888,
+            9648,
+            8472,
+            46640,
+            43344,
+            223264,
+            11216,
+            62808,
+            4176,
+            24800,
+            55984,
+            3808,
+            34904,
+            70664,
+            27528,
+            44680,
+            16320,
+            25728,
+            952
+          ],
+          "export_ns": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "object_sha256": [
+            "a9998f0f4fea077f9a22193d3a41f252e4fd87b3f98a41e86aadc3305b8862e3",
+            "45b8d74e295962a38b5d9ae223488f24240a5ead718296ec9046013e06bcf76f",
+            "bdec1efe91ac56a9ab81acdc5b5d8767a7160913e39121b953514135f5505292",
+            "57d03f6a6225710913f2495c2bf137fc2ee22bf26d594ea7a96a814c261623e8",
+            "0657b745b9a4ff77576ec735a6df58ae876cf27a0f33e66e34b4f0c3d353e5da",
+            "d0e5791b4e19f8e4f4c1942c328e1f9e56e16c18b9133384792f35e1b4a98bd6",
+            "63306846a7f3b657e69eff542569a965810eca9fe9bdea935db44cdbd01ccf52",
+            "6907393237e41eafdcf54412e7625929fcbb281fa43200a00b50248adce570b7",
+            "e4e098b2fe639dfcc467c1875dff87c1c2e8b2e7924f651d821d1660b5babd26",
+            "d4ce2f163d867efb5e7c7dad4ad1c5439d82ab4dc4c44977e3faf5fe50aa3abd",
+            "3c483375a9fc328572a078809ba153099985105334ecc8e69b5bab1843c18e23",
+            "a4fbd50e15fac16486008b99adc24910626c7e3894236e97b80f601883cd0da4",
+            "dab1a4e283772d515bf44418ffa193ff8a01301b0244d4e0a7476d3454993bd7",
+            "fb90c944fc243c1a787dc5317d54e889bc52f8e3f21a27d29e133a381a821b43",
+            "59fdd5421e3529ff28d9778084daf86a82514dbba366fc1033665cccb2513ce4",
+            "e13715ff2b1e86d757c54e92474d5d822f9d01bad2361c2d0c8ef49c44d8191c",
+            "ae8e982205c19cc13674b9bd3d9fd32eedf4fe95b63bf0e6b0aeb0719a85e040",
+            "ceaffd3aee3f9ffc140ffd9e69331afbeeff59aafc3e238d69602bdba097a1c3",
+            "82e8d57aedbf91a4610529b5828b019cd0d1bb73123eac66c86f145c1dd319d6",
+            "361c40e87766e43cb583720fee32009a4eb450e53af1bf750d5795fa7c6902b6",
+            "d2dbf35c08bec581a9c686d4254ad7fed5b2f6e1cc3850034d36eee31a8cd421",
+            "18cb4b023930cd2023a977872f42a1b1af1de89769d616614864fe1f178cf081",
+            "c47acf53d36d33f026879466e15920cbe72265dafd0b132c92421ff2e1740c3d",
+            "1f1a069d41e1490760816401e20d6f6405e6c925859ef0dbbef36a1c9f314cfb",
+            "52a500afc6240d3eab88ad47c267619d93c3706f0cbbacb48824cf4bc2c17268",
+            "47c4d71909291ab3090977521c6360bffedf637f83d3614c81814a7944c4e8fc",
+            "b594848f00fc77aa2d9aed0bdee133173f91a24a55627b30ecfea78450e3b889",
+            "fefae0725813485a0b6e0dd2ca4caa1d37a3265fe21e3a0914709950d2d78035",
+            "40e97ce5631cbb14767f13125570312b9ee39f6eb04745fd55a5bb6173b97f8b",
+            "fc55aee9e7ac2b09359fb7a1edecf0eb737affb374d5f2085ab9533516b3a7e0",
+            "d7a519576ddd7c363cfb6dc83606aa82a31f108de0eed177bc8867e7b3ed0f11"
+          ],
+          "cache_hits": 0,
+          "cache_corrupt": 0,
+          "cache_writes": 31,
+          "cache_write_errors": 0,
+          "compiler_executions": 31,
+          "ready_objects": 31,
+          "cache_keys": [
+            "1db0a9b43693dba7fed9a21b6e3c791a6c41598a5b72c5f0441e04dc16447605",
+            "e106f8a95acc10b2306e1832d1d31d67e0aa57d8457a82f327f857324ec8e42c",
+            "02ec8eb20dd90946860d4507ed0353407c23b4577a7caef5d059de8d75ed3c88",
+            "b72efc0a8dd086bfd7158fd714de8b13cd97204757b7e569055f5fae0ac1bcc6",
+            "6c2813a9a441b0778966fc8934fb7da57725e76b0efa497cd366e3db41595022",
+            "805bd9428996b736c37195b8b7c87d589a072f7c0c5d3aa3c39d4ba24410da49",
+            "b521152836378c9076f6a8b68c89f34b15398235a2455a5888dc109e8732b583",
+            "1c6f977e8b54456901bdec23684a98291515d935483a6f5943f28a972af058d0",
+            "85fb0c3297dcadcc0c40db1ce53c5449e60a9084cb1d41a1b19d5190df3014e3",
+            "2cce3505b5134f7b7232564bc7d8a575fb9f1c341681ece211d81f580e988be1",
+            "32bedfbb0a669c42fcd2681cda758774f87aef66f34496c536b4d25fef1bd8f5",
+            "9e42854778e5d7b6ea1aab6a435fa66add62c1fb9addcb30a0a0246ef82fd4f3",
+            "eeabd85a9134f9712b804690519600c369fe31da295954a02e6604768ad6ec2e",
+            "95135cdc44c2f22f8541162cf6f60573572ffd26149f22c3ad422fe2ef54d0b4",
+            "da3ec20e709876588fd822cb562a0ce059b858d4da06a938b78d2778f6b25951",
+            "a76076a524fef402f2e54da43480cd8af7f8ffa54f03c12af7ac74c9b430a034",
+            "248f729ccbb6bccd35590df31cc596d2c92fedc4988ab9c1cfb15661854e203a",
+            "c0d8d886e35eb6af6eada044c4c88fb0a3ff5d9ed0fa57b7ed72cbf86614cc58",
+            "fcfbf14529842f3d2d977110297af68194594fe63a787eb5768f98e6ffed7c94",
+            "75afcdd254bd33425d11d7491a2b1d33e4573a3567eef92100c9d3e3a1e8b84f",
+            "7e1bc4d817f560bf14cde8c50043b57df65f804e9a4bf86d00caae4bb6abd013",
+            "86a454a5515a2abd19ef37a80c98e50f987062dab1aa7778ff4bab45117d9331",
+            "e438d42a7b3bb1dcf197f2ce03c684d613696ad4308a0e342e0b8b71ae5b276a",
+            "273e2fdd7cbd05c85ad29a11c29501de82ff160d9f670103a6fe0c2ba33682a3",
+            "de15459625a814d8eb7d2e29ce43dd304ab44705cd8d7b6bbcf161fecdfbb30d",
+            "c8f2f4af9231ef609c333cef8f39f245d36c9ce936e49a1448b6a5fe4cac164e",
+            "4dc72580176b40e7d219f0cbf4fe3c3a2780fc2a873d65abb3d8d5e1a67d6226",
+            "040d0fad17a86277a2347bcf58f9bd6cdcf181f73800a2e430405bdf23d4a414",
+            "fb2d34334fcad985132c30ae4bafdcd3672f8734f099abd8743fd63690ed46fc",
+            "f674a1fd86688602d6e2bb2063701c5e6e04fc10020929f786e29c92a982caa1",
+            "b1884a2670806221b97a43b4be83f6284440682e4afaa6e893a88ba3c521f00f"
+          ]
+        },
+        {
+          "correct": true,
+          "workers": 8,
+          "compiled": 31,
+          "errors": 0,
+          "warnings": 0,
+          "job_count": 31,
+          "peak_active": 8,
+          "link_calls": 1,
+          "link_result": 0,
+          "can_run_again": true,
+          "retry_result": 0,
+          "setup_ns": 15414379,
+          "compile_wall_ns": 5778856576,
+          "link_ns": 8107051,
+          "workload_ns": 5802549682,
+          "peak_rss_bytes": 214061056,
+          "jobs": [
+            [
+              16322220,
+              24287162
+            ],
+            [
+              16035313,
+              333207768
+            ],
+            [
+              16722996,
+              79076714
+            ],
+            [
+              17099872,
+              383773248
+            ],
+            [
+              17996692,
+              157423942
+            ],
+            [
+              18354143,
+              50636869
+            ],
+            [
+              19582076,
+              233458062
+            ],
+            [
+              23547269,
+              125340968
+            ],
+            [
+              24573405,
+              273776616
+            ],
+            [
+              51347886,
+              323190575
+            ],
+            [
+              79694976,
+              1939686046
+            ],
+            [
+              125983596,
+              3230236926
+            ],
+            [
+              158041803,
+              272099733
+            ],
+            [
+              234476523,
+              817176834
+            ],
+            [
+              272884942,
+              524969954
+            ],
+            [
+              274566513,
+              2306515428
+            ],
+            [
+              324101272,
+              3278202834
+            ],
+            [
+              333824037,
+              5793660794
+            ],
+            [
+              384430184,
+              729931664
+            ],
+            [
+              525688036,
+              2227211549
+            ],
+            [
+              730724758,
+              853736417
+            ],
+            [
+              818215123,
+              1782224589
+            ],
+            [
+              854529932,
+              2703422061
+            ],
+            [
+              1783224444,
+              1903944597
+            ],
+            [
+              1904629195,
+              2783360243
+            ],
+            [
+              1940500420,
+              3878314294
+            ],
+            [
+              2227742596,
+              2611699048
+            ],
+            [
+              2307527497,
+              3645689230
+            ],
+            [
+              2612456694,
+              2849196722
+            ],
+            [
+              2704208482,
+              3254674833
+            ],
+            [
+              2784323559,
+              2791178807
+            ]
+          ],
+          "buffer_hits": 31,
+          "buffer_bytes": 917680,
+          "buffer_misses": 0,
+          "object_sizes": [
+            760,
+            6608,
+            8024,
+            9304,
+            6264,
+            784,
+            7288,
+            1776,
+            7280,
+            6136,
+            28872,
+            116760,
+            2888,
+            9648,
+            8472,
+            46640,
+            43344,
+            223264,
+            11216,
+            62808,
+            4176,
+            24800,
+            55984,
+            3808,
+            34904,
+            70664,
+            27528,
+            44680,
+            16320,
+            25728,
+            952
+          ],
+          "export_ns": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "object_sha256": [
+            "a9998f0f4fea077f9a22193d3a41f252e4fd87b3f98a41e86aadc3305b8862e3",
+            "45b8d74e295962a38b5d9ae223488f24240a5ead718296ec9046013e06bcf76f",
+            "bdec1efe91ac56a9ab81acdc5b5d8767a7160913e39121b953514135f5505292",
+            "57d03f6a6225710913f2495c2bf137fc2ee22bf26d594ea7a96a814c261623e8",
+            "0657b745b9a4ff77576ec735a6df58ae876cf27a0f33e66e34b4f0c3d353e5da",
+            "d0e5791b4e19f8e4f4c1942c328e1f9e56e16c18b9133384792f35e1b4a98bd6",
+            "63306846a7f3b657e69eff542569a965810eca9fe9bdea935db44cdbd01ccf52",
+            "6907393237e41eafdcf54412e7625929fcbb281fa43200a00b50248adce570b7",
+            "e4e098b2fe639dfcc467c1875dff87c1c2e8b2e7924f651d821d1660b5babd26",
+            "d4ce2f163d867efb5e7c7dad4ad1c5439d82ab4dc4c44977e3faf5fe50aa3abd",
+            "3c483375a9fc328572a078809ba153099985105334ecc8e69b5bab1843c18e23",
+            "a4fbd50e15fac16486008b99adc24910626c7e3894236e97b80f601883cd0da4",
+            "dab1a4e283772d515bf44418ffa193ff8a01301b0244d4e0a7476d3454993bd7",
+            "fb90c944fc243c1a787dc5317d54e889bc52f8e3f21a27d29e133a381a821b43",
+            "59fdd5421e3529ff28d9778084daf86a82514dbba366fc1033665cccb2513ce4",
+            "e13715ff2b1e86d757c54e92474d5d822f9d01bad2361c2d0c8ef49c44d8191c",
+            "ae8e982205c19cc13674b9bd3d9fd32eedf4fe95b63bf0e6b0aeb0719a85e040",
+            "ceaffd3aee3f9ffc140ffd9e69331afbeeff59aafc3e238d69602bdba097a1c3",
+            "82e8d57aedbf91a4610529b5828b019cd0d1bb73123eac66c86f145c1dd319d6",
+            "361c40e87766e43cb583720fee32009a4eb450e53af1bf750d5795fa7c6902b6",
+            "d2dbf35c08bec581a9c686d4254ad7fed5b2f6e1cc3850034d36eee31a8cd421",
+            "18cb4b023930cd2023a977872f42a1b1af1de89769d616614864fe1f178cf081",
+            "c47acf53d36d33f026879466e15920cbe72265dafd0b132c92421ff2e1740c3d",
+            "1f1a069d41e1490760816401e20d6f6405e6c925859ef0dbbef36a1c9f314cfb",
+            "52a500afc6240d3eab88ad47c267619d93c3706f0cbbacb48824cf4bc2c17268",
+            "47c4d71909291ab3090977521c6360bffedf637f83d3614c81814a7944c4e8fc",
+            "b594848f00fc77aa2d9aed0bdee133173f91a24a55627b30ecfea78450e3b889",
+            "fefae0725813485a0b6e0dd2ca4caa1d37a3265fe21e3a0914709950d2d78035",
+            "40e97ce5631cbb14767f13125570312b9ee39f6eb04745fd55a5bb6173b97f8b",
+            "fc55aee9e7ac2b09359fb7a1edecf0eb737affb374d5f2085ab9533516b3a7e0",
+            "d7a519576ddd7c363cfb6dc83606aa82a31f108de0eed177bc8867e7b3ed0f11"
+          ],
+          "cache_hits": 0,
+          "cache_corrupt": 0,
+          "cache_writes": 31,
+          "cache_write_errors": 0,
+          "compiler_executions": 31,
+          "ready_objects": 31,
+          "cache_keys": [
+            "1db0a9b43693dba7fed9a21b6e3c791a6c41598a5b72c5f0441e04dc16447605",
+            "e106f8a95acc10b2306e1832d1d31d67e0aa57d8457a82f327f857324ec8e42c",
+            "02ec8eb20dd90946860d4507ed0353407c23b4577a7caef5d059de8d75ed3c88",
+            "b72efc0a8dd086bfd7158fd714de8b13cd97204757b7e569055f5fae0ac1bcc6",
+            "6c2813a9a441b0778966fc8934fb7da57725e76b0efa497cd366e3db41595022",
+            "805bd9428996b736c37195b8b7c87d589a072f7c0c5d3aa3c39d4ba24410da49",
+            "b521152836378c9076f6a8b68c89f34b15398235a2455a5888dc109e8732b583",
+            "1c6f977e8b54456901bdec23684a98291515d935483a6f5943f28a972af058d0",
+            "85fb0c3297dcadcc0c40db1ce53c5449e60a9084cb1d41a1b19d5190df3014e3",
+            "2cce3505b5134f7b7232564bc7d8a575fb9f1c341681ece211d81f580e988be1",
+            "32bedfbb0a669c42fcd2681cda758774f87aef66f34496c536b4d25fef1bd8f5",
+            "9e42854778e5d7b6ea1aab6a435fa66add62c1fb9addcb30a0a0246ef82fd4f3",
+            "eeabd85a9134f9712b804690519600c369fe31da295954a02e6604768ad6ec2e",
+            "95135cdc44c2f22f8541162cf6f60573572ffd26149f22c3ad422fe2ef54d0b4",
+            "da3ec20e709876588fd822cb562a0ce059b858d4da06a938b78d2778f6b25951",
+            "a76076a524fef402f2e54da43480cd8af7f8ffa54f03c12af7ac74c9b430a034",
+            "248f729ccbb6bccd35590df31cc596d2c92fedc4988ab9c1cfb15661854e203a",
+            "c0d8d886e35eb6af6eada044c4c88fb0a3ff5d9ed0fa57b7ed72cbf86614cc58",
+            "fcfbf14529842f3d2d977110297af68194594fe63a787eb5768f98e6ffed7c94",
+            "75afcdd254bd33425d11d7491a2b1d33e4573a3567eef92100c9d3e3a1e8b84f",
+            "7e1bc4d817f560bf14cde8c50043b57df65f804e9a4bf86d00caae4bb6abd013",
+            "86a454a5515a2abd19ef37a80c98e50f987062dab1aa7778ff4bab45117d9331",
+            "e438d42a7b3bb1dcf197f2ce03c684d613696ad4308a0e342e0b8b71ae5b276a",
+            "273e2fdd7cbd05c85ad29a11c29501de82ff160d9f670103a6fe0c2ba33682a3",
+            "de15459625a814d8eb7d2e29ce43dd304ab44705cd8d7b6bbcf161fecdfbb30d",
+            "c8f2f4af9231ef609c333cef8f39f245d36c9ce936e49a1448b6a5fe4cac164e",
+            "4dc72580176b40e7d219f0cbf4fe3c3a2780fc2a873d65abb3d8d5e1a67d6226",
+            "040d0fad17a86277a2347bcf58f9bd6cdcf181f73800a2e430405bdf23d4a414",
+            "fb2d34334fcad985132c30ae4bafdcd3672f8734f099abd8743fd63690ed46fc",
+            "f674a1fd86688602d6e2bb2063701c5e6e04fc10020929f786e29c92a982caa1",
+            "b1884a2670806221b97a43b4be83f6284440682e4afaa6e893a88ba3c521f00f"
+          ]
+        }
+      ],
+      "readback": {
+        "correct": true,
+        "workers": 8,
+        "compiled": 0,
+        "errors": 0,
+        "warnings": 0,
+        "job_count": 31,
+        "peak_active": 0,
+        "link_calls": 1,
+        "link_result": 0,
+        "can_run_again": true,
+        "retry_result": 0,
+        "setup_ns": 12961381,
+        "compile_wall_ns": 761,
+        "link_ns": 5205493,
+        "workload_ns": 18263458,
+        "peak_rss_bytes": 66506752,
+        "jobs": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "buffer_hits": 31,
+        "buffer_bytes": 917680,
+        "buffer_misses": 0,
+        "object_sizes": [
+          760,
+          6608,
+          8024,
+          9304,
+          6264,
+          784,
+          7288,
+          1776,
+          7280,
+          6136,
+          28872,
+          116760,
+          2888,
+          9648,
+          8472,
+          46640,
+          43344,
+          223264,
+          11216,
+          62808,
+          4176,
+          24800,
+          55984,
+          3808,
+          34904,
+          70664,
+          27528,
+          44680,
+          16320,
+          25728,
+          952
+        ],
+        "export_ns": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "object_sha256": [
+          "a9998f0f4fea077f9a22193d3a41f252e4fd87b3f98a41e86aadc3305b8862e3",
+          "45b8d74e295962a38b5d9ae223488f24240a5ead718296ec9046013e06bcf76f",
+          "bdec1efe91ac56a9ab81acdc5b5d8767a7160913e39121b953514135f5505292",
+          "57d03f6a6225710913f2495c2bf137fc2ee22bf26d594ea7a96a814c261623e8",
+          "0657b745b9a4ff77576ec735a6df58ae876cf27a0f33e66e34b4f0c3d353e5da",
+          "d0e5791b4e19f8e4f4c1942c328e1f9e56e16c18b9133384792f35e1b4a98bd6",
+          "63306846a7f3b657e69eff542569a965810eca9fe9bdea935db44cdbd01ccf52",
+          "6907393237e41eafdcf54412e7625929fcbb281fa43200a00b50248adce570b7",
+          "e4e098b2fe639dfcc467c1875dff87c1c2e8b2e7924f651d821d1660b5babd26",
+          "d4ce2f163d867efb5e7c7dad4ad1c5439d82ab4dc4c44977e3faf5fe50aa3abd",
+          "3c483375a9fc328572a078809ba153099985105334ecc8e69b5bab1843c18e23",
+          "a4fbd50e15fac16486008b99adc24910626c7e3894236e97b80f601883cd0da4",
+          "dab1a4e283772d515bf44418ffa193ff8a01301b0244d4e0a7476d3454993bd7",
+          "fb90c944fc243c1a787dc5317d54e889bc52f8e3f21a27d29e133a381a821b43",
+          "59fdd5421e3529ff28d9778084daf86a82514dbba366fc1033665cccb2513ce4",
+          "e13715ff2b1e86d757c54e92474d5d822f9d01bad2361c2d0c8ef49c44d8191c",
+          "ae8e982205c19cc13674b9bd3d9fd32eedf4fe95b63bf0e6b0aeb0719a85e040",
+          "ceaffd3aee3f9ffc140ffd9e69331afbeeff59aafc3e238d69602bdba097a1c3",
+          "82e8d57aedbf91a4610529b5828b019cd0d1bb73123eac66c86f145c1dd319d6",
+          "361c40e87766e43cb583720fee32009a4eb450e53af1bf750d5795fa7c6902b6",
+          "d2dbf35c08bec581a9c686d4254ad7fed5b2f6e1cc3850034d36eee31a8cd421",
+          "18cb4b023930cd2023a977872f42a1b1af1de89769d616614864fe1f178cf081",
+          "c47acf53d36d33f026879466e15920cbe72265dafd0b132c92421ff2e1740c3d",
+          "1f1a069d41e1490760816401e20d6f6405e6c925859ef0dbbef36a1c9f314cfb",
+          "52a500afc6240d3eab88ad47c267619d93c3706f0cbbacb48824cf4bc2c17268",
+          "47c4d71909291ab3090977521c6360bffedf637f83d3614c81814a7944c4e8fc",
+          "b594848f00fc77aa2d9aed0bdee133173f91a24a55627b30ecfea78450e3b889",
+          "fefae0725813485a0b6e0dd2ca4caa1d37a3265fe21e3a0914709950d2d78035",
+          "40e97ce5631cbb14767f13125570312b9ee39f6eb04745fd55a5bb6173b97f8b",
+          "fc55aee9e7ac2b09359fb7a1edecf0eb737affb374d5f2085ab9533516b3a7e0",
+          "d7a519576ddd7c363cfb6dc83606aa82a31f108de0eed177bc8867e7b3ed0f11"
+        ],
+        "cache_hits": 31,
+        "cache_corrupt": 0,
+        "cache_writes": 0,
+        "cache_write_errors": 0,
+        "compiler_executions": 0,
+        "ready_objects": 31,
+        "cache_keys": [
+          "1db0a9b43693dba7fed9a21b6e3c791a6c41598a5b72c5f0441e04dc16447605",
+          "e106f8a95acc10b2306e1832d1d31d67e0aa57d8457a82f327f857324ec8e42c",
+          "02ec8eb20dd90946860d4507ed0353407c23b4577a7caef5d059de8d75ed3c88",
+          "b72efc0a8dd086bfd7158fd714de8b13cd97204757b7e569055f5fae0ac1bcc6",
+          "6c2813a9a441b0778966fc8934fb7da57725e76b0efa497cd366e3db41595022",
+          "805bd9428996b736c37195b8b7c87d589a072f7c0c5d3aa3c39d4ba24410da49",
+          "b521152836378c9076f6a8b68c89f34b15398235a2455a5888dc109e8732b583",
+          "1c6f977e8b54456901bdec23684a98291515d935483a6f5943f28a972af058d0",
+          "85fb0c3297dcadcc0c40db1ce53c5449e60a9084cb1d41a1b19d5190df3014e3",
+          "2cce3505b5134f7b7232564bc7d8a575fb9f1c341681ece211d81f580e988be1",
+          "32bedfbb0a669c42fcd2681cda758774f87aef66f34496c536b4d25fef1bd8f5",
+          "9e42854778e5d7b6ea1aab6a435fa66add62c1fb9addcb30a0a0246ef82fd4f3",
+          "eeabd85a9134f9712b804690519600c369fe31da295954a02e6604768ad6ec2e",
+          "95135cdc44c2f22f8541162cf6f60573572ffd26149f22c3ad422fe2ef54d0b4",
+          "da3ec20e709876588fd822cb562a0ce059b858d4da06a938b78d2778f6b25951",
+          "a76076a524fef402f2e54da43480cd8af7f8ffa54f03c12af7ac74c9b430a034",
+          "248f729ccbb6bccd35590df31cc596d2c92fedc4988ab9c1cfb15661854e203a",
+          "c0d8d886e35eb6af6eada044c4c88fb0a3ff5d9ed0fa57b7ed72cbf86614cc58",
+          "fcfbf14529842f3d2d977110297af68194594fe63a787eb5768f98e6ffed7c94",
+          "75afcdd254bd33425d11d7491a2b1d33e4573a3567eef92100c9d3e3a1e8b84f",
+          "7e1bc4d817f560bf14cde8c50043b57df65f804e9a4bf86d00caae4bb6abd013",
+          "86a454a5515a2abd19ef37a80c98e50f987062dab1aa7778ff4bab45117d9331",
+          "e438d42a7b3bb1dcf197f2ce03c684d613696ad4308a0e342e0b8b71ae5b276a",
+          "273e2fdd7cbd05c85ad29a11c29501de82ff160d9f670103a6fe0c2ba33682a3",
+          "de15459625a814d8eb7d2e29ce43dd304ab44705cd8d7b6bbcf161fecdfbb30d",
+          "c8f2f4af9231ef609c333cef8f39f245d36c9ce936e49a1448b6a5fe4cac164e",
+          "4dc72580176b40e7d219f0cbf4fe3c3a2780fc2a873d65abb3d8d5e1a67d6226",
+          "040d0fad17a86277a2347bcf58f9bd6cdcf181f73800a2e430405bdf23d4a414",
+          "fb2d34334fcad985132c30ae4bafdcd3672f8734f099abd8743fd63690ed46fc",
+          "f674a1fd86688602d6e2bb2063701c5e6e04fc10020929f786e29c92a982caa1",
+          "b1884a2670806221b97a43b4be83f6284440682e4afaa6e893a88ba3c521f00f"
+        ]
+      }
+    },
+    {
+      "check": "warnings-bypass-cache-and-repeat-diagnostics",
+      "passed": true,
+      "runs": [
+        {
+          "result": {
+            "correct": true,
+            "workers": 8,
+            "compiled": 1,
+            "errors": 0,
+            "warnings": 1,
+            "job_count": 1,
+            "peak_active": 1,
+            "link_calls": 1,
+            "link_result": 0,
+            "can_run_again": true,
+            "retry_result": 0,
+            "setup_ns": 11125793,
+            "compile_wall_ns": 14148751,
+            "link_ns": 3234298,
+            "workload_ns": 28540393,
+            "peak_rss_bytes": 104026112,
+            "jobs": [
+              [
+                11598952,
+                24930252
+              ]
+            ],
+            "buffer_hits": 1,
+            "buffer_bytes": 952,
+            "buffer_misses": 0,
+            "object_sizes": [
+              952
+            ],
+            "export_ns": [
+              0
+            ],
+            "object_sha256": [
+              "d7a519576ddd7c363cfb6dc83606aa82a31f108de0eed177bc8867e7b3ed0f11"
+            ],
+            "cache_hits": 0,
+            "cache_corrupt": 0,
+            "cache_writes": 0,
+            "cache_write_errors": 0,
+            "compiler_executions": 1,
+            "ready_objects": 1,
+            "cache_keys": [
+              "8d6a2b0cd943163b8cf356cf24d6c7dbb87631cc05111d0431531ba2c40d46f0"
+            ]
+          },
+          "stderr": "1 warning generated.\njob 0: gaia_cache_warning\n"
+        },
+        {
+          "result": {
+            "correct": true,
+            "workers": 8,
+            "compiled": 1,
+            "errors": 0,
+            "warnings": 1,
+            "job_count": 1,
+            "peak_active": 1,
+            "link_calls": 1,
+            "link_result": 0,
+            "can_run_again": true,
+            "retry_result": 0,
+            "setup_ns": 12112593,
+            "compile_wall_ns": 13825288,
+            "link_ns": 3565466,
+            "workload_ns": 29538083,
+            "peak_rss_bytes": 103976960,
+            "jobs": [
+              [
+                12819143,
+                25620005
+              ]
+            ],
+            "buffer_hits": 1,
+            "buffer_bytes": 952,
+            "buffer_misses": 0,
+            "object_sizes": [
+              952
+            ],
+            "export_ns": [
+              0
+            ],
+            "object_sha256": [
+              "d7a519576ddd7c363cfb6dc83606aa82a31f108de0eed177bc8867e7b3ed0f11"
+            ],
+            "cache_hits": 0,
+            "cache_corrupt": 0,
+            "cache_writes": 0,
+            "cache_write_errors": 0,
+            "compiler_executions": 1,
+            "ready_objects": 1,
+            "cache_keys": [
+              "8d6a2b0cd943163b8cf356cf24d6c7dbb87631cc05111d0431531ba2c40d46f0"
+            ]
+          },
+          "stderr": "1 warning generated.\njob 0: gaia_cache_warning\n"
+        }
+      ]
+    },
+    {
+      "check": "volatile-date-macro-rejected",
+      "passed": true,
+      "result": {
+        "correct": false,
+        "workers": 8,
+        "compiled": 0,
+        "errors": 1,
+        "warnings": 0,
+        "job_count": 1,
+        "peak_active": 1,
+        "link_calls": 0,
+        "link_result": 0,
+        "can_run_again": true,
+        "retry_result": 0,
+        "setup_ns": 12162296,
+        "compile_wall_ns": 7719368,
+        "link_ns": 0,
+        "workload_ns": 19883077,
+        "peak_rss_bytes": 66682880,
+        "jobs": [
+          [
+            12791137,
+            19517001
+          ]
+        ],
+        "buffer_hits": 0,
+        "buffer_bytes": 0,
+        "buffer_misses": 0,
+        "object_sizes": [
+          0
+        ],
+        "export_ns": [
+          0
+        ],
+        "object_sha256": [
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        ],
+        "cache_hits": 0,
+        "cache_corrupt": 0,
+        "cache_writes": 0,
+        "cache_write_errors": 0,
+        "compiler_executions": 1,
+        "ready_objects": 0,
+        "cache_keys": [
+          "7a0eda378324c770ba3b9770477652c380910d0fb8fc137534b9c7849919140f"
+        ]
+      },
+      "stderr": "1 error generated.\njob 0: expansion of date or time macro is not reproducible\n"
+    }
+  ],
+  "checker_sha256": "18759d0819d50a4516d24a8a0b0dbdc6a3b3ed357db2321e44ceaa8e726ddc97",
+  "source_sha256": {
+    "cache_host.odin": "e74d212a808398781ffad2c92bbc66ae2ea144ac94438556707da24d694d661e",
+    "cache_bridge.cpp": "7bdd8ad924da76c0834e99c4a57f89d67857792fa2cce15f584774f7444e4c8b",
+    "handoff_impl.h": "f8d0ed3cd9465a66a0dba4cb9fadf17b59d62bd94c3e353dfbf5445ce16a4d55",
+    "pool_bridge.cpp": "6838a928a0d8713c87abeeb9ef15bba68da8e5947241a501a6691a5e6f6d9780"
+  }
+}

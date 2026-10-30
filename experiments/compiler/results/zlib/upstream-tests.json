@@ -1,0 +1,32 @@
+[
+  {
+    "mode": "make-serial",
+    "passed": true,
+    "log": "make-serial-upstream-check.txt",
+    "library_recompiled": false
+  },
+  {
+    "mode": "make-parallel",
+    "passed": true,
+    "log": "make-parallel-upstream-check.txt",
+    "library_recompiled": false
+  },
+  {
+    "mode": "cli-batch",
+    "passed": true,
+    "log": "cli-batch-upstream-check.txt",
+    "library_recompiled": false
+  },
+  {
+    "mode": "physical",
+    "passed": true,
+    "log": "physical-upstream-check.txt",
+    "library_recompiled": false
+  },
+  {
+    "mode": "memory",
+    "passed": true,
+    "log": "memory-upstream-check.txt",
+    "library_recompiled": false
+  }
+]

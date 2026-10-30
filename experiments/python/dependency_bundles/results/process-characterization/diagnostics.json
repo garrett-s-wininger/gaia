@@ -1,0 +1,3809 @@
+{
+  "compile_events": [
+    {
+      "filename": "<string>",
+      "source_bytes": 87
+    },
+    {
+      "filename": "/root/source/gaia/experiments/dependency_bundles/django_worker.py",
+      "source_bytes": 15568
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 69
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 127
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 263
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 99
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 95
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 103
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 75
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 177
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 97
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 109
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 129
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 143
+    },
+    {
+      "filename": "/root/source/gaia/experiments/dependency_bundles/bundle_access.py",
+      "source_bytes": 9437
+    },
+    {
+      "filename": "/root/source/gaia/experiments/dependency_bundles/native_loader.py",
+      "source_bytes": 6297
+    },
+    {
+      "filename": "/root/source/gaia/experiments/dependency_bundles/precomputed_catalog.py",
+      "source_bytes": 3684
+    },
+    {
+      "filename": "/root/source/gaia/experiments/dependency_bundles/native_catalog.py",
+      "source_bytes": 5254
+    },
+    {
+      "filename": "/root/source/gaia/experiments/dependency_bundles/persistent_zip_loader.py",
+      "source_bytes": 5381
+    },
+    {
+      "filename": "/root/source/gaia/experiments/dependency_bundles/precomputed_index.py",
+      "source_bytes": 5398
+    },
+    {
+      "filename": "/root/source/gaia/experiments/dependency_bundles/binary_index.py",
+      "source_bytes": 3633
+    },
+    {
+      "filename": "/root/source/gaia/experiments/dependency_bundles/indexed_path_loader.py",
+      "source_bytes": 5771
+    },
+    {
+      "filename": "/root/source/gaia/experiments/dependency_bundles/stdlib_snapshot.py",
+      "source_bytes": 7947
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 4269
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 3425
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 2744
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 1919
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 2152
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 85
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 239
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 63
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 207
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 93
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 1014
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 1422
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 61
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 109
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 125
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 79
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 69
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 89
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 189
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 55
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 153
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 65
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 61
+    },
+    {
+      "filename": "/root/source/gaia/experiments/dependency_bundles/django_fixture/__init__.py",
+      "source_bytes": 82
+    },
+    {
+      "filename": "/root/source/gaia/experiments/dependency_bundles/django_fixture/settings.py",
+      "source_bytes": 1841
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 917
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 57
+    },
+    {
+      "filename": "/root/source/gaia/experiments/dependency_bundles/django_fixture/apps.py",
+      "source_bytes": 150
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 71
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 67
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 55
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 217
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 267
+    },
+    {
+      "filename": "/root/source/gaia/experiments/dependency_bundles/django_fixture/models.py",
+      "source_bytes": 102
+    },
+    {
+      "filename": "/root/source/gaia/experiments/dependency_bundles/django_fixture/urls.py",
+      "source_bytes": 962
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 183
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 181
+    },
+    {
+      "filename": "<string>",
+      "source_bytes": 113
+    },
+    {
+      "filename": "/root/source/gaia/experiments/dependency_bundles/django_fixture/template_loader.py",
+      "source_bytes": 1105
+    }
+  ],
+  "bootstrap_source_compiles": [
+    {
+      "filename": "/root/source/gaia/experiments/dependency_bundles/bundle_access.py",
+      "source_bytes": 9437
+    },
+    {
+      "filename": "/root/source/gaia/experiments/dependency_bundles/native_loader.py",
+      "source_bytes": 6297
+    },
+    {
+      "filename": "/root/source/gaia/experiments/dependency_bundles/precomputed_catalog.py",
+      "source_bytes": 3684
+    },
+    {
+      "filename": "/root/source/gaia/experiments/dependency_bundles/native_catalog.py",
+      "source_bytes": 5254
+    },
+    {
+      "filename": "/root/source/gaia/experiments/dependency_bundles/persistent_zip_loader.py",
+      "source_bytes": 5381
+    },
+    {
+      "filename": "/root/source/gaia/experiments/dependency_bundles/precomputed_index.py",
+      "source_bytes": 5398
+    },
+    {
+      "filename": "/root/source/gaia/experiments/dependency_bundles/binary_index.py",
+      "source_bytes": 3633
+    },
+    {
+      "filename": "/root/source/gaia/experiments/dependency_bundles/indexed_path_loader.py",
+      "source_bytes": 5771
+    },
+    {
+      "filename": "/root/source/gaia/experiments/dependency_bundles/stdlib_snapshot.py",
+      "source_bytes": 7947
+    }
+  ],
+  "import_graph_path": "experiments/dependency_bundles/_work/process-20261029T133339.555478Z/django-importtime.txt",
+  "import_rows": [
+    {
+      "self_us": 118,
+      "inclusive_us": 118,
+      "module": "_io"
+    },
+    {
+      "self_us": 35,
+      "inclusive_us": 35,
+      "module": "marshal"
+    },
+    {
+      "self_us": 207,
+      "inclusive_us": 207,
+      "module": "posix"
+    },
+    {
+      "self_us": 411,
+      "inclusive_us": 769,
+      "module": "_frozen_importlib_external"
+    },
+    {
+      "self_us": 73,
+      "inclusive_us": 73,
+      "module": "time"
+    },
+    {
+      "self_us": 193,
+      "inclusive_us": 265,
+      "module": "zipimport"
+    },
+    {
+      "self_us": 26,
+      "inclusive_us": 26,
+      "module": "_codecs"
+    },
+    {
+      "self_us": 332,
+      "inclusive_us": 358,
+      "module": "codecs"
+    },
+    {
+      "self_us": 285,
+      "inclusive_us": 285,
+      "module": "encodings.aliases"
+    },
+    {
+      "self_us": 504,
+      "inclusive_us": 1146,
+      "module": "encodings"
+    },
+    {
+      "self_us": 133,
+      "inclusive_us": 133,
+      "module": "encodings.utf_8"
+    },
+    {
+      "self_us": 73,
+      "inclusive_us": 73,
+      "module": "_signal"
+    },
+    {
+      "self_us": 21,
+      "inclusive_us": 21,
+      "module": "_abc"
+    },
+    {
+      "self_us": 128,
+      "inclusive_us": 148,
+      "module": "abc"
+    },
+    {
+      "self_us": 28,
+      "inclusive_us": 28,
+      "module": "_stat"
+    },
+    {
+      "self_us": 98,
+      "inclusive_us": 126,
+      "module": "stat"
+    },
+    {
+      "self_us": 620,
+      "inclusive_us": 620,
+      "module": "_collections_abc"
+    },
+    {
+      "self_us": 33,
+      "inclusive_us": 33,
+      "module": "errno"
+    },
+    {
+      "self_us": 74,
+      "inclusive_us": 74,
+      "module": "genericpath"
+    },
+    {
+      "self_us": 154,
+      "inclusive_us": 261,
+      "module": "posixpath"
+    },
+    {
+      "self_us": 416,
+      "inclusive_us": 1569,
+      "module": "os"
+    },
+    {
+      "self_us": 19,
+      "inclusive_us": 19,
+      "module": "_types"
+    },
+    {
+      "self_us": 160,
+      "inclusive_us": 179,
+      "module": "types"
+    },
+    {
+      "self_us": 786,
+      "inclusive_us": 964,
+      "module": "enum"
+    },
+    {
+      "self_us": 44,
+      "inclusive_us": 44,
+      "module": "_sre"
+    },
+    {
+      "self_us": 185,
+      "inclusive_us": 185,
+      "module": "re._constants"
+    },
+    {
+      "self_us": 306,
+      "inclusive_us": 491,
+      "module": "re._parser"
+    },
+    {
+      "self_us": 97,
+      "inclusive_us": 97,
+      "module": "re._casefix"
+    },
+    {
+      "self_us": 342,
+      "inclusive_us": 973,
+      "module": "re._compiler"
+    },
+    {
+      "self_us": 70,
+      "inclusive_us": 70,
+      "module": "itertools"
+    },
+    {
+      "self_us": 113,
+      "inclusive_us": 113,
+      "module": "keyword"
+    },
+    {
+      "self_us": 43,
+      "inclusive_us": 43,
+      "module": "_operator"
+    },
+    {
+      "self_us": 246,
+      "inclusive_us": 289,
+      "module": "operator"
+    },
+    {
+      "self_us": 137,
+      "inclusive_us": 137,
+      "module": "reprlib"
+    },
+    {
+      "self_us": 58,
+      "inclusive_us": 58,
+      "module": "_collections"
+    },
+    {
+      "self_us": 680,
+      "inclusive_us": 1344,
+      "module": "collections"
+    },
+    {
+      "self_us": 45,
+      "inclusive_us": 45,
+      "module": "_functools"
+    },
+    {
+      "self_us": 521,
+      "inclusive_us": 1909,
+      "module": "functools"
+    },
+    {
+      "self_us": 124,
+      "inclusive_us": 124,
+      "module": "copyreg"
+    },
+    {
+      "self_us": 450,
+      "inclusive_us": 4418,
+      "module": "re"
+    },
+    {
+      "self_us": 308,
+      "inclusive_us": 308,
+      "module": "gettext"
+    },
+    {
+      "self_us": 702,
+      "inclusive_us": 6996,
+      "module": "argparse"
+    },
+    {
+      "self_us": 1689,
+      "inclusive_us": 1689,
+      "module": "_hashlib"
+    },
+    {
+      "self_us": 143,
+      "inclusive_us": 143,
+      "module": "_blake2"
+    },
+    {
+      "self_us": 213,
+      "inclusive_us": 2043,
+      "module": "hashlib"
+    },
+    {
+      "self_us": 126,
+      "inclusive_us": 126,
+      "module": "importlib"
+    },
+    {
+      "self_us": 177,
+      "inclusive_us": 177,
+      "module": "io"
+    },
+    {
+      "self_us": 34,
+      "inclusive_us": 34,
+      "module": "_winapi"
+    },
+    {
+      "self_us": 39,
+      "inclusive_us": 39,
+      "module": "nt"
+    },
+    {
+      "self_us": 37,
+      "inclusive_us": 37,
+      "module": "nt"
+    },
+    {
+      "self_us": 37,
+      "inclusive_us": 37,
+      "module": "nt"
+    },
+    {
+      "self_us": 38,
+      "inclusive_us": 38,
+      "module": "nt"
+    },
+    {
+      "self_us": 36,
+      "inclusive_us": 36,
+      "module": "nt"
+    },
+    {
+      "self_us": 36,
+      "inclusive_us": 36,
+      "module": "nt"
+    },
+    {
+      "self_us": 36,
+      "inclusive_us": 36,
+      "module": "nt"
+    },
+    {
+      "self_us": 325,
+      "inclusive_us": 615,
+      "module": "ntpath"
+    },
+    {
+      "self_us": 313,
+      "inclusive_us": 313,
+      "module": "contextlib"
+    },
+    {
+      "self_us": 200,
+      "inclusive_us": 200,
+      "module": "fnmatch"
+    },
+    {
+      "self_us": 371,
+      "inclusive_us": 883,
+      "module": "glob"
+    },
+    {
+      "self_us": 46,
+      "inclusive_us": 46,
+      "module": "pwd"
+    },
+    {
+      "self_us": 125,
+      "inclusive_us": 125,
+      "module": "grp"
+    },
+    {
+      "self_us": 129,
+      "inclusive_us": 129,
+      "module": "fcntl"
+    },
+    {
+      "self_us": 39,
+      "inclusive_us": 39,
+      "module": "_winapi"
+    },
+    {
+      "self_us": 367,
+      "inclusive_us": 533,
+      "module": "pathlib._os"
+    },
+    {
+      "self_us": 712,
+      "inclusive_us": 3088,
+      "module": "pathlib"
+    },
+    {
+      "self_us": 17,
+      "inclusive_us": 17,
+      "module": "_contextvars"
+    },
+    {
+      "self_us": 229,
+      "inclusive_us": 246,
+      "module": "_py_warnings"
+    },
+    {
+      "self_us": 107,
+      "inclusive_us": 352,
+      "module": "warnings"
+    },
+    {
+      "self_us": 121,
+      "inclusive_us": 121,
+      "module": "zlib"
+    },
+    {
+      "self_us": 244,
+      "inclusive_us": 244,
+      "module": "compression"
+    },
+    {
+      "self_us": 167,
+      "inclusive_us": 411,
+      "module": "compression._common"
+    },
+    {
+      "self_us": 328,
+      "inclusive_us": 328,
+      "module": "compression._common._streams"
+    },
+    {
+      "self_us": 172,
+      "inclusive_us": 172,
+      "module": "_bz2"
+    },
+    {
+      "self_us": 271,
+      "inclusive_us": 1181,
+      "module": "bz2"
+    },
+    {
+      "self_us": 186,
+      "inclusive_us": 186,
+      "module": "_lzma"
+    },
+    {
+      "self_us": 213,
+      "inclusive_us": 398,
+      "module": "lzma"
+    },
+    {
+      "self_us": 144,
+      "inclusive_us": 144,
+      "module": "_zstd"
+    },
+    {
+      "self_us": 201,
+      "inclusive_us": 201,
+      "module": "compression.zstd._zstdfile"
+    },
+    {
+      "self_us": 531,
+      "inclusive_us": 875,
+      "module": "compression.zstd"
+    },
+    {
+      "self_us": 542,
+      "inclusive_us": 3114,
+      "module": "shutil"
+    },
+    {
+      "self_us": 124,
+      "inclusive_us": 124,
+      "module": "math"
+    },
+    {
+      "self_us": 95,
+      "inclusive_us": 95,
+      "module": "_bisect"
+    },
+    {
+      "self_us": 130,
+      "inclusive_us": 225,
+      "module": "bisect"
+    },
+    {
+      "self_us": 109,
+      "inclusive_us": 109,
+      "module": "_random"
+    },
+    {
+      "self_us": 365,
+      "inclusive_us": 821,
+      "module": "random"
+    },
+    {
+      "self_us": 103,
+      "inclusive_us": 103,
+      "module": "_weakrefset"
+    },
+    {
+      "self_us": 310,
+      "inclusive_us": 412,
+      "module": "weakref"
+    },
+    {
+      "self_us": 395,
+      "inclusive_us": 5093,
+      "module": "tempfile"
+    },
+    {
+      "self_us": 512,
+      "inclusive_us": 512,
+      "module": "_ast"
+    },
+    {
+      "self_us": 245,
+      "inclusive_us": 756,
+      "module": "ast"
+    },
+    {
+      "self_us": 537,
+      "inclusive_us": 1293,
+      "module": "annotationlib"
+    },
+    {
+      "self_us": 45,
+      "inclusive_us": 45,
+      "module": "_opcode"
+    },
+    {
+      "self_us": 146,
+      "inclusive_us": 146,
+      "module": "_opcode_metadata"
+    },
+    {
+      "self_us": 214,
+      "inclusive_us": 404,
+      "module": "opcode"
+    },
+    {
+      "self_us": 649,
+      "inclusive_us": 1052,
+      "module": "dis"
+    },
+    {
+      "self_us": 52,
+      "inclusive_us": 52,
+      "module": "importlib.machinery"
+    },
+    {
+      "self_us": 124,
+      "inclusive_us": 124,
+      "module": "linecache"
+    },
+    {
+      "self_us": 96,
+      "inclusive_us": 96,
+      "module": "token"
+    },
+    {
+      "self_us": 30,
+      "inclusive_us": 30,
+      "module": "_tokenize"
+    },
+    {
+      "self_us": 622,
+      "inclusive_us": 747,
+      "module": "tokenize"
+    },
+    {
+      "self_us": 1445,
+      "inclusive_us": 4710,
+      "module": "inspect"
+    },
+    {
+      "self_us": 26,
+      "inclusive_us": 26,
+      "module": "_typing"
+    },
+    {
+      "self_us": 1594,
+      "inclusive_us": 1619,
+      "module": "typing"
+    },
+    {
+      "self_us": 239,
+      "inclusive_us": 239,
+      "module": "importlib.resources.abc"
+    },
+    {
+      "self_us": 324,
+      "inclusive_us": 15070,
+      "module": "importlib.resources._common"
+    },
+    {
+      "self_us": 114,
+      "inclusive_us": 114,
+      "module": "importlib.resources._functional"
+    },
+    {
+      "self_us": 220,
+      "inclusive_us": 15528,
+      "module": "importlib.resources"
+    },
+    {
+      "self_us": 110,
+      "inclusive_us": 110,
+      "module": "_json"
+    },
+    {
+      "self_us": 238,
+      "inclusive_us": 348,
+      "module": "json.scanner"
+    },
+    {
+      "self_us": 310,
+      "inclusive_us": 658,
+      "module": "json.decoder"
+    },
+    {
+      "self_us": 283,
+      "inclusive_us": 283,
+      "module": "json.encoder"
+    },
+    {
+      "self_us": 192,
+      "inclusive_us": 1132,
+      "module": "json"
+    },
+    {
+      "self_us": 144,
+      "inclusive_us": 144,
+      "module": "mmap"
+    },
+    {
+      "self_us": 128,
+      "inclusive_us": 128,
+      "module": "_struct"
+    },
+    {
+      "self_us": 121,
+      "inclusive_us": 249,
+      "module": "struct"
+    },
+    {
+      "self_us": 122,
+      "inclusive_us": 122,
+      "module": "binascii"
+    },
+    {
+      "self_us": 112,
+      "inclusive_us": 112,
+      "module": "importlib._abc"
+    },
+    {
+      "self_us": 250,
+      "inclusive_us": 361,
+      "module": "importlib.util"
+    },
+    {
+      "self_us": 374,
+      "inclusive_us": 374,
+      "module": "threading"
+    },
+    {
+      "self_us": 114,
+      "inclusive_us": 114,
+      "module": "zipfile._path.glob"
+    },
+    {
+      "self_us": 278,
+      "inclusive_us": 391,
+      "module": "zipfile._path"
+    },
+    {
+      "self_us": 607,
+      "inclusive_us": 1854,
+      "module": "zipfile"
+    },
+    {
+      "self_us": 1772,
+      "inclusive_us": 4017,
+      "module": "bundle_access"
+    },
+    {
+      "self_us": 602,
+      "inclusive_us": 602,
+      "module": "precomputed_catalog"
+    },
+    {
+      "self_us": 1078,
+      "inclusive_us": 1078,
+      "module": "native_catalog"
+    },
+    {
+      "self_us": 995,
+      "inclusive_us": 2674,
+      "module": "native_loader"
+    },
+    {
+      "self_us": 228,
+      "inclusive_us": 228,
+      "module": "importlib.abc"
+    },
+    {
+      "self_us": 799,
+      "inclusive_us": 1026,
+      "module": "persistent_zip_loader"
+    },
+    {
+      "self_us": 491,
+      "inclusive_us": 491,
+      "module": "binary_index"
+    },
+    {
+      "self_us": 820,
+      "inclusive_us": 1310,
+      "module": "precomputed_index"
+    },
+    {
+      "self_us": 911,
+      "inclusive_us": 911,
+      "module": "indexed_path_loader"
+    },
+    {
+      "self_us": 1374,
+      "inclusive_us": 1374,
+      "module": "stdlib_snapshot"
+    },
+    {
+      "self_us": 96,
+      "inclusive_us": 96,
+      "module": "_locale"
+    },
+    {
+      "self_us": 705,
+      "inclusive_us": 801,
+      "module": "locale"
+    },
+    {
+      "self_us": 102,
+      "inclusive_us": 102,
+      "module": "copy"
+    },
+    {
+      "self_us": 398,
+      "inclusive_us": 499,
+      "module": "dataclasses"
+    },
+    {
+      "self_us": 2731,
+      "inclusive_us": 3230,
+      "module": "_colorize"
+    },
+    {
+      "self_us": 40,
+      "inclusive_us": 40,
+      "module": "django.utils"
+    },
+    {
+      "self_us": 35,
+      "inclusive_us": 35,
+      "module": "_datetime"
+    },
+    {
+      "self_us": 67,
+      "inclusive_us": 102,
+      "module": "datetime"
+    },
+    {
+      "self_us": 376,
+      "inclusive_us": 376,
+      "module": "signal"
+    },
+    {
+      "self_us": 71,
+      "inclusive_us": 71,
+      "module": "msvcrt"
+    },
+    {
+      "self_us": 131,
+      "inclusive_us": 131,
+      "module": "_posixsubprocess"
+    },
+    {
+      "self_us": 155,
+      "inclusive_us": 155,
+      "module": "select"
+    },
+    {
+      "self_us": 325,
+      "inclusive_us": 325,
+      "module": "selectors"
+    },
+    {
+      "self_us": 2375,
+      "inclusive_us": 3429,
+      "module": "subprocess"
+    },
+    {
+      "self_us": 147,
+      "inclusive_us": 147,
+      "module": "django.utils.functional"
+    },
+    {
+      "self_us": 140,
+      "inclusive_us": 287,
+      "module": "django.utils.regex_helper"
+    },
+    {
+      "self_us": 178,
+      "inclusive_us": 4034,
+      "module": "django.utils.version"
+    },
+    {
+      "self_us": 1288,
+      "inclusive_us": 5321,
+      "module": "django"
+    },
+    {
+      "self_us": 51,
+      "inclusive_us": 5372,
+      "module": "django.core"
+    },
+    {
+      "self_us": 31,
+      "inclusive_us": 31,
+      "module": "django.core.handlers"
+    },
+    {
+      "self_us": 110,
+      "inclusive_us": 110,
+      "module": "django.conf.global_settings"
+    },
+    {
+      "self_us": 29,
+      "inclusive_us": 29,
+      "module": "django.utils.hashable"
+    },
+    {
+      "self_us": 228,
+      "inclusive_us": 257,
+      "module": "django.core.exceptions"
+    },
+    {
+      "self_us": 30,
+      "inclusive_us": 30,
+      "module": "asgiref"
+    },
+    {
+      "self_us": 37,
+      "inclusive_us": 37,
+      "module": "concurrent"
+    },
+    {
+      "self_us": 437,
+      "inclusive_us": 437,
+      "module": "textwrap"
+    },
+    {
+      "self_us": 58,
+      "inclusive_us": 58,
+      "module": "__future__"
+    },
+    {
+      "self_us": 99,
+      "inclusive_us": 156,
+      "module": "codeop"
+    },
+    {
+      "self_us": 441,
+      "inclusive_us": 1033,
+      "module": "traceback"
+    },
+    {
+      "self_us": 43,
+      "inclusive_us": 43,
+      "module": "_string"
+    },
+    {
+      "self_us": 196,
+      "inclusive_us": 239,
+      "module": "string"
+    },
+    {
+      "self_us": 30,
+      "inclusive_us": 30,
+      "module": "atexit"
+    },
+    {
+      "self_us": 964,
+      "inclusive_us": 2265,
+      "module": "logging"
+    },
+    {
+      "self_us": 435,
+      "inclusive_us": 2700,
+      "module": "concurrent.futures._base"
+    },
+    {
+      "self_us": 178,
+      "inclusive_us": 178,
+      "module": "_interpreters"
+    },
+    {
+      "self_us": 136,
+      "inclusive_us": 3048,
+      "module": "concurrent.futures"
+    },
+    {
+      "self_us": 122,
+      "inclusive_us": 122,
+      "module": "_heapq"
+    },
+    {
+      "self_us": 208,
+      "inclusive_us": 329,
+      "module": "heapq"
+    },
+    {
+      "self_us": 254,
+      "inclusive_us": 254,
+      "module": "_socket"
+    },
+    {
+      "self_us": 730,
+      "inclusive_us": 983,
+      "module": "socket"
+    },
+    {
+      "self_us": 927,
+      "inclusive_us": 927,
+      "module": "_ssl"
+    },
+    {
+      "self_us": 146,
+      "inclusive_us": 146,
+      "module": "base64"
+    },
+    {
+      "self_us": 1192,
+      "inclusive_us": 2264,
+      "module": "ssl"
+    },
+    {
+      "self_us": 123,
+      "inclusive_us": 123,
+      "module": "asyncio.constants"
+    },
+    {
+      "self_us": 53,
+      "inclusive_us": 53,
+      "module": "asyncio.coroutines"
+    },
+    {
+      "self_us": 69,
+      "inclusive_us": 69,
+      "module": "contextvars"
+    },
+    {
+      "self_us": 63,
+      "inclusive_us": 63,
+      "module": "asyncio.format_helpers"
+    },
+    {
+      "self_us": 57,
+      "inclusive_us": 57,
+      "module": "asyncio.base_futures"
+    },
+    {
+      "self_us": 103,
+      "inclusive_us": 103,
+      "module": "asyncio.exceptions"
+    },
+    {
+      "self_us": 69,
+      "inclusive_us": 69,
+      "module": "asyncio.base_tasks"
+    },
+    {
+      "self_us": 291,
+      "inclusive_us": 517,
+      "module": "_asyncio"
+    },
+    {
+      "self_us": 417,
+      "inclusive_us": 1064,
+      "module": "asyncio.events"
+    },
+    {
+      "self_us": 132,
+      "inclusive_us": 132,
+      "module": "asyncio.futures"
+    },
+    {
+      "self_us": 99,
+      "inclusive_us": 99,
+      "module": "asyncio.protocols"
+    },
+    {
+      "self_us": 134,
+      "inclusive_us": 134,
+      "module": "asyncio.transports"
+    },
+    {
+      "self_us": 42,
+      "inclusive_us": 42,
+      "module": "asyncio.log"
+    },
+    {
+      "self_us": 624,
+      "inclusive_us": 798,
+      "module": "asyncio.sslproto"
+    },
+    {
+      "self_us": 50,
+      "inclusive_us": 50,
+      "module": "asyncio.mixins"
+    },
+    {
+      "self_us": 281,
+      "inclusive_us": 331,
+      "module": "asyncio.locks"
+    },
+    {
+      "self_us": 122,
+      "inclusive_us": 122,
+      "module": "asyncio.queues"
+    },
+    {
+      "self_us": 169,
+      "inclusive_us": 169,
+      "module": "asyncio.timeouts"
+    },
+    {
+      "self_us": 356,
+      "inclusive_us": 646,
+      "module": "asyncio.tasks"
+    },
+    {
+      "self_us": 155,
+      "inclusive_us": 1130,
+      "module": "asyncio.staggered"
+    },
+    {
+      "self_us": 80,
+      "inclusive_us": 80,
+      "module": "asyncio.trsock"
+    },
+    {
+      "self_us": 762,
+      "inclusive_us": 10860,
+      "module": "asyncio.base_events"
+    },
+    {
+      "self_us": 996,
+      "inclusive_us": 996,
+      "module": "asyncio.graph"
+    },
+    {
+      "self_us": 171,
+      "inclusive_us": 171,
+      "module": "asyncio.runners"
+    },
+    {
+      "self_us": 239,
+      "inclusive_us": 239,
+      "module": "asyncio.streams"
+    },
+    {
+      "self_us": 247,
+      "inclusive_us": 247,
+      "module": "asyncio.subprocess"
+    },
+    {
+      "self_us": 101,
+      "inclusive_us": 101,
+      "module": "asyncio.taskgroups"
+    },
+    {
+      "self_us": 56,
+      "inclusive_us": 56,
+      "module": "asyncio.threads"
+    },
+    {
+      "self_us": 121,
+      "inclusive_us": 121,
+      "module": "asyncio.base_subprocess"
+    },
+    {
+      "self_us": 357,
+      "inclusive_us": 357,
+      "module": "asyncio.selector_events"
+    },
+    {
+      "self_us": 441,
+      "inclusive_us": 918,
+      "module": "asyncio.unix_events"
+    },
+    {
+      "self_us": 304,
+      "inclusive_us": 13888,
+      "module": "asyncio"
+    },
+    {
+      "self_us": 158,
+      "inclusive_us": 158,
+      "module": "_queue"
+    },
+    {
+      "self_us": 155,
+      "inclusive_us": 313,
+      "module": "queue"
+    },
+    {
+      "self_us": 164,
+      "inclusive_us": 476,
+      "module": "concurrent.futures.thread"
+    },
+    {
+      "self_us": 114,
+      "inclusive_us": 114,
+      "module": "asgiref.current_thread_executor"
+    },
+    {
+      "self_us": 142,
+      "inclusive_us": 142,
+      "module": "asgiref.local"
+    },
+    {
+      "self_us": 414,
+      "inclusive_us": 15061,
+      "module": "asgiref.sync"
+    },
+    {
+      "self_us": 104,
+      "inclusive_us": 104,
+      "module": "django.utils.inspect"
+    },
+    {
+      "self_us": 217,
+      "inclusive_us": 15381,
+      "module": "django.utils.deprecation"
+    },
+    {
+      "self_us": 235,
+      "inclusive_us": 15981,
+      "module": "django.conf"
+    },
+    {
+      "self_us": 119,
+      "inclusive_us": 119,
+      "module": "django.dispatch.dispatcher"
+    },
+    {
+      "self_us": 66,
+      "inclusive_us": 185,
+      "module": "django.dispatch"
+    },
+    {
+      "self_us": 67,
+      "inclusive_us": 252,
+      "module": "django.core.signals"
+    },
+    {
+      "self_us": 298,
+      "inclusive_us": 298,
+      "module": "pkgutil"
+    },
+    {
+      "self_us": 113,
+      "inclusive_us": 113,
+      "module": "django.utils.connection"
+    },
+    {
+      "self_us": 66,
+      "inclusive_us": 66,
+      "module": "django.utils.module_loading"
+    },
+    {
+      "self_us": 374,
+      "inclusive_us": 850,
+      "module": "django.db.utils"
+    },
+    {
+      "self_us": 111,
+      "inclusive_us": 960,
+      "module": "django.db"
+    },
+    {
+      "self_us": 130,
+      "inclusive_us": 130,
+      "module": "django.db.transaction"
+    },
+    {
+      "self_us": 42,
+      "inclusive_us": 42,
+      "module": "urllib"
+    },
+    {
+      "self_us": 786,
+      "inclusive_us": 786,
+      "module": "ipaddress"
+    },
+    {
+      "self_us": 825,
+      "inclusive_us": 1653,
+      "module": "urllib.parse"
+    },
+    {
+      "self_us": 361,
+      "inclusive_us": 361,
+      "module": "http"
+    },
+    {
+      "self_us": 688,
+      "inclusive_us": 688,
+      "module": "http.cookies"
+    },
+    {
+      "self_us": 88,
+      "inclusive_us": 1136,
+      "module": "django.http.cookie"
+    },
+    {
+      "self_us": 201,
+      "inclusive_us": 201,
+      "module": "_hmac"
+    },
+    {
+      "self_us": 119,
+      "inclusive_us": 320,
+      "module": "hmac"
+    },
+    {
+      "self_us": 56,
+      "inclusive_us": 56,
+      "module": "secrets"
+    },
+    {
+      "self_us": 204,
+      "inclusive_us": 204,
+      "module": "numbers"
+    },
+    {
+      "self_us": 540,
+      "inclusive_us": 743,
+      "module": "_decimal"
+    },
+    {
+      "self_us": 72,
+      "inclusive_us": 814,
+      "module": "decimal"
+    },
+    {
+      "self_us": 262,
+      "inclusive_us": 1075,
+      "module": "django.utils.encoding"
+    },
+    {
+      "self_us": 126,
+      "inclusive_us": 1576,
+      "module": "django.utils.crypto"
+    },
+    {
+      "self_us": 285,
+      "inclusive_us": 1860,
+      "module": "django.core.signing"
+    },
+    {
+      "self_us": 61,
+      "inclusive_us": 61,
+      "module": "django.core.files.utils"
+    },
+    {
+      "self_us": 119,
+      "inclusive_us": 180,
+      "module": "django.core.files.base"
+    },
+    {
+      "self_us": 76,
+      "inclusive_us": 255,
+      "module": "django.core.files"
+    },
+    {
+      "self_us": 35,
+      "inclusive_us": 35,
+      "module": "django.core.files.temp"
+    },
+    {
+      "self_us": 126,
+      "inclusive_us": 161,
+      "module": "django.core.files.uploadedfile"
+    },
+    {
+      "self_us": 181,
+      "inclusive_us": 341,
+      "module": "django.core.files.uploadhandler"
+    },
+    {
+      "self_us": 678,
+      "inclusive_us": 678,
+      "module": "html.entities"
+    },
+    {
+      "self_us": 204,
+      "inclusive_us": 882,
+      "module": "html"
+    },
+    {
+      "self_us": 200,
+      "inclusive_us": 200,
+      "module": "django.utils.datastructures"
+    },
+    {
+      "self_us": 148,
+      "inclusive_us": 148,
+      "module": "unicodedata"
+    },
+    {
+      "self_us": 64,
+      "inclusive_us": 64,
+      "module": "email"
+    },
+    {
+      "self_us": 56,
+      "inclusive_us": 56,
+      "module": "quopri"
+    },
+    {
+      "self_us": 124,
+      "inclusive_us": 124,
+      "module": "email._parseaddr"
+    },
+    {
+      "self_us": 277,
+      "inclusive_us": 401,
+      "module": "email.utils"
+    },
+    {
+      "self_us": 209,
+      "inclusive_us": 209,
+      "module": "email.errors"
+    },
+    {
+      "self_us": 119,
+      "inclusive_us": 119,
+      "module": "email.quoprimime"
+    },
+    {
+      "self_us": 62,
+      "inclusive_us": 62,
+      "module": "email.base64mime"
+    },
+    {
+      "self_us": 47,
+      "inclusive_us": 47,
+      "module": "email.encoders"
+    },
+    {
+      "self_us": 258,
+      "inclusive_us": 304,
+      "module": "email.charset"
+    },
+    {
+      "self_us": 341,
+      "inclusive_us": 824,
+      "module": "email.header"
+    },
+    {
+      "self_us": 231,
+      "inclusive_us": 1054,
+      "module": "email._policybase"
+    },
+    {
+      "self_us": 140,
+      "inclusive_us": 140,
+      "module": "email._encoded_words"
+    },
+    {
+      "self_us": 52,
+      "inclusive_us": 52,
+      "module": "email.iterators"
+    },
+    {
+      "self_us": 488,
+      "inclusive_us": 2461,
+      "module": "email.message"
+    },
+    {
+      "self_us": 172,
+      "inclusive_us": 2780,
+      "module": "django.utils.http"
+    },
+    {
+      "self_us": 288,
+      "inclusive_us": 4148,
+      "module": "django.http.multipartparser"
+    },
+    {
+      "self_us": 398,
+      "inclusive_us": 7000,
+      "module": "django.http.request"
+    },
+    {
+      "self_us": 55,
+      "inclusive_us": 55,
+      "module": "_winapi"
+    },
+    {
+      "self_us": 54,
+      "inclusive_us": 54,
+      "module": "winreg"
+    },
+    {
+      "self_us": 279,
+      "inclusive_us": 387,
+      "module": "mimetypes"
+    },
+    {
+      "self_us": 300,
+      "inclusive_us": 300,
+      "module": "email.feedparser"
+    },
+    {
+      "self_us": 111,
+      "inclusive_us": 410,
+      "module": "email.parser"
+    },
+    {
+      "self_us": 590,
+      "inclusive_us": 1000,
+      "module": "http.client"
+    },
+    {
+      "self_us": 76,
+      "inclusive_us": 76,
+      "module": "django.apps.config"
+    },
+    {
+      "self_us": 150,
+      "inclusive_us": 150,
+      "module": "django.apps.registry"
+    },
+    {
+      "self_us": 81,
+      "inclusive_us": 306,
+      "module": "django.apps"
+    },
+    {
+      "self_us": 59,
+      "inclusive_us": 59,
+      "module": "django.db.models.utils"
+    },
+    {
+      "self_us": 217,
+      "inclusive_us": 275,
+      "module": "django.db.models.signals"
+    },
+    {
+      "self_us": 179,
+      "inclusive_us": 179,
+      "module": "_uuid"
+    },
+    {
+      "self_us": 277,
+      "inclusive_us": 455,
+      "module": "uuid"
+    },
+    {
+      "self_us": 137,
+      "inclusive_us": 137,
+      "module": "django.template.context"
+    },
+    {
+      "self_us": 469,
+      "inclusive_us": 469,
+      "module": "calendar"
+    },
+    {
+      "self_us": 269,
+      "inclusive_us": 269,
+      "module": "termios"
+    },
+    {
+      "self_us": 54,
+      "inclusive_us": 54,
+      "module": "pywatchman"
+    },
+    {
+      "self_us": 250,
+      "inclusive_us": 572,
+      "module": "django.utils.autoreload"
+    },
+    {
+      "self_us": 1723,
+      "inclusive_us": 2294,
+      "module": "django.utils.translation"
+    },
+    {
+      "self_us": 110,
+      "inclusive_us": 2404,
+      "module": "django.utils.dates"
+    },
+    {
+      "self_us": 211,
+      "inclusive_us": 211,
+      "module": "sysconfig"
+    },
+    {
+      "self_us": 559,
+      "inclusive_us": 769,
+      "module": "zoneinfo._tzpath"
+    },
+    {
+      "self_us": 91,
+      "inclusive_us": 91,
+      "module": "zoneinfo._common"
+    },
+    {
+      "self_us": 182,
+      "inclusive_us": 182,
+      "module": "_zoneinfo"
+    },
+    {
+      "self_us": 155,
+      "inclusive_us": 1196,
+      "module": "zoneinfo"
+    },
+    {
+      "self_us": 145,
+      "inclusive_us": 1340,
+      "module": "django.utils.timezone"
+    },
+    {
+      "self_us": 203,
+      "inclusive_us": 4415,
+      "module": "django.utils.dateformat"
+    },
+    {
+      "self_us": 115,
+      "inclusive_us": 115,
+      "module": "django.utils.safestring"
+    },
+    {
+      "self_us": 89,
+      "inclusive_us": 203,
+      "module": "django.utils.numberformat"
+    },
+    {
+      "self_us": 188,
+      "inclusive_us": 4805,
+      "module": "django.utils.formats"
+    },
+    {
+      "self_us": 295,
+      "inclusive_us": 295,
+      "module": "_markupbase"
+    },
+    {
+      "self_us": 1009,
+      "inclusive_us": 1304,
+      "module": "html.parser"
+    },
+    {
+      "self_us": 42,
+      "inclusive_us": 42,
+      "module": "django.utils.deconstruct"
+    },
+    {
+      "self_us": 59,
+      "inclusive_us": 59,
+      "module": "django.utils.ipv6"
+    },
+    {
+      "self_us": 700,
+      "inclusive_us": 800,
+      "module": "django.core.validators"
+    },
+    {
+      "self_us": 237,
+      "inclusive_us": 237,
+      "module": "gzip"
+    },
+    {
+      "self_us": 596,
+      "inclusive_us": 832,
+      "module": "django.utils.text"
+    },
+    {
+      "self_us": 548,
+      "inclusive_us": 3483,
+      "module": "django.utils.html"
+    },
+    {
+      "self_us": 78,
+      "inclusive_us": 78,
+      "module": "django.template.exceptions"
+    },
+    {
+      "self_us": 679,
+      "inclusive_us": 9180,
+      "module": "django.template.base"
+    },
+    {
+      "self_us": 184,
+      "inclusive_us": 184,
+      "module": "django.template.library"
+    },
+    {
+      "self_us": 178,
+      "inclusive_us": 9540,
+      "module": "django.template.engine"
+    },
+    {
+      "self_us": 113,
+      "inclusive_us": 113,
+      "module": "django.template.utils"
+    },
+    {
+      "self_us": 24,
+      "inclusive_us": 24,
+      "module": "django.template.backends"
+    },
+    {
+      "self_us": 84,
+      "inclusive_us": 84,
+      "module": "django.core.checks.messages"
+    },
+    {
+      "self_us": 93,
+      "inclusive_us": 93,
+      "module": "django.core.checks.registry"
+    },
+    {
+      "self_us": 122,
+      "inclusive_us": 122,
+      "module": "django.core.checks.async_checks"
+    },
+    {
+      "self_us": 24,
+      "inclusive_us": 24,
+      "module": "django.core.cache.backends"
+    },
+    {
+      "self_us": 206,
+      "inclusive_us": 229,
+      "module": "django.core.cache.backends.base"
+    },
+    {
+      "self_us": 111,
+      "inclusive_us": 340,
+      "module": "django.core.cache"
+    },
+    {
+      "self_us": 112,
+      "inclusive_us": 112,
+      "module": "_compat_pickle"
+    },
+    {
+      "self_us": 220,
+      "inclusive_us": 220,
+      "module": "_pickle"
+    },
+    {
+      "self_us": 621,
+      "inclusive_us": 951,
+      "module": "pickle"
+    },
+    {
+      "self_us": 74,
+      "inclusive_us": 74,
+      "module": "django.core.files.locks"
+    },
+    {
+      "self_us": 60,
+      "inclusive_us": 60,
+      "module": "django.core.files.move"
+    },
+    {
+      "self_us": 68,
+      "inclusive_us": 68,
+      "module": "django.utils._os"
+    },
+    {
+      "self_us": 213,
+      "inclusive_us": 1363,
+      "module": "django.core.cache.backends.filebased"
+    },
+    {
+      "self_us": 188,
+      "inclusive_us": 1890,
+      "module": "django.core.checks.caches"
+    },
+    {
+      "self_us": 87,
+      "inclusive_us": 87,
+      "module": "django.core.checks.commands"
+    },
+    {
+      "self_us": 39,
+      "inclusive_us": 39,
+      "module": "django.core.checks.compatibility"
+    },
+    {
+      "self_us": 114,
+      "inclusive_us": 153,
+      "module": "django.core.checks.compatibility.django_4_0"
+    },
+    {
+      "self_us": 80,
+      "inclusive_us": 80,
+      "module": "django.core.checks.database"
+    },
+    {
+      "self_us": 87,
+      "inclusive_us": 87,
+      "module": "django.core.checks.files"
+    },
+    {
+      "self_us": 61,
+      "inclusive_us": 61,
+      "module": "django.core.mail.exceptions"
+    },
+    {
+      "self_us": 88,
+      "inclusive_us": 88,
+      "module": "django.core.mail.handler"
+    },
+    {
+      "self_us": 1292,
+      "inclusive_us": 1292,
+      "module": "email._header_value_parser"
+    },
+    {
+      "self_us": 265,
+      "inclusive_us": 1556,
+      "module": "email.headerregistry"
+    },
+    {
+      "self_us": 112,
+      "inclusive_us": 112,
+      "module": "email.contentmanager"
+    },
+    {
+      "self_us": 210,
+      "inclusive_us": 1877,
+      "module": "email.policy"
+    },
+    {
+      "self_us": 246,
+      "inclusive_us": 246,
+      "module": "email.generator"
+    },
+    {
+      "self_us": 47,
+      "inclusive_us": 47,
+      "module": "email.mime"
+    },
+    {
+      "self_us": 83,
+      "inclusive_us": 130,
+      "module": "email.mime.base"
+    },
+    {
+      "self_us": 38,
+      "inclusive_us": 38,
+      "module": "email.mime.nonmultipart"
+    },
+    {
+      "self_us": 82,
+      "inclusive_us": 119,
+      "module": "email.mime.message"
+    },
+    {
+      "self_us": 60,
+      "inclusive_us": 60,
+      "module": "email.mime.multipart"
+    },
+    {
+      "self_us": 58,
+      "inclusive_us": 58,
+      "module": "email.mime.text"
+    },
+    {
+      "self_us": 65,
+      "inclusive_us": 65,
+      "module": "django.core.mail.utils"
+    },
+    {
+      "self_us": 64,
+      "inclusive_us": 64,
+      "module": "django.core.mail.deprecation"
+    },
+    {
+      "self_us": 708,
+      "inclusive_us": 3323,
+      "module": "django.core.mail.message"
+    },
+    {
+      "self_us": 264,
+      "inclusive_us": 3734,
+      "module": "django.core.mail"
+    },
+    {
+      "self_us": 139,
+      "inclusive_us": 3873,
+      "module": "django.core.checks.mail"
+    },
+    {
+      "self_us": 140,
+      "inclusive_us": 140,
+      "module": "django.core.checks.model_checks"
+    },
+    {
+      "self_us": 42,
+      "inclusive_us": 42,
+      "module": "django.core.checks.security"
+    },
+    {
+      "self_us": 195,
+      "inclusive_us": 195,
+      "module": "django.utils.csp"
+    },
+    {
+      "self_us": 272,
+      "inclusive_us": 509,
+      "module": "django.core.checks.security.base"
+    },
+    {
+      "self_us": 117,
+      "inclusive_us": 117,
+      "module": "django.core.checks.security.csrf"
+    },
+    {
+      "self_us": 123,
+      "inclusive_us": 123,
+      "module": "django.core.checks.security.sessions"
+    },
+    {
+      "self_us": 123,
+      "inclusive_us": 123,
+      "module": "django.core.checks.templates"
+    },
+    {
+      "self_us": 100,
+      "inclusive_us": 100,
+      "module": "django.conf.locale"
+    },
+    {
+      "self_us": 225,
+      "inclusive_us": 325,
+      "module": "django.utils.translation.trans_real"
+    },
+    {
+      "self_us": 161,
+      "inclusive_us": 485,
+      "module": "django.core.checks.translation"
+    },
+    {
+      "self_us": 275,
+      "inclusive_us": 275,
+      "module": "django.core.checks.urls"
+    },
+    {
+      "self_us": 473,
+      "inclusive_us": 8706,
+      "module": "django.core.checks"
+    },
+    {
+      "self_us": 65,
+      "inclusive_us": 65,
+      "module": "django.template.backends.base"
+    },
+    {
+      "self_us": 179,
+      "inclusive_us": 8972,
+      "module": "django.template.backends.django"
+    },
+    {
+      "self_us": 113,
+      "inclusive_us": 9085,
+      "module": "django.template.autoreload"
+    },
+    {
+      "self_us": 147,
+      "inclusive_us": 18884,
+      "module": "django.template"
+    },
+    {
+      "self_us": 11,
+      "inclusive_us": 18894,
+      "module": "django.template.backends"
+    },
+    {
+      "self_us": 21,
+      "inclusive_us": 18915,
+      "module": "django.template.backends.django"
+    },
+    {
+      "self_us": 58,
+      "inclusive_us": 58,
+      "module": "django.template.loader"
+    },
+    {
+      "self_us": 651,
+      "inclusive_us": 19623,
+      "module": "django.forms.renderers"
+    },
+    {
+      "self_us": 189,
+      "inclusive_us": 19812,
+      "module": "django.forms.utils"
+    },
+    {
+      "self_us": 80,
+      "inclusive_us": 80,
+      "module": "graphlib"
+    },
+    {
+      "self_us": 38,
+      "inclusive_us": 38,
+      "module": "django.templatetags"
+    },
+    {
+      "self_us": 106,
+      "inclusive_us": 143,
+      "module": "django.templatetags.static"
+    },
+    {
+      "self_us": 118,
+      "inclusive_us": 118,
+      "module": "django.utils.choices"
+    },
+    {
+      "self_us": 658,
+      "inclusive_us": 998,
+      "module": "django.forms.widgets"
+    },
+    {
+      "self_us": 169,
+      "inclusive_us": 20978,
+      "module": "django.forms.boundfield"
+    },
+    {
+      "self_us": 51,
+      "inclusive_us": 51,
+      "module": "django.utils.dateparse"
+    },
+    {
+      "self_us": 59,
+      "inclusive_us": 59,
+      "module": "django.utils.duration"
+    },
+    {
+      "self_us": 789,
+      "inclusive_us": 897,
+      "module": "django.forms.fields"
+    },
+    {
+      "self_us": 196,
+      "inclusive_us": 196,
+      "module": "django.forms.forms"
+    },
+    {
+      "self_us": 439,
+      "inclusive_us": 439,
+      "module": "django.forms.formsets"
+    },
+    {
+      "self_us": 502,
+      "inclusive_us": 502,
+      "module": "django.forms.models"
+    },
+    {
+      "self_us": 154,
+      "inclusive_us": 23163,
+      "module": "django.forms"
+    },
+    {
+      "self_us": 132,
+      "inclusive_us": 132,
+      "module": "django.db.models.constants"
+    },
+    {
+      "self_us": 57,
+      "inclusive_us": 57,
+      "module": "django.utils.tree"
+    },
+    {
+      "self_us": 392,
+      "inclusive_us": 448,
+      "module": "django.db.models.query_utils"
+    },
+    {
+      "self_us": 1106,
+      "inclusive_us": 24847,
+      "module": "django.db.models.fields"
+    },
+    {
+      "self_us": 253,
+      "inclusive_us": 253,
+      "module": "django.db.models.enums"
+    },
+    {
+      "self_us": 1282,
+      "inclusive_us": 26836,
+      "module": "django.db.models.expressions"
+    },
+    {
+      "self_us": 145,
+      "inclusive_us": 145,
+      "module": "django.db.models.functions.comparison"
+    },
+    {
+      "self_us": 944,
+      "inclusive_us": 944,
+      "module": "django.db.models.lookups"
+    },
+    {
+      "self_us": 388,
+      "inclusive_us": 1332,
+      "module": "django.db.models.functions.datetime"
+    },
+    {
+      "self_us": 54,
+      "inclusive_us": 54,
+      "module": "django.db.models.fields.mixins"
+    },
+    {
+      "self_us": 604,
+      "inclusive_us": 658,
+      "module": "django.db.models.fields.json"
+    },
+    {
+      "self_us": 155,
+      "inclusive_us": 812,
+      "module": "django.db.models.functions.json"
+    },
+    {
+      "self_us": 92,
+      "inclusive_us": 92,
+      "module": "django.db.models.functions.mixins"
+    },
+    {
+      "self_us": 333,
+      "inclusive_us": 424,
+      "module": "django.db.models.functions.math"
+    },
+    {
+      "self_us": 458,
+      "inclusive_us": 458,
+      "module": "django.db.models.functions.text"
+    },
+    {
+      "self_us": 114,
+      "inclusive_us": 114,
+      "module": "django.db.models.functions.uuid"
+    },
+    {
+      "self_us": 180,
+      "inclusive_us": 180,
+      "module": "django.db.models.functions.window"
+    },
+    {
+      "self_us": 299,
+      "inclusive_us": 3759,
+      "module": "django.db.models.functions"
+    },
+    {
+      "self_us": 391,
+      "inclusive_us": 30986,
+      "module": "django.db.models.aggregates"
+    },
+    {
+      "self_us": 23,
+      "inclusive_us": 23,
+      "module": "django.db.backends"
+    },
+    {
+      "self_us": 295,
+      "inclusive_us": 317,
+      "module": "django.db.backends.utils"
+    },
+    {
+      "self_us": 341,
+      "inclusive_us": 341,
+      "module": "difflib"
+    },
+    {
+      "self_us": 54,
+      "inclusive_us": 54,
+      "module": "django.db.models.sql.constants"
+    },
+    {
+      "self_us": 121,
+      "inclusive_us": 121,
+      "module": "django.db.models.sql.datastructures"
+    },
+    {
+      "self_us": 149,
+      "inclusive_us": 149,
+      "module": "django.db.models.sql.where"
+    },
+    {
+      "self_us": 794,
+      "inclusive_us": 1458,
+      "module": "django.db.models.sql.query"
+    },
+    {
+      "self_us": 127,
+      "inclusive_us": 127,
+      "module": "django.db.models.sql.subqueries"
+    },
+    {
+      "self_us": 107,
+      "inclusive_us": 1691,
+      "module": "django.db.models.sql"
+    },
+    {
+      "self_us": 157,
+      "inclusive_us": 2164,
+      "module": "django.db.models.indexes"
+    },
+    {
+      "self_us": 335,
+      "inclusive_us": 2499,
+      "module": "django.db.models.constraints"
+    },
+    {
+      "self_us": 205,
+      "inclusive_us": 205,
+      "module": "django.db.models.deletion"
+    },
+    {
+      "self_us": 100,
+      "inclusive_us": 100,
+      "module": "django.db.models.fetch_modes"
+    },
+    {
+      "self_us": 206,
+      "inclusive_us": 206,
+      "module": "django.db.models.fields.tuple_lookups"
+    },
+    {
+      "self_us": 183,
+      "inclusive_us": 388,
+      "module": "django.db.models.fields.composite"
+    },
+    {
+      "self_us": 189,
+      "inclusive_us": 189,
+      "module": "django.core.files.images"
+    },
+    {
+      "self_us": 75,
+      "inclusive_us": 75,
+      "module": "django.core.files.storage.base"
+    },
+    {
+      "self_us": 43,
+      "inclusive_us": 43,
+      "module": "django.core.files.storage.mixins"
+    },
+    {
+      "self_us": 162,
+      "inclusive_us": 205,
+      "module": "django.core.files.storage.filesystem"
+    },
+    {
+      "self_us": 82,
+      "inclusive_us": 82,
+      "module": "django.core.files.storage.handler"
+    },
+    {
+      "self_us": 178,
+      "inclusive_us": 178,
+      "module": "django.core.files.storage.memory"
+    },
+    {
+      "self_us": 184,
+      "inclusive_us": 722,
+      "module": "django.core.files.storage"
+    },
+    {
+      "self_us": 281,
+      "inclusive_us": 1191,
+      "module": "django.db.models.fields.files"
+    },
+    {
+      "self_us": 109,
+      "inclusive_us": 109,
+      "module": "django.db.models.fields.generated"
+    },
+    {
+      "self_us": 71,
+      "inclusive_us": 71,
+      "module": "django.db.models.fields.proxy"
+    },
+    {
+      "self_us": 762,
+      "inclusive_us": 762,
+      "module": "django.db.models.query"
+    },
+    {
+      "self_us": 330,
+      "inclusive_us": 1092,
+      "module": "django.db.models.manager"
+    },
+    {
+      "self_us": 416,
+      "inclusive_us": 416,
+      "module": "django.db.models.fields.related_descriptors"
+    },
+    {
+      "self_us": 192,
+      "inclusive_us": 192,
+      "module": "django.db.models.fields.related_lookups"
+    },
+    {
+      "self_us": 168,
+      "inclusive_us": 168,
+      "module": "django.db.models.fields.reverse_related"
+    },
+    {
+      "self_us": 716,
+      "inclusive_us": 1490,
+      "module": "django.db.models.fields.related"
+    },
+    {
+      "self_us": 295,
+      "inclusive_us": 295,
+      "module": "django.db.models.options"
+    },
+    {
+      "self_us": 2511,
+      "inclusive_us": 4295,
+      "module": "django.db.models.base"
+    },
+    {
+      "self_us": 382,
+      "inclusive_us": 41589,
+      "module": "django.db.models"
+    },
+    {
+      "self_us": 207,
+      "inclusive_us": 41795,
+      "module": "django.core.serializers.base"
+    },
+    {
+      "self_us": 142,
+      "inclusive_us": 42243,
+      "module": "django.core.serializers"
+    },
+    {
+      "self_us": 115,
+      "inclusive_us": 115,
+      "module": "django.core.serializers.python"
+    },
+    {
+      "self_us": 181,
+      "inclusive_us": 42538,
+      "module": "django.core.serializers.json"
+    },
+    {
+      "self_us": 494,
+      "inclusive_us": 44417,
+      "module": "django.http.response"
+    },
+    {
+      "self_us": 131,
+      "inclusive_us": 52682,
+      "module": "django.http"
+    },
+    {
+      "self_us": 72,
+      "inclusive_us": 72,
+      "module": "django.urls.exceptions"
+    },
+    {
+      "self_us": 294,
+      "inclusive_us": 294,
+      "module": "django.urls.converters"
+    },
+    {
+      "self_us": 73,
+      "inclusive_us": 73,
+      "module": "django.urls.utils"
+    },
+    {
+      "self_us": 394,
+      "inclusive_us": 759,
+      "module": "django.urls.resolvers"
+    },
+    {
+      "self_us": 238,
+      "inclusive_us": 55403,
+      "module": "django.urls.base"
+    },
+    {
+      "self_us": 68,
+      "inclusive_us": 68,
+      "module": "django.urls.conf"
+    },
+    {
+      "self_us": 121,
+      "inclusive_us": 55591,
+      "module": "django.urls"
+    },
+    {
+      "self_us": 405,
+      "inclusive_us": 405,
+      "module": "logging.handlers"
+    },
+    {
+      "self_us": 389,
+      "inclusive_us": 389,
+      "module": "socketserver"
+    },
+    {
+      "self_us": 828,
+      "inclusive_us": 1621,
+      "module": "logging.config"
+    },
+    {
+      "self_us": 65,
+      "inclusive_us": 65,
+      "module": "django.utils.termcolors"
+    },
+    {
+      "self_us": 81,
+      "inclusive_us": 81,
+      "module": "colorama"
+    },
+    {
+      "self_us": 128,
+      "inclusive_us": 272,
+      "module": "django.core.management.color"
+    },
+    {
+      "self_us": 284,
+      "inclusive_us": 556,
+      "module": "django.core.management.base"
+    },
+    {
+      "self_us": 322,
+      "inclusive_us": 878,
+      "module": "django.core.management"
+    },
+    {
+      "self_us": 40,
+      "inclusive_us": 917,
+      "module": "django.core.management.color"
+    },
+    {
+      "self_us": 206,
+      "inclusive_us": 2742,
+      "module": "django.utils.log"
+    },
+    {
+      "self_us": 85,
+      "inclusive_us": 85,
+      "module": "django.template.response"
+    },
+    {
+      "self_us": 101,
+      "inclusive_us": 101,
+      "module": "django.utils.decorators"
+    },
+    {
+      "self_us": 202,
+      "inclusive_us": 387,
+      "module": "django.views.generic.base"
+    },
+    {
+      "self_us": 103,
+      "inclusive_us": 103,
+      "module": "django.views.generic.detail"
+    },
+    {
+      "self_us": 257,
+      "inclusive_us": 257,
+      "module": "django.core.paginator"
+    },
+    {
+      "self_us": 163,
+      "inclusive_us": 420,
+      "module": "django.views.generic.list"
+    },
+    {
+      "self_us": 470,
+      "inclusive_us": 993,
+      "module": "django.views.generic.dates"
+    },
+    {
+      "self_us": 234,
+      "inclusive_us": 234,
+      "module": "django.views.generic.edit"
+    },
+    {
+      "self_us": 132,
+      "inclusive_us": 1745,
+      "module": "django.views.generic"
+    },
+    {
+      "self_us": 30,
+      "inclusive_us": 1774,
+      "module": "django.views.generic.base"
+    },
+    {
+      "self_us": 39,
+      "inclusive_us": 1812,
+      "module": "django.views"
+    },
+    {
+      "self_us": 169,
+      "inclusive_us": 169,
+      "module": "pprint"
+    },
+    {
+      "self_us": 486,
+      "inclusive_us": 486,
+      "module": "django.utils.timesince"
+    },
+    {
+      "self_us": 434,
+      "inclusive_us": 1087,
+      "module": "django.template.defaultfilters"
+    },
+    {
+      "self_us": 38,
+      "inclusive_us": 38,
+      "module": "django.views.decorators"
+    },
+    {
+      "self_us": 52,
+      "inclusive_us": 89,
+      "module": "django.views.decorators.csp"
+    },
+    {
+      "self_us": 73,
+      "inclusive_us": 73,
+      "module": "django.views.decorators.debug"
+    },
+    {
+      "self_us": 105,
+      "inclusive_us": 105,
+      "module": "django.utils.lorem_ipsum"
+    },
+    {
+      "self_us": 271,
+      "inclusive_us": 271,
+      "module": "django.template.smartif"
+    },
+    {
+      "self_us": 790,
+      "inclusive_us": 1164,
+      "module": "django.template.defaulttags"
+    },
+    {
+      "self_us": 754,
+      "inclusive_us": 3166,
+      "module": "django.views.debug"
+    },
+    {
+      "self_us": 121,
+      "inclusive_us": 5098,
+      "module": "django.core.handlers.exception"
+    },
+    {
+      "self_us": 233,
+      "inclusive_us": 64753,
+      "module": "django.core.handlers.base"
+    },
+    {
+      "self_us": 244,
+      "inclusive_us": 81259,
+      "module": "django.core.handlers.wsgi"
+    },
+    {
+      "self_us": 115,
+      "inclusive_us": 86745,
+      "module": "django.core.wsgi"
+    },
+    {
+      "self_us": 26,
+      "inclusive_us": 26,
+      "module": "django.contrib.messages.constants"
+    },
+    {
+      "self_us": 57,
+      "inclusive_us": 57,
+      "module": "django.contrib.messages.storage"
+    },
+    {
+      "self_us": 117,
+      "inclusive_us": 198,
+      "module": "django.contrib.messages.api"
+    },
+    {
+      "self_us": 37,
+      "inclusive_us": 37,
+      "module": "django.contrib.messages.utils"
+    },
+    {
+      "self_us": 153,
+      "inclusive_us": 189,
+      "module": "django.contrib.messages.storage.base"
+    },
+    {
+      "self_us": 102,
+      "inclusive_us": 489,
+      "module": "django.contrib.messages"
+    },
+    {
+      "self_us": 78,
+      "inclusive_us": 78,
+      "module": "django.contrib.admin.formfields"
+    },
+    {
+      "self_us": 21,
+      "inclusive_us": 21,
+      "module": "django.middleware"
+    },
+    {
+      "self_us": 291,
+      "inclusive_us": 291,
+      "module": "django.utils.cache"
+    },
+    {
+      "self_us": 261,
+      "inclusive_us": 572,
+      "module": "django.middleware.csrf"
+    },
+    {
+      "self_us": 65,
+      "inclusive_us": 65,
+      "module": "django.contrib.auth.signals"
+    },
+    {
+      "self_us": 191,
+      "inclusive_us": 827,
+      "module": "django.contrib.auth"
+    },
+    {
+      "self_us": 41,
+      "inclusive_us": 41,
+      "module": "django.contrib.auth.templatetags"
+    },
+    {
+      "self_us": 266,
+      "inclusive_us": 266,
+      "module": "django.contrib.auth.hashers"
+    },
+    {
+      "self_us": 169,
+      "inclusive_us": 476,
+      "module": "django.contrib.auth.templatetags.auth"
+    },
+    {
+      "self_us": 268,
+      "inclusive_us": 1570,
+      "module": "django.contrib.admin.utils"
+    },
+    {
+      "self_us": 483,
+      "inclusive_us": 2053,
+      "module": "django.contrib.admin.helpers"
+    },
+    {
+      "self_us": 446,
+      "inclusive_us": 446,
+      "module": "django.contrib.admin.widgets"
+    },
+    {
+      "self_us": 69,
+      "inclusive_us": 69,
+      "module": "django.contrib.admin.exceptions"
+    },
+    {
+      "self_us": 373,
+      "inclusive_us": 441,
+      "module": "django.contrib.admin.checks"
+    },
+    {
+      "self_us": 47,
+      "inclusive_us": 47,
+      "module": "django.contrib.admin.templatetags"
+    },
+    {
+      "self_us": 153,
+      "inclusive_us": 200,
+      "module": "django.contrib.admin.templatetags.admin_urls"
+    },
+    {
+      "self_us": 94,
+      "inclusive_us": 94,
+      "module": "django.views.decorators.csrf"
+    },
+    {
+      "self_us": 1477,
+      "inclusive_us": 5273,
+      "module": "django.contrib.admin.options"
+    },
+    {
+      "self_us": 80,
+      "inclusive_us": 5352,
+      "module": "django.contrib.admin.decorators"
+    },
+    {
+      "self_us": 315,
+      "inclusive_us": 315,
+      "module": "django.contrib.admin.filters"
+    },
+    {
+      "self_us": 57,
+      "inclusive_us": 57,
+      "module": "django.contrib.admin.actions"
+    },
+    {
+      "self_us": 41,
+      "inclusive_us": 41,
+      "module": "django.contrib.admin.views"
+    },
+    {
+      "self_us": 135,
+      "inclusive_us": 176,
+      "module": "django.contrib.admin.views.autocomplete"
+    },
+    {
+      "self_us": 72,
+      "inclusive_us": 72,
+      "module": "django.shortcuts"
+    },
+    {
+      "self_us": 118,
+      "inclusive_us": 189,
+      "module": "django.contrib.auth.decorators"
+    },
+    {
+      "self_us": 122,
+      "inclusive_us": 122,
+      "module": "django.middleware.cache"
+    },
+    {
+      "self_us": 91,
+      "inclusive_us": 213,
+      "module": "django.views.decorators.cache"
+    },
+    {
+      "self_us": 66,
+      "inclusive_us": 66,
+      "module": "django.views.decorators.common"
+    },
+    {
+      "self_us": 153,
+      "inclusive_us": 153,
+      "module": "django.views.i18n"
+    },
+    {
+      "self_us": 592,
+      "inclusive_us": 1443,
+      "module": "django.contrib.admin.sites"
+    },
+    {
+      "self_us": 81,
+      "inclusive_us": 81,
+      "module": "getpass"
+    },
+    {
+      "self_us": 42,
+      "inclusive_us": 42,
+      "module": "django.contrib.contenttypes"
+    },
+    {
+      "self_us": 248,
+      "inclusive_us": 248,
+      "module": "django.db.migrations.utils"
+    },
+    {
+      "self_us": 158,
+      "inclusive_us": 158,
+      "module": "django.db.migrations.exceptions"
+    },
+    {
+      "self_us": 149,
+      "inclusive_us": 554,
+      "module": "django.db.migrations.migration"
+    },
+    {
+      "self_us": 31,
+      "inclusive_us": 31,
+      "module": "django.utils.copy"
+    },
+    {
+      "self_us": 216,
+      "inclusive_us": 216,
+      "module": "django.db.migrations.operations.base"
+    },
+    {
+      "self_us": 233,
+      "inclusive_us": 478,
+      "module": "django.db.migrations.operations.fields"
+    },
+    {
+      "self_us": 265,
+      "inclusive_us": 265,
+      "module": "django.db.migrations.state"
+    },
+    {
+      "self_us": 525,
+      "inclusive_us": 789,
+      "module": "django.db.migrations.operations.models"
+    },
+    {
+      "self_us": 236,
+      "inclusive_us": 236,
+      "module": "django.db.migrations.operations.special"
+    },
+    {
+      "self_us": 136,
+      "inclusive_us": 1637,
+      "module": "django.db.migrations.operations"
+    },
+    {
+      "self_us": 68,
+      "inclusive_us": 2258,
+      "module": "django.db.migrations"
+    },
+    {
+      "self_us": 157,
+      "inclusive_us": 2457,
+      "module": "django.contrib.contenttypes.management"
+    },
+    {
+      "self_us": 123,
+      "inclusive_us": 2660,
+      "module": "django.contrib.auth.management"
+    },
+    {
+      "self_us": 85,
+      "inclusive_us": 2745,
+      "module": "django.contrib.auth.checks"
+    },
+    {
+      "self_us": 58,
+      "inclusive_us": 58,
+      "module": "django.contrib.contenttypes.checks"
+    },
+    {
+      "self_us": 33,
+      "inclusive_us": 33,
+      "module": "django.contrib.staticfiles.utils"
+    },
+    {
+      "self_us": 165,
+      "inclusive_us": 198,
+      "module": "django.contrib.staticfiles.finders"
+    },
+    {
+      "self_us": 59,
+      "inclusive_us": 257,
+      "module": "django.contrib.staticfiles.checks"
+    },
+    {
+      "self_us": 44,
+      "inclusive_us": 44,
+      "module": "django_filters.exceptions"
+    },
+    {
+      "self_us": 154,
+      "inclusive_us": 197,
+      "module": "django_filters.utils"
+    },
+    {
+      "self_us": 169,
+      "inclusive_us": 365,
+      "module": "django_filters.conf"
+    },
+    {
+      "self_us": 81,
+      "inclusive_us": 81,
+      "module": "django_filters.constants"
+    },
+    {
+      "self_us": 225,
+      "inclusive_us": 225,
+      "module": "django_filters.widgets"
+    },
+    {
+      "self_us": 397,
+      "inclusive_us": 621,
+      "module": "django_filters.fields"
+    },
+    {
+      "self_us": 482,
+      "inclusive_us": 1547,
+      "module": "django_filters.filters"
+    },
+    {
+      "self_us": 291,
+      "inclusive_us": 291,
+      "module": "django_filters.filterset"
+    },
+    {
+      "self_us": 57,
+      "inclusive_us": 57,
+      "module": "crispy_forms"
+    },
+    {
+      "self_us": 50,
+      "inclusive_us": 107,
+      "module": "django_filters.compat"
+    },
+    {
+      "self_us": 46,
+      "inclusive_us": 46,
+      "module": "django_filters.rest_framework.filters"
+    },
+    {
+      "self_us": 167,
+      "inclusive_us": 213,
+      "module": "django_filters.rest_framework.filterset"
+    },
+    {
+      "self_us": 135,
+      "inclusive_us": 453,
+      "module": "django_filters.rest_framework.backends"
+    },
+    {
+      "self_us": 81,
+      "inclusive_us": 534,
+      "module": "django_filters.rest_framework"
+    },
+    {
+      "self_us": 750,
+      "inclusive_us": 750,
+      "module": "django.contrib.contenttypes.models"
+    },
+    {
+      "self_us": 161,
+      "inclusive_us": 161,
+      "module": "django.contrib.auth.password_validation"
+    },
+    {
+      "self_us": 585,
+      "inclusive_us": 585,
+      "module": "_sqlite3"
+    },
+    {
+      "self_us": 139,
+      "inclusive_us": 724,
+      "module": "sqlite3.dbapi2"
+    },
+    {
+      "self_us": 101,
+      "inclusive_us": 825,
+      "module": "sqlite3"
+    },
+    {
+      "self_us": 37,
+      "inclusive_us": 37,
+      "module": "django.db.backends.base"
+    },
+    {
+      "self_us": 58,
+      "inclusive_us": 58,
+      "module": "django.db.backends.base.validation"
+    },
+    {
+      "self_us": 48,
+      "inclusive_us": 48,
+      "module": "django.db.backends.signals"
+    },
+    {
+      "self_us": 60,
+      "inclusive_us": 60,
+      "module": "django.utils.asyncio"
+    },
+    {
+      "self_us": 386,
+      "inclusive_us": 587,
+      "module": "django.db.backends.base.base"
+    },
+    {
+      "self_us": 783,
+      "inclusive_us": 783,
+      "module": "fractions"
+    },
+    {
+      "self_us": 151,
+      "inclusive_us": 151,
+      "module": "_statistics"
+    },
+    {
+      "self_us": 658,
+      "inclusive_us": 1590,
+      "module": "statistics"
+    },
+    {
+      "self_us": 243,
+      "inclusive_us": 1833,
+      "module": "django.db.backends.sqlite3._functions"
+    },
+    {
+      "self_us": 52,
+      "inclusive_us": 52,
+      "module": "django.db.backends.base.client"
+    },
+    {
+      "self_us": 88,
+      "inclusive_us": 140,
+      "module": "django.db.backends.sqlite3.client"
+    },
+    {
+      "self_us": 169,
+      "inclusive_us": 169,
+      "module": "multiprocessing.process"
+    },
+    {
+      "self_us": 188,
+      "inclusive_us": 188,
+      "module": "array"
+    },
+    {
+      "self_us": 255,
+      "inclusive_us": 443,
+      "module": "multiprocessing.reduction"
+    },
+    {
+      "self_us": 288,
+      "inclusive_us": 898,
+      "module": "multiprocessing.context"
+    },
+    {
+      "self_us": 114,
+      "inclusive_us": 1012,
+      "module": "multiprocessing"
+    },
+    {
+      "self_us": 154,
+      "inclusive_us": 154,
+      "module": "django.db.backends.base.creation"
+    },
+    {
+      "self_us": 150,
+      "inclusive_us": 1315,
+      "module": "django.db.backends.sqlite3.creation"
+    },
+    {
+      "self_us": 105,
+      "inclusive_us": 105,
+      "module": "django.db.backends.base.features"
+    },
+    {
+      "self_us": 157,
+      "inclusive_us": 262,
+      "module": "django.db.backends.sqlite3.features"
+    },
+    {
+      "self_us": 40,
+      "inclusive_us": 40,
+      "module": "sqlparse.exceptions"
+    },
+    {
+      "self_us": 86,
+      "inclusive_us": 125,
+      "module": "sqlparse.cli"
+    },
+    {
+      "self_us": 69,
+      "inclusive_us": 69,
+      "module": "sqlparse.tokens"
+    },
+    {
+      "self_us": 213,
+      "inclusive_us": 213,
+      "module": "sqlparse.utils"
+    },
+    {
+      "self_us": 504,
+      "inclusive_us": 786,
+      "module": "sqlparse.sql"
+    },
+    {
+      "self_us": 198,
+      "inclusive_us": 983,
+      "module": "sqlparse.engine.grouping"
+    },
+    {
+      "self_us": 579,
+      "inclusive_us": 579,
+      "module": "sqlparse.keywords"
+    },
+    {
+      "self_us": 109,
+      "inclusive_us": 687,
+      "module": "sqlparse.lexer"
+    },
+    {
+      "self_us": 89,
+      "inclusive_us": 89,
+      "module": "sqlparse.engine.statement_splitter"
+    },
+    {
+      "self_us": 91,
+      "inclusive_us": 91,
+      "module": "sqlparse.filters.aligned_indent"
+    },
+    {
+      "self_us": 124,
+      "inclusive_us": 124,
+      "module": "sqlparse.filters.others"
+    },
+    {
+      "self_us": 106,
+      "inclusive_us": 106,
+      "module": "sqlparse.filters.output"
+    },
+    {
+      "self_us": 128,
+      "inclusive_us": 128,
+      "module": "sqlparse.filters.reindent"
+    },
+    {
+      "self_us": 92,
+      "inclusive_us": 92,
+      "module": "sqlparse.filters.right_margin"
+    },
+    {
+      "self_us": 104,
+      "inclusive_us": 104,
+      "module": "sqlparse.filters.tokens"
+    },
+    {
+      "self_us": 208,
+      "inclusive_us": 850,
+      "module": "sqlparse.filters"
+    },
+    {
+      "self_us": 140,
+      "inclusive_us": 1764,
+      "module": "sqlparse.engine.filter_stack"
+    },
+    {
+      "self_us": 102,
+      "inclusive_us": 2848,
+      "module": "sqlparse.engine"
+    },
+    {
+      "self_us": 69,
+      "inclusive_us": 69,
+      "module": "sqlparse.formatter"
+    },
+    {
+      "self_us": 123,
+      "inclusive_us": 3164,
+      "module": "sqlparse"
+    },
+    {
+      "self_us": 243,
+      "inclusive_us": 243,
+      "module": "django.db.backends.base.introspection"
+    },
+    {
+      "self_us": 298,
+      "inclusive_us": 3704,
+      "module": "django.db.backends.sqlite3.introspection"
+    },
+    {
+      "self_us": 238,
+      "inclusive_us": 238,
+      "module": "django.db.backends.base.operations"
+    },
+    {
+      "self_us": 223,
+      "inclusive_us": 461,
+      "module": "django.db.backends.sqlite3.operations"
+    },
+    {
+      "self_us": 163,
+      "inclusive_us": 163,
+      "module": "django.db.backends.ddl_references"
+    },
+    {
+      "self_us": 543,
+      "inclusive_us": 705,
+      "module": "django.db.backends.base.schema"
+    },
+    {
+      "self_us": 158,
+      "inclusive_us": 863,
+      "module": "django.db.backends.sqlite3.schema"
+    },
+    {
+      "self_us": 754,
+      "inclusive_us": 10900,
+      "module": "django.contrib.auth.base_user"
+    },
+    {
+      "self_us": 95,
+      "inclusive_us": 95,
+      "module": "django.contrib.auth.validators"
+    },
+    {
+      "self_us": 62,
+      "inclusive_us": 62,
+      "module": "django.utils.translation.trans_null"
+    },
+    {
+      "self_us": 194,
+      "inclusive_us": 194,
+      "module": "django.contrib.sessions.base_session"
+    },
+    {
+      "self_us": 86,
+      "inclusive_us": 86,
+      "module": "django.contrib.auth.tokens"
+    },
+    {
+      "self_us": 42,
+      "inclusive_us": 42,
+      "module": "django.contrib.sites"
+    },
+    {
+      "self_us": 53,
+      "inclusive_us": 53,
+      "module": "django.contrib.sites.requests"
+    },
+    {
+      "self_us": 103,
+      "inclusive_us": 197,
+      "module": "django.contrib.sites.shortcuts"
+    },
+    {
+      "self_us": 3193,
+      "inclusive_us": 3475,
+      "module": "django.contrib.auth.forms"
+    },
+    {
+      "self_us": 324,
+      "inclusive_us": 324,
+      "module": "django.contrib.contenttypes.fields"
+    },
+    {
+      "self_us": 102,
+      "inclusive_us": 102,
+      "module": "django.contrib.contenttypes.forms"
+    },
+    {
+      "self_us": 62,
+      "inclusive_us": 62,
+      "module": "rest_framework.checks"
+    },
+    {
+      "self_us": 192,
+      "inclusive_us": 192,
+      "module": "django.contrib.auth.backends"
+    },
+    {
+      "self_us": 358,
+      "inclusive_us": 358,
+      "module": "django.contrib.auth.views"
+    },
+    {
+      "self_us": 161,
+      "inclusive_us": 161,
+      "module": "django.core.handlers.asgi"
+    },
+    {
+      "self_us": 23,
+      "inclusive_us": 23,
+      "module": "django.contrib.sessions.backends"
+    },
+    {
+      "self_us": 249,
+      "inclusive_us": 272,
+      "module": "django.contrib.sessions.backends.base"
+    },
+    {
+      "self_us": 208,
+      "inclusive_us": 208,
+      "module": "django.contrib.sessions.exceptions"
+    },
+    {
+      "self_us": 49,
+      "inclusive_us": 49,
+      "module": "rest_framework.status"
+    },
+    {
+      "self_us": 21,
+      "inclusive_us": 21,
+      "module": "django.contrib.postgres"
+    },
+    {
+      "self_us": 25,
+      "inclusive_us": 25,
+      "module": "django.db.backends.postgresql"
+    },
+    {
+      "self_us": 58,
+      "inclusive_us": 58,
+      "module": "psycopg"
+    },
+    {
+      "self_us": 50,
+      "inclusive_us": 50,
+      "module": "psycopg2"
+    },
+    {
+      "self_us": 162,
+      "inclusive_us": 294,
+      "module": "django.db.backends.postgresql.psycopg_any"
+    },
+    {
+      "self_us": 147,
+      "inclusive_us": 440,
+      "module": "django.contrib.postgres.search"
+    },
+    {
+      "self_us": 74,
+      "inclusive_us": 514,
+      "module": "django.contrib.postgres.lookups"
+    },
+    {
+      "self_us": 144,
+      "inclusive_us": 657,
+      "module": "django.contrib.postgres.fields.array"
+    },
+    {
+      "self_us": 50,
+      "inclusive_us": 707,
+      "module": "django.contrib.postgres.fields"
+    },
+    {
+      "self_us": 47,
+      "inclusive_us": 47,
+      "module": "uritemplate"
+    },
+    {
+      "self_us": 49,
+      "inclusive_us": 49,
+      "module": "yaml"
+    },
+    {
+      "self_us": 49,
+      "inclusive_us": 49,
+      "module": "inflection"
+    },
+    {
+      "self_us": 51,
+      "inclusive_us": 51,
+      "module": "requests"
+    },
+    {
+      "self_us": 48,
+      "inclusive_us": 48,
+      "module": "markdown"
+    },
+    {
+      "self_us": 47,
+      "inclusive_us": 47,
+      "module": "pygments"
+    },
+    {
+      "self_us": 252,
+      "inclusive_us": 1267,
+      "module": "rest_framework.compat"
+    },
+    {
+      "self_us": 82,
+      "inclusive_us": 82,
+      "module": "rest_framework.deprecation"
+    },
+    {
+      "self_us": 29,
+      "inclusive_us": 29,
+      "module": "rest_framework.utils"
+    },
+    {
+      "self_us": 62,
+      "inclusive_us": 62,
+      "module": "rest_framework.utils.json"
+    },
+    {
+      "self_us": 219,
+      "inclusive_us": 310,
+      "module": "rest_framework.utils.serializer_helpers"
+    },
+    {
+      "self_us": 212,
+      "inclusive_us": 521,
+      "module": "rest_framework.exceptions"
+    },
+    {
+      "self_us": 103,
+      "inclusive_us": 103,
+      "module": "rest_framework.settings"
+    },
+    {
+      "self_us": 56,
+      "inclusive_us": 56,
+      "module": "rest_framework.utils.html"
+    },
+    {
+      "self_us": 54,
+      "inclusive_us": 54,
+      "module": "rest_framework.utils.humanize_datetime"
+    },
+    {
+      "self_us": 69,
+      "inclusive_us": 69,
+      "module": "rest_framework.utils.representation"
+    },
+    {
+      "self_us": 82,
+      "inclusive_us": 82,
+      "module": "rest_framework.utils.formatting"
+    },
+    {
+      "self_us": 71,
+      "inclusive_us": 71,
+      "module": "rest_framework.utils.timezone"
+    },
+    {
+      "self_us": 156,
+      "inclusive_us": 156,
+      "module": "rest_framework.validators"
+    },
+    {
+      "self_us": 1094,
+      "inclusive_us": 1683,
+      "module": "rest_framework.fields"
+    },
+    {
+      "self_us": 239,
+      "inclusive_us": 239,
+      "module": "rest_framework.utils.model_meta"
+    },
+    {
+      "self_us": 110,
+      "inclusive_us": 110,
+      "module": "rest_framework.utils.field_mapping"
+    },
+    {
+      "self_us": 33,
+      "inclusive_us": 33,
+      "module": "rest_framework.utils.urls"
+    },
+    {
+      "self_us": 125,
+      "inclusive_us": 157,
+      "module": "rest_framework.reverse"
+    },
+    {
+      "self_us": 290,
+      "inclusive_us": 447,
+      "module": "rest_framework.relations"
+    },
+    {
+      "self_us": 605,
+      "inclusive_us": 4952,
+      "module": "rest_framework.serializers"
+    },
+    {
+      "self_us": 120,
+      "inclusive_us": 5071,
+      "module": "rest_framework.response"
+    },
+    {
+      "self_us": 138,
+      "inclusive_us": 5258,
+      "module": "rest_framework.mixins"
+    },
+    {
+      "self_us": 152,
+      "inclusive_us": 152,
+      "module": "rest_framework.request"
+    },
+    {
+      "self_us": 171,
+      "inclusive_us": 171,
+      "module": "rest_framework.utils.encoders"
+    },
+    {
+      "self_us": 57,
+      "inclusive_us": 57,
+      "module": "rest_framework.utils.breadcrumbs"
+    },
+    {
+      "self_us": 382,
+      "inclusive_us": 609,
+      "module": "rest_framework.renderers"
+    },
+    {
+      "self_us": 24,
+      "inclusive_us": 24,
+      "module": "django.contrib.admindocs"
+    },
+    {
+      "self_us": 44,
+      "inclusive_us": 44,
+      "module": "django.contrib.admin.views.decorators"
+    },
+    {
+      "self_us": 44,
+      "inclusive_us": 44,
+      "module": "docutils"
+    },
+    {
+      "self_us": 34,
+      "inclusive_us": 78,
+      "module": "docutils.core"
+    },
+    {
+      "self_us": 207,
+      "inclusive_us": 284,
+      "module": "django.contrib.admindocs.utils"
+    },
+    {
+      "self_us": 323,
+      "inclusive_us": 673,
+      "module": "django.contrib.admindocs.views"
+    },
+    {
+      "self_us": 213,
+      "inclusive_us": 886,
+      "module": "rest_framework.schemas.generators"
+    },
+    {
+      "self_us": 154,
+      "inclusive_us": 154,
+      "module": "rest_framework.schemas.inspectors"
+    },
+    {
+      "self_us": 59,
+      "inclusive_us": 59,
+      "module": "rest_framework.schemas.utils"
+    },
+    {
+      "self_us": 334,
+      "inclusive_us": 2039,
+      "module": "rest_framework.schemas.openapi"
+    },
+    {
+      "self_us": 101,
+      "inclusive_us": 2140,
+      "module": "rest_framework.schemas"
+    },
+    {
+      "self_us": 53,
+      "inclusive_us": 53,
+      "module": "rest_framework.utils.mediatypes"
+    },
+    {
+      "self_us": 610,
+      "inclusive_us": 2954,
+      "module": "rest_framework.views"
+    },
+    {
+      "self_us": 276,
+      "inclusive_us": 8486,
+      "module": "rest_framework.generics"
+    },
+    {
+      "self_us": 66,
+      "inclusive_us": 66,
+      "module": "django.contrib.contenttypes.views"
+    },
+    {
+      "self_us": 84,
+      "inclusive_us": 84,
+      "module": "django.core.management.utils"
+    },
+    {
+      "self_us": 66,
+      "inclusive_us": 66,
+      "module": "django.db.migrations.optimizer"
+    },
+    {
+      "self_us": 140,
+      "inclusive_us": 140,
+      "module": "django.db.migrations.graph"
+    },
+    {
+      "self_us": 99,
+      "inclusive_us": 99,
+      "module": "django.db.migrations.recorder"
+    },
+    {
+      "self_us": 199,
+      "inclusive_us": 438,
+      "module": "django.db.migrations.loader"
+    },
+    {
+      "self_us": 174,
+      "inclusive_us": 611,
+      "module": "django.db.migrations.questioner"
+    },
+    {
+      "self_us": 827,
+      "inclusive_us": 1503,
+      "module": "django.db.migrations.autodetector"
+    },
+    {
+      "self_us": 285,
+      "inclusive_us": 285,
+      "module": "django.db.migrations.serializer"
+    },
+    {
+      "self_us": 162,
+      "inclusive_us": 447,
+      "module": "django.db.migrations.writer"
+    },
+    {
+      "self_us": 38,
+      "inclusive_us": 38,
+      "module": "django.core.management.sql"
+    },
+    {
+      "self_us": 132,
+      "inclusive_us": 132,
+      "module": "django.db.migrations.executor"
+    },
+    {
+      "self_us": 32,
+      "inclusive_us": 32,
+      "module": "django.core.cache.utils"
+    },
+    {
+      "self_us": 167,
+      "inclusive_us": 167,
+      "module": "django.contrib.admin.views.main"
+    },
+    {
+      "self_us": 80,
+      "inclusive_us": 80,
+      "module": "django.contrib.admin.templatetags.base"
+    },
+    {
+      "self_us": 68,
+      "inclusive_us": 68,
+      "module": "django.views.defaults"
+    },
+    {
+      "self_us": 69,
+      "inclusive_us": 136,
+      "module": "django.conf.urls"
+    },
+    {
+      "self_us": 119,
+      "inclusive_us": 119,
+      "module": "django.contrib.messages.storage.cookie"
+    },
+    {
+      "self_us": 79,
+      "inclusive_us": 79,
+      "module": "django.contrib.messages.storage.session"
+    },
+    {
+      "self_us": 114,
+      "inclusive_us": 114,
+      "module": "django.contrib.admin.forms"
+    },
+    {
+      "self_us": 41,
+      "inclusive_us": 41,
+      "module": "django.template.loaders.base"
+    },
+    {
+      "self_us": 166,
+      "inclusive_us": 166,
+      "module": "importlib.resources._adapters"
+    },
+    {
+      "self_us": 57,
+      "inclusive_us": 57,
+      "module": "django.middleware.csp"
+    },
+    {
+      "self_us": 219,
+      "inclusive_us": 219,
+      "module": "django.contrib.staticfiles.storage"
+    }
+  ],
+  "probe_sha256": "2686b4b5f415bd9d1727c2234f94ddbea7278cb19d54a798e2c76c6a757f4036"
+}

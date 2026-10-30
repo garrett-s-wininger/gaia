@@ -1,0 +1,24 @@
+{
+  "commands": [
+    [
+      "/opt/odin/nightly/odin",
+      "build",
+      "experiments/compiler_invocation/snapshot_host.odin",
+      "-file",
+      "-o:speed",
+      "-build-mode:obj",
+      "-out:experiments/compiler_invocation/_work/dependency-development/snapshot.o"
+    ],
+    [
+      "/usr/lib/llvm22/bin/clang++",
+      "experiments/compiler_invocation/_work/dependency-development/snapshot.o",
+      "-pthread",
+      "-ldl",
+      "-o",
+      "experiments/compiler_invocation/_work/dependency-development/snapshot-host"
+    ]
+  ],
+  "host_sha256": "368b29ca1f78bc3c195b66e13501c369917f3913509517901c80187298285929",
+  "source_sha256": "46e50b58c05401e8281bcdbb2d4bd395c651e699e0dddc7f105d3fdb50b8e797",
+  "note": "Successful object-mode and link commands recorded from this run; no standalone producer-build duration was measured."
+}

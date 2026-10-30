@@ -1,0 +1,943 @@
+[
+  {
+    "mode": "source",
+    "compile_events": [
+      {
+        "filename": "<string>",
+        "source_bytes": 87
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/source/django_worker.py",
+        "source_bytes": 15568
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 69
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 127
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 263
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 99
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 95
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 103
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 75
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 177
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 97
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 109
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 129
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 143
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/source/bundle_access.py",
+        "source_bytes": 9437
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/source/native_loader.py",
+        "source_bytes": 6297
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/source/precomputed_catalog.py",
+        "source_bytes": 3684
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/source/native_catalog.py",
+        "source_bytes": 5254
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/source/persistent_zip_loader.py",
+        "source_bytes": 5381
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/source/precomputed_index.py",
+        "source_bytes": 5398
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/source/binary_index.py",
+        "source_bytes": 3633
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/source/indexed_path_loader.py",
+        "source_bytes": 5771
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/source/stdlib_snapshot.py",
+        "source_bytes": 7947
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 4269
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 3425
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 2744
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 1919
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 2152
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 85
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 239
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 63
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 207
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 93
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 1014
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 1422
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 61
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 109
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 125
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 79
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 69
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 89
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 189
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 55
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 153
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 65
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 61
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/source/django_fixture/__init__.py",
+        "source_bytes": 82
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/source/django_fixture/settings.py",
+        "source_bytes": 1841
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 917
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 57
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/source/django_fixture/apps.py",
+        "source_bytes": 150
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 71
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 67
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 55
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 217
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 267
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/source/django_fixture/models.py",
+        "source_bytes": 102
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 183
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 181
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/source/django_fixture/urls.py",
+        "source_bytes": 962
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 113
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/source/django_fixture/template_loader.py",
+        "source_bytes": 1105
+      }
+    ],
+    "consumer_source_compiles": [
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/source/django_worker.py",
+        "source_bytes": 15568
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/source/bundle_access.py",
+        "source_bytes": 9437
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/source/native_loader.py",
+        "source_bytes": 6297
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/source/precomputed_catalog.py",
+        "source_bytes": 3684
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/source/native_catalog.py",
+        "source_bytes": 5254
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/source/persistent_zip_loader.py",
+        "source_bytes": 5381
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/source/precomputed_index.py",
+        "source_bytes": 5398
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/source/binary_index.py",
+        "source_bytes": 3633
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/source/indexed_path_loader.py",
+        "source_bytes": 5771
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/source/stdlib_snapshot.py",
+        "source_bytes": 7947
+      }
+    ],
+    "import_graph_path": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/source-importtime.txt"
+  },
+  {
+    "mode": "pyc",
+    "compile_events": [
+      {
+        "filename": "<string>",
+        "source_bytes": 87
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 69
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 127
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 263
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 99
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 95
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 103
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 75
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 177
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 97
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 109
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 129
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 143
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 4269
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 3425
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 2744
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 1919
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 2152
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 85
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 239
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 63
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 207
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 93
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 1014
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 1422
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 61
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 109
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 125
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 79
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 69
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 89
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 189
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 55
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 153
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 65
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 61
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/pyc/django_fixture/__init__.py",
+        "source_bytes": 82
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/pyc/django_fixture/settings.py",
+        "source_bytes": 1841
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 917
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 57
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/pyc/django_fixture/apps.py",
+        "source_bytes": 150
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 71
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 67
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 55
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 217
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 267
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/pyc/django_fixture/models.py",
+        "source_bytes": 102
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 113
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/pyc/django_fixture/urls.py",
+        "source_bytes": 962
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 183
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 181
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/pyc/django_fixture/template_loader.py",
+        "source_bytes": 1105
+      }
+    ],
+    "consumer_source_compiles": [],
+    "import_graph_path": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/pyc-importtime.txt"
+  },
+  {
+    "mode": "thin-pyc",
+    "compile_events": [
+      {
+        "filename": "<string>",
+        "source_bytes": 87
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 69
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 127
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 263
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 99
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 95
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 103
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 75
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 177
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 97
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 109
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 129
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 143
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 4269
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 3425
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 2744
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 1919
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 2152
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 85
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 239
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 63
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 207
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 93
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 1014
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 1422
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 61
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 109
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 125
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 79
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 69
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 89
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 189
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 55
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 153
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 65
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 61
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/thin-pyc/django_fixture/__init__.py",
+        "source_bytes": 82
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/thin-pyc/django_fixture/settings.py",
+        "source_bytes": 1841
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 917
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 57
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/thin-pyc/django_fixture/apps.py",
+        "source_bytes": 150
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 71
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 67
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 55
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 217
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 267
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/thin-pyc/django_fixture/models.py",
+        "source_bytes": 102
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 183
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 181
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/thin-pyc/django_fixture/urls.py",
+        "source_bytes": 962
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 113
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/thin-pyc/django_fixture/template_loader.py",
+        "source_bytes": 1105
+      }
+    ],
+    "consumer_source_compiles": [],
+    "import_graph_path": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/thin-pyc-importtime.txt"
+  },
+  {
+    "mode": "programmatic",
+    "compile_events": [
+      {
+        "filename": "<string>",
+        "source_bytes": 87
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 69
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 127
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 263
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 99
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 95
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 103
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 75
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 177
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 97
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 109
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 129
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 143
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 85
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 4269
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 3425
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 2744
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 1919
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 2152
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 239
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 63
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 207
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 93
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 1014
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 1422
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 61
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 109
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 125
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 79
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 69
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 89
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 189
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 55
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 153
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 65
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 61
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/thin-pyc/django_fixture/__init__.py",
+        "source_bytes": 82
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/thin-pyc/django_fixture/settings.py",
+        "source_bytes": 1841
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 917
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 57
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/thin-pyc/django_fixture/apps.py",
+        "source_bytes": 150
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 71
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 67
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 55
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 217
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 267
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/thin-pyc/django_fixture/models.py",
+        "source_bytes": 102
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/thin-pyc/django_fixture/urls.py",
+        "source_bytes": 962
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 183
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 181
+      },
+      {
+        "filename": "<string>",
+        "source_bytes": 113
+      },
+      {
+        "filename": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/thin-pyc/django_fixture/template_loader.py",
+        "source_bytes": 1105
+      }
+    ],
+    "consumer_source_compiles": [],
+    "import_graph_path": "/root/source/gaia/experiments/dependency_bundles/_work/bootstrap-20261029T153136.058419Z/programmatic-importtime.txt"
+  }
+]

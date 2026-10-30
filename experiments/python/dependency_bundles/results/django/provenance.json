@@ -1,0 +1,126 @@
+{
+  "retrieved_utc": "2026-10-29T01:32:51.968879+00:00",
+  "source": "PyPI JSON API and published wheel bytes",
+  "artifacts": [
+    {
+      "project": "django",
+      "version": "6.1.2",
+      "filename": "django-6.1.2-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/c9/83/90ff2dbfac7b519ed77620bdbb827cd2d1a83faf00d076bf95056428bce7/django-6.1.2-py3-none-any.whl",
+      "sha256": "141efee6ec64d1db6db90683bf734c550102450f444fb099063b0be1bd27d991",
+      "path": "/root/source/gaia/experiments/dependency_bundles/_work/django-corpus/wheels/django-6.1.2-py3-none-any.whl"
+    },
+    {
+      "project": "django",
+      "version": "6.1.1",
+      "filename": "django-6.1.1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/8d/ca/c1040a4fd15754ede7df15fd72fc2e123045b473b253ab5f5284e11c651e/django-6.1.1-py3-none-any.whl",
+      "sha256": "585fb82bf15053c42cf52e67c2f1b54a032dca384759315fd6678ab1870d1d72",
+      "path": "/root/source/gaia/experiments/dependency_bundles/_work/django-corpus/wheels/django-6.1.1-py3-none-any.whl"
+    },
+    {
+      "project": "django",
+      "version": "6.1",
+      "filename": "django-6.1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/91/9c/ce847620134cfab903e75690c498af73b46abbede2912ea89bd76d5c1e76/django-6.1-py3-none-any.whl",
+      "sha256": "6c132cd980c9392b06807d4ca52d72530d631dc65a85d9dacede00a780cefbbe",
+      "path": "/root/source/gaia/experiments/dependency_bundles/_work/django-corpus/wheels/django-6.1-py3-none-any.whl"
+    },
+    {
+      "project": "asgiref",
+      "version": "3.13.0",
+      "filename": "asgiref-3.13.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/2e/b0/ec211e1f7966247cb6469158d856bac9aa4c2fe13621bd6a352e4f850453/asgiref-3.13.0-py3-none-any.whl",
+      "sha256": "f9596a2434512686473d50f96ff6207fbba49ae1a785dfac614df4aeb085674d",
+      "path": "/root/source/gaia/experiments/dependency_bundles/_work/django-corpus/wheels/asgiref-3.13.0-py3-none-any.whl"
+    },
+    {
+      "project": "asgiref",
+      "version": "3.12.1",
+      "filename": "asgiref-3.12.1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/c0/1b/54f4ad77cd8a584fa70746c47df988e002cf1ee1eba43364d46f87803647/asgiref-3.12.1-py3-none-any.whl",
+      "sha256": "fe386d1c2bff7259ea95929266d12a8cf9a8b5a1c2598402967d8792e7a7c094",
+      "path": "/root/source/gaia/experiments/dependency_bundles/_work/django-corpus/wheels/asgiref-3.12.1-py3-none-any.whl"
+    },
+    {
+      "project": "asgiref",
+      "version": "3.12.0",
+      "filename": "asgiref-3.12.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/62/a8/3c32efd053d022ef5a2b91dee5f547ae12fbb08728d6428c8b302ad274c4/asgiref-3.12.0-py3-none-any.whl",
+      "sha256": "3d8d6471b12501782d78b513c1f207d613a4de34b8a67c0baa561f61deda1d22",
+      "path": "/root/source/gaia/experiments/dependency_bundles/_work/django-corpus/wheels/asgiref-3.12.0-py3-none-any.whl"
+    },
+    {
+      "project": "sqlparse",
+      "version": "0.6.0",
+      "filename": "sqlparse-0.6.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/d9/50/f00935da0ec7cbf325f8dc4f772ae46fbc7b672dd62876e73f0a94adda57/sqlparse-0.6.0-py3-none-any.whl",
+      "sha256": "b861c0288ce2fa56209a9a6412d2e066ac664b3873b89c26c9d8415e8e32996f",
+      "path": "/root/source/gaia/experiments/dependency_bundles/_work/django-corpus/wheels/sqlparse-0.6.0-py3-none-any.whl"
+    },
+    {
+      "project": "sqlparse",
+      "version": "0.5.5",
+      "filename": "sqlparse-0.5.5-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/49/4b/359f28a903c13438ef59ebeee215fb25da53066db67b305c125f1c6d2a25/sqlparse-0.5.5-py3-none-any.whl",
+      "sha256": "12a08b3bf3eec877c519589833aed092e2444e68240a3577e8e26148acc7b1ba",
+      "path": "/root/source/gaia/experiments/dependency_bundles/_work/django-corpus/wheels/sqlparse-0.5.5-py3-none-any.whl"
+    },
+    {
+      "project": "sqlparse",
+      "version": "0.5.4",
+      "filename": "sqlparse-0.5.4-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/25/70/001ee337f7aa888fb2e3f5fd7592a6afc5283adb1ed44ce8df5764070f22/sqlparse-0.5.4-py3-none-any.whl",
+      "sha256": "99a9f0314977b76d776a0fcb8554de91b9bb8a18560631d6bc48721d07023dcb",
+      "path": "/root/source/gaia/experiments/dependency_bundles/_work/django-corpus/wheels/sqlparse-0.5.4-py3-none-any.whl"
+    },
+    {
+      "project": "djangorestframework",
+      "version": "3.18.3",
+      "filename": "djangorestframework-3.18.3-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/c4/dd/de5f4543765bec94e036a5e9593a42f8fa7efec8de78eb56b9ca834385f3/djangorestframework-3.18.3-py3-none-any.whl",
+      "sha256": "8544bb674846731b1e3c9b309236ee1dc412905a0aa725be2ec193ca950a7d12",
+      "path": "/root/source/gaia/experiments/dependency_bundles/_work/django-corpus/wheels/djangorestframework-3.18.3-py3-none-any.whl"
+    },
+    {
+      "project": "djangorestframework",
+      "version": "3.18.2",
+      "filename": "djangorestframework-3.18.2-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/fa/9e/81e5bfbba54f7396233df979befde49e6e13c94c2df21b94555684dddd3e/djangorestframework-3.18.2-py3-none-any.whl",
+      "sha256": "a92d6a4e128a2550bd2fe2e02008a9e47fe52c180e130bb438f5ba70ee933a3f",
+      "path": "/root/source/gaia/experiments/dependency_bundles/_work/django-corpus/wheels/djangorestframework-3.18.2-py3-none-any.whl"
+    },
+    {
+      "project": "djangorestframework",
+      "version": "3.18.1",
+      "filename": "djangorestframework-3.18.1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/e8/83/5ed615e47339d8e65f62eb1a8133f8f046492eb3a25ad40d90acb9a208b3/djangorestframework-3.18.1-py3-none-any.whl",
+      "sha256": "f1409d698967aaf82d5d98d76b549c8fba8bd92ebd0d83d24454508f72168dc2",
+      "path": "/root/source/gaia/experiments/dependency_bundles/_work/django-corpus/wheels/djangorestframework-3.18.1-py3-none-any.whl"
+    },
+    {
+      "project": "django-filter",
+      "version": "26.2",
+      "filename": "django_filter-26.2-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/4a/92/6b098caa5b980a9d13a8db4825b7670410fa572e9195e39648f7700f2a37/django_filter-26.2-py3-none-any.whl",
+      "sha256": "df8f737841d6359df00b84dda9b5ab59067fe60292091f1bdae1e3e6281cedb0",
+      "path": "/root/source/gaia/experiments/dependency_bundles/_work/django-corpus/wheels/django_filter-26.2-py3-none-any.whl"
+    },
+    {
+      "project": "django-filter",
+      "version": "26.1",
+      "filename": "django_filter-26.1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/1f/01/afffed1e3c4540fb75bf550a18b6176a9f6371b5f3e52b69a28995b6480c/django_filter-26.1-py3-none-any.whl",
+      "sha256": "7d98ef2899218e6242619b532cb1b95af14e09dfcf74844aecb550ad27b59ff2",
+      "path": "/root/source/gaia/experiments/dependency_bundles/_work/django-corpus/wheels/django_filter-26.1-py3-none-any.whl"
+    },
+    {
+      "project": "django-filter",
+      "version": "25.2",
+      "filename": "django_filter-25.2-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/c1/40/6a02495c5658beb1f31eb09952d8aa12ef3c2a66342331ce3a35f7132439/django_filter-25.2-py3-none-any.whl",
+      "sha256": "9c0f8609057309bba611062fe1b720b4a873652541192d232dd28970383633e3",
+      "path": "/root/source/gaia/experiments/dependency_bundles/_work/django-corpus/wheels/django_filter-25.2-py3-none-any.whl"
+    }
+  ]
+}

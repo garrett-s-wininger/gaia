@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Full research observations and profiler captures stay outside source history.
+# Keep reports, acquisition manifests, provenance and validation summaries.
+/experiments/**/results/**/results.json
+/experiments/**/results/**/results.json.gz
+/experiments/**/results/**/profiles.json
+/experiments/**/results/**/compiler-*-trace.json
+/experiments/**/results/**/trace-plan.json

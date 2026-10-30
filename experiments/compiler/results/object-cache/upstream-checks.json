@@ -1,0 +1,213 @@
+{
+  "run_id": "20261029T235526.613463Z",
+  "timed": false,
+  "rows": [
+    {
+      "case": "unchanged-off",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "95277e8cdb9e746dc5b067f060df4d496c03620a3821745df6f3c6958c5652e6",
+      "library_unchanged": true,
+      "log": "/root/source/gaia/experiments/compiler_invocation/results/object-cache/unchanged-off-examples.txt"
+    },
+    {
+      "case": "unchanged-whole",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "95277e8cdb9e746dc5b067f060df4d496c03620a3821745df6f3c6958c5652e6",
+      "library_unchanged": true,
+      "log": "/root/source/gaia/experiments/compiler_invocation/results/object-cache/unchanged-whole-examples.txt"
+    },
+    {
+      "case": "unchanged-scoped",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "95277e8cdb9e746dc5b067f060df4d496c03620a3821745df6f3c6958c5652e6",
+      "library_unchanged": true,
+      "log": "/root/source/gaia/experiments/compiler_invocation/results/object-cache/unchanged-scoped-examples.txt"
+    },
+    {
+      "case": "implementation-off",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "5b6f8c279a0c5546a11f5189eeb307577ae62c1a6df4a8d7b2bbaf2ff3759083",
+      "library_unchanged": true,
+      "log": "/root/source/gaia/experiments/compiler_invocation/results/object-cache/implementation-off-examples.txt"
+    },
+    {
+      "case": "implementation-whole",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "5b6f8c279a0c5546a11f5189eeb307577ae62c1a6df4a8d7b2bbaf2ff3759083",
+      "library_unchanged": true,
+      "log": "/root/source/gaia/experiments/compiler_invocation/results/object-cache/implementation-whole-examples.txt"
+    },
+    {
+      "case": "implementation-scoped",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "5b6f8c279a0c5546a11f5189eeb307577ae62c1a6df4a8d7b2bbaf2ff3759083",
+      "library_unchanged": true,
+      "log": "/root/source/gaia/experiments/compiler_invocation/results/object-cache/implementation-scoped-examples.txt"
+    },
+    {
+      "case": "heavy-implementation-off",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "d7ef713a67b83e1ccf8eca284080a815f63b33f5ab2244b7c50b216e273c6b9e",
+      "library_unchanged": true,
+      "log": "/root/source/gaia/experiments/compiler_invocation/results/object-cache/heavy-implementation-off-examples.txt"
+    },
+    {
+      "case": "heavy-implementation-whole",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "d7ef713a67b83e1ccf8eca284080a815f63b33f5ab2244b7c50b216e273c6b9e",
+      "library_unchanged": true,
+      "log": "/root/source/gaia/experiments/compiler_invocation/results/object-cache/heavy-implementation-whole-examples.txt"
+    },
+    {
+      "case": "heavy-implementation-scoped",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "d7ef713a67b83e1ccf8eca284080a815f63b33f5ab2244b7c50b216e273c6b9e",
+      "library_unchanged": true,
+      "log": "/root/source/gaia/experiments/compiler_invocation/results/object-cache/heavy-implementation-scoped-examples.txt"
+    },
+    {
+      "case": "shared-header-off",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "9e6d7638094c1200bff2bccf3b58c57c4b6e87aa2ae8d0357120288dd87df6fa",
+      "library_unchanged": true,
+      "log": "/root/source/gaia/experiments/compiler_invocation/results/object-cache/shared-header-off-examples.txt"
+    },
+    {
+      "case": "shared-header-whole",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "9e6d7638094c1200bff2bccf3b58c57c4b6e87aa2ae8d0357120288dd87df6fa",
+      "library_unchanged": true,
+      "log": "/root/source/gaia/experiments/compiler_invocation/results/object-cache/shared-header-whole-examples.txt"
+    },
+    {
+      "case": "shared-header-scoped",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "9e6d7638094c1200bff2bccf3b58c57c4b6e87aa2ae8d0357120288dd87df6fa",
+      "library_unchanged": true,
+      "log": "/root/source/gaia/experiments/compiler_invocation/results/object-cache/shared-header-scoped-examples.txt"
+    },
+    {
+      "case": "generated-header-off",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "e7adb30006cd38bff9d620efe1de53d1bbfc90950831297490377056e74736ac",
+      "library_unchanged": true,
+      "log": "/root/source/gaia/experiments/compiler_invocation/results/object-cache/generated-header-off-examples.txt"
+    },
+    {
+      "case": "generated-header-whole",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "e7adb30006cd38bff9d620efe1de53d1bbfc90950831297490377056e74736ac",
+      "library_unchanged": true,
+      "log": "/root/source/gaia/experiments/compiler_invocation/results/object-cache/generated-header-whole-examples.txt"
+    },
+    {
+      "case": "generated-header-scoped",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "e7adb30006cd38bff9d620efe1de53d1bbfc90950831297490377056e74736ac",
+      "library_unchanged": true,
+      "log": "/root/source/gaia/experiments/compiler_invocation/results/object-cache/generated-header-scoped-examples.txt"
+    },
+    {
+      "case": "flags-off",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "e2a5106adb0657291bb0be8d63340f605dfade87bf64979403b327ea0b869818",
+      "library_unchanged": true,
+      "log": "/root/source/gaia/experiments/compiler_invocation/results/object-cache/flags-off-examples.txt"
+    },
+    {
+      "case": "flags-whole",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "e2a5106adb0657291bb0be8d63340f605dfade87bf64979403b327ea0b869818",
+      "library_unchanged": true,
+      "log": "/root/source/gaia/experiments/compiler_invocation/results/object-cache/flags-whole-examples.txt"
+    },
+    {
+      "case": "flags-scoped",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "e2a5106adb0657291bb0be8d63340f605dfade87bf64979403b327ea0b869818",
+      "library_unchanged": true,
+      "log": "/root/source/gaia/experiments/compiler_invocation/results/object-cache/flags-scoped-examples.txt"
+    },
+    {
+      "case": "unchanged-cli",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "95277e8cdb9e746dc5b067f060df4d496c03620a3821745df6f3c6958c5652e6",
+      "library_unchanged": true,
+      "log": "/root/source/gaia/experiments/compiler_invocation/results/object-cache/unchanged-cli-examples.txt"
+    },
+    {
+      "case": "implementation-cli",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "5b6f8c279a0c5546a11f5189eeb307577ae62c1a6df4a8d7b2bbaf2ff3759083",
+      "library_unchanged": true,
+      "log": "/root/source/gaia/experiments/compiler_invocation/results/object-cache/implementation-cli-examples.txt"
+    },
+    {
+      "case": "heavy-implementation-cli",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "d7ef713a67b83e1ccf8eca284080a815f63b33f5ab2244b7c50b216e273c6b9e",
+      "library_unchanged": true,
+      "log": "/root/source/gaia/experiments/compiler_invocation/results/object-cache/heavy-implementation-cli-examples.txt"
+    },
+    {
+      "case": "shared-header-cli",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "9e6d7638094c1200bff2bccf3b58c57c4b6e87aa2ae8d0357120288dd87df6fa",
+      "library_unchanged": true,
+      "log": "/root/source/gaia/experiments/compiler_invocation/results/object-cache/shared-header-cli-examples.txt"
+    },
+    {
+      "case": "generated-header-cli",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "e7adb30006cd38bff9d620efe1de53d1bbfc90950831297490377056e74736ac",
+      "library_unchanged": true,
+      "log": "/root/source/gaia/experiments/compiler_invocation/results/object-cache/generated-header-cli-examples.txt"
+    },
+    {
+      "case": "flags-cli",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "e2a5106adb0657291bb0be8d63340f605dfade87bf64979403b327ea0b869818",
+      "library_unchanged": true,
+      "log": "/root/source/gaia/experiments/compiler_invocation/results/object-cache/flags-cli-examples.txt"
+    },
+    {
+      "case": "optional-header-cli",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "26dffb32009d15440baec16ade1c03839c81f72e01169ab1cd249bdbfad1852e",
+      "library_unchanged": true,
+      "log": "/root/source/gaia/experiments/compiler_invocation/results/object-cache/optional-header-cli-examples.txt"
+    }
+  ],
+  "example_executable_sha256": {
+    "/root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/simple_compression": "f8d3c94c884d357a3f1291a14b24e422aba85d100128ed1922b322ec3f325727",
+    "/root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/simple_decompression": "707bc9581cf8c60adc96e8f989526ef602f54862e105ff9dc7bcd418e0e07b61",
+    "/root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/streaming_compression": "bcb2d1331643e462e08f3487b6adf9753e0ea1ef9afce1464ae783949f2084f6",
+    "/root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/streaming_decompression": "9206df8649f7316136ce392a80a53bfbea938562d4045a9231f72958dee9fd1b"
+  },
+  "checker_sha256": "a7239c43fac9c53ca52165c1bf1329940b674059cf786af69ac5625be61b70fb"
+}

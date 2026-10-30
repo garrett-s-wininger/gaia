@@ -1,0 +1,443 @@
+{
+  "host_sha256": "3c7f29024c258642193916b95c1995b9a652b71e6d4fdda97cf3cd86ba48bcb6",
+  "work": "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k",
+  "timed": false,
+  "rows": [
+    {
+      "jobs": 1,
+      "mode": "file",
+      "weights": [
+        0
+      ],
+      "cost_bytes": 12,
+      "passed": true,
+      "result": {
+        "correct": true,
+        "workers": 8,
+        "compiled": 1,
+        "errors": 0,
+        "warnings": 0,
+        "job_count": 1,
+        "peak_active": 1,
+        "link_calls": 1,
+        "link_result": 0,
+        "can_run_again": true,
+        "retry_result": 0,
+        "setup_ns": 646295,
+        "compile_wall_ns": 13188058,
+        "link_ns": 3184777,
+        "workload_ns": 17032706,
+        "peak_rss_bytes": 101330944,
+        "jobs": [
+          [
+            945669,
+            13443538
+          ]
+        ],
+        "buffer_hits": 0,
+        "buffer_bytes": 0,
+        "buffer_misses": 0,
+        "object_sizes": [
+          0
+        ],
+        "export_ns": [
+          0
+        ],
+        "object_sha256": [],
+        "schedule": [
+          0
+        ]
+      },
+      "command": [
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-fix/build/host",
+        "physical",
+        "/usr/lib/llvm22/bin/clang",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/1",
+        "-",
+        "-",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/1/file",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/1/compile.gcr",
+        "8",
+        "internal",
+        "/usr/lib/llvm22/bin/ld.lld",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/1/link.gcr",
+        "file",
+        "cost",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/1/costs.txt"
+      ]
+    },
+    {
+      "jobs": 1,
+      "mode": "direct",
+      "weights": [
+        0
+      ],
+      "cost_bytes": 12,
+      "passed": true,
+      "result": {
+        "correct": true,
+        "workers": 8,
+        "compiled": 1,
+        "errors": 0,
+        "warnings": 0,
+        "job_count": 1,
+        "peak_active": 1,
+        "link_calls": 1,
+        "link_result": 0,
+        "can_run_again": true,
+        "retry_result": 0,
+        "setup_ns": 585970,
+        "compile_wall_ns": 13472009,
+        "link_ns": 3210596,
+        "workload_ns": 17374593,
+        "peak_rss_bytes": 101392384,
+        "jobs": [
+          [
+            931969,
+            13681432
+          ]
+        ],
+        "buffer_hits": 1,
+        "buffer_bytes": 936,
+        "buffer_misses": 0,
+        "object_sizes": [
+          936
+        ],
+        "export_ns": [
+          0
+        ],
+        "object_sha256": [
+          "0f5cb24ed361f437134500985be8276ec7892b79f97f2e4c1bbc38183b8c3589"
+        ],
+        "schedule": [
+          0
+        ]
+      },
+      "command": [
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-fix/build/host",
+        "physical",
+        "/usr/lib/llvm22/bin/clang",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/1",
+        "-",
+        "-",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/1/direct",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/1/compile.gcr",
+        "8",
+        "internal",
+        "/usr/lib/llvm22/bin/ld.lld",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/1/link.gcr",
+        "direct",
+        "cost",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/1/costs.txt"
+      ]
+    },
+    {
+      "jobs": 2,
+      "mode": "file",
+      "weights": [
+        7,
+        7
+      ],
+      "cost_bytes": 14,
+      "passed": true,
+      "result": {
+        "correct": true,
+        "workers": 8,
+        "compiled": 2,
+        "errors": 0,
+        "warnings": 0,
+        "job_count": 2,
+        "peak_active": 2,
+        "link_calls": 1,
+        "link_result": 0,
+        "can_run_again": true,
+        "retry_result": 0,
+        "setup_ns": 765019,
+        "compile_wall_ns": 13999377,
+        "link_ns": 3335481,
+        "workload_ns": 18115155,
+        "peak_rss_bytes": 105054208,
+        "jobs": [
+          [
+            1077922,
+            14510990
+          ],
+          [
+            1100384,
+            14532715
+          ]
+        ],
+        "buffer_hits": 0,
+        "buffer_bytes": 0,
+        "buffer_misses": 0,
+        "object_sizes": [
+          0,
+          0
+        ],
+        "export_ns": [
+          0,
+          0
+        ],
+        "object_sha256": [],
+        "schedule": [
+          0,
+          1
+        ]
+      },
+      "command": [
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-fix/build/host",
+        "physical",
+        "/usr/lib/llvm22/bin/clang",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/2",
+        "-",
+        "-",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/2/file",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/2/compile.gcr",
+        "8",
+        "internal",
+        "/usr/lib/llvm22/bin/ld.lld",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/2/link.gcr",
+        "file",
+        "cost",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/2/costs.txt"
+      ]
+    },
+    {
+      "jobs": 2,
+      "mode": "direct",
+      "weights": [
+        7,
+        7
+      ],
+      "cost_bytes": 14,
+      "passed": true,
+      "result": {
+        "correct": true,
+        "workers": 8,
+        "compiled": 2,
+        "errors": 0,
+        "warnings": 0,
+        "job_count": 2,
+        "peak_active": 2,
+        "link_calls": 1,
+        "link_result": 0,
+        "can_run_again": true,
+        "retry_result": 0,
+        "setup_ns": 697972,
+        "compile_wall_ns": 14584780,
+        "link_ns": 4112654,
+        "workload_ns": 19447835,
+        "peak_rss_bytes": 105201664,
+        "jobs": [
+          [
+            1116335,
+            14833932
+          ],
+          [
+            1247497,
+            15091901
+          ]
+        ],
+        "buffer_hits": 2,
+        "buffer_bytes": 1872,
+        "buffer_misses": 0,
+        "object_sizes": [
+          936,
+          936
+        ],
+        "export_ns": [
+          0,
+          0
+        ],
+        "object_sha256": [
+          "0f5cb24ed361f437134500985be8276ec7892b79f97f2e4c1bbc38183b8c3589",
+          "c05eeae13566c9f98e33fa407417c3a6579e473f38acaa0ee4f15012385fa7e3"
+        ],
+        "schedule": [
+          0,
+          1
+        ]
+      },
+      "command": [
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-fix/build/host",
+        "physical",
+        "/usr/lib/llvm22/bin/clang",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/2",
+        "-",
+        "-",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/2/direct",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/2/compile.gcr",
+        "8",
+        "internal",
+        "/usr/lib/llvm22/bin/ld.lld",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/2/link.gcr",
+        "direct",
+        "cost",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/2/costs.txt"
+      ]
+    },
+    {
+      "jobs": 3,
+      "mode": "file",
+      "weights": [
+        9,
+        0,
+        15
+      ],
+      "cost_bytes": 17,
+      "passed": true,
+      "result": {
+        "correct": true,
+        "workers": 8,
+        "compiled": 3,
+        "errors": 0,
+        "warnings": 0,
+        "job_count": 3,
+        "peak_active": 3,
+        "link_calls": 1,
+        "link_result": 0,
+        "can_run_again": true,
+        "retry_result": 0,
+        "setup_ns": 866702,
+        "compile_wall_ns": 15863761,
+        "link_ns": 3396497,
+        "workload_ns": 20141998,
+        "peak_rss_bytes": 106418176,
+        "jobs": [
+          [
+            1703619,
+            16290076
+          ],
+          [
+            1727534,
+            16370956
+          ],
+          [
+            1329913,
+            16232404
+          ]
+        ],
+        "buffer_hits": 0,
+        "buffer_bytes": 0,
+        "buffer_misses": 0,
+        "object_sizes": [
+          0,
+          0,
+          0
+        ],
+        "export_ns": [
+          0,
+          0,
+          0
+        ],
+        "object_sha256": [],
+        "schedule": [
+          2,
+          0,
+          1
+        ]
+      },
+      "command": [
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-fix/build/host",
+        "physical",
+        "/usr/lib/llvm22/bin/clang",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/3",
+        "-",
+        "-",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/3/file",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/3/compile.gcr",
+        "8",
+        "internal",
+        "/usr/lib/llvm22/bin/ld.lld",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/3/link.gcr",
+        "file",
+        "cost",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/3/costs.txt"
+      ]
+    },
+    {
+      "jobs": 3,
+      "mode": "direct",
+      "weights": [
+        9,
+        0,
+        15
+      ],
+      "cost_bytes": 17,
+      "passed": true,
+      "result": {
+        "correct": true,
+        "workers": 8,
+        "compiled": 3,
+        "errors": 0,
+        "warnings": 0,
+        "job_count": 3,
+        "peak_active": 3,
+        "link_calls": 1,
+        "link_result": 0,
+        "can_run_again": true,
+        "retry_result": 0,
+        "setup_ns": 696440,
+        "compile_wall_ns": 16788583,
+        "link_ns": 3418959,
+        "workload_ns": 20959617,
+        "peak_rss_bytes": 106389504,
+        "jobs": [
+          [
+            1535190,
+            16758320
+          ],
+          [
+            2217346,
+            17256996
+          ],
+          [
+            1098322,
+            16886176
+          ]
+        ],
+        "buffer_hits": 3,
+        "buffer_bytes": 2808,
+        "buffer_misses": 0,
+        "object_sizes": [
+          936,
+          936,
+          936
+        ],
+        "export_ns": [
+          0,
+          0,
+          0
+        ],
+        "object_sha256": [
+          "0f5cb24ed361f437134500985be8276ec7892b79f97f2e4c1bbc38183b8c3589",
+          "c05eeae13566c9f98e33fa407417c3a6579e473f38acaa0ee4f15012385fa7e3",
+          "e893d254fee13c296935a99de298b7d0e172485e63046ad21768d5a770e15865"
+        ],
+        "schedule": [
+          2,
+          0,
+          1
+        ]
+      },
+      "command": [
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-fix/build/host",
+        "physical",
+        "/usr/lib/llvm22/bin/clang",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/3",
+        "-",
+        "-",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/3/direct",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/3/compile.gcr",
+        "8",
+        "internal",
+        "/usr/lib/llvm22/bin/ld.lld",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/3/link.gcr",
+        "direct",
+        "cost",
+        "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-if5x9v7k/3/costs.txt"
+      ]
+    }
+  ],
+  "checker_sha256": "e0557d5d90785ee25e7c26f830ebbb6316452bc9149fc8713e7fedbc6ecc6f7e"
+}

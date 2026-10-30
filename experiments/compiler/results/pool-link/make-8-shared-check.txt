@@ -1,0 +1,60 @@
+/usr/lib/llvm22/bin/clang -O2 -fPIC -fno-ident -fno-addrsig -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -I. -c -o example.o test/example.c
+/usr/lib/llvm22/bin/clang -O2 -fPIC -fno-ident -fno-addrsig -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -o example example.o libz.so
+/usr/lib/llvm22/bin/clang -O2 -fPIC -fno-ident -fno-addrsig -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -I. -c -o minigzip.o test/minigzip.c
+/usr/lib/llvm22/bin/clang -O2 -fPIC -fno-ident -fno-addrsig -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -o minigzip minigzip.o libz.so
+/usr/lib/llvm22/bin/clang -O2 -fPIC -fno-ident -fno-addrsig -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -I. -D_FILE_OFFSET_BITS=64 -c -o example64.o test/example.c
+/usr/lib/llvm22/bin/clang -O2 -fPIC -fno-ident -fno-addrsig -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -o example64 example64.o libz.so
+/usr/lib/llvm22/bin/clang -O2 -fPIC -fno-ident -fno-addrsig -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -I. -D_FILE_OFFSET_BITS=64 -c -o minigzip64.o test/minigzip.c
+/usr/lib/llvm22/bin/clang -O2 -fPIC -fno-ident -fno-addrsig -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -o minigzip64 minigzip64.o libz.so
+hello world
+zlib version 1.3.2 = 0x1320, compile flags = 0xa9
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+after inflateSync(): hello, hello!
+inflate with dictionary: hello, hello!
+		*** zlib test OK ***
+hello world
+zlib version 1.3.2 = 0x1320, compile flags = 0xa9
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+after inflateSync(): hello, hello!
+inflate with dictionary: hello, hello!
+		*** zlib 64-bit test OK ***
+/usr/lib/llvm22/bin/clang: /root/source/gaia/experiments/compiler_invocation/_work/pool-20261029T201012.673471Z/check-make-8/libz.so.1: no version information available (required by /usr/lib/libLLVM.so.22.1)
+/usr/lib/llvm22/bin/clang: /root/source/gaia/experiments/compiler_invocation/_work/pool-20261029T201012.673471Z/check-make-8/libz.so.1: no version information available (required by /usr/lib/libxml2.so.16)
+/usr/lib/llvm22/bin/clang: /root/source/gaia/experiments/compiler_invocation/_work/pool-20261029T201012.673471Z/check-make-8/libz.so.1: no version information available (required by /usr/lib/libLLVM.so.22.1)
+/usr/lib/llvm22/bin/clang: /root/source/gaia/experiments/compiler_invocation/_work/pool-20261029T201012.673471Z/check-make-8/libz.so.1: no version information available (required by /usr/lib/libxml2.so.16)
+clang: warning: argument unused during compilation: '-fno-ident' [-Wunused-command-line-argument]
+/usr/bin/ld: /root/source/gaia/experiments/compiler_invocation/_work/pool-20261029T201012.673471Z/check-make-8/libz.so.1: no version information available (required by /usr/lib/libbfd-2.47.so)
+/usr/bin/ld: /root/source/gaia/experiments/compiler_invocation/_work/pool-20261029T201012.673471Z/check-make-8/libz.so.1: no version information available (required by /usr/lib/libbfd-2.47.so)
+/usr/bin/ld: /root/source/gaia/experiments/compiler_invocation/_work/pool-20261029T201012.673471Z/check-make-8/libz.so.1: no version information available (required by /usr/lib/libctf.so.0)
+/usr/lib/llvm22/bin/clang: /root/source/gaia/experiments/compiler_invocation/_work/pool-20261029T201012.673471Z/check-make-8/libz.so.1: no version information available (required by /usr/lib/libLLVM.so.22.1)
+/usr/lib/llvm22/bin/clang: /root/source/gaia/experiments/compiler_invocation/_work/pool-20261029T201012.673471Z/check-make-8/libz.so.1: no version information available (required by /usr/lib/libxml2.so.16)
+/usr/lib/llvm22/bin/clang: /root/source/gaia/experiments/compiler_invocation/_work/pool-20261029T201012.673471Z/check-make-8/libz.so.1: no version information available (required by /usr/lib/libLLVM.so.22.1)
+/usr/lib/llvm22/bin/clang: /root/source/gaia/experiments/compiler_invocation/_work/pool-20261029T201012.673471Z/check-make-8/libz.so.1: no version information available (required by /usr/lib/libxml2.so.16)
+clang: warning: argument unused during compilation: '-fno-ident' [-Wunused-command-line-argument]
+/usr/bin/ld: /root/source/gaia/experiments/compiler_invocation/_work/pool-20261029T201012.673471Z/check-make-8/libz.so.1: no version information available (required by /usr/lib/libbfd-2.47.so)
+/usr/bin/ld: /root/source/gaia/experiments/compiler_invocation/_work/pool-20261029T201012.673471Z/check-make-8/libz.so.1: no version information available (required by /usr/lib/libbfd-2.47.so)
+/usr/bin/ld: /root/source/gaia/experiments/compiler_invocation/_work/pool-20261029T201012.673471Z/check-make-8/libz.so.1: no version information available (required by /usr/lib/libctf.so.0)
+/usr/lib/llvm22/bin/clang: /root/source/gaia/experiments/compiler_invocation/_work/pool-20261029T201012.673471Z/check-make-8/libz.so.1: no version information available (required by /usr/lib/libLLVM.so.22.1)
+/usr/lib/llvm22/bin/clang: /root/source/gaia/experiments/compiler_invocation/_work/pool-20261029T201012.673471Z/check-make-8/libz.so.1: no version information available (required by /usr/lib/libxml2.so.16)
+/usr/lib/llvm22/bin/clang: /root/source/gaia/experiments/compiler_invocation/_work/pool-20261029T201012.673471Z/check-make-8/libz.so.1: no version information available (required by /usr/lib/libLLVM.so.22.1)
+/usr/lib/llvm22/bin/clang: /root/source/gaia/experiments/compiler_invocation/_work/pool-20261029T201012.673471Z/check-make-8/libz.so.1: no version information available (required by /usr/lib/libxml2.so.16)
+clang: warning: argument unused during compilation: '-fno-ident' [-Wunused-command-line-argument]
+/usr/bin/ld: /root/source/gaia/experiments/compiler_invocation/_work/pool-20261029T201012.673471Z/check-make-8/libz.so.1: no version information available (required by /usr/lib/libbfd-2.47.so)
+/usr/bin/ld: /root/source/gaia/experiments/compiler_invocation/_work/pool-20261029T201012.673471Z/check-make-8/libz.so.1: no version information available (required by /usr/lib/libbfd-2.47.so)
+/usr/bin/ld: /root/source/gaia/experiments/compiler_invocation/_work/pool-20261029T201012.673471Z/check-make-8/libz.so.1: no version information available (required by /usr/lib/libctf.so.0)
+/usr/lib/llvm22/bin/clang: /root/source/gaia/experiments/compiler_invocation/_work/pool-20261029T201012.673471Z/check-make-8/libz.so.1: no version information available (required by /usr/lib/libLLVM.so.22.1)
+/usr/lib/llvm22/bin/clang: /root/source/gaia/experiments/compiler_invocation/_work/pool-20261029T201012.673471Z/check-make-8/libz.so.1: no version information available (required by /usr/lib/libxml2.so.16)
+/usr/lib/llvm22/bin/clang: /root/source/gaia/experiments/compiler_invocation/_work/pool-20261029T201012.673471Z/check-make-8/libz.so.1: no version information available (required by /usr/lib/libLLVM.so.22.1)
+/usr/lib/llvm22/bin/clang: /root/source/gaia/experiments/compiler_invocation/_work/pool-20261029T201012.673471Z/check-make-8/libz.so.1: no version information available (required by /usr/lib/libxml2.so.16)
+clang: warning: argument unused during compilation: '-fno-ident' [-Wunused-command-line-argument]
+/usr/bin/ld: /root/source/gaia/experiments/compiler_invocation/_work/pool-20261029T201012.673471Z/check-make-8/libz.so.1: no version information available (required by /usr/lib/libbfd-2.47.so)
+/usr/bin/ld: /root/source/gaia/experiments/compiler_invocation/_work/pool-20261029T201012.673471Z/check-make-8/libz.so.1: no version information available (required by /usr/lib/libbfd-2.47.so)
+/usr/bin/ld: /root/source/gaia/experiments/compiler_invocation/_work/pool-20261029T201012.673471Z/check-make-8/libz.so.1: no version information available (required by /usr/lib/libctf.so.0)

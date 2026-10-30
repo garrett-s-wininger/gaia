@@ -1,0 +1,43 @@
+{
+  "commands": [
+    [
+      "/usr/lib/llvm22/bin/clang++",
+      "-std=c++17",
+      "-O2",
+      "-fPIC",
+      "-I/usr/lib/llvm22/include",
+      "-I/root/source/gaia/experiments/compiler_invocation/_work/toolchain/usr/lib/llvm22/include",
+      "-c",
+      "/root/source/gaia/experiments/compiler_invocation/handoff_bridge.cpp",
+      "-o",
+      "/root/source/gaia/experiments/compiler_invocation/_work/handoff-development/build/bridge.o"
+    ],
+    [
+      "/opt/odin/nightly/odin",
+      "build",
+      "/root/source/gaia/experiments/compiler_invocation/handoff_host.odin",
+      "-file",
+      "-o:speed",
+      "-build-mode:obj",
+      "-out:/root/source/gaia/experiments/compiler_invocation/_work/handoff-development/build/host.o"
+    ],
+    [
+      "/usr/lib/llvm22/bin/clang++",
+      "/root/source/gaia/experiments/compiler_invocation/_work/handoff-development/build/host.o",
+      "/root/source/gaia/experiments/compiler_invocation/_work/handoff-development/build/bridge.o",
+      "/usr/lib/llvm22/lib/libclang-cpp.so",
+      "/usr/lib/llvm22/lib/libLLVM.so.22.1",
+      "/usr/lib/llvm22/lib/liblldELF.so",
+      "/usr/lib/llvm22/lib/liblldCommon.so",
+      "-ldl",
+      "-Wl,--export-dynamic-symbol=_ZN4llvm12MemoryBuffer7getFileERKNS_5TwineEbbbSt8optionalINS_5AlignEE",
+      "-pthread",
+      "-Wl,-rpath,/usr/lib/llvm22/lib",
+      "-o",
+      "/root/source/gaia/experiments/compiler_invocation/_work/handoff-development/build/host"
+    ]
+  ],
+  "seconds": 20.097949540000627,
+  "host_sha256": "21b32ddbbdb59ea503142b4d3af48996c8582b720014ed42bce72c40c35e38a2",
+  "odin_version": "/opt/odin/nightly/odin version dev-2026-10-nightly:84bc3fc"
+}

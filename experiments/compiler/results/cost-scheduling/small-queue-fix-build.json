@@ -1,0 +1,55 @@
+{
+  "build": {
+    "commands": [
+      [
+        "/usr/lib/llvm22/bin/clang++",
+        "-std=c++17",
+        "-O2",
+        "-fPIC",
+        "-I/usr/lib/llvm22/include",
+        "-I/root/source/gaia/experiments/compiler_invocation/_work/toolchain/usr/lib/llvm22/include",
+        "-c",
+        "/root/source/gaia/experiments/compiler_invocation/handoff_bridge.cpp",
+        "-o",
+        "experiments/compiler_invocation/_work/schedule-small-fix/build/bridge.o"
+      ],
+      [
+        "/opt/odin/nightly/odin",
+        "build",
+        "/root/source/gaia/experiments/compiler_invocation/schedule_host.odin",
+        "-file",
+        "-o:speed",
+        "-build-mode:obj",
+        "-out:experiments/compiler_invocation/_work/schedule-small-fix/build/host.o"
+      ],
+      [
+        "/usr/lib/llvm22/bin/clang++",
+        "experiments/compiler_invocation/_work/schedule-small-fix/build/host.o",
+        "experiments/compiler_invocation/_work/schedule-small-fix/build/bridge.o",
+        "/usr/lib/llvm22/lib/libclang-cpp.so",
+        "/usr/lib/llvm22/lib/libLLVM.so.22.1",
+        "/usr/lib/llvm22/lib/liblldELF.so",
+        "/usr/lib/llvm22/lib/liblldCommon.so",
+        "-ldl",
+        "-Wl,--export-dynamic-symbol=_ZN4llvm12MemoryBuffer7getFileERKNS_5TwineEbbbSt8optionalINS_5AlignEE",
+        "-pthread",
+        "-Wl,-rpath,/usr/lib/llvm22/lib",
+        "-o",
+        "experiments/compiler_invocation/_work/schedule-small-fix/build/host"
+      ]
+    ],
+    "seconds": 15.017899985999975,
+    "host_sha256": "3c7f29024c258642193916b95c1995b9a652b71e6d4fdda97cf3cd86ba48bcb6",
+    "odin_version": "/opt/odin/nightly/odin version dev-2026-10-nightly:84bc3fc"
+  },
+  "scope": "Post-timing admission-only correction: valid 12-byte one-job cost tables accepted. No changes to measured 30-job input handling or scheduling policy.",
+  "source_sha256": {
+    "schedule_host.odin": "0665c188951813275b0a17562a4814007c06df2cd17d1c40890787e93c32a394",
+    "handoff_bridge.cpp": "5b8f7bff617031ee3b0e2c155852ea892cdcadf7cf42c51899c10a5e184e3d60",
+    "handoff_impl.h": "f8d0ed3cd9465a66a0dba4cb9fadf17b59d62bd94c3e353dfbf5445ce16a4d55",
+    "pool_bridge.cpp": "6838a928a0d8713c87abeeb9ef15bba68da8e5947241a501a6691a5e6f6d9780",
+    "project_bridge.cpp": "28b30b3aa80e7a76f72fd7df7c4ad60dcc2baa67ec3e529cd5628ce6a45359e0",
+    "bridge.cpp": "e1eab032ecf02abcd7374ff501d47ffae968bc0a32caf40aa88e6e3235cca3fd"
+  },
+  "source_snapshots": "/root/source/gaia/experiments/compiler_invocation/_work/schedule-small-fix/sources"
+}

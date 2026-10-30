@@ -1,0 +1,32 @@
+	linux-vdso.so.1 (0x0000757dcc353000)
+	libzstd.so.1 => /root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/release-file/libzstd.so.1 (0x0000757dcc278000)
+	libc.so.6 => /usr/lib/libc.so.6 (0x0000757dcc000000)
+	/lib64/ld-linux-x86-64.so.2 => /usr/lib64/ld-linux-x86-64.so.2 (0x0000757dcc355000)
+
+/root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/test-input :      0 ->       9 - /root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/test-input.zst 
+
+/root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/test-input.zst :      9 ->       0 
+/root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/test-input.zst correctly decoded (in memory). 
+
+simple_compression: 0 bytes round-trip matched
+Starting compression of /root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/test-input with level 1, using 1 threads
+
+streaming_compression: 0 bytes round-trip matched
+/root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/test-input :     73 ->      82 - /root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/test-input.zst 
+
+/root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/test-input.zst :     82 ->      73 
+/root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/test-input.zst correctly decoded (in memory). 
+
+simple_compression: 73 bytes round-trip matched
+Starting compression of /root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/test-input with level 1, using 1 threads
+
+streaming_compression: 73 bytes round-trip matched
+/root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/test-input : 1048576 ->   12526 - /root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/test-input.zst 
+
+/root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/test-input.zst :  12526 -> 1048576 
+/root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/test-input.zst correctly decoded (in memory). 
+
+simple_compression: 1048576 bytes round-trip matched
+Starting compression of /root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/test-input with level 1, using 1 threads
+
+streaming_compression: 1048576 bytes round-trip matched

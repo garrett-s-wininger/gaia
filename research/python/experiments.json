@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "path_base": "repository-root",
+  "scope": "Python-specific local dependency formats/loading and version resolution. Not a portable protocol specification.",
+  "caveat": "Compare controls within each run. Reports define timing scopes, exclusions, run IDs and sample counts. Raw traces/admitted artifacts may be local-only.",
+  "experiments": [
+    {
+      "id": "dependency_bundles/.",
+      "track": "python-dependency-formats",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_bundles/results/REPORT.md",
+      "raw": "experiments/python/dependency_bundles/results/results.json"
+    },
+    {
+      "id": "dependency_bundles/access",
+      "track": "python-dependency-formats",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_bundles/results/access/REPORT.md",
+      "raw": "experiments/python/dependency_bundles/results/access/results.json"
+    },
+    {
+      "id": "dependency_bundles/access-loader",
+      "track": "python-dependency-formats",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_bundles/results/access-loader/REPORT.md",
+      "raw": "experiments/python/dependency_bundles/results/access-loader/results.json"
+    },
+    {
+      "id": "dependency_bundles/binary-index",
+      "track": "python-dependency-formats",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_bundles/results/binary-index/REPORT.md",
+      "raw": "experiments/python/dependency_bundles/results/binary-index/results.json"
+    },
+    {
+      "id": "dependency_bundles/bootstrap",
+      "track": "python-dependency-formats",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_bundles/results/bootstrap/REPORT.md",
+      "raw": "experiments/python/dependency_bundles/results/bootstrap/results.json"
+    },
+    {
+      "id": "dependency_bundles/bootstrap-confirmation",
+      "track": "python-dependency-formats",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_bundles/results/bootstrap-confirmation/REPORT.md",
+      "raw": "experiments/python/dependency_bundles/results/bootstrap-confirmation/results.json"
+    },
+    {
+      "id": "dependency_bundles/bridge",
+      "track": "python-dependency-formats",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_bundles/results/bridge/REPORT.md",
+      "raw": "experiments/python/dependency_bundles/results/bridge/results.json"
+    },
+    {
+      "id": "dependency_bundles/catalog",
+      "track": "python-dependency-formats",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_bundles/results/catalog/REPORT.md",
+      "raw": "experiments/python/dependency_bundles/results/catalog/results.json"
+    },
+    {
+      "id": "dependency_bundles/diagnostics",
+      "track": "python-dependency-formats",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_bundles/results/diagnostics/REPORT.md",
+      "raw": null
+    },
+    {
+      "id": "dependency_bundles/django",
+      "track": "python-dependency-formats",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_bundles/results/django/REPORT.md",
+      "raw": "experiments/python/dependency_bundles/results/django/results.json"
+    },
+    {
+      "id": "dependency_bundles/django-diagnostics",
+      "track": "python-dependency-formats",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_bundles/results/django-diagnostics/REPORT.md",
+      "raw": "experiments/python/dependency_bundles/results/django-diagnostics/results.json"
+    },
+    {
+      "id": "dependency_bundles/handoff",
+      "track": "python-dependency-formats",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_bundles/results/handoff/REPORT.md",
+      "raw": "experiments/python/dependency_bundles/results/handoff/results.json"
+    },
+    {
+      "id": "dependency_bundles/index",
+      "track": "python-dependency-formats",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_bundles/results/index/REPORT.md",
+      "raw": "experiments/python/dependency_bundles/results/index/results.json"
+    },
+    {
+      "id": "dependency_bundles/mapped-catalog",
+      "track": "python-dependency-formats",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_bundles/results/mapped-catalog/REPORT.md",
+      "raw": "experiments/python/dependency_bundles/results/mapped-catalog/results.json"
+    },
+    {
+      "id": "dependency_bundles/native",
+      "track": "python-dependency-formats",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_bundles/results/native/REPORT.md",
+      "raw": "experiments/python/dependency_bundles/results/native/results.json"
+    },
+    {
+      "id": "dependency_bundles/native-catalog",
+      "track": "python-dependency-formats",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_bundles/results/native-catalog/REPORT.md",
+      "raw": "experiments/python/dependency_bundles/results/native-catalog/results.json"
+    },
+    {
+      "id": "dependency_bundles/path-index",
+      "track": "python-dependency-formats",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_bundles/results/path-index/REPORT.md",
+      "raw": "experiments/python/dependency_bundles/results/path-index/results.json"
+    },
+    {
+      "id": "dependency_bundles/path-index/diagnostics",
+      "track": "python-dependency-formats",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_bundles/results/path-index/diagnostics/REPORT.md",
+      "raw": "experiments/python/dependency_bundles/results/path-index/diagnostics/results.json"
+    },
+    {
+      "id": "dependency_bundles/persistent",
+      "track": "python-dependency-formats",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_bundles/results/persistent/REPORT.md",
+      "raw": "experiments/python/dependency_bundles/results/persistent/results.json"
+    },
+    {
+      "id": "dependency_bundles/prefault",
+      "track": "python-dependency-formats",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_bundles/results/prefault/REPORT.md",
+      "raw": "experiments/python/dependency_bundles/results/prefault/results.json"
+    },
+    {
+      "id": "dependency_bundles/process-characterization",
+      "track": "python-dependency-formats",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_bundles/results/process-characterization/REPORT.md",
+      "raw": "experiments/python/dependency_bundles/results/process-characterization/results.json"
+    },
+    {
+      "id": "dependency_bundles/python-native",
+      "track": "python-dependency-formats",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_bundles/results/python-native/REPORT.md",
+      "raw": "experiments/python/dependency_bundles/results/python-native/results.json"
+    },
+    {
+      "id": "dependency_bundles/resolution",
+      "track": "python-dependency-formats",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_bundles/results/resolution/REPORT.md",
+      "raw": "experiments/python/dependency_bundles/results/resolution/results.json"
+    },
+    {
+      "id": "dependency_bundles/resolution-before-timing-fix",
+      "track": "python-dependency-formats",
+      "status": "historical-phase-timing-superseded",
+      "report": "experiments/python/dependency_bundles/results/resolution-before-timing-fix/REPORT.md",
+      "raw": "experiments/python/dependency_bundles/results/resolution-before-timing-fix/results.json"
+    },
+    {
+      "id": "dependency_bundles/stdlib",
+      "track": "python-dependency-formats",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_bundles/results/stdlib/REPORT.md",
+      "raw": "experiments/python/dependency_bundles/results/stdlib/results.json"
+    },
+    {
+      "id": "dependency_bundles/stdlib/diagnostics",
+      "track": "python-dependency-formats",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_bundles/results/stdlib/diagnostics/REPORT.md",
+      "raw": "experiments/python/dependency_bundles/results/stdlib/diagnostics/results.json"
+    },
+    {
+      "id": "dependency_bundles/unified-catalog",
+      "track": "python-dependency-formats",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_bundles/results/unified-catalog/REPORT.md",
+      "raw": "experiments/python/dependency_bundles/results/unified-catalog/results.json"
+    },
+    {
+      "id": "dependency_solving/django",
+      "track": "python-resolution",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_solving/results/django/REPORT.md",
+      "raw": "experiments/python/dependency_solving/results/django/results.json"
+    },
+    {
+      "id": "dependency_solving/incremental",
+      "track": "python-resolution",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_solving/results/incremental/REPORT.md",
+      "raw": "experiments/python/dependency_solving/results/incremental/results.json"
+    },
+    {
+      "id": "dependency_solving/initial",
+      "track": "python-resolution",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_solving/results/initial/REPORT.md",
+      "raw": "experiments/python/dependency_solving/results/initial/results.json"
+    },
+    {
+      "id": "dependency_solving/naive-startup",
+      "track": "python-resolution",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_solving/results/naive-startup/REPORT.md",
+      "raw": "experiments/python/dependency_solving/results/naive-startup/results.json"
+    },
+    {
+      "id": "dependency_solving/trail",
+      "track": "python-resolution",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_solving/results/trail/REPORT.md",
+      "raw": "experiments/python/dependency_solving/results/trail/results.json"
+    },
+    {
+      "id": "dependency_solving/trail-scaling",
+      "track": "python-resolution",
+      "status": "retained-evidence",
+      "report": "experiments/python/dependency_solving/results/trail-scaling/REPORT.md",
+      "raw": "experiments/python/dependency_solving/results/trail-scaling/results.json.gz"
+    }
+  ],
+  "raw_evidence": {
+    "manifest": "research/evidence.json",
+    "availability": "Raw observation/profile paths refer to ignored local artifacts, absent from a clean checkout; no download has been published."
+  }
+}

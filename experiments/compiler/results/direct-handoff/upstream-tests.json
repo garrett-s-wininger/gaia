@@ -1,0 +1,58 @@
+[
+  {
+    "name": "make-8",
+    "passed": true,
+    "shared_library": true,
+    "library_unchanged": true,
+    "log": "/root/source/gaia/experiments/compiler_invocation/results/direct-handoff/make-8-shared-check.txt"
+  },
+  {
+    "name": "physical-8-file",
+    "passed": true,
+    "shared_library": true,
+    "library_unchanged": true,
+    "log": "/root/source/gaia/experiments/compiler_invocation/results/direct-handoff/physical-8-file-shared-check.txt"
+  },
+  {
+    "name": "physical-8-buffer-file",
+    "passed": true,
+    "shared_library": true,
+    "library_unchanged": true,
+    "log": "/root/source/gaia/experiments/compiler_invocation/results/direct-handoff/physical-8-buffer-file-shared-check.txt"
+  },
+  {
+    "name": "physical-8-direct",
+    "passed": true,
+    "shared_library": true,
+    "library_unchanged": true,
+    "log": "/root/source/gaia/experiments/compiler_invocation/results/direct-handoff/physical-8-direct-shared-check.txt"
+  },
+  {
+    "name": "physical-1-file",
+    "passed": true,
+    "shared_library": true,
+    "library_unchanged": true,
+    "log": "/root/source/gaia/experiments/compiler_invocation/results/direct-handoff/physical-1-file-shared-check.txt"
+  },
+  {
+    "name": "physical-1-direct",
+    "passed": true,
+    "shared_library": true,
+    "library_unchanged": true,
+    "log": "/root/source/gaia/experiments/compiler_invocation/results/direct-handoff/physical-1-direct-shared-check.txt"
+  },
+  {
+    "name": "memory-8-file",
+    "passed": true,
+    "shared_library": true,
+    "library_unchanged": true,
+    "log": "/root/source/gaia/experiments/compiler_invocation/results/direct-handoff/memory-8-file-shared-check.txt"
+  },
+  {
+    "name": "memory-8-direct",
+    "passed": true,
+    "shared_library": true,
+    "library_unchanged": true,
+    "log": "/root/source/gaia/experiments/compiler_invocation/results/direct-handoff/memory-8-direct-shared-check.txt"
+  }
+]

@@ -1,0 +1,296 @@
+{
+  "run_id": "20261029T232949.779224Z",
+  "timed": false,
+  "check": "sorted-compile-error-suppresses-link-preserves-output",
+  "passed": true,
+  "result": {
+    "correct": false,
+    "workers": 8,
+    "compiled": 7,
+    "errors": 1,
+    "warnings": 0,
+    "job_count": 30,
+    "peak_active": 8,
+    "link_calls": 0,
+    "link_result": 0,
+    "can_run_again": true,
+    "retry_result": 0,
+    "setup_ns": 1394273,
+    "compile_wall_ns": 1777572774,
+    "link_ns": 0,
+    "workload_ns": 1778968429,
+    "peak_rss_bytes": 202166272,
+    "jobs": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        2301312,
+        1778263075
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        2385346,
+        1597990807
+      ],
+      [
+        2739787,
+        1467871311
+      ],
+      [
+        2211587,
+        136480433
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        5428841,
+        1399268774
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        4506437,
+        1373785850
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        3166105,
+        1653216247
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        5575289,
+        1271836154
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "buffer_hits": 0,
+    "buffer_bytes": 0,
+    "buffer_misses": 0,
+    "object_sizes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      116760,
+      0,
+      0,
+      0,
+      46640,
+      43344,
+      0,
+      0,
+      62808,
+      0,
+      0,
+      55984,
+      0,
+      0,
+      70664,
+      0,
+      44664,
+      0,
+      0
+    ],
+    "export_ns": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "object_sha256": [
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "a4fbd50e15fac16486008b99adc24910626c7e3894236e97b80f601883cd0da4",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "e13715ff2b1e86d757c54e92474d5d822f9d01bad2361c2d0c8ef49c44d8191c",
+      "ae8e982205c19cc13674b9bd3d9fd32eedf4fe95b63bf0e6b0aeb0719a85e040",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "361c40e87766e43cb583720fee32009a4eb450e53af1bf750d5795fa7c6902b6",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "c47acf53d36d33f026879466e15920cbe72265dafd0b132c92421ff2e1740c3d",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "47c4d71909291ab3090977521c6360bffedf637f83d3614c81814a7944c4e8fc",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "29f95761368098319091f700890c48c9dd74925b1f22e5ad39a31eaf7c9061e0",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "schedule": [
+      17,
+      11,
+      15,
+      16,
+      25,
+      22,
+      19,
+      27,
+      10,
+      24,
+      21,
+      29,
+      26,
+      18,
+      3,
+      14,
+      13,
+      8,
+      28,
+      1,
+      6,
+      4,
+      9,
+      20,
+      12,
+      23,
+      7,
+      2,
+      5,
+      0
+    ]
+  },
+  "command": [
+    "/root/source/gaia/experiments/compiler_invocation/_work/schedule-development/build/host",
+    "physical",
+    "/usr/lib/llvm22/bin/clang",
+    "/root/source/gaia/experiments/compiler_invocation/_work/zstd-source/zstd-1.5.7/lib",
+    "-",
+    "-",
+    "/root/source/gaia/experiments/compiler_invocation/_work/schedule-20261029T232949.779224Z/compile-error-check",
+    "/root/source/gaia/experiments/compiler_invocation/_work/schedule-20261029T232949.779224Z/compile-error.gcr",
+    "8",
+    "internal",
+    "/usr/lib/llvm22/bin/ld.lld",
+    "/root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/release-link.gcr",
+    "direct",
+    "cost",
+    "/root/source/gaia/experiments/compiler_invocation/_work/schedule-20261029T232949.779224Z/release.costs"
+  ],
+  "stderr": "1 error generated.\njob 17: '/root/source/gaia/experiments/compiler_invocation/_work/schedule-20261029T232949.779224Z/missing-required-header.h' file not found\n",
+  "checker_sha256": "8185c490014af349517ade893d8617ac02c3109e44816f48078fde4f5f7c766a"
+}

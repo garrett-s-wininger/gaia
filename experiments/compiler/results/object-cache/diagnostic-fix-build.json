@@ -1,0 +1,60 @@
+{
+  "host": "/root/source/gaia/experiments/compiler_invocation/_work/cache-diagnostic-fix/build/host",
+  "host_sha256": "6addc18d02729556b719e6b0ba39edb9e4529273d50109ab1f1bbaf02e043004",
+  "build": {
+    "commands": [
+      [
+        "/usr/lib/llvm22/bin/clang++",
+        "-std=c++17",
+        "-O2",
+        "-fPIC",
+        "-I/usr/lib/llvm22/include",
+        "-I/root/source/gaia/experiments/compiler_invocation/_work/toolchain/usr/lib/llvm22/include",
+        "-c",
+        "/root/source/gaia/experiments/compiler_invocation/cache_bridge.cpp",
+        "-o",
+        "experiments/compiler_invocation/_work/cache-diagnostic-fix/build/bridge.o"
+      ],
+      [
+        "/opt/odin/nightly/odin",
+        "build",
+        "/root/source/gaia/experiments/compiler_invocation/cache_host.odin",
+        "-file",
+        "-o:speed",
+        "-build-mode:obj",
+        "-out:experiments/compiler_invocation/_work/cache-diagnostic-fix/build/host.o"
+      ],
+      [
+        "/usr/lib/llvm22/bin/clang++",
+        "experiments/compiler_invocation/_work/cache-diagnostic-fix/build/host.o",
+        "experiments/compiler_invocation/_work/cache-diagnostic-fix/build/bridge.o",
+        "/usr/lib/llvm22/lib/libclang-cpp.so",
+        "/usr/lib/llvm22/lib/libLLVM.so.22.1",
+        "/usr/lib/llvm22/lib/liblldELF.so",
+        "/usr/lib/llvm22/lib/liblldCommon.so",
+        "-ldl",
+        "-Wl,--export-dynamic-symbol=_ZN4llvm12MemoryBuffer7getFileERKNS_5TwineEbbbSt8optionalINS_5AlignEE",
+        "-pthread",
+        "-Wl,-rpath,/usr/lib/llvm22/lib",
+        "-o",
+        "experiments/compiler_invocation/_work/cache-diagnostic-fix/build/host"
+      ]
+    ],
+    "seconds": 15.77544232999935,
+    "host_sha256": "6addc18d02729556b719e6b0ba39edb9e4529273d50109ab1f1bbaf02e043004",
+    "odin_version": "/opt/odin/nightly/odin version dev-2026-10-nightly:84bc3fc"
+  },
+  "source_sha256": {
+    "cache_host.odin": "e74d212a808398781ffad2c92bbc66ae2ea144ac94438556707da24d694d661e",
+    "cache_bridge.cpp": "7bdd8ad924da76c0834e99c4a57f89d67857792fa2cce15f584774f7444e4c8b",
+    "handoff_bridge.cpp": "5b8f7bff617031ee3b0e2c155852ea892cdcadf7cf42c51899c10a5e184e3d60",
+    "handoff_impl.h": "f8d0ed3cd9465a66a0dba4cb9fadf17b59d62bd94c3e353dfbf5445ce16a4d55",
+    "pool_bridge.cpp": "6838a928a0d8713c87abeeb9ef15bba68da8e5947241a501a6691a5e6f6d9780",
+    "project_bridge.cpp": "28b30b3aa80e7a76f72fd7df7c4ad60dcc2baa67ec3e529cd5628ce6a45359e0",
+    "bridge.cpp": "e1eab032ecf02abcd7374ff501d47ffae968bc0a32caf40aa88e6e3235cca3fd",
+    "check_object_cache.py": "18759d0819d50a4516d24a8a0b0dbdc6a3b3ed357db2321e44ceaa8e726ddc97",
+    "check_cache_upstream.py": "a7239c43fac9c53ca52165c1bf1329940b674059cf786af69ac5625be61b70fb"
+  },
+  "source_snapshots": "/root/source/gaia/experiments/compiler_invocation/_work/cache-diagnostic-fix/sources",
+  "note": "Post-timing diagnostic policy correction: warning/remark-producing builds do not publish entries. All timed builds had no diagnostics. Separate boundary tests include repeated warning emission without cache storage."
+}

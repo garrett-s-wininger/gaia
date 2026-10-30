@@ -1,0 +1,5 @@
+_work/
+__pycache__/
+results/**/profiles/
+*.pstats
+results/trail-scaling/results.json

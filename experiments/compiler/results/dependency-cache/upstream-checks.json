@@ -1,0 +1,341 @@
+{
+  "run_id": "20261030T003643.076432Z",
+  "timed": false,
+  "rows": [
+    {
+      "case": "unchanged-delta-off",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "2e419283ee57587b005effcd5295c83c05722e4f638dd580eca460907e75a98b",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/unchanged-delta-off-examples.txt"
+    },
+    {
+      "case": "unchanged-delta-scoped",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "2e419283ee57587b005effcd5295c83c05722e4f638dd580eca460907e75a98b",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/unchanged-delta-scoped-examples.txt"
+    },
+    {
+      "case": "unchanged-delta-journal",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "2e419283ee57587b005effcd5295c83c05722e4f638dd580eca460907e75a98b",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/unchanged-delta-journal-examples.txt"
+    },
+    {
+      "case": "unchanged-full-journal",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "2e419283ee57587b005effcd5295c83c05722e4f638dd580eca460907e75a98b",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/unchanged-full-journal-examples.txt"
+    },
+    {
+      "case": "implementation-delta-off",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "26c60b204196a1de32a3c03c6bfd8d6c0e6457b292cb58e625831438aa6efbea",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/implementation-delta-off-examples.txt"
+    },
+    {
+      "case": "implementation-delta-scoped",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "26c60b204196a1de32a3c03c6bfd8d6c0e6457b292cb58e625831438aa6efbea",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/implementation-delta-scoped-examples.txt"
+    },
+    {
+      "case": "implementation-delta-journal",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "26c60b204196a1de32a3c03c6bfd8d6c0e6457b292cb58e625831438aa6efbea",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/implementation-delta-journal-examples.txt"
+    },
+    {
+      "case": "implementation-full-journal",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "26c60b204196a1de32a3c03c6bfd8d6c0e6457b292cb58e625831438aa6efbea",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/implementation-full-journal-examples.txt"
+    },
+    {
+      "case": "shared-header-delta-off",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "df6af35db2f3fadb409e4b1e9d97bd5f0f75da9f1294d399b4041e1d03cc20c3",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/shared-header-delta-off-examples.txt"
+    },
+    {
+      "case": "shared-header-delta-scoped",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "df6af35db2f3fadb409e4b1e9d97bd5f0f75da9f1294d399b4041e1d03cc20c3",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/shared-header-delta-scoped-examples.txt"
+    },
+    {
+      "case": "shared-header-delta-journal",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "df6af35db2f3fadb409e4b1e9d97bd5f0f75da9f1294d399b4041e1d03cc20c3",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/shared-header-delta-journal-examples.txt"
+    },
+    {
+      "case": "shared-header-full-journal",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "df6af35db2f3fadb409e4b1e9d97bd5f0f75da9f1294d399b4041e1d03cc20c3",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/shared-header-full-journal-examples.txt"
+    },
+    {
+      "case": "generated-header-delta-off",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "ab19f85a4c8abc276bd07bd2fc78de644695956bc6be1396cbb415a849533a65",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/generated-header-delta-off-examples.txt"
+    },
+    {
+      "case": "generated-header-delta-scoped",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "ab19f85a4c8abc276bd07bd2fc78de644695956bc6be1396cbb415a849533a65",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/generated-header-delta-scoped-examples.txt"
+    },
+    {
+      "case": "generated-header-delta-journal",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "ab19f85a4c8abc276bd07bd2fc78de644695956bc6be1396cbb415a849533a65",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/generated-header-delta-journal-examples.txt"
+    },
+    {
+      "case": "generated-header-full-journal",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "ab19f85a4c8abc276bd07bd2fc78de644695956bc6be1396cbb415a849533a65",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/generated-header-full-journal-examples.txt"
+    },
+    {
+      "case": "optional-header-delta-off",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "172295cc54f7e9584da5d0ef4f5b8fb44f9ff71c2f1eefc53610f3c2f18623a6",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/optional-header-delta-off-examples.txt"
+    },
+    {
+      "case": "optional-header-delta-scoped",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "172295cc54f7e9584da5d0ef4f5b8fb44f9ff71c2f1eefc53610f3c2f18623a6",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/optional-header-delta-scoped-examples.txt"
+    },
+    {
+      "case": "optional-header-delta-journal",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "172295cc54f7e9584da5d0ef4f5b8fb44f9ff71c2f1eefc53610f3c2f18623a6",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/optional-header-delta-journal-examples.txt"
+    },
+    {
+      "case": "optional-header-full-journal",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "172295cc54f7e9584da5d0ef4f5b8fb44f9ff71c2f1eefc53610f3c2f18623a6",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/optional-header-full-journal-examples.txt"
+    },
+    {
+      "case": "shadow-header-delta-off",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "922070eab227ce24f8221bafeb8e0c6c1f00cc4f00aac89c5a96ce4dede06f5e",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/shadow-header-delta-off-examples.txt"
+    },
+    {
+      "case": "shadow-header-delta-scoped",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "922070eab227ce24f8221bafeb8e0c6c1f00cc4f00aac89c5a96ce4dede06f5e",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/shadow-header-delta-scoped-examples.txt"
+    },
+    {
+      "case": "shadow-header-delta-journal",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "922070eab227ce24f8221bafeb8e0c6c1f00cc4f00aac89c5a96ce4dede06f5e",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/shadow-header-delta-journal-examples.txt"
+    },
+    {
+      "case": "shadow-header-full-journal",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "922070eab227ce24f8221bafeb8e0c6c1f00cc4f00aac89c5a96ce4dede06f5e",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/shadow-header-full-journal-examples.txt"
+    },
+    {
+      "case": "unused-header-delta-off",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "2e419283ee57587b005effcd5295c83c05722e4f638dd580eca460907e75a98b",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/unused-header-delta-off-examples.txt"
+    },
+    {
+      "case": "unused-header-delta-scoped",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "2e419283ee57587b005effcd5295c83c05722e4f638dd580eca460907e75a98b",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/unused-header-delta-scoped-examples.txt"
+    },
+    {
+      "case": "unused-header-delta-journal",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "2e419283ee57587b005effcd5295c83c05722e4f638dd580eca460907e75a98b",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/unused-header-delta-journal-examples.txt"
+    },
+    {
+      "case": "unused-header-full-journal",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "2e419283ee57587b005effcd5295c83c05722e4f638dd580eca460907e75a98b",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/unused-header-full-journal-examples.txt"
+    },
+    {
+      "case": "new-directory-delta-off",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "72ad673950db0bd9be6aaa2767da9b786681e5e8e4228ce01bbb3c7aa8c1c52e",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/new-directory-delta-off-examples.txt"
+    },
+    {
+      "case": "new-directory-delta-scoped",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "72ad673950db0bd9be6aaa2767da9b786681e5e8e4228ce01bbb3c7aa8c1c52e",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/new-directory-delta-scoped-examples.txt"
+    },
+    {
+      "case": "new-directory-delta-journal",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "72ad673950db0bd9be6aaa2767da9b786681e5e8e4228ce01bbb3c7aa8c1c52e",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/new-directory-delta-journal-examples.txt"
+    },
+    {
+      "case": "new-directory-full-journal",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "72ad673950db0bd9be6aaa2767da9b786681e5e8e4228ce01bbb3c7aa8c1c52e",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/new-directory-full-journal-examples.txt"
+    },
+    {
+      "case": "unchanged-cli",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "2e419283ee57587b005effcd5295c83c05722e4f638dd580eca460907e75a98b",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/unchanged-cli-examples.txt"
+    },
+    {
+      "case": "implementation-cli",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "26c60b204196a1de32a3c03c6bfd8d6c0e6457b292cb58e625831438aa6efbea",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/implementation-cli-examples.txt"
+    },
+    {
+      "case": "shared-header-cli",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "df6af35db2f3fadb409e4b1e9d97bd5f0f75da9f1294d399b4041e1d03cc20c3",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/shared-header-cli-examples.txt"
+    },
+    {
+      "case": "generated-header-cli",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "ab19f85a4c8abc276bd07bd2fc78de644695956bc6be1396cbb415a849533a65",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/generated-header-cli-examples.txt"
+    },
+    {
+      "case": "optional-header-cli",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "172295cc54f7e9584da5d0ef4f5b8fb44f9ff71c2f1eefc53610f3c2f18623a6",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/optional-header-cli-examples.txt"
+    },
+    {
+      "case": "shadow-header-cli",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "922070eab227ce24f8221bafeb8e0c6c1f00cc4f00aac89c5a96ce4dede06f5e",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/shadow-header-cli-examples.txt"
+    },
+    {
+      "case": "unused-header-cli",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "2e419283ee57587b005effcd5295c83c05722e4f638dd580eca460907e75a98b",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/unused-header-cli-examples.txt"
+    },
+    {
+      "case": "new-directory-cli",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "72ad673950db0bd9be6aaa2767da9b786681e5e8e4228ce01bbb3c7aa8c1c52e",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/new-directory-cli-examples.txt"
+    },
+    {
+      "case": "flags-cli",
+      "passed": true,
+      "roundtrips": 6,
+      "library_sha256": "13c149e77996bb344558b83de874194dba6469b4ca0fc5cd866234eef4fbb226",
+      "library_unchanged": true,
+      "log": "experiments/compiler_invocation/results/dependency-cache/flags-cli-examples.txt"
+    }
+  ],
+  "example_executable_sha256": {
+    "/root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/simple_compression": "f8d3c94c884d357a3f1291a14b24e422aba85d100128ed1922b322ec3f325727",
+    "/root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/simple_decompression": "707bc9581cf8c60adc96e8f989526ef602f54862e105ff9dc7bcd418e0e07b61",
+    "/root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/streaming_compression": "bcb2d1331643e462e08f3487b6adf9753e0ea1ef9afce1464ae783949f2084f6",
+    "/root/source/gaia/experiments/compiler_invocation/_work/zstd-handoff-20261029T205610.494160Z/streaming_decompression": "9206df8649f7316136ce392a80a53bfbea938562d4045a9231f72958dee9fd1b"
+  },
+  "checker_sha256": "a207b6555a1dfdef837cac9693ce5e1ccc564f774012772d46adc36f78c56a8e"
+}

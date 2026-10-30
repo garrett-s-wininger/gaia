@@ -1,0 +1,61 @@
+{
+  "host_sha256": "21b32ddbbdb59ea503142b4d3af48996c8582b720014ed42bce72c40c35e38a2",
+  "build": {
+    "path": "/root/source/gaia/experiments/compiler_invocation/results/direct-handoff/adapter-build.json",
+    "commands": [
+      [
+        "/usr/lib/llvm22/bin/clang++",
+        "-std=c++17",
+        "-O2",
+        "-fPIC",
+        "-I/usr/lib/llvm22/include",
+        "-I/root/source/gaia/experiments/compiler_invocation/_work/toolchain/usr/lib/llvm22/include",
+        "-c",
+        "/root/source/gaia/experiments/compiler_invocation/handoff_bridge.cpp",
+        "-o",
+        "/root/source/gaia/experiments/compiler_invocation/_work/handoff-development/build/bridge.o"
+      ],
+      [
+        "/opt/odin/nightly/odin",
+        "build",
+        "/root/source/gaia/experiments/compiler_invocation/handoff_host.odin",
+        "-file",
+        "-o:speed",
+        "-build-mode:obj",
+        "-out:/root/source/gaia/experiments/compiler_invocation/_work/handoff-development/build/host.o"
+      ],
+      [
+        "/usr/lib/llvm22/bin/clang++",
+        "/root/source/gaia/experiments/compiler_invocation/_work/handoff-development/build/host.o",
+        "/root/source/gaia/experiments/compiler_invocation/_work/handoff-development/build/bridge.o",
+        "/usr/lib/llvm22/lib/libclang-cpp.so",
+        "/usr/lib/llvm22/lib/libLLVM.so.22.1",
+        "/usr/lib/llvm22/lib/liblldELF.so",
+        "/usr/lib/llvm22/lib/liblldCommon.so",
+        "-ldl",
+        "-Wl,--export-dynamic-symbol=_ZN4llvm12MemoryBuffer7getFileERKNS_5TwineEbbbSt8optionalINS_5AlignEE",
+        "-pthread",
+        "-Wl,-rpath,/usr/lib/llvm22/lib",
+        "-o",
+        "/root/source/gaia/experiments/compiler_invocation/_work/handoff-development/build/host"
+      ]
+    ],
+    "seconds": 20.097949540000627,
+    "host_sha256": "21b32ddbbdb59ea503142b4d3af48996c8582b720014ed42bce72c40c35e38a2",
+    "odin_version": "/opt/odin/nightly/odin version dev-2026-10-nightly:84bc3fc"
+  },
+  "source_sha256": {
+    "handoff_bridge.cpp": "5b8f7bff617031ee3b0e2c155852ea892cdcadf7cf42c51899c10a5e184e3d60",
+    "handoff_impl.h": "f8d0ed3cd9465a66a0dba4cb9fadf17b59d62bd94c3e353dfbf5445ce16a4d55",
+    "handoff_host.odin": "6b42fa1cdfdbfc7a33577c9357c119422ea4ebcda4407c2cb606840266c36571",
+    "handoff_benchmark.py": "4ee7b708056a2054cfff677751bd0a9a133ed76f34b085721d1b6425de78834b",
+    "pool_bridge.cpp": "ea9feffe3aa8f9d94bcba23207e27a798d3b2f6a2a11cfa34d4125a62848b77f",
+    "project_bridge.cpp": "28b30b3aa80e7a76f72fd7df7c4ad60dcc2baa67ec3e529cd5628ce6a45359e0",
+    "bridge.cpp": "e1eab032ecf02abcd7374ff501d47ffae968bc0a32caf40aa88e6e3235cca3fd",
+    "benchmark.py": "2276e4362c382d8ce18e5756ceb82cc2ef228d5c81d51e27c78bce4a1cf50146",
+    "project_benchmark.py": "d5ff9374775ed76b70f40f1c2d723bb963b3b17aea561ce58e39ac193f4125ee",
+    "pool_benchmark.py": "6a010c2d7ff0148e0c584e7a722bb7430919b29a8ddfcfe54e46c3ae926586ce"
+  },
+  "source_snapshots": "/root/source/gaia/experiments/compiler_invocation/_work/handoff-20261029T203940.351942Z/sources",
+  "note": "Reuses the original direct-handoff binary. Its exact source snapshot predates optional profiling hooks added to current pool_bridge.cpp; those hooks are inactive in normal builds. Current experiment source snapshots describe the harness and live source tree, while this record identifies the compiled native sources."
+}
