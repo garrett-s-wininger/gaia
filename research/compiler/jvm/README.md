@@ -1,8 +1,12 @@
 # Managed JVM compiler research
 
-This track tests programmatic Java compilation with small runtime images, prepared JVM metadata and bounded private compiler contexts. It is separate from the native Clang/LLD experiments and from Groovy framework initialization.
+This track measures complete Java compilation through CLI and programmatic endpoints. It separates process lifetime, compiler execution, input delivery and memory. Groovy framework initialization has its own [startup research](../../java/README.md).
 
-- [Findings](findings.md): actual latency, lifecycle, output and memory results.
-- [Prospects](prospects.md): the next useful correctness/performance questions.
-- [Implementation and reproduction](../../../experiments/java/compiler/README.md).
-- [Run index](experiments.json).
+- [Findings](findings.md): useful results, negative results and practical limits.
+- [Prospects](prospects.md): the next questions and the controls they need.
+- [Initial invocation and delivery experiment](../../../experiments/java/compiler/README.md): jlink, compiler caches and complete-target queues.
+- [Worker topology](../../../experiments/java/compiler/topology/README.md): one JVM versus many, with a separate memory trace.
+- [Execution variants](../../../experiments/java/compiler/variants/README.md): GC, tiering, Leyden compiled-method caches and Native Image.
+- [Run index](experiments.json): reports, validation and provenance for each study.
+
+The experiments use pinned source targets and independent CLI output checks. Their timing windows and compiler versions differ; use controls within each report. Native-image SDK adaptation, cache construction and retained workers have separate preparation and compatibility costs. No production service or universal JVM policy is selected.

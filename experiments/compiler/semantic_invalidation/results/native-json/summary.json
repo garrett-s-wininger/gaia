@@ -1,0 +1,936 @@
+{
+  "schema": "GAIA-SEMANTIC-INVALIDATION-1",
+  "run_id": "20261031T045306.539120Z",
+  "status": "complete",
+  "trials": 3,
+  "cases": [
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "blank-lines",
+      "mode": "text",
+      "blocks": 3,
+      "median_ms": 55.37403299967991,
+      "min_ms": 54.42517499614041,
+      "max_ms": 55.9132159978617,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "full": {
+          "compiler_or_tool_ms": 55.28889300330775,
+          "normalization_ms": 0
+        }
+      }
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "blank-lines",
+      "mode": "ast",
+      "blocks": 3,
+      "median_ms": 1251.6602819960099,
+      "min_ms": 1168.8363749999553,
+      "max_ms": 1395.2235379983904,
+      "paired_wins_vs_text": 0,
+      "hits": 3,
+      "correct": 3,
+      "phases": {
+        "ast": {
+          "compiler_or_tool_ms": 150.08189400396077,
+          "normalization_ms": 1101.3315489981323,
+          "parse_ns": 879555019,
+          "walk_ns": 37412438,
+          "ast_raw_bytes": 37020625,
+          "ast_canonical_bytes": 5593734
+        }
+      }
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "blank-lines",
+      "mode": "guarded-ast",
+      "blocks": 3,
+      "median_ms": 1558.2713359981426,
+      "min_ms": 1401.961369003402,
+      "max_ms": 1810.8612340001855,
+      "paired_wins_vs_text": 0,
+      "hits": 3,
+      "correct": 3,
+      "phases": {
+        "ast": {
+          "compiler_or_tool_ms": 184.5376710043638,
+          "normalization_ms": 1320.907815003011,
+          "parse_ns": 1070833619,
+          "walk_ns": 41594535,
+          "ast_raw_bytes": 37020625,
+          "ast_canonical_bytes": 5593734
+        },
+        "ir": {
+          "compiler_or_tool_ms": 47.66191900125705,
+          "normalization_ms": 0,
+          "ir_bytes": 4055
+        }
+      }
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "blank-lines",
+      "mode": "ir",
+      "blocks": 3,
+      "median_ms": 49.927729000046384,
+      "min_ms": 49.43197700049495,
+      "max_ms": 60.168985997734126,
+      "paired_wins_vs_text": 2,
+      "hits": 3,
+      "correct": 3,
+      "phases": {
+        "ir": {
+          "compiler_or_tool_ms": 49.559200000658166,
+          "normalization_ms": 0,
+          "ir_bytes": 4055
+        }
+      }
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "comment",
+      "mode": "text",
+      "blocks": 3,
+      "median_ms": 50.34491999685997,
+      "min_ms": 49.616086995229125,
+      "max_ms": 65.22665100055747,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "full": {
+          "compiler_or_tool_ms": 50.26706199714681,
+          "normalization_ms": 0
+        }
+      }
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "comment",
+      "mode": "ast",
+      "blocks": 3,
+      "median_ms": 1372.869583996362,
+      "min_ms": 1164.9101989969495,
+      "max_ms": 1436.568597004225,
+      "paired_wins_vs_text": 0,
+      "hits": 3,
+      "correct": 3,
+      "phases": {
+        "ast": {
+          "compiler_or_tool_ms": 155.75651999824913,
+          "normalization_ms": 1216.7939970022417,
+          "parse_ns": 968580163,
+          "walk_ns": 34926970,
+          "ast_raw_bytes": 37020624,
+          "ast_canonical_bytes": 5593734
+        }
+      }
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "comment",
+      "mode": "guarded-ast",
+      "blocks": 3,
+      "median_ms": 1371.1096240003826,
+      "min_ms": 1368.0247160009458,
+      "max_ms": 1840.9977419942152,
+      "paired_wins_vs_text": 0,
+      "hits": 3,
+      "correct": 3,
+      "phases": {
+        "ast": {
+          "compiler_or_tool_ms": 158.1059419986559,
+          "normalization_ms": 1171.2035150048905,
+          "parse_ns": 915005554,
+          "walk_ns": 36060532,
+          "ast_raw_bytes": 37020624,
+          "ast_canonical_bytes": 5593734
+        },
+        "ir": {
+          "compiler_or_tool_ms": 50.545334997877944,
+          "normalization_ms": 0,
+          "ir_bytes": 4055
+        }
+      }
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "comment",
+      "mode": "ir",
+      "blocks": 3,
+      "median_ms": 46.346709998033475,
+      "min_ms": 46.12175000511343,
+      "max_ms": 53.675836003094446,
+      "paired_wins_vs_text": 2,
+      "hits": 3,
+      "correct": 3,
+      "phases": {
+        "ir": {
+          "compiler_or_tool_ms": 46.10495100496337,
+          "normalization_ms": 0,
+          "ir_bytes": 4055
+        }
+      }
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "semantic",
+      "mode": "text",
+      "blocks": 3,
+      "median_ms": 85.19832199817756,
+      "min_ms": 50.367099000141025,
+      "max_ms": 107.57465800270438,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "full": {
+          "compiler_or_tool_ms": 85.06411800044589,
+          "normalization_ms": 0
+        }
+      }
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "semantic",
+      "mode": "ast",
+      "blocks": 3,
+      "median_ms": 1318.8471019966528,
+      "min_ms": 1296.0307449975517,
+      "max_ms": 1492.6371119945543,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "ast": {
+          "compiler_or_tool_ms": 150.40011599921854,
+          "normalization_ms": 1115.2793439978268,
+          "parse_ns": 888743175,
+          "walk_ns": 37291992,
+          "ast_raw_bytes": 37022728,
+          "ast_canonical_bytes": 5594622
+        },
+        "full": {
+          "compiler_or_tool_ms": 53.02477999794064,
+          "normalization_ms": 0
+        }
+      }
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "semantic",
+      "mode": "guarded-ast",
+      "blocks": 3,
+      "median_ms": 1454.2076439975062,
+      "min_ms": 1389.9819569996907,
+      "max_ms": 1767.6011260045925,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "ast": {
+          "compiler_or_tool_ms": 146.1490439978661,
+          "normalization_ms": 1227.8763809954398,
+          "parse_ns": 981862881,
+          "walk_ns": 38409523,
+          "ast_raw_bytes": 37022728,
+          "ast_canonical_bytes": 5594622
+        },
+        "full": {
+          "compiler_or_tool_ms": 53.44255799718667,
+          "normalization_ms": 0
+        }
+      }
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "semantic",
+      "mode": "ir",
+      "blocks": 3,
+      "median_ms": 99.33755199745065,
+      "min_ms": 96.82250899641076,
+      "max_ms": 102.61419600283261,
+      "paired_wins_vs_text": 1,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "ir": {
+          "compiler_or_tool_ms": 45.523722001235,
+          "normalization_ms": 0,
+          "ir_bytes": 4213
+        },
+        "full": {
+          "compiler_or_tool_ms": 53.6686630002805,
+          "normalization_ms": 0
+        }
+      }
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "unchanged",
+      "mode": "text",
+      "blocks": 3,
+      "median_ms": 0.14027600263943896,
+      "min_ms": 0.13706099707633257,
+      "max_ms": 0.64195400045719,
+      "paired_wins_vs_text": 0,
+      "hits": 3,
+      "correct": 3,
+      "phases": {}
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "unchanged",
+      "mode": "ast",
+      "blocks": 3,
+      "median_ms": 0.16972400044323877,
+      "min_ms": 0.12041900481563061,
+      "max_ms": 3.6936940014129505,
+      "paired_wins_vs_text": 1,
+      "hits": 3,
+      "correct": 3,
+      "phases": {}
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "unchanged",
+      "mode": "guarded-ast",
+      "blocks": 3,
+      "median_ms": 0.16216799849644303,
+      "min_ms": 0.12471700028982013,
+      "max_ms": 0.5717749954783358,
+      "paired_wins_vs_text": 1,
+      "hits": 3,
+      "correct": 3,
+      "phases": {}
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "unchanged",
+      "mode": "ir",
+      "blocks": 3,
+      "median_ms": 0.12674099707510322,
+      "min_ms": 0.12013800005661324,
+      "max_ms": 0.7595879942527972,
+      "paired_wins_vs_text": 2,
+      "hits": 3,
+      "correct": 3,
+      "phases": {}
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "unused-macro",
+      "mode": "text",
+      "blocks": 3,
+      "median_ms": 54.999813000904396,
+      "min_ms": 49.4000109974877,
+      "max_ms": 65.80922899593133,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "full": {
+          "compiler_or_tool_ms": 54.942744005529676,
+          "normalization_ms": 0
+        }
+      }
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "unused-macro",
+      "mode": "ast",
+      "blocks": 3,
+      "median_ms": 1272.059121998609,
+      "min_ms": 1257.3748430004343,
+      "max_ms": 1523.422735001077,
+      "paired_wins_vs_text": 0,
+      "hits": 3,
+      "correct": 3,
+      "phases": {
+        "ast": {
+          "compiler_or_tool_ms": 163.93190799863078,
+          "normalization_ms": 1112.811569000769,
+          "parse_ns": 894143772,
+          "walk_ns": 40486231,
+          "ast_raw_bytes": 37020624,
+          "ast_canonical_bytes": 5593734
+        }
+      }
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "unused-macro",
+      "mode": "guarded-ast",
+      "blocks": 3,
+      "median_ms": 1425.0101969955722,
+      "min_ms": 1420.6846970046172,
+      "max_ms": 1453.37539799948,
+      "paired_wins_vs_text": 0,
+      "hits": 3,
+      "correct": 3,
+      "phases": {
+        "ast": {
+          "compiler_or_tool_ms": 151.33785900252406,
+          "normalization_ms": 1227.5350599957164,
+          "parse_ns": 1008721234,
+          "walk_ns": 46105049,
+          "ast_raw_bytes": 37020624,
+          "ast_canonical_bytes": 5593734
+        },
+        "ir": {
+          "compiler_or_tool_ms": 46.51956599991536,
+          "normalization_ms": 0,
+          "ir_bytes": 4055
+        }
+      }
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "unused-macro",
+      "mode": "ir",
+      "blocks": 3,
+      "median_ms": 47.14480099937646,
+      "min_ms": 44.46313299558824,
+      "max_ms": 79.54844099731417,
+      "paired_wins_vs_text": 2,
+      "hits": 3,
+      "correct": 3,
+      "phases": {
+        "ir": {
+          "compiler_or_tool_ms": 46.908702002838254,
+          "normalization_ms": 0,
+          "ir_bytes": 4055
+        }
+      }
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "blank-lines",
+      "mode": "text",
+      "blocks": 3,
+      "median_ms": 2180.2690320037073,
+      "min_ms": 2177.2941859962884,
+      "max_ms": 2935.5826169994543,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "full": {
+          "compiler_or_tool_ms": 2180.1707049962715,
+          "normalization_ms": 0
+        }
+      }
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "blank-lines",
+      "mode": "ast",
+      "blocks": 3,
+      "median_ms": 5006.810275001044,
+      "min_ms": 4231.710478998139,
+      "max_ms": 5214.835121005308,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "ast": {
+          "compiler_or_tool_ms": 320.1137310024933,
+          "normalization_ms": 2086.1049859959166,
+          "parse_ns": 1645217028,
+          "walk_ns": 74641932,
+          "ast_raw_bytes": 74387803,
+          "ast_canonical_bytes": 11462583
+        },
+        "full": {
+          "compiler_or_tool_ms": 2218.9619639975717,
+          "normalization_ms": 0
+        }
+      }
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "blank-lines",
+      "mode": "guarded-ast",
+      "blocks": 3,
+      "median_ms": 4233.8497180026025,
+      "min_ms": 4219.934872999147,
+      "max_ms": 4804.160916006367,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "ast": {
+          "compiler_or_tool_ms": 253.24889000330586,
+          "normalization_ms": 1771.035950005171,
+          "parse_ns": 1367696429,
+          "walk_ns": 75928217,
+          "ast_raw_bytes": 74387803,
+          "ast_canonical_bytes": 11462583
+        },
+        "full": {
+          "compiler_or_tool_ms": 2209.413393000432,
+          "normalization_ms": 0
+        }
+      }
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "blank-lines",
+      "mode": "ir",
+      "blocks": 3,
+      "median_ms": 2299.2213659963454,
+      "min_ms": 2255.0455529999454,
+      "max_ms": 2319.006505997095,
+      "paired_wins_vs_text": 1,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "ir": {
+          "compiler_or_tool_ms": 69.9389430010342,
+          "normalization_ms": 0,
+          "ir_bytes": 557807
+        },
+        "full": {
+          "compiler_or_tool_ms": 2229.001731000608,
+          "normalization_ms": 0
+        }
+      }
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "comment",
+      "mode": "text",
+      "blocks": 3,
+      "median_ms": 2599.244589000591,
+      "min_ms": 2291.464702000667,
+      "max_ms": 3828.975951000757,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "full": {
+          "compiler_or_tool_ms": 2599.1415030002827,
+          "normalization_ms": 0
+        }
+      }
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "comment",
+      "mode": "ast",
+      "blocks": 3,
+      "median_ms": 4188.561760995071,
+      "min_ms": 4173.829473002115,
+      "max_ms": 4287.63362999598,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "ast": {
+          "compiler_or_tool_ms": 247.2672700023395,
+          "normalization_ms": 1761.5377099937177,
+          "parse_ns": 1365183355,
+          "walk_ns": 75553250,
+          "ast_raw_bytes": 74387798,
+          "ast_canonical_bytes": 11462583
+        },
+        "full": {
+          "compiler_or_tool_ms": 2212.656005001918,
+          "normalization_ms": 0
+        }
+      }
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "comment",
+      "mode": "guarded-ast",
+      "blocks": 3,
+      "median_ms": 4241.799438997987,
+      "min_ms": 4198.462593994918,
+      "max_ms": 5277.229103005084,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "ast": {
+          "compiler_or_tool_ms": 248.35953599540517,
+          "normalization_ms": 1823.6836270007188,
+          "parse_ns": 1431232190,
+          "walk_ns": 75555930,
+          "ast_raw_bytes": 74387798,
+          "ast_canonical_bytes": 11462583
+        },
+        "full": {
+          "compiler_or_tool_ms": 2186.0919069949887,
+          "normalization_ms": 0
+        }
+      }
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "comment",
+      "mode": "ir",
+      "blocks": 3,
+      "median_ms": 74.44120100262808,
+      "min_ms": 70.7175389979966,
+      "max_ms": 713.3515609966707,
+      "paired_wins_vs_text": 3,
+      "hits": 3,
+      "correct": 3,
+      "phases": {
+        "ir": {
+          "compiler_or_tool_ms": 73.56106099905446,
+          "normalization_ms": 0,
+          "ir_bytes": 557807
+        }
+      }
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "semantic",
+      "mode": "text",
+      "blocks": 3,
+      "median_ms": 2176.642042999447,
+      "min_ms": 2163.5868349985685,
+      "max_ms": 2257.4811429949477,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "full": {
+          "compiler_or_tool_ms": 2176.5372739973827,
+          "normalization_ms": 0
+        }
+      }
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "semantic",
+      "mode": "ast",
+      "blocks": 3,
+      "median_ms": 4535.727157002839,
+      "min_ms": 4265.397065995785,
+      "max_ms": 5396.213458006969,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "ast": {
+          "compiler_or_tool_ms": 263.2240640014061,
+          "normalization_ms": 1785.8902009975282,
+          "parse_ns": 1385442729,
+          "walk_ns": 75605461,
+          "ast_raw_bytes": 74389922,
+          "ast_canonical_bytes": 11463471
+        },
+        "full": {
+          "compiler_or_tool_ms": 2530.8785829984117,
+          "normalization_ms": 0
+        }
+      }
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "semantic",
+      "mode": "guarded-ast",
+      "blocks": 3,
+      "median_ms": 4429.734655001084,
+      "min_ms": 4350.304696999956,
+      "max_ms": 8106.26024499652,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "ast": {
+          "compiler_or_tool_ms": 251.72331700014183,
+          "normalization_ms": 1901.3933680034825,
+          "parse_ns": 1415020920,
+          "walk_ns": 104938510,
+          "ast_raw_bytes": 74389922,
+          "ast_canonical_bytes": 11463471
+        },
+        "full": {
+          "compiler_or_tool_ms": 2323.9854109997395,
+          "normalization_ms": 0
+        }
+      }
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "semantic",
+      "mode": "ir",
+      "blocks": 3,
+      "median_ms": 2267.5704520006548,
+      "min_ms": 2237.669570997241,
+      "max_ms": 10438.41539099958,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "ir": {
+          "compiler_or_tool_ms": 69.87245599884773,
+          "normalization_ms": 0,
+          "ir_bytes": 557966
+        },
+        "full": {
+          "compiler_or_tool_ms": 2197.4603950002347,
+          "normalization_ms": 0
+        }
+      }
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "unchanged",
+      "mode": "text",
+      "blocks": 3,
+      "median_ms": 0.7045989987091161,
+      "min_ms": 0.6872749945614487,
+      "max_ms": 8.271007995062973,
+      "paired_wins_vs_text": 0,
+      "hits": 3,
+      "correct": 3,
+      "phases": {}
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "unchanged",
+      "mode": "ast",
+      "blocks": 3,
+      "median_ms": 0.6907420029165223,
+      "min_ms": 0.6893889949424192,
+      "max_ms": 17.985762002354022,
+      "paired_wins_vs_text": 1,
+      "hits": 3,
+      "correct": 3,
+      "phases": {}
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "unchanged",
+      "mode": "guarded-ast",
+      "blocks": 3,
+      "median_ms": 0.9975649954867549,
+      "min_ms": 0.5593730020336807,
+      "max_ms": 25.246262004657183,
+      "paired_wins_vs_text": 1,
+      "hits": 3,
+      "correct": 3,
+      "phases": {}
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "unchanged",
+      "mode": "ir",
+      "blocks": 3,
+      "median_ms": 0.6825960008427501,
+      "min_ms": 0.2602640015538782,
+      "max_ms": 3.6815610001212917,
+      "paired_wins_vs_text": 3,
+      "hits": 3,
+      "correct": 3,
+      "phases": {}
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "unused-macro",
+      "mode": "text",
+      "blocks": 3,
+      "median_ms": 2250.775000997237,
+      "min_ms": 2175.895243002742,
+      "max_ms": 2266.3686360028805,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "full": {
+          "compiler_or_tool_ms": 2250.649292000162,
+          "normalization_ms": 0
+        }
+      }
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "unused-macro",
+      "mode": "ast",
+      "blocks": 3,
+      "median_ms": 4246.839783001633,
+      "min_ms": 4210.909727997205,
+      "max_ms": 4281.617767002899,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "ast": {
+          "compiler_or_tool_ms": 248.49009000172373,
+          "normalization_ms": 1780.4783399988082,
+          "parse_ns": 1380065794,
+          "walk_ns": 74811315,
+          "ast_raw_bytes": 74387798,
+          "ast_canonical_bytes": 11462583
+        },
+        "full": {
+          "compiler_or_tool_ms": 2193.5470910029835,
+          "normalization_ms": 0
+        }
+      }
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "unused-macro",
+      "mode": "guarded-ast",
+      "blocks": 3,
+      "median_ms": 4264.271104999352,
+      "min_ms": 4191.18202199752,
+      "max_ms": 4287.651229999028,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "ast": {
+          "compiler_or_tool_ms": 254.0833839957486,
+          "normalization_ms": 1765.3384750010446,
+          "parse_ns": 1363803665,
+          "walk_ns": 77614888,
+          "ast_raw_bytes": 74387798,
+          "ast_canonical_bytes": 11462583
+        },
+        "full": {
+          "compiler_or_tool_ms": 2237.2297080000862,
+          "normalization_ms": 0
+        }
+      }
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "unused-macro",
+      "mode": "ir",
+      "blocks": 3,
+      "median_ms": 71.58272500237217,
+      "min_ms": 70.27211399690714,
+      "max_ms": 72.9566430018167,
+      "paired_wins_vs_text": 3,
+      "hits": 3,
+      "correct": 3,
+      "phases": {
+        "ir": {
+          "compiler_or_tool_ms": 70.58115399559028,
+          "normalization_ms": 0,
+          "ir_bytes": 557807
+        }
+      }
+    }
+  ],
+  "preparation": {
+    "common/zstd_common.c": {
+      "source_bytes": 1683,
+      "seed": {
+        "full": {
+          "seconds": 0.16587746699951822,
+          "cpu_seconds": 0.14484699999999998
+        },
+        "ast": {
+          "seconds": 0.4849330290016951,
+          "cpu_seconds": 0.39912000000000003,
+          "ast_raw_bytes": 37020624,
+          "ast_nodes": 42446,
+          "ast_ids": 22719,
+          "ast_canonical_bytes": 5593734,
+          "parse_ns": 3389634232,
+          "walk_ns": 74643971,
+          "native_fingerprint": true,
+          "canonical_seconds": 3.772815898002591
+        },
+        "ir": {
+          "seconds": 0.10544141900027171,
+          "cpu_seconds": 0.08977699999999977,
+          "ir_bytes": 4055
+        }
+      },
+      "context_before": {
+        "passed": true,
+        "files": 197,
+        "bytes": 295384660
+      },
+      "context_after": {
+        "passed": true,
+        "files": 197,
+        "bytes": 295384660
+      },
+      "context_policy": "Private project all files except selected source; baseline dependency closure; compiler and linked libraries; exact inherited environment. Fixed configuration only, not complete SDK discovery or production admission.",
+      "context_sha256": "c0d982d3aa406f5a57fd72f73c483731a581446dab9cfd1b590e461fa6c474c4",
+      "baseline_object_sha256": "6907393237e41eafdcf54412e7625929fcbb281fa43200a00b50248adce570b7",
+      "reference_sha256": {
+        "unchanged": "6907393237e41eafdcf54412e7625929fcbb281fa43200a00b50248adce570b7",
+        "comment": "6907393237e41eafdcf54412e7625929fcbb281fa43200a00b50248adce570b7",
+        "blank-lines": "6907393237e41eafdcf54412e7625929fcbb281fa43200a00b50248adce570b7",
+        "unused-macro": "6907393237e41eafdcf54412e7625929fcbb281fa43200a00b50248adce570b7",
+        "semantic": "1413e90ee7fab827aa250e4d853b071672ffb4a8e6cb3bda3218683bc26dce02"
+      },
+      "reference_compile_seconds": 0.431082246992446
+    },
+    "compress/zstd_lazy.c": {
+      "source_bytes": 102821,
+      "seed": {
+        "full": {
+          "seconds": 2.295254147000378,
+          "cpu_seconds": 2.2946409999999986
+        },
+        "ast": {
+          "seconds": 0.22697196299850475,
+          "cpu_seconds": 0.2263900000000092,
+          "ast_raw_bytes": 74387798,
+          "ast_nodes": 88734,
+          "ast_ids": 42982,
+          "ast_canonical_bytes": 11462583,
+          "parse_ns": 1392212193,
+          "walk_ns": 77086437,
+          "native_fingerprint": true,
+          "canonical_seconds": 1.7932415339964791
+        },
+        "ir": {
+          "seconds": 0.06899094399705064,
+          "cpu_seconds": 0.06818399999999514,
+          "ir_bytes": 557807
+        }
+      },
+      "context_before": {
+        "passed": true,
+        "files": 213,
+        "bytes": 295867013
+      },
+      "context_after": {
+        "passed": true,
+        "files": 213,
+        "bytes": 295867013
+      },
+      "context_policy": "Private project all files except selected source; baseline dependency closure; compiler and linked libraries; exact inherited environment. Fixed configuration only, not complete SDK discovery or production admission.",
+      "context_sha256": "1515778ad1b246fb37fdaa89e853d4a90203f43fd0dc56fb225360c96171d011",
+      "baseline_object_sha256": "ceaffd3aee3f9ffc140ffd9e69331afbeeff59aafc3e238d69602bdba097a1c3",
+      "reference_sha256": {
+        "unchanged": "ceaffd3aee3f9ffc140ffd9e69331afbeeff59aafc3e238d69602bdba097a1c3",
+        "comment": "ceaffd3aee3f9ffc140ffd9e69331afbeeff59aafc3e238d69602bdba097a1c3",
+        "blank-lines": "ceaffd3aee3f9ffc140ffd9e69331afbeeff59aafc3e238d69602bdba097a1c3",
+        "unused-macro": "ceaffd3aee3f9ffc140ffd9e69331afbeeff59aafc3e238d69602bdba097a1c3",
+        "semantic": "78f28fa80ac61467c9eae4bea7d21533daebd81b04baced70a1dcb6dd5d3ecb6"
+      },
+      "reference_compile_seconds": 17.380810297996504
+    }
+  },
+  "ast_helper_sha256": "6d1a7b4076df79552705814a1506944d8d16b791381771ae360df97ed28077b4",
+  "direct_ast_helper_sha256": null,
+  "source_sha256": {
+    "context.py": "d002c9917bdf0bde48f8d1444ee46b783b31bbc902530f4607b5e881271ebf32",
+    "ast_fingerprint.cpp": "2de812d681c76d781dee67a2f34d5a30820fa8311c38ccdc9ffa8ed65eb11286",
+    "boundaries.py": "fd08f1fd317d51fe455e2cafcf67c1e20bd4d4bbbbc423351589aca7a086fafb",
+    "benchmark.py": "420603c6e4e2d5c86d7a274c53b03aff82137165d6112947edfabcef2db31cce",
+    "test_semantic_cache.py": "9a92fb86dfdff7014eeeec71fb74678fe93400d084a912ba9e051fdfebc01312",
+    "semantic_cache.py": "cb526e7c9f613e74be1e64c0fc9092711ad47f2195d3083204c81b824b819630"
+  },
+  "source_archive_sha256": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3",
+  "raw_sha256": "cd6ce89ea11613dc0953d1a9199d498fe836423b997812a4577b5631622bb1a9",
+  "scope": "Fixed compiler/tool/SDK/options/environment; private project, warm pages, same baseline candidate per operation, normal compiler/helper exit. Correctness oracle and context admission outside request timing."
+}

@@ -2,6 +2,10 @@
 
 Supplied class knowledge already supports static CDS and manually enabled AOT linking without a full application training run. Class selection matters because broad linked archives eagerly load thousands of classes. This mechanism does not preserve arbitrary initialized Groovy static fields, registries or dispatch state in the tested stock JVM. That is an implementation boundary, not proof that framework preinitialization is impossible.
 
+## Index runtime-image discovery before repeating filesystem traversal
+
+The [JVMTI profiles](../../experiments/java/startup/results/jvmti/REPORT.md) expose JDK runtime-image filesystem construction and class/package walking during first-script compilation. Test a supplied immutable name index keyed by the actual runtime image and discovery policy, while preserving fresh loader/module identities, added extension modules and mutable metaclasses. Measure full ordinary-JVM operations without the diagnostic agent. CPU sampling visibly perturbs startup, and the first module membership-index matrix is too unstable to justify a broad gain.
+
 ## Move beyond the already-prepared DGM decoder
 
 The [DGM experiment](../../experiments/java/startup/results/dgm-binding/REPORT.md) established that dense restore saves about 6 ms in the decoder but does not remove the larger registry or first-script costs. Preserve its rebuilt-source and serial controls. The constructor diagnostic points next to receiver/proxy grouping, plugin-method reflection and Expando lookup construction. Prototype a prepared immutable template for one of those structures, then rebind current classes and fresh mutable overlays. Do not label another denser dictionary a complete runtime snapshot.

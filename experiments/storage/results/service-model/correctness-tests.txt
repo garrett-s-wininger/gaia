@@ -1,0 +1,12 @@
+test_bad_index_or_requested_bytes_fail (test_reader.ReaderTests.test_bad_index_or_requested_bytes_fail) ... ok
+test_memory_import_is_charged_then_readonly_consumption_has_no_storage (test_reader.ReaderTests.test_memory_import_is_charged_then_readonly_consumption_has_no_storage) ... ok
+test_memory_provider_rejects_ordinary_file_mappings (test_reader.ReaderTests.test_memory_provider_rejects_ordinary_file_mappings) ... ok
+test_range_never_maps_private_file_data_and_audits_every_read (test_reader.ReaderTests.test_range_never_maps_private_file_data_and_audits_every_read) ... ok
+test_calibrated_read_and_write_delay_budget (test_service.ServiceTests.test_calibrated_read_and_write_delay_budget) ... ok
+test_nominal_bytes_and_scope_and_counts (test_service.ServiceTests.test_nominal_bytes_and_scope_and_counts) ... ok
+test_sealed_snapshot_readonly_and_detached_from_source (test_service.ServiceTests.test_sealed_snapshot_readonly_and_detached_from_source) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.108s
+
+OK

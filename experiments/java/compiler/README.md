@@ -2,6 +2,8 @@
 
 A real Picocli source compilation compares full JDK/jlink CLIs, fresh JavaCompiler API processes, a trained compiler AOT cache and resident private compiler contexts. Start with the [report](results/initial/REPORT.md), [human findings](../../../research/compiler/jvm/findings.md) and [prospects](../../../research/compiler/jvm/prospects.md).
 
+The [execution-variants continuation](results/variants/REPORT.md) measures actual compile phases, CPU, longer warm-up, GC/JIT policies, experimental Leyden compiled-method caching and Native Image. Its [reproduction entry point](variants/README.md) is separate from the initial driver below.
+
 ## Inputs and preparation
 
 Provide a local JDK 25 and the official Picocli 4.7.7 binary/source JARs. [Provenance](results/initial/provenance.json) records their exact hashes and the measured JDK identity. The driver verifies the JARs and extracts all three Java sources. Their target SDK is the same full JDK for every runtime, passed explicitly with `--system`; the minimal compiler image is not a complete replacement for that SDK.
@@ -25,7 +27,7 @@ python3 -B experiments/java/compiler/benchmark.py \
   --prepared /path/to/prepared.json --train --prepare-only
 ```
 
-It executes one real compiler request and records/assembles the JDK AOT cache. Subsequent cached launches require it with `AOTMode=on`; incompatible caches fail instead of silently falling back. This training is for the compiler track and is not the separate Groovy no-application-training experiment. No Native Image toolchain is used.
+It executes one real compiler request and records/assembles the JDK AOT cache. Subsequent cached launches require it with `AOTMode=on`; incompatible caches fail instead of silently falling back. This training is for the compiler track and is not the separate Groovy no-application-training experiment. The initial driver uses ordinary JVM bytecode; Native Image belongs to the continuation.
 
 ## Measure and verify
 

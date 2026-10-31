@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "cases": 4,
+  "validated_batches_including_warmup": 48,
+  "validated_target_compilations": 384,
+  "validated_class_outputs": 87168,
+  "consumer_target_checks": 32,
+  "all_normal_shutdowns": true,
+  "aggregate_heap_and_flags_checked": true,
+  "final_admitted_input_postcheck": true,
+  "frozen_sources_match_current": true
+}

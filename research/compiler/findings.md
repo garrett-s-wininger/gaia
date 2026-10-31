@@ -41,6 +41,12 @@ Changed operations win all three paired blocks. Source/header edits compile exac
 
 The [primary report](../../experiments/compiler/cpp_graph/results/baseline-seeded/REPORT.md) distinguishes these actual compilation misses from a [repeated-edit trace](../../experiments/compiler/cpp_graph/results/repeated-trace/REPORT.md). Objects, public artifacts, runtime behavior and byte-identical CRT aliases are checked independently. This validates graph mechanics, not large-production-project scale or arbitrary linker inputs.
 
+## Source changes and object changes are different boundaries
+
+A compiler-visible identity can avoid substantial backend work on a heavy translation unit. Appending an unused typedef changes preprocessed bytes and the AST but preserves exact pre-optimization IR and the independently compiled object: IR-only reuse takes 74.58 ms versus 2265.93 ms for a freshly seeded ccache control, improving all three matched blocks. Comments and unused macros favor ccache's existing preprocessor reuse at about 40 ms versus 71–73 ms for IR. The lighter source has no dependable comparable win.
+
+A direct Clang AST walk removes the expensive JSON bridge, but the tested normalized AST and ODR fingerprints are incomplete object identities: packing, target attributes, inline assembly and debug locations produce unsafe candidate hits. Conversely, an extra unused type changes the AST without changing the object; the AST filter unnecessarily recompiles it. Exact IR checks plus fixed tool/SDK/options context match every independent object in the tested cases. This is a bounded translation-unit proof, not a production cache or per-function dirty-bit design. [Report and controls](../../experiments/compiler/semantic_invalidation/results/REPORT.md).
+
 ## The mechanisms behind the gains
 
 The experiments below isolate different repeated work. Their absolute timings come from separate runs and must not be added together.

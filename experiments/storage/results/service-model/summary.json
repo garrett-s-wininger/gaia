@@ -1,0 +1,209 @@
+{
+  "run_id": "20261031T044325.699070Z",
+  "consumers": 3,
+  "rows": [
+    {
+      "profile": "nominal",
+      "mode": "range",
+      "sessions": 3,
+      "install_ms": 34.75656299997354,
+      "admission_ms": 0.007954993634484708,
+      "first_total_ms": 360.3140830018674,
+      "session_ms": 1008.030343997234,
+      "consumer_ms": 323.70084799913457,
+      "requested_model_wait_ms": 0.0,
+      "observed_model_sleep_ms": 0
+    },
+    {
+      "profile": "nominal",
+      "mode": "memory",
+      "sessions": 3,
+      "install_ms": 37.53983099886682,
+      "admission_ms": 26.205007001408376,
+      "first_total_ms": 380.07059800293064,
+      "session_ms": 996.5709749958478,
+      "consumer_ms": 305.76760599797126,
+      "requested_model_wait_ms": 0.0,
+      "observed_model_sleep_ms": 0
+    },
+    {
+      "profile": "request-latency",
+      "mode": "range",
+      "sessions": 3,
+      "install_ms": 44.270286001847126,
+      "admission_ms": 0.010791001841425896,
+      "first_total_ms": 919.2704829983995,
+      "session_ms": 2716.0672090030857,
+      "consumer_ms": 889.7740920001525,
+      "requested_model_wait_ms": 1433.000000000001,
+      "observed_model_sleep_ms": 1560.055334950448
+    },
+    {
+      "profile": "request-latency",
+      "mode": "memory",
+      "sessions": 3,
+      "install_ms": 44.221953001397196,
+      "admission_ms": 29.027315002167597,
+      "first_total_ms": 375.514375999046,
+      "session_ms": 986.6865039948607,
+      "consumer_ms": 302.338879002491,
+      "requested_model_wait_ms": 7.0,
+      "observed_model_sleep_ms": 7.822959996701684
+    },
+    {
+      "profile": "bandwidth",
+      "mode": "range",
+      "sessions": 3,
+      "install_ms": 3528.494201003923,
+      "admission_ms": 0.008686998626217246,
+      "first_total_ms": 4347.00249999878,
+      "session_ms": 6003.684317001898,
+      "consumer_ms": 818.2142170044244,
+      "requested_model_wait_ms": 4692.968010902405,
+      "observed_model_sleep_ms": 4823.030415813264
+    },
+    {
+      "profile": "bandwidth",
+      "mode": "memory",
+      "sessions": 3,
+      "install_ms": 3531.792399000551,
+      "admission_ms": 1772.8804040016257,
+      "first_total_ms": 5621.005151995632,
+      "session_ms": 6269.319701001223,
+      "consumer_ms": 314.97736099845497,
+      "requested_model_wait_ms": 5232.6502203941345,
+      "observed_model_sleep_ms": 5233.779792011774
+    }
+  ],
+  "paired": [
+    {
+      "profile": "nominal",
+      "blocks": [
+        {
+          "block": 0,
+          "first_delta_ms": -21.833646998857148,
+          "session_delta_ms": -79.55048800067743
+        },
+        {
+          "block": 1,
+          "first_delta_ms": 24.391649007156957,
+          "session_delta_ms": 37.01644600369036
+        },
+        {
+          "block": 2,
+          "first_delta_ms": 24.984689000120852,
+          "session_delta_ms": 42.35488699487178
+        }
+      ],
+      "memory_first_wins": 1,
+      "memory_session_wins": 1
+    },
+    {
+      "profile": "request-latency",
+      "blocks": [
+        {
+          "block": 0,
+          "first_delta_ms": -561.9713339983718,
+          "session_delta_ms": -1827.8853630035883
+        },
+        {
+          "block": 1,
+          "first_delta_ms": -510.1964460045565,
+          "session_delta_ms": -1650.5625070058159
+        },
+        {
+          "block": 2,
+          "first_delta_ms": -542.9988420000882,
+          "session_delta_ms": -1720.5785520054633
+        }
+      ],
+      "memory_first_wins": 3,
+      "memory_session_wins": 3
+    },
+    {
+      "profile": "bandwidth",
+      "blocks": [
+        {
+          "block": 0,
+          "first_delta_ms": 1277.7031349978643,
+          "session_delta_ms": 255.68088399450062
+        },
+        {
+          "block": 1,
+          "first_delta_ms": 1281.0235010038014,
+          "session_delta_ms": 307.36062000505626
+        },
+        {
+          "block": 2,
+          "first_delta_ms": 1267.6462059898768,
+          "session_delta_ms": 258.9380169956712
+        }
+      ],
+      "memory_first_wins": 0,
+      "memory_session_wins": 0
+    }
+  ],
+  "calibrations": [
+    {
+      "profile": {
+        "name": "nominal",
+        "read_latency_ms": 0,
+        "write_latency_ms": 0,
+        "read_mib_s": 0,
+        "write_mib_s": 0
+      },
+      "elapsed_seconds": 0.002098017001117114,
+      "read_calls": 2,
+      "read_bytes": 1114112,
+      "write_calls": 2,
+      "write_bytes": 1114112,
+      "requested_seconds": 0.0,
+      "slept_seconds": 0
+    },
+    {
+      "profile": {
+        "name": "request-latency",
+        "read_latency_ms": 1,
+        "write_latency_ms": 1,
+        "read_mib_s": 0,
+        "write_mib_s": 0
+      },
+      "elapsed_seconds": 0.005612177999864798,
+      "read_calls": 2,
+      "read_bytes": 1114112,
+      "write_calls": 2,
+      "write_bytes": 1114112,
+      "requested_seconds": 0.004,
+      "slept_seconds": 0.004261130998202134
+    },
+    {
+      "profile": {
+        "name": "bandwidth",
+        "read_latency_ms": 0,
+        "write_latency_ms": 0,
+        "read_mib_s": 16,
+        "write_mib_s": 16
+      },
+      "elapsed_seconds": 0.13493170899891993,
+      "read_calls": 2,
+      "read_bytes": 1114112,
+      "write_calls": 2,
+      "write_bytes": 1114112,
+      "requested_seconds": 0.1328125,
+      "slept_seconds": 0.13330546700308332
+    }
+  ],
+  "accounting": {
+    "install_read_calls": 2,
+    "install_read_bytes": 29263010,
+    "install_write_calls": 3,
+    "install_write_bytes": 29263283,
+    "range_consumer_read_calls": 476,
+    "range_consumer_read_bytes": 6736215,
+    "memory_admission_read_calls": 2,
+    "memory_admission_read_bytes": 29263010,
+    "logical_reads_per_consumer": 475,
+    "logical_read_bytes_per_consumer": 6063442,
+    "dependency_modules": 455
+  }
+}

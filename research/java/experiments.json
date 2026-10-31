@@ -30,7 +30,19 @@
       "pilot_validation": "experiments/java/startup/results/dgm-binding/initial-control/validation.json",
       "provenance": "experiments/java/startup/results/dgm-binding/provenance.json",
       "profile": "experiments/java/startup/results/dgm-binding/registry-profile.json",
-      "findings": "research/java/findings.md#prepared-dgm-data-is-only-part-of-initialization"
+      "findings": "research/java/findings.md#denser-prepared-tables-alone-have-limited-payoff"
+    },
+    {
+      "id": "JVM-JVMTI-STARTUP",
+      "status": "measured-jvmti-overhead-and-modest-paired-module-index-improvement-broad-initial-run-unstable",
+      "report": "experiments/java/startup/results/jvmti/REPORT.md",
+      "raw": "experiments/java/startup/results/jvmti/results.json",
+      "profile": "experiments/java/startup/results/jvmti/profiles.json",
+      "summary": "experiments/java/startup/results/jvmti/summary.json",
+      "validation": "experiments/java/startup/results/jvmti/validation.json",
+      "provenance": "experiments/java/startup/results/jvmti/provenance.json",
+      "reproduction": "experiments/java/startup/jvmti/README.md",
+      "findings": "research/java/findings.md"
     }
   ],
   "raw_evidence": {

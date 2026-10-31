@@ -1,0 +1,41 @@
+{
+  "flags": {
+    "cases": 21,
+    "successful_complete_targets": 252,
+    "rejected_invalid_source": 21,
+    "paired_consumers": 0,
+    "normal_process_exit": true,
+    "cli_bytecode_guards": true
+  },
+  "head": {
+    "cases": 24,
+    "successful_complete_targets": 384,
+    "rejected_invalid_source": 24,
+    "paired_consumers": 0,
+    "normal_process_exit": true,
+    "cli_bytecode_guards": true,
+    "compiled_method_cache_used": true,
+    "same_path_size_mtime_edit": true,
+    "independent_jvm_consumers": 4,
+    "module_readability_exports_probes": true
+  },
+  "epsilon": {
+    "cases": 6,
+    "successful_complete_targets": 18,
+    "rejected_invalid_source": 0,
+    "paired_consumers": 0,
+    "normal_process_exit": true,
+    "cli_bytecode_guards": true
+  },
+  "source_integrity": {
+    "frozen_primary_sources_verified": true,
+    "files": [
+      "NativeCompiler.java",
+      "measure_endpoint.py",
+      "run_native.py",
+      "run_variants.py",
+      "prepare.py",
+      "configure_endpoint.py"
+    ]
+  }
+}

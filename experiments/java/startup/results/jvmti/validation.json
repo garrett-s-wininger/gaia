@@ -1,0 +1,115 @@
+{
+  "passed": true,
+  "run_sha256": "45baedcccd02088f182a276610cb401887e60c56c39f9ef6c4235ec3f0ba8606",
+  "source_sha256": {
+    "validate.py": "8e6fb91454b42a8b399a3401ade768e0bec5990526ef91bf58f0ab9cfe278d73",
+    "ModuleProbe.java": "3d68a0c3427e3778150d966528b60084b99053e83f25b3fd25e1803f48181af6"
+  },
+  "rows": [
+    {
+      "variant": "stock",
+      "mode": "records",
+      "passed": true
+    },
+    {
+      "variant": "stock",
+      "mode": "registry",
+      "passed": true
+    },
+    {
+      "variant": "stock",
+      "mode": "metaclass",
+      "passed": true
+    },
+    {
+      "variant": "stock",
+      "mode": "loader",
+      "passed": true
+    },
+    {
+      "variant": "stock",
+      "mode": "extension",
+      "passed": true
+    },
+    {
+      "variant": "stock",
+      "module_probe": {
+        "checks": 1990,
+        "indexed": false,
+        "table_entries": 534,
+        "digest": "4a9f2dd30ee0b50be432a5e8647f4a574ea02cb1b339e7de63c7c279203be89e"
+      },
+      "extension_removal": true
+    },
+    {
+      "variant": "rebuilt",
+      "mode": "records",
+      "passed": true
+    },
+    {
+      "variant": "rebuilt",
+      "mode": "registry",
+      "passed": true
+    },
+    {
+      "variant": "rebuilt",
+      "mode": "metaclass",
+      "passed": true
+    },
+    {
+      "variant": "rebuilt",
+      "mode": "loader",
+      "passed": true
+    },
+    {
+      "variant": "rebuilt",
+      "mode": "extension",
+      "passed": true
+    },
+    {
+      "variant": "rebuilt",
+      "module_probe": {
+        "checks": 1990,
+        "indexed": false,
+        "table_entries": 534,
+        "digest": "4a9f2dd30ee0b50be432a5e8647f4a574ea02cb1b339e7de63c7c279203be89e"
+      },
+      "extension_removal": true
+    },
+    {
+      "variant": "indexed",
+      "mode": "records",
+      "passed": true
+    },
+    {
+      "variant": "indexed",
+      "mode": "registry",
+      "passed": true
+    },
+    {
+      "variant": "indexed",
+      "mode": "metaclass",
+      "passed": true
+    },
+    {
+      "variant": "indexed",
+      "mode": "loader",
+      "passed": true
+    },
+    {
+      "variant": "indexed",
+      "mode": "extension",
+      "passed": true
+    },
+    {
+      "variant": "indexed",
+      "module_probe": {
+        "checks": 1990,
+        "indexed": true,
+        "table_entries": 534,
+        "digest": "4a9f2dd30ee0b50be432a5e8647f4a574ea02cb1b339e7de63c7c279203be89e"
+      },
+      "extension_removal": true
+    }
+  ]
+}

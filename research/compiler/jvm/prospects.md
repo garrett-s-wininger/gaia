@@ -1,23 +1,33 @@
-# What should follow the first JVM compiler proof
+# What should follow the JVM compiler studies
 
-## Measure varied complete targets and service lifetimes
+The evidence supports initialized compiler workers and faster native first use. The remaining questions concern longer lifetimes, memory composition, input access and broader compatibility.
 
-Extend the existing full CLI and two-target controls to projects with more sources, dependencies, modules and different target SDKs. Count startup, first requests, every actual compilation, publication and normal shutdown. Measure CPU time and peak/idle/proportional memory before claiming efficiency; the current proof captures wall time and sampled RSS only. Test longer sequences, source removal, classpath changes and quota pressure.
+## Compare useful capacity under a resident-memory budget
 
-Keep complete Java compilation targets as the queue unit until dependency/SCC grouping or a genuine incremental compiler provides a stronger contract. A file compiled against old binaries can emit stale constants or wrong source API bindings. Source content, SDK, module graph, processors and options all belong in input identity.
+The [topology study](../../../experiments/java/compiler/topology/results/primary/REPORT.md) improves batch time but does not guarantee lower PSS. Test longer mixed-target queues under an explicit aggregate resident-memory constraint. Keep worker count, actual compilations and retained outputs comparable; a maximum Java heap is not a process memory quota.
 
-## Separate framework preparation from compiled-result caching
+Characterize the large resident remainder after requested GC with native-memory tracking, full smaps/LazyFree observations and allocator/release diagnostics. A small heap-used counter is not a complete live footprint, and sequential process samples do not establish an exact peak. Keep requested-GC diagnostics outside ordinary latency claims.
 
-The trained cache accelerates the compiler JVM; it does not replace executing a new compilation task. Compare declared compiler-only class knowledge, constrained training and longer profiles on a fresh-process basis. Record artifact sizes and generation costs. Retain matching default CDS archives for image/CLI controls so a disabled baseline does not create a false gain.
+## Establish the useful JIT and collector lifetime
 
-## Make direct data access useful to a real consumer
+The [execution variants](../../../experiments/java/compiler/results/variants/REPORT.md) still show named JIT activity after 32 requests. Compare a small finalist set on longer, varied targets before selecting a persistent-pool policy. Retain compile-thread CPU, whole-process CPU and heuristic worker attribution separately.
 
-The memory file manager and fresh class-loader consumer establish a delivery path without loose class files. Measure one complete compile-and-consume clock next, including name mapping, ownership/borrowing, verification and consumer lifetime. The current tables stop at validated class delivery and time consumer checks separately.
+C1-only helps first use but hurts repeated compilation here. Parallel GC is promising for this fixture; collector behavior should be retested under memory pressure and different target sizes. Keep Shenandoah's same-binary C2 control and explicit effective flags. Epsilon's same-budget growth/failure makes it unsuitable as an unbounded pool default in this study.
 
-A JavaFileManager backed by admitted source/dependency collections is a concrete future integration with the artifact/input research. Preserve package/module/resource lookup and failed lookup semantics. A compact compiler runtime is separate from target SDK contents; count both acquisition and admission.
+## Test native code generation against a mature JVM control
 
-## Establish managed worker guarantees
+Native Image improves the first compiler invocation but does not beat the JVM compiler body in the bounded longer trace. Test profile-guided optimization and target-feature choices against optimized O2 before attributing this gap to an inherent limit. Charge profile collection, image construction, SDK preparation and invalidation.
 
-Each worker owns mutable compiler/file-manager state and reuses it sequentially. Before treating this as a product service, define cancellation, diagnostic forwarding, task failure recovery, processor/plugin execution, long-lived classpath admission, shutdown and memory limits. The current heap cap and short RSS observations are not a service-wide bound. Processor execution is explicitly disabled in the first fixture.
+Keep metadata/profile caches distinct from cached machine code and from compiled-result caching. A fresh target must still execute a real compilation and emit the current class bytes. Record compatibility failures explicitly and preserve existing default-CDS controls.
 
-Read the [findings](findings.md) and [complete report](../../../experiments/java/compiler/results/initial/REPORT.md) before selecting a next optimization.
+## Admit SDK data through a measured interface
+
+The native SDK adapter demonstrates public module locations with exact platform class bytes. A packed SDK or admitted source/dependency collection is a useful next JavaFileManager provider. Measure lookup, decoding, verification and ownership with real package/module/resource and failed-lookup behavior.
+
+Platform metadata repeats across tasks, but javac symbol objects are mutable and context-bound. Separate immutable data from fresh task bindings instead of sharing those objects blindly. Count both compiler runtime and target SDK acquisition; a compact executable is not the complete toolchain.
+
+## Broaden targets and worker guarantees
+
+Use projects with more sources, dependencies, modules and target SDKs. Keep whole Java targets as queue items until a genuine incremental compiler establishes a stronger grouping contract. Files compiled independently against old binaries can preserve stale constants.
+
+Annotation processors/plugins, cancellation, diagnostics, changed classpaths, source removal, long-lived failure recovery and shutdown need explicit tests. The current output consumers are correctness checks outside compilation clocks; add a complete compile-and-consume operation before claiming an end-to-end delivery win. Read the [findings](findings.md) and [reproduction guide](../../../experiments/java/compiler/README.md) before extending the service contract.

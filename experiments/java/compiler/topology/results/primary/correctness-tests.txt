@@ -1,0 +1,10 @@
+test_failure_retry_same_path_edit_gc_and_restore (test_lifecycle.LifecycleTests.test_failure_retry_same_path_edit_gc_and_restore) ... ok
+test_duplicate_or_missing_targets_are_rejected (test_topology.MemoryTests.test_duplicate_or_missing_targets_are_rejected) ... ok
+test_each_independent_target_must_match_its_cli_reference (test_topology.MemoryTests.test_each_independent_target_must_match_its_cli_reference) ... ok
+test_missing_memory_fields_are_not_silently_zero (test_topology.MemoryTests.test_missing_memory_fields_are_not_silently_zero) ... ok
+test_pss_and_private_are_distinct_from_double_counted_rss (test_topology.MemoryTests.test_pss_and_private_are_distinct_from_double_counted_rss) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 5.146s
+
+OK

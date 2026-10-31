@@ -1,0 +1,1010 @@
+{
+  "schema": "GAIA-SEMANTIC-INVALIDATION-1",
+  "run_id": "20261031T051122.597159Z",
+  "status": "complete",
+  "trials": 3,
+  "cases": [
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "unchanged",
+      "mode": "text",
+      "blocks": 3,
+      "median_ms": 0.2511670027161017,
+      "min_ms": 0.2076639939332381,
+      "max_ms": 0.32331600232282653,
+      "paired_wins_vs_text": 0,
+      "hits": 3,
+      "correct": 3,
+      "phases": {},
+      "ccache_counters": {}
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "unchanged",
+      "mode": "guarded-ast",
+      "blocks": 3,
+      "median_ms": 0.23196999973151833,
+      "min_ms": 0.13739099813392386,
+      "max_ms": 0.2484720025677234,
+      "paired_wins_vs_text": 2,
+      "hits": 3,
+      "correct": 3,
+      "phases": {},
+      "ccache_counters": {}
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "unchanged",
+      "mode": "ir",
+      "blocks": 3,
+      "median_ms": 0.3927260040654801,
+      "min_ms": 0.3612750006141141,
+      "max_ms": 0.49272499745711684,
+      "paired_wins_vs_text": 0,
+      "hits": 3,
+      "correct": 3,
+      "phases": {},
+      "ccache_counters": {}
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "unchanged",
+      "mode": "ccache",
+      "blocks": 3,
+      "median_ms": 13.18512099533109,
+      "min_ms": 13.049223998677917,
+      "max_ms": 29.78091199474875,
+      "paired_wins_vs_text": 0,
+      "hits": 3,
+      "correct": 3,
+      "phases": {},
+      "ccache_counters": {
+        "direct_cache_hit": 3,
+        "local_storage_hit": 3,
+        "local_storage_read_hit": 6,
+        "stats_updated_timestamp": 14
+      }
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "comment",
+      "mode": "text",
+      "blocks": 3,
+      "median_ms": 95.28251599840587,
+      "min_ms": 88.08987899828935,
+      "max_ms": 136.6237039983389,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "full": {
+          "compiler_or_tool_ms": 95.16408099443652,
+          "normalization_ms": 0
+        }
+      },
+      "ccache_counters": {}
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "comment",
+      "mode": "guarded-ast",
+      "blocks": 3,
+      "median_ms": 234.1078860044945,
+      "min_ms": 121.25825700059067,
+      "max_ms": 463.4169999990263,
+      "paired_wins_vs_text": 0,
+      "hits": 3,
+      "correct": 3,
+      "phases": {
+        "ast": {
+          "compiler_or_tool_ms": 114.80602899973746,
+          "normalization_ms": 0.0,
+          "walk_ns": 2677491,
+          "frontend_ns": 56891922,
+          "ast_raw_bytes": 0,
+          "ast_canonical_bytes": 0
+        },
+        "ir": {
+          "compiler_or_tool_ms": 118.595355997968,
+          "normalization_ms": 0,
+          "ir_bytes": 4055
+        }
+      },
+      "ccache_counters": {}
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "comment",
+      "mode": "ir",
+      "blocks": 3,
+      "median_ms": 59.20563200197648,
+      "min_ms": 54.707698996935505,
+      "max_ms": 107.75427200132981,
+      "paired_wins_vs_text": 3,
+      "hits": 3,
+      "correct": 3,
+      "phases": {
+        "ir": {
+          "compiler_or_tool_ms": 58.87491400062572,
+          "normalization_ms": 0,
+          "ir_bytes": 4055
+        }
+      },
+      "ccache_counters": {}
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "comment",
+      "mode": "ccache",
+      "blocks": 3,
+      "median_ms": 82.69873399694916,
+      "min_ms": 49.84846099978313,
+      "max_ms": 219.18976600136375,
+      "paired_wins_vs_text": 2,
+      "hits": 3,
+      "correct": 3,
+      "phases": {},
+      "ccache_counters": {
+        "cache_size_kibibyte": 12,
+        "direct_cache_miss": 3,
+        "files_in_cache": 3,
+        "local_storage_hit": 3,
+        "local_storage_read_hit": 3,
+        "local_storage_read_miss": 3,
+        "local_storage_write": 3,
+        "preprocessed_cache_hit": 3,
+        "stats_updated_timestamp": 12
+      }
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "unused-macro",
+      "mode": "text",
+      "blocks": 3,
+      "median_ms": 140.74416299990844,
+      "min_ms": 74.57302099646768,
+      "max_ms": 226.0896549996687,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "full": {
+          "compiler_or_tool_ms": 140.43065800069598,
+          "normalization_ms": 0
+        }
+      },
+      "ccache_counters": {}
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "unused-macro",
+      "mode": "guarded-ast",
+      "blocks": 3,
+      "median_ms": 246.03066599956946,
+      "min_ms": 176.19353299960494,
+      "max_ms": 277.8195649952977,
+      "paired_wins_vs_text": 0,
+      "hits": 3,
+      "correct": 3,
+      "phases": {
+        "ast": {
+          "compiler_or_tool_ms": 139.83904100314248,
+          "normalization_ms": 0.0,
+          "walk_ns": 6722798,
+          "frontend_ns": 83792708,
+          "ast_raw_bytes": 0,
+          "ast_canonical_bytes": 0
+        },
+        "ir": {
+          "compiler_or_tool_ms": 105.39401199639542,
+          "normalization_ms": 0,
+          "ir_bytes": 4055
+        }
+      },
+      "ccache_counters": {}
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "unused-macro",
+      "mode": "ir",
+      "blocks": 3,
+      "median_ms": 108.51944699970772,
+      "min_ms": 63.81125099869678,
+      "max_ms": 120.41706299351063,
+      "paired_wins_vs_text": 3,
+      "hits": 3,
+      "correct": 3,
+      "phases": {
+        "ir": {
+          "compiler_or_tool_ms": 107.8998099983437,
+          "normalization_ms": 0,
+          "ir_bytes": 4055
+        }
+      },
+      "ccache_counters": {}
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "unused-macro",
+      "mode": "ccache",
+      "blocks": 3,
+      "median_ms": 110.28576899843756,
+      "min_ms": 49.74777900497429,
+      "max_ms": 127.94484099867987,
+      "paired_wins_vs_text": 3,
+      "hits": 3,
+      "correct": 3,
+      "phases": {},
+      "ccache_counters": {
+        "cache_size_kibibyte": 12,
+        "direct_cache_miss": 3,
+        "files_in_cache": 3,
+        "local_storage_hit": 3,
+        "local_storage_read_hit": 3,
+        "local_storage_read_miss": 3,
+        "local_storage_write": 3,
+        "preprocessed_cache_hit": 3,
+        "stats_updated_timestamp": 12
+      }
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "unused-type",
+      "mode": "text",
+      "blocks": 3,
+      "median_ms": 73.02424999943469,
+      "min_ms": 58.00547399849165,
+      "max_ms": 335.55455800524214,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "full": {
+          "compiler_or_tool_ms": 72.89531499554869,
+          "normalization_ms": 0
+        }
+      },
+      "ccache_counters": {}
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "unused-type",
+      "mode": "guarded-ast",
+      "blocks": 3,
+      "median_ms": 132.4701310004457,
+      "min_ms": 123.31228700350039,
+      "max_ms": 269.9969049936044,
+      "paired_wins_vs_text": 1,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "ast": {
+          "compiler_or_tool_ms": 64.82792000315385,
+          "normalization_ms": 0.0,
+          "walk_ns": 1977493,
+          "frontend_ns": 40307441,
+          "ast_raw_bytes": 0,
+          "ast_canonical_bytes": 0
+        },
+        "full": {
+          "compiler_or_tool_ms": 67.38896000024397,
+          "normalization_ms": 0
+        }
+      },
+      "ccache_counters": {}
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "unused-type",
+      "mode": "ir",
+      "blocks": 3,
+      "median_ms": 208.14135399996303,
+      "min_ms": 89.68863699556096,
+      "max_ms": 278.5002960008569,
+      "paired_wins_vs_text": 1,
+      "hits": 3,
+      "correct": 3,
+      "phases": {
+        "ir": {
+          "compiler_or_tool_ms": 207.6524549993337,
+          "normalization_ms": 0,
+          "ir_bytes": 4055
+        }
+      },
+      "ccache_counters": {}
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "unused-type",
+      "mode": "ccache",
+      "blocks": 3,
+      "median_ms": 192.6384979960858,
+      "min_ms": 115.90523299673805,
+      "max_ms": 267.07672599877696,
+      "paired_wins_vs_text": 1,
+      "hits": 0,
+      "correct": 3,
+      "phases": {},
+      "ccache_counters": {
+        "cache_miss": 3,
+        "cache_size_kibibyte": 24,
+        "direct_cache_miss": 3,
+        "files_in_cache": 6,
+        "local_storage_miss": 3,
+        "local_storage_read_miss": 6,
+        "local_storage_write": 6,
+        "preprocessed_cache_miss": 3,
+        "stats_updated_timestamp": 15
+      }
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "semantic",
+      "mode": "text",
+      "blocks": 3,
+      "median_ms": 119.29867199796718,
+      "min_ms": 117.73728799744276,
+      "max_ms": 131.7801480035996,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "full": {
+          "compiler_or_tool_ms": 119.16122100228677,
+          "normalization_ms": 0
+        }
+      },
+      "ccache_counters": {}
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "semantic",
+      "mode": "guarded-ast",
+      "blocks": 3,
+      "median_ms": 150.70106799976202,
+      "min_ms": 122.1609139975044,
+      "max_ms": 227.8935439971974,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "ast": {
+          "compiler_or_tool_ms": 73.39157599926693,
+          "normalization_ms": 0.0,
+          "walk_ns": 1568477,
+          "frontend_ns": 42024199,
+          "ast_raw_bytes": 0,
+          "ast_canonical_bytes": 0
+        },
+        "full": {
+          "compiler_or_tool_ms": 77.04646300408058,
+          "normalization_ms": 0
+        }
+      },
+      "ccache_counters": {}
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "semantic",
+      "mode": "ir",
+      "blocks": 3,
+      "median_ms": 231.84364500048105,
+      "min_ms": 176.85349599923939,
+      "max_ms": 277.76382899901364,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "ir": {
+          "compiler_or_tool_ms": 105.19372100679902,
+          "normalization_ms": 0,
+          "ir_bytes": 4213
+        },
+        "full": {
+          "compiler_or_tool_ms": 126.29162400116911,
+          "normalization_ms": 0
+        }
+      },
+      "ccache_counters": {}
+    },
+    {
+      "source": "common/zstd_common.c",
+      "scenario": "semantic",
+      "mode": "ccache",
+      "blocks": 3,
+      "median_ms": 256.73979799466906,
+      "min_ms": 160.40255899861222,
+      "max_ms": 387.5572809993173,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {},
+      "ccache_counters": {
+        "cache_miss": 3,
+        "cache_size_kibibyte": 24,
+        "direct_cache_miss": 3,
+        "files_in_cache": 6,
+        "local_storage_miss": 3,
+        "local_storage_read_miss": 6,
+        "local_storage_write": 6,
+        "preprocessed_cache_miss": 3,
+        "stats_updated_timestamp": 12
+      }
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "unchanged",
+      "mode": "text",
+      "blocks": 3,
+      "median_ms": 0.6128929962869734,
+      "min_ms": 0.5470280011650175,
+      "max_ms": 0.6137450036476366,
+      "paired_wins_vs_text": 0,
+      "hits": 3,
+      "correct": 3,
+      "phases": {},
+      "ccache_counters": {}
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "unchanged",
+      "mode": "guarded-ast",
+      "blocks": 3,
+      "median_ms": 0.6141550038591959,
+      "min_ms": 0.6115709984442219,
+      "max_ms": 0.706691003870219,
+      "paired_wins_vs_text": 0,
+      "hits": 3,
+      "correct": 3,
+      "phases": {},
+      "ccache_counters": {}
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "unchanged",
+      "mode": "ir",
+      "blocks": 3,
+      "median_ms": 0.6019729989930056,
+      "min_ms": 0.5955000015092082,
+      "max_ms": 0.6230229992070235,
+      "paired_wins_vs_text": 1,
+      "hits": 3,
+      "correct": 3,
+      "phases": {},
+      "ccache_counters": {}
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "unchanged",
+      "mode": "ccache",
+      "blocks": 3,
+      "median_ms": 5.5107290027081035,
+      "min_ms": 5.194327997742221,
+      "max_ms": 6.045670997991692,
+      "paired_wins_vs_text": 0,
+      "hits": 3,
+      "correct": 3,
+      "phases": {},
+      "ccache_counters": {
+        "direct_cache_hit": 3,
+        "local_storage_hit": 3,
+        "local_storage_read_hit": 6,
+        "stats_updated_timestamp": 77
+      }
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "comment",
+      "mode": "text",
+      "blocks": 3,
+      "median_ms": 2188.8701819989365,
+      "min_ms": 2169.2118869978003,
+      "max_ms": 2252.412504996755,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "full": {
+          "compiler_or_tool_ms": 2188.738242999534,
+          "normalization_ms": 0
+        }
+      },
+      "ccache_counters": {}
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "comment",
+      "mode": "guarded-ast",
+      "blocks": 3,
+      "median_ms": 133.56015500176,
+      "min_ms": 128.5811380002997,
+      "max_ms": 136.08526899770368,
+      "paired_wins_vs_text": 3,
+      "hits": 3,
+      "correct": 3,
+      "phases": {
+        "ast": {
+          "compiler_or_tool_ms": 58.701651003502775,
+          "normalization_ms": 0.0,
+          "walk_ns": 1894105,
+          "frontend_ns": 39593935,
+          "ast_raw_bytes": 0,
+          "ast_canonical_bytes": 0
+        },
+        "ir": {
+          "compiler_or_tool_ms": 73.88864400127204,
+          "normalization_ms": 0,
+          "ir_bytes": 557807
+        }
+      },
+      "ccache_counters": {}
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "comment",
+      "mode": "ir",
+      "blocks": 3,
+      "median_ms": 71.40275600249879,
+      "min_ms": 71.15230100316694,
+      "max_ms": 148.62094999989495,
+      "paired_wins_vs_text": 3,
+      "hits": 3,
+      "correct": 3,
+      "phases": {
+        "ir": {
+          "compiler_or_tool_ms": 70.50533199799247,
+          "normalization_ms": 0,
+          "ir_bytes": 557807
+        }
+      },
+      "ccache_counters": {}
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "comment",
+      "mode": "ccache",
+      "blocks": 3,
+      "median_ms": 39.58531500393292,
+      "min_ms": 38.85706200526329,
+      "max_ms": 39.76613200211432,
+      "paired_wins_vs_text": 3,
+      "hits": 3,
+      "correct": 3,
+      "phases": {},
+      "ccache_counters": {
+        "cache_size_kibibyte": 12,
+        "direct_cache_miss": 3,
+        "files_in_cache": 3,
+        "local_storage_hit": 3,
+        "local_storage_read_hit": 3,
+        "local_storage_read_miss": 3,
+        "local_storage_write": 3,
+        "preprocessed_cache_hit": 3,
+        "stats_updated_timestamp": 101
+      }
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "unused-macro",
+      "mode": "text",
+      "blocks": 3,
+      "median_ms": 2157.6403259969084,
+      "min_ms": 2132.677337998757,
+      "max_ms": 2243.171242000244,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "full": {
+          "compiler_or_tool_ms": 2157.5444229965797,
+          "normalization_ms": 0
+        }
+      },
+      "ccache_counters": {}
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "unused-macro",
+      "mode": "guarded-ast",
+      "blocks": 3,
+      "median_ms": 126.18189700151561,
+      "min_ms": 125.01156800135504,
+      "max_ms": 146.21464999800082,
+      "paired_wins_vs_text": 3,
+      "hits": 3,
+      "correct": 3,
+      "phases": {
+        "ast": {
+          "compiler_or_tool_ms": 57.18182699638419,
+          "normalization_ms": 0.0,
+          "walk_ns": 1940924,
+          "frontend_ns": 39123534,
+          "ast_raw_bytes": 0,
+          "ast_canonical_bytes": 0
+        },
+        "ir": {
+          "compiler_or_tool_ms": 69.01014499453595,
+          "normalization_ms": 0,
+          "ir_bytes": 557807
+        }
+      },
+      "ccache_counters": {}
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "unused-macro",
+      "mode": "ir",
+      "blocks": 3,
+      "median_ms": 73.2679150023614,
+      "min_ms": 69.21140699705575,
+      "max_ms": 145.38595900376095,
+      "paired_wins_vs_text": 3,
+      "hits": 3,
+      "correct": 3,
+      "phases": {
+        "ir": {
+          "compiler_or_tool_ms": 71.86052399629261,
+          "normalization_ms": 0,
+          "ir_bytes": 557807
+        }
+      },
+      "ccache_counters": {}
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "unused-macro",
+      "mode": "ccache",
+      "blocks": 3,
+      "median_ms": 39.91315900202608,
+      "min_ms": 39.360093003779184,
+      "max_ms": 43.78466100024525,
+      "paired_wins_vs_text": 3,
+      "hits": 3,
+      "correct": 3,
+      "phases": {},
+      "ccache_counters": {
+        "cache_size_kibibyte": 12,
+        "direct_cache_miss": 3,
+        "files_in_cache": 3,
+        "local_storage_hit": 3,
+        "local_storage_read_hit": 3,
+        "local_storage_read_miss": 3,
+        "local_storage_write": 3,
+        "preprocessed_cache_hit": 3,
+        "stats_updated_timestamp": 121
+      }
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "unused-type",
+      "mode": "text",
+      "blocks": 3,
+      "median_ms": 2176.0899130022153,
+      "min_ms": 2134.241566003766,
+      "max_ms": 2265.315548000217,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "full": {
+          "compiler_or_tool_ms": 2175.9850130038103,
+          "normalization_ms": 0
+        }
+      },
+      "ccache_counters": {}
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "unused-type",
+      "mode": "guarded-ast",
+      "blocks": 3,
+      "median_ms": 2264.9891920009395,
+      "min_ms": 2213.76570299617,
+      "max_ms": 5868.932217003021,
+      "paired_wins_vs_text": 1,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "ast": {
+          "compiler_or_tool_ms": 56.82382699887967,
+          "normalization_ms": 0.0,
+          "walk_ns": 2063336,
+          "frontend_ns": 39267005,
+          "ast_raw_bytes": 0,
+          "ast_canonical_bytes": 0
+        },
+        "full": {
+          "compiler_or_tool_ms": 2208.1545639957767,
+          "normalization_ms": 0
+        }
+      },
+      "ccache_counters": {}
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "unused-type",
+      "mode": "ir",
+      "blocks": 3,
+      "median_ms": 74.57745700230589,
+      "min_ms": 72.57378799840808,
+      "max_ms": 75.68132700544083,
+      "paired_wins_vs_text": 3,
+      "hits": 3,
+      "correct": 3,
+      "phases": {
+        "ir": {
+          "compiler_or_tool_ms": 73.25750200106995,
+          "normalization_ms": 0,
+          "ir_bytes": 557807
+        }
+      },
+      "ccache_counters": {}
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "unused-type",
+      "mode": "ccache",
+      "blocks": 3,
+      "median_ms": 2265.931489004288,
+      "min_ms": 2221.3009580009384,
+      "max_ms": 2367.076887996518,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {},
+      "ccache_counters": {
+        "cache_miss": 3,
+        "cache_size_kibibyte": 216,
+        "direct_cache_miss": 3,
+        "files_in_cache": 6,
+        "local_storage_miss": 3,
+        "local_storage_read_miss": 6,
+        "local_storage_write": 6,
+        "preprocessed_cache_miss": 3,
+        "stats_updated_timestamp": 86
+      }
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "semantic",
+      "mode": "text",
+      "blocks": 3,
+      "median_ms": 2208.7355610055965,
+      "min_ms": 2135.456603995408,
+      "max_ms": 2223.8913499968476,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "full": {
+          "compiler_or_tool_ms": 2208.6286490011844,
+          "normalization_ms": 0
+        }
+      },
+      "ccache_counters": {}
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "semantic",
+      "mode": "guarded-ast",
+      "blocks": 3,
+      "median_ms": 2267.0491950048017,
+      "min_ms": 2226.2518830029876,
+      "max_ms": 4602.258828999766,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "ast": {
+          "compiler_or_tool_ms": 60.72999299794901,
+          "normalization_ms": 0.0,
+          "walk_ns": 1945182,
+          "frontend_ns": 41479233,
+          "ast_raw_bytes": 0,
+          "ast_canonical_bytes": 0
+        },
+        "full": {
+          "compiler_or_tool_ms": 2206.0985429998254,
+          "normalization_ms": 0
+        }
+      },
+      "ccache_counters": {}
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "semantic",
+      "mode": "ir",
+      "blocks": 3,
+      "median_ms": 2337.555133999558,
+      "min_ms": 2225.0499239962664,
+      "max_ms": 2353.723378997529,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {
+        "ir": {
+          "compiler_or_tool_ms": 72.58308000018587,
+          "normalization_ms": 0,
+          "ir_bytes": 557966
+        },
+        "full": {
+          "compiler_or_tool_ms": 2263.782825000817,
+          "normalization_ms": 0
+        }
+      },
+      "ccache_counters": {}
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "scenario": "semantic",
+      "mode": "ccache",
+      "blocks": 3,
+      "median_ms": 2244.7665569998208,
+      "min_ms": 2193.5114310035715,
+      "max_ms": 2339.4610559989815,
+      "paired_wins_vs_text": 0,
+      "hits": 0,
+      "correct": 3,
+      "phases": {},
+      "ccache_counters": {
+        "cache_miss": 3,
+        "cache_size_kibibyte": 216,
+        "direct_cache_miss": 3,
+        "files_in_cache": 6,
+        "local_storage_miss": 3,
+        "local_storage_read_miss": 6,
+        "local_storage_write": 6,
+        "preprocessed_cache_miss": 3,
+        "stats_updated_timestamp": 92
+      }
+    }
+  ],
+  "preparation": {
+    "common/zstd_common.c": {
+      "source_bytes": 1683,
+      "seed": {
+        "full": {
+          "seconds": 0.19551123000564985,
+          "cpu_seconds": 0.11165200000000002
+        },
+        "ast": {
+          "seconds": 0.24157559000013862,
+          "cpu_seconds": 0.118948,
+          "direct_declarations": 1655,
+          "ast_ids": 0,
+          "ast_raw_bytes": 0,
+          "ast_canonical_bytes": 0,
+          "direct_odr_candidate": true,
+          "frontend_ns": 148494787,
+          "walk_ns": 6777205,
+          "canonical_seconds": 0.0
+        },
+        "ir": {
+          "seconds": 0.27583713000058196,
+          "cpu_seconds": 0.129446,
+          "ir_bytes": 4055
+        }
+      },
+      "context_before": {
+        "passed": true,
+        "files": 197,
+        "bytes": 295384660
+      },
+      "context_after": {
+        "passed": true,
+        "files": 197,
+        "bytes": 295384660
+      },
+      "context_policy": "Private project all files except selected source; baseline dependency closure; compiler and linked libraries; exact inherited environment. Fixed configuration only, not complete SDK discovery or production admission.",
+      "context_sha256": "107a09bfec0bd1354f07a5b8e81168bf35aea028724ae0c168be0ca8f258529a",
+      "baseline_object_sha256": "6907393237e41eafdcf54412e7625929fcbb281fa43200a00b50248adce570b7",
+      "reference_sha256": {
+        "unchanged": "6907393237e41eafdcf54412e7625929fcbb281fa43200a00b50248adce570b7",
+        "comment": "6907393237e41eafdcf54412e7625929fcbb281fa43200a00b50248adce570b7",
+        "unused-macro": "6907393237e41eafdcf54412e7625929fcbb281fa43200a00b50248adce570b7",
+        "unused-type": "6907393237e41eafdcf54412e7625929fcbb281fa43200a00b50248adce570b7",
+        "semantic": "1413e90ee7fab827aa250e4d853b071672ffb4a8e6cb3bda3218683bc26dce02"
+      },
+      "baseline_preprocessor_sha256": "00b6992deae88674185a3536c5e19fcb8395774fef5fb525a8dee7ee42204b7e",
+      "preprocessor_sha256": {
+        "unchanged": "00b6992deae88674185a3536c5e19fcb8395774fef5fb525a8dee7ee42204b7e",
+        "comment": "00b6992deae88674185a3536c5e19fcb8395774fef5fb525a8dee7ee42204b7e",
+        "unused-macro": "00b6992deae88674185a3536c5e19fcb8395774fef5fb525a8dee7ee42204b7e",
+        "unused-type": "458354f82b3da0a3307ccbd05cc5a5c72c12f61568f006f79ae61dc63cc837bb",
+        "semantic": "8a851ef43780b35d30dcb93f2f50413211698db0379bcb7e9887a7ecca62a90f"
+      },
+      "reference_compile_seconds": 0.41098956899077166,
+      "ccache": {
+        "preparation": {
+          "seconds": 0.15507442200032528,
+          "cpu_seconds": 0.14619400000000016,
+          "stderr": ""
+        },
+        "version": "ccache version 4.14.1\nFeatures: avx2 crsh-storage file-storage http-storage redis+unix-storage redis-storage remote-storage\n\nCopyright (C) 2002-2007 Andrew Tridgell\nCopyright (C) 2009-2026 Joel Rosdahl and other contributors\n\nSee <https://ccache.dev/credits.html> for a complete list of contributors.\n\nThis program is free software; you can redistribute it and/or modify it under\nthe terms of the GNU General Public License as published by the Free Software\nFoundation; either version 3 of the License, or (at your option) any later\nversion.\n",
+        "binary_sha256": "92247b58bdeb29b7226ca0370bfa838d3d9a5bf995edccf20362d58a4a0c549c",
+        "config": "compiler_check = content\nmax_size = 100M\ncompression = true\nstats = true\n"
+      }
+    },
+    "compress/zstd_lazy.c": {
+      "source_bytes": 102821,
+      "seed": {
+        "full": {
+          "seconds": 2.9846272519935155,
+          "cpu_seconds": 2.984107
+        },
+        "ast": {
+          "seconds": 0.06542129500303417,
+          "cpu_seconds": 0.06500699999999959,
+          "direct_declarations": 2024,
+          "ast_ids": 0,
+          "ast_raw_bytes": 0,
+          "ast_canonical_bytes": 0,
+          "direct_odr_candidate": true,
+          "frontend_ns": 46096840,
+          "walk_ns": 2115665,
+          "canonical_seconds": 0.0
+        },
+        "ir": {
+          "seconds": 0.07820086700667161,
+          "cpu_seconds": 0.07784200000000041,
+          "ir_bytes": 557807
+        }
+      },
+      "context_before": {
+        "passed": true,
+        "files": 213,
+        "bytes": 295867013
+      },
+      "context_after": {
+        "passed": true,
+        "files": 213,
+        "bytes": 295867013
+      },
+      "context_policy": "Private project all files except selected source; baseline dependency closure; compiler and linked libraries; exact inherited environment. Fixed configuration only, not complete SDK discovery or production admission.",
+      "context_sha256": "bc4c3153b3139b410fed5c41b6184f788ecfbafff467922e966a9fc198d238d2",
+      "baseline_object_sha256": "ceaffd3aee3f9ffc140ffd9e69331afbeeff59aafc3e238d69602bdba097a1c3",
+      "reference_sha256": {
+        "unchanged": "ceaffd3aee3f9ffc140ffd9e69331afbeeff59aafc3e238d69602bdba097a1c3",
+        "comment": "ceaffd3aee3f9ffc140ffd9e69331afbeeff59aafc3e238d69602bdba097a1c3",
+        "unused-macro": "ceaffd3aee3f9ffc140ffd9e69331afbeeff59aafc3e238d69602bdba097a1c3",
+        "unused-type": "ceaffd3aee3f9ffc140ffd9e69331afbeeff59aafc3e238d69602bdba097a1c3",
+        "semantic": "78f28fa80ac61467c9eae4bea7d21533daebd81b04baced70a1dcb6dd5d3ecb6"
+      },
+      "baseline_preprocessor_sha256": "e7414644b6286c6dff3165d9e6dc18b1fd91edfe9df68f5f548b18668ee7a7de",
+      "preprocessor_sha256": {
+        "unchanged": "e7414644b6286c6dff3165d9e6dc18b1fd91edfe9df68f5f548b18668ee7a7de",
+        "comment": "e7414644b6286c6dff3165d9e6dc18b1fd91edfe9df68f5f548b18668ee7a7de",
+        "unused-macro": "e7414644b6286c6dff3165d9e6dc18b1fd91edfe9df68f5f548b18668ee7a7de",
+        "unused-type": "15cdd7f3acc9aa84f955e7ac5bea142cd262ceea4185ad179237a2b7d7a45c71",
+        "semantic": "183b66fa7d666619d5f86a9ce051ad56cc7032548a263ebde2a03adbde755e55"
+      },
+      "reference_compile_seconds": 11.6081720499933,
+      "ccache": {
+        "preparation": {
+          "seconds": 2.294599412001844,
+          "cpu_seconds": 2.290375000000001,
+          "stderr": ""
+        },
+        "version": "ccache version 4.14.1\nFeatures: avx2 crsh-storage file-storage http-storage redis+unix-storage redis-storage remote-storage\n\nCopyright (C) 2002-2007 Andrew Tridgell\nCopyright (C) 2009-2026 Joel Rosdahl and other contributors\n\nSee <https://ccache.dev/credits.html> for a complete list of contributors.\n\nThis program is free software; you can redistribute it and/or modify it under\nthe terms of the GNU General Public License as published by the Free Software\nFoundation; either version 3 of the License, or (at your option) any later\nversion.\n",
+        "binary_sha256": "92247b58bdeb29b7226ca0370bfa838d3d9a5bf995edccf20362d58a4a0c549c",
+        "config": "compiler_check = content\nmax_size = 100M\ncompression = true\nstats = true\n"
+      }
+    }
+  },
+  "ast_helper_sha256": null,
+  "direct_ast_helper_sha256": "6200f1194c7693669c8d4b9830166d0379dbd47140efe54b1821d78641b5ec1f",
+  "source_sha256": {
+    "ccache_control.py": "c6ce0cef259df2e6a0e697723af27eb12242bca20020286333ac2a43659d4b49",
+    "summarize.py": "5ca1ac330ba0bd2cc1d5d2f789612892bb7e7f5ff9f335fa352bdcd800b058e8",
+    "direct_ast.cpp": "f540b4e758492bebcfd94740be75e95fe6808f4da48bb82c1212208e7166df46",
+    "context.py": "c87c7bec972267ba26126dd965e4f9d3ecf3938bd8401acb6a5594db885da01c",
+    "ast_fingerprint.cpp": "2de812d681c76d781dee67a2f34d5a30820fa8311c38ccdc9ffa8ed65eb11286",
+    "boundaries.py": "3c441d9476e36869d526df9b693a18cd5805768628a6d39b692828fb876068d5",
+    "benchmark.py": "2a4f9d0deacb40f65414680b89b856964ed97b02a3c4c7e1dfd073eef6162357",
+    "test_semantic_cache.py": "680627858c342f6e281040e0dcdd8b727dad3ec165fee72809a03709eeadbda4",
+    "semantic_cache.py": "4b9738f9f7dcb49a9c788e3968386c5f22a93461cf40e7c9047678091efae9d5"
+  },
+  "source_archive_sha256": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3",
+  "raw_sha256": "ad08544e2fce95bd1bc1d0882f4faa923a36ca1b19f7e93d79ac469205ce53b2",
+  "scope": "Fixed compiler/tool/SDK/options/environment; private project, warm pages, same baseline candidate per operation, normal compiler/helper exit. Correctness oracle and context admission outside request timing."
+}

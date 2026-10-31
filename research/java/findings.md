@@ -20,6 +20,10 @@ Groovy already packages an immutable table of default methods. A dense class-ID 
 
 An intrusive constructor profile points to proxy/receiver grouping, plugin reflection and ExpandoMetaClass setup as larger candidates. Mutable metaclass replacement, fresh classloaders and added extension modules still work in the tested variants. Preparation must preserve those bindings rather than freeze arbitrary live state.
 
+## JVMTI identifies additional runtime metadata work
+
+A bounded JVMTI diagnostic retains actual CDS sharing while exposing module/package classification and first-script JDK runtime-image traversal. CPU sampling costs about 13% on registry startup and 3% on the dynamic operation in this run, so these are diagnostic stacks rather than optimized timings. An export/open membership index preserves all 2,007 DGM descriptors, 1,990 module predicate cases per variant and mutable loader/metaclass/extension behavior. Its initial complete-command matrix has strong drift and outliers. A tighter uninstrumented confirmation changes fresh registry startup from 219.5 to 210.9 ms with 5/7 paired wins and improves an isolated Java9 initialization closure in 7/7 pairs; this supports a modest metadata improvement, not a broad dynamic-CLI claim. [JVMTI report](../../experiments/java/startup/results/jvmti/REPORT.md).
+
 ## Scope and follow-up
 
 The first study validates 252 measured processes and an initializer/changed-JAR regression; the DGM study validates 196 processes and three semantic regressions. These are one pinned JDK/framework configuration and declared workloads. JDK/Groovy versions alone may not identify classloader, extension, configuration or resource state.

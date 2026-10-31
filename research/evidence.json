@@ -269,6 +269,36 @@
       "sha256": "35178b93eef00e7dac7d4d291d3283248f3387567c4a168561afb4c5a146788c"
     },
     {
+      "path": "experiments/compiler/semantic_invalidation/results/boundaries/results.json",
+      "bytes": 21488,
+      "sha256": "413cc26be14cb4dda067e466021d4f676b93b86f5e537d4924890e3920dd59b1"
+    },
+    {
+      "path": "experiments/compiler/semantic_invalidation/results/direct-ast/results.json",
+      "bytes": 281020,
+      "sha256": "ad08544e2fce95bd1bc1d0882f4faa923a36ca1b19f7e93d79ac469205ce53b2"
+    },
+    {
+      "path": "experiments/compiler/semantic_invalidation/results/direct-boundaries/results.json",
+      "bytes": 30826,
+      "sha256": "2221df6846ea285de729fc4e0af18c68b5a26717753cb9a7ced15b5b64e205d8"
+    },
+    {
+      "path": "experiments/compiler/semantic_invalidation/results/initial-boundaries/results.json",
+      "bytes": 15507,
+      "sha256": "bac0a13b3d457bdf0de150e3dc93c426f616476f2749c677bdbdcbfb763cd9b9"
+    },
+    {
+      "path": "experiments/compiler/semantic_invalidation/results/native-json/results.json",
+      "bytes": 245823,
+      "sha256": "cd6ce89ea11613dc0953d1a9199d498fe836423b997812a4577b5631622bb1a9"
+    },
+    {
+      "path": "experiments/compiler/semantic_invalidation/results/python-prototype/results.json",
+      "bytes": 14061,
+      "sha256": "7cbe546fed563bd1d4f67afa8d542f766c092926502b71f996846173f87e4dab"
+    },
+    {
       "path": "experiments/dotnet_startup/results/initial/results.json",
       "bytes": 60836,
       "sha256": "4c323141808e24babd1fd30350399937b79d7d2b796f1b83da9ce738987bfcee"
@@ -277,6 +307,41 @@
       "path": "experiments/java/compiler/results/initial/results.json",
       "bytes": 27405,
       "sha256": "295fb132549ec249cd0ab464ef585e4373512c7bf21dab0634a1f2d7ac3294e2"
+    },
+    {
+      "path": "experiments/java/compiler/results/variants/diagnostics/results.json",
+      "bytes": 3909064,
+      "sha256": "e64487df6b6435fac4c12f82b19f2c68432ac80ffea13bcec477cb5c0d324257"
+    },
+    {
+      "path": "experiments/java/compiler/results/variants/epsilon/results.json",
+      "bytes": 35746,
+      "sha256": "56c839e8649c4e0e1c3949859f0016f58b650ca405efb45a85bc629940a9934c"
+    },
+    {
+      "path": "experiments/java/compiler/results/variants/flags/results.json",
+      "bytes": 222841,
+      "sha256": "aa7bd5c227e26ced1f0b99969285b9c1fa4f144024565070a8e9822563c89b38"
+    },
+    {
+      "path": "experiments/java/compiler/results/variants/head/results.json",
+      "bytes": 307910,
+      "sha256": "b09e697dca27e0d4bfee98bbb68f5f6e9b5bfda0a6c4165f80766c9eddf3a4aa"
+    },
+    {
+      "path": "experiments/java/compiler/topology/results/failed-perfdata/results.json",
+      "bytes": 248687,
+      "sha256": "0274ef16e122e32c2b932d014a332cb89c56c857e884c01e484c72249f4a0561"
+    },
+    {
+      "path": "experiments/java/compiler/topology/results/long-memory/results.json",
+      "bytes": 667726,
+      "sha256": "f31c467aa410968c3cb12d5adf2c91819d63216193123b7a247179518c1960e3"
+    },
+    {
+      "path": "experiments/java/compiler/topology/results/primary/results.json",
+      "bytes": 376263,
+      "sha256": "ecff20b444bbbf2bef6a422f887d1f74797a1fa0b3462d6e8629a32d8dc90c71"
     },
     {
       "path": "experiments/java/startup/results/dgm-binding/initial-control/results.json",
@@ -307,6 +372,16 @@
       "path": "experiments/java/startup/results/initial/results.json",
       "bytes": 33523,
       "sha256": "212b611135a7c1e59678c21c3abf8779e6d1dfa4a077be4bc3653b54887f0383"
+    },
+    {
+      "path": "experiments/java/startup/results/jvmti/profiles.json",
+      "bytes": 14615984,
+      "sha256": "c49e26da1a51e7afc773fafec117fa529723ebccc0c96c1c2135f2501693f86a"
+    },
+    {
+      "path": "experiments/java/startup/results/jvmti/results.json",
+      "bytes": 88112,
+      "sha256": "ed46ba06fdc3a290e285785004df05ed15a80b7236ff35417fd2d37f5f41bcd7"
     },
     {
       "path": "experiments/python/dependency_bundles/results/access-loader/results.json",
@@ -537,6 +612,11 @@
       "path": "experiments/ruby_startup/results/initial/results.json",
       "bytes": 8192989,
       "sha256": "164cd7176e00362f15c5577350f25534306249462c6d32537fd917c1c05ff413"
+    },
+    {
+      "path": "experiments/storage/results/service-model/results.json",
+      "bytes": 2549880,
+      "sha256": "3d49830324d7309f363ee70e8dd255b007f5635692c6c7d478008ad6f7772f13"
     }
   ]
 }

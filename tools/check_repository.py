@@ -4,6 +4,7 @@ A clean checkout may omit ignored raw data. If it is present, its recorded size
 and SHA-256 must match. This check does not rerun performance experiments.
 """
 from pathlib import Path
+from functools import lru_cache
 import hashlib
 import json
 import re
@@ -37,7 +38,30 @@ def sha256(path):
     return digest.hexdigest()
 
 
+@lru_cache(maxsize=None)
+def heading_anchors(path):
+    """Heading fragments used by this repository's GitHub-flavored Markdown."""
+    text=path.read_text();anchors=set(re.findall(r'<a\s+(?:name|id)=[\"\']([^\"\']+)',text))
+    counts={};fence=None
+    for line in text.splitlines():
+        marker=re.match(r'^ {0,3}(`{3,}|~{3,})',line)
+        if marker:
+            run=marker.group(1)
+            if fence is None:fence=run
+            elif run[0]==fence[0] and len(run)>=len(fence):fence=None
+            continue
+        if fence is not None:continue
+        title=re.match(r'^ {0,3}#{1,6}\s+(.+?)\s*#*$',line)
+        if not title:continue
+        title=re.sub(r'\[([^]]+)\]\([^)]+\)',r'\1',title.group(1))
+        slug=re.sub(r'[^\w -]','',title.lower()).replace(' ','-')
+        count=counts.get(slug,0);counts[slug]=count+1
+        anchors.add(slug+('-'+str(count) if count else ''))
+    return anchors
+
+
 def main():
+    heading_anchors.cache_clear()
     errors=[];links=0;docs=list(documents());indices=0;verified=0
     manifest=json.loads((ROOT/'research/evidence.json').read_text())
     artifacts={item['path']:item for item in manifest['artifacts']}
@@ -59,20 +83,25 @@ def main():
             else:verified+=1
     for path in docs:
         for target in re.findall(r'\]\(([^)]+)\)',path.read_text()):
-            if target.startswith('#') or re.match(r'^[A-Za-z][A-Za-z0-9+.-]*:',target):continue
-            location=unquote(target.split('#',1)[0]).strip('<>')
-            if not location:continue
-            links+=1;destination=path.parent/location
+            target=target.strip('<>')
+            if re.match(r'^[A-Za-z][A-Za-z0-9+.-]*:',target):continue
+            location,_,fragment=target.partition('#');location=unquote(location)
+            if not location and not fragment:continue
+            links+=1;destination=path.parent/location if location else path
             try:relative=destination.resolve().relative_to(ROOT).as_posix()
             except ValueError:relative=None
             if not destination.exists() and relative not in artifacts:
                 errors.append(f'{path.relative_to(ROOT)}: missing link {target}')
+            elif fragment and destination.is_file() and destination.suffix=='.md' and unquote(fragment) not in heading_anchors(destination):
+                errors.append(f'{path.relative_to(ROOT)}: missing heading {target}')
     for index in (ROOT/'research').rglob('experiments.json'):
         data=json.loads(index.read_text())
         for target in indexed_paths(data):
             indices+=1;location=target.split('#',1)[0]
             if location not in artifacts and not (ROOT/location).exists():
                 errors.append(f'{index.relative_to(ROOT)}: missing indexed path {target}')
+            elif '#' in target and (ROOT/location).is_file() and Path(location).suffix=='.md' and unquote(target.split('#',1)[1]) not in heading_anchors(ROOT/location):
+                errors.append(f'{index.relative_to(ROOT)}: missing indexed heading {target}')
     if errors:
         print('\n'.join(errors),file=sys.stderr);return 1
     print(f'Checked {len(docs)} documentation pages, {links} local links, {indices} indexed paths '

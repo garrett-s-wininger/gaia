@@ -2,6 +2,14 @@
 
 The [shared-input comparison](../../experiments/compiler/results/shared-inputs/REPORT.md) removed repeated full publication/admission and unchanged native file digests. The [logical-generation follow-up](../../experiments/compiler/results/logical-inputs/REPORT.md) now tests the validation boundary too. Research should extend scale, lifecycle and workload coverage rather than repeat these completed small-target experiments.
 
+## Reuse objects at the native frontend/backend boundary
+
+The [semantic-invalidation proof](../../experiments/compiler/semantic_invalidation/results/REPORT.md) finds a useful heavy-unit case beyond preprocessor caching: an unused typedef changes source, preprocessing and AST declarations but preserves emitted IR/object bytes. IR-only reuse is about 75 ms versus 2.27 s for seeded ccache in three matched blocks. Existing ccache wins for comment/unused-macro changes; preserve that control.
+
+Integrate an IR identity check with the existing native compiler host after frontend lowering and before optimization/code generation. Retain that current IR and continue directly on misses, eliminating the prototype's repeated frontend. Measure per-mode seed/retention costs, realistic edit mixes, compiler/SDK/backend identity, diagnostics and side products. Keep the independent object oracle and packing/target/inline-assembly/debug/C++ regressions.
+
+Do not promote diagnostic AST equality or 32-bit ODR hashes into cache proofs. An AST change is neither necessary nor sufficient for a different object. Per-function partitioning and cross-function optimization effects require a separate design; the current result is whole-translation-unit reuse under admitted fixed inputs.
+
 ## Follow authoritative collection validation into scale and lifecycle
 
 The [logical-generation experiment](../../experiments/compiler/results/logical-inputs/REPORT.md) now tests this boundary: source edits take 42.25 versus 48.78 ms through the physical adapter, with selective publication against captured/current generations. It preserves tool/output/negative conditions and charges edit admission. Strict physical import remains separate; the API is authoritative only for admitted updates.

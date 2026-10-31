@@ -1,0 +1,12 @@
+{
+  "run_id": "20261031T044856.662805Z",
+  "status": "incomplete-environment-failure",
+  "completed_case_records": 14,
+  "raw": {
+    "path": "experiments/java/compiler/topology/results/failed-perfdata/results.json",
+    "bytes": 248687,
+    "sha256": "0274ef16e122e32c2b932d014a332cb89c56c857e884c01e484c72249f4a0561"
+  },
+  "failure": "JVM hsperfdata file PID collision across sandbox namespaces caused a startup warning on stdout. Complete block0 retained; this is not the final comparison.",
+  "included_in_timing_statistics": false
+}

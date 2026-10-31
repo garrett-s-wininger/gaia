@@ -12,15 +12,24 @@ The native compiler prototypes now beat the matched Ninja controls on several in
 | --- | ---: | ---: | --- |
 | C source edit, authoritative API inputs | 42.25 ms | 48.78 ms, physical adapter | Supplied edits can avoid repeated physical validation; seven of seven paired wins. |
 | C++ source edit, baseline object caches | 293.49 ms | 397.91 ms, Ninja + ccache | Four-target propagation works with one actual compilation and three links; three of three wins. |
-| Two complete Java targets | 448 ms, warm two-worker pool | 1,969 ms, parallel cold CLIs | Process lifetime matters; every target still performs joint source compilation. |
+| Heavy C unit, unused typedef added | 74.58 ms, exact IR reuse | 2,265.93 ms, seeded ccache | Compiler-visible changes can preserve object bytes; three of three wins. |
+| Eight Java targets, four worker slots | 0.794 s, one JVM | 1.391 s, four JVMs | Shared runtime work helps batch time; memory savings are mixed. |
 
-The API workspace owns admitted bytes. It does not discover unreported filesystem changes. The C++ graph contains real fmt sources plus a small labelled integration fixture; its repeated-edit history hits are reported separately from object-cache misses. The Java pool retains memory and pays startup on its first request. None of these is a general large-project or service guarantee. See [native compiler findings](compiler/findings.md) and [JVM compiler findings](compiler/jvm/findings.md).
+The API workspace owns admitted bytes. It does not discover unreported filesystem changes. The C++ graph contains real fmt sources plus a small labelled integration fixture; its repeated-edit history hits are reported separately from object-cache misses. IR reuse is a fixed-context proof on whole translation units: the tested AST fingerprints alone produce unsafe matches, and ccache remains faster for comments and unused macros. The Java pool retains private worker state; one JVM does not automatically use less memory. See [native compiler findings](compiler/findings.md) and [JVM compiler findings](compiler/jvm/findings.md).
+
+## First compilation and sustained execution need different controls
+
+Native Image reduces the first actual Java compilation to 307 ms versus cached Leyden's 737 ms; fresh complete processes take 346 and 873 ms. The advantage extends beyond launch. In a separate 32-request trace, later compiler-body medians are 281 ms native, 255 ms cached Leyden and 206 ms for the Parallel-GC JVM control. Background JIT work continues, so these are bounded observations rather than peak-throughput claims.
+
+Collector and tiering choices also trade first use against later work. C1-only cuts the fresh command from 1.64 to 1.24 seconds but slows later compilation. Native Epsilon is slower than native Serial in the matched short test and exhausts the same 768 MiB heap on attempt five. Image/cache construction, SDK preparation, compiler versions and module compatibility remain explicit in the [JVM execution study](../experiments/java/compiler/results/variants/REPORT.md).
 
 ## Artifact delivery benefits from fewer operations and direct access
 
 Sending a known list of missing hashes avoids one request per object. A verified local pack can also reduce publication and open calls for consumers that accept logical byte views. Requiring ordinary files can reverse the gain, so materialization belongs in the complete operation.
 
 A generic binary resolved lock reduces parsing CPU from 9.24 to 2.84 ms and encoded size by 43% against the same JSON data. Once both flat payloads and stored ZIP receive producer-built portable indexes, cold installation is nearly equal at about 45 ms. The flat representation sends 2.7% fewer bytes, but it has no reliable complete-startup lead. The reusable result is the admission/access contract, rather than a selected universal archive. See [artifact findings](artifacts/findings.md).
+
+The [storage-service sensitivity study](storage/findings.md) changes a different boundary. Including installation and full sealed-memory admission, three Django starts improve from 2.72 to 0.99 seconds at 1 ms per logical request. At 16 MiB/s read/write bandwidth, eager full admission loses: 6.00 versus 6.27 seconds. Reading all 29 MB can overfetch when each process needs about 6.7 MB. This is an application I/O model with warm host pages, not a measured degraded physical disk or native compiler result.
 
 ## Startup depends on what is retained and on the existing baseline
 
@@ -30,7 +39,7 @@ A generic binary resolved lock reduces parsing CPU from 9.24 to 2.84 ms and enco
 | Python prepared processes | Complete core/REST requests fall from 251/256 to 105/131 ms. | A live Linux template, explicit framework preparation and repeated requests are required. |
 | Node / TypeScript | Library snapshot 117 vs 202 ms for the same bundle. | Full-project snapshot 738 ms loses to the warmed stock CLI at 722 ms. |
 | Ruby / RuboCop | Faster full SHA verification saves about 48 ms. | Packed startup remains 438 vs warmed Bootsnap's 428 ms, with higher RSS. |
-| JVM / Groovy | Supplied class knowledge reduces dynamic startup from 909 to 735 ms. | Class metadata sharing does not restore arbitrary initialized runtime state; denser DGM data adds no dependable full-command gain. |
+| JVM / Groovy | Supplied class knowledge reduces dynamic startup from 909 to 735 ms; JVMTI identifies a further module-lookup improvement. | The module index saves about 9 ms in a tighter registry comparison; broader command timings are unstable. Class sharing does not restore arbitrary initialized state. |
 | .NET / Roslyn | Composite R2R takes 440 vs the shipping compiler's 458 ms. | The 13.3-second producer cost needs roughly 770 such invocations to amortize. |
 
 These are different preparation and lifetime mechanisms, not interchangeable snapshots. Details and compatibility limits live in the [Python](python/findings.md), [interpreter-state](python/interpreter-state.md), [Ruby](ruby/findings.md), [JVM startup](java/findings.md) and [.NET](dotnet/findings.md) guides.

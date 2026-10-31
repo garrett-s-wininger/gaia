@@ -47,3 +47,5 @@ The [DGM report](results/dgm-binding/REPORT.md) compares published/rebuilt Groov
 [registry_profile.py](registry_profile.py) is a separate intrusive source-timer diagnostic. It takes a completed DGM run, JDK and fresh output directory; never run it alongside latency measurements or pool its timings with uninstrumented controls.
 
 [Experiment notes](FINDINGS.md) retain the detailed comparisons behind the linked research review and reports.
+
+The [JVMTI follow-up](jvmti/README.md) quantifies diagnostic overhead and finds additional module/runtime-image metadata work. Its [report](results/jvmti/REPORT.md) preserves the unstable first candidate matrix and dynamic-behavior validation.

@@ -2,6 +2,8 @@
 
 For human review, start with the [research page](../../research/compiler/README.md). This is an independent native compiler track, not part of the Python dependency-format or resolution results.
 
+For a specific study, start with [semantic object reuse](semantic_invalidation/README.md), the [C++ graph](cpp_graph/README.md), or [logical workspace validation](#authoritative-logical-compiler-inputs). The sections below retain the original invocation, cache and producer reproduction chains. [Managed JVM compilers](../java/compiler/README.md) have separate code and clocks.
+
 The [Ninja comparison](#ninja-incremental-build-comparison) measures actual incremental builds against Ninja and Ninja + ccache, including no-op/link skipping and input preparation.
 
 The separate [C++ graph experiment](cpp_graph/README.md) extends this to upstream fmt and a labelled integration library/two executables. Its [baseline-seeded report](cpp_graph/results/baseline-seeded/REPORT.md) separates actual recompilation from repeated-edit object-history hits.
@@ -581,3 +583,5 @@ For the six real native-parser/lease tests, build the optional probe (adapt tool
 ```
 
 Set `GAIA_SHARED_PROBE` to that library and `GAIA_SHARED_INPUTS=1`, together with the native provider variables above pointing to the newly built host. Full compiler unittest discovery runs all 201 tests when providers are enabled. The publisher's focused tests also run without optional native tools. Generated memfds, overlays, probe binaries and raw observations are not version-controlled.
+
+[Semantic invalidation](semantic_invalidation/README.md) tests native AST candidates and exact IR object reuse against a seeded ccache control. The [report](semantic_invalidation/results/REPORT.md) distinguishes backend savings, preprocessing reuse and AST-only counterexamples.

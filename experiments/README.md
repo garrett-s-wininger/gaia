@@ -8,6 +8,7 @@ This directory contains runnable research, technical lab notes and measured evid
 | C++ dependency graph | [compiler/cpp_graph](compiler/cpp_graph/README.md) | [Compiler runs](../research/compiler/experiments.json) |
 | Managed JVM compilers | [java/compiler](java/compiler/README.md) | [JVM compiler runs](../research/compiler/jvm/experiments.json) |
 | Artifact transfer and access | [artifacts](artifacts/README.md) | [Artifact runs](../research/artifacts/experiments.json) |
+| Storage-service sensitivity | [storage](storage/README.md) | [Storage runs](../research/storage/experiments.json) |
 | Python dependency loading | [python/dependency_bundles](python/dependency_bundles/README.md) | [Python runs](../research/python/experiments.json) |
 | Python resolution | [python/dependency_solving](python/dependency_solving/README.md) | [Python runs](../research/python/experiments.json) |
 | Python/Node interpreter state | [python/interpreter_snapshots](python/interpreter_snapshots/README.md) | [Python runs](../research/python/experiments.json) |
@@ -16,6 +17,8 @@ This directory contains runnable research, technical lab notes and measured evid
 | .NET tool startup | [dotnet_startup](dotnet_startup/README.md) | [.NET runs](../research/dotnet/experiments.json) |
 
 The [Java overview](java/README.md) distinguishes framework startup from managed compilation and their different preparation contracts.
+
+The compiler continuations include [semantic object reuse](compiler/semantic_invalidation/README.md), [JVM worker topology](java/compiler/topology/README.md), [GC/JIT and native execution](java/compiler/variants/README.md), and [JVMTI framework profiling](java/startup/jvmti/README.md). Their timing and compatibility boundaries remain separate.
 
 Reports, acquisition manifests, provenance and compact validation summaries belong in Git. Downloads, built tools, caches, full observations and profiler captures stay ignored. The [evidence manifest](../research/evidence.json) identifies retained raw data by path, size and hash; those files have no separately published download location.
 

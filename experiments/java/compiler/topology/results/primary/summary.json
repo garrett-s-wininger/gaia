@@ -1,0 +1,1495 @@
+{
+  "schema_version": 1,
+  "run_id": "20261031T050038.762680Z",
+  "scope": "Whole-target Picocli compiler pool topology; late window is not a convergence claim",
+  "aggregate_heap_cap_mib": 3072,
+  "common_cpu_count": 8,
+  "tasks_per_batch": 8,
+  "late_batches_per_case": 2,
+  "trials": 3,
+  "sample_interval_seconds": 0,
+  "gc_diagnostic": false,
+  "groups": [
+    {
+      "slots": 1,
+      "jvms": 1,
+      "blocks": 3,
+      "startup_seconds": 0.09649164500297047,
+      "first_batch_seconds": 4.167096154000319,
+      "late_case_median_seconds": 1.7329746360046556,
+      "after_late_pss_bytes": 716821504,
+      "after_late_private_bytes": 716525568,
+      "after_late_rss_bytes": 719659008,
+      "after_late_heap_used_bytes": 440699864,
+      "after_late_heap_committed_bytes": 522190848
+    },
+    {
+      "slots": 2,
+      "jvms": 1,
+      "blocks": 3,
+      "startup_seconds": 0.10854247500537895,
+      "first_batch_seconds": 3.151079981995281,
+      "late_case_median_seconds": 1.0781969415002095,
+      "after_late_pss_bytes": 1078704128,
+      "after_late_private_bytes": 1071595520,
+      "after_late_rss_bytes": 1088360448,
+      "after_late_heap_used_bytes": 526269960,
+      "after_late_heap_committed_bytes": 874512384
+    },
+    {
+      "slots": 2,
+      "jvms": 2,
+      "blocks": 3,
+      "startup_seconds": 0.1017100829994888,
+      "first_batch_seconds": 3.9608305820001988,
+      "late_case_median_seconds": 1.438059019499633,
+      "after_late_pss_bytes": 1244189696,
+      "after_late_private_bytes": 1206046720,
+      "after_late_rss_bytes": 1287671808,
+      "after_late_heap_used_bytes": 706535712,
+      "after_late_heap_committed_bytes": 942669824
+    },
+    {
+      "slots": 4,
+      "jvms": 1,
+      "blocks": 3,
+      "startup_seconds": 0.09771703599835746,
+      "first_batch_seconds": 2.8948898579983506,
+      "late_case_median_seconds": 0.7944882990013866,
+      "after_late_pss_bytes": 1645818880,
+      "after_late_private_bytes": 1638543360,
+      "after_late_rss_bytes": 1669345280,
+      "after_late_heap_used_bytes": 997777024,
+      "after_late_heap_committed_bytes": 1442840576
+    },
+    {
+      "slots": 4,
+      "jvms": 4,
+      "blocks": 3,
+      "startup_seconds": 0.1318245900038164,
+      "first_batch_seconds": 4.483925206994172,
+      "late_case_median_seconds": 1.3913381799975468,
+      "after_late_pss_bytes": 1550850048,
+      "after_late_private_bytes": 1512357888,
+      "after_late_rss_bytes": 1675837440,
+      "after_late_heap_used_bytes": 680835184,
+      "after_late_heap_committed_bytes": 1119879168
+    },
+    {
+      "slots": 8,
+      "jvms": 1,
+      "blocks": 3,
+      "startup_seconds": 0.09489998500066577,
+      "first_batch_seconds": 2.9245731689952663,
+      "late_case_median_seconds": 0.9391686900016794,
+      "after_late_pss_bytes": 1947604992,
+      "after_late_private_bytes": 1940316160,
+      "after_late_rss_bytes": 1999388672,
+      "after_late_heap_used_bytes": 970959416,
+      "after_late_heap_committed_bytes": 1742733312
+    },
+    {
+      "slots": 8,
+      "jvms": 8,
+      "blocks": 3,
+      "startup_seconds": 0.20512885799689684,
+      "first_batch_seconds": 6.4476270279992605,
+      "late_case_median_seconds": 1.9845329290001246,
+      "after_late_pss_bytes": 1987506176,
+      "after_late_private_bytes": 1948741632,
+      "after_late_rss_bytes": 2274881536,
+      "after_late_heap_used_bytes": 703215816,
+      "after_late_heap_committed_bytes": 1237319680
+    }
+  ],
+  "pairs": [
+    {
+      "slots": 2,
+      "blocks": [
+        {
+          "block": 0,
+          "one_first_seconds": 3.129293245001463,
+          "many_first_seconds": 4.009708874000353,
+          "one_late_seconds": 1.0781969415002095,
+          "many_late_seconds": 1.447984415499377,
+          "one_pss_bytes": 1073160192,
+          "many_pss_bytes": 1160126464
+        },
+        {
+          "block": 1,
+          "one_first_seconds": 3.4624966999981552,
+          "many_first_seconds": 3.9198431339973467,
+          "one_late_seconds": 1.0341629499998817,
+          "many_late_seconds": 1.3753352985040692,
+          "one_pss_bytes": 1078704128,
+          "many_pss_bytes": 1244189696
+        },
+        {
+          "block": 2,
+          "one_first_seconds": 3.151079981995281,
+          "many_first_seconds": 3.9608305820001988,
+          "one_late_seconds": 1.1465457394951954,
+          "many_late_seconds": 1.438059019499633,
+          "one_pss_bytes": 1201950720,
+          "many_pss_bytes": 1399398400
+        }
+      ],
+      "one_first_wins": 3,
+      "one_late_wins": 3,
+      "one_after_late_pss_wins": 3
+    },
+    {
+      "slots": 4,
+      "blocks": [
+        {
+          "block": 0,
+          "one_first_seconds": 2.9212001680061803,
+          "many_first_seconds": 4.483925206994172,
+          "one_late_seconds": 0.7944882990013866,
+          "many_late_seconds": 1.322014001001662,
+          "one_pss_bytes": 1645818880,
+          "many_pss_bytes": 1550850048
+        },
+        {
+          "block": 1,
+          "one_first_seconds": 2.8138757560009253,
+          "many_first_seconds": 4.528554427000927,
+          "one_late_seconds": 0.7682510475024174,
+          "many_late_seconds": 1.3932162829987647,
+          "one_pss_bytes": 1529684992,
+          "many_pss_bytes": 1554691072
+        },
+        {
+          "block": 2,
+          "one_first_seconds": 2.8948898579983506,
+          "many_first_seconds": 4.348459257998911,
+          "one_late_seconds": 0.8850295659976837,
+          "many_late_seconds": 1.3913381799975468,
+          "one_pss_bytes": 1658411008,
+          "many_pss_bytes": 1331909632
+        }
+      ],
+      "one_first_wins": 3,
+      "one_late_wins": 3,
+      "one_after_late_pss_wins": 1
+    },
+    {
+      "slots": 8,
+      "blocks": [
+        {
+          "block": 0,
+          "one_first_seconds": 2.747703882996575,
+          "many_first_seconds": 6.4476270279992605,
+          "one_late_seconds": 0.7689818799990462,
+          "many_late_seconds": 2.028456271498726,
+          "one_pss_bytes": 1947604992,
+          "many_pss_bytes": 1988806656
+        },
+        {
+          "block": 1,
+          "one_first_seconds": 2.9245731689952663,
+          "many_first_seconds": 6.575836619995243,
+          "one_late_seconds": 0.9986455149955873,
+          "many_late_seconds": 1.9845329290001246,
+          "one_pss_bytes": 1477179392,
+          "many_pss_bytes": 1965821952
+        },
+        {
+          "block": 2,
+          "one_first_seconds": 2.931493202006095,
+          "many_first_seconds": 6.350899148004828,
+          "one_late_seconds": 0.9391686900016794,
+          "many_late_seconds": 1.8633091834999504,
+          "one_pss_bytes": 1949022208,
+          "many_pss_bytes": 1987506176
+        }
+      ],
+      "one_first_wins": 3,
+      "one_late_wins": 3,
+      "one_after_late_pss_wins": 3
+    }
+  ],
+  "cases": [
+    {
+      "block": 0,
+      "slots": 2,
+      "jvms": 1,
+      "workers_per_jvm": 2,
+      "start_seconds": 0.12269959800323704,
+      "shutdown_seconds": 0.10866895200160798,
+      "whole_session_seconds": 6.974047692994645,
+      "batch_seconds": {
+        "first": 3.129293245001463,
+        "warmup_excluded": 1.283589591999771,
+        "late": [
+          1.0781282989992178,
+          1.0782655840012012
+        ]
+      },
+      "late_case_median_seconds": 1.0781969415002095,
+      "jvm_cpu_seconds": {
+        "first": 16.61,
+        "late": [
+          5.02,
+          3.7
+        ]
+      },
+      "memory": {
+        "memory_ready": {
+          "rss_bytes": 60444672,
+          "pss_bytes": 57766912,
+          "private_bytes": 57425920,
+          "read_ns": 1307614
+        },
+        "memory_after_first": {
+          "rss_bytes": 599351296,
+          "pss_bytes": 589700096,
+          "private_bytes": 582496256,
+          "read_ns": 10535272
+        },
+        "memory_after_warmup": {
+          "rss_bytes": 815386624,
+          "pss_bytes": 805735424,
+          "private_bytes": 798531584,
+          "read_ns": 12721188
+        },
+        "memory_after_steady": {
+          "rss_bytes": 1082814464,
+          "pss_bytes": 1073160192,
+          "private_bytes": 1065959424,
+          "read_ns": 16097276
+        },
+        "memory_after_consumer": {
+          "rss_bytes": 1091571712,
+          "pss_bytes": 1081901056,
+          "private_bytes": 1074716672,
+          "read_ns": 18699296
+        }
+      },
+      "heap_after_late": {
+        "heap_used": 526269960,
+        "heap_committed": 872415232
+      }
+    },
+    {
+      "block": 0,
+      "slots": 4,
+      "jvms": 4,
+      "workers_per_jvm": 1,
+      "start_seconds": 0.16424382099648938,
+      "shutdown_seconds": 0.04745291900326265,
+      "whole_session_seconds": 9.69483624399436,
+      "batch_seconds": {
+        "first": 4.483925206994172,
+        "warmup_excluded": 2.1987898130028043,
+        "late": [
+          1.4190114040029584,
+          1.2250165980003658
+        ]
+      },
+      "late_case_median_seconds": 1.322014001001662,
+      "jvm_cpu_seconds": {
+        "first": 34.21,
+        "late": [
+          10.74,
+          9.15
+        ]
+      },
+      "memory": {
+        "memory_ready": {
+          "rss_bytes": 235724800,
+          "pss_bytes": 145409024,
+          "private_bytes": 118341632,
+          "read_ns": 4795326
+        },
+        "memory_after_first": {
+          "rss_bytes": 1086902272,
+          "pss_bytes": 961935360,
+          "private_bytes": 923439104,
+          "read_ns": 18946948
+        },
+        "memory_after_warmup": {
+          "rss_bytes": 1352376320,
+          "pss_bytes": 1227390976,
+          "private_bytes": 1188896768,
+          "read_ns": 30404056
+        },
+        "memory_after_steady": {
+          "rss_bytes": 1675837440,
+          "pss_bytes": 1550850048,
+          "private_bytes": 1512357888,
+          "read_ns": 23340718
+        },
+        "memory_after_consumer": {
+          "rss_bytes": 1688084480,
+          "pss_bytes": 1562003456,
+          "private_bytes": 1523146752,
+          "read_ns": 24165964
+        }
+      },
+      "heap_after_late": {
+        "heap_used": 794724520,
+        "heap_committed": 1119879168
+      }
+    },
+    {
+      "block": 0,
+      "slots": 4,
+      "jvms": 1,
+      "workers_per_jvm": 4,
+      "start_seconds": 0.09565196000039577,
+      "shutdown_seconds": 0.1309634509962052,
+      "whole_session_seconds": 5.935147506002977,
+      "batch_seconds": {
+        "first": 2.9212001680061803,
+        "warmup_excluded": 1.0152837360001286,
+        "late": [
+          0.8468326229995,
+          0.7421439750032732
+        ]
+      },
+      "late_case_median_seconds": 0.7944882990013866,
+      "jvm_cpu_seconds": {
+        "first": 20.77,
+        "late": [
+          5.97,
+          5.14
+        ]
+      },
+      "memory": {
+        "memory_ready": {
+          "rss_bytes": 61890560,
+          "pss_bytes": 59174912,
+          "private_bytes": 58904576,
+          "read_ns": 1171114
+        },
+        "memory_after_first": {
+          "rss_bytes": 1003786240,
+          "pss_bytes": 980258816,
+          "private_bytes": 972984320,
+          "read_ns": 16568635
+        },
+        "memory_after_warmup": {
+          "rss_bytes": 1102237696,
+          "pss_bytes": 1078710272,
+          "private_bytes": 1071435776,
+          "read_ns": 16276651
+        },
+        "memory_after_steady": {
+          "rss_bytes": 1669345280,
+          "pss_bytes": 1645818880,
+          "private_bytes": 1638543360,
+          "read_ns": 23032050
+        },
+        "memory_after_consumer": {
+          "rss_bytes": 1678168064,
+          "pss_bytes": 1654641664,
+          "private_bytes": 1647366144,
+          "read_ns": 20682126
+        }
+      },
+      "heap_after_late": {
+        "heap_used": 1212659528,
+        "heap_committed": 1442840576
+      }
+    },
+    {
+      "block": 0,
+      "slots": 8,
+      "jvms": 8,
+      "workers_per_jvm": 1,
+      "start_seconds": 0.20512885799689684,
+      "shutdown_seconds": 0.05842011400090996,
+      "whole_session_seconds": 13.633166770996468,
+      "batch_seconds": {
+        "first": 6.4476270279992605,
+        "warmup_excluded": 2.6459763380044024,
+        "late": [
+          2.1012661929999013,
+          1.9556463499975507
+        ]
+      },
+      "late_case_median_seconds": 2.028456271498726,
+      "jvm_cpu_seconds": {
+        "first": 50.22,
+        "late": [
+          15.75,
+          14.83
+        ]
+      },
+      "memory": {
+        "memory_ready": {
+          "rss_bytes": 471662592,
+          "pss_bytes": 264844288,
+          "private_bytes": 237555712,
+          "read_ns": 7897880
+        },
+        "memory_after_first": {
+          "rss_bytes": 1625939968,
+          "pss_bytes": 1338451968,
+          "private_bytes": 1299681280,
+          "read_ns": 23618946
+        },
+        "memory_after_warmup": {
+          "rss_bytes": 1966682112,
+          "pss_bytes": 1679194112,
+          "private_bytes": 1640423424,
+          "read_ns": 44563828
+        },
+        "memory_after_steady": {
+          "rss_bytes": 2276294656,
+          "pss_bytes": 1988806656,
+          "private_bytes": 1950035968,
+          "read_ns": 34620252
+        },
+        "memory_after_consumer": {
+          "rss_bytes": 2294702080,
+          "pss_bytes": 2004665344,
+          "private_bytes": 1965527040,
+          "read_ns": 33005672
+        }
+      },
+      "heap_after_late": {
+        "heap_used": 703215816,
+        "heap_committed": 1320157184
+      }
+    },
+    {
+      "block": 0,
+      "slots": 1,
+      "jvms": 1,
+      "workers_per_jvm": 1,
+      "start_seconds": 0.10165174499707064,
+      "shutdown_seconds": 0.06487937999918358,
+      "whole_session_seconds": 9.871251682001457,
+      "batch_seconds": {
+        "first": 4.1944939010063536,
+        "warmup_excluded": 1.90550162299769,
+        "late": [
+          1.8039440240027034,
+          1.6656133189972024
+        ]
+      },
+      "late_case_median_seconds": 1.734778671499953,
+      "jvm_cpu_seconds": {
+        "first": 16.98,
+        "late": [
+          3.4,
+          2.85
+        ]
+      },
+      "memory": {
+        "memory_ready": {
+          "rss_bytes": 59658240,
+          "pss_bytes": 56937472,
+          "private_bytes": 56655872,
+          "read_ns": 1317512
+        },
+        "memory_after_first": {
+          "rss_bytes": 612196352,
+          "pss_bytes": 609358848,
+          "private_bytes": 609062912,
+          "read_ns": 10367118
+        },
+        "memory_after_warmup": {
+          "rss_bytes": 716873728,
+          "pss_bytes": 714036224,
+          "private_bytes": 713740288,
+          "read_ns": 10798983
+        },
+        "memory_after_steady": {
+          "rss_bytes": 719659008,
+          "pss_bytes": 716821504,
+          "private_bytes": 716525568,
+          "read_ns": 10627628
+        },
+        "memory_after_consumer": {
+          "rss_bytes": 728313856,
+          "pss_bytes": 725476352,
+          "private_bytes": 725180416,
+          "read_ns": 10530484
+        }
+      },
+      "heap_after_late": {
+        "heap_used": 466900920,
+        "heap_committed": 522190848
+      }
+    },
+    {
+      "block": 0,
+      "slots": 8,
+      "jvms": 1,
+      "workers_per_jvm": 8,
+      "start_seconds": 0.09549262499785982,
+      "shutdown_seconds": 0.16890855899691815,
+      "whole_session_seconds": 6.070325601998775,
+      "batch_seconds": {
+        "first": 2.747703882996575,
+        "warmup_excluded": 1.2938455869953032,
+        "late": [
+          0.7798504960010177,
+          0.7581132639970747
+        ]
+      },
+      "late_case_median_seconds": 0.7689818799990462,
+      "jvm_cpu_seconds": {
+        "first": 20.4,
+        "late": [
+          5.96,
+          5.7
+        ]
+      },
+      "memory": {
+        "memory_ready": {
+          "rss_bytes": 62926848,
+          "pss_bytes": 60203008,
+          "private_bytes": 59920384,
+          "read_ns": 1866111
+        },
+        "memory_after_first": {
+          "rss_bytes": 886550528,
+          "pss_bytes": 834766848,
+          "private_bytes": 827478016,
+          "read_ns": 16984480
+        },
+        "memory_after_warmup": {
+          "rss_bytes": 1763852288,
+          "pss_bytes": 1712068608,
+          "private_bytes": 1704779776,
+          "read_ns": 22977148
+        },
+        "memory_after_steady": {
+          "rss_bytes": 1999388672,
+          "pss_bytes": 1947604992,
+          "private_bytes": 1940316160,
+          "read_ns": 26914279
+        },
+        "memory_after_consumer": {
+          "rss_bytes": 2008084480,
+          "pss_bytes": 1956300800,
+          "private_bytes": 1949011968,
+          "read_ns": 25470890
+        }
+      },
+      "heap_after_late": {
+        "heap_used": 1001390080,
+        "heap_committed": 1742733312
+      }
+    },
+    {
+      "block": 0,
+      "slots": 2,
+      "jvms": 2,
+      "workers_per_jvm": 1,
+      "start_seconds": 0.10149292199639603,
+      "shutdown_seconds": 0.05467438499908894,
+      "whole_session_seconds": 8.963714954006718,
+      "batch_seconds": {
+        "first": 4.009708874000353,
+        "warmup_excluded": 1.7566517169980216,
+        "late": [
+          1.5656978719998733,
+          1.3302709589988808
+        ]
+      },
+      "late_case_median_seconds": 1.447984415499377,
+      "jvm_cpu_seconds": {
+        "first": 26.27,
+        "late": [
+          9.2,
+          6.25
+        ]
+      },
+      "memory": {
+        "memory_ready": {
+          "rss_bytes": 118628352,
+          "pss_bytes": 86727680,
+          "private_bytes": 59940864,
+          "read_ns": 2574205
+        },
+        "memory_after_first": {
+          "rss_bytes": 786571264,
+          "pss_bytes": 743026688,
+          "private_bytes": 704831488,
+          "read_ns": 12027097
+        },
+        "memory_after_warmup": {
+          "rss_bytes": 1037869056,
+          "pss_bytes": 994324480,
+          "private_bytes": 956129280,
+          "read_ns": 16093149
+        },
+        "memory_after_steady": {
+          "rss_bytes": 1203671040,
+          "pss_bytes": 1160126464,
+          "private_bytes": 1121931264,
+          "read_ns": 16441375
+        },
+        "memory_after_consumer": {
+          "rss_bytes": 1213247488,
+          "pss_bytes": 1169338368,
+          "private_bytes": 1130778624,
+          "read_ns": 16784305
+        }
+      },
+      "heap_after_late": {
+        "heap_used": 706535712,
+        "heap_committed": 846200832
+      }
+    },
+    {
+      "block": 1,
+      "slots": 4,
+      "jvms": 4,
+      "workers_per_jvm": 1,
+      "start_seconds": 0.12060310200467939,
+      "shutdown_seconds": 0.046520080002665054,
+      "whole_session_seconds": 9.514409739997063,
+      "batch_seconds": {
+        "first": 4.528554427000927,
+        "warmup_excluded": 1.8797305040061474,
+        "late": [
+          1.4095278919994598,
+          1.3769046739980695
+        ]
+      },
+      "late_case_median_seconds": 1.3932162829987647,
+      "jvm_cpu_seconds": {
+        "first": 34.76,
+        "late": [
+          10.75,
+          10.46
+        ]
+      },
+      "memory": {
+        "memory_ready": {
+          "rss_bytes": 235384832,
+          "pss_bytes": 145089536,
+          "private_bytes": 118026240,
+          "read_ns": 4668160
+        },
+        "memory_after_first": {
+          "rss_bytes": 1073385472,
+          "pss_bytes": 948528128,
+          "private_bytes": 909996032,
+          "read_ns": 17698910
+        },
+        "memory_after_warmup": {
+          "rss_bytes": 1348366336,
+          "pss_bytes": 1223508992,
+          "private_bytes": 1184976896,
+          "read_ns": 19486863
+        },
+        "memory_after_steady": {
+          "rss_bytes": 1679548416,
+          "pss_bytes": 1554691072,
+          "private_bytes": 1516158976,
+          "read_ns": 24157337
+        },
+        "memory_after_consumer": {
+          "rss_bytes": 1691389952,
+          "pss_bytes": 1565438976,
+          "private_bytes": 1526542336,
+          "read_ns": 22954008
+        }
+      },
+      "heap_after_late": {
+        "heap_used": 680835184,
+        "heap_committed": 1128267776
+      }
+    },
+    {
+      "block": 1,
+      "slots": 2,
+      "jvms": 2,
+      "workers_per_jvm": 1,
+      "start_seconds": 0.10291114800202195,
+      "shutdown_seconds": 0.058025682003062684,
+      "whole_session_seconds": 8.603227350999077,
+      "batch_seconds": {
+        "first": 3.9198431339973467,
+        "warmup_excluded": 1.6419004559938912,
+        "late": [
+          1.5100206160059315,
+          1.240649981002207
+        ]
+      },
+      "late_case_median_seconds": 1.3753352985040692,
+      "jvm_cpu_seconds": {
+        "first": 25.99,
+        "late": [
+          8.91,
+          5.43
+        ]
+      },
+      "memory": {
+        "memory_ready": {
+          "rss_bytes": 118616064,
+          "pss_bytes": 86799360,
+          "private_bytes": 60108800,
+          "read_ns": 2234892
+        },
+        "memory_after_first": {
+          "rss_bytes": 741548032,
+          "pss_bytes": 698065920,
+          "private_bytes": 659922944,
+          "read_ns": 12442176
+        },
+        "memory_after_warmup": {
+          "rss_bytes": 936456192,
+          "pss_bytes": 892974080,
+          "private_bytes": 854831104,
+          "read_ns": 16436001
+        },
+        "memory_after_steady": {
+          "rss_bytes": 1287671808,
+          "pss_bytes": 1244189696,
+          "private_bytes": 1206046720,
+          "read_ns": 17956070
+        },
+        "memory_after_consumer": {
+          "rss_bytes": 1297010688,
+          "pss_bytes": 1253270528,
+          "private_bytes": 1214869504,
+          "read_ns": 17870264
+        }
+      },
+      "heap_after_late": {
+        "heap_used": 621308992,
+        "heap_committed": 942669824
+      }
+    },
+    {
+      "block": 1,
+      "slots": 1,
+      "jvms": 1,
+      "workers_per_jvm": 1,
+      "start_seconds": 0.09649164500297047,
+      "shutdown_seconds": 0.0503528110057232,
+      "whole_session_seconds": 9.792742297999212,
+      "batch_seconds": {
+        "first": 4.109208199995919,
+        "warmup_excluded": 1.9078263780029374,
+        "late": [
+          1.8140562780026812,
+          1.65189299400663
+        ]
+      },
+      "late_case_median_seconds": 1.7329746360046556,
+      "jvm_cpu_seconds": {
+        "first": 16.73,
+        "late": [
+          3.13,
+          2.62
+        ]
+      },
+      "memory": {
+        "memory_ready": {
+          "rss_bytes": 59596800,
+          "pss_bytes": 56872960,
+          "private_bytes": 56590336,
+          "read_ns": 1343620
+        },
+        "memory_after_first": {
+          "rss_bytes": 552370176,
+          "pss_bytes": 549529600,
+          "private_bytes": 549232640,
+          "read_ns": 8884380
+        },
+        "memory_after_warmup": {
+          "rss_bytes": 686460928,
+          "pss_bytes": 683620352,
+          "private_bytes": 683323392,
+          "read_ns": 10524918
+        },
+        "memory_after_steady": {
+          "rss_bytes": 688750592,
+          "pss_bytes": 685910016,
+          "private_bytes": 685613056,
+          "read_ns": 11337183
+        },
+        "memory_after_consumer": {
+          "rss_bytes": 565456896,
+          "pss_bytes": 562616320,
+          "private_bytes": 562319360,
+          "read_ns": 9387218
+        }
+      },
+      "heap_after_late": {
+        "heap_used": 440699864,
+        "heap_committed": 492830720
+      }
+    },
+    {
+      "block": 1,
+      "slots": 2,
+      "jvms": 1,
+      "workers_per_jvm": 2,
+      "start_seconds": 0.10465992800163804,
+      "shutdown_seconds": 0.08942214700073237,
+      "whole_session_seconds": 7.474180336997961,
+      "batch_seconds": {
+        "first": 3.4624966999981552,
+        "warmup_excluded": 1.5770478589984123,
+        "late": [
+          1.1072506249984144,
+          0.9610752750013489
+        ]
+      },
+      "late_case_median_seconds": 1.0341629499998817,
+      "jvm_cpu_seconds": {
+        "first": 18.36,
+        "late": [
+          5.29,
+          3.45
+        ]
+      },
+      "memory": {
+        "memory_ready": {
+          "rss_bytes": 60456960,
+          "pss_bytes": 57724928,
+          "private_bytes": 57438208,
+          "read_ns": 1405438
+        },
+        "memory_after_first": {
+          "rss_bytes": 668860416,
+          "pss_bytes": 659204096,
+          "private_bytes": 652095488,
+          "read_ns": 10552424
+        },
+        "memory_after_warmup": {
+          "rss_bytes": 1084338176,
+          "pss_bytes": 1074681856,
+          "private_bytes": 1067573248,
+          "read_ns": 15970734
+        },
+        "memory_after_steady": {
+          "rss_bytes": 1088360448,
+          "pss_bytes": 1078704128,
+          "private_bytes": 1071595520,
+          "read_ns": 15932962
+        },
+        "memory_after_consumer": {
+          "rss_bytes": 1097117696,
+          "pss_bytes": 1087461376,
+          "private_bytes": 1080352768,
+          "read_ns": 14710683
+        }
+      },
+      "heap_after_late": {
+        "heap_used": 448196704,
+        "heap_committed": 874512384
+      }
+    },
+    {
+      "block": 1,
+      "slots": 8,
+      "jvms": 1,
+      "workers_per_jvm": 8,
+      "start_seconds": 0.09489998500066577,
+      "shutdown_seconds": 0.11785083100403426,
+      "whole_session_seconds": 6.905727687000763,
+      "batch_seconds": {
+        "first": 2.9245731689952663,
+        "warmup_excluded": 1.5708654509944608,
+        "late": [
+          1.192495177994715,
+          0.8047958519964595
+        ]
+      },
+      "late_case_median_seconds": 0.9986455149955873,
+      "jvm_cpu_seconds": {
+        "first": 21.67,
+        "late": [
+          9.13,
+          5.98
+        ]
+      },
+      "memory": {
+        "memory_ready": {
+          "rss_bytes": 62476288,
+          "pss_bytes": 59744256,
+          "private_bytes": 59457536,
+          "read_ns": 1306631
+        },
+        "memory_after_first": {
+          "rss_bytes": 960524288,
+          "pss_bytes": 908802048,
+          "private_bytes": 901509120,
+          "read_ns": 16566983
+        },
+        "memory_after_warmup": {
+          "rss_bytes": 1055326208,
+          "pss_bytes": 1003603968,
+          "private_bytes": 996311040,
+          "read_ns": 15271664
+        },
+        "memory_after_steady": {
+          "rss_bytes": 1528901632,
+          "pss_bytes": 1477179392,
+          "private_bytes": 1469886464,
+          "read_ns": 21897820
+        },
+        "memory_after_consumer": {
+          "rss_bytes": 1537568768,
+          "pss_bytes": 1485846528,
+          "private_bytes": 1478553600,
+          "read_ns": 21938534
+        }
+      },
+      "heap_after_late": {
+        "heap_used": 866123776,
+        "heap_committed": 1258291200
+      }
+    },
+    {
+      "block": 1,
+      "slots": 8,
+      "jvms": 8,
+      "workers_per_jvm": 1,
+      "start_seconds": 0.20186762099910993,
+      "shutdown_seconds": 0.055884316003357526,
+      "whole_session_seconds": 13.742533709999407,
+      "batch_seconds": {
+        "first": 6.575836619995243,
+        "warmup_excluded": 2.7084141329978593,
+        "late": [
+          2.1292117580014747,
+          1.8398540999987745
+        ]
+      },
+      "late_case_median_seconds": 1.9845329290001246,
+      "jvm_cpu_seconds": {
+        "first": 51.09,
+        "late": [
+          16.25,
+          13.75
+        ]
+      },
+      "memory": {
+        "memory_ready": {
+          "rss_bytes": 471425024,
+          "pss_bytes": 264755200,
+          "private_bytes": 237469696,
+          "read_ns": 8234328
+        },
+        "memory_after_first": {
+          "rss_bytes": 1606524928,
+          "pss_bytes": 1319276544,
+          "private_bytes": 1280520192,
+          "read_ns": 27647469
+        },
+        "memory_after_warmup": {
+          "rss_bytes": 1889755136,
+          "pss_bytes": 1602506752,
+          "private_bytes": 1563750400,
+          "read_ns": 35826353
+        },
+        "memory_after_steady": {
+          "rss_bytes": 2253070336,
+          "pss_bytes": 1965821952,
+          "private_bytes": 1927065600,
+          "read_ns": 32900564
+        },
+        "memory_after_consumer": {
+          "rss_bytes": 2255233024,
+          "pss_bytes": 1965432832,
+          "private_bytes": 1926311936,
+          "read_ns": 30320712
+        }
+      },
+      "heap_after_late": {
+        "heap_used": 695352896,
+        "heap_committed": 1214251008
+      }
+    },
+    {
+      "block": 1,
+      "slots": 4,
+      "jvms": 1,
+      "workers_per_jvm": 4,
+      "start_seconds": 0.09771703599835746,
+      "shutdown_seconds": 0.12504780999734066,
+      "whole_session_seconds": 5.754186782003671,
+      "batch_seconds": {
+        "first": 2.8138757560009253,
+        "warmup_excluded": 0.9833224399990286,
+        "late": [
+          0.8382732690006378,
+          0.6982288260041969
+        ]
+      },
+      "late_case_median_seconds": 0.7682510475024174,
+      "jvm_cpu_seconds": {
+        "first": 19.94,
+        "late": [
+          5.82,
+          4.8
+        ]
+      },
+      "memory": {
+        "memory_ready": {
+          "rss_bytes": 61710336,
+          "pss_bytes": 58981376,
+          "private_bytes": 58695680,
+          "read_ns": 1211138
+        },
+        "memory_after_first": {
+          "rss_bytes": 765423616,
+          "pss_bytes": 741794816,
+          "private_bytes": 734502912,
+          "read_ns": 12501208
+        },
+        "memory_after_warmup": {
+          "rss_bytes": 1306308608,
+          "pss_bytes": 1282679808,
+          "private_bytes": 1275387904,
+          "read_ns": 19508237
+        },
+        "memory_after_steady": {
+          "rss_bytes": 1553313792,
+          "pss_bytes": 1529684992,
+          "private_bytes": 1522393088,
+          "read_ns": 22531848
+        },
+        "memory_after_consumer": {
+          "rss_bytes": 1562796032,
+          "pss_bytes": 1539167232,
+          "private_bytes": 1531875328,
+          "read_ns": 20649219
+        }
+      },
+      "heap_after_late": {
+        "heap_used": 768936536,
+        "heap_committed": 1329594368
+      }
+    },
+    {
+      "block": 2,
+      "slots": 4,
+      "jvms": 4,
+      "workers_per_jvm": 1,
+      "start_seconds": 0.1318245900038164,
+      "shutdown_seconds": 0.048706870002206415,
+      "whole_session_seconds": 9.396872039003938,
+      "batch_seconds": {
+        "first": 4.348459257998911,
+        "warmup_excluded": 1.9459083340043435,
+        "late": [
+          1.505078798996692,
+          1.2775975609984016
+        ]
+      },
+      "late_case_median_seconds": 1.3913381799975468,
+      "jvm_cpu_seconds": {
+        "first": 33.64,
+        "late": [
+          11.48,
+          9.74
+        ]
+      },
+      "memory": {
+        "memory_ready": {
+          "rss_bytes": 236584960,
+          "pss_bytes": 146137088,
+          "private_bytes": 119050240,
+          "read_ns": 4240665
+        },
+        "memory_after_first": {
+          "rss_bytes": 1004081152,
+          "pss_bytes": 879064064,
+          "private_bytes": 840568832,
+          "read_ns": 19535899
+        },
+        "memory_after_warmup": {
+          "rss_bytes": 1386717184,
+          "pss_bytes": 1261700096,
+          "private_bytes": 1223204864,
+          "read_ns": 19064126
+        },
+        "memory_after_steady": {
+          "rss_bytes": 1456926720,
+          "pss_bytes": 1331909632,
+          "private_bytes": 1293414400,
+          "read_ns": 21860797
+        },
+        "memory_after_consumer": {
+          "rss_bytes": 1472053248,
+          "pss_bytes": 1345942528,
+          "private_bytes": 1307082752,
+          "read_ns": 20469847
+        }
+      },
+      "heap_after_late": {
+        "heap_used": 467499400,
+        "heap_committed": 1035993088
+      }
+    },
+    {
+      "block": 2,
+      "slots": 8,
+      "jvms": 8,
+      "workers_per_jvm": 1,
+      "start_seconds": 0.20641152399912244,
+      "shutdown_seconds": 0.05639322899514809,
+      "whole_session_seconds": 13.745864342999994,
+      "batch_seconds": {
+        "first": 6.350899148004828,
+        "warmup_excluded": 3.1682639150021714,
+        "late": [
+          1.9960333419949166,
+          1.7305850250049843
+        ]
+      },
+      "late_case_median_seconds": 1.8633091834999504,
+      "jvm_cpu_seconds": {
+        "first": 49.73,
+        "late": [
+          15.03,
+          13.12
+        ]
+      },
+      "memory": {
+        "memory_ready": {
+          "rss_bytes": 471547904,
+          "pss_bytes": 264702976,
+          "private_bytes": 237404160,
+          "read_ns": 7616516
+        },
+        "memory_after_first": {
+          "rss_bytes": 1642258432,
+          "pss_bytes": 1354883072,
+          "private_bytes": 1316118528,
+          "read_ns": 27175303
+        },
+        "memory_after_warmup": {
+          "rss_bytes": 1963450368,
+          "pss_bytes": 1676075008,
+          "private_bytes": 1637310464,
+          "read_ns": 50117929
+        },
+        "memory_after_steady": {
+          "rss_bytes": 2274881536,
+          "pss_bytes": 1987506176,
+          "private_bytes": 1948741632,
+          "read_ns": 38203392
+        },
+        "memory_after_consumer": {
+          "rss_bytes": 2291757056,
+          "pss_bytes": 2001827840,
+          "private_bytes": 1962700800,
+          "read_ns": 32159057
+        }
+      },
+      "heap_after_late": {
+        "heap_used": 764162088,
+        "heap_committed": 1237319680
+      }
+    },
+    {
+      "block": 2,
+      "slots": 1,
+      "jvms": 1,
+      "workers_per_jvm": 1,
+      "start_seconds": 0.09591090699541382,
+      "shutdown_seconds": 0.05779191500187153,
+      "whole_session_seconds": 9.819193067000015,
+      "batch_seconds": {
+        "first": 4.167096154000319,
+        "warmup_excluded": 1.9963504760016804,
+        "late": [
+          1.7172567140005413,
+          1.6250915490018087
+        ]
+      },
+      "late_case_median_seconds": 1.671174131501175,
+      "jvm_cpu_seconds": {
+        "first": 16.86,
+        "late": [
+          3.23,
+          2.73
+        ]
+      },
+      "memory": {
+        "memory_ready": {
+          "rss_bytes": 59650048,
+          "pss_bytes": 56918016,
+          "private_bytes": 56631296,
+          "read_ns": 1574527
+        },
+        "memory_after_first": {
+          "rss_bytes": 604614656,
+          "pss_bytes": 601765888,
+          "private_bytes": 601464832,
+          "read_ns": 9608257
+        },
+        "memory_after_warmup": {
+          "rss_bytes": 762064896,
+          "pss_bytes": 759216128,
+          "private_bytes": 758915072,
+          "read_ns": 11864696
+        },
+        "memory_after_steady": {
+          "rss_bytes": 765968384,
+          "pss_bytes": 763119616,
+          "private_bytes": 762818560,
+          "read_ns": 11214536
+        },
+        "memory_after_consumer": {
+          "rss_bytes": 642793472,
+          "pss_bytes": 639944704,
+          "private_bytes": 639643648,
+          "read_ns": 20189950
+        }
+      },
+      "heap_after_late": {
+        "heap_used": 231012216,
+        "heap_committed": 564133888
+      }
+    },
+    {
+      "block": 2,
+      "slots": 8,
+      "jvms": 1,
+      "workers_per_jvm": 8,
+      "start_seconds": 0.09484943900315557,
+      "shutdown_seconds": 0.1768899419985246,
+      "whole_session_seconds": 6.640766730000905,
+      "batch_seconds": {
+        "first": 2.931493202006095,
+        "warmup_excluded": 1.326183110999409,
+        "late": [
+          0.9557131690016831,
+          0.9226242110016756
+        ]
+      },
+      "late_case_median_seconds": 0.9391686900016794,
+      "jvm_cpu_seconds": {
+        "first": 21.7,
+        "late": [
+          7.18,
+          6.74
+        ]
+      },
+      "memory": {
+        "memory_ready": {
+          "rss_bytes": 63934464,
+          "pss_bytes": 61215744,
+          "private_bytes": 60940288,
+          "read_ns": 1210999
+        },
+        "memory_after_first": {
+          "rss_bytes": 1062363136,
+          "pss_bytes": 1010608128,
+          "private_bytes": 1003323392,
+          "read_ns": 16007506
+        },
+        "memory_after_warmup": {
+          "rss_bytes": 1142239232,
+          "pss_bytes": 1090484224,
+          "private_bytes": 1083199488,
+          "read_ns": 16717990
+        },
+        "memory_after_steady": {
+          "rss_bytes": 2000777216,
+          "pss_bytes": 1949022208,
+          "private_bytes": 1941737472,
+          "read_ns": 27174425
+        },
+        "memory_after_consumer": {
+          "rss_bytes": 2012753920,
+          "pss_bytes": 1960998912,
+          "private_bytes": 1953714176,
+          "read_ns": 27976800
+        }
+      },
+      "heap_after_late": {
+        "heap_used": 970959416,
+        "heap_committed": 1746927616
+      }
+    },
+    {
+      "block": 2,
+      "slots": 4,
+      "jvms": 1,
+      "workers_per_jvm": 4,
+      "start_seconds": 0.10032425099780085,
+      "shutdown_seconds": 0.1296327329982887,
+      "whole_session_seconds": 6.173810783999215,
+      "batch_seconds": {
+        "first": 2.8948898579983506,
+        "warmup_excluded": 1.0818605060048867,
+        "late": [
+          0.9110283009940758,
+          0.8590308310012915
+        ]
+      },
+      "late_case_median_seconds": 0.8850295659976837,
+      "jvm_cpu_seconds": {
+        "first": 20.53,
+        "late": [
+          6.37,
+          5.85
+        ]
+      },
+      "memory": {
+        "memory_ready": {
+          "rss_bytes": 61628416,
+          "pss_bytes": 58978304,
+          "private_bytes": 58724352,
+          "read_ns": 1755984
+        },
+        "memory_after_first": {
+          "rss_bytes": 815181824,
+          "pss_bytes": 791717888,
+          "private_bytes": 784453632,
+          "read_ns": 13464556
+        },
+        "memory_after_warmup": {
+          "rss_bytes": 1255231488,
+          "pss_bytes": 1231767552,
+          "private_bytes": 1224503296,
+          "read_ns": 18170161
+        },
+        "memory_after_steady": {
+          "rss_bytes": 1681874944,
+          "pss_bytes": 1658411008,
+          "private_bytes": 1651146752,
+          "read_ns": 22624279
+        },
+        "memory_after_consumer": {
+          "rss_bytes": 1690640384,
+          "pss_bytes": 1667176448,
+          "private_bytes": 1659912192,
+          "read_ns": 23134740
+        }
+      },
+      "heap_after_late": {
+        "heap_used": 997777024,
+        "heap_committed": 1455423488
+      }
+    },
+    {
+      "block": 2,
+      "slots": 2,
+      "jvms": 2,
+      "workers_per_jvm": 1,
+      "start_seconds": 0.1017100829994888,
+      "shutdown_seconds": 0.06781917999614961,
+      "whole_session_seconds": 8.950437192994286,
+      "batch_seconds": {
+        "first": 3.9608305820001988,
+        "warmup_excluded": 1.8129056059988216,
+        "late": [
+          1.459811549000733,
+          1.416306489998533
+        ]
+      },
+      "late_case_median_seconds": 1.438059019499633,
+      "jvm_cpu_seconds": {
+        "first": 25.82,
+        "late": [
+          8.45,
+          5.58
+        ]
+      },
+      "memory": {
+        "memory_ready": {
+          "rss_bytes": 118751232,
+          "pss_bytes": 86790144,
+          "private_bytes": 59932672,
+          "read_ns": 2247486
+        },
+        "memory_after_first": {
+          "rss_bytes": 729853952,
+          "pss_bytes": 686358528,
+          "private_bytes": 648142848,
+          "read_ns": 12260059
+        },
+        "memory_after_warmup": {
+          "rss_bytes": 1097830400,
+          "pss_bytes": 1054334976,
+          "private_bytes": 1016119296,
+          "read_ns": 16329058
+        },
+        "memory_after_steady": {
+          "rss_bytes": 1442893824,
+          "pss_bytes": 1399398400,
+          "private_bytes": 1361182720,
+          "read_ns": 18181417
+        },
+        "memory_after_consumer": {
+          "rss_bytes": 1452568576,
+          "pss_bytes": 1408708608,
+          "private_bytes": 1370128384,
+          "read_ns": 18625387
+        }
+      },
+      "heap_after_late": {
+        "heap_used": 848149872,
+        "heap_committed": 1074790400
+      }
+    },
+    {
+      "block": 2,
+      "slots": 2,
+      "jvms": 1,
+      "workers_per_jvm": 2,
+      "start_seconds": 0.10854247500537895,
+      "shutdown_seconds": 0.10570953799469862,
+      "whole_session_seconds": 7.143318098998861,
+      "batch_seconds": {
+        "first": 3.151079981995281,
+        "warmup_excluded": 1.3165970789996209,
+        "late": [
+          1.1842673469946021,
+          1.1088241319957888
+        ]
+      },
+      "late_case_median_seconds": 1.1465457394951954,
+      "jvm_cpu_seconds": {
+        "first": 16.65,
+        "late": [
+          5.63,
+          3.98
+        ]
+      },
+      "memory": {
+        "memory_ready": {
+          "rss_bytes": 60370944,
+          "pss_bytes": 57626624,
+          "private_bytes": 57384960,
+          "read_ns": 1315733
+        },
+        "memory_after_first": {
+          "rss_bytes": 679108608,
+          "pss_bytes": 669422592,
+          "private_bytes": 662249472,
+          "read_ns": 11271714
+        },
+        "memory_after_warmup": {
+          "rss_bytes": 990900224,
+          "pss_bytes": 981213184,
+          "private_bytes": 974041088,
+          "read_ns": 15259949
+        },
+        "memory_after_steady": {
+          "rss_bytes": 1211637760,
+          "pss_bytes": 1201950720,
+          "private_bytes": 1194778624,
+          "read_ns": 17551279
+        },
+        "memory_after_consumer": {
+          "rss_bytes": 1221750784,
+          "pss_bytes": 1212063744,
+          "private_bytes": 1204891648,
+          "read_ns": 17410494
+        }
+      },
+      "heap_after_late": {
+        "heap_used": 887323296,
+        "heap_committed": 1002438656
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "architecture": "Linux x86_64",
+  "toolchains": [
+    {
+      "id": "graalvm25",
+      "version": "Oracle GraalVM 25.0.4+7.1",
+      "url": "https://download.oracle.com/graalvm/25/archive/graalvm-jdk-25.0.4_linux-x64_bin.tar.gz",
+      "bytes": 380509826,
+      "sha256": "76007c309f821aaf435bce63162ea0395587fc77350801c81643fe7feea37276"
+    },
+    {
+      "id": "leyden-ea2",
+      "version": "OpenJDK 26-leydenpremain+1-24",
+      "url": "https://download.java.net/java/early_access/leyden/1/openjdk-26-leydenpremain+1_linux-x64_bin.tar.gz",
+      "bytes": 223789561,
+      "sha256": "866efe47f88fbe0b50dc0ba7e2ea501e0d760deacfa2b1d473fa991c285001dd"
+    },
+    {
+      "id": "oracle25",
+      "version": "Oracle JDK25.0.5.0.3+1-LTS-2",
+      "url": "https://download.oracle.com/java/25/latest/jdk-25_linux-x64_bin.tar.gz",
+      "bytes": 217100679,
+      "sha256": "6deafad80454d1f968105b1f582d89b8c2e88a5dfc98116a8226e0ec2fd5df8e",
+      "note": "Retained pinned archive; latest URL may change. Verify the hash before using it."
+    }
+  ],
+  "source_fixture": {
+    "version": "Picocli 4.7.7 source archive",
+    "url": "https://repo.maven.apache.org/maven2/info/picocli/picocli/4.7.7/picocli-4.7.7-sources.jar",
+    "sha256": "87916611c616588b20d987868f96e622de6ed447e4b1ff5b662ebd947773e9a6"
+  },
+  "scope": "All final endpoints compile the same source graph against the exact Graal25 target SDK module bytes. Runtime/JavaCompiler versions differ across groups; within each group independent CLI references and output hashes are checked. The source/toolchain hash is the identity, including URLs with latest in their path."
+}

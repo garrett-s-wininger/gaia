@@ -1,0 +1,74 @@
+{
+  "run_id": "20261031T050038.762680Z",
+  "raw": {
+    "path": "experiments/java/compiler/topology/results/primary/results.json",
+    "bytes": 376263,
+    "sha256": "ecff20b444bbbf2bef6a422f887d1f74797a1fa0b3462d6e8629a32d8dc90c71"
+  },
+  "source_sha256": {
+    "TopologyHarness.java": "3994e6926a2dbf8537af22288f4dead037af5444ba9a1f39c98971d6496aaa46",
+    "run_topology.py": "4a85e4160e9ae95d1f8de4764e23f04e86ad0035472c1b2cd515bce9ecbdfa8a",
+    "CompilerHarness.java": "777d2f64b4b08aded52ea9d7a8b377b684a92af6fb6191e0ed576a821ed04e04",
+    "benchmark.py": "71a4a2594912dd9fe6a9f7a65eb236e261d76528536905797d0fa27609ccbdba"
+  },
+  "source_snapshot_policy": "Four measured driver/harness sources frozen in ignored raw work directory and checked against current sources at publication",
+  "jdk": "java version \"25.0.5.0.3\" 2026-10-25 LTS\nJava(TM) SE Runtime Environment (build 25.0.5.0.3+1-LTS-2)\nJava HotSpot(TM) 64-Bit Server VM (build 25.0.5.0.3+1-LTS-2, mixed mode, sharing)\n",
+  "setup": {
+    "harness_compile_seconds": 2.5741824739961885,
+    "app_sha256": "93a7be6f15e53fa3355f3649d0e1af117e21f068dea635928b3578e8e0903c1b",
+    "jdk_java_sha256": "31b74dd33a6c966a20bececb38c3892476b4b2f023811901e4e41b194b34a7bb",
+    "jdk_modules_sha256": "f1c3cff6a4b07fafa56c48522526b690bb791e3e86befb1b490e3a529ae4058e",
+    "image_java_sha256": "31b74dd33a6c966a20bececb38c3892476b4b2f023811901e4e41b194b34a7bb",
+    "image_modules_sha256": "3340de6ae3a1c64342660c2ad53add89eb5422d3b72be04a0fd974cccb06af12"
+  },
+  "source_a_sha256": {
+    "picocli/AutoComplete.java": "0216345e21611a3ca3862b0c668a4f1426c4c2c2d7d3d21ff4bfb10f417424ae",
+    "picocli/CommandLine.java": "ab19325b58729b4fb7530af5e07151f9336620e1c0e9afead798bf48ec94c086",
+    "picocli/package-info.java": "3c88fb2435bb96c1ea2b1f91280ba34b26065ad4076a666d78f81f4c5cc4ded0"
+  },
+  "source_b_sha256": {
+    "picocli/AutoComplete.java": "0216345e21611a3ca3862b0c668a4f1426c4c2c2d7d3d21ff4bfb10f417424ae",
+    "picocli/CommandLine.java": "cdb9c5eb1e49855c830056a4ce50e793f46b7e31f92c1e03246f46c5ffe235e9",
+    "picocli/package-info.java": "3c88fb2435bb96c1ea2b1f91280ba34b26065ad4076a666d78f81f4c5cc4ded0"
+  },
+  "expected_outputs": [
+    {
+      "classes": 227,
+      "bytes": 755217,
+      "sha256": "b2444bc506cb537a4acf29406d41ba33271ffab79f2856c2e776e388fa37c2ae"
+    },
+    {
+      "classes": 227,
+      "bytes": 755261,
+      "sha256": "39e854eafed6f900e5aff64b5f541aa7b39ed29dc4f79cdd4b4835b4b7414a24"
+    }
+  ],
+  "target_versions": [
+    "4.7.7",
+    "4.7.7-gaia-probe"
+  ],
+  "origin_prepared_sha256": "bceb21d8477aca4704721181371332e8480b4fbf8f0e942e0b6beecde5b2bf1a",
+  "admitted_file_count": 13,
+  "admitted_sha256_by_role": {
+    "application/harness.jar": "93a7be6f15e53fa3355f3649d0e1af117e21f068dea635928b3578e8e0903c1b",
+    "target-sdk/bin/javac": "16be39daa639a497d9f1aeffaa2ce7a77b9d00ed13c778fa93cb1cc0a84befe9",
+    "target-sdk/lib/modules": "f1c3cff6a4b07fafa56c48522526b690bb791e3e86befb1b490e3a529ae4058e",
+    "runtime-image/bin/java": "31b74dd33a6c966a20bececb38c3892476b4b2f023811901e4e41b194b34a7bb",
+    "runtime-image/lib/modules": "3340de6ae3a1c64342660c2ad53add89eb5422d3b72be04a0fd974cccb06af12",
+    "runtime-image/lib/server/libjvm.so": "e32c3eb7f84d62cbde6775e2173b4a1ac96875249947c81cb33d6009c594bfd5",
+    "runtime-image/lib/server/classes.jsa": "789dbc50e30d6c349a10c699d31e8ef25ba30a0378aac0f8c88693d03b7ef3a1",
+    "source-a/picocli/AutoComplete.java": "0216345e21611a3ca3862b0c668a4f1426c4c2c2d7d3d21ff4bfb10f417424ae",
+    "source-a/picocli/CommandLine.java": "ab19325b58729b4fb7530af5e07151f9336620e1c0e9afead798bf48ec94c086",
+    "source-a/picocli/package-info.java": "3c88fb2435bb96c1ea2b1f91280ba34b26065ad4076a666d78f81f4c5cc4ded0",
+    "source-b/picocli/AutoComplete.java": "0216345e21611a3ca3862b0c668a4f1426c4c2c2d7d3d21ff4bfb10f417424ae",
+    "source-b/picocli/CommandLine.java": "cdb9c5eb1e49855c830056a4ce50e793f46b7e31f92c1e03246f46c5ffe235e9",
+    "source-b/picocli/package-info.java": "3c88fb2435bb96c1ea2b1f91280ba34b26065ad4076a666d78f81f4c5cc4ded0"
+  },
+  "admitted_input_policy": "Listed application jar, target javac/modules, selected image java/modules/libjvm/CDS and both listed source trees pinned before execution and rehashed after all cases; not a full OS or runtime closure",
+  "collection": "Sequential Linux smaps_rollup reads; per-case probes outside batch clocks; optional sampler can perturb diagnostic latency",
+  "publication_sources_sha256": {
+    "publish_topology.py": "4a4231fbcceaf5e6b29d403327e0bc95b6d07f741e8efefc5cf8296e4064f5ce",
+    "test_topology.py": "59f09426acabea2753221ed7e3436ba1211c8346ba9897e7b4fa8bec95c50d51",
+    "test_lifecycle.py": "18a582cae35252804524aaa1e686e3e1f8056617a1ce044716bcc79c7b318237"
+  }
+}

@@ -276,6 +276,21 @@
       "repeated_trace_validation": "experiments/compiler/cpp_graph/results/repeated-trace/validation.json",
       "implementation": "experiments/compiler/cpp_graph/README.md",
       "findings": "research/compiler/findings.md"
+    },
+    {
+      "id": "CC-SEMANTIC-INVALIDATION",
+      "status": "measured-direct-ast-and-exact-ir-versus-matched-seeded-ccache",
+      "report": "experiments/compiler/semantic_invalidation/results/REPORT.md",
+      "raw": "experiments/compiler/semantic_invalidation/results/direct-ast/results.json",
+      "summary": "experiments/compiler/semantic_invalidation/results/direct-ast/summary.json",
+      "validation": "experiments/compiler/semantic_invalidation/results/direct-ast/validation.json",
+      "initial_native_raw": "experiments/compiler/semantic_invalidation/results/native-json/results.json",
+      "initial_native_summary": "experiments/compiler/semantic_invalidation/results/native-json/summary.json",
+      "boundaries": "experiments/compiler/semantic_invalidation/results/boundaries/results.json",
+      "direct_boundaries": "experiments/compiler/semantic_invalidation/results/direct-boundaries/results.json",
+      "provenance": "experiments/compiler/semantic_invalidation/results/provenance.json",
+      "implementation": "experiments/compiler/semantic_invalidation/README.md",
+      "findings": "research/compiler/findings.md"
     }
   ],
   "raw_evidence": {

@@ -257,7 +257,7 @@
       "summary": "experiments/python/interpreter_snapshots/results/typescript/summary.json",
       "validation": "experiments/python/interpreter_snapshots/results/typescript/validation.json",
       "provenance": "experiments/python/interpreter_snapshots/results/typescript/provenance.json",
-      "findings": "research/python/interpreter-state.md#real-typescript-initialization-changes-the-result"
+      "findings": "research/python/interpreter-state.md#a-real-dependency-changes-the-node-snapshot-result"
     },
     {
       "id": "NODE-TYPESCRIPT-PROJECT-CLI",
@@ -268,7 +268,7 @@
       "summary": "experiments/python/interpreter_snapshots/results/typescript-project/summary.json",
       "validation": "experiments/python/interpreter_snapshots/results/typescript-project/validation.json",
       "provenance": "experiments/python/interpreter_snapshots/results/typescript-project/provenance.json",
-      "findings": "research/python/interpreter-state.md#full-project-cli-and-a-competent-cached-baseline"
+      "findings": "research/python/interpreter-state.md#the-complete-project-loses-to-a-competent-stock-cache"
     }
   ],
   "raw_evidence": {

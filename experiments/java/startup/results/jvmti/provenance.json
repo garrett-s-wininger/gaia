@@ -1,0 +1,34 @@
+{
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.44",
+  "jdk": "java version \"25.0.5.0.3\" 2026-10-25 LTS\nJava(TM) SE Runtime Environment (build 25.0.5.0.3+1-LTS-2)\nJava HotSpot(TM) 64-Bit Server VM (build 25.0.5.0.3+1-LTS-2, mixed mode, sharing)\n",
+  "inputs": {
+    "groovy-6.0.0.jar": "6bcbec490ac1ade0dca6566dca9d02897cbb8fc31ee4008e950451aa83b1ac76",
+    "picocli-4.7.7.jar": "f86e30fffd10d2b13b8caa8d4b237a7ee61f2ffccf5b1941de718b765d235bf8",
+    "phases.jar": "d06f2774836814ab0bec31dbda6ddfb1b8908a059ad58287b8357f76893ef085",
+    "stock.jsa": "933e7c8a0de8e6dc2746cfc8cd1e602ed2ced355394f6d96d4f6f5bb619a7197",
+    "agent.cpp": "c956d58c9fcbce897214f28818517aacf65d75f79d21e283a4be5b8339eac4f8",
+    "profile.py": "96a2985370f452173d7a4b6c2bdaacf3cbf170593282896fe93376b74d578122"
+  },
+  "native_compiler": "c++ (GCC) 16.2.1 20260810\nCopyright (C) 2026 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "measured_agent_binary_sha256": "1ff8484bf986bc2419b728e1e3e2352b933413fd7d72de0ff7c162cc7decbabd",
+  "measured_agent_source_sha256": "c956d58c9fcbce897214f28818517aacf65d75f79d21e283a4be5b8339eac4f8",
+  "measured_profiler_source_sha256": "96a2985370f452173d7a4b6c2bdaacf3cbf170593282896fe93376b74d578122",
+  "class_init_parser_correction": {
+    "correction": "Count actual Initializing messages; class+init also logs verification",
+    "original_results_sha256": "a4cf7fc7212d5ad63a14d2e39be96ef4d7a04c785f2942582b675094b3473157",
+    "corrected_parser_source_sha256": "7a34339d934c003b762fe2afcbc8328cc5706d3ad2920efd73afde1b57130c98"
+  },
+  "initial_diagnostic_agent_binary_sha256": "570e636e9e932661b4d302cd3964060c296a621e341e082cc47d5e98e0bb22fc",
+  "sources": {
+    "publish.py": "d9ba51579c3ce7adab1f09ca71e1235b43ccdacafa4977671af7bbd0470ea4c0",
+    "confirm.py": "c4c81f2796cc3b882bf8b360867a2a3c1895d454fc8340dab29e0f6655bfbc60",
+    "InitProbe.java": "68ee6e0e70fc8b844da2427233519023e462b81acfe82fe19aecf78620af170f",
+    "validate.py": "8e6fb91454b42a8b399a3401ade768e0bec5990526ef91bf58f0ab9cfe278d73",
+    "ModuleProbe.java": "3d68a0c3427e3778150d966528b60084b99053e83f25b3fd25e1803f48181af6",
+    "benchmark.py": "12c8acb5adc00f263f7b802b9cbcdcbdedd881f1d25bd794124a73820b872a02",
+    "prepare.py": "ced466f365dee87de432aa21d62f9bdadb8c29a091b53eaada9310e87431286d",
+    "profile.py": "7a34339d934c003b762fe2afcbc8328cc5706d3ad2920efd73afde1b57130c98",
+    "agent.cpp": "c956d58c9fcbce897214f28818517aacf65d75f79d21e283a4be5b8339eac4f8"
+  },
+  "raw_evidence": "Ignored local captures; no downloadable evidence archive published."
+}

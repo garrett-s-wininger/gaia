@@ -16,17 +16,24 @@ research/                         findings and prospects for human readers
     jvm/                          managed Java compiler findings and run index
   python/                         Python loading/resolution and Python/Node state reuse
   artifacts/                      transfer conclusions, next questions, run index
+  storage/                        modeled I/O sensitivity; actual device behavior separate
   java/                           JVM framework startup findings and run index
   ruby/                           Ruby loading findings and run index
   dotnet/                         .NET preparation findings and run index
 experiments/                      runnable code, lab notes and evidence
   compiler/
+    cpp_graph/                    multi-target C++ integration fixture
+    semantic_invalidation/        AST/IR object-reuse comparisons
   artifacts/
+  storage/
   python/dependency_bundles/
   python/dependency_solving/
   python/interpreter_snapshots/
   java/startup/
+    jvmti/                        bounded instrumentation and framework refinement
   java/compiler/
+    topology/                     one JVM versus multiple JVMs
+    variants/                     GC/JIT, Leyden and Native Image
   ruby_startup/
   dotnet_startup/
 tools/                            repository maintenance checks

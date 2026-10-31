@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "objects_checked": 120,
+  "unsafe_ast_mismatches": 0,
+  "fixed_context_unchanged": true,
+  "raw_sha256": "ad08544e2fce95bd1bc1d0882f4faa923a36ca1b19f7e93d79ac469205ce53b2",
+  "direct_candidate_repeated_benign_edits_match": true,
+  "ir_mode_never_builds_ast": true,
+  "unused_typedef_changes_preprocessed_but_preserves_objects": true,
+  "ccache_seeded_control_miss_for_typedef": true,
+  "scope": "Object-only; changed-source diagnostic replay and side products unsupported; private fixed-context experiment."
+}

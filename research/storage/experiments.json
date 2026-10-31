@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "path_base": "repository-root",
+  "track": "storage-service-sensitivity",
+  "experiments": [
+    {
+      "id": "STORAGE-SERVICE-MODEL",
+      "run_id": "20261031T044325.699070Z",
+      "status": "measured-explicit-storage-service-sensitivity",
+      "report": "experiments/storage/results/service-model/REPORT.md",
+      "raw": "experiments/storage/results/service-model/results.json",
+      "summary": "experiments/storage/results/service-model/summary.json",
+      "validation": "experiments/storage/results/service-model/validation.json",
+      "provenance": "experiments/storage/results/service-model/provenance.json",
+      "capabilities": "experiments/storage/results/service-model/capabilities.json",
+      "raw_identity": "experiments/storage/results/service-model/raw-identity.json",
+      "implementation": "experiments/storage/README.md",
+      "findings": "research/storage/findings.md"
+    }
+  ]
+}

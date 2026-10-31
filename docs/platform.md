@@ -44,7 +44,9 @@ Experimental iteration can move quickly. Once a data contract is stabilized, inc
 
 ## What the measurements suggest
 
-The strongest compiler gains came from avoiding repeated work: reusable processes, better dispatch order and correctly scoped object reuse. Removing object-file traffic alone did little on the tested C libraries. Selective dependency validation helped low-fanout header edits but added overhead to unchanged work. Python experiments similarly separated container access from interpreter/framework work.
+The strongest compiler gains came from avoiding repeated work: initialized workers, admitted inputs and correctly scoped result reuse. A compiler-IR checkpoint can preserve an object across some source changes that defeat preprocessing caches. Maintaining observations and validating reuse still have measurable costs. Removing object-file traffic alone did little on the tested C libraries.
+
+Managed-language results distinguish first use from later execution, and throughput from retained memory. Storage-service tests likewise separate request latency from bandwidth and eager overfetch. These findings support explicit interfaces and lifetime accounting; they do not imply one universal container, runtime or cache policy.
 
 Read [the findings](../research/findings.md) for the evidence and [the prospects](../research/prospects.md) for the next questions. Effects are specific to their workloads and timing boundaries; a warm page cache is not cold storage, and an admitted-input consumer time does not include initial SDK discovery.
 

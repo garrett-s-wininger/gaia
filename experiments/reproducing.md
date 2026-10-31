@@ -23,6 +23,8 @@ For Python installations without bundled pip wheels, set `GAIA_PIP_WHEEL` to a l
 
 ## Artifact transfer
 
+The [storage-service sensitivity study](storage/README.md) reuses the producer-preindexed Python artifacts to vary logical read/write latency and bandwidth. It charges full import/sealing and installation. Regenerate compatible producer artifacts first; modeled service cost is distinct from physical-device throttling or cold filesystem pages.
+
 The first artifact baseline needs only Python's standard library and permission to open loopback sockets. It starts its own server process and generates deterministic content; no LLVM/Odin installation or remote infrastructure is needed for this protocol-shape comparison.
 
 ```sh
@@ -108,6 +110,10 @@ The [Java startup experiment](java/startup/README.md) uses a local JDK and pinne
 ## Managed JVM compilers
 
 The [JVM compiler experiment](java/compiler/README.md) creates a local jlink runtime and compatible default CDS archive, then optionally trains a compiler AOT cache. It compares actual pinned-source CLI/API compilations, normal lifecycle and independent complete-target queues. The target SDK remains an explicit separate input. Rebuild preparation on the measured JDK; no retained binary, source archive path or original worktree is required.
+
+The [topology continuation](java/compiler/topology/README.md) compares one JVM with private compiler threads against separate JVMs at the same foreground concurrency and aggregate heap budget. Its continuous memory sampler and requested-GC trace are separate diagnostics. Rebuild the harness and retain the complete-target bytecode/recovery checks.
+
+The [execution continuation](java/compiler/variants/README.md) tests GC/tiering, Leyden compiled methods and optimized Native Image. It has pinned toolchain acquisition, SDK adaptation and build/recording steps. Native Image's build-time collector is separate from a JVM collector flag; resource limits and failed Epsilon growth are part of the evidence. Compare first compilation, later compiler-body work and whole process time separately.
 
 ## Interpreter and managed-runtime startup
 

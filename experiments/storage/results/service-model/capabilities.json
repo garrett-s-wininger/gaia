@@ -1,0 +1,12 @@
+{
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.44",
+  "python": "3.14.8 (main, Oct  2 2026, 10:23:31) [GCC 16.2.1 20260810]",
+  "python_binary_sha256": "375532f83be620283ab780c14ca6bcc5907dc379d2b621de0c5d0a112cf5458b",
+  "effective_capabilities_hex": "0000000000000000",
+  "cgroup_mount_options": "ro,nosuid,nodev,noexec,relatime,nsdelegate",
+  "fuse_device_present": false,
+  "userfaultfd_device_present": false,
+  "unprivileged_userfaultfd": "0",
+  "userfaultfd_user_mode_only_descriptor_opened": true,
+  "userfaultfd_probe_errno": 0
+}

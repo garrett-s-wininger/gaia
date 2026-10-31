@@ -13,6 +13,52 @@
       "validation": "experiments/java/compiler/results/initial/validation.json",
       "provenance": "experiments/java/compiler/results/initial/provenance.json",
       "findings": "research/compiler/jvm/findings.md"
+    },
+    {
+      "id": "JVM-COMPILER-TOPOLOGY",
+      "run_id": "20261031T050038.762680Z",
+      "status": "measured-shared-jvm-private-workers-and-separate-memory-diagnostic",
+      "report": "experiments/java/compiler/topology/results/primary/REPORT.md",
+      "raw": "experiments/java/compiler/topology/results/primary/results.json",
+      "summary": "experiments/java/compiler/topology/results/primary/summary.json",
+      "validation": "experiments/java/compiler/topology/results/primary/validation.json",
+      "provenance": "experiments/java/compiler/topology/results/primary/provenance.json",
+      "memory_report": "experiments/java/compiler/topology/results/long-memory/REPORT.md",
+      "memory_raw": "experiments/java/compiler/topology/results/long-memory/results.json",
+      "memory_summary": "experiments/java/compiler/topology/results/long-memory/summary.json",
+      "memory_validation": "experiments/java/compiler/topology/results/long-memory/validation.json",
+      "incomplete_attempt": "experiments/java/compiler/topology/results/failed-perfdata/REPORT.md",
+      "findings": "research/compiler/jvm/findings.md"
+    },
+    {
+      "id": "JVM-COMPILER-FLAGS",
+      "status": "measured-with-cli-output-and-lifecycle-guards",
+      "report": "experiments/java/compiler/results/variants/REPORT.md",
+      "raw": "experiments/java/compiler/results/variants/flags/results.json",
+      "summary": "experiments/java/compiler/results/variants/summary.json",
+      "validation": "experiments/java/compiler/results/variants/validation.json",
+      "provenance": "experiments/java/compiler/results/variants/provenance.json",
+      "findings": "research/compiler/jvm/findings.md"
+    },
+    {
+      "id": "JVM-COMPILER-HEAD",
+      "status": "measured-with-cli-output-and-lifecycle-guards",
+      "report": "experiments/java/compiler/results/variants/REPORT.md",
+      "raw": "experiments/java/compiler/results/variants/head/results.json",
+      "summary": "experiments/java/compiler/results/variants/summary.json",
+      "validation": "experiments/java/compiler/results/variants/validation.json",
+      "provenance": "experiments/java/compiler/results/variants/provenance.json",
+      "findings": "research/compiler/jvm/findings.md"
+    },
+    {
+      "id": "JVM-COMPILER-EPSILON",
+      "status": "measured-with-cli-output-and-lifecycle-guards",
+      "report": "experiments/java/compiler/results/variants/REPORT.md",
+      "raw": "experiments/java/compiler/results/variants/epsilon/results.json",
+      "summary": "experiments/java/compiler/results/variants/summary.json",
+      "validation": "experiments/java/compiler/results/variants/validation.json",
+      "provenance": "experiments/java/compiler/results/variants/provenance.json",
+      "findings": "research/compiler/jvm/findings.md"
     }
   ],
   "raw_evidence": {

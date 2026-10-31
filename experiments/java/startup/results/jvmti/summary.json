@@ -1,0 +1,850 @@
+{
+  "schema": "GAIA-JVMTI-REVIEW-1",
+  "overhead": [
+    {
+      "workload": "registry",
+      "mode": "none",
+      "median_ms": 195.189451,
+      "min_ms": 194.351967,
+      "max_ms": 234.312428,
+      "overhead_percent": 0.0
+    },
+    {
+      "workload": "registry",
+      "mode": "idle",
+      "median_ms": 198.885487,
+      "min_ms": 194.016624,
+      "max_ms": 205.370436,
+      "overhead_percent": 1.8935633975424304
+    },
+    {
+      "workload": "registry",
+      "mode": "classes",
+      "median_ms": 200.261656,
+      "min_ms": 194.863197,
+      "max_ms": 235.407762,
+      "overhead_percent": 2.5986061101222147
+    },
+    {
+      "workload": "registry",
+      "mode": "cpu",
+      "median_ms": 220.133258,
+      "min_ms": 208.419613,
+      "max_ms": 250.796686,
+      "overhead_percent": 12.779280269608417
+    },
+    {
+      "workload": "registry",
+      "mode": "alloc",
+      "median_ms": 207.148247,
+      "min_ms": 200.173981,
+      "max_ms": 210.167661,
+      "overhead_percent": 6.126763479651376
+    },
+    {
+      "workload": "basic",
+      "mode": "none",
+      "median_ms": 722.009913,
+      "min_ms": 676.920522,
+      "max_ms": 748.682386,
+      "overhead_percent": 0.0
+    },
+    {
+      "workload": "basic",
+      "mode": "idle",
+      "median_ms": 728.751539,
+      "min_ms": 701.757956,
+      "max_ms": 883.947987,
+      "overhead_percent": 0.9337303932557051
+    },
+    {
+      "workload": "basic",
+      "mode": "classes",
+      "median_ms": 725.046397,
+      "min_ms": 706.571316,
+      "max_ms": 1006.984367,
+      "overhead_percent": 0.4205598767173635
+    },
+    {
+      "workload": "basic",
+      "mode": "cpu",
+      "median_ms": 740.883308,
+      "min_ms": 725.834973,
+      "max_ms": 804.606604,
+      "overhead_percent": 2.6140077386998417
+    },
+    {
+      "workload": "basic",
+      "mode": "alloc",
+      "median_ms": 751.536851,
+      "min_ms": 735.587486,
+      "max_ms": 778.603294,
+      "overhead_percent": 4.089547451961373
+    }
+  ],
+  "sharing": [
+    {
+      "mode": "none",
+      "framework_loads": 295,
+      "shared_framework_loads": 259,
+      "class_initializations": 1273,
+      "class_init_log_lines": 1347
+    },
+    {
+      "mode": "idle",
+      "framework_loads": 295,
+      "shared_framework_loads": 259,
+      "class_initializations": 1273,
+      "class_init_log_lines": 1347
+    },
+    {
+      "mode": "classes",
+      "framework_loads": 295,
+      "shared_framework_loads": 259,
+      "class_initializations": 1273,
+      "class_init_log_lines": 1347
+    },
+    {
+      "mode": "cpu",
+      "framework_loads": 295,
+      "shared_framework_loads": 259,
+      "class_initializations": 1274,
+      "class_init_log_lines": 1348
+    },
+    {
+      "mode": "alloc",
+      "framework_loads": 295,
+      "shared_framework_loads": 259,
+      "class_initializations": 1273,
+      "class_init_log_lines": 1347
+    }
+  ],
+  "attribution": [
+    {
+      "workload": "registry",
+      "mode": "cpu",
+      "runs": 5,
+      "unit": "observed thread CPU delta ns attributed to endpoint stack",
+      "closest_framework_frame": [
+        {
+          "frame": "Lorg/codehaus/groovy/reflection/GeneratedMetaMethod$DgmMethodRecord;#loadDgmInfo()Ljava/util/List;",
+          "weight": 71608967,
+          "samples": 22
+        },
+        {
+          "frame": "Lgroovy/lang/MetaClassImpl;#addProperties()V",
+          "weight": 59614587,
+          "samples": 15
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/reflection/stdclasses/CachedSAMClass;#getSAMMethod(Ljava/lang/Class;)Ljava/lang/reflect/Method;",
+          "weight": 35831784,
+          "samples": 9
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/reflection/CachedMethod;#getAnnotation(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;",
+          "weight": 34501821,
+          "samples": 9
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/vmplugin/v9/Java9;#<clinit>()V",
+          "weight": 28258073,
+          "samples": 7
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/reflection/CachedClass$3;#initValue()[Lorg/codehaus/groovy/reflection/CachedMethod;",
+          "weight": 27574595,
+          "samples": 7
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/vmplugin/v9/Java9;#isExported(Ljava/lang/module/ModuleDescriptor;Ljava/lang/String;)Z",
+          "weight": 27483609,
+          "samples": 7
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/runtime/metaclass/MetaClassRegistryImpl;#registerMethods(Ljava/lang/Class;ZZLjava/util/Map;)V",
+          "weight": 20276217,
+          "samples": 5
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/runtime/metaclass/MetaClassRegistryImpl;#checkForDuplicateConcurrentModule()V",
+          "weight": 15703455,
+          "samples": 4
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/runtime/metaclass/MetaClassRegistryImpl;#<init>(IZ)V",
+          "weight": 12351840,
+          "samples": 3
+        },
+        {
+          "frame": "Lorg/apache/groovy/plugin/GroovyRunnerRegistry;#<clinit>()V",
+          "weight": 12317173,
+          "samples": 3
+        },
+        {
+          "frame": "Lgroovy/lang/MetaClassImpl;#<clinit>()V",
+          "weight": 12258911,
+          "samples": 3
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/reflection/stdclasses/CachedSAMClass;#<clinit>()V",
+          "weight": 10538627,
+          "samples": 3
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/util/ManagedReference;#get()Ljava/lang/Object;",
+          "weight": 8356694,
+          "samples": 2
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/reflection/CachedClass$2;#initValue()[Lorg/codehaus/groovy/reflection/CachedConstructor;",
+          "weight": 8331638,
+          "samples": 2
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/vmplugin/v9/Java9;#isOpen(Ljava/lang/module/ModuleDescriptor;Ljava/lang/String;)Z",
+          "weight": 8292948,
+          "samples": 2
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/runtime/DefaultGroovyMethods;#<clinit>()V",
+          "weight": 8101493,
+          "samples": 2
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/reflection/CachedClass;#isAccessibleOrCanSetAccessible(Ljava/lang/reflect/AccessibleObject;)Z",
+          "weight": 8012116,
+          "samples": 2
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/util/URLStreams;#openUncachedStream(Ljava/net/URL;)Ljava/io/InputStream;",
+          "weight": 7974034,
+          "samples": 2
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/runtime/metaclass/MetaMethodIndex;#copyMethodsToSuper()V",
+          "weight": 7884312,
+          "samples": 2
+        }
+      ]
+    },
+    {
+      "workload": "registry",
+      "mode": "alloc",
+      "runs": 5,
+      "unit": "sum sampled object sizes in bytes, not total allocation",
+      "closest_framework_frame": [
+        {
+          "frame": "Lorg/codehaus/groovy/vmplugin/v9/Java9;#<clinit>()V",
+          "weight": 142600,
+          "samples": 32
+        },
+        {
+          "frame": "Lorg/apache/groovy/plugin/GroovyRunnerRegistry;#<clinit>()V",
+          "weight": 119456,
+          "samples": 15
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/reflection/stdclasses/CachedSAMClass;#<clinit>()V",
+          "weight": 102848,
+          "samples": 12
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/reflection/GeneratedMetaMethod$DgmMethodRecord;#loadDgmInfo()Ljava/util/List;",
+          "weight": 87312,
+          "samples": 55
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/reflection/CachedClass$1;#initValue()[Lorg/codehaus/groovy/reflection/CachedField;",
+          "weight": 74040,
+          "samples": 9
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/runtime/metaclass/MetaClassRegistryImpl;#registerMethods(Ljava/lang/Class;ZZLjava/util/Map;)V",
+          "weight": 66504,
+          "samples": 19
+        },
+        {
+          "frame": "Lgroovy/lang/MetaClassImpl;#<clinit>()V",
+          "weight": 57496,
+          "samples": 6
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/reflection/CachedClass$3;#initValue()[Lorg/codehaus/groovy/reflection/CachedMethod;",
+          "weight": 50088,
+          "samples": 16
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/vmplugin/v9/Java9;#isOpen(Ljava/lang/module/ModuleDescriptor;Ljava/lang/String;)Z",
+          "weight": 49400,
+          "samples": 11
+        },
+        {
+          "frame": "Lgroovy/lang/MetaClassImpl;#inheritStaticInterfaceFields(Ljava/util/List;Ljava/lang/Iterable;)V",
+          "weight": 49312,
+          "samples": 4
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/vmplugin/v9/Java9;#lambda$static$6(Ljava/util/Map;Ljava/lang/module/ModuleDescriptor;)V",
+          "weight": 36912,
+          "samples": 3
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/reflection/CachedMethod;#find(Ljava/lang/reflect/Method;)Lorg/codehaus/groovy/reflection/CachedMethod;",
+          "weight": 33328,
+          "samples": 3
+        },
+        {
+          "frame": "Lgroovy/lang/MetaClassImpl;#fillMethodIndex()V",
+          "weight": 32824,
+          "samples": 3
+        },
+        {
+          "frame": "Lgroovy/lang/MetaClassImpl;#addProperties()V",
+          "weight": 26688,
+          "samples": 34
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/util/FastArray;#add(Ljava/lang/Object;)V",
+          "weight": 25648,
+          "samples": 3
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/reflection/CachedClass$2;#initValue()[Lorg/codehaus/groovy/reflection/CachedConstructor;",
+          "weight": 24736,
+          "samples": 4
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/runtime/metaclass/MetaClassRegistryImpl;#checkForDuplicateConcurrentModule()V",
+          "weight": 24680,
+          "samples": 5
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/vmplugin/v9/Java9;#isExported(Ljava/lang/module/ModuleDescriptor;Ljava/lang/String;)Z",
+          "weight": 20768,
+          "samples": 10
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/runtime/metaclass/MetaMethodIndex;#copyMethodsToSuper()V",
+          "weight": 20680,
+          "samples": 4
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/runtime/metaclass/MetaMethodIndex;#addMetaMethod(Lgroovy/lang/MetaMethod;Ljava/util/Map;)V",
+          "weight": 17488,
+          "samples": 4
+        }
+      ]
+    },
+    {
+      "workload": "basic",
+      "mode": "cpu",
+      "runs": 5,
+      "unit": "observed thread CPU delta ns attributed to endpoint stack",
+      "closest_framework_frame": [
+        {
+          "frame": "Lorg/codehaus/groovy/vmplugin/v9/ClassFinder;#find(Ljava/net/URI;Ljava/lang/String;Ljava/lang/String;ZZ)Ljava/util/Map;",
+          "weight": 224028886,
+          "samples": 57
+        },
+        {
+          "frame": "Lgroovy/lang/MetaClassImpl;#addProperties()V",
+          "weight": 131718893,
+          "samples": 33
+        },
+        {
+          "frame": "Lorg/apache/groovy/parser/antlr4/GroovyParser;#_adaptivePredict(I)I",
+          "weight": 98575369,
+          "samples": 26
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/vmplugin/v9/ClassFinder;#maybeNewFileSystem(Ljava/net/URI;)Lgroovy/lang/Tuple2;",
+          "weight": 93445276,
+          "samples": 23
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/vmplugin/v8/Java8;#configureClassNode(Lorg/codehaus/groovy/ast/CompileUnit;Lorg/codehaus/groovy/ast/ClassNode;)V",
+          "weight": 85078242,
+          "samples": 22
+        },
+        {
+          "frame": "Lorg/apache/groovy/parser/antlr4/GroovyParser;#<clinit>()V",
+          "weight": 65017434,
+          "samples": 16
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/vmplugin/v9/ClassFinder$1;#visitFile(Ljava/nio/file/Path;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;",
+          "weight": 62189869,
+          "samples": 16
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/runtime/typehandling/NumberMathModificationInfo;#checkNumberOps(Ljava/lang/String;Ljava/lang/Class;)V",
+          "weight": 60180740,
+          "samples": 15
+        },
+        {
+          "frame": "Lorg/apache/groovy/parser/antlr4/GroovyLexer;#<clinit>()V",
+          "weight": 58765456,
+          "samples": 15
+        },
+        {
+          "frame": "Lorg/apache/groovy/parser/antlr4/internal/atnmanager/ParserAtnManager;#createAtnWrapper()Lorg/apache/groovy/parser/antlr4/internal/atnmanager/AtnManager$AtnWrapper;",
+          "weight": 53976014,
+          "samples": 13
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/reflection/GeneratedMetaMethod$DgmMethodRecord;#loadDgmInfo()Ljava/util/List;",
+          "weight": 49483864,
+          "samples": 17
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/runtime/EncodingGroovyMethods;#digest([BLjava/lang/String;)Ljava/lang/String;",
+          "weight": 44110822,
+          "samples": 11
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/syntax/Numbers;#<clinit>()V",
+          "weight": 42534218,
+          "samples": 10
+        },
+        {
+          "frame": "Lorg/apache/groovy/parser/antlr4/GroovyLangLexer;#nextToken()Lgroovyjarjarantlr4/v4/runtime/Token;",
+          "weight": 39001020,
+          "samples": 10
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/reflection/stdclasses/CachedSAMClass;#getSAMMethod(Ljava/lang/Class;)Ljava/lang/reflect/Method;",
+          "weight": 38761512,
+          "samples": 10
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/control/CompilationUnit;#addPhaseOperations()V",
+          "weight": 37541123,
+          "samples": 9
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/vmplugin/v9/Java9;#<clinit>()V",
+          "weight": 27490920,
+          "samples": 7
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/vmplugin/v8/IndyInterface;#makeBootHandle(Ljava/lang/invoke/MutableCallSite;Ljava/lang/Class;Ljava/lang/String;ILjava/lang/invoke/MethodType;ZZZLjava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;",
+          "weight": 26853279,
+          "samples": 7
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/vmplugin/v8/IndyGuardsFiltersAndSignatures;#<clinit>()V",
+          "weight": 24331240,
+          "samples": 6
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/reflection/CachedClass$3;#initValue()[Lorg/codehaus/groovy/reflection/CachedMethod;",
+          "weight": 22641329,
+          "samples": 6
+        }
+      ]
+    },
+    {
+      "workload": "basic",
+      "mode": "alloc",
+      "runs": 5,
+      "unit": "sum sampled object sizes in bytes, not total allocation",
+      "closest_framework_frame": [
+        {
+          "frame": "Lorg/codehaus/groovy/vmplugin/v9/ClassFinder;#maybeNewFileSystem(Ljava/net/URI;)Lgroovy/lang/Tuple2;",
+          "weight": 2961024,
+          "samples": 106
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/runtime/typehandling/NumberMathModificationInfo;#checkNumberOps(Ljava/lang/String;Ljava/lang/Class;)V",
+          "weight": 1703848,
+          "samples": 182
+        },
+        {
+          "frame": "Lorg/apache/groovy/parser/antlr4/GroovyParser;#<clinit>()V",
+          "weight": 1163104,
+          "samples": 110
+        },
+        {
+          "frame": "Lorg/apache/groovy/parser/antlr4/internal/atnmanager/ParserAtnManager;#createAtnWrapper()Lorg/apache/groovy/parser/antlr4/internal/atnmanager/AtnManager$AtnWrapper;",
+          "weight": 824832,
+          "samples": 142
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/control/CompilationUnit;#addPhaseOperations()V",
+          "weight": 443456,
+          "samples": 43
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/syntax/Numbers;#<clinit>()V",
+          "weight": 419880,
+          "samples": 141
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/vmplugin/v8/IndyInterface;#makeBootHandle(Ljava/lang/invoke/MutableCallSite;Ljava/lang/Class;Ljava/lang/String;ILjava/lang/invoke/MethodType;ZZZLjava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;",
+          "weight": 389384,
+          "samples": 51
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/vmplugin/v8/IndyGuardsFiltersAndSignatures;#<clinit>()V",
+          "weight": 373896,
+          "samples": 39
+        },
+        {
+          "frame": "Lgroovy/lang/Closure;#<clinit>()V",
+          "weight": 292520,
+          "samples": 29
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/vmplugin/v9/ClassFinder;#find(Ljava/net/URI;Ljava/lang/String;Ljava/lang/String;ZZ)Ljava/util/Map;",
+          "weight": 274800,
+          "samples": 471
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/vmplugin/v8/IndyMath;#makeMapEntry(Ljava/lang/String;[Ljava/lang/invoke/MethodType;[Ljava/lang/invoke/MethodType;)V",
+          "weight": 238584,
+          "samples": 21
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/vmplugin/v8/TypeTransformers;#<clinit>()V",
+          "weight": 220896,
+          "samples": 29
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/reflection/stdclasses/CachedSAMClass;#<clinit>()V",
+          "weight": 176632,
+          "samples": 19
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/vmplugin/v8/Java8;#configureClassNode(Lorg/codehaus/groovy/ast/CompileUnit;Lorg/codehaus/groovy/ast/ClassNode;)V",
+          "weight": 173008,
+          "samples": 50
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/vmplugin/v8/Selector;#sameClassesGuard([Ljava/lang/Object;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle;",
+          "weight": 156584,
+          "samples": 15
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/vmplugin/v8/Selector$MethodSelector;#setGuards(Ljava/lang/Object;)V",
+          "weight": 149000,
+          "samples": 13
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/vmplugin/v8/IndyInterface;#fallback(Lorg/codehaus/groovy/vmplugin/v8/CacheableCallSite;Ljava/lang/Class;Ljava/lang/String;ILjava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Object;[Ljava/lang/Object;Z)Lorg/codehaus/groovy/vmplugin/v8/MethodHandleWrapper;",
+          "weight": 139440,
+          "samples": 18
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/util/URLStreams;#openUncachedStream(Ljava/net/URL;)Ljava/io/InputStream;",
+          "weight": 120440,
+          "samples": 9
+        },
+        {
+          "frame": "Lorg/codehaus/groovy/vmplugin/v9/Java9;#doFindClasses(Ljava/net/URI;Ljava/lang/String;Ljava/util/List;)Ljava/util/Map;",
+          "weight": 112760,
+          "samples": 14
+        },
+        {
+          "frame": "Lorg/apache/groovy/parser/antlr4/GroovyParser;#<init>(Lgroovyjarjarantlr4/v4/runtime/TokenStream;)V",
+          "weight": 108032,
+          "samples": 12
+        }
+      ]
+    }
+  ],
+  "candidate": {
+    "run_id": "20261031T044055.616084Z",
+    "status": "complete",
+    "trials": 7,
+    "scope": "Fresh ordinary-bytecode JVMs with normal shutdown and warm pages; each variant has matching classic static CDS. Same packaged DGM bytes and fresh class/registry/extension bindings.",
+    "jdk": "java version \"25.0.5.0.3\" 2026-10-25 LTS\nJava(TM) SE Runtime Environment (build 25.0.5.0.3+1-LTS-2)\nJava HotSpot(TM) 64-Bit Server VM (build 25.0.5.0.3+1-LTS-2, mixed mode, sharing)\n",
+    "preparation": {
+      "schema": "GAIA-MODULE-PACKAGE-INDEX-1",
+      "base_jar_sha256": "6bcbec490ac1ade0dca6566dca9d02897cbb8fc31ee4008e950451aa83b1ac76",
+      "source_jar_sha256": "94a6e1d6ddd94cfe31e64d50a8564026badc72a43f19d380726a787c9a11104b",
+      "variants": {
+        "rebuilt": {
+          "jar_sha256": "ab90dddc94e57ac2b8ca671a388a73da67e462444d74e4c61088b52c56657eb0",
+          "source_sha256": "9bf39b11fa90017d937f9ecd167de8bf3c8a6fe7f5bbf7a5ec60c7edbcdf7e22",
+          "changed_entries": [
+            "org/codehaus/groovy/vmplugin/v9/Java9$BigIntegerMultiplyMethodHolder.class",
+            "org/codehaus/groovy/vmplugin/v9/Java9.class"
+          ]
+        },
+        "indexed": {
+          "jar_sha256": "911c348f38da9f60a1cb952576cc11e358a650792b1f69f5afc0959325efc3aa",
+          "source_sha256": "a68a95bf2034b16031d66369a707b5994a6567c3c9d8c8ecbbc0128ef42bb510",
+          "changed_entries": [
+            "org/codehaus/groovy/vmplugin/v9/Java9$BigIntegerMultiplyMethodHolder.class",
+            "org/codehaus/groovy/vmplugin/v9/Java9.class"
+          ]
+        }
+      }
+    },
+    "patch_build_seconds": 5.550213984002767,
+    "setup": {
+      "stock": {
+        "archive_seconds": 2.933568029999151,
+        "archive_bytes": 54001664,
+        "archive_sha256": "b4c304ac21a0277ad56eccd85ab9686d4c95f36e2d97b3e11aef1314ff51fff9",
+        "classlist_sha256": "3fa894d0205000fe4987f2cc182bd1709f8c1d2728dc1b3be1cf58c8245daef8",
+        "jar_sha256": "6bcbec490ac1ade0dca6566dca9d02897cbb8fc31ee4008e950451aa83b1ac76"
+      },
+      "rebuilt": {
+        "archive_seconds": 2.424032023998734,
+        "archive_bytes": 53997568,
+        "archive_sha256": "b1e826e3cc228913e0012eb396090634ff971a78275ef52c61cdb7397864b66d",
+        "classlist_sha256": "3fa894d0205000fe4987f2cc182bd1709f8c1d2728dc1b3be1cf58c8245daef8",
+        "jar_sha256": "ab90dddc94e57ac2b8ca671a388a73da67e462444d74e4c61088b52c56657eb0"
+      },
+      "indexed": {
+        "archive_seconds": 2.3370069180018618,
+        "archive_bytes": 54001664,
+        "archive_sha256": "11b779b7b8a849f04e5591ded9266a4b2ddb0ac6ecb67d85882e008587655c4a",
+        "classlist_sha256": "3fa894d0205000fe4987f2cc182bd1709f8c1d2728dc1b3be1cf58c8245daef8",
+        "jar_sha256": "911c348f38da9f60a1cb952576cc11e358a650792b1f69f5afc0959325efc3aa"
+      }
+    },
+    "module_probes": {
+      "stock": {
+        "checks": 1990,
+        "indexed": false,
+        "table_entries": 534,
+        "digest": "4a9f2dd30ee0b50be432a5e8647f4a574ea02cb1b339e7de63c7c279203be89e"
+      },
+      "rebuilt": {
+        "checks": 1990,
+        "indexed": false,
+        "table_entries": 534,
+        "digest": "4a9f2dd30ee0b50be432a5e8647f4a574ea02cb1b339e7de63c7c279203be89e"
+      },
+      "indexed": {
+        "checks": 1990,
+        "indexed": true,
+        "table_entries": 534,
+        "digest": "4a9f2dd30ee0b50be432a5e8647f4a574ea02cb1b339e7de63c7c279203be89e"
+      }
+    },
+    "source_sha256": {
+      "prepare.py": "ced466f365dee87de432aa21d62f9bdadb8c29a091b53eaada9310e87431286d",
+      "benchmark.py": "12c8acb5adc00f263f7b802b9cbcdcbdedd881f1d25bd794124a73820b872a02",
+      "FrameworkPhases.java": "23bd84bdd762bfa9f6d7e3702a13c1ae97a19ef8ff04a4e3d2609a2d191b7e19",
+      "Command.java": "184911af2781ca4ee1d70d4011b101df8cc9b16d774ac7ee9cc3bfae2dc34268",
+      "StaticLogic.groovy": "a7f8f20276e9a6f060cb5e5ad3f8e8a7baf3c03f7829d1aee514c374f2f3f5eb"
+    },
+    "record_identity": {
+      "count": 2007,
+      "sha256": "bd1ce6165f692ce8bf4a8b56e8eb386d16b526247533b176103932ab99c5b4a3"
+    },
+    "raw_sha256": "45baedcccd02088f182a276610cb401887e60c56c39f9ef6c4235ec3f0ba8606",
+    "cases": [
+      {
+        "mode": "records",
+        "variant": "stock",
+        "median_ms": 114.93321799935075,
+        "paired_wins_vs_stock": 0,
+        "blocks": 7,
+        "phase_medians_ms": {
+          "decode_ns": 25.427447
+        }
+      },
+      {
+        "mode": "records",
+        "variant": "rebuilt",
+        "median_ms": 113.89010299899383,
+        "paired_wins_vs_stock": 2,
+        "blocks": 7,
+        "phase_medians_ms": {
+          "decode_ns": 26.649723
+        }
+      },
+      {
+        "mode": "records",
+        "variant": "indexed",
+        "median_ms": 113.73271899356041,
+        "paired_wins_vs_stock": 4,
+        "blocks": 7,
+        "phase_medians_ms": {
+          "decode_ns": 25.536647
+        }
+      },
+      {
+        "mode": "registry",
+        "variant": "stock",
+        "median_ms": 245.78449100226862,
+        "paired_wins_vs_stock": 0,
+        "blocks": 7,
+        "phase_medians_ms": {
+          "registry_ns": 180.143339
+        }
+      },
+      {
+        "mode": "registry",
+        "variant": "rebuilt",
+        "median_ms": 242.51540999830468,
+        "paired_wins_vs_stock": 5,
+        "blocks": 7,
+        "phase_medians_ms": {
+          "registry_ns": 178.662963
+        }
+      },
+      {
+        "mode": "registry",
+        "variant": "indexed",
+        "median_ms": 239.86207300185924,
+        "paired_wins_vs_stock": 5,
+        "blocks": 7,
+        "phase_medians_ms": {
+          "registry_ns": 174.150588
+        }
+      },
+      {
+        "mode": "parser",
+        "variant": "stock",
+        "median_ms": 318.3814900039579,
+        "paired_wins_vs_stock": 0,
+        "blocks": 7,
+        "phase_medians_ms": {}
+      },
+      {
+        "mode": "parser",
+        "variant": "rebuilt",
+        "median_ms": 305.84777400508756,
+        "paired_wins_vs_stock": 4,
+        "blocks": 7,
+        "phase_medians_ms": {}
+      },
+      {
+        "mode": "parser",
+        "variant": "indexed",
+        "median_ms": 277.24105899687856,
+        "paired_wins_vs_stock": 3,
+        "blocks": 7,
+        "phase_medians_ms": {}
+      },
+      {
+        "mode": "basic",
+        "variant": "stock",
+        "median_ms": 786.735662004503,
+        "paired_wins_vs_stock": 0,
+        "blocks": 7,
+        "phase_medians_ms": {
+          "registry_ns": 159.063991,
+          "shell_ns": 10.193474,
+          "compile_ns": 425.961963,
+          "run_ns": 107.432239
+        }
+      },
+      {
+        "mode": "basic",
+        "variant": "rebuilt",
+        "median_ms": 816.5487189980922,
+        "paired_wins_vs_stock": 4,
+        "blocks": 7,
+        "phase_medians_ms": {
+          "registry_ns": 173.682226,
+          "shell_ns": 10.760508,
+          "compile_ns": 455.75895,
+          "run_ns": 95.70104
+        }
+      },
+      {
+        "mode": "basic",
+        "variant": "indexed",
+        "median_ms": 880.8781480038306,
+        "paired_wins_vs_stock": 3,
+        "blocks": 7,
+        "phase_medians_ms": {
+          "registry_ns": 178.42401,
+          "shell_ns": 12.51448,
+          "compile_ns": 515.810493,
+          "run_ns": 107.014878
+        }
+      }
+    ]
+  },
+  "confirmation": {
+    "schema": "GAIA-JVMTI-CONFIRM-1",
+    "blocks": 7,
+    "agent": false,
+    "prior_run_sha256": "45baedcccd02088f182a276610cb401887e60c56c39f9ef6c4235ec3f0ba8606",
+    "probe_build_ns": 556624213,
+    "source_sha256": {
+      "InitProbe.java": "68ee6e0e70fc8b844da2427233519023e462b81acfe82fe19aecf78620af170f",
+      "confirm.py": "c4c81f2796cc3b882bf8b360867a2a3c1895d454fc8340dab29e0f6655bfbc60"
+    },
+    "summary": [
+      {
+        "workload": "registry",
+        "variant": "rebuilt",
+        "median_ms": 219.486679,
+        "min_ms": 208.685369,
+        "max_ms": 252.477668,
+        "phase_median_ms": 163.260798,
+        "paired_wins_vs_rebuilt": 0
+      },
+      {
+        "workload": "registry",
+        "variant": "indexed",
+        "median_ms": 210.874747,
+        "min_ms": 199.202393,
+        "max_ms": 221.720996,
+        "phase_median_ms": 156.718856,
+        "paired_wins_vs_rebuilt": 5
+      },
+      {
+        "workload": "init",
+        "variant": "rebuilt",
+        "median_ms": 82.352239,
+        "min_ms": 77.219758,
+        "max_ms": 90.427265,
+        "phase_median_ms": 28.368591,
+        "paired_wins_vs_rebuilt": 0
+      },
+      {
+        "workload": "init",
+        "variant": "indexed",
+        "median_ms": 78.335285,
+        "min_ms": 64.017424,
+        "max_ms": 82.510926,
+        "phase_median_ms": 20.761777,
+        "paired_wins_vs_rebuilt": 7
+      }
+    ]
+  },
+  "uncertainty": "Initial candidate matrix has extreme outliers and strong between-block drift; preserve all blocks and do not claim broad startup win.",
+  "errors": {},
+  "capabilities": {
+    "idle": {
+      "thread_cpu": false,
+      "sampled_allocation": false,
+      "method_entry": false,
+      "class_hook": false,
+      "retransform": false
+    },
+    "classes": {
+      "thread_cpu": false,
+      "sampled_allocation": false,
+      "method_entry": false,
+      "class_hook": false,
+      "retransform": false
+    },
+    "cpu": {
+      "thread_cpu": true,
+      "sampled_allocation": false,
+      "method_entry": false,
+      "class_hook": false,
+      "retransform": false
+    },
+    "alloc": {
+      "thread_cpu": false,
+      "sampled_allocation": true,
+      "method_entry": false,
+      "class_hook": false,
+      "retransform": false
+    }
+  },
+  "raw_sha256": "ed46ba06fdc3a290e285785004df05ed15a80b7236ff35417fd2d37f5f41bcd7",
+  "profiles_sha256": "c49e26da1a51e7afc773fafec117fa529723ebccc0c96c1c2135f2501693f86a"
+}

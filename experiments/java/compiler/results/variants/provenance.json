@@ -1,0 +1,163 @@
+{
+  "exploratory_quick_source_sha256": "4671dad00101c14c1ca179cd4effb8160f66ee15985d3bb1f00d10a88c495dcb",
+  "runtime_pins": {
+    "oracle25": {
+      "jdk_modules_sha256": "f1c3cff6a4b07fafa56c48522526b690bb791e3e86befb1b490e3a529ae4058e",
+      "target_sdk_modules_sha256": "aeca53cfc8f348e1294620a68bacfa0dc7b380ded0f268c6a649d5dcb300ae4f",
+      "app_sha256": "1dec3ef701f8cb862d59592b4c69e7489a946e9e409d3b20664c09079153b232"
+    },
+    "graal25": {
+      "jdk_modules_sha256": "aeca53cfc8f348e1294620a68bacfa0dc7b380ded0f268c6a649d5dcb300ae4f",
+      "target_sdk_modules_sha256": "aeca53cfc8f348e1294620a68bacfa0dc7b380ded0f268c6a649d5dcb300ae4f",
+      "app_sha256": "1dec3ef701f8cb862d59592b4c69e7489a946e9e409d3b20664c09079153b232"
+    },
+    "ea26": {
+      "jdk_modules_sha256": "c0cebd41f5be1986cfd5e07715d2723ee28b705e47a1f47ba7ed24aef84b2bf8",
+      "target_sdk_modules_sha256": "aeca53cfc8f348e1294620a68bacfa0dc7b380ded0f268c6a649d5dcb300ae4f",
+      "app_sha256": "1dec3ef701f8cb862d59592b4c69e7489a946e9e409d3b20664c09079153b232"
+    }
+  },
+  "measurement_source_pins": {
+    "test_native_mutation.py": "0b4b80d95a88151aad10b0a7c3dba8e08cacee1758cc5503b27a049cfde3b884",
+    "measure_endpoint.py": "e2bb69dabea2c81b25b03094a0aed45701062c0895b3083e79ca80a8929600a4",
+    "toolchains.json": "7e144805bc22849a14b10e3931d50b2fff4f4b68f95477516ea79fa4b4513e62",
+    "build_native.py": "922488b9e260eda4fe86c853cb82f2909e25b8242c57e278a8138798dbae4050",
+    "unpack_sdk.py": "de95608267945fda1544bc840f39423eba9f5c098cdd2b3c3093445f3291e680",
+    "NativeOutputCheck.java": "4c4c380fd625456da91c91c319068bbda7506a4c9651dd0a1856ebc0db57f4ce",
+    "run_native.py": "b67b9de693137c7dda1df6cea58482ecc41d2f288d2fbc0db21993405b8a0b65",
+    "prepare.py": "76890af7b486fcb742ac6bb936f05d4c2edaa4fcb521a8233958617204178e7b",
+    "publish_results.py": "6541f86242037acbaf665a8699de5bd0c3b6a4d251491e0bd34c246a02a64d17",
+    "probe_sdk.py": "04e0244c7df45141590234bb465b127b475a7daf7c5d2bc349cc588637f773ff",
+    "configure_endpoint.py": "7e40d7176549d9fe7bcb8edbe3c4b23a352df70b5b1d2e8f59dbbea5f3bbb3ee",
+    "run_variants.py": "2b997a484176d5c25f90ef177de5b1956bfbceca0f6bebd1116bbefa41f02c54",
+    "train_leyden.py": "b94f9867f154e98cde9eb946d37969247e16ef2f1d022808a09b42367d668d7a",
+    "prepare_endpoint.py": "45dbaae9752fa44a878c998f189f16d0ab3efe5af855e477dd0c40b41a74f129",
+    "NativeCompiler.java": "ac737d0e3d137b148bfba0cca07d5960678c8d0768e19daa5de6f9d859f6fc20"
+  },
+  "schema_version": 1,
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.44",
+  "cpu_model": "AMD Ryzen AI 7 PRO 450 w/ Radeon 860M",
+  "logical_cpus": 16,
+  "runtime_cpu_affinity": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "vm_flags": [
+    "-XX:-UsePerfData",
+    "-Xms32m",
+    "-Xmx768m",
+    "-XX:ActiveProcessorCount=4"
+  ],
+  "source_pins": {
+    "experiments/java/compiler/variants/NativeCompiler.java": "ac737d0e3d137b148bfba0cca07d5960678c8d0768e19daa5de6f9d859f6fc20",
+    "experiments/java/compiler/variants/NativeOutputCheck.java": "4c4c380fd625456da91c91c319068bbda7506a4c9651dd0a1856ebc0db57f4ce",
+    "experiments/java/compiler/variants/build_native.py": "922488b9e260eda4fe86c853cb82f2909e25b8242c57e278a8138798dbae4050",
+    "experiments/java/compiler/variants/configure_endpoint.py": "7e40d7176549d9fe7bcb8edbe3c4b23a352df70b5b1d2e8f59dbbea5f3bbb3ee",
+    "experiments/java/compiler/variants/convergence.py": "652eeab6513122f3542c81c65e63c78361bb4413c4600894e7b54c68b36155e5",
+    "experiments/java/compiler/variants/freeze.py": "0db7bbd7de023bfaf6240159cb93fd1ceb3a6c6048267fd5d5f8df86177d2dd8",
+    "experiments/java/compiler/variants/measure_endpoint.py": "e2bb69dabea2c81b25b03094a0aed45701062c0895b3083e79ca80a8929600a4",
+    "experiments/java/compiler/variants/post_checks.py": "ae8fbbfaa33878bad80f37a2a09532422dba532df13dd429b0baee13c7b04bf1",
+    "experiments/java/compiler/variants/prepare.py": "76890af7b486fcb742ac6bb936f05d4c2edaa4fcb521a8233958617204178e7b",
+    "experiments/java/compiler/variants/prepare_endpoint.py": "45dbaae9752fa44a878c998f189f16d0ab3efe5af855e477dd0c40b41a74f129",
+    "experiments/java/compiler/variants/probe_sdk.py": "04e0244c7df45141590234bb465b127b475a7daf7c5d2bc349cc588637f773ff",
+    "experiments/java/compiler/variants/publish_results.py": "c0d6890b3cd1350b9120b1185de6317731643a54ce74a54012ebb9cbb04a7137",
+    "experiments/java/compiler/variants/run_native.py": "b67b9de693137c7dda1df6cea58482ecc41d2f288d2fbc0db21993405b8a0b65",
+    "experiments/java/compiler/variants/run_variants.py": "2b997a484176d5c25f90ef177de5b1956bfbceca0f6bebd1116bbefa41f02c54",
+    "experiments/java/compiler/variants/test_native_mutation.py": "0b4b80d95a88151aad10b0a7c3dba8e08cacee1758cc5503b27a049cfde3b884",
+    "experiments/java/compiler/variants/train_leyden.py": "b94f9867f154e98cde9eb946d37969247e16ef2f1d022808a09b42367d668d7a",
+    "experiments/java/compiler/variants/unpack_sdk.py": "de95608267945fda1544bc840f39423eba9f5c098cdd2b3c3093445f3291e680"
+  },
+  "toolchains": {
+    "schema_version": 1,
+    "architecture": "Linux x86_64",
+    "toolchains": [
+      {
+        "id": "graalvm25",
+        "version": "Oracle GraalVM 25.0.4+7.1",
+        "url": "https://download.oracle.com/graalvm/25/archive/graalvm-jdk-25.0.4_linux-x64_bin.tar.gz",
+        "bytes": 380509826,
+        "sha256": "76007c309f821aaf435bce63162ea0395587fc77350801c81643fe7feea37276"
+      },
+      {
+        "id": "leyden-ea2",
+        "version": "OpenJDK 26-leydenpremain+1-24",
+        "url": "https://download.java.net/java/early_access/leyden/1/openjdk-26-leydenpremain+1_linux-x64_bin.tar.gz",
+        "bytes": 223789561,
+        "sha256": "866efe47f88fbe0b50dc0ba7e2ea501e0d760deacfa2b1d473fa991c285001dd"
+      },
+      {
+        "id": "oracle25",
+        "version": "Oracle JDK25.0.5.0.3+1-LTS-2",
+        "url": "https://download.oracle.com/java/25/latest/jdk-25_linux-x64_bin.tar.gz",
+        "bytes": 217100679,
+        "sha256": "6deafad80454d1f968105b1f582d89b8c2e88a5dfc98116a8226e0ec2fd5df8e",
+        "note": "Retained pinned archive; latest URL may change. Verify the hash before using it."
+      }
+    ],
+    "source_fixture": {
+      "version": "Picocli 4.7.7 source archive",
+      "url": "https://repo.maven.apache.org/maven2/info/picocli/picocli/4.7.7/picocli-4.7.7-sources.jar",
+      "sha256": "87916611c616588b20d987868f96e622de6ed447e4b1ff5b662ebd947773e9a6"
+    },
+    "scope": "All final endpoints compile the same source graph against the exact Graal25 target SDK module bytes. Runtime/JavaCompiler versions differ across groups; within each group independent CLI references and output hashes are checked. The source/toolchain hash is the identity, including URLs with latest in their path."
+  },
+  "inputs": {
+    "flags": {
+      "source_sha256": {
+        "picocli/AutoComplete.java": "0216345e21611a3ca3862b0c668a4f1426c4c2c2d7d3d21ff4bfb10f417424ae",
+        "picocli/CommandLine.java": "ab19325b58729b4fb7530af5e07151f9336620e1c0e9afead798bf48ec94c086",
+        "picocli/package-info.java": "3c88fb2435bb96c1ea2b1f91280ba34b26065ad4076a666d78f81f4c5cc4ded0"
+      },
+      "second_source_sha256": {
+        "picocli/AutoComplete.java": "0216345e21611a3ca3862b0c668a4f1426c4c2c2d7d3d21ff4bfb10f417424ae",
+        "picocli/CommandLine.java": "cdb9c5eb1e49855c830056a4ce50e793f46b7e31f92c1e03246f46c5ffe235e9",
+        "picocli/package-info.java": "3c88fb2435bb96c1ea2b1f91280ba34b26065ad4076a666d78f81f4c5cc4ded0"
+      },
+      "jdk_modules_sha256": "aeca53cfc8f348e1294620a68bacfa0dc7b380ded0f268c6a649d5dcb300ae4f",
+      "target_sdk_modules_sha256": "aeca53cfc8f348e1294620a68bacfa0dc7b380ded0f268c6a649d5dcb300ae4f",
+      "harness_sha256": "777d2f64b4b08aded52ea9d7a8b377b684a92af6fb6191e0ed576a821ed04e04",
+      "native_endpoint_source_sha256": "ac737d0e3d137b148bfba0cca07d5960678c8d0768e19daa5de6f9d859f6fc20",
+      "app_sha256": "1dec3ef701f8cb862d59592b4c69e7489a946e9e409d3b20664c09079153b232",
+      "compiled_app_sha256": "1dec3ef701f8cb862d59592b4c69e7489a946e9e409d3b20664c09079153b232"
+    },
+    "head": {
+      "source_sha256": {
+        "picocli/AutoComplete.java": "0216345e21611a3ca3862b0c668a4f1426c4c2c2d7d3d21ff4bfb10f417424ae",
+        "picocli/CommandLine.java": "ab19325b58729b4fb7530af5e07151f9336620e1c0e9afead798bf48ec94c086",
+        "picocli/package-info.java": "3c88fb2435bb96c1ea2b1f91280ba34b26065ad4076a666d78f81f4c5cc4ded0"
+      },
+      "second_source_sha256": {
+        "picocli/AutoComplete.java": "0216345e21611a3ca3862b0c668a4f1426c4c2c2d7d3d21ff4bfb10f417424ae",
+        "picocli/CommandLine.java": "cdb9c5eb1e49855c830056a4ce50e793f46b7e31f92c1e03246f46c5ffe235e9",
+        "picocli/package-info.java": "3c88fb2435bb96c1ea2b1f91280ba34b26065ad4076a666d78f81f4c5cc4ded0"
+      },
+      "jdk_modules_sha256": "aeca53cfc8f348e1294620a68bacfa0dc7b380ded0f268c6a649d5dcb300ae4f",
+      "target_sdk_modules_sha256": "aeca53cfc8f348e1294620a68bacfa0dc7b380ded0f268c6a649d5dcb300ae4f",
+      "harness_sha256": "777d2f64b4b08aded52ea9d7a8b377b684a92af6fb6191e0ed576a821ed04e04",
+      "native_endpoint_source_sha256": "ac737d0e3d137b148bfba0cca07d5960678c8d0768e19daa5de6f9d859f6fc20",
+      "app_sha256": "1dec3ef701f8cb862d59592b4c69e7489a946e9e409d3b20664c09079153b232",
+      "compiled_app_sha256": "1dec3ef701f8cb862d59592b4c69e7489a946e9e409d3b20664c09079153b232"
+    },
+    "epsilon": {
+      "source_sha256": {
+        "picocli/AutoComplete.java": "0216345e21611a3ca3862b0c668a4f1426c4c2c2d7d3d21ff4bfb10f417424ae",
+        "picocli/CommandLine.java": "ab19325b58729b4fb7530af5e07151f9336620e1c0e9afead798bf48ec94c086",
+        "picocli/package-info.java": "3c88fb2435bb96c1ea2b1f91280ba34b26065ad4076a666d78f81f4c5cc4ded0"
+      },
+      "second_source_sha256": {
+        "picocli/AutoComplete.java": "0216345e21611a3ca3862b0c668a4f1426c4c2c2d7d3d21ff4bfb10f417424ae",
+        "picocli/CommandLine.java": "cdb9c5eb1e49855c830056a4ce50e793f46b7e31f92c1e03246f46c5ffe235e9",
+        "picocli/package-info.java": "3c88fb2435bb96c1ea2b1f91280ba34b26065ad4076a666d78f81f4c5cc4ded0"
+      },
+      "jdk_modules_sha256": "aeca53cfc8f348e1294620a68bacfa0dc7b380ded0f268c6a649d5dcb300ae4f",
+      "target_sdk_modules_sha256": "aeca53cfc8f348e1294620a68bacfa0dc7b380ded0f268c6a649d5dcb300ae4f",
+      "harness_sha256": "777d2f64b4b08aded52ea9d7a8b377b684a92af6fb6191e0ed576a821ed04e04",
+      "native_endpoint_source_sha256": "ac737d0e3d137b148bfba0cca07d5960678c8d0768e19daa5de6f9d859f6fc20",
+      "app_sha256": "1dec3ef701f8cb862d59592b4c69e7489a946e9e409d3b20664c09079153b232",
+      "compiled_app_sha256": "1dec3ef701f8cb862d59592b4c69e7489a946e9e409d3b20664c09079153b232"
+    }
+  },
+  "scope": "Fresh process with warm host page cache. All final runtimes use one instrumented JavaCompiler endpoint, identical file delivery and explicit SDK module representation. Cache/build/SDK setup and external JVM consumers are separate. Epsilon short epochs have exactly two full compilations per resident lifecycle under the same heap cap."
+}

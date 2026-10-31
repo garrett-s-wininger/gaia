@@ -1,0 +1,78 @@
+{
+  "schema": "GAIA-SEMANTIC-PROVENANCE-1",
+  "initial_run_id": "20261031T045306.539120Z",
+  "source_archive_sha256": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3",
+  "upstream_source_match": {
+    "common/zstd_common.c": true,
+    "compress/zstd_lazy.c": true
+  },
+  "initial_measured_sources": {
+    "context.py": "d002c9917bdf0bde48f8d1444ee46b783b31bbc902530f4607b5e881271ebf32",
+    "ast_fingerprint.cpp": "2de812d681c76d781dee67a2f34d5a30820fa8311c38ccdc9ffa8ed65eb11286",
+    "boundaries.py": "fd08f1fd317d51fe455e2cafcf67c1e20bd4d4bbbbc423351589aca7a086fafb",
+    "benchmark.py": "420603c6e4e2d5c86d7a274c53b03aff82137165d6112947edfabcef2db31cce",
+    "test_semantic_cache.py": "9a92fb86dfdff7014eeeec71fb74678fe93400d084a912ba9e051fdfebc01312",
+    "semantic_cache.py": "cb526e7c9f613e74be1e64c0fc9092711ad47f2195d3083204c81b824b819630"
+  },
+  "initial_native_binary_sha256": "6d1a7b4076df79552705814a1506944d8d16b791381771ae360df97ed28077b4",
+  "initial_native_build": {
+    "compiler": "c++",
+    "flags": [
+      "-O2",
+      "-std=c++17"
+    ],
+    "links": [
+      "LLVM-22",
+      "crypto"
+    ],
+    "compiler_source": "ast_fingerprint.cpp"
+  },
+  "scope": "Pinned Zstandard 1.5.7; Clang 22.1.8, original fixed release compilation requests, warm pages. No production admission or diagnostic-replay claim.",
+  "compiler_version": "clang version 22.1.8\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/lib/llvm22/bin\n",
+  "native_dependencies": {
+    "clang-22": "b852cb4597dc56b241bcd328544b5fee60717f35f66808098cc0413946ba42f2",
+    "libclang-cpp.so.22.1": "f8ad17a08eeab80c04e8c2f90986c43808fe760e30136ce199c945fe273b6cd6",
+    "libLLVM.so.22.1": "abe476c377d94c4375d4d804ca555dd378c0437e7b9c01f60d51e403e8cc6d6a",
+    "libstdc++.so.6": "f5fc7380f2ae46fa4053a64be04e7b98109f1066a4bbfff3c37042488aa0be0e",
+    "libc.so.6": "02c8c3d06180beee9c7d0392aa85736c7d19f274a81e7f8f0b3d9e28e0641524"
+  },
+  "direct_run_id": "20261031T051122.597159Z",
+  "direct_measured_sources": {
+    "ccache_control.py": "c6ce0cef259df2e6a0e697723af27eb12242bca20020286333ac2a43659d4b49",
+    "summarize.py": "5ca1ac330ba0bd2cc1d5d2f789612892bb7e7f5ff9f335fa352bdcd800b058e8",
+    "direct_ast.cpp": "f540b4e758492bebcfd94740be75e95fe6808f4da48bb82c1212208e7166df46",
+    "context.py": "c87c7bec972267ba26126dd965e4f9d3ecf3938bd8401acb6a5594db885da01c",
+    "ast_fingerprint.cpp": "2de812d681c76d781dee67a2f34d5a30820fa8311c38ccdc9ffa8ed65eb11286",
+    "boundaries.py": "3c441d9476e36869d526df9b693a18cd5805768628a6d39b692828fb876068d5",
+    "benchmark.py": "2a4f9d0deacb40f65414680b89b856964ed97b02a3c4c7e1dfd073eef6162357",
+    "test_semantic_cache.py": "680627858c342f6e281040e0dcdd8b727dad3ec165fee72809a03709eeadbda4",
+    "semantic_cache.py": "4b9738f9f7dcb49a9c788e3968386c5f22a93461cf40e7c9047678091efae9d5"
+  },
+  "direct_native_binary_sha256": "6200f1194c7693669c8d4b9830166d0379dbd47140efe54b1821d78641b5ec1f",
+  "direct_build": {
+    "flags": [
+      "-O2",
+      "-std=c++17"
+    ],
+    "links": [
+      "clang-cpp",
+      "LLVM-22",
+      "crypto"
+    ],
+    "source": "direct_ast.cpp"
+  },
+  "direct_boundary_checks": 32,
+  "json_boundary_checks": 32,
+  "unit_tests": 9,
+  "direct_compiler_version": "clang version 22.1.8\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/lib/llvm22/bin\n",
+  "ccache": {
+    "version": "ccache version 4.14.1\nFeatures: avx2 crsh-storage file-storage http-storage redis+unix-storage redis-storage remote-storage\n\nCopyright (C) 2002-2007 Andrew Tridgell\nCopyright (C) 2009-2026 Joel Rosdahl and other contributors\n\nSee <https://ccache.dev/credits.html> for a complete list of contributors.\n\nThis program is free software; you can redistribute it and/or modify it under\nthe terms of the GNU General Public License as published by the Free Software\nFoundation; either version 3 of the License, or (at your option) any later\nversion.\n",
+    "binary_sha256": "92247b58bdeb29b7226ca0370bfa838d3d9a5bf995edccf20362d58a4a0c549c",
+    "config": "compiler_check = content\nmax_size = 100M\ncompression = true\nstats = true\n"
+  },
+  "observed_crypto_library": {
+    "name": "libcrypto.so.3",
+    "sha256": "a75a864dcda6ef9e4dc29fad4b7988ca832b904c3915a63c920062c40763dae1",
+    "scope": "Post-run dependency observation; not a separately proved immutable runtime."
+  }
+}

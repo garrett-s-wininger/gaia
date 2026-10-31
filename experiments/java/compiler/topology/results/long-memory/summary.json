@@ -1,0 +1,3187 @@
+{
+  "schema_version": 1,
+  "run_id": "20261031T050609.348992Z",
+  "scope": "Whole-target Picocli compiler pool topology; late window is not a convergence claim",
+  "aggregate_heap_cap_mib": 3072,
+  "common_cpu_count": 8,
+  "tasks_per_batch": 8,
+  "late_batches_per_case": 10,
+  "trials": 1,
+  "sample_interval_seconds": 0.05,
+  "gc_diagnostic": true,
+  "groups": [
+    {
+      "slots": 4,
+      "jvms": 1,
+      "blocks": 1,
+      "startup_seconds": 0.2070460729955812,
+      "first_batch_seconds": 4.409342480998021,
+      "late_case_median_seconds": 0.6767402209989086,
+      "after_late_pss_bytes": 1789358080,
+      "after_late_private_bytes": 1782009856,
+      "after_late_rss_bytes": 1813094400,
+      "after_late_heap_used_bytes": 1282162056,
+      "after_late_heap_committed_bytes": 1570766848
+    },
+    {
+      "slots": 4,
+      "jvms": 4,
+      "blocks": 1,
+      "startup_seconds": 0.11416085800010478,
+      "first_batch_seconds": 4.058042165997904,
+      "late_case_median_seconds": 1.142132484499598,
+      "after_late_pss_bytes": 1657097216,
+      "after_late_private_bytes": 1618513920,
+      "after_late_rss_bytes": 1781850112,
+      "after_late_heap_used_bytes": 688841008,
+      "after_late_heap_committed_bytes": 1305477120
+    },
+    {
+      "slots": 8,
+      "jvms": 1,
+      "blocks": 1,
+      "startup_seconds": 0.09892938700068044,
+      "first_batch_seconds": 2.874246006998874,
+      "late_case_median_seconds": 0.6949379940015206,
+      "after_late_pss_bytes": 1872371712,
+      "after_late_private_bytes": 1865027584,
+      "after_late_rss_bytes": 1924108288,
+      "after_late_heap_used_bytes": 1052574880,
+      "after_late_heap_committed_bytes": 1497366528
+    },
+    {
+      "slots": 8,
+      "jvms": 8,
+      "blocks": 1,
+      "startup_seconds": 0.19894404300430324,
+      "first_batch_seconds": 6.421668132999912,
+      "late_case_median_seconds": 1.3356025025022973,
+      "after_late_pss_bytes": 2349932544,
+      "after_late_private_bytes": 2311012352,
+      "after_late_rss_bytes": 2637287424,
+      "after_late_heap_used_bytes": 992382304,
+      "after_late_heap_committed_bytes": 1520435200
+    }
+  ],
+  "pairs": [
+    {
+      "slots": 4,
+      "blocks": [
+        {
+          "block": 0,
+          "one_first_seconds": 4.409342480998021,
+          "many_first_seconds": 4.058042165997904,
+          "one_late_seconds": 0.6767402209989086,
+          "many_late_seconds": 1.142132484499598,
+          "one_pss_bytes": 1789358080,
+          "many_pss_bytes": 1657097216
+        }
+      ],
+      "one_first_wins": 0,
+      "one_late_wins": 1,
+      "one_after_late_pss_wins": 0
+    },
+    {
+      "slots": 8,
+      "blocks": [
+        {
+          "block": 0,
+          "one_first_seconds": 2.874246006998874,
+          "many_first_seconds": 6.421668132999912,
+          "one_late_seconds": 0.6949379940015206,
+          "many_late_seconds": 1.3356025025022973,
+          "one_pss_bytes": 1872371712,
+          "many_pss_bytes": 2349932544
+        }
+      ],
+      "one_first_wins": 1,
+      "one_late_wins": 1,
+      "one_after_late_pss_wins": 1
+    }
+  ],
+  "cases": [
+    {
+      "block": 0,
+      "slots": 4,
+      "jvms": 4,
+      "workers_per_jvm": 1,
+      "start_seconds": 0.11416085800010478,
+      "shutdown_seconds": 0.05490379199909512,
+      "whole_session_seconds": 18.02019269199809,
+      "batch_seconds": {
+        "first": 4.058042165997904,
+        "warmup_excluded": 1.847038767002232,
+        "late": [
+          1.4201498020047438,
+          1.2189617799958796,
+          1.1441300669976044,
+          1.2775797810027143,
+          1.1401349020015914,
+          0.9859072549952543,
+          1.0248241150038666,
+          0.9477241479980876,
+          1.0855603450036142,
+          1.4000729050021619
+        ]
+      },
+      "late_case_median_seconds": 1.142132484499598,
+      "jvm_cpu_seconds": {
+        "first": 31.13,
+        "late": [
+          9.91,
+          8.84,
+          8.4,
+          9.03,
+          8.14,
+          7.18,
+          7.31,
+          6.68,
+          7.14,
+          8.43
+        ]
+      },
+      "memory": {
+        "memory_ready": {
+          "rss_bytes": 235593728,
+          "pss_bytes": 145454080,
+          "private_bytes": 118247424,
+          "read_ns": 4503556
+        },
+        "memory_after_first": {
+          "rss_bytes": 1101295616,
+          "pss_bytes": 976573440,
+          "private_bytes": 937963520,
+          "read_ns": 16320053
+        },
+        "memory_after_warmup": {
+          "rss_bytes": 1361100800,
+          "pss_bytes": 1236378624,
+          "private_bytes": 1197768704,
+          "read_ns": 18303912
+        },
+        "memory_after_steady": {
+          "rss_bytes": 1781850112,
+          "pss_bytes": 1657097216,
+          "private_bytes": 1618513920,
+          "read_ns": 29887798
+        },
+        "memory_after_consumer": {
+          "rss_bytes": 781496320,
+          "pss_bytes": 656395264,
+          "private_bytes": 617693184,
+          "read_ns": 20074956
+        }
+      },
+      "heap_after_late": {
+        "heap_used": 688841008,
+        "heap_committed": 1305477120
+      },
+      "sample_count": 122,
+      "sampled_sequential_aggregate_max": {
+        "rss_bytes": 2090598400,
+        "pss_bytes": 1965845504,
+        "private_bytes": 1927262208
+      },
+      "samples": [
+        {
+          "elapsed_ns": 4057,
+          "rss_bytes": 1361223680,
+          "pss_bytes": 1236501504,
+          "private_bytes": 1197891584,
+          "read_ns": 30050010
+        },
+        {
+          "elapsed_ns": 80256889,
+          "rss_bytes": 1362599936,
+          "pss_bytes": 1237877760,
+          "private_bytes": 1199267840,
+          "read_ns": 28469572
+        },
+        {
+          "elapsed_ns": 158894424,
+          "rss_bytes": 1364066304,
+          "pss_bytes": 1239344128,
+          "private_bytes": 1200734208,
+          "read_ns": 37376135
+        },
+        {
+          "elapsed_ns": 246430148,
+          "rss_bytes": 1364328448,
+          "pss_bytes": 1239606272,
+          "private_bytes": 1200996352,
+          "read_ns": 54229541
+        },
+        {
+          "elapsed_ns": 350853040,
+          "rss_bytes": 1366142976,
+          "pss_bytes": 1241420800,
+          "private_bytes": 1202810880,
+          "read_ns": 39869589
+        },
+        {
+          "elapsed_ns": 440928968,
+          "rss_bytes": 1367343104,
+          "pss_bytes": 1242620928,
+          "private_bytes": 1204011008,
+          "read_ns": 37042273
+        },
+        {
+          "elapsed_ns": 531226811,
+          "rss_bytes": 1367908352,
+          "pss_bytes": 1243186176,
+          "private_bytes": 1204576256,
+          "read_ns": 38514772
+        },
+        {
+          "elapsed_ns": 620834951,
+          "rss_bytes": 1369001984,
+          "pss_bytes": 1244279808,
+          "private_bytes": 1205669888,
+          "read_ns": 42982994
+        },
+        {
+          "elapsed_ns": 713962562,
+          "rss_bytes": 1376841728,
+          "pss_bytes": 1252119552,
+          "private_bytes": 1213509632,
+          "read_ns": 33683684
+        },
+        {
+          "elapsed_ns": 799220405,
+          "rss_bytes": 1395945472,
+          "pss_bytes": 1271223296,
+          "private_bytes": 1232613376,
+          "read_ns": 42083560
+        },
+        {
+          "elapsed_ns": 895220913,
+          "rss_bytes": 1396142080,
+          "pss_bytes": 1271419904,
+          "private_bytes": 1232809984,
+          "read_ns": 37149897
+        },
+        {
+          "elapsed_ns": 982533755,
+          "rss_bytes": 1396490240,
+          "pss_bytes": 1271768064,
+          "private_bytes": 1233158144,
+          "read_ns": 54300857
+        },
+        {
+          "elapsed_ns": 1086992706,
+          "rss_bytes": 1409413120,
+          "pss_bytes": 1284683776,
+          "private_bytes": 1246081024,
+          "read_ns": 57179942
+        },
+        {
+          "elapsed_ns": 1194329675,
+          "rss_bytes": 1444921344,
+          "pss_bytes": 1320199168,
+          "private_bytes": 1281589248,
+          "read_ns": 26700050
+        },
+        {
+          "elapsed_ns": 1271315863,
+          "rss_bytes": 1472839680,
+          "pss_bytes": 1348117504,
+          "private_bytes": 1309507584,
+          "read_ns": 23373834
+        },
+        {
+          "elapsed_ns": 1344857254,
+          "rss_bytes": 1490456576,
+          "pss_bytes": 1365734400,
+          "private_bytes": 1327124480,
+          "read_ns": 19943403
+        },
+        {
+          "elapsed_ns": 1415044041,
+          "rss_bytes": 1499258880,
+          "pss_bytes": 1374536704,
+          "private_bytes": 1335926784,
+          "read_ns": 24797184
+        },
+        {
+          "elapsed_ns": 1491221702,
+          "rss_bytes": 1501708288,
+          "pss_bytes": 1376986112,
+          "private_bytes": 1338376192,
+          "read_ns": 40630272
+        },
+        {
+          "elapsed_ns": 1582011794,
+          "rss_bytes": 1502072832,
+          "pss_bytes": 1377350656,
+          "private_bytes": 1338740736,
+          "read_ns": 33569850
+        },
+        {
+          "elapsed_ns": 1665764486,
+          "rss_bytes": 1502224384,
+          "pss_bytes": 1377502208,
+          "private_bytes": 1338892288,
+          "read_ns": 22652301
+        },
+        {
+          "elapsed_ns": 1743221622,
+          "rss_bytes": 1502523392,
+          "pss_bytes": 1377801216,
+          "private_bytes": 1339191296,
+          "read_ns": 34296204
+        },
+        {
+          "elapsed_ns": 1831220935,
+          "rss_bytes": 1502846976,
+          "pss_bytes": 1378124800,
+          "private_bytes": 1339514880,
+          "read_ns": 56099822
+        },
+        {
+          "elapsed_ns": 1939215649,
+          "rss_bytes": 1503371264,
+          "pss_bytes": 1378649088,
+          "private_bytes": 1340039168,
+          "read_ns": 39916871
+        },
+        {
+          "elapsed_ns": 2037388923,
+          "rss_bytes": 1527857152,
+          "pss_bytes": 1403134976,
+          "private_bytes": 1364525056,
+          "read_ns": 40973281
+        },
+        {
+          "elapsed_ns": 2129486461,
+          "rss_bytes": 1504366592,
+          "pss_bytes": 1379644416,
+          "private_bytes": 1341034496,
+          "read_ns": 48592455
+        },
+        {
+          "elapsed_ns": 2231215600,
+          "rss_bytes": 1504567296,
+          "pss_bytes": 1379845120,
+          "private_bytes": 1341235200,
+          "read_ns": 29434413
+        },
+        {
+          "elapsed_ns": 2310803677,
+          "rss_bytes": 1504862208,
+          "pss_bytes": 1380140032,
+          "private_bytes": 1341530112,
+          "read_ns": 46978444
+        },
+        {
+          "elapsed_ns": 2408157688,
+          "rss_bytes": 1518792704,
+          "pss_bytes": 1394067456,
+          "private_bytes": 1355460608,
+          "read_ns": 31580976
+        },
+        {
+          "elapsed_ns": 2491222884,
+          "rss_bytes": 1519906816,
+          "pss_bytes": 1395184640,
+          "private_bytes": 1356574720,
+          "read_ns": 56989851
+        },
+        {
+          "elapsed_ns": 2598396503,
+          "rss_bytes": 1522327552,
+          "pss_bytes": 1397605376,
+          "private_bytes": 1358995456,
+          "read_ns": 21018370
+        },
+        {
+          "elapsed_ns": 2669641382,
+          "rss_bytes": 1522528256,
+          "pss_bytes": 1397806080,
+          "private_bytes": 1359196160,
+          "read_ns": 31025343
+        },
+        {
+          "elapsed_ns": 2750873125,
+          "rss_bytes": 1530654720,
+          "pss_bytes": 1405932544,
+          "private_bytes": 1367322624,
+          "read_ns": 24199699
+        },
+        {
+          "elapsed_ns": 2827217420,
+          "rss_bytes": 1559973888,
+          "pss_bytes": 1435251712,
+          "private_bytes": 1396641792,
+          "read_ns": 47588761
+        },
+        {
+          "elapsed_ns": 2924956972,
+          "rss_bytes": 1574944768,
+          "pss_bytes": 1450222592,
+          "private_bytes": 1411612672,
+          "read_ns": 32103460
+        },
+        {
+          "elapsed_ns": 3011218716,
+          "rss_bytes": 1587863552,
+          "pss_bytes": 1463141376,
+          "private_bytes": 1424531456,
+          "read_ns": 34505859
+        },
+        {
+          "elapsed_ns": 3095936277,
+          "rss_bytes": 1607434240,
+          "pss_bytes": 1482712064,
+          "private_bytes": 1444102144,
+          "read_ns": 34590735
+        },
+        {
+          "elapsed_ns": 3182017117,
+          "rss_bytes": 1621884928,
+          "pss_bytes": 1497162752,
+          "private_bytes": 1458552832,
+          "read_ns": 42098659
+        },
+        {
+          "elapsed_ns": 3274281133,
+          "rss_bytes": 1637933056,
+          "pss_bytes": 1513210880,
+          "private_bytes": 1474600960,
+          "read_ns": 46739516
+        },
+        {
+          "elapsed_ns": 3371196087,
+          "rss_bytes": 1629102080,
+          "pss_bytes": 1504379904,
+          "private_bytes": 1465769984,
+          "read_ns": 52113377
+        },
+        {
+          "elapsed_ns": 3479228166,
+          "rss_bytes": 1631518720,
+          "pss_bytes": 1506796544,
+          "private_bytes": 1468186624,
+          "read_ns": 30747642
+        },
+        {
+          "elapsed_ns": 3563256839,
+          "rss_bytes": 1631719424,
+          "pss_bytes": 1506996224,
+          "private_bytes": 1468387328,
+          "read_ns": 59455282
+        },
+        {
+          "elapsed_ns": 3675761914,
+          "rss_bytes": 1638625280,
+          "pss_bytes": 1513903104,
+          "private_bytes": 1475293184,
+          "read_ns": 50580551
+        },
+        {
+          "elapsed_ns": 3776536888,
+          "rss_bytes": 1642446848,
+          "pss_bytes": 1517724672,
+          "private_bytes": 1479114752,
+          "read_ns": 33322067
+        },
+        {
+          "elapsed_ns": 3861076542,
+          "rss_bytes": 1668558848,
+          "pss_bytes": 1543836672,
+          "private_bytes": 1505226752,
+          "read_ns": 63066956
+        },
+        {
+          "elapsed_ns": 3974311250,
+          "rss_bytes": 1684189184,
+          "pss_bytes": 1559467008,
+          "private_bytes": 1520857088,
+          "read_ns": 65317948
+        },
+        {
+          "elapsed_ns": 4091219009,
+          "rss_bytes": 1712766976,
+          "pss_bytes": 1588044800,
+          "private_bytes": 1549434880,
+          "read_ns": 69332147
+        },
+        {
+          "elapsed_ns": 4210705344,
+          "rss_bytes": 1746051072,
+          "pss_bytes": 1621328896,
+          "private_bytes": 1582718976,
+          "read_ns": 54318790
+        },
+        {
+          "elapsed_ns": 4315203138,
+          "rss_bytes": 1767002112,
+          "pss_bytes": 1642279936,
+          "private_bytes": 1603670016,
+          "read_ns": 43442632
+        },
+        {
+          "elapsed_ns": 4411224578,
+          "rss_bytes": 1785532416,
+          "pss_bytes": 1660810240,
+          "private_bytes": 1622200320,
+          "read_ns": 62154387
+        },
+        {
+          "elapsed_ns": 4527213334,
+          "rss_bytes": 1805139968,
+          "pss_bytes": 1680417792,
+          "private_bytes": 1641807872,
+          "read_ns": 66061931
+        },
+        {
+          "elapsed_ns": 4643433709,
+          "rss_bytes": 1818824704,
+          "pss_bytes": 1694102528,
+          "private_bytes": 1655492608,
+          "read_ns": 60492599
+        },
+        {
+          "elapsed_ns": 4754094271,
+          "rss_bytes": 1886670848,
+          "pss_bytes": 1761948672,
+          "private_bytes": 1723338752,
+          "read_ns": 58137911
+        },
+        {
+          "elapsed_ns": 4862456528,
+          "rss_bytes": 1924112384,
+          "pss_bytes": 1799390208,
+          "private_bytes": 1760780288,
+          "read_ns": 49231451
+        },
+        {
+          "elapsed_ns": 4961877363,
+          "rss_bytes": 1940897792,
+          "pss_bytes": 1816175616,
+          "private_bytes": 1777565696,
+          "read_ns": 35122699
+        },
+        {
+          "elapsed_ns": 5047194456,
+          "rss_bytes": 1951825920,
+          "pss_bytes": 1827103744,
+          "private_bytes": 1788493824,
+          "read_ns": 28261727
+        },
+        {
+          "elapsed_ns": 5127221904,
+          "rss_bytes": 1980940288,
+          "pss_bytes": 1856218112,
+          "private_bytes": 1817608192,
+          "read_ns": 73877729
+        },
+        {
+          "elapsed_ns": 5255228273,
+          "rss_bytes": 1981140992,
+          "pss_bytes": 1856418816,
+          "private_bytes": 1817808896,
+          "read_ns": 60918008
+        },
+        {
+          "elapsed_ns": 5366359343,
+          "rss_bytes": 1982648320,
+          "pss_bytes": 1857926144,
+          "private_bytes": 1819316224,
+          "read_ns": 33453091
+        },
+        {
+          "elapsed_ns": 5449985110,
+          "rss_bytes": 1988657152,
+          "pss_bytes": 1863934976,
+          "private_bytes": 1825325056,
+          "read_ns": 70150636
+        },
+        {
+          "elapsed_ns": 5570338316,
+          "rss_bytes": 1990205440,
+          "pss_bytes": 1865483264,
+          "private_bytes": 1826873344,
+          "read_ns": 39576791
+        },
+        {
+          "elapsed_ns": 5661184730,
+          "rss_bytes": 1951469568,
+          "pss_bytes": 1826747392,
+          "private_bytes": 1788137472,
+          "read_ns": 42129186
+        },
+        {
+          "elapsed_ns": 5755258224,
+          "rss_bytes": 1952825344,
+          "pss_bytes": 1828103168,
+          "private_bytes": 1789493248,
+          "read_ns": 61095921
+        },
+        {
+          "elapsed_ns": 5866520315,
+          "rss_bytes": 1953767424,
+          "pss_bytes": 1829045248,
+          "private_bytes": 1790435328,
+          "read_ns": 73032690
+        },
+        {
+          "elapsed_ns": 5991262073,
+          "rss_bytes": 1954140160,
+          "pss_bytes": 1829417984,
+          "private_bytes": 1790808064,
+          "read_ns": 67326137
+        },
+        {
+          "elapsed_ns": 6108874130,
+          "rss_bytes": 1956007936,
+          "pss_bytes": 1831283712,
+          "private_bytes": 1792675840,
+          "read_ns": 47755317
+        },
+        {
+          "elapsed_ns": 6207223497,
+          "rss_bytes": 1923330048,
+          "pss_bytes": 1798607872,
+          "private_bytes": 1759997952,
+          "read_ns": 58735501
+        },
+        {
+          "elapsed_ns": 6319956212,
+          "rss_bytes": 1926152192,
+          "pss_bytes": 1801430016,
+          "private_bytes": 1762820096,
+          "read_ns": 68783333
+        },
+        {
+          "elapsed_ns": 6438919997,
+          "rss_bytes": 1927110656,
+          "pss_bytes": 1802388480,
+          "private_bytes": 1763778560,
+          "read_ns": 43928742
+        },
+        {
+          "elapsed_ns": 6535222697,
+          "rss_bytes": 1927213056,
+          "pss_bytes": 1802490880,
+          "private_bytes": 1763880960,
+          "read_ns": 26811526
+        },
+        {
+          "elapsed_ns": 6615218501,
+          "rss_bytes": 1927442432,
+          "pss_bytes": 1802720256,
+          "private_bytes": 1764110336,
+          "read_ns": 51551810
+        },
+        {
+          "elapsed_ns": 6719221196,
+          "rss_bytes": 1928708096,
+          "pss_bytes": 1803985920,
+          "private_bytes": 1765376000,
+          "read_ns": 49537652
+        },
+        {
+          "elapsed_ns": 6818964904,
+          "rss_bytes": 1869217792,
+          "pss_bytes": 1744495616,
+          "private_bytes": 1705885696,
+          "read_ns": 35912696
+        },
+        {
+          "elapsed_ns": 6907230394,
+          "rss_bytes": 1869361152,
+          "pss_bytes": 1744638976,
+          "private_bytes": 1706029056,
+          "read_ns": 37616459
+        },
+        {
+          "elapsed_ns": 6995029786,
+          "rss_bytes": 1869549568,
+          "pss_bytes": 1744827392,
+          "private_bytes": 1706217472,
+          "read_ns": 47198050
+        },
+        {
+          "elapsed_ns": 7095218086,
+          "rss_bytes": 1842266112,
+          "pss_bytes": 1717543936,
+          "private_bytes": 1678934016,
+          "read_ns": 53999954
+        },
+        {
+          "elapsed_ns": 7203219480,
+          "rss_bytes": 1842987008,
+          "pss_bytes": 1718264832,
+          "private_bytes": 1679654912,
+          "read_ns": 38610260
+        },
+        {
+          "elapsed_ns": 7292008616,
+          "rss_bytes": 1723191296,
+          "pss_bytes": 1598469120,
+          "private_bytes": 1559859200,
+          "read_ns": 37035910
+        },
+        {
+          "elapsed_ns": 7379219224,
+          "rss_bytes": 1723355136,
+          "pss_bytes": 1598632960,
+          "private_bytes": 1560023040,
+          "read_ns": 24935954
+        },
+        {
+          "elapsed_ns": 7454308892,
+          "rss_bytes": 1730318336,
+          "pss_bytes": 1605596160,
+          "private_bytes": 1566986240,
+          "read_ns": 38213256
+        },
+        {
+          "elapsed_ns": 7543235096,
+          "rss_bytes": 1752965120,
+          "pss_bytes": 1628242944,
+          "private_bytes": 1589633024,
+          "read_ns": 27139157
+        },
+        {
+          "elapsed_ns": 7620566723,
+          "rss_bytes": 1778085888,
+          "pss_bytes": 1653363712,
+          "private_bytes": 1614753792,
+          "read_ns": 36333731
+        },
+        {
+          "elapsed_ns": 7707060980,
+          "rss_bytes": 1817464832,
+          "pss_bytes": 1692742656,
+          "private_bytes": 1654132736,
+          "read_ns": 47029515
+        },
+        {
+          "elapsed_ns": 7807230834,
+          "rss_bytes": 1905012736,
+          "pss_bytes": 1780290560,
+          "private_bytes": 1741680640,
+          "read_ns": 54499996
+        },
+        {
+          "elapsed_ns": 7912268668,
+          "rss_bytes": 1894481920,
+          "pss_bytes": 1769759744,
+          "private_bytes": 1731149824,
+          "read_ns": 42982601
+        },
+        {
+          "elapsed_ns": 8007231187,
+          "rss_bytes": 1941684224,
+          "pss_bytes": 1816962048,
+          "private_bytes": 1778352128,
+          "read_ns": 64626322
+        },
+        {
+          "elapsed_ns": 8122052174,
+          "rss_bytes": 1968644096,
+          "pss_bytes": 1843921920,
+          "private_bytes": 1805312000,
+          "read_ns": 34516100
+        },
+        {
+          "elapsed_ns": 8206813052,
+          "rss_bytes": 1968852992,
+          "pss_bytes": 1844130816,
+          "private_bytes": 1805520896,
+          "read_ns": 29449234
+        },
+        {
+          "elapsed_ns": 8286434989,
+          "rss_bytes": 1970008064,
+          "pss_bytes": 1845285888,
+          "private_bytes": 1806675968,
+          "read_ns": 36355026
+        },
+        {
+          "elapsed_ns": 8375218174,
+          "rss_bytes": 1970216960,
+          "pss_bytes": 1845494784,
+          "private_bytes": 1806884864,
+          "read_ns": 58124087
+        },
+        {
+          "elapsed_ns": 8487228462,
+          "rss_bytes": 1970372608,
+          "pss_bytes": 1845650432,
+          "private_bytes": 1807040512,
+          "read_ns": 51792997
+        },
+        {
+          "elapsed_ns": 8591235106,
+          "rss_bytes": 1973600256,
+          "pss_bytes": 1848869888,
+          "private_bytes": 1810268160,
+          "read_ns": 50538958
+        },
+        {
+          "elapsed_ns": 8691974030,
+          "rss_bytes": 1973837824,
+          "pss_bytes": 1849115648,
+          "private_bytes": 1810505728,
+          "read_ns": 37066168
+        },
+        {
+          "elapsed_ns": 8779248872,
+          "rss_bytes": 1975676928,
+          "pss_bytes": 1850954752,
+          "private_bytes": 1812344832,
+          "read_ns": 29566216
+        },
+        {
+          "elapsed_ns": 8858988968,
+          "rss_bytes": 1976762368,
+          "pss_bytes": 1852040192,
+          "private_bytes": 1813430272,
+          "read_ns": 63747195
+        },
+        {
+          "elapsed_ns": 8975209209,
+          "rss_bytes": 1941344256,
+          "pss_bytes": 1816622080,
+          "private_bytes": 1778012160,
+          "read_ns": 50000338
+        },
+        {
+          "elapsed_ns": 9075411466,
+          "rss_bytes": 1941499904,
+          "pss_bytes": 1816777728,
+          "private_bytes": 1778167808,
+          "read_ns": 28107888
+        },
+        {
+          "elapsed_ns": 9153705661,
+          "rss_bytes": 1942663168,
+          "pss_bytes": 1817940992,
+          "private_bytes": 1779331072,
+          "read_ns": 50424780
+        },
+        {
+          "elapsed_ns": 9254318604,
+          "rss_bytes": 1848217600,
+          "pss_bytes": 1723495424,
+          "private_bytes": 1684885504,
+          "read_ns": 46610194
+        },
+        {
+          "elapsed_ns": 9351106737,
+          "rss_bytes": 1848537088,
+          "pss_bytes": 1723814912,
+          "private_bytes": 1685204992,
+          "read_ns": 27572742
+        },
+        {
+          "elapsed_ns": 9431226228,
+          "rss_bytes": 1848619008,
+          "pss_bytes": 1723896832,
+          "private_bytes": 1685286912,
+          "read_ns": 60732934
+        },
+        {
+          "elapsed_ns": 9542121626,
+          "rss_bytes": 1857044480,
+          "pss_bytes": 1732322304,
+          "private_bytes": 1693712384,
+          "read_ns": 34645384
+        },
+        {
+          "elapsed_ns": 9626940695,
+          "rss_bytes": 1901166592,
+          "pss_bytes": 1776444416,
+          "private_bytes": 1737834496,
+          "read_ns": 40468896
+        },
+        {
+          "elapsed_ns": 9719239542,
+          "rss_bytes": 1923788800,
+          "pss_bytes": 1799066624,
+          "private_bytes": 1760456704,
+          "read_ns": 36497447
+        },
+        {
+          "elapsed_ns": 9807222483,
+          "rss_bytes": 1945923584,
+          "pss_bytes": 1821201408,
+          "private_bytes": 1782591488,
+          "read_ns": 51179605
+        },
+        {
+          "elapsed_ns": 9911344042,
+          "rss_bytes": 1946787840,
+          "pss_bytes": 1822034944,
+          "private_bytes": 1783451648,
+          "read_ns": 37155282
+        },
+        {
+          "elapsed_ns": 9998659112,
+          "rss_bytes": 1990316032,
+          "pss_bytes": 1865563136,
+          "private_bytes": 1826979840,
+          "read_ns": 48838144
+        },
+        {
+          "elapsed_ns": 10098014551,
+          "rss_bytes": 2012835840,
+          "pss_bytes": 1888082944,
+          "private_bytes": 1849499648,
+          "read_ns": 34125128
+        },
+        {
+          "elapsed_ns": 10182318905,
+          "rss_bytes": 2012864512,
+          "pss_bytes": 1888111616,
+          "private_bytes": 1849528320,
+          "read_ns": 34083404
+        },
+        {
+          "elapsed_ns": 10266607731,
+          "rss_bytes": 2012946432,
+          "pss_bytes": 1888193536,
+          "private_bytes": 1849610240,
+          "read_ns": 38950316
+        },
+        {
+          "elapsed_ns": 10359230495,
+          "rss_bytes": 2013093888,
+          "pss_bytes": 1888340992,
+          "private_bytes": 1849757696,
+          "read_ns": 66025831
+        },
+        {
+          "elapsed_ns": 10479228903,
+          "rss_bytes": 2016284672,
+          "pss_bytes": 1891531776,
+          "private_bytes": 1852948480,
+          "read_ns": 39036006
+        },
+        {
+          "elapsed_ns": 10571216465,
+          "rss_bytes": 2016546816,
+          "pss_bytes": 1891751936,
+          "private_bytes": 1853210624,
+          "read_ns": 70452801
+        },
+        {
+          "elapsed_ns": 10691883262,
+          "rss_bytes": 2023292928,
+          "pss_bytes": 1898499072,
+          "private_bytes": 1859956736,
+          "read_ns": 40992681
+        },
+        {
+          "elapsed_ns": 10783044888,
+          "rss_bytes": 2051477504,
+          "pss_bytes": 1926670336,
+          "private_bytes": 1888141312,
+          "read_ns": 55861861
+        },
+        {
+          "elapsed_ns": 10891317394,
+          "rss_bytes": 2079571968,
+          "pss_bytes": 1954819072,
+          "private_bytes": 1916235776,
+          "read_ns": 55762536
+        },
+        {
+          "elapsed_ns": 10999233692,
+          "rss_bytes": 2090598400,
+          "pss_bytes": 1965845504,
+          "private_bytes": 1927262208,
+          "read_ns": 57049385
+        },
+        {
+          "elapsed_ns": 11106490375,
+          "rss_bytes": 1928056832,
+          "pss_bytes": 1803302912,
+          "private_bytes": 1764720640,
+          "read_ns": 36379286
+        },
+        {
+          "elapsed_ns": 11195239545,
+          "rss_bytes": 1928089600,
+          "pss_bytes": 1803336704,
+          "private_bytes": 1764753408,
+          "read_ns": 83671793
+        },
+        {
+          "elapsed_ns": 11331220446,
+          "rss_bytes": 1928232960,
+          "pss_bytes": 1803480064,
+          "private_bytes": 1764896768,
+          "read_ns": 49999888
+        },
+        {
+          "elapsed_ns": 11435259836,
+          "rss_bytes": 1928323072,
+          "pss_bytes": 1803570176,
+          "private_bytes": 1764986880,
+          "read_ns": 42630316
+        },
+        {
+          "elapsed_ns": 11530774840,
+          "rss_bytes": 1928552448,
+          "pss_bytes": 1803799552,
+          "private_bytes": 1765216256,
+          "read_ns": 43339096
+        },
+        {
+          "elapsed_ns": 11627229271,
+          "rss_bytes": 1781837824,
+          "pss_bytes": 1657084928,
+          "private_bytes": 1618501632,
+          "read_ns": 30191721
+        }
+      ],
+      "requested_gc": {
+        "memory": {
+          "rss_bytes": 1787305984,
+          "pss_bytes": 1663314944,
+          "private_bytes": 1624985600,
+          "read_ns": 30401677
+        },
+        "heap": {
+          "heap_used": 34488224,
+          "heap_committed": 130023424
+        }
+      }
+    },
+    {
+      "block": 0,
+      "slots": 4,
+      "jvms": 1,
+      "workers_per_jvm": 4,
+      "start_seconds": 0.2070460729955812,
+      "shutdown_seconds": 0.031590906997735146,
+      "whole_session_seconds": 13.661942446000467,
+      "batch_seconds": {
+        "first": 4.409342480998021,
+        "warmup_excluded": 1.5341955740004778,
+        "late": [
+          1.1325561839985312,
+          0.8325762720050989,
+          0.8115960569994058,
+          0.8408404829970095,
+          0.617220678999729,
+          0.7128823039965937,
+          0.6405981380012236,
+          0.49429129799682414,
+          0.4948127879979438,
+          0.5644871530021192
+        ]
+      },
+      "late_case_median_seconds": 0.6767402209989086,
+      "jvm_cpu_seconds": {
+        "first": 27.45,
+        "late": [
+          7.56,
+          5.59,
+          5.34,
+          5.25,
+          4.05,
+          4.73,
+          3.28,
+          2.52,
+          2.25,
+          2.56
+        ]
+      },
+      "memory": {
+        "memory_ready": {
+          "rss_bytes": 60784640,
+          "pss_bytes": 58086400,
+          "private_bytes": 57769984,
+          "read_ns": 2493433
+        },
+        "memory_after_first": {
+          "rss_bytes": 618844160,
+          "pss_bytes": 595082240,
+          "private_bytes": 587759616,
+          "read_ns": 11078666
+        },
+        "memory_after_warmup": {
+          "rss_bytes": 1061847040,
+          "pss_bytes": 1038051328,
+          "private_bytes": 1030762496,
+          "read_ns": 18634285
+        },
+        "memory_after_steady": {
+          "rss_bytes": 1813094400,
+          "pss_bytes": 1789358080,
+          "private_bytes": 1782009856,
+          "read_ns": 21999343
+        },
+        "memory_after_consumer": {
+          "rss_bytes": 363098112,
+          "pss_bytes": 339361792,
+          "private_bytes": 332013568,
+          "read_ns": 5250675
+        }
+      },
+      "heap_after_late": {
+        "heap_used": 1282162056,
+        "heap_committed": 1570766848
+      },
+      "sample_count": 89,
+      "sampled_sequential_aggregate_max": {
+        "rss_bytes": 1813082112,
+        "pss_bytes": 1789345792,
+        "private_bytes": 1781997568
+      },
+      "samples": [
+        {
+          "elapsed_ns": 1963,
+          "rss_bytes": 1061916672,
+          "pss_bytes": 1038120960,
+          "private_bytes": 1030832128,
+          "read_ns": 22750148
+        },
+        {
+          "elapsed_ns": 72935719,
+          "rss_bytes": 1061933056,
+          "pss_bytes": 1038137344,
+          "private_bytes": 1030848512,
+          "read_ns": 25109633
+        },
+        {
+          "elapsed_ns": 149084850,
+          "rss_bytes": 1063772160,
+          "pss_bytes": 1040012288,
+          "private_bytes": 1032687616,
+          "read_ns": 21242566
+        },
+        {
+          "elapsed_ns": 223319770,
+          "rss_bytes": 1063780352,
+          "pss_bytes": 1040013312,
+          "private_bytes": 1032695808,
+          "read_ns": 26706092
+        },
+        {
+          "elapsed_ns": 300353095,
+          "rss_bytes": 1063788544,
+          "pss_bytes": 1040023552,
+          "private_bytes": 1032704000,
+          "read_ns": 24661171
+        },
+        {
+          "elapsed_ns": 375183444,
+          "rss_bytes": 1064812544,
+          "pss_bytes": 1041047552,
+          "private_bytes": 1033728000,
+          "read_ns": 18955523
+        },
+        {
+          "elapsed_ns": 444333913,
+          "rss_bytes": 1090957312,
+          "pss_bytes": 1067194368,
+          "private_bytes": 1059872768,
+          "read_ns": 23924687
+        },
+        {
+          "elapsed_ns": 521608177,
+          "rss_bytes": 1166884864,
+          "pss_bytes": 1143121920,
+          "private_bytes": 1135800320,
+          "read_ns": 23314708
+        },
+        {
+          "elapsed_ns": 595117290,
+          "rss_bytes": 1248362496,
+          "pss_bytes": 1224600576,
+          "private_bytes": 1217277952,
+          "read_ns": 34826204
+        },
+        {
+          "elapsed_ns": 680104756,
+          "rss_bytes": 1395191808,
+          "pss_bytes": 1371429888,
+          "private_bytes": 1364107264,
+          "read_ns": 34594867
+        },
+        {
+          "elapsed_ns": 764864494,
+          "rss_bytes": 1500098560,
+          "pss_bytes": 1476336640,
+          "private_bytes": 1469014016,
+          "read_ns": 28592353
+        },
+        {
+          "elapsed_ns": 843631647,
+          "rss_bytes": 1508012032,
+          "pss_bytes": 1484250112,
+          "private_bytes": 1476927488,
+          "read_ns": 24342060
+        },
+        {
+          "elapsed_ns": 918164752,
+          "rss_bytes": 1508077568,
+          "pss_bytes": 1484315648,
+          "private_bytes": 1476993024,
+          "read_ns": 28436365
+        },
+        {
+          "elapsed_ns": 997202477,
+          "rss_bytes": 1508163584,
+          "pss_bytes": 1484401664,
+          "private_bytes": 1477079040,
+          "read_ns": 39307141
+        },
+        {
+          "elapsed_ns": 1086701602,
+          "rss_bytes": 1513529344,
+          "pss_bytes": 1489767424,
+          "private_bytes": 1482444800,
+          "read_ns": 31661488
+        },
+        {
+          "elapsed_ns": 1168536375,
+          "rss_bytes": 1516236800,
+          "pss_bytes": 1492474880,
+          "private_bytes": 1485152256,
+          "read_ns": 33153281
+        },
+        {
+          "elapsed_ns": 1251883505,
+          "rss_bytes": 1516367872,
+          "pss_bytes": 1492605952,
+          "private_bytes": 1485283328,
+          "read_ns": 31370642
+        },
+        {
+          "elapsed_ns": 1333445126,
+          "rss_bytes": 1516486656,
+          "pss_bytes": 1492724736,
+          "private_bytes": 1485402112,
+          "read_ns": 30802449
+        },
+        {
+          "elapsed_ns": 1414441867,
+          "rss_bytes": 1516507136,
+          "pss_bytes": 1492745216,
+          "private_bytes": 1485422592,
+          "read_ns": 39451457
+        },
+        {
+          "elapsed_ns": 1504100353,
+          "rss_bytes": 1516670976,
+          "pss_bytes": 1492909056,
+          "private_bytes": 1485586432,
+          "read_ns": 41526287
+        },
+        {
+          "elapsed_ns": 1595838266,
+          "rss_bytes": 1516756992,
+          "pss_bytes": 1492995072,
+          "private_bytes": 1485672448,
+          "read_ns": 46691286
+        },
+        {
+          "elapsed_ns": 1692722951,
+          "rss_bytes": 1516883968,
+          "pss_bytes": 1493122048,
+          "private_bytes": 1485799424,
+          "read_ns": 26054317
+        },
+        {
+          "elapsed_ns": 1768966627,
+          "rss_bytes": 1517838336,
+          "pss_bytes": 1494076416,
+          "private_bytes": 1486753792,
+          "read_ns": 32266428
+        },
+        {
+          "elapsed_ns": 1851433258,
+          "rss_bytes": 1517957120,
+          "pss_bytes": 1494195200,
+          "private_bytes": 1486872576,
+          "read_ns": 31048160
+        },
+        {
+          "elapsed_ns": 1932652629,
+          "rss_bytes": 1518059520,
+          "pss_bytes": 1494297600,
+          "private_bytes": 1486974976,
+          "read_ns": 24151523
+        },
+        {
+          "elapsed_ns": 2011310704,
+          "rss_bytes": 1519140864,
+          "pss_bytes": 1495378944,
+          "private_bytes": 1488056320,
+          "read_ns": 40777376
+        },
+        {
+          "elapsed_ns": 2103335336,
+          "rss_bytes": 1519329280,
+          "pss_bytes": 1495567360,
+          "private_bytes": 1488244736,
+          "read_ns": 26729319
+        },
+        {
+          "elapsed_ns": 2180233324,
+          "rss_bytes": 1519419392,
+          "pss_bytes": 1495657472,
+          "private_bytes": 1488334848,
+          "read_ns": 29172906
+        },
+        {
+          "elapsed_ns": 2259572051,
+          "rss_bytes": 1519435776,
+          "pss_bytes": 1495673856,
+          "private_bytes": 1488351232,
+          "read_ns": 31116663
+        },
+        {
+          "elapsed_ns": 2340862012,
+          "rss_bytes": 1521016832,
+          "pss_bytes": 1497254912,
+          "private_bytes": 1489932288,
+          "read_ns": 32652550
+        },
+        {
+          "elapsed_ns": 2424311037,
+          "rss_bytes": 1522802688,
+          "pss_bytes": 1499000832,
+          "private_bytes": 1491718144,
+          "read_ns": 33906060
+        },
+        {
+          "elapsed_ns": 2511461844,
+          "rss_bytes": 1523011584,
+          "pss_bytes": 1499249664,
+          "private_bytes": 1491927040,
+          "read_ns": 33775729
+        },
+        {
+          "elapsed_ns": 2595400109,
+          "rss_bytes": 1525059584,
+          "pss_bytes": 1501297664,
+          "private_bytes": 1493975040,
+          "read_ns": 35735904
+        },
+        {
+          "elapsed_ns": 2685225892,
+          "rss_bytes": 1525968896,
+          "pss_bytes": 1502206976,
+          "private_bytes": 1494884352,
+          "read_ns": 36524908
+        },
+        {
+          "elapsed_ns": 2771961175,
+          "rss_bytes": 1526325248,
+          "pss_bytes": 1502534656,
+          "private_bytes": 1495240704,
+          "read_ns": 34899816
+        },
+        {
+          "elapsed_ns": 2857050312,
+          "rss_bytes": 1526370304,
+          "pss_bytes": 1502585856,
+          "private_bytes": 1495285760,
+          "read_ns": 32143196
+        },
+        {
+          "elapsed_ns": 2939339063,
+          "rss_bytes": 1526521856,
+          "pss_bytes": 1502749696,
+          "private_bytes": 1495437312,
+          "read_ns": 23163505
+        },
+        {
+          "elapsed_ns": 3012680428,
+          "rss_bytes": 1617416192,
+          "pss_bytes": 1593653248,
+          "private_bytes": 1586331648,
+          "read_ns": 35146715
+        },
+        {
+          "elapsed_ns": 3098006229,
+          "rss_bytes": 1721606144,
+          "pss_bytes": 1697846272,
+          "private_bytes": 1690521600,
+          "read_ns": 32286634
+        },
+        {
+          "elapsed_ns": 3180445292,
+          "rss_bytes": 1731919872,
+          "pss_bytes": 1708160000,
+          "private_bytes": 1700835328,
+          "read_ns": 37130680
+        },
+        {
+          "elapsed_ns": 3267743488,
+          "rss_bytes": 1732079616,
+          "pss_bytes": 1708343296,
+          "private_bytes": 1700995072,
+          "read_ns": 28609737
+        },
+        {
+          "elapsed_ns": 3346533516,
+          "rss_bytes": 1734098944,
+          "pss_bytes": 1710362624,
+          "private_bytes": 1703014400,
+          "read_ns": 27168981
+        },
+        {
+          "elapsed_ns": 3423914966,
+          "rss_bytes": 1734270976,
+          "pss_bytes": 1710534656,
+          "private_bytes": 1703186432,
+          "read_ns": 24103502
+        },
+        {
+          "elapsed_ns": 3498220971,
+          "rss_bytes": 1734385664,
+          "pss_bytes": 1710649344,
+          "private_bytes": 1703301120,
+          "read_ns": 35642884
+        },
+        {
+          "elapsed_ns": 3584077432,
+          "rss_bytes": 1734496256,
+          "pss_bytes": 1710759936,
+          "private_bytes": 1703411712,
+          "read_ns": 29478402
+        },
+        {
+          "elapsed_ns": 3663736221,
+          "rss_bytes": 1734615040,
+          "pss_bytes": 1710878720,
+          "private_bytes": 1703530496,
+          "read_ns": 31363776
+        },
+        {
+          "elapsed_ns": 3745268973,
+          "rss_bytes": 1734770688,
+          "pss_bytes": 1711034368,
+          "private_bytes": 1703686144,
+          "read_ns": 24912771
+        },
+        {
+          "elapsed_ns": 3820398588,
+          "rss_bytes": 1734885376,
+          "pss_bytes": 1711149056,
+          "private_bytes": 1703800832,
+          "read_ns": 35726370
+        },
+        {
+          "elapsed_ns": 3906300701,
+          "rss_bytes": 1735069696,
+          "pss_bytes": 1711333376,
+          "private_bytes": 1703985152,
+          "read_ns": 26271686
+        },
+        {
+          "elapsed_ns": 3982830908,
+          "rss_bytes": 1735172096,
+          "pss_bytes": 1711435776,
+          "private_bytes": 1704087552,
+          "read_ns": 33769459
+        },
+        {
+          "elapsed_ns": 4066819777,
+          "rss_bytes": 1735176192,
+          "pss_bytes": 1711439872,
+          "private_bytes": 1704091648,
+          "read_ns": 32686156
+        },
+        {
+          "elapsed_ns": 4149730289,
+          "rss_bytes": 1735356416,
+          "pss_bytes": 1711620096,
+          "private_bytes": 1704271872,
+          "read_ns": 29745868
+        },
+        {
+          "elapsed_ns": 4229667987,
+          "rss_bytes": 1735487488,
+          "pss_bytes": 1711751168,
+          "private_bytes": 1704402944,
+          "read_ns": 26969406
+        },
+        {
+          "elapsed_ns": 4306849632,
+          "rss_bytes": 1735606272,
+          "pss_bytes": 1711869952,
+          "private_bytes": 1704521728,
+          "read_ns": 38465646
+        },
+        {
+          "elapsed_ns": 4395523265,
+          "rss_bytes": 1735700480,
+          "pss_bytes": 1711964160,
+          "private_bytes": 1704615936,
+          "read_ns": 33292887
+        },
+        {
+          "elapsed_ns": 4479006451,
+          "rss_bytes": 1735847936,
+          "pss_bytes": 1712086016,
+          "private_bytes": 1704763392,
+          "read_ns": 35816563
+        },
+        {
+          "elapsed_ns": 4564989707,
+          "rss_bytes": 1735962624,
+          "pss_bytes": 1712226304,
+          "private_bytes": 1704878080,
+          "read_ns": 29770180
+        },
+        {
+          "elapsed_ns": 4644927975,
+          "rss_bytes": 1736167424,
+          "pss_bytes": 1712431104,
+          "private_bytes": 1705082880,
+          "read_ns": 25861372
+        },
+        {
+          "elapsed_ns": 4720979161,
+          "rss_bytes": 1736306688,
+          "pss_bytes": 1712570368,
+          "private_bytes": 1705222144,
+          "read_ns": 35588683
+        },
+        {
+          "elapsed_ns": 4806766894,
+          "rss_bytes": 1736421376,
+          "pss_bytes": 1712685056,
+          "private_bytes": 1705336832,
+          "read_ns": 26555012
+        },
+        {
+          "elapsed_ns": 4883499289,
+          "rss_bytes": 1736486912,
+          "pss_bytes": 1712750592,
+          "private_bytes": 1705402368,
+          "read_ns": 31311106
+        },
+        {
+          "elapsed_ns": 4964977089,
+          "rss_bytes": 1737928704,
+          "pss_bytes": 1714192384,
+          "private_bytes": 1706844160,
+          "read_ns": 25514230
+        },
+        {
+          "elapsed_ns": 5040674773,
+          "rss_bytes": 1740767232,
+          "pss_bytes": 1717030912,
+          "private_bytes": 1709682688,
+          "read_ns": 28604851
+        },
+        {
+          "elapsed_ns": 5119471662,
+          "rss_bytes": 1740910592,
+          "pss_bytes": 1717174272,
+          "private_bytes": 1709826048,
+          "read_ns": 35470158
+        },
+        {
+          "elapsed_ns": 5205139933,
+          "rss_bytes": 1741012992,
+          "pss_bytes": 1717276672,
+          "private_bytes": 1709928448,
+          "read_ns": 24238284
+        },
+        {
+          "elapsed_ns": 5279558102,
+          "rss_bytes": 1741135872,
+          "pss_bytes": 1717399552,
+          "private_bytes": 1710051328,
+          "read_ns": 25508161
+        },
+        {
+          "elapsed_ns": 5355284288,
+          "rss_bytes": 1741238272,
+          "pss_bytes": 1717501952,
+          "private_bytes": 1710153728,
+          "read_ns": 28137730
+        },
+        {
+          "elapsed_ns": 5433625076,
+          "rss_bytes": 1741299712,
+          "pss_bytes": 1717563392,
+          "private_bytes": 1710215168,
+          "read_ns": 26648094
+        },
+        {
+          "elapsed_ns": 5510476893,
+          "rss_bytes": 1741393920,
+          "pss_bytes": 1717657600,
+          "private_bytes": 1710309376,
+          "read_ns": 22902897
+        },
+        {
+          "elapsed_ns": 5583566591,
+          "rss_bytes": 1741443072,
+          "pss_bytes": 1717693440,
+          "private_bytes": 1710358528,
+          "read_ns": 25653498
+        },
+        {
+          "elapsed_ns": 5663318182,
+          "rss_bytes": 1741561856,
+          "pss_bytes": 1717825536,
+          "private_bytes": 1710477312,
+          "read_ns": 46263046
+        },
+        {
+          "elapsed_ns": 5759767540,
+          "rss_bytes": 1741647872,
+          "pss_bytes": 1717911552,
+          "private_bytes": 1710563328,
+          "read_ns": 29337260
+        },
+        {
+          "elapsed_ns": 5839297961,
+          "rss_bytes": 1741852672,
+          "pss_bytes": 1718116352,
+          "private_bytes": 1710768128,
+          "read_ns": 29630340
+        },
+        {
+          "elapsed_ns": 5919177333,
+          "rss_bytes": 1741967360,
+          "pss_bytes": 1718231040,
+          "private_bytes": 1710882816,
+          "read_ns": 24226896
+        },
+        {
+          "elapsed_ns": 5993586544,
+          "rss_bytes": 1742016512,
+          "pss_bytes": 1718280192,
+          "private_bytes": 1710931968,
+          "read_ns": 27897302
+        },
+        {
+          "elapsed_ns": 6071640240,
+          "rss_bytes": 1742065664,
+          "pss_bytes": 1718329344,
+          "private_bytes": 1710981120,
+          "read_ns": 24789086
+        },
+        {
+          "elapsed_ns": 6146679788,
+          "rss_bytes": 1742200832,
+          "pss_bytes": 1718464512,
+          "private_bytes": 1711116288,
+          "read_ns": 24504980
+        },
+        {
+          "elapsed_ns": 6221406823,
+          "rss_bytes": 1742225408,
+          "pss_bytes": 1718489088,
+          "private_bytes": 1711140864,
+          "read_ns": 24821912
+        },
+        {
+          "elapsed_ns": 6296406656,
+          "rss_bytes": 1742340096,
+          "pss_bytes": 1718603776,
+          "private_bytes": 1711255552,
+          "read_ns": 25555204
+        },
+        {
+          "elapsed_ns": 6372150580,
+          "rss_bytes": 1742512128,
+          "pss_bytes": 1718775808,
+          "private_bytes": 1711427584,
+          "read_ns": 27662463
+        },
+        {
+          "elapsed_ns": 6449979553,
+          "rss_bytes": 1742544896,
+          "pss_bytes": 1718808576,
+          "private_bytes": 1711460352,
+          "read_ns": 33415952
+        },
+        {
+          "elapsed_ns": 6533561253,
+          "rss_bytes": 1742569472,
+          "pss_bytes": 1718833152,
+          "private_bytes": 1711484928,
+          "read_ns": 30723202
+        },
+        {
+          "elapsed_ns": 6614471353,
+          "rss_bytes": 1742651392,
+          "pss_bytes": 1718915072,
+          "private_bytes": 1711566848,
+          "read_ns": 35061846
+        },
+        {
+          "elapsed_ns": 6699774019,
+          "rss_bytes": 1742909440,
+          "pss_bytes": 1719173120,
+          "private_bytes": 1711824896,
+          "read_ns": 31273394
+        },
+        {
+          "elapsed_ns": 6781303747,
+          "rss_bytes": 1743609856,
+          "pss_bytes": 1719873536,
+          "private_bytes": 1712525312,
+          "read_ns": 22765717
+        },
+        {
+          "elapsed_ns": 6854266736,
+          "rss_bytes": 1774678016,
+          "pss_bytes": 1750941696,
+          "private_bytes": 1743593472,
+          "read_ns": 24517349
+        },
+        {
+          "elapsed_ns": 6929040940,
+          "rss_bytes": 1813049344,
+          "pss_bytes": 1789313024,
+          "private_bytes": 1781964800,
+          "read_ns": 34743077
+        },
+        {
+          "elapsed_ns": 7013966428,
+          "rss_bytes": 1813078016,
+          "pss_bytes": 1789341696,
+          "private_bytes": 1781993472,
+          "read_ns": 24606611
+        },
+        {
+          "elapsed_ns": 7088795906,
+          "rss_bytes": 1813082112,
+          "pss_bytes": 1789345792,
+          "private_bytes": 1781997568,
+          "read_ns": 29085384
+        }
+      ],
+      "requested_gc": {
+        "memory": {
+          "rss_bytes": 1689264128,
+          "pss_bytes": 1665527808,
+          "private_bytes": 1658179584,
+          "read_ns": 32740960
+        },
+        "heap": {
+          "heap_used": 26096656,
+          "heap_committed": 119537664
+        }
+      }
+    },
+    {
+      "block": 0,
+      "slots": 8,
+      "jvms": 8,
+      "workers_per_jvm": 1,
+      "start_seconds": 0.19894404300430324,
+      "shutdown_seconds": 0.03834878199995728,
+      "whole_session_seconds": 24.59858354699827,
+      "batch_seconds": {
+        "first": 6.421668132999912,
+        "warmup_excluded": 2.7086756880016765,
+        "late": [
+          2.235834042003262,
+          1.9389821010045125,
+          1.7178867300026468,
+          1.474162313999841,
+          1.36701783999888,
+          1.274964683005237,
+          1.2383112349998555,
+          1.3041871650057146,
+          1.2743674090015702,
+          1.0990959339978872
+        ]
+      },
+      "late_case_median_seconds": 1.3356025025022973,
+      "jvm_cpu_seconds": {
+        "first": 49.77,
+        "late": [
+          16.31,
+          14.19,
+          12.4,
+          10.35,
+          9.84,
+          9.16,
+          8.72,
+          9.19,
+          8.7,
+          7.75
+        ]
+      },
+      "memory": {
+        "memory_ready": {
+          "rss_bytes": 467406848,
+          "pss_bytes": 260750336,
+          "private_bytes": 233308160,
+          "read_ns": 8759513
+        },
+        "memory_after_first": {
+          "rss_bytes": 1642913792,
+          "pss_bytes": 1355558912,
+          "private_bytes": 1316638720,
+          "read_ns": 28964330
+        },
+        "memory_after_warmup": {
+          "rss_bytes": 1962147840,
+          "pss_bytes": 1674792960,
+          "private_bytes": 1635872768,
+          "read_ns": 30304204
+        },
+        "memory_after_steady": {
+          "rss_bytes": 2637287424,
+          "pss_bytes": 2349932544,
+          "private_bytes": 2311012352,
+          "read_ns": 37717683
+        },
+        "memory_after_consumer": {
+          "rss_bytes": 1324781568,
+          "pss_bytes": 1036623872,
+          "private_bytes": 997588992,
+          "read_ns": 19609324
+        }
+      },
+      "heap_after_late": {
+        "heap_used": 992382304,
+        "heap_committed": 1520435200
+      },
+      "sample_count": 98,
+      "sampled_sequential_aggregate_max": {
+        "rss_bytes": 2679783424,
+        "pss_bytes": 2392428544,
+        "private_bytes": 2353508352
+      },
+      "samples": [
+        {
+          "elapsed_ns": 4799,
+          "rss_bytes": 1967394816,
+          "pss_bytes": 1680039936,
+          "private_bytes": 1641119744,
+          "read_ns": 69223707
+        },
+        {
+          "elapsed_ns": 119431932,
+          "rss_bytes": 1995878400,
+          "pss_bytes": 1708523520,
+          "private_bytes": 1669603328,
+          "read_ns": 142036646
+        },
+        {
+          "elapsed_ns": 316257684,
+          "rss_bytes": 2034200576,
+          "pss_bytes": 1746845696,
+          "private_bytes": 1707925504,
+          "read_ns": 123276447
+        },
+        {
+          "elapsed_ns": 491966686,
+          "rss_bytes": 2092445696,
+          "pss_bytes": 1805090816,
+          "private_bytes": 1766170624,
+          "read_ns": 107154264
+        },
+        {
+          "elapsed_ns": 649273839,
+          "rss_bytes": 2135830528,
+          "pss_bytes": 1848475648,
+          "private_bytes": 1809555456,
+          "read_ns": 96702181
+        },
+        {
+          "elapsed_ns": 796128444,
+          "rss_bytes": 2160799744,
+          "pss_bytes": 1873444864,
+          "private_bytes": 1834524672,
+          "read_ns": 90965523
+        },
+        {
+          "elapsed_ns": 940263247,
+          "rss_bytes": 2172665856,
+          "pss_bytes": 1885310976,
+          "private_bytes": 1846390784,
+          "read_ns": 101967757
+        },
+        {
+          "elapsed_ns": 1096257877,
+          "rss_bytes": 2174291968,
+          "pss_bytes": 1886937088,
+          "private_bytes": 1848016896,
+          "read_ns": 64935378
+        },
+        {
+          "elapsed_ns": 1211359909,
+          "rss_bytes": 2178846720,
+          "pss_bytes": 1891491840,
+          "private_bytes": 1852571648,
+          "read_ns": 114522101
+        },
+        {
+          "elapsed_ns": 1376051872,
+          "rss_bytes": 2181406720,
+          "pss_bytes": 1894051840,
+          "private_bytes": 1855131648,
+          "read_ns": 94916660
+        },
+        {
+          "elapsed_ns": 1524256758,
+          "rss_bytes": 2185211904,
+          "pss_bytes": 1897857024,
+          "private_bytes": 1858936832,
+          "read_ns": 81365117
+        },
+        {
+          "elapsed_ns": 1655771555,
+          "rss_bytes": 2186948608,
+          "pss_bytes": 1899593728,
+          "private_bytes": 1860673536,
+          "read_ns": 105771136
+        },
+        {
+          "elapsed_ns": 1811695726,
+          "rss_bytes": 2188533760,
+          "pss_bytes": 1901178880,
+          "private_bytes": 1862258688,
+          "read_ns": 91277711
+        },
+        {
+          "elapsed_ns": 1956081026,
+          "rss_bytes": 2194513920,
+          "pss_bytes": 1907159040,
+          "private_bytes": 1868238848,
+          "read_ns": 59172082
+        },
+        {
+          "elapsed_ns": 2068266348,
+          "rss_bytes": 2196299776,
+          "pss_bytes": 1908944896,
+          "private_bytes": 1870024704,
+          "read_ns": 90594574
+        },
+        {
+          "elapsed_ns": 2209027412,
+          "rss_bytes": 2196992000,
+          "pss_bytes": 1909637120,
+          "private_bytes": 1870716928,
+          "read_ns": 64563477
+        },
+        {
+          "elapsed_ns": 2328252609,
+          "rss_bytes": 2210111488,
+          "pss_bytes": 1922756608,
+          "private_bytes": 1883836416,
+          "read_ns": 112633501
+        },
+        {
+          "elapsed_ns": 2496242039,
+          "rss_bytes": 2237001728,
+          "pss_bytes": 1949646848,
+          "private_bytes": 1910726656,
+          "read_ns": 120353566
+        },
+        {
+          "elapsed_ns": 2666850563,
+          "rss_bytes": 2276614144,
+          "pss_bytes": 1989259264,
+          "private_bytes": 1950339072,
+          "read_ns": 111559600
+        },
+        {
+          "elapsed_ns": 2832283469,
+          "rss_bytes": 2290720768,
+          "pss_bytes": 2003365888,
+          "private_bytes": 1964445696,
+          "read_ns": 91290590
+        },
+        {
+          "elapsed_ns": 2976264754,
+          "rss_bytes": 2292940800,
+          "pss_bytes": 2005585920,
+          "private_bytes": 1966665728,
+          "read_ns": 105538792
+        },
+        {
+          "elapsed_ns": 3131957000,
+          "rss_bytes": 2295042048,
+          "pss_bytes": 2007687168,
+          "private_bytes": 1968766976,
+          "read_ns": 99812447
+        },
+        {
+          "elapsed_ns": 3281943359,
+          "rss_bytes": 2296549376,
+          "pss_bytes": 2009194496,
+          "private_bytes": 1970274304,
+          "read_ns": 104710121
+        },
+        {
+          "elapsed_ns": 3436811425,
+          "rss_bytes": 2297618432,
+          "pss_bytes": 2010263552,
+          "private_bytes": 1971343360,
+          "read_ns": 119647213
+        },
+        {
+          "elapsed_ns": 3606666761,
+          "rss_bytes": 2270048256,
+          "pss_bytes": 1982692352,
+          "private_bytes": 1943773184,
+          "read_ns": 102329722
+        },
+        {
+          "elapsed_ns": 3759185316,
+          "rss_bytes": 2270322688,
+          "pss_bytes": 1982967808,
+          "private_bytes": 1944047616,
+          "read_ns": 52529313
+        },
+        {
+          "elapsed_ns": 3862092203,
+          "rss_bytes": 2271059968,
+          "pss_bytes": 1983705088,
+          "private_bytes": 1944784896,
+          "read_ns": 100271095
+        },
+        {
+          "elapsed_ns": 4016245811,
+          "rss_bytes": 2271629312,
+          "pss_bytes": 1984274432,
+          "private_bytes": 1945354240,
+          "read_ns": 104468792
+        },
+        {
+          "elapsed_ns": 4170907494,
+          "rss_bytes": 2273796096,
+          "pss_bytes": 1986441216,
+          "private_bytes": 1947521024,
+          "read_ns": 71666152
+        },
+        {
+          "elapsed_ns": 4292758882,
+          "rss_bytes": 2292858880,
+          "pss_bytes": 2005504000,
+          "private_bytes": 1966583808,
+          "read_ns": 72975069
+        },
+        {
+          "elapsed_ns": 4415909643,
+          "rss_bytes": 2312368128,
+          "pss_bytes": 2025013248,
+          "private_bytes": 1986093056,
+          "read_ns": 88973590
+        },
+        {
+          "elapsed_ns": 4555061790,
+          "rss_bytes": 2353758208,
+          "pss_bytes": 2066403328,
+          "private_bytes": 2027483136,
+          "read_ns": 45343656
+        },
+        {
+          "elapsed_ns": 4660248954,
+          "rss_bytes": 2385448960,
+          "pss_bytes": 2098094080,
+          "private_bytes": 2059173888,
+          "read_ns": 104721608
+        },
+        {
+          "elapsed_ns": 4815622534,
+          "rss_bytes": 2392686592,
+          "pss_bytes": 2105331712,
+          "private_bytes": 2066411520,
+          "read_ns": 100815875
+        },
+        {
+          "elapsed_ns": 4968254170,
+          "rss_bytes": 2393055232,
+          "pss_bytes": 2105700352,
+          "private_bytes": 2066780160,
+          "read_ns": 125475810
+        },
+        {
+          "elapsed_ns": 5148251283,
+          "rss_bytes": 2393272320,
+          "pss_bytes": 2105917440,
+          "private_bytes": 2066997248,
+          "read_ns": 142759593
+        },
+        {
+          "elapsed_ns": 5344143977,
+          "rss_bytes": 2395324416,
+          "pss_bytes": 2107969536,
+          "private_bytes": 2069049344,
+          "read_ns": 105997643
+        },
+        {
+          "elapsed_ns": 5504280283,
+          "rss_bytes": 2397847552,
+          "pss_bytes": 2110489600,
+          "private_bytes": 2071572480,
+          "read_ns": 150143908
+        },
+        {
+          "elapsed_ns": 5708270464,
+          "rss_bytes": 2417823744,
+          "pss_bytes": 2130468864,
+          "private_bytes": 2091548672,
+          "read_ns": 113139160
+        },
+        {
+          "elapsed_ns": 5871636991,
+          "rss_bytes": 2425524224,
+          "pss_bytes": 2138169344,
+          "private_bytes": 2099249152,
+          "read_ns": 60411054
+        },
+        {
+          "elapsed_ns": 5983649015,
+          "rss_bytes": 2430083072,
+          "pss_bytes": 2142728192,
+          "private_bytes": 2103808000,
+          "read_ns": 76268041
+        },
+        {
+          "elapsed_ns": 6112253952,
+          "rss_bytes": 2438557696,
+          "pss_bytes": 2151201792,
+          "private_bytes": 2112282624,
+          "read_ns": 105376396
+        },
+        {
+          "elapsed_ns": 6267783914,
+          "rss_bytes": 2462806016,
+          "pss_bytes": 2175451136,
+          "private_bytes": 2136530944,
+          "read_ns": 79954354
+        },
+        {
+          "elapsed_ns": 6399869940,
+          "rss_bytes": 2497978368,
+          "pss_bytes": 2210623488,
+          "private_bytes": 2171703296,
+          "read_ns": 113460194
+        },
+        {
+          "elapsed_ns": 6563804832,
+          "rss_bytes": 2522636288,
+          "pss_bytes": 2235281408,
+          "private_bytes": 2196361216,
+          "read_ns": 87272678
+        },
+        {
+          "elapsed_ns": 6708287075,
+          "rss_bytes": 2496655360,
+          "pss_bytes": 2209300480,
+          "private_bytes": 2170380288,
+          "read_ns": 97466733
+        },
+        {
+          "elapsed_ns": 6855917692,
+          "rss_bytes": 2499756032,
+          "pss_bytes": 2212401152,
+          "private_bytes": 2173480960,
+          "read_ns": 76581646
+        },
+        {
+          "elapsed_ns": 6984248031,
+          "rss_bytes": 2500714496,
+          "pss_bytes": 2213359616,
+          "private_bytes": 2174439424,
+          "read_ns": 95629854
+        },
+        {
+          "elapsed_ns": 7132250444,
+          "rss_bytes": 2530631680,
+          "pss_bytes": 2243276800,
+          "private_bytes": 2204356608,
+          "read_ns": 59879946
+        },
+        {
+          "elapsed_ns": 7244267654,
+          "rss_bytes": 2546741248,
+          "pss_bytes": 2259386368,
+          "private_bytes": 2220466176,
+          "read_ns": 62712416
+        },
+        {
+          "elapsed_ns": 7357169586,
+          "rss_bytes": 2551488512,
+          "pss_bytes": 2264133632,
+          "private_bytes": 2225213440,
+          "read_ns": 97824352
+        },
+        {
+          "elapsed_ns": 7512248291,
+          "rss_bytes": 2569289728,
+          "pss_bytes": 2281934848,
+          "private_bytes": 2243014656,
+          "read_ns": 112139914
+        },
+        {
+          "elapsed_ns": 7674950995,
+          "rss_bytes": 2545426432,
+          "pss_bytes": 2258071552,
+          "private_bytes": 2219151360,
+          "read_ns": 91793316
+        },
+        {
+          "elapsed_ns": 7820251810,
+          "rss_bytes": 2549891072,
+          "pss_bytes": 2262536192,
+          "private_bytes": 2223616000,
+          "read_ns": 131363204
+        },
+        {
+          "elapsed_ns": 8001774432,
+          "rss_bytes": 2564202496,
+          "pss_bytes": 2276847616,
+          "private_bytes": 2237927424,
+          "read_ns": 106838895
+        },
+        {
+          "elapsed_ns": 8159355217,
+          "rss_bytes": 2579804160,
+          "pss_bytes": 2292449280,
+          "private_bytes": 2253529088,
+          "read_ns": 72712479
+        },
+        {
+          "elapsed_ns": 8289684596,
+          "rss_bytes": 2602057728,
+          "pss_bytes": 2314700800,
+          "private_bytes": 2275782656,
+          "read_ns": 150895808
+        },
+        {
+          "elapsed_ns": 8490768776,
+          "rss_bytes": 2577645568,
+          "pss_bytes": 2290290688,
+          "private_bytes": 2251370496,
+          "read_ns": 107229846
+        },
+        {
+          "elapsed_ns": 8648241019,
+          "rss_bytes": 2577960960,
+          "pss_bytes": 2290604032,
+          "private_bytes": 2251685888,
+          "read_ns": 111838568
+        },
+        {
+          "elapsed_ns": 8815812863,
+          "rss_bytes": 2541039616,
+          "pss_bytes": 2253684736,
+          "private_bytes": 2214764544,
+          "read_ns": 137709138
+        },
+        {
+          "elapsed_ns": 9003677311,
+          "rss_bytes": 2505805824,
+          "pss_bytes": 2218450944,
+          "private_bytes": 2179530752,
+          "read_ns": 120630278
+        },
+        {
+          "elapsed_ns": 9174490067,
+          "rss_bytes": 2517594112,
+          "pss_bytes": 2230239232,
+          "private_bytes": 2191319040,
+          "read_ns": 124319015
+        },
+        {
+          "elapsed_ns": 9356677172,
+          "rss_bytes": 2529026048,
+          "pss_bytes": 2241671168,
+          "private_bytes": 2202750976,
+          "read_ns": 88661027
+        },
+        {
+          "elapsed_ns": 9500267379,
+          "rss_bytes": 2534387712,
+          "pss_bytes": 2247032832,
+          "private_bytes": 2208112640,
+          "read_ns": 127420125
+        },
+        {
+          "elapsed_ns": 9680241168,
+          "rss_bytes": 2555420672,
+          "pss_bytes": 2268065792,
+          "private_bytes": 2229145600,
+          "read_ns": 103743046
+        },
+        {
+          "elapsed_ns": 9837004903,
+          "rss_bytes": 2555801600,
+          "pss_bytes": 2268446720,
+          "private_bytes": 2229526528,
+          "read_ns": 79411284
+        },
+        {
+          "elapsed_ns": 9966597316,
+          "rss_bytes": 2556059648,
+          "pss_bytes": 2268704768,
+          "private_bytes": 2229784576,
+          "read_ns": 51902917
+        },
+        {
+          "elapsed_ns": 10072253062,
+          "rss_bytes": 2581168128,
+          "pss_bytes": 2293813248,
+          "private_bytes": 2254893056,
+          "read_ns": 119723871
+        },
+        {
+          "elapsed_ns": 10252279441,
+          "rss_bytes": 2617753600,
+          "pss_bytes": 2330398720,
+          "private_bytes": 2291478528,
+          "read_ns": 142573375
+        },
+        {
+          "elapsed_ns": 10448251082,
+          "rss_bytes": 2618433536,
+          "pss_bytes": 2331078656,
+          "private_bytes": 2292158464,
+          "read_ns": 123067604
+        },
+        {
+          "elapsed_ns": 10624252526,
+          "rss_bytes": 2620579840,
+          "pss_bytes": 2333224960,
+          "private_bytes": 2294304768,
+          "read_ns": 158822702
+        },
+        {
+          "elapsed_ns": 10834265394,
+          "rss_bytes": 2620948480,
+          "pss_bytes": 2333593600,
+          "private_bytes": 2294673408,
+          "read_ns": 90215120
+        },
+        {
+          "elapsed_ns": 10974645038,
+          "rss_bytes": 2621288448,
+          "pss_bytes": 2333933568,
+          "private_bytes": 2295013376,
+          "read_ns": 100485799
+        },
+        {
+          "elapsed_ns": 11128259352,
+          "rss_bytes": 2631974912,
+          "pss_bytes": 2344619008,
+          "private_bytes": 2305699840,
+          "read_ns": 82848759
+        },
+        {
+          "elapsed_ns": 11261247299,
+          "rss_bytes": 2578567168,
+          "pss_bytes": 2291212288,
+          "private_bytes": 2252292096,
+          "read_ns": 169455208
+        },
+        {
+          "elapsed_ns": 11480854691,
+          "rss_bytes": 2564345856,
+          "pss_bytes": 2276990976,
+          "private_bytes": 2238070784,
+          "read_ns": 181817091
+        },
+        {
+          "elapsed_ns": 11720261101,
+          "rss_bytes": 2574970880,
+          "pss_bytes": 2287616000,
+          "private_bytes": 2248695808,
+          "read_ns": 137484294
+        },
+        {
+          "elapsed_ns": 11908250956,
+          "rss_bytes": 2577711104,
+          "pss_bytes": 2290356224,
+          "private_bytes": 2251436032,
+          "read_ns": 132729467
+        },
+        {
+          "elapsed_ns": 12091147267,
+          "rss_bytes": 2578030592,
+          "pss_bytes": 2290675712,
+          "private_bytes": 2251755520,
+          "read_ns": 116141605
+        },
+        {
+          "elapsed_ns": 12260086817,
+          "rss_bytes": 2578505728,
+          "pss_bytes": 2291150848,
+          "private_bytes": 2252230656,
+          "read_ns": 99195994
+        },
+        {
+          "elapsed_ns": 12412240898,
+          "rss_bytes": 2578968576,
+          "pss_bytes": 2291613696,
+          "private_bytes": 2252693504,
+          "read_ns": 53536294
+        },
+        {
+          "elapsed_ns": 12516028897,
+          "rss_bytes": 2600361984,
+          "pss_bytes": 2313007104,
+          "private_bytes": 2274086912,
+          "read_ns": 37839699
+        },
+        {
+          "elapsed_ns": 12604015309,
+          "rss_bytes": 2607828992,
+          "pss_bytes": 2320474112,
+          "private_bytes": 2281553920,
+          "read_ns": 101630623
+        },
+        {
+          "elapsed_ns": 12758776137,
+          "rss_bytes": 2666467328,
+          "pss_bytes": 2379112448,
+          "private_bytes": 2340192256,
+          "read_ns": 104636880
+        },
+        {
+          "elapsed_ns": 12913600678,
+          "rss_bytes": 2679783424,
+          "pss_bytes": 2392428544,
+          "private_bytes": 2353508352,
+          "read_ns": 76971826
+        },
+        {
+          "elapsed_ns": 13044126551,
+          "rss_bytes": 2628079616,
+          "pss_bytes": 2340724736,
+          "private_bytes": 2301804544,
+          "read_ns": 102643772
+        },
+        {
+          "elapsed_ns": 13197705223,
+          "rss_bytes": 2628149248,
+          "pss_bytes": 2340794368,
+          "private_bytes": 2301874176,
+          "read_ns": 108440476
+        },
+        {
+          "elapsed_ns": 13360251175,
+          "rss_bytes": 2628567040,
+          "pss_bytes": 2341212160,
+          "private_bytes": 2302291968,
+          "read_ns": 120503497
+        },
+        {
+          "elapsed_ns": 13532245297,
+          "rss_bytes": 2603970560,
+          "pss_bytes": 2316615680,
+          "private_bytes": 2277695488,
+          "read_ns": 97105283
+        },
+        {
+          "elapsed_ns": 13679518131,
+          "rss_bytes": 2604244992,
+          "pss_bytes": 2316884992,
+          "private_bytes": 2277969920,
+          "read_ns": 81484860
+        },
+        {
+          "elapsed_ns": 13811168442,
+          "rss_bytes": 2604552192,
+          "pss_bytes": 2317197312,
+          "private_bytes": 2278277120,
+          "read_ns": 46267259
+        },
+        {
+          "elapsed_ns": 13912252431,
+          "rss_bytes": 2607460352,
+          "pss_bytes": 2320105472,
+          "private_bytes": 2281185280,
+          "read_ns": 80880392
+        },
+        {
+          "elapsed_ns": 14043283174,
+          "rss_bytes": 2582908928,
+          "pss_bytes": 2295554048,
+          "private_bytes": 2256633856,
+          "read_ns": 84799840
+        },
+        {
+          "elapsed_ns": 14180300106,
+          "rss_bytes": 2617778176,
+          "pss_bytes": 2330423296,
+          "private_bytes": 2291503104,
+          "read_ns": 115508205
+        },
+        {
+          "elapsed_ns": 14348257158,
+          "rss_bytes": 2629775360,
+          "pss_bytes": 2342420480,
+          "private_bytes": 2303500288,
+          "read_ns": 160758324
+        },
+        {
+          "elapsed_ns": 14564280780,
+          "rss_bytes": 2665046016,
+          "pss_bytes": 2377691136,
+          "private_bytes": 2338770944,
+          "read_ns": 94968640
+        },
+        {
+          "elapsed_ns": 14709453038,
+          "rss_bytes": 2671353856,
+          "pss_bytes": 2383998976,
+          "private_bytes": 2345078784,
+          "read_ns": 67929508
+        },
+        {
+          "elapsed_ns": 14827547928,
+          "rss_bytes": 2637086720,
+          "pss_bytes": 2349731840,
+          "private_bytes": 2310811648,
+          "read_ns": 58892655
+        }
+      ],
+      "requested_gc": {
+        "memory": {
+          "rss_bytes": 2649722880,
+          "pss_bytes": 2364145664,
+          "private_bytes": 2325479424,
+          "read_ns": 34375644
+        },
+        "heap": {
+          "heap_used": 54392816,
+          "heap_committed": 201326592
+        }
+      }
+    },
+    {
+      "block": 0,
+      "slots": 8,
+      "jvms": 1,
+      "workers_per_jvm": 8,
+      "start_seconds": 0.09892938700068044,
+      "shutdown_seconds": 0.037960786001349334,
+      "whole_session_seconds": 12.200158614999964,
+      "batch_seconds": {
+        "first": 2.874246006998874,
+        "warmup_excluded": 1.354880001003039,
+        "late": [
+          1.0158872280007927,
+          0.9122389719996136,
+          0.7141778639997938,
+          0.6756981240032474,
+          0.9282687689992599,
+          0.7302913890016498,
+          0.6052059310022742,
+          0.6254093460011063,
+          0.6216800550027983,
+          0.6674243209999986
+        ]
+      },
+      "late_case_median_seconds": 0.6949379940015206,
+      "jvm_cpu_seconds": {
+        "first": 21.25,
+        "late": [
+          7.05,
+          6.44,
+          5.08,
+          4.82,
+          6.37,
+          5.08,
+          4.24,
+          4.35,
+          4.54,
+          4.74
+        ]
+      },
+      "memory": {
+        "memory_ready": {
+          "rss_bytes": 63369216,
+          "pss_bytes": 60693504,
+          "private_bytes": 60354560,
+          "read_ns": 1265001
+        },
+        "memory_after_first": {
+          "rss_bytes": 993742848,
+          "pss_bytes": 942006272,
+          "private_bytes": 934662144,
+          "read_ns": 14975154
+        },
+        "memory_after_warmup": {
+          "rss_bytes": 1099067392,
+          "pss_bytes": 1047330816,
+          "private_bytes": 1039986688,
+          "read_ns": 16378374
+        },
+        "memory_after_steady": {
+          "rss_bytes": 1924108288,
+          "pss_bytes": 1872371712,
+          "private_bytes": 1865027584,
+          "read_ns": 35887656
+        },
+        "memory_after_consumer": {
+          "rss_bytes": 440147968,
+          "pss_bytes": 388411392,
+          "private_bytes": 381067264,
+          "read_ns": 6380900
+        }
+      },
+      "heap_after_late": {
+        "heap_used": 1052574880,
+        "heap_committed": 1497366528
+      },
+      "sample_count": 76,
+      "sampled_sequential_aggregate_max": {
+        "rss_bytes": 2325946368,
+        "pss_bytes": 2274209792,
+        "private_bytes": 2266865664
+      },
+      "samples": [
+        {
+          "elapsed_ns": 1873,
+          "rss_bytes": 1099177984,
+          "pss_bytes": 1047441408,
+          "private_bytes": 1040097280,
+          "read_ns": 17816303
+        },
+        {
+          "elapsed_ns": 68722548,
+          "rss_bytes": 1122500608,
+          "pss_bytes": 1070764032,
+          "private_bytes": 1063419904,
+          "read_ns": 29833030
+        },
+        {
+          "elapsed_ns": 151291353,
+          "rss_bytes": 1122836480,
+          "pss_bytes": 1071099904,
+          "private_bytes": 1063755776,
+          "read_ns": 27154409
+        },
+        {
+          "elapsed_ns": 229165195,
+          "rss_bytes": 1164681216,
+          "pss_bytes": 1112944640,
+          "private_bytes": 1105600512,
+          "read_ns": 17010714
+        },
+        {
+          "elapsed_ns": 299279431,
+          "rss_bytes": 1286336512,
+          "pss_bytes": 1234599936,
+          "private_bytes": 1227255808,
+          "read_ns": 37353584
+        },
+        {
+          "elapsed_ns": 386788372,
+          "rss_bytes": 1380638720,
+          "pss_bytes": 1328902144,
+          "private_bytes": 1321558016,
+          "read_ns": 29703400
+        },
+        {
+          "elapsed_ns": 471296192,
+          "rss_bytes": 1389228032,
+          "pss_bytes": 1337491456,
+          "private_bytes": 1330147328,
+          "read_ns": 43936234
+        },
+        {
+          "elapsed_ns": 571116209,
+          "rss_bytes": 1394040832,
+          "pss_bytes": 1342304256,
+          "private_bytes": 1334960128,
+          "read_ns": 68619373
+        },
+        {
+          "elapsed_ns": 689896694,
+          "rss_bytes": 1394049024,
+          "pss_bytes": 1342312448,
+          "private_bytes": 1334968320,
+          "read_ns": 49522551
+        },
+        {
+          "elapsed_ns": 789581094,
+          "rss_bytes": 1394053120,
+          "pss_bytes": 1342316544,
+          "private_bytes": 1334972416,
+          "read_ns": 62410609
+        },
+        {
+          "elapsed_ns": 902152745,
+          "rss_bytes": 1394061312,
+          "pss_bytes": 1342324736,
+          "private_bytes": 1334980608,
+          "read_ns": 21779267
+        },
+        {
+          "elapsed_ns": 974225511,
+          "rss_bytes": 1394065408,
+          "pss_bytes": 1342328832,
+          "private_bytes": 1334984704,
+          "read_ns": 20774224
+        },
+        {
+          "elapsed_ns": 1045146962,
+          "rss_bytes": 1394294784,
+          "pss_bytes": 1342558208,
+          "private_bytes": 1335214080,
+          "read_ns": 56158422
+        },
+        {
+          "elapsed_ns": 1151481947,
+          "rss_bytes": 1394819072,
+          "pss_bytes": 1343082496,
+          "private_bytes": 1335738368,
+          "read_ns": 73660489
+        },
+        {
+          "elapsed_ns": 1275305776,
+          "rss_bytes": 1396662272,
+          "pss_bytes": 1344925696,
+          "private_bytes": 1337581568,
+          "read_ns": 24722012
+        },
+        {
+          "elapsed_ns": 1350186433,
+          "rss_bytes": 1398390784,
+          "pss_bytes": 1346654208,
+          "private_bytes": 1339310080,
+          "read_ns": 45242312
+        },
+        {
+          "elapsed_ns": 1445589594,
+          "rss_bytes": 1398558720,
+          "pss_bytes": 1346822144,
+          "private_bytes": 1339478016,
+          "read_ns": 28072153
+        },
+        {
+          "elapsed_ns": 1527280244,
+          "rss_bytes": 1472053248,
+          "pss_bytes": 1420316672,
+          "private_bytes": 1412972544,
+          "read_ns": 46193210
+        },
+        {
+          "elapsed_ns": 1627286530,
+          "rss_bytes": 1545007104,
+          "pss_bytes": 1493270528,
+          "private_bytes": 1485926400,
+          "read_ns": 28887752
+        },
+        {
+          "elapsed_ns": 1711281831,
+          "rss_bytes": 1508896768,
+          "pss_bytes": 1457160192,
+          "private_bytes": 1449816064,
+          "read_ns": 59836622
+        },
+        {
+          "elapsed_ns": 1821343378,
+          "rss_bytes": 1508970496,
+          "pss_bytes": 1457233920,
+          "private_bytes": 1449889792,
+          "read_ns": 29153656
+        },
+        {
+          "elapsed_ns": 1900747810,
+          "rss_bytes": 1509072896,
+          "pss_bytes": 1457336320,
+          "private_bytes": 1449992192,
+          "read_ns": 24283704
+        },
+        {
+          "elapsed_ns": 1979271207,
+          "rss_bytes": 1509224448,
+          "pss_bytes": 1457487872,
+          "private_bytes": 1450143744,
+          "read_ns": 28133898
+        },
+        {
+          "elapsed_ns": 2057568075,
+          "rss_bytes": 1509650432,
+          "pss_bytes": 1457913856,
+          "private_bytes": 1450569728,
+          "read_ns": 58892735
+        },
+        {
+          "elapsed_ns": 2171287454,
+          "rss_bytes": 1509695488,
+          "pss_bytes": 1457958912,
+          "private_bytes": 1450614784,
+          "read_ns": 27444177
+        },
+        {
+          "elapsed_ns": 2251360410,
+          "rss_bytes": 1510506496,
+          "pss_bytes": 1458769920,
+          "private_bytes": 1451425792,
+          "read_ns": 64069493
+        },
+        {
+          "elapsed_ns": 2365638551,
+          "rss_bytes": 1510588416,
+          "pss_bytes": 1458851840,
+          "private_bytes": 1451507712,
+          "read_ns": 56879201
+        },
+        {
+          "elapsed_ns": 2475290249,
+          "rss_bytes": 1510748160,
+          "pss_bytes": 1459011584,
+          "private_bytes": 1451667456,
+          "read_ns": 46997666
+        },
+        {
+          "elapsed_ns": 2572507417,
+          "rss_bytes": 1510842368,
+          "pss_bytes": 1459105792,
+          "private_bytes": 1451761664,
+          "read_ns": 25685090
+        },
+        {
+          "elapsed_ns": 2651347517,
+          "rss_bytes": 1510977536,
+          "pss_bytes": 1459240960,
+          "private_bytes": 1451896832,
+          "read_ns": 29303698
+        },
+        {
+          "elapsed_ns": 2730834284,
+          "rss_bytes": 1511112704,
+          "pss_bytes": 1459376128,
+          "private_bytes": 1452032000,
+          "read_ns": 63936364
+        },
+        {
+          "elapsed_ns": 2844966851,
+          "rss_bytes": 1511149568,
+          "pss_bytes": 1459412992,
+          "private_bytes": 1452068864,
+          "read_ns": 27385414
+        },
+        {
+          "elapsed_ns": 2927299376,
+          "rss_bytes": 1706909696,
+          "pss_bytes": 1655173120,
+          "private_bytes": 1647828992,
+          "read_ns": 89257204
+        },
+        {
+          "elapsed_ns": 3066714472,
+          "rss_bytes": 1912471552,
+          "pss_bytes": 1860734976,
+          "private_bytes": 1853390848,
+          "read_ns": 68302367
+        },
+        {
+          "elapsed_ns": 3185189133,
+          "rss_bytes": 1914445824,
+          "pss_bytes": 1862709248,
+          "private_bytes": 1855365120,
+          "read_ns": 33008386
+        },
+        {
+          "elapsed_ns": 3268379130,
+          "rss_bytes": 1914507264,
+          "pss_bytes": 1862710272,
+          "private_bytes": 1855426560,
+          "read_ns": 33053102
+        },
+        {
+          "elapsed_ns": 3363297504,
+          "rss_bytes": 1914740736,
+          "pss_bytes": 1862949888,
+          "private_bytes": 1855623168,
+          "read_ns": 81124958
+        },
+        {
+          "elapsed_ns": 3494588582,
+          "rss_bytes": 1914765312,
+          "pss_bytes": 1862972416,
+          "private_bytes": 1855647744,
+          "read_ns": 42751729
+        },
+        {
+          "elapsed_ns": 3589876518,
+          "rss_bytes": 1915215872,
+          "pss_bytes": 1863424000,
+          "private_bytes": 1856098304,
+          "read_ns": 33057985
+        },
+        {
+          "elapsed_ns": 3675285968,
+          "rss_bytes": 1915285504,
+          "pss_bytes": 1863493632,
+          "private_bytes": 1856167936,
+          "read_ns": 46586248
+        },
+        {
+          "elapsed_ns": 3775286701,
+          "rss_bytes": 1915453440,
+          "pss_bytes": 1863661568,
+          "private_bytes": 1856335872,
+          "read_ns": 49251582
+        },
+        {
+          "elapsed_ns": 3875321395,
+          "rss_bytes": 1915674624,
+          "pss_bytes": 1863882752,
+          "private_bytes": 1856557056,
+          "read_ns": 79158363
+        },
+        {
+          "elapsed_ns": 4007297630,
+          "rss_bytes": 1915789312,
+          "pss_bytes": 1864052736,
+          "private_bytes": 1856708608,
+          "read_ns": 58887543
+        },
+        {
+          "elapsed_ns": 4119469833,
+          "rss_bytes": 1918193664,
+          "pss_bytes": 1866457088,
+          "private_bytes": 1859112960,
+          "read_ns": 42628334
+        },
+        {
+          "elapsed_ns": 4212309282,
+          "rss_bytes": 1924505600,
+          "pss_bytes": 1872769024,
+          "private_bytes": 1865424896,
+          "read_ns": 33713902
+        },
+        {
+          "elapsed_ns": 4296225237,
+          "rss_bytes": 1924603904,
+          "pss_bytes": 1872867328,
+          "private_bytes": 1865523200,
+          "read_ns": 38082844
+        },
+        {
+          "elapsed_ns": 4384462723,
+          "rss_bytes": 1924685824,
+          "pss_bytes": 1872949248,
+          "private_bytes": 1865605120,
+          "read_ns": 60474186
+        },
+        {
+          "elapsed_ns": 4499283553,
+          "rss_bytes": 1924710400,
+          "pss_bytes": 1872973824,
+          "private_bytes": 1865629696,
+          "read_ns": 59426329
+        },
+        {
+          "elapsed_ns": 4608867864,
+          "rss_bytes": 1993285632,
+          "pss_bytes": 1941549056,
+          "private_bytes": 1934204928,
+          "read_ns": 71247910
+        },
+        {
+          "elapsed_ns": 4730273959,
+          "rss_bytes": 2141048832,
+          "pss_bytes": 2089312256,
+          "private_bytes": 2081968128,
+          "read_ns": 50648947
+        },
+        {
+          "elapsed_ns": 4831111922,
+          "rss_bytes": 2240421888,
+          "pss_bytes": 2188685312,
+          "private_bytes": 2181341184,
+          "read_ns": 41970891
+        },
+        {
+          "elapsed_ns": 4923310704,
+          "rss_bytes": 2240782336,
+          "pss_bytes": 2189045760,
+          "private_bytes": 2181701632,
+          "read_ns": 28839101
+        },
+        {
+          "elapsed_ns": 5002320744,
+          "rss_bytes": 2242441216,
+          "pss_bytes": 2190704640,
+          "private_bytes": 2183360512,
+          "read_ns": 55399705
+        },
+        {
+          "elapsed_ns": 5109902057,
+          "rss_bytes": 2242547712,
+          "pss_bytes": 2190811136,
+          "private_bytes": 2183467008,
+          "read_ns": 41617094
+        },
+        {
+          "elapsed_ns": 5201691983,
+          "rss_bytes": 2242609152,
+          "pss_bytes": 2190872576,
+          "private_bytes": 2183528448,
+          "read_ns": 39766892
+        },
+        {
+          "elapsed_ns": 5295285311,
+          "rss_bytes": 2242736128,
+          "pss_bytes": 2190999552,
+          "private_bytes": 2183655424,
+          "read_ns": 75150631
+        },
+        {
+          "elapsed_ns": 5423283831,
+          "rss_bytes": 2242813952,
+          "pss_bytes": 2191077376,
+          "private_bytes": 2183733248,
+          "read_ns": 41826582
+        },
+        {
+          "elapsed_ns": 5515277183,
+          "rss_bytes": 2242859008,
+          "pss_bytes": 2191122432,
+          "private_bytes": 2183778304,
+          "read_ns": 34934701
+        },
+        {
+          "elapsed_ns": 5601596651,
+          "rss_bytes": 2243031040,
+          "pss_bytes": 2191293440,
+          "private_bytes": 2183950336,
+          "read_ns": 79542297
+        },
+        {
+          "elapsed_ns": 5731332704,
+          "rss_bytes": 2243117056,
+          "pss_bytes": 2191380480,
+          "private_bytes": 2184036352,
+          "read_ns": 69069106
+        },
+        {
+          "elapsed_ns": 5850588728,
+          "rss_bytes": 2243190784,
+          "pss_bytes": 2191454208,
+          "private_bytes": 2184110080,
+          "read_ns": 63481732
+        },
+        {
+          "elapsed_ns": 5964231622,
+          "rss_bytes": 2243276800,
+          "pss_bytes": 2191540224,
+          "private_bytes": 2184196096,
+          "read_ns": 61914968
+        },
+        {
+          "elapsed_ns": 6076327735,
+          "rss_bytes": 2243358720,
+          "pss_bytes": 2191622144,
+          "private_bytes": 2184278016,
+          "read_ns": 32738788
+        },
+        {
+          "elapsed_ns": 6163283515,
+          "rss_bytes": 2247450624,
+          "pss_bytes": 2195714048,
+          "private_bytes": 2188369920,
+          "read_ns": 76305700
+        },
+        {
+          "elapsed_ns": 6290045055,
+          "rss_bytes": 2325946368,
+          "pss_bytes": 2274209792,
+          "private_bytes": 2266865664,
+          "read_ns": 77474944
+        },
+        {
+          "elapsed_ns": 6423287463,
+          "rss_bytes": 2191859712,
+          "pss_bytes": 2140123136,
+          "private_bytes": 2132779008,
+          "read_ns": 76296576
+        },
+        {
+          "elapsed_ns": 6549736288,
+          "rss_bytes": 2057179136,
+          "pss_bytes": 2005441536,
+          "private_bytes": 1998098432,
+          "read_ns": 69755410
+        },
+        {
+          "elapsed_ns": 6671290358,
+          "rss_bytes": 1923690496,
+          "pss_bytes": 1871953920,
+          "private_bytes": 1864609792,
+          "read_ns": 58917699
+        },
+        {
+          "elapsed_ns": 6780392703,
+          "rss_bytes": 1923862528,
+          "pss_bytes": 1872125952,
+          "private_bytes": 1864781824,
+          "read_ns": 26897861
+        },
+        {
+          "elapsed_ns": 6859324425,
+          "rss_bytes": 1926012928,
+          "pss_bytes": 1874276352,
+          "private_bytes": 1866932224,
+          "read_ns": 49020529
+        },
+        {
+          "elapsed_ns": 6958546670,
+          "rss_bytes": 1926103040,
+          "pss_bytes": 1874366464,
+          "private_bytes": 1867022336,
+          "read_ns": 32361317
+        },
+        {
+          "elapsed_ns": 7043314111,
+          "rss_bytes": 1926201344,
+          "pss_bytes": 1874464768,
+          "private_bytes": 1867120640,
+          "read_ns": 58443588
+        },
+        {
+          "elapsed_ns": 7151952285,
+          "rss_bytes": 1926254592,
+          "pss_bytes": 1874518016,
+          "private_bytes": 1867173888,
+          "read_ns": 41172881
+        },
+        {
+          "elapsed_ns": 7247280808,
+          "rss_bytes": 1926316032,
+          "pss_bytes": 1874579456,
+          "private_bytes": 1867235328,
+          "read_ns": 74504099
+        },
+        {
+          "elapsed_ns": 7371940358,
+          "rss_bytes": 1926410240,
+          "pss_bytes": 1874673664,
+          "private_bytes": 1867329536,
+          "read_ns": 38391925
+        },
+        {
+          "elapsed_ns": 7460520205,
+          "rss_bytes": 1926451200,
+          "pss_bytes": 1874714624,
+          "private_bytes": 1867370496,
+          "read_ns": 32315160
+        }
+      ],
+      "requested_gc": {
+        "memory": {
+          "rss_bytes": 1653600256,
+          "pss_bytes": 1601863680,
+          "private_bytes": 1594519552,
+          "read_ns": 24824875
+        },
+        "heap": {
+          "heap_used": 43116552,
+          "heap_committed": 167772160
+        }
+      }
+    }
+  ]
+}
