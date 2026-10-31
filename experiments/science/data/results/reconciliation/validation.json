@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "operations": 108,
+  "exact_difference_oracles": true,
+  "summary_update_oracles": true,
+  "forced_underestimate_fallbacks": 27
+}

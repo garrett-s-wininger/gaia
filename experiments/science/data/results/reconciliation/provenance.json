@@ -1,0 +1,14 @@
+{
+  "python": "3.14.8 (main, Oct  2 2026, 10:23:31) [GCC 16.2.1 20260810]",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.44",
+  "implementation_sha256": {
+    "reconcile.py": "0a3164d4b1e31c61cd957cbc7e3ea4876469309ba53ca1855c375887276bc4f1",
+    "common.py": "c8bfed5b107cbf0acb0f7012fbaea5a5534daea45b4e5738a27199bbf2f15e24"
+  },
+  "raw_identity": {
+    "path": "experiments/science/data/results/reconciliation/results.json",
+    "bytes": 43362,
+    "sha256": "8ee11f4e4b38a565fbe21bb3bef7b8c5dc0f0e0aafc98704a3d161ff27f15569"
+  },
+  "measurement": "Short per-case shared advisory lock; warm host pages; unrelated preparation/host work may overlap. Algorithms in Python unless declared otherwise."
+}

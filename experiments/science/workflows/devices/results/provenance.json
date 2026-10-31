@@ -1,0 +1,45 @@
+{
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.44",
+  "native_compiler": "GCC16.2.1, -std=c++17 -O3 -DNDEBUG; two SAL annotation macros defined empty",
+  "shader_compiler": "official DXC v1.9.2609, -T cs_6_0 -E main; runtime pipeline driver compilation separately measured",
+  "runtime_files": {
+    "/usr/lib/wsl/lib/libdxcore.so": "83d1671a839bcf71709349e77cd68341515df2e63080765618876996a0f4190c",
+    "/usr/lib/wsl/lib/libd3d12.so": "b3d78d409a4dbbe8612551fc0c0d746d3e58d7997ee7eba78ce1064d77cfa8c3",
+    "/usr/lib/wsl/lib/libd3d12core.so": "a4104a2022932d8e6c714f103ebd89db1c5bdbf36fe92151c88d3d93d4e3894d",
+    "prepared-device-work/DirectXShaderCompiler/bin/dxc": "3dfc856b76291ffc7e45e21fd37ab80e85b34101de76a03253df6608785c92a0"
+  },
+  "measured_pins": {
+    "experiments/science/workflows/devices/dispatch.cpp": "7bffd1cc540c8cea068a37e384318b107f6847e24a51dcc329fba8910b2e526e",
+    "experiments/science/workflows/devices/frontier.hlsl": "b2cdb54bbe660f5fa681e21fb2473c0fffca155222f2181e51aa450abdc1644a",
+    "experiments/science/workflows/devices/run.py": "db44e49a85adeb8b443dd9d7227ca84e65faa2ee9a089d322b961f16fe5c2329",
+    "prepared-device-work/dispatch": "fc12c1cf81f936bc0cbbe22592cd70fac36ccd3584b4ee04b57f79fd71ccd071",
+    "prepared-device-work/frontier.dxil": "dbeacf211df2cc82d4edf09ba2990bbda2ad252301c4ea53bf63613ddecefd65",
+    "shared-trace-input/coaccess.json": "f86db9050a8de89fd14f36a7455ff2a7d853e764b117829d48c1926005c5a4c7",
+    "prepared-device-work/actual.bin": "eebc0242480a72aae0616ef6f6573b0aab1d4722edbe1bc8177ed709aa642a2d",
+    "prepared-device-work/generated-1048576.bin": "86371ac32ad9a3af09e8eb6959bd04488b31d8b13e445ecffb02a77e06c87256",
+    "prepared-device-work/generated-8388608.bin": "c7b75da60a68d7bc7230893c1bb24734a8b07293b331c19b9f7eab59ba037f04"
+  },
+  "acquisition": [
+    {
+      "project": "DirectXShaderCompiler",
+      "tag": "v1.9.2609",
+      "url": "https://github.com/microsoft/DirectXShaderCompiler/releases/download/v1.9.2609/linux_dxc_2026_09_28.x86_x64.tar.gz",
+      "bytes": 13297763,
+      "sha256": "96faadc7f5c282d2ffda49804beb4c3ee38127bc252b723234e3c5cdf7aa39a1"
+    },
+    {
+      "project": "DirectX-Headers",
+      "tag": "v1.620.1",
+      "url": "https://codeload.github.com/microsoft/DirectX-Headers/tar.gz/refs/tags/v1.620.1",
+      "bytes": 591226,
+      "sha256": "79cd6d5b87d940044b20a3f45e5fbf4a73e4c7eedc1bafabe1b5cabb97fef5bf"
+    }
+  ],
+  "phase_boundary": "init includes file loading, CPU reference/CSR prep, D3D12 object creation and upload-heap fill; retained GPU full excludes CPU controls and includes clear/record/dispatch/fence/readback/validation",
+  "cache_state": "driver caches warmed by previous capability/smoke attempts; fresh native processes, no machine-cold claim",
+  "measurement_lock": "per fresh-process case, released between cases",
+  "memory_payload_budget_bytes": 209715200,
+  "memory_scope": "largest application CPU+GPU buffer payload; runtime/driver allocations unmeasured; Python generator array released before dispatch loops",
+  "concurrency_note": "A bounded DXCore capability enumeration ran during the final matrix; ordinary host noise is not excluded. Five-block medians, not isolated-machine confidence intervals.",
+  "pin_path_policy": "Repository-relative implementation paths and logical prepared/input roles. Original process paths remain in ignored raw observations."
+}

@@ -1,0 +1,11 @@
+{
+  "raw_identity": {
+    "path": "experiments/java/followthrough/results/low-budget/results.json",
+    "bytes": 66210,
+    "sha256": "f1d5f3b0fd7c137b27a6cfa9333f76788504819c13b279f1fb706cb62d7e5218"
+  },
+  "scope": "Successful operations guarded by harness assertions; failed diagnostic exit is separately retained in primary queue summary.",
+  "schema": "GAIA-JVM-RESIDENT-BUDGET-1",
+  "completed_target_compilations": 16,
+  "actual_class_consumers": 8
+}

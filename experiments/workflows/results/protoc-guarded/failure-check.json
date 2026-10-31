@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "status": "failed",
+  "preserved_timed_operations": 5,
+  "failure": {
+    "type": "CalledProcessError",
+    "message": "Descriptor producer returned exit status 17 (injected).",
+    "stderr": "injected descriptor producer failure\n",
+    "returncode": 17
+  },
+  "raw_sha256": "e273be2f6c452585ea0e185cdb04c97d0cbec6788b3758f3022494226e9fb871",
+  "scope": "separate injected exception test,not timedprimary",
+  "raw": "experiments/workflows/results/protoc-guarded/failure/results.json"
+}

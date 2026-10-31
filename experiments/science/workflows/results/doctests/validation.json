@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "operations": 15,
+  "source_pins_verified_after": true,
+  "scope": "Actual installed CPython difflib/statistics/fractions documentation-test subset,189examples per full module pass; Decimal context supplied identically. Existing doctest API and batched runner are strong controls. Nine requests per session; source pin rejection and expected failing example then recovery tested. No full CPython/production application suite, process snapshot, external-resource reset or general fixture isolation claim."
+}

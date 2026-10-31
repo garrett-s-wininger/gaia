@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "successful_actual_commands": 15,
+  "policies_with_invariants": 6,
+  "source_tools_verified_after": true,
+  "real_queue_executed": false
+}

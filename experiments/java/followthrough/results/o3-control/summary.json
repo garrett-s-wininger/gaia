@@ -1,0 +1,54 @@
+{
+  "raw_sha256": "770e071a280510f20eed12528c54daa0ed19781d7e85af5b493b9be4ee851093",
+  "raw_bytes": 127292,
+  "build_seconds": 270.731063014,
+  "cases": [
+    {
+      "variant": "o2",
+      "median_process_ms": 16071.774438,
+      "min_process_ms": 11528.51843,
+      "max_process_ms": 16146.704459,
+      "first_compile_median_ms": 771.96605,
+      "late_compile_median_ms": 598.8016125,
+      "late_compile_thread_cpu_median_ms": 598.66077
+    },
+    {
+      "variant": "o3-no-user-profile",
+      "median_process_ms": 12151.527394,
+      "min_process_ms": 11696.378349,
+      "max_process_ms": 13973.597212,
+      "first_compile_median_ms": 645.221135,
+      "late_compile_median_ms": 594.3926100000001,
+      "late_compile_thread_cpu_median_ms": 592.3692570000001
+    },
+    {
+      "variant": "o3-user-profile",
+      "median_process_ms": 12048.312291,
+      "min_process_ms": 10306.373532,
+      "max_process_ms": 13035.460343,
+      "first_compile_median_ms": 518.811084,
+      "late_compile_median_ms": 579.5148624999999,
+      "late_compile_thread_cpu_median_ms": 579.472387
+    }
+  ],
+  "paired_blocks": [
+    {
+      "block": 0,
+      "user_profile_wins_vs_o2": true,
+      "user_profile_wins_vs_o3": true,
+      "ratio_user_profile_to_o3": 0.8811593832274722
+    },
+    {
+      "block": 1,
+      "user_profile_wins_vs_o2": false,
+      "user_profile_wins_vs_o3": true,
+      "ratio_user_profile_to_o3": 0.9915059975875161
+    },
+    {
+      "block": 2,
+      "user_profile_wins_vs_o2": true,
+      "user_profile_wins_vs_o3": true,
+      "ratio_user_profile_to_o3": 0.9328636102238325
+    }
+  ]
+}

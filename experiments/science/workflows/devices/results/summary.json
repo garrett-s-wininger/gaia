@@ -1,0 +1,116 @@
+{
+  "captured-django-coaccess-sparse": {
+    "sessions": 5,
+    "retained_samples": 55,
+    "process_ms": 210.062696,
+    "init_ms": 165.29,
+    "pipeline_ms": 0.528697,
+    "upload_allocate_ms": 6.3912,
+    "csr_build_ms": 0.007203,
+    "retained": {
+      "cpu_ms": 0.000972,
+      "csr_ms": 0.000481,
+      "record_submit_ms": 0.020088,
+      "sync_ms": 0.168269,
+      "read_validate_ms": 0.000642,
+      "gpu_full_ms": 0.197143
+    },
+    "first_gpu_ms": 2.19056,
+    "all_equal": true
+  },
+  "captured-django-coaccess-dense": {
+    "sessions": 5,
+    "retained_samples": 55,
+    "process_ms": 181.288899,
+    "init_ms": 143.144,
+    "pipeline_ms": 0.445758,
+    "upload_allocate_ms": 5.57097,
+    "csr_build_ms": 0.007635,
+    "retained": {
+      "cpu_ms": 0.000732,
+      "csr_ms": 0.000942,
+      "record_submit_ms": 0.039355,
+      "sync_ms": 0.148572,
+      "read_validate_ms": 0.001132,
+      "gpu_full_ms": 0.202043
+    },
+    "first_gpu_ms": 2.08955,
+    "all_equal": true
+  },
+  "generated-1048576-sparse": {
+    "sessions": 5,
+    "retained_samples": 55,
+    "process_ms": 262.823934,
+    "init_ms": 165.905,
+    "pipeline_ms": 0.457076,
+    "upload_allocate_ms": 8.81006,
+    "csr_build_ms": 9.08635,
+    "retained": {
+      "cpu_ms": 2.21401,
+      "csr_ms": 0.454511,
+      "record_submit_ms": 0.17383,
+      "sync_ms": 1.48016,
+      "read_validate_ms": 0.041218,
+      "gpu_full_ms": 1.69575
+    },
+    "first_gpu_ms": 5.87587,
+    "all_equal": true
+  },
+  "generated-1048576-dense": {
+    "sessions": 5,
+    "retained_samples": 55,
+    "process_ms": 307.749413,
+    "init_ms": 171.44,
+    "pipeline_ms": 0.467776,
+    "upload_allocate_ms": 10.0779,
+    "csr_build_ms": 8.05722,
+    "retained": {
+      "cpu_ms": 2.08618,
+      "csr_ms": 1.25089,
+      "record_submit_ms": 0.178007,
+      "sync_ms": 3.62936,
+      "read_validate_ms": 0.040607,
+      "gpu_full_ms": 3.97798
+    },
+    "first_gpu_ms": 8.57534,
+    "all_equal": true
+  },
+  "generated-8388608-sparse": {
+    "sessions": 5,
+    "retained_samples": 55,
+    "process_ms": 1112.682856,
+    "init_ms": 420.518,
+    "pipeline_ms": 0.45834,
+    "upload_allocate_ms": 29.1297,
+    "csr_build_ms": 114.628,
+    "retained": {
+      "cpu_ms": 19.4433,
+      "csr_ms": 6.84057,
+      "record_submit_ms": 0.364321,
+      "sync_ms": 24.8159,
+      "read_validate_ms": 0.2533,
+      "gpu_full_ms": 25.5509
+    },
+    "first_gpu_ms": 29.7193,
+    "all_equal": true
+  },
+  "generated-8388608-dense": {
+    "sessions": 5,
+    "retained_samples": 55,
+    "process_ms": 1655.236698,
+    "init_ms": 393.972,
+    "pipeline_ms": 0.433989,
+    "upload_allocate_ms": 29.114,
+    "csr_build_ms": 119.637,
+    "retained": {
+      "cpu_ms": 26.7278,
+      "csr_ms": 18.1095,
+      "record_submit_ms": 0.360282,
+      "sync_ms": 49.9951,
+      "read_validate_ms": 0.263419,
+      "gpu_full_ms": 50.6112
+    },
+    "first_gpu_ms": 55.8705,
+    "all_equal": true
+  }
+}

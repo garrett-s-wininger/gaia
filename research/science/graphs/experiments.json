@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "path_base": "repository-root",
+  "track": "science-graphs-patches-and-resource-models",
+  "experiments": [
+    {
+      "id": "SCIENCE-GRAPH-MODELS",
+      "status": "measured-algorithms-and-bounded-models-with-compiler-oracle",
+      "report": "experiments/science/graphs/results/first-pass/REPORT.md",
+      "raw": "experiments/science/graphs/results/first-pass/results.json",
+      "summary": "experiments/science/graphs/results/first-pass/summary.json",
+      "validation": "experiments/science/graphs/results/first-pass/validation.json",
+      "provenance": "experiments/science/graphs/results/first-pass/provenance.json",
+      "raw_identity": "experiments/science/graphs/results/first-pass/raw-identity.json",
+      "implementation": "experiments/science/graphs/README.md",
+      "findings": "research/science/graphs/README.md"
+    },
+    {
+      "id": "SCIENCE-GEOMETRIC-COACCESS",
+      "status": "measured-native-construction-and-trace-model",
+      "report": "experiments/science/graphs/results/geometry/REPORT.md",
+      "raw": "experiments/science/graphs/results/geometry/results.json",
+      "summary": "experiments/science/graphs/results/geometry/summary.json",
+      "validation": "experiments/science/graphs/results/geometry/validation.json",
+      "provenance": "experiments/science/graphs/results/geometry/provenance.json",
+      "raw_identity": "experiments/science/graphs/results/geometry/raw-identity.json",
+      "implementation": "experiments/science/graphs/README.md",
+      "findings": "research/science/graphs/README.md"
+    },
+    {
+      "id": "SCIENCE-CLANG-OBSERVATIONS",
+      "status": "measured-threeTU-compiler-and-depfile-oracle",
+      "report": "experiments/science/graphs/results/compiler-observations/REPORT.md",
+      "raw": "experiments/science/graphs/results/compiler-observations/results.json",
+      "summary": "experiments/science/graphs/results/compiler-observations/summary.json",
+      "validation": "experiments/science/graphs/results/compiler-observations/validation.json",
+      "provenance": "experiments/science/graphs/results/compiler-observations/provenance.json",
+      "raw_identity": "experiments/science/graphs/results/compiler-observations/raw-identity.json",
+      "implementation": "experiments/science/graphs/README.md",
+      "findings": "research/science/graphs/README.md"
+    },
+    {
+      "id": "SCIENCE-SCHEDULER-CALIBRATION",
+      "status": "measured-task-durations-feeding-simulation",
+      "report": "experiments/science/graphs/results/scheduler-calibration/REPORT.md",
+      "raw": "experiments/science/graphs/results/scheduler-calibration/results.json",
+      "summary": "experiments/science/graphs/results/scheduler-calibration/summary.json",
+      "validation": "experiments/science/graphs/results/scheduler-calibration/validation.json",
+      "provenance": "experiments/science/graphs/results/scheduler-calibration/provenance.json",
+      "raw_identity": "experiments/science/graphs/results/scheduler-calibration/raw-identity.json",
+      "implementation": "experiments/science/graphs/README.md",
+      "findings": "research/science/graphs/README.md"
+    }
+  ]
+}

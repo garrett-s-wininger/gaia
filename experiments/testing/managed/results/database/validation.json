@@ -1,0 +1,10 @@
+{
+  "raw_identity": {
+    "path": "experiments/testing/managed/results/database/results.json",
+    "bytes": 71185,
+    "sha256": "2b6327995fa65dc352f877e7d917ae0856fc7f47ddba6cce4f3843c05cd0fa36"
+  },
+  "scope": "Successful operations guarded by harness assertions; failed diagnostic exit is separately retained in primary queue summary.",
+  "schema": "GAIA-TEST-FIXTURE-1",
+  "isolated_database_operations": 384
+}

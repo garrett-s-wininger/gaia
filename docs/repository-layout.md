@@ -20,11 +20,18 @@ research/                         findings and prospects for human readers
   java/                           JVM framework startup findings and run index
   ruby/                           Ruby loading findings and run index
   dotnet/                         .NET preparation findings and run index
+  testing/                        prepared fixtures and shared test discovery
+  workflows/                      repository/schema sharing and cross-track coverage
+  theory/                         mathematical models and cross-track experiment designs
+  science/                        measured transformations, geometry, devices and shared work
 experiments/                      runnable code, lab notes and evidence
   compiler/
     cpp_graph/                    multi-target C++ integration fixture
     semantic_invalidation/        AST/IR object-reuse comparisons
+    followthrough/                single-frontend IR, production graph, shared analysis
   artifacts/
+    followthrough/                demand admission, cache lifecycle, shared catalogues
+  science/                        bounded models and actual graph/data/compiler/device consumers
   storage/
   python/dependency_bundles/
   python/dependency_solving/
@@ -34,6 +41,9 @@ experiments/                      runnable code, lab notes and evidence
   java/compiler/
     topology/                     one JVM versus multiple JVMs
     variants/                     GC/JIT, Leyden and Native Image
+  java/followthrough/              longer queues, runtime index, native PGO controls
+  testing/managed/                SQLite and JUnit preparation prototypes
+  workflows/                      repository queries, schema pipelines, checkpoints
   ruby_startup/
   dotnet_startup/
 tools/                            repository maintenance checks

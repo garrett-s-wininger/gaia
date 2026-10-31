@@ -1,0 +1,120 @@
+{
+  "scope": "One fresh output build perimage, warm toolchain; preparation observations separate from execution matrix. Reuses installed compiler/linker; no toolchain acquisition measurement.",
+  "odin": "odin version dev-2026-10-nightly:84bc3fc",
+  "cc": "cc (GCC) 16.2.1 20260810",
+  "rows": [
+    {
+      "name": "module-host",
+      "compile_ns": 4242661264,
+      "link_ns": 38202589,
+      "image_bytes": 239456,
+      "sha256": "d44f6bc373af01a2b17c9bb38938ea4c6ec26b1ad790687bc5e54bee8c481098",
+      "commands": [
+        [
+          "odin",
+          "build",
+          "experiments/science/workflows/module_host.odin",
+          "-file",
+          "-o:speed",
+          "-build-mode:obj",
+          "-out:$WORK/module-host.o"
+        ],
+        [
+          "cc",
+          "$WORK/module-host.o",
+          "-o",
+          "$WORK/module-host",
+          "-lm",
+          "-ldl"
+        ]
+      ]
+    },
+    {
+      "name": "v1",
+      "compile_ns": 276167625,
+      "link_ns": 28008392,
+      "image_bytes": 21416,
+      "sha256": "c2b2dec034a4e70d729b3ca0fc6e938d3509b7e76b45f080aab44078995a6e48",
+      "commands": [
+        [
+          "odin",
+          "build",
+          "experiments/science/workflows/module.odin",
+          "-file",
+          "-o:speed",
+          "-build-mode:obj",
+          "-reloc-mode:pic",
+          "-define:VERSION=1",
+          "-define:FACTOR=2",
+          "-out:$WORK/v1.o"
+        ],
+        [
+          "cc",
+          "-shared",
+          "$WORK/v1.o",
+          "-o",
+          "$WORK/v1.so",
+          "-lm"
+        ]
+      ]
+    },
+    {
+      "name": "v2",
+      "compile_ns": 299804529,
+      "link_ns": 31996487,
+      "image_bytes": 21416,
+      "sha256": "3845e0f67bb7704917a8e6566258d71c315fec34a0f3396aa72f09ac0ddfe596",
+      "commands": [
+        [
+          "odin",
+          "build",
+          "experiments/science/workflows/module.odin",
+          "-file",
+          "-o:speed",
+          "-build-mode:obj",
+          "-reloc-mode:pic",
+          "-define:VERSION=2",
+          "-define:FACTOR=3",
+          "-out:$WORK/v2.o"
+        ],
+        [
+          "cc",
+          "-shared",
+          "$WORK/v2.o",
+          "-o",
+          "$WORK/v2.so",
+          "-lm"
+        ]
+      ]
+    },
+    {
+      "name": "bad",
+      "compile_ns": 288017322,
+      "link_ns": 46015042,
+      "image_bytes": 21416,
+      "sha256": "4f05a7ef945c77dcb1ab32c9cfa0b3fbdf5f72cd339253e8b09b86d983287f62",
+      "commands": [
+        [
+          "odin",
+          "build",
+          "experiments/science/workflows/module.odin",
+          "-file",
+          "-o:speed",
+          "-build-mode:obj",
+          "-reloc-mode:pic",
+          "-define:ABI=2",
+          "-define:VERSION=3",
+          "-out:$WORK/bad.o"
+        ],
+        [
+          "cc",
+          "-shared",
+          "$WORK/bad.o",
+          "-o",
+          "$WORK/bad.so",
+          "-lm"
+        ]
+      ]
+    }
+  ]
+}

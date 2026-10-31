@@ -1,0 +1,11 @@
+{
+  "source_hashes": {
+    "schema_pipeline.py": "8635cfc98dfe76dc3b935642fb7b5fd7ebac345ed99e45eb0bdea9733117a4fd",
+    "benchmark.py": "69550b3c5c648bb1a69f182183a24beb166522921db09ddc38caedc3a0ffb58a",
+    "checkpoint.odin": "f94de45f51d5dbf0b4706cc9320d1cec3ef912bfa10f41b8254c953a486da582",
+    "reviewed_checks.py": "4a34872602be9b8922de258de5d6eb476b5f6ce3a1603285d8f44b191a2a184e"
+  },
+  "host_sha256": "9fe4617db72ecb6d4a96ca9940acb650f6671ce8b1d0f85ea821181fce79ccae",
+  "scope": "Review fixes reject conflicting schema names and non-not-found HEAD read errors. Repeated schema/propagation checks and one-shot checkpoint structural probe; original repository-query source unchanged and not rerun. Repository directory preparation outside operation clock; new_stored_bytes includes initial HEAD64B and is not device-write accounting.",
+  "source_pins_verified_after": true
+}

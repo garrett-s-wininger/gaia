@@ -1,0 +1,125 @@
+{
+  "duration_100us_units": {
+    "parse": 404,
+    "diagnostic": 409,
+    "compile": 489,
+    "test": 14,
+    "search": 34
+  },
+  "results": [
+    {
+      "policy": "fifo",
+      "cancellation": true,
+      "makespan_model_units": 3598,
+      "executed_work_model_units": 11012,
+      "obsolete_work_model_units": 3890,
+      "cold_setup_model_units": 0,
+      "current_final_latency_max": 907,
+      "current_final_latency_mean": 610.8,
+      "max_queue_delay_by_client": {
+        "agent": 893,
+        "bulk": 589,
+        "human": 893
+      },
+      "published": 33,
+      "cancelled": 95,
+      "decisions": 50,
+      "decision_cpu_observation_ns": 5887221
+    },
+    {
+      "policy": "critical",
+      "cancellation": true,
+      "makespan_model_units": 3598,
+      "executed_work_model_units": 12260,
+      "obsolete_work_model_units": 5410,
+      "cold_setup_model_units": 0,
+      "current_final_latency_max": 907,
+      "current_final_latency_mean": 610.8,
+      "max_queue_delay_by_client": {
+        "agent": 893,
+        "bulk": 1326,
+        "human": 893
+      },
+      "published": 25,
+      "cancelled": 103,
+      "decisions": 48,
+      "decision_cpu_observation_ns": 2906857
+    },
+    {
+      "policy": "fair",
+      "cancellation": true,
+      "makespan_model_units": 3598,
+      "executed_work_model_units": 12260,
+      "obsolete_work_model_units": 5410,
+      "cold_setup_model_units": 0,
+      "current_final_latency_max": 907,
+      "current_final_latency_mean": 610.8,
+      "max_queue_delay_by_client": {
+        "agent": 893,
+        "bulk": 1326,
+        "human": 893
+      },
+      "published": 25,
+      "cancelled": 103,
+      "decisions": 47,
+      "decision_cpu_observation_ns": 3120276
+    },
+    {
+      "policy": "work-stealing",
+      "cancellation": true,
+      "makespan_model_units": 3604,
+      "executed_work_model_units": 12016,
+      "obsolete_work_model_units": 4690,
+      "cold_setup_model_units": 0,
+      "current_final_latency_max": 913,
+      "current_final_latency_mean": 612.6,
+      "max_queue_delay_by_client": {
+        "agent": 899,
+        "bulk": 1342,
+        "human": 893
+      },
+      "published": 39,
+      "cancelled": 89,
+      "decisions": 60,
+      "decision_cpu_observation_ns": 3447649
+    },
+    {
+      "policy": "foraging",
+      "cancellation": true,
+      "makespan_model_units": 3598,
+      "executed_work_model_units": 10976,
+      "obsolete_work_model_units": 3820,
+      "cold_setup_model_units": 0,
+      "current_final_latency_max": 907,
+      "current_final_latency_mean": 610.2,
+      "max_queue_delay_by_client": {
+        "agent": 893,
+        "bulk": 589,
+        "human": 893
+      },
+      "published": 34,
+      "cancelled": 94,
+      "decisions": 51,
+      "decision_cpu_observation_ns": 6423206
+    },
+    {
+      "policy": "fifo",
+      "cancellation": false,
+      "makespan_model_units": 9266,
+      "executed_work_model_units": 36312,
+      "obsolete_work_model_units": 29632,
+      "cold_setup_model_units": 0,
+      "current_final_latency_max": 6575,
+      "current_final_latency_mean": 6111.5,
+      "max_queue_delay_by_client": {
+        "agent": 6561,
+        "bulk": 1221,
+        "human": 6194
+      },
+      "published": 20,
+      "cancelled": 0,
+      "decisions": 128,
+      "decision_cpu_observation_ns": 3712147
+    }
+  ]
+}

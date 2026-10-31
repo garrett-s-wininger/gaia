@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "fresh_real_framework_processes": 27,
+  "same_api_resources_versions": true,
+  "isolation_scope": "read-only dependencycontract; no writableprivatepackageguarantee"
+}

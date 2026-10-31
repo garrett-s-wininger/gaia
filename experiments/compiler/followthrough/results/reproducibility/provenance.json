@@ -1,0 +1,6 @@
+{
+  "implementation_sha256": "431e9a3b39f439bea82213bf5574215c5198efe52d0c535a69cc19d4d3fcae05",
+  "compiler_version": "clang version 22.1.8\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/lib/llvm22/bin\n",
+  "archiver_version": "GNU ar (GNU Binutils) 2.47\nCopyright (C) 2026 Free Software Foundation, Inc.\nThis program is free software; you may redistribute it under the terms of\nthe GNU General Public License version 3 or (at your option) any later version.\nThis program has absolutely no warranty.\n",
+  "scope": "Fixed small probes establish request-identity requirements; not a survey of arbitrary production tool reproducibility."
+}

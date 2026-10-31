@@ -1,0 +1,28 @@
+{
+  "scope": "warm local cache; existing research store plus explicit eviction wrapper; no fsync/power-loss or concurrent-writer guarantee",
+  "python": "3.14.8",
+  "platform": null,
+  "source_hashes": {
+    "cache_store.py": "fc48732e2d7fa1e99a27651640eade3176c378db21497586789424263e724d27",
+    "lifecycle.py": "487dc9da81ab15a4ceff9d413b50705ecc341e76db81549e18a3e4931a778ade"
+  },
+  "input_pins": {
+    "index_sha256": "067906c997212b468aa949a60d3c6d7daefae23639f99f9a8f50f789a4a0ceea",
+    "payload_sha256": "dbdd5c761bcc1480b09e94d5b5358aa715d4b6e7c8d1a79ba80333c4cfe845fc"
+  },
+  "hardware": {
+    "cpu": "AMD Ryzen AI 7 PRO 450",
+    "logical_cpus": 16,
+    "affinity": "0-15"
+  },
+  "tools": {
+    "odin": "dev-2026-10-nightly:84bc3fc",
+    "node": "26.12.0",
+    "cc": "GCC16.2.1"
+  },
+  "raw_identity": {
+    "bytes": 8392,
+    "sha256": "625e0fd3ee0f33599a7ec2ea397d36127dc55fb57c23a4089d5c216fb3e8823a"
+  },
+  "source_status": "source hashes recorded;no source changes during run"
+}

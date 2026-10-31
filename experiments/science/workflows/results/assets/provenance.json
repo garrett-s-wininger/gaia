@@ -1,0 +1,19 @@
+{
+  "study": "assets",
+  "python": "3.14.8 (main, Oct  2 2026, 10:23:31) [GCC 16.2.1 20260810]",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.44",
+  "sources": {
+    "assets.py": "c72887dfd10b4b47e16830591cdcbafb1dd4febbcbd7e495829e7ba985960d0a",
+    "common.py": "557b2d1379cf23354dcd38a483a5d430a103d9c2f1d4e241a78dba18470d6c80",
+    "doctest_worker.py": "6bd4e75de7c8f0ae34f73fea531d78d01f2acbfcc025b4aaf85568802d58f419",
+    "hardware.py": "7243839d409bc6bd2520b44ddbb034637563eac40af8bb1857fcbd3dc53dcc4d",
+    "module.odin": "79386611c51220cdfcfe9eb7eb1f2d708e52f637990d84ac79a15ed3822a1633",
+    "module_host.odin": "492ed6f285c231b7a55acf889ad77197035e18533dfce96dd8a37629c14b1247",
+    "native_and_tests.py": "03a3641e8dee0b02edc6a12a713ca9921658dac588d2201388ae15a4cfdecf32",
+    "run.py": "3b02b76c8e9ac4e4a30b8c2ed94bcccedfd3113df1cc1d8e933b6c1e505d5a95",
+    "test_workflows.py": "9f276ae9842471bddfea88702bd4d634e70d2ab6aad60d8554a7e637e19ffca4",
+    "workspaces.py": "c9cbf0a95d3f373848eb2db03218f58d5379d1aabed57114789eb2fafa87745f"
+  },
+  "source_pins_verified_after": true,
+  "measurement": "5blocks; percompleteoperation advisorylock, preparation and validation mayoverlap; warmhost; no idle-machine guarantee."
+}

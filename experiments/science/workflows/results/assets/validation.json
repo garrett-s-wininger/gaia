@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "operations": 60,
+  "source_pins_verified_after": true,
+  "scope": "Three actual installed PNG icons/diagrams; three square resize+PNG outputs. Complete subprocess/pipe/output operation; decoded RGBA equivalence, not identical PNG metadata. Logical retained buffer counts exclude process/native/transient memory. Existing multi-output ffmpeg is strong control; no new decoder/encoder or photographic/video claim."
+}

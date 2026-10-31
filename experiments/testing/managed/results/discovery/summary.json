@@ -1,0 +1,34 @@
+{
+  "cases": [
+    {
+      "mode": "independent",
+      "process_median_ms": 1678.938412,
+      "operation_median_ms": 1497.775683,
+      "discovery_median_ms": 866.383276,
+      "execution_median_ms": 580.585557
+    },
+    {
+      "mode": "independent-parallel",
+      "process_median_ms": 1564.104158,
+      "operation_median_ms": 1330.784679,
+      "discovery_median_ms": 666.467241,
+      "execution_median_ms": 617.613014
+    },
+    {
+      "mode": "shared",
+      "process_median_ms": 1505.457774,
+      "operation_median_ms": 1315.792932,
+      "discovery_median_ms": 722.766622,
+      "execution_median_ms": 559.552797
+    },
+    {
+      "mode": "direct",
+      "process_median_ms": 1442.6585,
+      "operation_median_ms": 1225.598068,
+      "discovery_median_ms": 78.052116,
+      "execution_median_ms": 1135.102286
+    }
+  ],
+  "raw_sha256": "2ee8775f98983d368cc7e238c4f3ef8efbbb06e4f8ac9aefb2ed4e0e8f46d8ee",
+  "raw_bytes": 13029
+}

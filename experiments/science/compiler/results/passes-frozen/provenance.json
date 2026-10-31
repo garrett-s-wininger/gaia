@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "raw_identity": {
+    "path": "experiments/science/compiler/results/passes-frozen/results.json",
+    "bytes": 124548,
+    "sha256": "2a2db036b7039b74dae97fda49d1fcc7f3020f6eae2aa45348c1619ef3b429e5"
+  },
+  "implementation_sha256": {
+    "pass_host.cpp": "11a70c4a981dbffc468d0fc8cff25aca24fb9edd467659409c261d61926ebea6",
+    "process_passes.inc": "20643216a1ee90f3f0fc192640617bf0da4f26cdbfe3b4924f6c4fa11ce92ea4",
+    "run_passes.py": "bbf8a6324416623ff13952a056b33a75398ef9dc5a18793c600a988ef1a70a70",
+    "run_ir.py": "b3044e4e9af8c0650d6513682f7d176093fa78a80353af6ad8612bb18c2b86f6",
+    "context.py": "c87c7bec972267ba26126dd965e4f9d3ecf3938bd8401acb6a5594db885da01c"
+  },
+  "binary_sha256": "c46b2508749becf9a626044fb0c3a7a1d34f075448dfb0c03a80f6df946f9cf2",
+  "input_origin_sha256": "24ed2d0023fd91d90c89ffb2d6557c2b7795893b593090c6e89593e49a7b71b2",
+  "source_archive_sha256": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3",
+  "python": null,
+  "scope": "Current Clang22 pre-optimization IR; actual dominator/loop/postdominator analyses. Parallel children get private Linux COW snapshots; LLVM mutable context is not concurrently shared. Single-thread-at-fork checked at runtime. Speculative backend overlaps exact current-IR guard; private object/diagnostics discarded on hit. This is not arbitrary optimizer-pass parallelization. ParentCPU counters have clock-tick granularity; childCPU from wait4; Python/controllerCPU excluded. Input mutation, SDK validation and oracle hashes outside request clocks. Warm pages; per-request timing lock, other preparation/unrelated load possible.",
+  "measurement": "Per-case advisory lock; warm host pages; preparation and unrelated host activity may overlap. Three blocks; medians are descriptive, not significance claims.",
+  "measured_source_pins_verified_before_postmeasurement_hardening": true,
+  "postmeasurement_hardening": "Completed after measurement: narrow admitted compiler-option subset, unique staging with exception cleanup, drain-before-wait bounded child records, termination signal initialization, and broker fd/pin ownership. Thirteen focused tests and two real fixture argv/object replays pass. Added validation/syscalls are not a performance equivalence claim; primary matrix was not rerun and remains tied to historical measured source pins.",
+  "local_measured_source_snapshot": {
+    "path": "experiments/_work/science-round/compiler/measured-source-before-hardening",
+    "files_sha256": {
+      "pass_host.cpp": "11a70c4a981dbffc468d0fc8cff25aca24fb9edd467659409c261d61926ebea6",
+      "process_passes.inc": "20643216a1ee90f3f0fc192640617bf0da4f26cdbfe3b4924f6c4fa11ce92ea4",
+      "shared_inputs.py": "781892f36cd5cb31d2bab01ecb500ee9bd67f01cce653550320a1554e964c5d7",
+      "run_passes.py": "bbf8a6324416623ff13952a056b33a75398ef9dc5a18793c600a988ef1a70a70",
+      "test_passes.py": "cfd7ac77847930fd27cd7d30c110ee22b7b39a2452d1d57e45df5000e48be68c",
+      "test_shared_inputs.py": "8e63ceccc772b3ecbeff7a580904a08eea9c00448fab00c7ffa3e3184d495746"
+    },
+    "verified": true,
+    "scope": "Ignored local replay assets; reacquire exact contents by these hashes. Not required checkout paths or a current implementation identity."
+  },
+  "hardened_implementation_sha256": {
+    "pass_host.cpp": "ebb3bb1f2e5c3de73ecac13bc312b1efd796c4795de255fafea8805cbc243060",
+    "process_passes.inc": "7f004a4a957c2a6eb93d57c54730ca9c7259340a335dd0df9edcc6cc3cb9185c",
+    "shared_inputs.py": "35d239ce003674f5900706784855aed48713fc312b41c2350dfcd9824781818e",
+    "test_passes.py": "e423bfa8c7782865b7c5060ea6d9cb380408aaec169d4b77cec1027243958dbe",
+    "test_shared_inputs.py": "eeceb5ebe106c56320a2b0961b486bdf0d265e5505d46d98b31572f765c6bbed",
+    "child_lifecycle_test.cpp": "9ceb763ec4c7642b9178d794bffe50d418be7c415a96a570bb9e0b8c0bbfdecf"
+  },
+  "hardened_binary_sha256": {
+    "pass-host-hardened": "ed47a5b2001d8b9cf55717e18cc21313e1749895d05e5e5b8b8044c3d22ac739",
+    "child-lifecycle-test": "99a69525f8475ef0d29a74a3827a80e632238afb922b8d0a0fa5566b4eaf3a5a"
+  }
+}

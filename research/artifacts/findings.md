@@ -42,6 +42,24 @@ The generic lock carries opaque ecosystem/name/version identities, algorithm-tag
 
 On the same five-package dataset, binary encoding reduces 882,337 bytes to 498,747 and verified parse CPU from 9.24 to 2.84 ms. Reuse acquisition improves from 47.33 to 42.51 ms, with four of five paired wins. Cold acquisition does not improve reliably. The retained binary view still owns its input body, so small parser-object counts are not a total memory claim. [Generic lock report](../../experiments/artifacts/results/generic-lock/REPORT.md).
 
+## Demand admission trades payload bytes against service calls
+
+The [shared-data follow-up](followthrough.md) admits verified producer chunks while actual Django imports execute. Across three fresh starts, 4 KiB chunks fetch 7.63 MB through 1,862 modeled storage calls; 64 KiB chunks fetch 20.66 MB through 316 calls; full admission reads 28.59 MB once. The range control reads 18.19 MB through 1,425 calls. These are payload access counts, separate from the identical charged installation.
+
+The frozen confirmation has one matched block per profile/policy. It shows the expected latency/bandwidth tradeoff, not a universal preferred chunk size. Every policy pays the same Python socket dispatch/copies, which can dominate nominal startup. Code executes before the last demand fetch; asynchronous CPU/network overlap has not been demonstrated. The earlier three-block matrix remains exploratory because a constructor changed during execution.
+
+## Direct metadata queries avoid rebuilding equivalent objects
+
+A 4,018-row real dependency catalogue is consumed independently by Python, Odin and Node. In the [fused control](../../experiments/artifacts/followthrough/results/catalogue-fused/REPORT.md), verified read/validation/query takes 4.791 ms through Python JSON objects, 2.356 ms through direct Python binary queries and 0.396 ms through the borrowed-buffer Odin ABI. Node takes 5.734 versus 2.754 ms. Direct queries beat their JSON controls in all five blocks.
+
+The result combines representation size, validation/query algorithms and runtime iteration; it is not a format-only comparison or complete-startup gain. Odin borrows an immutable Python-owned buffer for the call and returns scalars. Node reads the same representation independently; this does not establish physical page sharing between processes. Binary-to-object conversion loses to JSON here, making retained representation an important part of the interface.
+
+## Cache lifetime changes the cost of one lookup
+
+At 3,931 real objects, an already-open packed cache retrieves one selected object in about 0.017 ms, but reopening and looking it up costs 12.71 ms. The file-store reopen operation takes about 0.052 ms in this fixture. The [lifecycle study](../../experiments/artifacts/followthrough/results/lifecycle/REPORT.md) also exercises eviction, consolidation, interrupted bodies, publication failure and corrupt locators.
+
+Retained views here are independently owned bytes, not leases on a mapped pack. Corrupt metadata follows the existing empty-cache recovery policy; authoritative offline recovery and stronger durability remain open. A persistent service can amortize index reconstruction, but its lifetime and memory must be charged.
+
 ## What the tests do and do not cover
 
 Reports retain requested-content identities, matching Python behavior, offline cache reuse, corruption repair, partial caches and framing/index bounds. The latest preindexed study passes 74 tests and 24 full application operations; earlier studies retain their own checks and negative results. A minimal pinned name/version catalog demonstrates lock discovery, not a complete registry or resolver.

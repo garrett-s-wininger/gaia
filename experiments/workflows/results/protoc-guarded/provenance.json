@@ -1,0 +1,35 @@
+{
+  "scope": "Unmodified existing protoc; three built-in outputs; actual installed descriptor.proto and synthetic250record fixture; warm filesystem; subprocess execution and output writes charged, output-directory preparation excluded; outputhash/Python syntax checks outside timings; first-descriptor mode charges producer, retained mode reports producer separately; empty source path prevents descriptor-mode fallback. Each child decodes its own model; no shared in-memory AST, generated C++/Java compilation, or universal descriptor-handoff equivalence claim.",
+  "compiler": {
+    "version": "libprotoc 36.1",
+    "sha256": "4b7137d2236700cd9a6b92898ccbe3dd869917912e05017591af811c8387bfbf"
+  },
+  "runner_sha256": "88718599ede71e01009da17bb36b49ad7b1035c6c6a5c7e8af4694861cba9907",
+  "inputs": {
+    "fixture.proto": "2a4bd7c10bf8da5594229d8838d666c64ad01b79d43645733665baf4f3c8b7bb",
+    "google/protobuf/descriptor.proto": "c96db5406336ebcc82523c1dfb122721986a1f43c4aaed45a4a4ad6996efacc2"
+  },
+  "prepared_descriptors": {
+    "descriptor": {
+      "producer_ns": 28448133,
+      "bytes": 78782,
+      "sha256": "0b14708e61bc07be90de9aa5b044598dcf2445ef10de53ba918823d1e621e61e"
+    },
+    "generated": {
+      "producer_ns": 53347839,
+      "bytes": 299239,
+      "sha256": "74db7dcf8090ffbc043160bf8359b1b09d340fc754d6b2e48a8e98460f859f7d"
+    }
+  },
+  "hardware": {
+    "cpu": "AMD Ryzen AI 7 PRO 450",
+    "logical_cpus": 16
+  },
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.44",
+  "python": "3.14.8",
+  "measurement": "per-operation advisory lock; warm pages; residual unrelated host work not excluded",
+  "raw_identity": {
+    "bytes": 14793,
+    "sha256": "f4508da8d2fd9167c9b45473d569d48c488b4c52a8bebee8e45a69473fbe9200"
+  }
+}

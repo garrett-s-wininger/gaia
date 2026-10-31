@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "path_base": "repository-root",
+  "track": "shared-workflows",
+  "experiments": [
+    {
+      "id": "WORKFLOW-SHARING-FIRST-PASS",
+      "status": "measured-bounded-prototypes",
+      "report": "experiments/workflows/results/combined-control/REPORT.md",
+      "raw": "experiments/workflows/results/combined-control/results.json",
+      "summary": "experiments/workflows/results/combined-control/summary.json",
+      "validation": "experiments/workflows/results/combined-control/validation.json",
+      "provenance": "experiments/workflows/results/combined-control/provenance.json",
+      "raw_identity": "experiments/workflows/results/combined-control/raw-identity.json",
+      "implementation": "experiments/workflows/README.md",
+      "findings": "research/workflows/README.md"
+    },
+    {
+      "id": "WORKFLOW-SHARING-REVIEWED",
+      "status": "measured-after-schema-and-persistence-review-fixes",
+      "report": "experiments/workflows/results/reviewed/REPORT.md",
+      "raw": "experiments/workflows/results/reviewed/results.json",
+      "summary": "experiments/workflows/results/reviewed/summary.json",
+      "validation": "experiments/workflows/results/reviewed/validation.json",
+      "provenance": "experiments/workflows/results/reviewed/provenance.json",
+      "raw_identity": "experiments/workflows/results/reviewed/raw-identity.json",
+      "implementation": "experiments/workflows/README.md",
+      "findings": "research/workflows/README.md"
+    },
+    {
+      "id": "WORKFLOWS-PROTOC-MULTIOUTPUT",
+      "run_id": "20261031-protoc-guarded",
+      "status": "measured-existing-source-controls-descriptor-handoff-rejected-for-fixture",
+      "report": "experiments/workflows/results/protoc-guarded/REPORT.md",
+      "raw": "experiments/workflows/results/protoc-guarded/results.json",
+      "summary": "experiments/workflows/results/protoc-guarded/summary.json",
+      "validation": "experiments/workflows/results/protoc-guarded/validation.json",
+      "provenance": "experiments/workflows/results/protoc-guarded/provenance.json",
+      "negative_guards": "experiments/workflows/results/protoc-guarded/rejections.json",
+      "implementation": "experiments/workflows/protoc_baseline.py",
+      "failure_control": "experiments/workflows/results/protoc-guarded/failure-check.json"
+    }
+  ]
+}

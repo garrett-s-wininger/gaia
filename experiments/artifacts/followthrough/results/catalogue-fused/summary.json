@@ -1,0 +1,86 @@
+{
+  "rows": 4018,
+  "sizes": {
+    "binary": 422544,
+    "json": 669614
+  },
+  "rows_by_mode": [
+    {
+      "mode": "node-direct",
+      "median_operation_ms": 2.753968,
+      "block_median_ms": [
+        2.171394,
+        2.924572,
+        2.753968,
+        3.181228,
+        2.596319
+      ]
+    },
+    {
+      "mode": "node-json",
+      "median_operation_ms": 5.733523,
+      "block_median_ms": [
+        5.782411,
+        4.96603,
+        5.382452,
+        8.163505,
+        5.733523
+      ]
+    },
+    {
+      "mode": "odin-direct",
+      "median_operation_ms": 0.3956200016546063,
+      "block_median_ms": [
+        0.3954290004912764,
+        0.3867429986712523,
+        0.39874500362202525,
+        0.4085040054633282,
+        0.3925640048692003
+      ]
+    },
+    {
+      "mode": "python-direct",
+      "median_operation_ms": 2.356461001909338,
+      "block_median_ms": [
+        2.132349996827543,
+        2.8340499993646517,
+        2.356461001909338,
+        2.474779001204297,
+        2.174700995965395
+      ]
+    },
+    {
+      "mode": "python-json",
+      "median_operation_ms": 4.791188002855051,
+      "block_median_ms": [
+        4.86973700026283,
+        4.523152994806878,
+        4.952102004608605,
+        4.826665004657116,
+        4.866911003773566
+      ]
+    },
+    {
+      "mode": "python-objects",
+      "median_operation_ms": 5.844093000632711,
+      "block_median_ms": [
+        5.411402999015991,
+        5.926742996962275,
+        6.124494000687264,
+        6.019104999722913,
+        5.930555998929776
+      ]
+    }
+  ],
+  "python_traced_peak_bytes": {
+    "python-json": 2426937,
+    "python-objects": 1791603,
+    "python-direct": 384,
+    "odin-direct": 3859
+  },
+  "raw_identity": {
+    "bytes": 10889,
+    "sha256": "aa70ec8f64ff9685989ead03f7cc6c4cc8dba07adf56cf969fef7c5c1fd546df"
+  },
+  "python_direct_override": "fused_catalogue.query_direct"
+}

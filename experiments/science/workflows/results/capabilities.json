@@ -1,0 +1,82 @@
+{
+  "scope": "Actual init and one-frame scale capability attempts. A successful Vulkan call can use a CPU/software provider; no GPU timing or hardware inference from compiled-backend list.",
+  "device_nodes": {
+    "/dev/dxg": false,
+    "/dev/dri": false,
+    "/dev/kfd": false,
+    "/dev/accel": false
+  },
+  "probes": [
+    {
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-hwaccels"
+      ],
+      "exit_code": 0,
+      "stdout": "Hardware acceleration methods:\nvdpau\ncuda\nvaapi\nqsv\ndrm\nopencl\nvulkan\namf\n\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "ffmpeg",
+        "-nostdin",
+        "-hide_banner",
+        "-loglevel",
+        "verbose",
+        "-init_hw_device",
+        "cuda=cu",
+        "-f",
+        "lavfi",
+        "-i",
+        "testsrc=size=128x128:rate=1",
+        "-frames:v",
+        "1",
+        "-f",
+        "null",
+        "-"
+      ],
+      "exit_code": 255,
+      "stdout": "",
+      "stderr": "[CUDA @ 0x57f2e3b73bc0] Cannot load libcuda.so.1\n[CUDA @ 0x57f2e3b73bc0] Could not dynamically load CUDA\nDevice creation failed: -1.\nFailed to set value 'cuda=cu' for option 'init_hw_device': Operation not permitted\nError parsing global options: Operation not permitted\n\nExiting with exit code -1\n"
+    },
+    {
+      "command": [
+        "ffmpeg",
+        "-nostdin",
+        "-hide_banner",
+        "-loglevel",
+        "verbose",
+        "-init_hw_device",
+        "vulkan=vk",
+        "-filter_hw_device",
+        "vk",
+        "-f",
+        "lavfi",
+        "-i",
+        "testsrc=size=128x128:rate=1",
+        "-vf",
+        "format=nv12,hwupload,scale_vulkan=w=64:h=64,hwdownload,format=nv12",
+        "-frames:v",
+        "1",
+        "-f",
+        "null",
+        "-"
+      ],
+      "exit_code": 187,
+      "stdout": "",
+      "stderr": "[Vulkan @ 0x5636fe5b0c00] Supported layers:\n[Vulkan @ 0x5636fe5b0c00] Instance creation failure: VK_ERROR_INCOMPATIBLE_DRIVER\nDevice creation failed: -542398533.\nFailed to set value 'vulkan=vk' for option 'init_hw_device': Generic error in an external library\nError parsing global options: Generic error in an external library\n\nExiting with exit code -542398533\n"
+    }
+  ],
+  "approved_host_default_d3d12": {
+    "exit_code": 0,
+    "stdout": "{\"boundary\": \"approved-host-process\", \"dxg_present\": true, \"signature_source\": \"https://raw.githubusercontent.com/microsoft/DirectX-Headers/main/include/directx/d3d12.idl\", \"wsl_abi_source\": \"https://raw.githubusercontent.com/microsoft/DirectX-Headers/main/include/wsl/stubs/basetsd.h\", \"hresult\": -2005270524, \"hresult_hex\": \"0x887a0004\", \"device_nonnull\": false, \"elapsed_ns\": 148994522}\n",
+    "stderr": ""
+  },
+  "approved_host_explicit_dxcore": {
+    "exit_code": 0,
+    "stdout": "{\"boundary\": \"approved-host-process\", \"dxg_present\": true, \"source\": \"https://raw.githubusercontent.com/microsoft/DirectX-Headers/main/include/directx/dxcore_interface.h\", \"lists\": [{\"filter\": \"all\", \"hresult\": \"0x80070057\", \"adapters\": []}, {\"filter\": \"d3d12-graphics\", \"hresult\": \"0x00000000\", \"adapters\": [{\"index\": 0, \"hresult\": \"0x00000000\", \"device_attempts\": [{\"feature_level\": \"0xb000\", \"hresult\": \"0x00000000\", \"device_nonnull\": true, \"nodes\": 1}, {\"feature_level\": \"0x1000\", \"hresult\": \"0x00000000\", \"device_nonnull\": true, \"nodes\": 1}], \"description\": \"AMD Radeon(TM) 860M Graphics\", \"is_hardware\": true}], \"count\": 1}, {\"filter\": \"d3d12-core-compute\", \"hresult\": \"0x00000000\", \"adapters\": [{\"index\": 0, \"hresult\": \"0x00000000\", \"device_attempts\": [{\"feature_level\": \"0xb000\", \"hresult\": \"0x00000000\", \"device_nonnull\": true, \"nodes\": 1}, {\"feature_level\": \"0x1000\", \"hresult\": \"0x00000000\", \"device_nonnull\": true, \"nodes\": 1}], \"description\": \"AMD Radeon(TM) 860M Graphics\", \"is_hardware\": true}], \"count\": 1}], \"factory_hresult\": \"0x00000000\", \"elapsed_ns\": 1238555296}\n",
+    "stderr": "Dropped Escape call with ulEscapeCode : 0x03007703\nDropped Escape call with ulEscapeCode : 0x03007703\nDropped Escape call with ulEscapeCode : 0x03007703\nDropped Escape call with ulEscapeCode : 0x03007703\n"
+  },
+  "interpretation": "Sandbox visibility is narrower than host: DXGmasked in sandbox, AMDhardware adapter and D3D12device creation succeed after explicitDXCoreselection outside sandbox. No completedshaderdispatch or GPU performance result in this capability record."
+}

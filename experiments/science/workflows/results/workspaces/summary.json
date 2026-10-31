@@ -1,0 +1,24 @@
+{
+  "rows": [
+    {
+      "mode": "logical-shared",
+      "median_ms": 734.48606,
+      "samples": 5
+    },
+    {
+      "mode": "materialized-shared-cache",
+      "median_ms": 940.085372,
+      "samples": 5
+    },
+    {
+      "mode": "private-materialized",
+      "median_ms": 2135.379373,
+      "samples": 5
+    }
+  ],
+  "raw_identity": {
+    "path": "experiments/science/workflows/results/workspaces/results.json",
+    "bytes": 115159,
+    "sha256": "fc27417e3faf6ceb2e288fda7389a072ccb1b3a2bfc5f2b7201b424f1a8f4985"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "records": 512,
+  "median_roundtrip_ms": 11.576155,
+  "binary_bytes": 81286,
+  "json_bytes": 161623,
+  "lossy_rejected_records": 426,
+  "same_known_projection": true
+}

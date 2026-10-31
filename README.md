@@ -8,6 +8,7 @@ We are testing whether explicit inputs, reusable tool processes and direct data 
 
 - [What we have learned](research/findings.md): the useful results, disappointments and limits in plain language.
 - [What looks worth trying next](research/prospects.md): prioritized experiments and the questions they would answer.
+- [Transformations and shared computation](research/science/README.md): mathematical models, actual workflow experiments and heterogeneous-compute results.
 - [Platform direction](docs/platform.md): how the pieces fit together and the boundaries we want to preserve.
 - [Component map](components/README.md): source control, dependencies, compiler tools, editor and artifact host.
 - [Repository guide](docs/repository-layout.md): where designs, research, code and evidence belong.

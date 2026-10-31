@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "unit_tests": 15,
+  "schema_output_identity": "all independent/shared/parallel outputs equal across11blocks",
+  "propagation": "all output digests and downstream summaries match full-work control",
+  "checkpoint": "unchangedID/dedup and exact historical bytes in measuredtrace; current unit suite adds non-not-found HEADerror and conflicting-schema-name/runtime-execution regressions",
+  "source_pins_verified_after": true
+}

@@ -1,0 +1,12 @@
+{
+  "pins": {
+    "experiments/science/graphs/calibrate_schedule.py": "8eca8edb77a523e41444400f02c3d8b39aa77cbb89124942cdcecee1aa8bdd10",
+    "experiments/science/graphs/scheduling.py": "ebd9c3ee374af71aff4290621cb4898d9792707e9a283936127b3736d879caff",
+    "generated-fixture/unit.c": "eec09993afcf376a845cae6c51cda4b7caeb4a2ba6bde0723cde10f83fbea42f",
+    "tool/clang-22": "b852cb4597dc56b241bcd328544b5fee60717f35f66808098cc0413946ba42f2",
+    "tool/rg": "e62198eb19b136b88c330af83647b5a962cb99b6b1f066758568f12de1974849",
+    "generated-fixture/test-executable": "cabcea9009126d57f210dcd67670b1806e7f9686f1267889bc32000d6a4a0224"
+  },
+  "scope": "Actual separate-process small C syntax/diagnostics/compile/test/search wall durations, including spawn, calibrate a model only. Parse and diagnostics are standalone full syntax passes, not separable compiler phases. No measured concurrent scheduler, real cancellation, cache locality, or service latency. Cancellation quantum 1ms is hypothetical; no compiler safe callback exists.",
+  "pin_path_policy": "Repository-relative source paths and logical generated/tool roles; original execution paths remain in ignored raw evidence."
+}

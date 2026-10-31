@@ -1,0 +1,36 @@
+{
+  "native": {
+    "sequence_median_ms": 261.02599,
+    "preparation_median_ms": 57.139068,
+    "scenarios": {
+      "unchanged": 23.561007,
+      "unrelated": 24.331059,
+      "A-to-identical-B": 22.384029,
+      "old-A-changed": 22.535774,
+      "current-B-changed": 25.167689,
+      "earlier-shadow-appears": 23.243555,
+      "optional-appears": 24.275391,
+      "optional-deleted": 23.703157,
+      "configuration": 21.414451,
+      "invalid-source": 21.685815,
+      "recovery": 28.69252
+    }
+  },
+  "observed": {
+    "sequence_median_ms": 116.219558,
+    "preparation_median_ms": 55.576332,
+    "scenarios": {
+      "unchanged": 2.116421,
+      "unrelated": 2.461785,
+      "A-to-identical-B": 6.236617,
+      "old-A-changed": 12.104939,
+      "current-B-changed": 10.43842,
+      "earlier-shadow-appears": 10.41869,
+      "optional-appears": 20.080241,
+      "optional-deleted": 15.745801,
+      "configuration": 21.791522,
+      "invalid-source": 5.180928,
+      "recovery": 5.716922
+    }
+  }
+}

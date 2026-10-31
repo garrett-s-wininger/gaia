@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "path_base": "repository-root",
+  "track": "prepared-test-workflows",
+  "experiments": [
+    {
+      "id": "TEST-DATABASE-PREPARATION",
+      "run_id": "bounded-first-pass",
+      "status": "measured-generated-fixture",
+      "report": "research/testing/findings.md",
+      "raw": "experiments/testing/managed/results/database/results.json",
+      "summary": "experiments/testing/managed/results/database/summary.json",
+      "validation": "experiments/testing/managed/results/database/validation.json",
+      "provenance": "experiments/testing/managed/results/database/provenance.json",
+      "implementation": "experiments/testing/managed/README.md"
+    },
+    {
+      "id": "TEST-SHARED-DISCOVERY",
+      "run_id": "bounded-first-pass",
+      "status": "measured-generated-fixture",
+      "report": "research/testing/findings.md",
+      "raw": "experiments/testing/managed/results/discovery/results.json",
+      "summary": "experiments/testing/managed/results/discovery/summary.json",
+      "validation": "experiments/testing/managed/results/discovery/validation.json",
+      "provenance": "experiments/testing/managed/results/discovery/provenance.json",
+      "implementation": "experiments/testing/managed/README.md"
+    }
+  ]
+}

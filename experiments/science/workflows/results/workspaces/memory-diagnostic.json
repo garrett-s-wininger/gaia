@@ -1,0 +1,26 @@
+{
+  "rows": [
+    {
+      "mode": "private-materialized",
+      "python_traced_peak_bytes": 12170556,
+      "process_highwater_rss_bytes": 48611328,
+      "logical_cached_payload_bytes": 5367908,
+      "scope": "Separate fresh-process diagnostic. RSS includes interpreter/source admission/parser/transient work; Python trace starts after base bytes admitted. Instrumented run excluded from latency comparisons."
+    },
+    {
+      "mode": "materialized-shared-cache",
+      "python_traced_peak_bytes": 11519904,
+      "process_highwater_rss_bytes": 46440448,
+      "logical_cached_payload_bytes": 2351333,
+      "scope": "Separate fresh-process diagnostic. RSS includes interpreter/source admission/parser/transient work; Python trace starts after base bytes admitted. Instrumented run excluded from latency comparisons."
+    },
+    {
+      "mode": "logical-shared",
+      "python_traced_peak_bytes": 11518811,
+      "process_highwater_rss_bytes": 46587904,
+      "logical_cached_payload_bytes": 2351333,
+      "scope": "Separate fresh-process diagnostic. RSS includes interpreter/source admission/parser/transient work; Python trace starts after base bytes admitted. Instrumented run excluded from latency comparisons."
+    }
+  ],
+  "scope": "Separate instrumented fresh-process diagnostics, excluded from primary timing"
+}

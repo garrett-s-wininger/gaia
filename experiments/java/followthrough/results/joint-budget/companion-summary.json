@@ -1,0 +1,36 @@
+{
+  "ready": {
+    "event": "READY",
+    "pid": 110,
+    "workspace_bytes": 665075,
+    "generations": 4,
+    "unique_source_bodies": 73,
+    "source_set_sha256": "fb07cc70fe2748be947bdbedbe320adcb91c272c9c60302063213f3dc94bba27",
+    "logical_budget": 16777216,
+    "admitted_chunk_bytes": 16056320,
+    "readiness_seconds": 0.15795975599758094,
+    "scope": "logical admitted bytes; process RSS is additional and externally sampled"
+  },
+  "loops": 109,
+  "elapsed_seconds": 9.039446047994716,
+  "cache": {
+    "cache_bytes": 16056320,
+    "peak_cache_bytes": 16072861,
+    "budget": 16112141,
+    "evictions": 81313,
+    "hits": 101687,
+    "misses": 81558,
+    "consumer_requests": 155431,
+    "first_fetch": 60283.858984827,
+    "last_fetch": 60292.80123153,
+    "storage": {
+      "read_calls": 81558,
+      "read_bytes": 5328963723,
+      "write_calls": 0,
+      "write_bytes": 0,
+      "requested_seconds": 0.0,
+      "slept_seconds": 0
+    }
+  },
+  "admitted_bytes": 16721395
+}

@@ -1,0 +1,44 @@
+{
+  "scope": "application-service logical requests with warm host files; socket copies charged, no physical/network claim",
+  "python": "3.14.8 (main, Oct  2 2026, 10:23:31) [GCC 16.2.1 20260810]",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.44",
+  "source_hashes": {
+    "admission.py": "33519541f36d0fdf45c53af7192f4af413ace7eca0219c530875983654cc4be9",
+    "catalogue.py": "9ec3c5c9aa8e2da8c1bc5a4deaae3dd1c2e01f8d167aec9799ed7d18bfed455d",
+    "hold_cache.py": "e512990804acff72a3e0cb13c623842672c174be815c2f4ce0339f166f177ec7",
+    "lifecycle.py": "487dc9da81ab15a4ceff9d413b50705ecc341e76db81549e18a3e4931a778ade",
+    "run_admission.py": "9cef7d782469e41b4d20bfcfb12df377c4281309ebee58f14df38db891d3c190",
+    "run_catalogue.py": "5f215e40c4761699bbe819facebc6136d2c0d70f1916fb93cd08d9e1ecefdeeb",
+    "test_followthrough.py": "db4898fa81203dc1c6d4db8e94a7970b423a5d84cffc3ca3c3c2c7726d32fffa",
+    "worker.py": "8362e0ca08e71d42af7c04dfff564cfbebc82472aaafe3428d31c7390afed5af"
+  },
+  "input_pins": {
+    "descriptors": {
+      "index": {
+        "algorithm": "sha256",
+        "digest": "067906c997212b468aa949a60d3c6d7daefae23639f99f9a8f50f789a4a0ceea",
+        "size": 672773
+      },
+      "payload": {
+        "algorithm": "sha256",
+        "digest": "dbdd5c761bcc1480b09e94d5b5358aa715d4b6e7c8d1a79ba80333c4cfe845fc",
+        "size": 28590237
+      }
+    }
+  },
+  "hardware": {
+    "cpu": "AMD Ryzen AI 7 PRO 450",
+    "logical_cpus": 16,
+    "affinity": "0-15"
+  },
+  "tools": {
+    "odin": "dev-2026-10-nightly:84bc3fc",
+    "node": "26.12.0",
+    "cc": "GCC16.2.1"
+  },
+  "raw_identity": {
+    "bytes": 6248205,
+    "sha256": "7eae9bf9f8c0c5f5933cbb5a608b47cc1d464ffe26a6e64f3ac1195bda6f1f81"
+  },
+  "source_status": "exploratory constructor drift, see REPORT.md"
+}

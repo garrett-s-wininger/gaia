@@ -121,6 +121,14 @@ The [Python/Node state experiment](python/interpreter_snapshots/README.md) separ
 
 The [Ruby experiment](ruby_startup/README.md) acquires pinned gems and compares a real RuboCop command with warmed Bootsnap and packed bytecode. The [.NET experiment](dotnet_startup/README.md) acquires a matching SDK/crossgen2 toolchain and compares composite Roslyn R2R with the shipping compiler's existing optimizations. Generated gems, SDKs, native images and caches belong in ignored work directories; use each guide's pinned fetch/preparation commands.
 
+## Mathematical models and shared computation
+
+The [science experiment map](science/README.md) separates four runnable tracks and a device capability diagnostic. Graph/patch models can start independently. The data track needs locally regenerated package artifacts and consumer traces; its co-access trace also supplies native geometry and GPU fixtures. Compiler-pass experiments consume a locally regenerated single-frontend IR dataset. The adjacent workflow experiments build their own native modules and use the documented local Python/tool inputs. Follow each track's guide rather than treating every experiment as one mandatory chain.
+
+The real GPU experiment specifically requires a compatible WSL DXCore/D3D12 runtime and an exposed adapter. A failed capability probe is not a substitute for a measured CPU/GPU comparison. Keep device SDKs, shaders, fixtures and compiled hosts under ignored work paths. Rebuild matching generated LLVM headers for the native compiler experiments; runtime libraries alone are insufficient.
+
+Measured compiler sources and postmeasurement hardening have separate identities in provenance. Current regression tests validate the hardened implementation; the historical timing matrix was not rerun. A new measurement must record the rebuilt source/binary identities and compare its own matched controls.
+
 ## Review a combined research change
 
 Run `python3 -B tools/check_repository.py` and `git diff --check`. The repository check covers Markdown reports and topic guides, indexed paths, raw-data ignore rules and available evidence hashes. It also works in a clean source checkout where raw observations are absent. Run the affected experiment's regression tests; documentation consolidation alone does not require new performance measurements.

@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "exact_roundtrips": 2560,
+  "malformed_or_required_extension_rejections": 6,
+  "lossy_candidate_excluded_from_performance_claims": true
+}

@@ -1,0 +1,11 @@
+{
+  "raw_identity": {
+    "path": "experiments/java/followthrough/results/nmt/results.json",
+    "bytes": 69793,
+    "sha256": "9a4b66a1c1fed27b0804cd3e4dee0b4b3bdb60b4a7e5b65c7655358a307733f5"
+  },
+  "scope": "Successful operations guarded by harness assertions; failed diagnostic exit is separately retained in primary queue summary.",
+  "schema": "GAIA-JVM-RESIDENT-BUDGET-1",
+  "completed_target_compilations": 16,
+  "actual_class_consumers": 8
+}

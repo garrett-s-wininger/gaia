@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "object_checks": 108,
+  "oracle": "Every measured object SHA-256 equals a fresh stock CLI object for that source/variant. Preparation references outside request clock.",
+  "analysis_fact_checks": 54,
+  "analysis_oracle": "Function/block-numbered dominator-parent/level/loop-depth/header and postdominator-parent/level facts match serial same-input reference hashes and counts.",
+  "frozen_inputs_verified_after": true,
+  "focused_tests": 6,
+  "test_implementation_sha256": "cfd7ac77847930fd27cd7d30c110ee22b7b39a2452d1d57e45df5000e48be68c",
+  "focused_tests_stage": "Nine baseline focused tests passed with measured host/source before postmeasurement hardening. Subsequent hardened tests are separate validation, not a primary timing rerun.",
+  "postmeasurement_hardening": {
+    "passed": true,
+    "total_focused_tests": 13,
+    "native_host_tests": 8,
+    "child_lifecycle_test_methods": 1,
+    "child_lifecycle_subcases": [
+      "12000-byte response",
+      "100000-byte bound rejection",
+      "32 immediate cancellations",
+      "32 cancellations with inherited blocked SIGTERM"
+    ],
+    "broker_tests": 4,
+    "baseline_real_fixture_argv_replay": {
+      "cases": 2,
+      "parallel_and_speculative": true,
+      "objects_match_cli": true
+    },
+    "performance_matrix_rerun": false,
+    "implementation_sha256": {
+      "pass_host.cpp": "ebb3bb1f2e5c3de73ecac13bc312b1efd796c4795de255fafea8805cbc243060",
+      "process_passes.inc": "7f004a4a957c2a6eb93d57c54730ca9c7259340a335dd0df9edcc6cc3cb9185c",
+      "shared_inputs.py": "35d239ce003674f5900706784855aed48713fc312b41c2350dfcd9824781818e",
+      "test_passes.py": "e423bfa8c7782865b7c5060ea6d9cb380408aaec169d4b77cec1027243958dbe",
+      "test_shared_inputs.py": "eeceb5ebe106c56320a2b0961b486bdf0d265e5505d46d98b31572f765c6bbed",
+      "child_lifecycle_test.cpp": "9ceb763ec4c7642b9178d794bffe50d418be7c415a96a570bb9e0b8c0bbfdecf"
+    },
+    "binary_sha256": {
+      "pass-host-hardened": "ed47a5b2001d8b9cf55717e18cc21313e1749895d05e5e5b8b8044c3d22ac739",
+      "child-lifecycle-test": "99a69525f8475ef0d29a74a3827a80e632238afb922b8d0a0fa5566b4eaf3a5a"
+    }
+  }
+}

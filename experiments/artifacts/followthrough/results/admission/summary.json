@@ -1,0 +1,129 @@
+{
+  "rows": [
+    {
+      "profile": "nominal",
+      "mode": "range",
+      "first_ms": 857.5126509967959,
+      "session_ms": 2317.9686889998266,
+      "payload_read_bytes": 18190326,
+      "payload_read_calls": 1425,
+      "peak_cache_bytes": 0,
+      "execution_before_last_fetch": 3
+    },
+    {
+      "profile": "nominal",
+      "mode": "demand4k",
+      "first_ms": 850.3417739993893,
+      "session_ms": 2193.72620699869,
+      "payload_read_bytes": 7626752,
+      "payload_read_calls": 1862,
+      "peak_cache_bytes": 7626752,
+      "execution_before_last_fetch": 3
+    },
+    {
+      "profile": "nominal",
+      "mode": "demand64k",
+      "first_ms": 1399.2708300065715,
+      "session_ms": 4100.998275003803,
+      "payload_read_bytes": 20660381,
+      "payload_read_calls": 316,
+      "peak_cache_bytes": 20660381,
+      "execution_before_last_fetch": 3
+    },
+    {
+      "profile": "nominal",
+      "mode": "full",
+      "first_ms": 907.5199500002782,
+      "session_ms": 2494.7612390024005,
+      "payload_read_bytes": 28590237,
+      "payload_read_calls": 1,
+      "peak_cache_bytes": 28590237,
+      "execution_before_last_fetch": 0
+    },
+    {
+      "profile": "request-latency",
+      "mode": "range",
+      "first_ms": 1755.7260930043412,
+      "session_ms": 4655.524476998835,
+      "payload_read_bytes": 18190326,
+      "payload_read_calls": 1425,
+      "peak_cache_bytes": 0,
+      "execution_before_last_fetch": 3
+    },
+    {
+      "profile": "request-latency",
+      "mode": "demand4k",
+      "first_ms": 4038.2719510016614,
+      "session_ms": 6009.124529002293,
+      "payload_read_bytes": 7626752,
+      "payload_read_calls": 1862,
+      "peak_cache_bytes": 7626752,
+      "execution_before_last_fetch": 3
+    },
+    {
+      "profile": "request-latency",
+      "mode": "demand64k",
+      "first_ms": 1425.292617001105,
+      "session_ms": 2760.028279000835,
+      "payload_read_bytes": 20660381,
+      "payload_read_calls": 316,
+      "peak_cache_bytes": 20660381,
+      "execution_before_last_fetch": 3
+    },
+    {
+      "profile": "request-latency",
+      "mode": "full",
+      "first_ms": 940.1810939962161,
+      "session_ms": 2385.354145997553,
+      "payload_read_bytes": 28590237,
+      "payload_read_calls": 1,
+      "peak_cache_bytes": 28590237,
+      "execution_before_last_fetch": 0
+    },
+    {
+      "profile": "bandwidth",
+      "mode": "range",
+      "first_ms": 5814.368055995146,
+      "session_ms": 8775.793581000471,
+      "payload_read_bytes": 18190326,
+      "payload_read_calls": 1425,
+      "peak_cache_bytes": 0,
+      "execution_before_last_fetch": 3
+    },
+    {
+      "profile": "bandwidth",
+      "mode": "demand4k",
+      "first_ms": 6052.658733999124,
+      "session_ms": 7732.286514998123,
+      "payload_read_bytes": 7626752,
+      "payload_read_calls": 1862,
+      "peak_cache_bytes": 7626752,
+      "execution_before_last_fetch": 3
+    },
+    {
+      "profile": "bandwidth",
+      "mode": "demand64k",
+      "first_ms": 6205.4767289955635,
+      "session_ms": 8399.109198006045,
+      "payload_read_bytes": 20660381,
+      "payload_read_calls": 316,
+      "peak_cache_bytes": 20660381,
+      "execution_before_last_fetch": 3
+    },
+    {
+      "profile": "bandwidth",
+      "mode": "full",
+      "first_ms": 6638.586075998319,
+      "session_ms": 8348.469411001133,
+      "payload_read_bytes": 28590237,
+      "payload_read_calls": 1,
+      "peak_cache_bytes": 28590237,
+      "execution_before_last_fetch": 0
+    }
+  ],
+  "producer_chunk_manifest_seconds": 0.06879847600066569,
+  "raw_identity": {
+    "bytes": 6248205,
+    "sha256": "7eae9bf9f8c0c5f5933cbb5a608b47cc1d464ffe26a6e64f3ac1195bda6f1f81"
+  }
+}

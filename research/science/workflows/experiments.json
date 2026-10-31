@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "path_base": "repository-root",
+  "track": "adjacent-workflow-sharing",
+  "experiments": [
+    {
+      "id": "SCIENCE-WORKFLOWS-ASSETS",
+      "status": "measured-bounded-adjacent-workflow",
+      "report": "experiments/science/workflows/results/assets/REPORT.md",
+      "raw": "experiments/science/workflows/results/assets/results.json",
+      "summary": "experiments/science/workflows/results/assets/summary.json",
+      "validation": "experiments/science/workflows/results/assets/validation.json",
+      "provenance": "experiments/science/workflows/results/assets/provenance.json",
+      "raw_identity": "experiments/science/workflows/results/assets/raw-identity.json",
+      "implementation": "experiments/science/workflows/README.md",
+      "findings": "research/science/workflows/findings.md"
+    },
+    {
+      "id": "SCIENCE-WORKFLOWS-NATIVE",
+      "status": "measured-bounded-adjacent-workflow",
+      "report": "experiments/science/workflows/results/native/REPORT.md",
+      "raw": "experiments/science/workflows/results/native/results.json",
+      "summary": "experiments/science/workflows/results/native/summary.json",
+      "validation": "experiments/science/workflows/results/native/validation.json",
+      "provenance": "experiments/science/workflows/results/native/provenance.json",
+      "raw_identity": "experiments/science/workflows/results/native/raw-identity.json",
+      "implementation": "experiments/science/workflows/README.md",
+      "findings": "research/science/workflows/findings.md"
+    },
+    {
+      "id": "SCIENCE-WORKFLOWS-WORKSPACES",
+      "status": "measured-bounded-adjacent-workflow",
+      "report": "experiments/science/workflows/results/workspaces/REPORT.md",
+      "raw": "experiments/science/workflows/results/workspaces/results.json",
+      "summary": "experiments/science/workflows/results/workspaces/summary.json",
+      "validation": "experiments/science/workflows/results/workspaces/validation.json",
+      "provenance": "experiments/science/workflows/results/workspaces/provenance.json",
+      "raw_identity": "experiments/science/workflows/results/workspaces/raw-identity.json",
+      "implementation": "experiments/science/workflows/README.md",
+      "findings": "research/science/workflows/findings.md"
+    },
+    {
+      "id": "SCIENCE-WORKFLOWS-EDITOR",
+      "status": "measured-bounded-adjacent-workflow",
+      "report": "experiments/science/workflows/results/editor/REPORT.md",
+      "raw": "experiments/science/workflows/results/editor/results.json",
+      "summary": "experiments/science/workflows/results/editor/summary.json",
+      "validation": "experiments/science/workflows/results/editor/validation.json",
+      "provenance": "experiments/science/workflows/results/editor/provenance.json",
+      "raw_identity": "experiments/science/workflows/results/editor/raw-identity.json",
+      "implementation": "experiments/science/workflows/README.md",
+      "findings": "research/science/workflows/findings.md"
+    },
+    {
+      "id": "SCIENCE-WORKFLOWS-DOCTESTS",
+      "status": "measured-bounded-adjacent-workflow",
+      "report": "experiments/science/workflows/results/doctests/REPORT.md",
+      "raw": "experiments/science/workflows/results/doctests/results.json",
+      "summary": "experiments/science/workflows/results/doctests/summary.json",
+      "validation": "experiments/science/workflows/results/doctests/validation.json",
+      "provenance": "experiments/science/workflows/results/doctests/provenance.json",
+      "raw_identity": "experiments/science/workflows/results/doctests/raw-identity.json",
+      "implementation": "experiments/science/workflows/README.md",
+      "findings": "research/science/workflows/findings.md"
+    },
+    {
+      "id": "SCIENCE-WORKFLOWS-D3D12",
+      "status": "measured-hardware-cpu-wins",
+      "report": "experiments/science/workflows/devices/results/REPORT.md",
+      "raw": "experiments/science/workflows/devices/results/results.json",
+      "summary": "experiments/science/workflows/devices/results/summary.json",
+      "validation": "experiments/science/workflows/devices/results/validation.json",
+      "provenance": "experiments/science/workflows/devices/results/provenance.json",
+      "raw_identity": "experiments/science/workflows/devices/results/raw-identity.json",
+      "implementation": "experiments/science/workflows/devices/README.md",
+      "findings": "research/science/workflows/findings.md"
+    }
+  ]
+}

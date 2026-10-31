@@ -1,0 +1,96 @@
+{
+  "compile_units": 33,
+  "source_files": 124,
+  "source_bytes": 1030686,
+  "initial_ninja_ccache_seconds": 33.0572439940006,
+  "initial_shared_seconds": 23.44479758799571,
+  "admission_seconds": 0.03462387699983083,
+  "cache_policy": "baseline-only ccache seed restored outside every operation; no changed-result history hits",
+  "cases": {
+    "noop": {
+      "modes": {
+        "shared": {
+          "median": 0.0015307700014091097,
+          "min": 0.0009472179954173043,
+          "max": 0.0017120140037150122,
+          "samples": 3
+        },
+        "ninja-ccache": {
+          "median": 0.0054441679967567325,
+          "min": 0.005270772999210749,
+          "max": 0.005740448003052734,
+          "samples": 3
+        }
+      },
+      "paired_wins": 3
+    },
+    "source": {
+      "modes": {
+        "shared": {
+          "median": 0.4485051570009091,
+          "min": 0.43150226800207747,
+          "max": 0.45760243399854517,
+          "samples": 3
+        },
+        "ninja-ccache": {
+          "median": 0.5972282919974532,
+          "min": 0.5228786359948572,
+          "max": 0.6027355339974747,
+          "samples": 3
+        }
+      },
+      "paired_wins": 3
+    },
+    "header": {
+      "modes": {
+        "shared": {
+          "median": 4.790087248999043,
+          "min": 4.632226212997921,
+          "max": 6.351912975005689,
+          "samples": 3
+        },
+        "ninja-ccache": {
+          "median": 6.124988244999258,
+          "min": 5.641672094003297,
+          "max": 6.496056123003655,
+          "samples": 3
+        }
+      },
+      "paired_wins": 2
+    },
+    "generated": {
+      "modes": {
+        "shared": {
+          "median": 0.4393564189958852,
+          "min": 0.40548521999880904,
+          "max": 0.5917804580021766,
+          "samples": 3
+        },
+        "ninja-ccache": {
+          "median": 0.5645288349987823,
+          "min": 0.5622247560022515,
+          "max": 0.6018497719996958,
+          "samples": 3
+        }
+      },
+      "paired_wins": 3
+    },
+    "configuration": {
+      "modes": {
+        "shared": {
+          "median": 23.708643485995708,
+          "min": 23.300819743999455,
+          "max": 30.296999042999232,
+          "samples": 3
+        },
+        "ninja-ccache": {
+          "median": 24.353153960997588,
+          "min": 23.65594822999992,
+          "max": 28.154478801996447,
+          "samples": 3
+        }
+      },
+      "paired_wins": 2
+    }
+  }
+}

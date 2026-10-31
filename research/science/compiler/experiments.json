@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "path_base": "repository-root",
+  "track": "compiler-parallelism-and-input-sharing",
+  "experiments": [
+    {
+      "id": "SC-PASSES-FROZEN",
+      "status": "measured-bounded-compiler-prototype",
+      "report": "experiments/science/compiler/results/passes-frozen/REPORT.md",
+      "raw": "experiments/science/compiler/results/passes-frozen/results.json",
+      "summary": "experiments/science/compiler/results/passes-frozen/summary.json",
+      "validation": "experiments/science/compiler/results/passes-frozen/validation.json",
+      "provenance": "experiments/science/compiler/results/passes-frozen/provenance.json",
+      "raw_identity": "experiments/science/compiler/results/passes-frozen/raw-identity.json",
+      "implementation": "experiments/science/compiler/run_passes.py",
+      "findings": "research/science/compiler/findings.md"
+    },
+    {
+      "id": "SC-SHARED-INPUTS",
+      "status": "measured-bounded-compiler-prototype",
+      "report": "experiments/science/compiler/results/shared-inputs/REPORT.md",
+      "raw": "experiments/science/compiler/results/shared-inputs/results.json",
+      "summary": "experiments/science/compiler/results/shared-inputs/summary.json",
+      "validation": "experiments/science/compiler/results/shared-inputs/validation.json",
+      "provenance": "experiments/science/compiler/results/shared-inputs/provenance.json",
+      "raw_identity": "experiments/science/compiler/results/shared-inputs/raw-identity.json",
+      "implementation": "experiments/science/compiler/shared_inputs.py",
+      "findings": "research/science/compiler/findings.md"
+    }
+  ]
+}

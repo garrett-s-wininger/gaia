@@ -1,0 +1,29 @@
+{
+  "rows": [
+    {
+      "mode": "combined-ffmpeg",
+      "median_ms": 93.193877,
+      "samples": 15
+    },
+    {
+      "mode": "independent-parallel",
+      "median_ms": 94.816285,
+      "samples": 15
+    },
+    {
+      "mode": "independent-sequential",
+      "median_ms": 270.447418,
+      "samples": 15
+    },
+    {
+      "mode": "shared-raw-parallel",
+      "median_ms": 197.118843,
+      "samples": 15
+    }
+  ],
+  "raw_identity": {
+    "path": "experiments/science/workflows/results/assets/results.json",
+    "bytes": 37587,
+    "sha256": "c4223c6526d6f3e2f665632a1f8bd0303b1befed54731d1c71a3e8084b2ad2c8"
+  }
+}

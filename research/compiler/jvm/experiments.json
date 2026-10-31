@@ -59,6 +59,72 @@
       "validation": "experiments/java/compiler/results/variants/validation.json",
       "provenance": "experiments/java/compiler/results/variants/provenance.json",
       "findings": "research/compiler/jvm/findings.md"
+    },
+    {
+      "id": "JVM-RESIDENT-LONG-QUEUE",
+      "run_id": "bounded-first-pass",
+      "status": "primary-complete-diagnostic-exit-failure-retained",
+      "report": "research/java/followthrough.md",
+      "raw": "experiments/java/followthrough/results/queue/results.json",
+      "summary": "experiments/java/followthrough/results/queue/summary.json",
+      "validation": "experiments/java/followthrough/results/queue/validation.json",
+      "provenance": "experiments/java/followthrough/results/queue/provenance.json",
+      "implementation": "experiments/java/followthrough/README.md"
+    },
+    {
+      "id": "JVM-NMT-EXIT-DIAGNOSTIC",
+      "run_id": "bounded-first-pass",
+      "status": "measured-separate-diagnostic",
+      "report": "research/java/followthrough.md",
+      "raw": "experiments/java/followthrough/results/nmt/results.json",
+      "summary": "experiments/java/followthrough/results/nmt/summary.json",
+      "validation": "experiments/java/followthrough/results/nmt/validation.json",
+      "provenance": "experiments/java/followthrough/results/nmt/provenance.json",
+      "implementation": "experiments/java/followthrough/README.md"
+    },
+    {
+      "id": "JVM-SOFT-BUDGET-SOLO",
+      "run_id": "bounded-first-pass",
+      "status": "measured-sampled-admission",
+      "report": "research/java/followthrough.md",
+      "raw": "experiments/java/followthrough/results/low-budget/results.json",
+      "summary": "experiments/java/followthrough/results/low-budget/summary.json",
+      "validation": "experiments/java/followthrough/results/low-budget/validation.json",
+      "provenance": "experiments/java/followthrough/results/low-budget/provenance.json",
+      "implementation": "experiments/java/followthrough/README.md"
+    },
+    {
+      "id": "JVM-SOFT-BUDGET-COMPOUND",
+      "run_id": "bounded-first-pass",
+      "status": "measured-additional-consumer-work",
+      "report": "research/java/followthrough.md",
+      "raw": "experiments/java/followthrough/results/joint-budget/results.json",
+      "summary": "experiments/java/followthrough/results/joint-budget/summary.json",
+      "validation": "experiments/java/followthrough/results/joint-budget/validation.json",
+      "provenance": "experiments/java/followthrough/results/joint-budget/provenance.json",
+      "implementation": "experiments/java/followthrough/README.md"
+    },
+    {
+      "id": "JVM-NATIVE-USER-PROFILE",
+      "run_id": "bounded-first-pass",
+      "status": "initial-optimization-level-confound",
+      "report": "research/java/followthrough.md",
+      "raw": "experiments/java/followthrough/results/pgo/results.json",
+      "summary": "experiments/java/followthrough/results/pgo/summary.json",
+      "validation": "experiments/java/followthrough/results/pgo/validation.json",
+      "provenance": "experiments/java/followthrough/results/pgo/provenance.json",
+      "implementation": "experiments/java/followthrough/README.md"
+    },
+    {
+      "id": "JVM-NATIVE-O3-CONTROL",
+      "run_id": "bounded-first-pass",
+      "status": "measured-effective-optimization-controls",
+      "report": "research/java/followthrough.md",
+      "raw": "experiments/java/followthrough/results/o3-control/results.json",
+      "summary": "experiments/java/followthrough/results/o3-control/summary.json",
+      "validation": "experiments/java/followthrough/results/o3-control/validation.json",
+      "provenance": "experiments/java/followthrough/results/o3-control/provenance.json",
+      "implementation": "experiments/java/followthrough/README.md"
     }
   ],
   "raw_evidence": {

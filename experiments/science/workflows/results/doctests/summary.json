@@ -1,0 +1,24 @@
+{
+  "rows": [
+    {
+      "mode": "batch-existing-api",
+      "median_ms": 203.079065,
+      "samples": 5
+    },
+    {
+      "mode": "fresh-per-request",
+      "median_ms": 1272.478854,
+      "samples": 5
+    },
+    {
+      "mode": "resident-online",
+      "median_ms": 215.485987,
+      "samples": 5
+    }
+  ],
+  "raw_identity": {
+    "path": "experiments/science/workflows/results/doctests/results.json",
+    "bytes": 4635,
+    "sha256": "0e91e5050bbefdf19893ef64b0c151d03b91c82c52480ccaa4a0e940bba6102e"
+  }
+}

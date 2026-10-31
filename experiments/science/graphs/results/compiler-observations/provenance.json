@@ -1,0 +1,13 @@
+{
+  "source_sha256": {
+    "run.py": "5023a308cd6e0f3dd7b5530a421b8a09ca9c97b6e2413f2b3f8c8c7de106545e",
+    "observed_host.cpp": "fe350146e66cba7715283213be3c2c518a24decf2635eb95a755575e3dfa26cc"
+  },
+  "tools": {
+    "observed-host": "a2497091fdc2528baf7e889b7c0e19940cdae30f7a5b18ec26086441f57c1e61",
+    "clang": "b852cb4597dc56b241bcd328544b5fee60717f35f66808098cc0413946ba42f2"
+  },
+  "scope": "Actual Clang threeTU C/C++ prototype, immutable regularUTF8 source namespace, sourceVFS presence/content/listing descriptors. SDK/tool/environment outside sourceRoot externallyfixed; no completehermetic capture. Clean-diagnostic-only observed skips, currentfrontendIRhits refreshdeps+observations, no arbitrarysideproducts/analysis cache. Unchanged outputrestore occursinsideclock; CLI object+depfile oracles outsideboth clocks.",
+  "trials": 3,
+  "measured_boundary": "Each operation: admitted edits plus requests for all three TUs, including object/depfile restore. Full physical compiler oracle and source materialization outside both clocks. Preparation separate."
+}

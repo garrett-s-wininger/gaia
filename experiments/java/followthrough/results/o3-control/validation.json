@@ -1,0 +1,11 @@
+{
+  "raw_identity": {
+    "path": "experiments/java/followthrough/results/o3-control/results.json",
+    "bytes": 127292,
+    "sha256": "770e071a280510f20eed12528c54daa0ed19781d7e85af5b493b9be4ee851093"
+  },
+  "scope": "Successful operations guarded by harness assertions; failed diagnostic exit is separately retained in primary queue summary.",
+  "schema": "GAIA-NATIVE-O3-CONTROL-1",
+  "successful_compilations": 171,
+  "expected_invalid_requests": 9
+}

@@ -1,0 +1,14 @@
+{
+  "python": "3.14.8 (main, Oct  2 2026, 10:23:31) [GCC 16.2.1 20260810]",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.44",
+  "implementation_sha256": {
+    "information.py": "f331458b365cf06fae64003f3fc02a658c0062960d1ed11e1ad6a00b6684c66e",
+    "common.py": "c8bfed5b107cbf0acb0f7012fbaea5a5534daea45b4e5738a27199bbf2f15e24"
+  },
+  "raw_identity": {
+    "path": "experiments/science/data/results/information/results.json",
+    "bytes": 13149,
+    "sha256": "3c807c8b846695dbd7dc80d97ba75e7d1a030572077a9009a8e9b987d4de2a46"
+  },
+  "measurement": "Short per-case shared advisory lock; warm host pages; unrelated preparation/host work may overlap. Algorithms in Python unless declared otherwise."
+}

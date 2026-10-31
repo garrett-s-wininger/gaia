@@ -4,7 +4,7 @@ Supplied class knowledge already supports static CDS and manually enabled AOT li
 
 ## Index runtime-image discovery before repeating filesystem traversal
 
-The [JVMTI profiles](../../experiments/java/startup/results/jvmti/REPORT.md) expose JDK runtime-image filesystem construction and class/package walking during first-script compilation. Test a supplied immutable name index keyed by the actual runtime image and discovery policy, while preserving fresh loader/module identities, added extension modules and mutable metaclasses. Measure full ordinary-JVM operations without the diagnostic agent. CPU sampling visibly perturbs startup, and the first module membership-index matrix is too unstable to justify a broad gain.
+The [JVMTI profiles](../../experiments/java/startup/results/jvmti/REPORT.md) exposed JDK runtime-image discovery work. The [prepared java.base index](followthrough.md#prepared-discovery-helps-lookup-without-a-complete-command-win) now improves isolated import queries but establishes no complete-command startup gain, despite the helper loading in that command. Require a profile and realistic command with meaningful discovery cost before broadening this representation. Preserve fresh loader/module identities, added extensions and mutable metaclasses; ordinary uninstrumented commands remain the performance control.
 
 ## Move beyond the already-prepared DGM decoder
 

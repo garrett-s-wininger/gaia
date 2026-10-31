@@ -1,0 +1,48 @@
+{
+  "cases": [
+    {
+      "mode": "imports",
+      "variant": "rebuilt",
+      "median_process_ms": 624.908466,
+      "paired_wins": 0,
+      "blocks": 5
+    },
+    {
+      "mode": "imports",
+      "variant": "indexed",
+      "median_process_ms": 481.495522,
+      "paired_wins": 5,
+      "blocks": 5
+    },
+    {
+      "mode": "registry",
+      "variant": "rebuilt",
+      "median_process_ms": 492.085286,
+      "paired_wins": 0,
+      "blocks": 5
+    },
+    {
+      "mode": "registry",
+      "variant": "indexed",
+      "median_process_ms": 524.253771,
+      "paired_wins": 1,
+      "blocks": 5
+    },
+    {
+      "mode": "basic",
+      "variant": "rebuilt",
+      "median_process_ms": 1683.69465,
+      "paired_wins": 0,
+      "blocks": 5
+    },
+    {
+      "mode": "basic",
+      "variant": "indexed",
+      "median_process_ms": 1694.51925,
+      "paired_wins": 3,
+      "blocks": 5
+    }
+  ],
+  "raw_sha256": "f68c7c6f2aef1b9db470bb61c7c3d2b35ca42fce8a9b38e229f6a0563b98e0c8",
+  "raw_bytes": 12120
+}

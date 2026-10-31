@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "actual_isolated_framework_processes": 3,
+  "same_oracle": true,
+  "network_disabled": true
+}

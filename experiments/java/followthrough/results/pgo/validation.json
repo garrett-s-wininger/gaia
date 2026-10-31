@@ -1,0 +1,11 @@
+{
+  "raw_identity": {
+    "path": "experiments/java/followthrough/results/pgo/results.json",
+    "bytes": 96234,
+    "sha256": "0439ff4ab074cd94d583d598f62ddab653db6c23cfd693570b1994090f726110"
+  },
+  "scope": "Successful operations guarded by harness assertions; failed diagnostic exit is separately retained in primary queue summary.",
+  "schema": "GAIA-NATIVE-COMPILER-PGO-1",
+  "successful_compilations": 114,
+  "expected_invalid_requests": 6
+}

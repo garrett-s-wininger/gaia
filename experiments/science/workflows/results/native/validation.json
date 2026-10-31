@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "operations": 15,
+  "source_pins_verified_after": true,
+  "scope": "48 declared scalar requests and two compatible module replacements. Host-owned integer state survives only at serial quiescent points. Candidate ABI/version/missing image rejected before publication; pure trusted modules only, no arbitrary constructor rollback, state migration, pointer/callback/thread live-patching or ORC claim. Compile/link preparation excluded and separately recorded."
+}

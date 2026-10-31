@@ -1,0 +1,36 @@
+{
+  "cases": [
+    {
+      "strategy": "fixed",
+      "evaluations_per_search": 0,
+      "median_search_wall_ms": 0.0,
+      "median_training_modeled_ms": 0,
+      "median_normal_heldout_model_ms": 10930.72184085846,
+      "median_reversal_heldout_model_ms": 20098.64368171692
+    },
+    {
+      "strategy": "grid",
+      "evaluations_per_search": 6,
+      "median_search_wall_ms": 8.43576,
+      "median_training_modeled_ms": 65799.52953386307,
+      "median_normal_heldout_model_ms": 2842.4546704292293,
+      "median_reversal_heldout_model_ms": 3254.1093408584593
+    },
+    {
+      "strategy": "random",
+      "evaluations_per_search": 6,
+      "median_search_wall_ms": 9.376895,
+      "median_training_modeled_ms": 76257.02953386307,
+      "median_normal_heldout_model_ms": 2842.4546704292293,
+      "median_reversal_heldout_model_ms": 3254.1093408584593
+    },
+    {
+      "strategy": "evolution",
+      "evaluations_per_search": 6,
+      "median_search_wall_ms": 5.412057,
+      "median_training_modeled_ms": 45408.41861343384,
+      "median_normal_heldout_model_ms": 2842.4546704292293,
+      "median_reversal_heldout_model_ms": 3254.1093408584593
+    }
+  ]
+}

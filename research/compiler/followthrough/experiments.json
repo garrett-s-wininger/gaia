@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "path_base": "repository-root",
+  "track": "native-shared-work-followthrough",
+  "experiments": [
+    {
+      "id": "CC-IR-CONTINUATION",
+      "run_id": "20261031T170401.114287Z",
+      "status": "measured-single-frontend-current-ir-reuse",
+      "report": "experiments/compiler/followthrough/results/ir/REPORT.md",
+      "raw": "experiments/compiler/followthrough/results/ir/results.json",
+      "summary": "experiments/compiler/followthrough/results/ir/summary.json",
+      "validation": "experiments/compiler/followthrough/results/ir/validation.json",
+      "provenance": "experiments/compiler/followthrough/results/ir/provenance.json",
+      "raw_identity": "experiments/compiler/followthrough/results/ir/raw-identity.json",
+      "implementation": "experiments/compiler/followthrough/README.md",
+      "findings": "research/compiler/followthrough/findings.md"
+    },
+    {
+      "id": "CC-SHARED-ANALYSIS",
+      "run_id": "20261031T170533.671936Z",
+      "status": "measured-shared-parse-cpu-with-parallel-control",
+      "report": "experiments/compiler/followthrough/results/analysis-parallel/REPORT.md",
+      "raw": "experiments/compiler/followthrough/results/analysis-parallel/results.json",
+      "summary": "experiments/compiler/followthrough/results/analysis-parallel/summary.json",
+      "validation": "experiments/compiler/followthrough/results/analysis-parallel/validation.json",
+      "provenance": "experiments/compiler/followthrough/results/analysis-parallel/provenance.json",
+      "raw_identity": "experiments/compiler/followthrough/results/analysis-parallel/raw-identity.json",
+      "implementation": "experiments/compiler/followthrough/README.md",
+      "findings": "research/compiler/followthrough/findings.md"
+    },
+    {
+      "id": "CC-REQUEST-IDENTITY",
+      "run_id": "20261031T170438.076054Z",
+      "status": "measured-path-environment-order-identity-probes",
+      "report": "experiments/compiler/followthrough/results/reproducibility/REPORT.md",
+      "raw": "experiments/compiler/followthrough/results/reproducibility/results.json",
+      "summary": "experiments/compiler/followthrough/results/reproducibility/summary.json",
+      "validation": "experiments/compiler/followthrough/results/reproducibility/validation.json",
+      "provenance": "experiments/compiler/followthrough/results/reproducibility/provenance.json",
+      "raw_identity": "experiments/compiler/followthrough/results/reproducibility/raw-identity.json",
+      "implementation": "experiments/compiler/followthrough/README.md",
+      "findings": "research/compiler/followthrough/findings.md"
+    },
+    {
+      "id": "CC-NINJA-SOURCE-GENERATIONS",
+      "run_id": "20261031T171048.307753Z",
+      "status": "measured-fixed-dependency-production-cpp-trace",
+      "report": "experiments/compiler/followthrough/results/graph/REPORT.md",
+      "raw": "experiments/compiler/followthrough/results/graph/results.json",
+      "summary": "experiments/compiler/followthrough/results/graph/summary.json",
+      "validation": "experiments/compiler/followthrough/results/graph/validation.json",
+      "provenance": "experiments/compiler/followthrough/results/graph/provenance.json",
+      "raw_identity": "experiments/compiler/followthrough/results/graph/raw-identity.json",
+      "implementation": "experiments/compiler/followthrough/README.md",
+      "findings": "research/compiler/followthrough/findings.md"
+    }
+  ]
+}

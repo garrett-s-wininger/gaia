@@ -1,0 +1,170 @@
+{
+  "repository": {
+    "odin_fused_automaton": {
+      "median_ms": 104.838296,
+      "min_ms": 100.213237,
+      "max_ms": 115.350768,
+      "samples": 11
+    },
+    "odin_independent_parallel": {
+      "median_ms": 92.682464,
+      "min_ms": 75.215963,
+      "max_ms": 119.618801,
+      "samples": 11
+    },
+    "odin_independent_sequential": {
+      "median_ms": 419.872568,
+      "min_ms": 395.850168,
+      "max_ms": 452.597459,
+      "samples": 11
+    },
+    "odin_shared_reads": {
+      "median_ms": 275.227026,
+      "min_ms": 270.435578,
+      "max_ms": 304.286766,
+      "samples": 11
+    },
+    "rg_combined_scan": {
+      "median_ms": 17.059462,
+      "min_ms": 13.262742,
+      "max_ms": 28.135593,
+      "samples": 11
+    },
+    "rg_independent_parallel": {
+      "median_ms": 43.871123,
+      "min_ms": 33.647535,
+      "max_ms": 57.184864,
+      "samples": 11
+    },
+    "rg_independent_sequential": {
+      "median_ms": 106.393777,
+      "min_ms": 75.91382,
+      "max_ms": 203.258317,
+      "samples": 11
+    }
+  },
+  "schema_generation": {
+    "independent_sequential": {
+      "median_ms": 16.144295,
+      "min_ms": 15.114896,
+      "max_ms": 37.224579,
+      "samples": 11
+    },
+    "independent_threads": {
+      "median_ms": 20.459655,
+      "min_ms": 18.297218,
+      "max_ms": 23.012312,
+      "samples": 11
+    },
+    "shared_sequential": {
+      "median_ms": 6.222835,
+      "min_ms": 5.7247,
+      "max_ms": 20.639289,
+      "samples": 11
+    },
+    "shared_threads": {
+      "median_ms": 8.212325,
+      "min_ms": 7.365631,
+      "max_ms": 9.770203,
+      "samples": 11
+    }
+  },
+  "propagation": {
+    "reorder": {
+      "False": {
+        "median_ms": 23.076636,
+        "min_ms": 19.701071,
+        "max_ms": 32.077442,
+        "samples": 11
+      },
+      "True": {
+        "median_ms": 7.472129,
+        "min_ms": 6.140355,
+        "max_ms": 8.175952,
+        "samples": 11
+      }
+    },
+    "description": {
+      "False": {
+        "median_ms": 21.848139,
+        "min_ms": 19.236379,
+        "max_ms": 27.122714,
+        "samples": 11
+      },
+      "True": {
+        "median_ms": 7.004783,
+        "min_ms": 6.355012,
+        "max_ms": 9.91638,
+        "samples": 11
+      }
+    },
+    "field_type": {
+      "False": {
+        "median_ms": 21.750383,
+        "min_ms": 19.74361,
+        "max_ms": 34.624848,
+        "samples": 11
+      },
+      "True": {
+        "median_ms": 22.095948,
+        "min_ms": 20.243719,
+        "max_ms": 27.9125,
+        "samples": 11
+      }
+    }
+  },
+  "checkpoint": {
+    "rows": [
+      {
+        "operation": "initial",
+        "admission_ns": 13759963,
+        "native_process_ns": 1685201547,
+        "total_ns": 1698976157,
+        "new_object_bytes": 4832475,
+        "objects": 502,
+        "historical_read_ns": 16003949,
+        "snapshot": "739920e49ddd9992d45cead7a4a8640a9f2559a210392acfc2df66e18f1b5d4e",
+        "input_bytes": 4800338
+      },
+      {
+        "operation": "unchanged",
+        "admission_ns": 17615338,
+        "native_process_ns": 58887931,
+        "total_ns": 76521423,
+        "new_object_bytes": 0,
+        "objects": 502,
+        "historical_read_ns": 15554773,
+        "snapshot": "739920e49ddd9992d45cead7a4a8640a9f2559a210392acfc2df66e18f1b5d4e",
+        "input_bytes": 4800338
+      },
+      {
+        "operation": "small_edit",
+        "admission_ns": 5412596,
+        "native_process_ns": 53790625,
+        "total_ns": 59213832,
+        "new_object_bytes": 45115,
+        "objects": 504,
+        "historical_read_ns": 16818758,
+        "snapshot": "2f6aef1ad0b072cda3ce5237e8f13286fbc84d6351159d5c296fef4b482dc353",
+        "input_bytes": 4799346
+      },
+      {
+        "operation": "large_edit",
+        "admission_ns": 12936743,
+        "native_process_ns": 106940535,
+        "total_ns": 119889602,
+        "new_object_bytes": 4239411,
+        "objects": 506,
+        "historical_read_ns": 21708819,
+        "snapshot": "c1470ba6d1d34ff501cbf4769a389131dc11226d732447b903afe389ab72763f",
+        "input_bytes": 4799346
+      }
+    ],
+    "scope": "single private caller, admitted regular-file bytes/executable flags; source discovery/ignores/symlinks/stacks/restores absent; typed immutable objects and file/directory fsync before HEAD acknowledgement; no Git performance comparison"
+  },
+  "repository_corpus": {
+    "files": 1299,
+    "bytes": 27802679,
+    "admission_ms": 647.750545
+  }
+}

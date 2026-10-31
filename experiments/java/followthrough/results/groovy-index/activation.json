@@ -1,0 +1,13 @@
+{
+  "agent": false,
+  "diagnostic_only": true,
+  "observations": {
+    "basic": {
+      "runtime_index_helper_loaded": true
+    },
+    "classes": {
+      "runtime_index_helper_loaded": true
+    }
+  },
+  "note": "Class-load logging is excluded from timed runs; confirms index path used even when complete command did not improve."
+}

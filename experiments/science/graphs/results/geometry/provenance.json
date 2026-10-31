@@ -1,0 +1,10 @@
+{
+  "source_sha256": {
+    "geometry.py": "9e440743345e9ce1ff87b3adce118413132c4b88b3b8037a05c2b51d656aa6eb",
+    "embedding.odin": "173165554950513a8c96484df52a1c4c8b92795eb280862f6c53d91aafc263fb"
+  },
+  "library_sha256": "675312b4c044ed2e96eece7860ed490584869c1644ae2045a998786450b9216f",
+  "input_sha256": "f86db9050a8de89fd14f36a7455ff2a7d853e764b117829d48c1926005c5a4c7",
+  "iterations": 80,
+  "scope": "Native deterministic logical spring/repulsion embedding, training edges only, one seed.1Dsorted/3DMorton groups8;8MiBLRU modeledreadbytes. Heldout is another realfreshstart of sameDjangoworkload; reverse syntheticstress. Nothardware3Dplacement or measuredstoragethroughput; commondata-lane evaluator must charge actualrepacking andverifiedreads."
+}

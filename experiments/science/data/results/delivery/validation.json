@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "complete_operations": 120,
+  "verified_blobs": 5760,
+  "same_consumer_output": true,
+  "budget_overshoots": 0
+}

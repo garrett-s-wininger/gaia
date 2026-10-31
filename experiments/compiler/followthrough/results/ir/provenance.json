@@ -1,0 +1,14 @@
+{
+  "source_archive_sha256": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3",
+  "host_sha256": "bda8e0c18364d9c536338f74814fb8f4c2b45c128be183b4f9f2cf72da5bde1a",
+  "implementation_sha256": {
+    "followthrough/ir_host.cpp": "4423f2d7862f48ccde6b8ea5fb8f1acf8584d0154b5960a68988133bb94c4e97",
+    "followthrough/run_ir.py": "b3044e4e9af8c0650d6513682f7d176093fa78a80353af6ad8612bb18c2b86f6",
+    "semantic_invalidation/context.py": "c87c7bec972267ba26126dd965e4f9d3ecf3938bd8401acb6a5594db885da01c",
+    "semantic_invalidation/semantic_cache.py": "4b9738f9f7dcb49a9c788e3968386c5f22a93461cf40e7c9047678091efae9d5",
+    "semantic_invalidation/ccache_control.py": "c6ce0cef259df2e6a0e697723af27eb12242bca20020286333ac2a43659d4b49"
+  },
+  "scope": "Private fixed-context Zstandard TUs; unchanged seeded candidate; all native calls parse once; cache output is object only.",
+  "frozen_inputs_verified_after": true,
+  "compiler_version": "clang version 22.1.8\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/lib/llvm22/bin\n"
+}

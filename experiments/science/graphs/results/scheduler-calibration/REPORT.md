@@ -1,0 +1,9 @@
+# Actual task durations calibrate the scheduler model
+
+Fifteen successful commands measure three blocks of small real C syntax checking, diagnostics, optimized compilation, execution of a compiled assertion program, and source search. Process creation is included. Rounded-up median durations are 40.4 / 40.9 / 48.9 / 1.4 / 3.4 ms respectively. These are tiny subprocess tasks on this host, not general compiler phase costs: syntax checking and diagnostics each run a full standalone frontend.
+
+Those observed durations replace declared task work in the existing model. One model unit is 100 microseconds, edit arrivals are half a compile duration apart, cold-input penalties are disabled, and a hypothetical cancellation quantum is 1 ms. Cancellation-enabled policies finish final-current work in 907–913 model units, while FIFO without cancellation takes 6,575. Foraging uses 10,976 work units and FIFO with cancellation 11,012; that small difference is not evidence of a production improvement. All dependency, durable-work and publication invariants pass.
+
+This is measured task-duration calibration followed by simulation. Actual concurrent queue execution, cooperative compiler cancellation and real safe points are not implemented. The synchronous compiler host has no cancellation callback; realizing this modeled gain requires a separate execution harness. Spawn cost, contention, compiler internals and cache state would change under such a service. The result strengthens the relevance of cancellation research, not a latency promise.
+
+Run `calibrate_schedule.py` with explicit `--clang`, fresh `--work`, `--output` JSON path and shared `--lock`. The script checks source/tool hashes before and after. [Summary](summary.json), [validation](validation.json), [provenance](provenance.json), [raw identity](raw-identity.json), [main scheduler report](../first-pass/REPORT.md).

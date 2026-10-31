@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "raw_identity": {
+    "path": "experiments/science/compiler/results/shared-inputs/results.json",
+    "bytes": 90308,
+    "sha256": "9f97efdbc04aba571f554af8cd1a34e96661453bba4fdeacbfffaa7549c426d5"
+  },
+  "implementation_sha256": {
+    "shared_inputs.py": "781892f36cd5cb31d2bab01ecb500ee9bd67f01cce653550320a1554e964c5d7"
+  },
+  "binary_sha256": null,
+  "input_origin_sha256": null,
+  "source_archive_sha256": null,
+  "python": "3.14.8 (main, Oct  2 2026, 10:23:31) [GCC 16.2.1 20260810]",
+  "scope": "Real Python stdlib source, compile-only private workers. Shared sealed mappings vs private copies, both verify full pin. Common producer body is outside worker PSS snapshots. Logical retained-input budget is not total-memory quota. Cooperative leases are released after child exit; arbitrary untracked descriptor duplication is outside the broker contract.",
+  "measurement": "Per-case advisory lock; warm host pages; preparation and unrelated host activity may overlap. Three blocks; medians are descriptive, not significance claims.",
+  "measured_source_pins_verified_before_postmeasurement_hardening": true,
+  "postmeasurement_hardening": "Completed after measurement: narrow admitted compiler-option subset, unique staging with exception cleanup, drain-before-wait bounded child records, termination signal initialization, and broker fd/pin ownership. Thirteen focused tests and two real fixture argv/object replays pass. Added validation/syscalls are not a performance equivalence claim; primary matrix was not rerun and remains tied to historical measured source pins.",
+  "local_measured_source_snapshot": {
+    "path": "experiments/_work/science-round/compiler/measured-source-before-hardening",
+    "files_sha256": {
+      "pass_host.cpp": "11a70c4a981dbffc468d0fc8cff25aca24fb9edd467659409c261d61926ebea6",
+      "process_passes.inc": "20643216a1ee90f3f0fc192640617bf0da4f26cdbfe3b4924f6c4fa11ce92ea4",
+      "shared_inputs.py": "781892f36cd5cb31d2bab01ecb500ee9bd67f01cce653550320a1554e964c5d7",
+      "run_passes.py": "bbf8a6324416623ff13952a056b33a75398ef9dc5a18793c600a988ef1a70a70",
+      "test_passes.py": "cfd7ac77847930fd27cd7d30c110ee22b7b39a2452d1d57e45df5000e48be68c",
+      "test_shared_inputs.py": "8e63ceccc772b3ecbeff7a580904a08eea9c00448fab00c7ffa3e3184d495746"
+    },
+    "verified": true,
+    "scope": "Ignored local replay assets; reacquire exact contents by these hashes. Not required checkout paths or a current implementation identity."
+  },
+  "hardened_implementation_sha256": {
+    "pass_host.cpp": "ebb3bb1f2e5c3de73ecac13bc312b1efd796c4795de255fafea8805cbc243060",
+    "process_passes.inc": "7f004a4a957c2a6eb93d57c54730ca9c7259340a335dd0df9edcc6cc3cb9185c",
+    "shared_inputs.py": "35d239ce003674f5900706784855aed48713fc312b41c2350dfcd9824781818e",
+    "test_passes.py": "e423bfa8c7782865b7c5060ea6d9cb380408aaec169d4b77cec1027243958dbe",
+    "test_shared_inputs.py": "eeceb5ebe106c56320a2b0961b486bdf0d265e5505d46d98b31572f765c6bbed",
+    "child_lifecycle_test.cpp": "9ceb763ec4c7642b9178d794bffe50d418be7c415a96a570bb9e0b8c0bbfdecf"
+  },
+  "hardened_binary_sha256": {
+    "pass-host-hardened": "ed47a5b2001d8b9cf55717e18cc21313e1749895d05e5e5b8b8044c3d22ac739",
+    "child-lifecycle-test": "99a69525f8475ef0d29a74a3827a80e632238afb922b8d0a0fa5566b4eaf3a5a"
+  }
+}

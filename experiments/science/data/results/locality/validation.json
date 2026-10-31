@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "operations": 48,
+  "exact_content_order": true,
+  "cache_budget_overshoots": 0,
+  "training_only_placement": true
+}

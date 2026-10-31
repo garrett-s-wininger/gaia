@@ -1,0 +1,112 @@
+{
+  "exit_code": 0,
+  "stdout": {
+    "boundary": "approved-host-process",
+    "dxg_present": true,
+    "source": "https://raw.githubusercontent.com/microsoft/DirectX-Headers/main/include/directx/dxcore_interface.h",
+    "lists": [
+      {
+        "filter": "generic-ml",
+        "hresult": "0x00000000",
+        "adapters": [
+          {
+            "index": 0,
+            "hresult": "0x00000000",
+            "device_attempts": [
+              {
+                "feature_level": "0xb000",
+                "hresult": "0x00000000",
+                "device_nonnull": true,
+                "nodes": 1
+              },
+              {
+                "feature_level": "0x1000",
+                "hresult": "0x00000000",
+                "device_nonnull": true,
+                "nodes": 1
+              }
+            ],
+            "description": "AMD Radeon(TM) 860M Graphics",
+            "is_hardware": true
+          }
+        ],
+        "count": 1
+      },
+      {
+        "filter": "npu-hardware-attribute",
+        "hresult": "0x00000000",
+        "adapters": [],
+        "count": 0
+      },
+      {
+        "filter": "compute-accelerator-hardware-attribute",
+        "hresult": "0x00000000",
+        "adapters": [],
+        "count": 0
+      },
+      {
+        "filter": "all",
+        "hresult": "0x80070057",
+        "adapters": []
+      },
+      {
+        "filter": "d3d12-graphics",
+        "hresult": "0x00000000",
+        "adapters": [
+          {
+            "index": 0,
+            "hresult": "0x00000000",
+            "device_attempts": [
+              {
+                "feature_level": "0xb000",
+                "hresult": "0x00000000",
+                "device_nonnull": true,
+                "nodes": 1
+              },
+              {
+                "feature_level": "0x1000",
+                "hresult": "0x00000000",
+                "device_nonnull": true,
+                "nodes": 1
+              }
+            ],
+            "description": "AMD Radeon(TM) 860M Graphics",
+            "is_hardware": true
+          }
+        ],
+        "count": 1
+      },
+      {
+        "filter": "d3d12-core-compute",
+        "hresult": "0x00000000",
+        "adapters": [
+          {
+            "index": 0,
+            "hresult": "0x00000000",
+            "device_attempts": [
+              {
+                "feature_level": "0xb000",
+                "hresult": "0x00000000",
+                "device_nonnull": true,
+                "nodes": 1
+              },
+              {
+                "feature_level": "0x1000",
+                "hresult": "0x00000000",
+                "device_nonnull": true,
+                "nodes": 1
+              }
+            ],
+            "description": "AMD Radeon(TM) 860M Graphics",
+            "is_hardware": true
+          }
+        ],
+        "count": 1
+      }
+    ],
+    "factory_hresult": "0x00000000",
+    "elapsed_ns": 964927581
+  },
+  "stderr": "Dropped Escape call with ulEscapeCode : 0x03007703\nDropped Escape call with ulEscapeCode : 0x03007703\nDropped Escape call with ulEscapeCode : 0x03007703\nDropped Escape call with ulEscapeCode : 0x03007703\nDropped Escape call with ulEscapeCode : 0x03007703\nDropped Escape call with ulEscapeCode : 0x03007703\n",
+  "interpretation": "Generic ML exposes same AMD GPU. NPU and compute accelerator hardware filters expose zero adapters through this WSL runtime; no claim about physical host hardware."
+}

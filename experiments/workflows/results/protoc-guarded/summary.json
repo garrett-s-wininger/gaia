@@ -1,0 +1,68 @@
+{
+  "cases": [
+    {
+      "case": "descriptor",
+      "mode": "independent_sequential",
+      "median_ms": 233.095546,
+      "samples": 5
+    },
+    {
+      "case": "descriptor",
+      "mode": "independent_parallel",
+      "median_ms": 122.53692,
+      "samples": 5
+    },
+    {
+      "case": "descriptor",
+      "mode": "combined",
+      "median_ms": 199.931019,
+      "samples": 5
+    },
+    {
+      "case": "descriptor",
+      "mode": "descriptor_first_parallel",
+      "median_ms": 143.238975,
+      "samples": 5
+    },
+    {
+      "case": "descriptor",
+      "mode": "descriptor_retained_parallel",
+      "median_ms": 108.525751,
+      "samples": 5
+    },
+    {
+      "case": "generated",
+      "mode": "independent_sequential",
+      "median_ms": 1355.097939,
+      "samples": 5
+    },
+    {
+      "case": "generated",
+      "mode": "independent_parallel",
+      "median_ms": 927.535864,
+      "samples": 5
+    },
+    {
+      "case": "generated",
+      "mode": "combined",
+      "median_ms": 1276.886698,
+      "samples": 5
+    }
+  ],
+  "rejected": [
+    {
+      "case": "generated",
+      "mode": "descriptor_first_parallel",
+      "reason": "exact generated-output mismatch; mode excluded rather than normalized"
+    },
+    {
+      "case": "generated",
+      "mode": "descriptor_retained_parallel",
+      "reason": "exact generated-output mismatch; mode excluded rather than normalized"
+    }
+  ],
+  "raw_identity": {
+    "bytes": 14793,
+    "sha256": "f4508da8d2fd9167c9b45473d569d48c488b4c52a8bebee8e45a69473fbe9200"
+  }
+}

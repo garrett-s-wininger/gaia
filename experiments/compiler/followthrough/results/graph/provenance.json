@@ -1,0 +1,14 @@
+{
+  "source_archive_sha256": "974d6b2f4eeefa25625d34da3cb36bdcebe7fbce40f4c16ac0835fd1c0cbae17",
+  "host_sha256": "bda8e0c18364d9c536338f74814fb8f4c2b45c128be183b4f9f2cf72da5bde1a",
+  "implementation_sha256": {
+    "run_graph.py": "9efa2575e8c11b89373689467a6e0983bbbb682c6c99d45992c3431fb103f16c",
+    "run_ir.py": "b3044e4e9af8c0650d6513682f7d176093fa78a80353af6ad8612bb18c2b86f6",
+    "ir_host.cpp": "4423f2d7862f48ccde6b8ea5fb8f1acf8584d0154b5960a68988133bb94c4e97"
+  },
+  "scope": "One compiler worker versus Ninja+ccache -j1; source namespace authoritative in memory, SDK remains physical; explicit generated-header adapter, target list from upstream Ninja graph. In-memory mtimes0; date/time builtins rejected by -Werror=date-time. Baseline positive SDK closure and tool linkage hashed before/after; no hostile/racing writer or arbitrary new SDK lookup claim.",
+  "cache_policy": "baseline-only ccache seed restored outside every operation; no changed-result history hits",
+  "frozen_inputs_verified_after": true,
+  "fixed_sdk_tool_file_count": 24,
+  "fixed_sdk_tool_identity_sha256": "5d205c99566e7a5c370dcbfb606e03b05ccc3b6ce2790e98245edf11867830c6"
+}

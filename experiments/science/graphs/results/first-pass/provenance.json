@@ -1,0 +1,21 @@
+{
+  "schema": "GAIA-SCIENCE-GRAPHS-1",
+  "python": "3.14.8 (main, Oct  2 2026, 10:23:31) [GCC 16.2.1 20260810]",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.44",
+  "source_sha256": {
+    "test_geometry.py": "88e177ce49e7fbfc3b4ce31ad2772e603ce2e15b147d6df50b22771fbf345d0b",
+    "geometry.py": "9e440743345e9ce1ff87b3adce118413132c4b88b3b8037a05c2b51d656aa6eb",
+    "embedding.odin": "173165554950513a8c96484df52a1c4c8b92795eb280862f6c53d91aafc263fb",
+    "run.py": "ae5746caf0da0dd04c6c316cb75ff769a51e9f234357edba5b290a62984e92ca",
+    "test_models.py": "78bcb3ebf7c4e9c109fca3020f721e8e1c32b166b9b0a8f185cd827a09d21e9e",
+    "scheduling.py": "ebd9c3ee374af71aff4290621cb4898d9792707e9a283936127b3736d879caff",
+    "retention.py": "ffdb90506e3c75eac5b091dcbe11531d17be57a4935d16fd00da99ecd37e189b",
+    "frontier.odin": "e5ed3d507107ac850b8cd3b29030dc91833e9ca41809c91527478d86fb23308d",
+    "facts.py": "d7a098077404e5e5556de68f06e6ef765f130a352fc602d0c5143e156a31b1c5",
+    "patches.py": "9410e70db62dc7f7c9e34e117ca660dc7739f0f0b2dc0292c5c488e4283a768a"
+  },
+  "source_pins_verified_after": true,
+  "native_frontier_sha256": "5027dbc188cf4f64b70161ae54001cc90b3e048cb8f5488de372a2c5af13e698",
+  "clang_sha256": "b852cb4597dc56b241bcd328544b5fee60717f35f66808098cc0413946ba42f2",
+  "scope": "Per-case shared advisory timing lock; other preparation/unrelated host load can overlap. Python algorithm timings separate from discrete-event and pebble model units. Captured Ninja relation is not current compiler invalidation proof. Main measured source set frozen; geometry and actual-observation extension are separate studies."
+}

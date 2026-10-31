@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "timed_operations": 40,
+  "source_output_hash_equivalence": true,
+  "python_syntax_checked": true,
+  "cpp_java_compilation": false,
+  "preflight_checks": 10,
+  "rejected_descriptor_modes": 2,
+  "inputs_models_compiler_runner_unchanged": true,
+  "raw_sha256": "f4508da8d2fd9167c9b45473d569d48c488b4c52a8bebee8e45a69473fbe9200"
+}

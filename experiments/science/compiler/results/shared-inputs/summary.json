@@ -1,0 +1,33 @@
+{
+  "cases": 6,
+  "compiled_units_checks": 1440,
+  "source_count": 664,
+  "input_bytes": 11957771,
+  "workers": 4,
+  "requests_per_session": 3,
+  "units_per_request": 20,
+  "producer_preparation_ms": 2020.963275,
+  "memory_scope": "Current worker snapshots, not atomic peaks. Producer/controller and transient allocations excluded.",
+  "rows": [
+    {
+      "mode": "private",
+      "cases": 3,
+      "median_admission_ms": 17.258219,
+      "median_ready_ms": 144.427244,
+      "median_session_ms": 410.724164,
+      "median_worker_pss_bytes": 98734080,
+      "median_worker_rss_bytes": 136826880,
+      "median_compile_wave_ms": 66.349163
+    },
+    {
+      "mode": "shared",
+      "cases": 3,
+      "median_admission_ms": 16.554344,
+      "median_ready_ms": 111.829663,
+      "median_session_ms": 345.417768,
+      "median_worker_pss_bytes": 62802944,
+      "median_worker_rss_bytes": 136503296,
+      "median_compile_wave_ms": 64.412664
+    }
+  ]
+}

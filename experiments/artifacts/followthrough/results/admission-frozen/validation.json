@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "raw_sha256": "ef92972cc086b9c4754ac6ce627f82b07dc7b0085d053991d3113980dda4bf44",
+  "raw_bytes": 2095344,
+  "processes": 36,
+  "same_application_behavior": true,
+  "sha_crc_every_read": true,
+  "verified_producer_chunks": true
+}

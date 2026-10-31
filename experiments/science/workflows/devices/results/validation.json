@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "sessions": 30,
+  "gpu_readbacks": 360,
+  "all_exactly_equal": true,
+  "invalid_shader": {
+    "exit_code": 1,
+    "stderr": "Dropped Escape call with ulEscapeCode : 0x03007703\npipeline HRESULT 0x80004005\npipeline\n",
+    "publishes_result": false
+  },
+  "source_and_input_pins_unchanged": true,
+  "no_fallback": "C++ exceptions exit1 on failed API/fence/oracle; GPU samples only published after readback."
+}

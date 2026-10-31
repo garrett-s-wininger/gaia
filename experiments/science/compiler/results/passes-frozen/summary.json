@@ -1,0 +1,302 @@
+{
+  "observations": 108,
+  "source_count": 2,
+  "trials": 3,
+  "variants": 3,
+  "modes": 6,
+  "cpu_counter_ticks_per_second": 100,
+  "preparation_seconds": {
+    "common/zstd_common.c": 0.557074944,
+    "compress/zstd_lazy.c": 29.334319627
+  },
+  "rows": [
+    {
+      "source": "common/zstd_common.c",
+      "mode": "analyses_and_speculation",
+      "variant": "unchanged",
+      "observations": 3,
+      "median_wall_ms": 42.427927,
+      "median_worker_cpu_estimate_ms": 44.82699999999998
+    },
+    {
+      "source": "common/zstd_common.c",
+      "mode": "analyses_and_speculation",
+      "variant": "unused_type",
+      "observations": 3,
+      "median_wall_ms": 46.663702,
+      "median_worker_cpu_estimate_ms": 52.31099999999982
+    },
+    {
+      "source": "common/zstd_common.c",
+      "mode": "analyses_and_speculation",
+      "variant": "semantic",
+      "observations": 3,
+      "median_wall_ms": 70.33903,
+      "median_worker_cpu_estimate_ms": 68.51000000000005
+    },
+    {
+      "source": "common/zstd_common.c",
+      "mode": "analyses_parallel",
+      "variant": "unchanged",
+      "observations": 3,
+      "median_wall_ms": 41.535402,
+      "median_worker_cpu_estimate_ms": 43.57799999999981
+    },
+    {
+      "source": "common/zstd_common.c",
+      "mode": "analyses_parallel",
+      "variant": "unused_type",
+      "observations": 3,
+      "median_wall_ms": 41.251859,
+      "median_worker_cpu_estimate_ms": 41.48800000000004
+    },
+    {
+      "source": "common/zstd_common.c",
+      "mode": "analyses_parallel",
+      "variant": "semantic",
+      "observations": 3,
+      "median_wall_ms": 54.143424,
+      "median_worker_cpu_estimate_ms": 52.24100000000004
+    },
+    {
+      "source": "common/zstd_common.c",
+      "mode": "analyses_serial",
+      "variant": "unchanged",
+      "observations": 3,
+      "median_wall_ms": 40.323406,
+      "median_worker_cpu_estimate_ms": 40.000000000000036
+    },
+    {
+      "source": "common/zstd_common.c",
+      "mode": "analyses_serial",
+      "variant": "unused_type",
+      "observations": 3,
+      "median_wall_ms": 44.795204,
+      "median_worker_cpu_estimate_ms": 40.000000000000036
+    },
+    {
+      "source": "common/zstd_common.c",
+      "mode": "analyses_serial",
+      "variant": "semantic",
+      "observations": 3,
+      "median_wall_ms": 55.960677,
+      "median_worker_cpu_estimate_ms": 60.00000000000006
+    },
+    {
+      "source": "common/zstd_common.c",
+      "mode": "native_full",
+      "variant": "unchanged",
+      "observations": 3,
+      "median_wall_ms": 48.746108,
+      "median_worker_cpu_estimate_ms": 49.99999999999982
+    },
+    {
+      "source": "common/zstd_common.c",
+      "mode": "native_full",
+      "variant": "unused_type",
+      "observations": 3,
+      "median_wall_ms": 48.202338,
+      "median_worker_cpu_estimate_ms": 50.00000000000004
+    },
+    {
+      "source": "common/zstd_common.c",
+      "mode": "native_full",
+      "variant": "semantic",
+      "observations": 3,
+      "median_wall_ms": 49.136818,
+      "median_worker_cpu_estimate_ms": 50.00000000000004
+    },
+    {
+      "source": "common/zstd_common.c",
+      "mode": "serial_guard",
+      "variant": "unchanged",
+      "observations": 3,
+      "median_wall_ms": 40.835456,
+      "median_worker_cpu_estimate_ms": 40.000000000000036
+    },
+    {
+      "source": "common/zstd_common.c",
+      "mode": "serial_guard",
+      "variant": "unused_type",
+      "observations": 3,
+      "median_wall_ms": 44.487589,
+      "median_worker_cpu_estimate_ms": 39.99999999999992
+    },
+    {
+      "source": "common/zstd_common.c",
+      "mode": "serial_guard",
+      "variant": "semantic",
+      "observations": 3,
+      "median_wall_ms": 46.400523,
+      "median_worker_cpu_estimate_ms": 50.000000000000014
+    },
+    {
+      "source": "common/zstd_common.c",
+      "mode": "speculative_guard",
+      "variant": "unchanged",
+      "observations": 3,
+      "median_wall_ms": 43.518232,
+      "median_worker_cpu_estimate_ms": 41.16100000000004
+    },
+    {
+      "source": "common/zstd_common.c",
+      "mode": "speculative_guard",
+      "variant": "unused_type",
+      "observations": 3,
+      "median_wall_ms": 44.940678,
+      "median_worker_cpu_estimate_ms": 50.17499999999983
+    },
+    {
+      "source": "common/zstd_common.c",
+      "mode": "speculative_guard",
+      "variant": "semantic",
+      "observations": 3,
+      "median_wall_ms": 71.994155,
+      "median_worker_cpu_estimate_ms": 66.01000000000005
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "mode": "analyses_and_speculation",
+      "variant": "unchanged",
+      "observations": 3,
+      "median_wall_ms": 118.029422,
+      "median_worker_cpu_estimate_ms": 131.57999999999942
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "mode": "analyses_and_speculation",
+      "variant": "unused_type",
+      "observations": 3,
+      "median_wall_ms": 107.281739,
+      "median_worker_cpu_estimate_ms": 123.68699999999431
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "mode": "analyses_and_speculation",
+      "variant": "semantic",
+      "observations": 3,
+      "median_wall_ms": 4062.561391,
+      "median_worker_cpu_estimate_ms": 4075.4109999999964
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "mode": "analyses_parallel",
+      "variant": "unchanged",
+      "observations": 3,
+      "median_wall_ms": 93.134484,
+      "median_worker_cpu_estimate_ms": 97.19200000000342
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "mode": "analyses_parallel",
+      "variant": "unused_type",
+      "observations": 3,
+      "median_wall_ms": 98.141858,
+      "median_worker_cpu_estimate_ms": 96.5040000000034
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "mode": "analyses_parallel",
+      "variant": "semantic",
+      "observations": 3,
+      "median_wall_ms": 3994.328883,
+      "median_worker_cpu_estimate_ms": 3996.7189999999982
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "mode": "analyses_serial",
+      "variant": "unchanged",
+      "observations": 3,
+      "median_wall_ms": 84.464838,
+      "median_worker_cpu_estimate_ms": 79.9999999999983
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "mode": "analyses_serial",
+      "variant": "unused_type",
+      "observations": 3,
+      "median_wall_ms": 86.984116,
+      "median_worker_cpu_estimate_ms": 90.00000000000341
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "mode": "analyses_serial",
+      "variant": "semantic",
+      "observations": 3,
+      "median_wall_ms": 4014.979005,
+      "median_worker_cpu_estimate_ms": 4019.9999999999995
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "mode": "native_full",
+      "variant": "unchanged",
+      "observations": 3,
+      "median_wall_ms": 3958.235892,
+      "median_worker_cpu_estimate_ms": 3950.0000000000027
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "mode": "native_full",
+      "variant": "unused_type",
+      "observations": 3,
+      "median_wall_ms": 3866.30651,
+      "median_worker_cpu_estimate_ms": 3869.9999999999973
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "mode": "native_full",
+      "variant": "semantic",
+      "observations": 3,
+      "median_wall_ms": 4104.133336,
+      "median_worker_cpu_estimate_ms": 4090.0000000000036
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "mode": "serial_guard",
+      "variant": "unchanged",
+      "observations": 3,
+      "median_wall_ms": 88.275868,
+      "median_worker_cpu_estimate_ms": 79.9999999999983
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "mode": "serial_guard",
+      "variant": "unused_type",
+      "observations": 3,
+      "median_wall_ms": 93.656114,
+      "median_worker_cpu_estimate_ms": 90.00000000000341
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "mode": "serial_guard",
+      "variant": "semantic",
+      "observations": 3,
+      "median_wall_ms": 4076.699957,
+      "median_worker_cpu_estimate_ms": 4069.999999999993
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "mode": "speculative_guard",
+      "variant": "unchanged",
+      "observations": 3,
+      "median_wall_ms": 113.90005,
+      "median_worker_cpu_estimate_ms": 129.35199999999745
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "mode": "speculative_guard",
+      "variant": "unused_type",
+      "observations": 3,
+      "median_wall_ms": 100.374298,
+      "median_worker_cpu_estimate_ms": 113.39299999999432
+    },
+    {
+      "source": "compress/zstd_lazy.c",
+      "mode": "speculative_guard",
+      "variant": "semantic",
+      "observations": 3,
+      "median_wall_ms": 4057.202059,
+      "median_worker_cpu_estimate_ms": 4051.404999999998
+    }
+  ]
+}

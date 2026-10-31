@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "unit_tests": 7,
+  "blocks": 3,
+  "modes": 2,
+  "targets": 3,
+  "scenarios_per_mode": 11,
+  "successful_objects_and_depfiles_checked": 192,
+  "expected_invalid_compiles": 6,
+  "stale_requests_rejected": 6,
+  "source_tools_verified_after": true,
+  "scope": "Three actual C/C++ TUs, fixed external SDK/environment, regular admitted UTF8 namespace; no whole-platform hermeticity or 33TU compiler integration claim."
+}

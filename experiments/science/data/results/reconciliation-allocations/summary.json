@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "method": "full",
+      "python_traced_peak_bytes": 865181
+    },
+    {
+      "method": "merkle",
+      "python_traced_peak_bytes": 1260061
+    },
+    {
+      "method": "iblt",
+      "python_traced_peak_bytes": 1057857
+    }
+  ]
+}

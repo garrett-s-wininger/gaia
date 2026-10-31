@@ -1,0 +1,11 @@
+{
+  "host_sha256": "bda8e0c18364d9c536338f74814fb8f4c2b45c128be183b4f9f2cf72da5bde1a",
+  "implementation_sha256": {
+    "run_analysis_parallel.py": "f8f57fbb71663895bb4fb089df9e72aeb0a38e8d127a975505a7ecb7631fe3f4",
+    "ir_host.cpp": "4423f2d7862f48ccde6b8ea5fb8f1acf8584d0154b5960a68988133bb94c4e97",
+    "run_ir.py": "b3044e4e9af8c0650d6513682f7d176093fa78a80353af6ad8612bb18c2b86f6"
+  },
+  "scope": "Two initialized isolated Clang workers versus one initialized shared-frontend worker. Analysis is SHA256 over detached declaration names, not a production linter. Separate-worker RSS includes a warm idle second worker in shared modes; samples are not peak memory or PSS.",
+  "frozen_inputs_verified_after": true,
+  "origin_sha256": "24ed2d0023fd91d90c89ffb2d6557c2b7795893b593090c6e89593e49a7b71b2"
+}

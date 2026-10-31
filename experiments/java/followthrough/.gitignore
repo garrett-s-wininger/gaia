@@ -1,0 +1,6 @@
+# Disposable toolchains, generated fixtures and active research caches.
+_work
+
+# Handoff receipts; canonical entries live in research manifests and indexes.
+/evidence-additions.json
+/index-additions.json

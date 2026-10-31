@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "searches": 20,
+  "bounded_evaluations": true,
+  "heldout_not_used_for_selection": true
+}

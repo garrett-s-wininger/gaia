@@ -1,0 +1,23 @@
+{
+  "raw_identity": {
+    "path": "experiments/testing/managed/results/database/results.json",
+    "bytes": 71185,
+    "sha256": "2b6327995fa65dc352f877e7d917ae0856fc7f47ddba6cce4f3843c05cd0fa36"
+  },
+  "base_commit": "5d551748d6ca5cce2019563e90c0fa14f6e7fbe5",
+  "published_implementation_sha256": {
+    "experiments/java/followthrough/ImportProbe.java": "75f1ea7e1be020acd146a11c87b0eb3cc3fa2208cc1ff98995cd6098d68e4f47",
+    "experiments/java/followthrough/RuntimeIndex.java": "ed6f5b44a21da21949af0c34ec366f6a34643ddfc5f1ebf22f16b3866f761fc7",
+    "experiments/java/followthrough/control_o3.py": "646359a74ff8a862efe0c9782364c6e3d75ec4c490e6feab19aa7667da1795fa",
+    "experiments/java/followthrough/groovy_index.py": "7cca545d0e722699c2a9ec7ae177223ecaa293e7e6410197517a3aad7edb8145",
+    "experiments/java/followthrough/pgo.py": "5c22183d93ec1fc2be9e28effd0a7d9cf3a7ca10051fbdd9ad8528f3d85c7ef5",
+    "experiments/java/followthrough/publish.py": "226bd5f5f0a21e09d938c369572692a56f6182c507b181a8d8a7264e819790f4",
+    "experiments/java/followthrough/run_budget.py": "8e92a507f141b629f74b220e69479335582fc708454c74d383398f59bd710cd6",
+    "experiments/testing/managed/DiscoveryHarness.java": "1f45aed08d7f6fb5cee3c0ba5aaa199d795dd5e3a335dfd241934c7553596142",
+    "experiments/testing/managed/database.py": "343b0320c03e21fde6cac8f638434fd8e01498a776b30711a5ec197cb0260c76",
+    "experiments/testing/managed/discovery.py": "3df7a7f2281e0be72bec1ccb7c13c9a8ca6b726e4288ca96e14381bdfb7223f1",
+    "experiments/testing/managed/test_database.py": "93f9dc9120076cdfa2548697a5823e449104fe9b1d0152ee6a51211aaa9366f2",
+    "experiments/testing/managed/test_discovery.py": "a44678e8f41df22323c9db77fa6ce1460cb2f3365e1155125de17cc31365b208"
+  },
+  "note": "Published implementation includes corrected NMT exit-stdout handling and additional admission guards. Initial primary JVM trace preceded that diagnostic fix; its saved timings/outputs remain intact. This inventory is not a frozen per-process source snapshot."
+}

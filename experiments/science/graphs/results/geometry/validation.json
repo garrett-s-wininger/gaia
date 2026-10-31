@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "complete_permutations": true,
+  "finite_coordinates": true,
+  "native_geometry_unit_tests": 2,
+  "model_tests": 2,
+  "training_only_edges": true
+}

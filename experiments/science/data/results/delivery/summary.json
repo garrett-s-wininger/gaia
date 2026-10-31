@@ -1,0 +1,364 @@
+{
+  "cases": [
+    {
+      "profile": "nominal",
+      "protocol": "http",
+      "policy": "single",
+      "median_complete_ms": 55.00381699675927,
+      "median_first_ms": 3.2470369988004677,
+      "requests": 48,
+      "max_inflight_bytes": 80652
+    },
+    {
+      "profile": "nominal",
+      "protocol": "http",
+      "policy": "parallel",
+      "median_complete_ms": 80.2130340016447,
+      "median_first_ms": 8.141947000694927,
+      "requests": 48,
+      "max_inflight_bytes": 142530
+    },
+    {
+      "profile": "nominal",
+      "protocol": "http",
+      "policy": "batch",
+      "median_complete_ms": 29.008637997321784,
+      "median_first_ms": 9.857837998424657,
+      "requests": 12,
+      "max_inflight_bytes": 258921
+    },
+    {
+      "profile": "nominal",
+      "protocol": "http",
+      "policy": "wide",
+      "median_complete_ms": 40.052440999716055,
+      "median_first_ms": 14.52012999652652,
+      "requests": 12,
+      "max_inflight_bytes": 298609
+    },
+    {
+      "profile": "nominal",
+      "protocol": "http",
+      "policy": "feedback",
+      "median_complete_ms": 24.028698993788566,
+      "median_first_ms": 3.3632230042712763,
+      "requests": 12,
+      "max_inflight_bytes": 142530
+    },
+    {
+      "profile": "nominal",
+      "protocol": "binary",
+      "policy": "single",
+      "median_complete_ms": 36.600933999579865,
+      "median_first_ms": 1.9546700059436262,
+      "requests": 48,
+      "max_inflight_bytes": 80652
+    },
+    {
+      "profile": "nominal",
+      "protocol": "binary",
+      "policy": "parallel",
+      "median_complete_ms": 59.88445699767908,
+      "median_first_ms": 7.228014997963328,
+      "requests": 48,
+      "max_inflight_bytes": 142530
+    },
+    {
+      "profile": "nominal",
+      "protocol": "binary",
+      "policy": "batch",
+      "median_complete_ms": 20.375056003103964,
+      "median_first_ms": 8.86163600080181,
+      "requests": 12,
+      "max_inflight_bytes": 258921
+    },
+    {
+      "profile": "nominal",
+      "protocol": "binary",
+      "policy": "wide",
+      "median_complete_ms": 33.97056300309487,
+      "median_first_ms": 16.453162003017496,
+      "requests": 12,
+      "max_inflight_bytes": 298609
+    },
+    {
+      "profile": "nominal",
+      "protocol": "binary",
+      "policy": "feedback",
+      "median_complete_ms": 14.588040998205543,
+      "median_first_ms": 2.473328997439239,
+      "requests": 12,
+      "max_inflight_bytes": 142530
+    },
+    {
+      "profile": "latency",
+      "protocol": "http",
+      "policy": "single",
+      "median_complete_ms": 355.56202400039183,
+      "median_first_ms": 9.933745001035277,
+      "requests": 48,
+      "max_inflight_bytes": 80652
+    },
+    {
+      "profile": "latency",
+      "protocol": "http",
+      "policy": "parallel",
+      "median_complete_ms": 109.17364800116047,
+      "median_first_ms": 11.944701996981166,
+      "requests": 48,
+      "max_inflight_bytes": 142530
+    },
+    {
+      "profile": "latency",
+      "protocol": "http",
+      "policy": "batch",
+      "median_complete_ms": 37.392383004771546,
+      "median_first_ms": 13.53202400059672,
+      "requests": 12,
+      "max_inflight_bytes": 258921
+    },
+    {
+      "profile": "latency",
+      "protocol": "http",
+      "policy": "wide",
+      "median_complete_ms": 40.95414799667196,
+      "median_first_ms": 18.495413998607546,
+      "requests": 12,
+      "max_inflight_bytes": 298609
+    },
+    {
+      "profile": "latency",
+      "protocol": "http",
+      "policy": "feedback",
+      "median_complete_ms": 67.00736600032542,
+      "median_first_ms": 11.355009002727456,
+      "requests": 12,
+      "max_inflight_bytes": 142530
+    },
+    {
+      "profile": "latency",
+      "protocol": "binary",
+      "policy": "single",
+      "median_complete_ms": 305.1255079990369,
+      "median_first_ms": 9.305150000727735,
+      "requests": 48,
+      "max_inflight_bytes": 80652
+    },
+    {
+      "profile": "latency",
+      "protocol": "binary",
+      "policy": "parallel",
+      "median_complete_ms": 86.77856199938105,
+      "median_first_ms": 12.235902999236714,
+      "requests": 48,
+      "max_inflight_bytes": 142530
+    },
+    {
+      "profile": "latency",
+      "protocol": "binary",
+      "policy": "batch",
+      "median_complete_ms": 29.77641000325093,
+      "median_first_ms": 11.52499300224008,
+      "requests": 12,
+      "max_inflight_bytes": 258921
+    },
+    {
+      "profile": "latency",
+      "protocol": "binary",
+      "policy": "wide",
+      "median_complete_ms": 34.36111300106859,
+      "median_first_ms": 16.258702002232894,
+      "requests": 12,
+      "max_inflight_bytes": 298609
+    },
+    {
+      "profile": "latency",
+      "protocol": "binary",
+      "policy": "feedback",
+      "median_complete_ms": 60.377786998287775,
+      "median_first_ms": 10.216410999419168,
+      "requests": 12,
+      "max_inflight_bytes": 142530
+    },
+    {
+      "profile": "bandwidth",
+      "protocol": "http",
+      "policy": "single",
+      "median_complete_ms": 158.1260730017675,
+      "median_first_ms": 14.054109000426251,
+      "requests": 48,
+      "max_inflight_bytes": 80652
+    },
+    {
+      "profile": "bandwidth",
+      "protocol": "http",
+      "policy": "parallel",
+      "median_complete_ms": 90.96412600047188,
+      "median_first_ms": 15.001497005869169,
+      "requests": 48,
+      "max_inflight_bytes": 142530
+    },
+    {
+      "profile": "bandwidth",
+      "protocol": "http",
+      "policy": "batch",
+      "median_complete_ms": 50.87384599755751,
+      "median_first_ms": 25.035317994479556,
+      "requests": 12,
+      "max_inflight_bytes": 258921
+    },
+    {
+      "profile": "bandwidth",
+      "protocol": "http",
+      "policy": "wide",
+      "median_complete_ms": 52.73099800251657,
+      "median_first_ms": 26.93801799614448,
+      "requests": 12,
+      "max_inflight_bytes": 298609
+    },
+    {
+      "profile": "bandwidth",
+      "protocol": "http",
+      "policy": "feedback",
+      "median_complete_ms": 69.37828599620843,
+      "median_first_ms": 21.772924999822862,
+      "requests": 12,
+      "max_inflight_bytes": 142530
+    },
+    {
+      "profile": "bandwidth",
+      "protocol": "binary",
+      "policy": "single",
+      "median_complete_ms": 132.47260999924038,
+      "median_first_ms": 13.207463001890574,
+      "requests": 48,
+      "max_inflight_bytes": 80652
+    },
+    {
+      "profile": "bandwidth",
+      "protocol": "binary",
+      "policy": "parallel",
+      "median_complete_ms": 61.76235400198493,
+      "median_first_ms": 15.522691996011417,
+      "requests": 48,
+      "max_inflight_bytes": 142530
+    },
+    {
+      "profile": "bandwidth",
+      "protocol": "binary",
+      "policy": "batch",
+      "median_complete_ms": 44.706200998916756,
+      "median_first_ms": 20.371063001221046,
+      "requests": 12,
+      "max_inflight_bytes": 258921
+    },
+    {
+      "profile": "bandwidth",
+      "protocol": "binary",
+      "policy": "wide",
+      "median_complete_ms": 48.3936079981504,
+      "median_first_ms": 23.128430999349803,
+      "requests": 12,
+      "max_inflight_bytes": 298609
+    },
+    {
+      "profile": "bandwidth",
+      "protocol": "binary",
+      "policy": "feedback",
+      "median_complete_ms": 56.6306939945207,
+      "median_first_ms": 21.26732299802825,
+      "requests": 12,
+      "max_inflight_bytes": 142530
+    },
+    {
+      "profile": "phase-change",
+      "protocol": "http",
+      "policy": "single",
+      "median_complete_ms": 177.4009240034502,
+      "median_first_ms": 9.471186000155285,
+      "requests": 48,
+      "max_inflight_bytes": 80652
+    },
+    {
+      "profile": "phase-change",
+      "protocol": "http",
+      "policy": "parallel",
+      "median_complete_ms": 95.65612400183454,
+      "median_first_ms": 15.09156000247458,
+      "requests": 48,
+      "max_inflight_bytes": 142530
+    },
+    {
+      "profile": "phase-change",
+      "protocol": "http",
+      "policy": "batch",
+      "median_complete_ms": 35.14541999902576,
+      "median_first_ms": 16.20235099835554,
+      "requests": 12,
+      "max_inflight_bytes": 258921
+    },
+    {
+      "profile": "phase-change",
+      "protocol": "http",
+      "policy": "wide",
+      "median_complete_ms": 42.14843500085408,
+      "median_first_ms": 19.619174003310036,
+      "requests": 12,
+      "max_inflight_bytes": 298609
+    },
+    {
+      "profile": "phase-change",
+      "protocol": "http",
+      "policy": "feedback",
+      "median_complete_ms": 60.143278002215084,
+      "median_first_ms": 11.825146000774112,
+      "requests": 12,
+      "max_inflight_bytes": 142530
+    },
+    {
+      "profile": "phase-change",
+      "protocol": "binary",
+      "policy": "single",
+      "median_complete_ms": 142.9000990028726,
+      "median_first_ms": 9.403356998518575,
+      "requests": 48,
+      "max_inflight_bytes": 80652
+    },
+    {
+      "profile": "phase-change",
+      "protocol": "binary",
+      "policy": "parallel",
+      "median_complete_ms": 58.39965499762911,
+      "median_first_ms": 13.04030799656175,
+      "requests": 48,
+      "max_inflight_bytes": 142530
+    },
+    {
+      "profile": "phase-change",
+      "protocol": "binary",
+      "policy": "batch",
+      "median_complete_ms": 26.091081999766175,
+      "median_first_ms": 11.530306001077406,
+      "requests": 12,
+      "max_inflight_bytes": 258921
+    },
+    {
+      "profile": "phase-change",
+      "protocol": "binary",
+      "policy": "wide",
+      "median_complete_ms": 26.878097996814176,
+      "median_first_ms": 15.03814500028966,
+      "requests": 12,
+      "max_inflight_bytes": 298609
+    },
+    {
+      "profile": "phase-change",
+      "protocol": "binary",
+      "policy": "feedback",
+      "median_complete_ms": 52.39248299767496,
+      "median_first_ms": 9.807614995224867,
+      "requests": 12,
+      "max_inflight_bytes": 142530
+    }
+  ]
+}

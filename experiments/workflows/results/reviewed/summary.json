@@ -1,0 +1,58 @@
+{
+  "schema_generation_median_ms": {
+    "independent_sequential": 23.493668,
+    "independent_threads": 25.56203,
+    "shared_sequential": 8.546002,
+    "shared_threads": 10.684258
+  },
+  "checkpoint": {
+    "rows": [
+      {
+        "operation": "initial",
+        "admission_ns": 20283707,
+        "native_process_ns": 1571079378,
+        "total_ns": 1591385186,
+        "new_stored_bytes": 4832475,
+        "objects": 502,
+        "historical_read_ns": 23935549,
+        "snapshot": "739920e49ddd9992d45cead7a4a8640a9f2559a210392acfc2df66e18f1b5d4e",
+        "input_bytes": 4800338
+      },
+      {
+        "operation": "unchanged",
+        "admission_ns": 15511055,
+        "native_process_ns": 65006303,
+        "total_ns": 80537856,
+        "new_stored_bytes": 0,
+        "objects": 502,
+        "historical_read_ns": 17255427,
+        "snapshot": "739920e49ddd9992d45cead7a4a8640a9f2559a210392acfc2df66e18f1b5d4e",
+        "input_bytes": 4800338
+      },
+      {
+        "operation": "small_edit",
+        "admission_ns": 6207780,
+        "native_process_ns": 54651215,
+        "total_ns": 60871630,
+        "new_stored_bytes": 45115,
+        "objects": 504,
+        "historical_read_ns": 14402898,
+        "snapshot": "2f6aef1ad0b072cda3ce5237e8f13286fbc84d6351159d5c296fef4b482dc353",
+        "input_bytes": 4799346
+      },
+      {
+        "operation": "large_edit",
+        "admission_ns": 11892737,
+        "native_process_ns": 81344033,
+        "total_ns": 93250617,
+        "new_stored_bytes": 4239411,
+        "objects": 506,
+        "historical_read_ns": 17155243,
+        "snapshot": "c1470ba6d1d34ff501cbf4769a389131dc11226d732447b903afe389ab72763f",
+        "input_bytes": 4799346
+      }
+    ],
+    "scope": "single private caller, admitted regular-file bytes/executable flags; source discovery/ignores/symlinks/stacks/restores absent; typed immutable objects and file/directory fsync before HEAD acknowledgement; no Git performance comparison"
+  },
+  "source_pins_verified_after": true
+}

@@ -1,0 +1,51 @@
+{
+  "raw_identity": {
+    "path": "experiments/java/followthrough/results/groovy-index/results.json",
+    "bytes": 12120,
+    "sha256": "f68c7c6f2aef1b9db470bb61c7c3d2b35ca42fce8a9b38e229f6a0563b98e0c8"
+  },
+  "scope": "Successful operations guarded by harness assertions; failed diagnostic exit is separately retained in primary queue summary.",
+  "schema": "GAIA-GROOVY-RUNTIME-INDEX-1",
+  "semantic_controls": [
+    {
+      "variant": "rebuilt",
+      "mode": "records",
+      "passed": true
+    },
+    {
+      "variant": "rebuilt",
+      "mode": "metaclass",
+      "passed": true
+    },
+    {
+      "variant": "rebuilt",
+      "mode": "loader",
+      "passed": true
+    },
+    {
+      "variant": "rebuilt",
+      "mode": "extension",
+      "passed": true
+    },
+    {
+      "variant": "indexed",
+      "mode": "records",
+      "passed": true
+    },
+    {
+      "variant": "indexed",
+      "mode": "metaclass",
+      "passed": true
+    },
+    {
+      "variant": "indexed",
+      "mode": "loader",
+      "passed": true
+    },
+    {
+      "variant": "indexed",
+      "mode": "extension",
+      "passed": true
+    }
+  ]
+}

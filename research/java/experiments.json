@@ -43,6 +43,17 @@
       "provenance": "experiments/java/startup/results/jvmti/provenance.json",
       "reproduction": "experiments/java/startup/jvmti/README.md",
       "findings": "research/java/findings.md"
+    },
+    {
+      "id": "GROOVY-RUNTIME-DISCOVERY-INDEX",
+      "run_id": "bounded-first-pass",
+      "status": "measured-no-complete-startup-win",
+      "report": "research/java/followthrough.md",
+      "raw": "experiments/java/followthrough/results/groovy-index/results.json",
+      "summary": "experiments/java/followthrough/results/groovy-index/summary.json",
+      "validation": "experiments/java/followthrough/results/groovy-index/validation.json",
+      "provenance": "experiments/java/followthrough/results/groovy-index/provenance.json",
+      "implementation": "experiments/java/followthrough/README.md"
     }
   ],
   "raw_evidence": {

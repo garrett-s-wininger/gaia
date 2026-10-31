@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "unit_tests": 9,
+  "coverage": [
+    "privateoverlayisolation",
+    "hardlinkatomiccopyonwrite",
+    "stalegenerationpublication",
+    "currentSyntaxError",
+    "concurrentCASonewinner",
+    "publishedviewinvalidation",
+    "realupstreamdoctestrepetition",
+    "failurethenrecovery",
+    "newsourcepincannotblessoldloadedmodule"
+  ],
+  "all_primary_source_pins_verified_after": true,
+  "note": "Earlier exploratorymatrix retained ignored; finalmatrix follows source-pin and editorcounter corrections."
+}

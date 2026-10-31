@@ -2,7 +2,7 @@
 
 ## Reduce eager admission without weakening verification
 
-The [bandwidth loss](../../experiments/storage/results/service-model/REPORT.md) comes from reading a full 29.3 MB bundle when a process requests about 6.7 MB through storage. Test bounded demand admission or producer-defined chunks/proofs with the same hash and lifetime contract. Do not give the memory provider uncharged inputs or bypass requested-content verification. More than three consumers can change amortization, but should be measured rather than inferred from one-shot timings.
+The [bandwidth loss](../../experiments/storage/results/service-model/REPORT.md) comes from full admission of mostly unused bytes. The [verified chunk follow-up](../artifacts/followthrough.md#demand-admission-trades-bytes-against-requests) now demonstrates the request/byte tradeoff with real consumers: smaller chunks reduce bytes but can increase modeled latency. Next test coalesced demand ranges, longer reuse and actual transport overlap under the same hash/lifetime contract. Do not give memory providers uncharged inputs or bypass requested-content verification.
 
 ## Separate service latency from actual block I/O
 

@@ -1,0 +1,30 @@
+{
+  "cases": [
+    {
+      "mode": "copy",
+      "median_setup_ms": 3349.311264,
+      "median_first_ready_ms": 4141.692189,
+      "median_charged_first_ready_ms": 7988.733762,
+      "median_complete_session_ms": 5775.354519,
+      "median_teardown_ms": 300.908754
+    },
+    {
+      "mode": "symlink",
+      "median_setup_ms": 2.261013,
+      "median_first_ready_ms": 619.227889,
+      "median_charged_first_ready_ms": 4466.269462,
+      "median_complete_session_ms": 1772.252897,
+      "median_teardown_ms": 0.391492
+    },
+    {
+      "mode": "direct",
+      "median_setup_ms": 1.8843,
+      "median_first_ready_ms": 631.615907,
+      "median_charged_first_ready_ms": 4478.65748,
+      "median_complete_session_ms": 1750.374156,
+      "median_teardown_ms": 0.378668
+    }
+  ],
+  "common_admission_ms": 115.239348,
+  "common_materialization_ms": 3731.802225
+}

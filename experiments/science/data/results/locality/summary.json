@@ -1,0 +1,148 @@
+{
+  "cases": [
+    {
+      "policy": "physical",
+      "phase": "heldout",
+      "median_warm_read_verify_ms": 189.797498,
+      "read_bytes": 167280954,
+      "read_calls": 320,
+      "modeled_io_ms": 10290.72184085846,
+      "policy_plus_layout_ms": 23.850198
+    },
+    {
+      "policy": "physical",
+      "phase": "reverse_synthetic",
+      "median_warm_read_verify_ms": 199.979825,
+      "read_bytes": 168329530,
+      "read_calls": 322,
+      "modeled_io_ms": 10355.22184085846,
+      "policy_plus_layout_ms": 23.850198
+    },
+    {
+      "policy": "static-cluster",
+      "phase": "heldout",
+      "median_warm_read_verify_ms": 121.033589,
+      "read_bytes": 92651991,
+      "read_calls": 177,
+      "modeled_io_ms": 5699.489011287689,
+      "policy_plus_layout_ms": 90.46368
+    },
+    {
+      "policy": "static-cluster",
+      "phase": "reverse_synthetic",
+      "median_warm_read_verify_ms": 126.911455,
+      "read_bytes": 88981975,
+      "read_calls": 170,
+      "modeled_io_ms": 5473.739011287689,
+      "policy_plus_layout_ms": 90.46368
+    },
+    {
+      "policy": "reinforce-decay",
+      "phase": "heldout",
+      "median_warm_read_verify_ms": 178.56072,
+      "read_bytes": 135823674,
+      "read_calls": 260,
+      "modeled_io_ms": 8355.72184085846,
+      "policy_plus_layout_ms": 132.982616
+    },
+    {
+      "policy": "reinforce-decay",
+      "phase": "reverse_synthetic",
+      "median_warm_read_verify_ms": 158.484477,
+      "read_bytes": 132153658,
+      "read_calls": 253,
+      "modeled_io_ms": 8129.9718408584595,
+      "policy_plus_layout_ms": 132.982616
+    },
+    {
+      "policy": "cost-size",
+      "phase": "heldout",
+      "median_warm_read_verify_ms": 73.079697,
+      "read_bytes": 27672733,
+      "read_calls": 423,
+      "modeled_io_ms": 2072.4234204292297,
+      "policy_plus_layout_ms": 40.655368
+    },
+    {
+      "policy": "cost-size",
+      "phase": "reverse_synthetic",
+      "median_warm_read_verify_ms": 70.566288,
+      "read_bytes": 27672733,
+      "read_calls": 423,
+      "modeled_io_ms": 2072.4234204292297,
+      "policy_plus_layout_ms": 40.655368
+    },
+    {
+      "policy": "geometry-lexical",
+      "phase": "heldout",
+      "median_warm_read_verify_ms": 190.292273,
+      "read_bytes": 167280954,
+      "read_calls": 320,
+      "modeled_io_ms": 10290.72184085846,
+      "policy_plus_layout_ms": 36.300726
+    },
+    {
+      "policy": "geometry-lexical",
+      "phase": "reverse_synthetic",
+      "median_warm_read_verify_ms": 188.797822,
+      "read_bytes": 168329530,
+      "read_calls": 322,
+      "modeled_io_ms": 10355.22184085846,
+      "policy_plus_layout_ms": 36.300726
+    },
+    {
+      "policy": "geometry-bfs",
+      "phase": "heldout",
+      "median_warm_read_verify_ms": 182.002684,
+      "read_bytes": 132350894,
+      "read_calls": 253,
+      "modeled_io_ms": 8141.728022575378,
+      "policy_plus_layout_ms": 24.525813
+    },
+    {
+      "policy": "geometry-bfs",
+      "phase": "reverse_synthetic",
+      "median_warm_read_verify_ms": 166.957533,
+      "read_bytes": 133399470,
+      "read_calls": 255,
+      "modeled_io_ms": 8206.228022575378,
+      "policy_plus_layout_ms": 24.525813
+    },
+    {
+      "policy": "geometry-force1d",
+      "phase": "heldout",
+      "median_warm_read_verify_ms": 200.001208,
+      "read_bytes": 158090001,
+      "read_calls": 302,
+      "modeled_io_ms": 9724.898352146149,
+      "policy_plus_layout_ms": 62.976658
+    },
+    {
+      "policy": "geometry-force1d",
+      "phase": "reverse_synthetic",
+      "median_warm_read_verify_ms": 193.419351,
+      "read_bytes": 159662865,
+      "read_calls": 305,
+      "modeled_io_ms": 9821.648352146149,
+      "policy_plus_layout_ms": 62.976658
+    },
+    {
+      "policy": "geometry-force3d",
+      "phase": "heldout",
+      "median_warm_read_verify_ms": 178.517915,
+      "read_bytes": 150602984,
+      "read_calls": 288,
+      "modeled_io_ms": 9264.637363433838,
+      "policy_plus_layout_ms": 97.194435
+    },
+    {
+      "policy": "geometry-force3d",
+      "phase": "reverse_synthetic",
+      "median_warm_read_verify_ms": 189.417373,
+      "read_bytes": 150127691,
+      "read_calls": 287,
+      "modeled_io_ms": 9235.307693004608,
+      "policy_plus_layout_ms": 97.194435
+    }
+  ]
+}

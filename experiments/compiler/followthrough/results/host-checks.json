@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "tests": [
+    "test_backend_failure_does_not_report_success_and_worker_recovers",
+    "test_command_and_external_context_separate_cache",
+    "test_editor_generation_and_conflicts",
+    "test_ir_hit_still_emits_current_dependency_file",
+    "test_membership_updates_and_detached_analysis",
+    "test_project_namespace_has_no_physical_fallback",
+    "test_seven_codegen_and_diagnostic_boundaries",
+    "test_timestamp_metadata_is_an_explicit_unsupported_boundary"
+  ],
+  "test_count": 8,
+  "host_sha256": "bda8e0c18364d9c536338f74814fb8f4c2b45c128be183b4f9f2cf72da5bde1a",
+  "test_source_sha256": "d06be07e5a6c612c6bc453a8483eca153b5227fcec0c34398862d7930aeb3c77",
+  "scope": "Linux Clang22 native host regression suite; no performance assertions."
+}

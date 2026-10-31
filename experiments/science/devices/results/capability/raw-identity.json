@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "artifacts": [
+    {
+      "path": "experiments/science/devices/results/capability/results.json",
+      "bytes": 1031,
+      "sha256": "3ef6359ce524d4c40ab8ec53b48f676dcdb009674d2c90f74c89219330b5fef0"
+    },
+    {
+      "path": "experiments/science/devices/results/capability/outside-sandbox.json",
+      "bytes": 1030,
+      "sha256": "3d7c5dee167c12ca8961d927e3e7315ada6dbf25932d70fbe311c5096e3467e7"
+    }
+  ]
+}

@@ -1,0 +1,335 @@
+{
+  "dynamic_facts": {
+    "full": {
+      "median_24_update_ms": 32.758987,
+      "median_construction_ms": 1.237136,
+      "evaluated_nodes_block0": 4800,
+      "python_allocations": {
+        "retained": 410291,
+        "peak": 641499
+      }
+    },
+    "frontier": {
+      "median_24_update_ms": 3.533862,
+      "median_construction_ms": 1.797439,
+      "evaluated_nodes_block0": 155,
+      "python_allocations": {
+        "retained": 389660,
+        "peak": 459112
+      }
+    },
+    "relational": {
+      "median_24_update_ms": 3.588186,
+      "median_construction_ms": 1.969986,
+      "evaluated_nodes_block0": 155,
+      "python_allocations": {
+        "retained": 490396,
+        "peak": 607231
+      }
+    }
+  },
+  "patches": {
+    "law-check": {
+      "median_1000_pair_ms": 0.2585
+    },
+    "snapshot-oracle": {
+      "median_1000_pair_ms": 1559.937565
+    },
+    "exhaustive_counts": {
+      "composition": 625,
+      "inverse": 625,
+      "commutation": 625,
+      "join_triples": 27,
+      "stale_publish_rejected": 1
+    }
+  },
+  "scheduling": [
+    {
+      "policy": "fifo",
+      "cancellation": true,
+      "current_final_latency_max": 111,
+      "executed_work_model_units": 969,
+      "obsolete_work_model_units": 340,
+      "makespan_model_units": 283,
+      "decision_cpu_observation_ns": 1093864
+    },
+    {
+      "policy": "critical",
+      "cancellation": true,
+      "current_final_latency_max": 103,
+      "executed_work_model_units": 979,
+      "obsolete_work_model_units": 394,
+      "makespan_model_units": 274,
+      "decision_cpu_observation_ns": 793107
+    },
+    {
+      "policy": "fair",
+      "cancellation": true,
+      "current_final_latency_max": 109,
+      "executed_work_model_units": 960,
+      "obsolete_work_model_units": 378,
+      "makespan_model_units": 281,
+      "decision_cpu_observation_ns": 1025425
+    },
+    {
+      "policy": "work-stealing",
+      "cancellation": true,
+      "current_final_latency_max": 114,
+      "executed_work_model_units": 964,
+      "obsolete_work_model_units": 317,
+      "makespan_model_units": 279,
+      "decision_cpu_observation_ns": 1013204
+    },
+    {
+      "policy": "foraging",
+      "cancellation": true,
+      "current_final_latency_max": 109,
+      "executed_work_model_units": 958,
+      "obsolete_work_model_units": 298,
+      "makespan_model_units": 281,
+      "decision_cpu_observation_ns": 958144
+    },
+    {
+      "policy": "fifo",
+      "cancellation": false,
+      "current_final_latency_max": 642,
+      "executed_work_model_units": 3157,
+      "obsolete_work_model_units": 2579,
+      "makespan_model_units": 814,
+      "decision_cpu_observation_ns": 2888662
+    }
+  ],
+  "retention": [
+    {
+      "budget": 9,
+      "trace": "alternating",
+      "policy": "retain-all",
+      "result": {
+        "status": "infeasible",
+        "error": "infeasible admitted live set",
+        "cost": 35,
+        "peak_bytes": 8,
+        "evictions": 0,
+        "recomputations": 0
+      },
+      "offline_oracle": {
+        "status": "complete",
+        "cost": 80,
+        "expanded_states": 201
+      },
+      "oracle_harness": {
+        "wall_ns": 837237,
+        "cpu_ns": 837758
+      },
+      "harness": {
+        "wall_ns": 21791,
+        "cpu_ns": 21771
+      }
+    },
+    {
+      "budget": 9,
+      "trace": "alternating",
+      "policy": "lru",
+      "result": {
+        "status": "complete",
+        "cost": 93,
+        "peak_bytes": 9,
+        "evictions": 4,
+        "recomputations": 2,
+        "computations": 8,
+        "retained_bytes": 8
+      },
+      "offline_oracle": {
+        "status": "complete",
+        "cost": 80,
+        "expanded_states": 201
+      },
+      "oracle_harness": {
+        "wall_ns": 837237,
+        "cpu_ns": 837758
+      },
+      "harness": {
+        "wall_ns": 36770,
+        "cpu_ns": 36910
+      }
+    },
+    {
+      "budget": 9,
+      "trace": "alternating",
+      "policy": "cost-size",
+      "result": {
+        "status": "complete",
+        "cost": 164,
+        "peak_bytes": 9,
+        "evictions": 12,
+        "recomputations": 9,
+        "computations": 15,
+        "retained_bytes": 8
+      },
+      "offline_oracle": {
+        "status": "complete",
+        "cost": 80,
+        "expanded_states": 201
+      },
+      "oracle_harness": {
+        "wall_ns": 837237,
+        "cpu_ns": 837758
+      },
+      "harness": {
+        "wall_ns": 45817,
+        "cpu_ns": 45937
+      }
+    }
+  ],
+  "modularity": {
+    "fine_nodes": 160,
+    "roots": 20,
+    "rows": [
+      {
+        "partition": "exact",
+        "selected_roots": 1,
+        "unnecessary_roots": 0
+      },
+      {
+        "partition": "aligned",
+        "selected_roots": 1,
+        "unnecessary_roots": 0
+      },
+      {
+        "partition": "scrambled",
+        "selected_roots": 20,
+        "unnecessary_roots": 19
+      },
+      {
+        "partition": "global",
+        "selected_roots": 20,
+        "unnecessary_roots": 19
+      }
+    ],
+    "scope": "Same fine graph and roots, different conservative coarsening; tests boundary-induced over-invalidation, not changing programarchitecture or biologicalmodularity performance."
+  },
+  "captured_ninja": {
+    "compile_targets": 33,
+    "dependency_edges": 336
+  },
+  "compiler_probe": {
+    "status": "complete",
+    "rows": [
+      {
+        "scenario": "shadow-appearance",
+        "recompiled": 3,
+        "selected": [
+          "test:0",
+          "test:1",
+          "test:2"
+        ],
+        "oracle_objects": 3,
+        "object_sha256": {
+          "0": "c98d1e1804a015d74d753a64c574eae16adfea74e56118f041860b98c1e4dc28",
+          "1": "69e07bdb02ccae616cead97c68ce47e53dab3e125d55950899adbf31faee9a57",
+          "2": "cdc052038e207a65d25b9366be8dc8b9dc15820f27c0af834f31b84611d9f95c"
+        }
+      },
+      {
+        "scenario": "unobserved-later-change",
+        "recompiled": 0,
+        "selected": [],
+        "oracle_objects": 3,
+        "object_sha256": {
+          "0": "c98d1e1804a015d74d753a64c574eae16adfea74e56118f041860b98c1e4dc28",
+          "1": "69e07bdb02ccae616cead97c68ce47e53dab3e125d55950899adbf31faee9a57",
+          "2": "cdc052038e207a65d25b9366be8dc8b9dc15820f27c0af834f31b84611d9f95c"
+        }
+      },
+      {
+        "scenario": "environment",
+        "recompiled": 3,
+        "selected": [
+          "test:0",
+          "test:1",
+          "test:2"
+        ],
+        "oracle_objects": 3,
+        "object_sha256": {
+          "0": "ede7344067c853d067dd4fed9b885b5964f6e72472882e132bb5e8bf29dbdca0",
+          "1": "94e695f56a7d20dcf692dd8968a2353e4eef9ebe77a54053408e338a2033777f",
+          "2": "54e002d858e6e68629172b5628180adb18f653cb8672b2a27d682baf3507d845"
+        }
+      },
+      {
+        "scenario": "shadow-removal",
+        "recompiled": 3,
+        "selected": [
+          "test:0",
+          "test:1",
+          "test:2"
+        ],
+        "oracle_objects": 3,
+        "object_sha256": {
+          "0": "627f5afe6956ef79c53e3676b69d6e0295352c80a944a5e5d6472895de69973f",
+          "1": "98f3faee59e1fdc7499f8d5060a1a345b77b6ad0e1bd0715341acaf4920202ac",
+          "2": "d7218fa9d71f19599e22385158f85311697eefed4dba8f990904578e95b0fb1b"
+        }
+      },
+      {
+        "scenario": "optional-appearance",
+        "recompiled": 3,
+        "selected": [
+          "test:0",
+          "test:1",
+          "test:2"
+        ],
+        "oracle_objects": 3,
+        "object_sha256": {
+          "0": "627ce16898c21790fcfe350361c8356fd154ebb4e684132f37b49ff723a1c08f",
+          "1": "d63cc02a500e0415d26ac038dd438d71639b91c940d7174a634ca5b87b7b1122",
+          "2": "69f2eb66f907dcf5a5732734243ee7231e113b32fa285d6bdfd32f64f7b782ae"
+        }
+      },
+      {
+        "scenario": "one-source",
+        "recompiled": 1,
+        "selected": [
+          "test:2"
+        ],
+        "oracle_objects": 3,
+        "object_sha256": {
+          "0": "627ce16898c21790fcfe350361c8356fd154ebb4e684132f37b49ff723a1c08f",
+          "1": "d63cc02a500e0415d26ac038dd438d71639b91c940d7174a634ca5b87b7b1122",
+          "2": "b8b21ee594d8a641a24bec7e3212df26bcaa67901b12f3dd74e97dea945f2e37"
+        }
+      },
+      {
+        "scenario": "optional-removal",
+        "recompiled": 3,
+        "selected": [
+          "test:0",
+          "test:1",
+          "test:2"
+        ],
+        "oracle_objects": 3,
+        "object_sha256": {
+          "0": "627f5afe6956ef79c53e3676b69d6e0295352c80a944a5e5d6472895de69973f",
+          "1": "98f3faee59e1fdc7499f8d5060a1a345b77b6ad0e1bd0715341acaf4920202ac",
+          "2": "75e7c16ef76a2efca884b3c364607fc2c253aad072aa8c5bceeb20cf0ce1310f"
+        }
+      },
+      {
+        "scenario": "unobserved-membership",
+        "recompiled": 0,
+        "selected": [],
+        "oracle_objects": 3,
+        "object_sha256": {
+          "0": "627f5afe6956ef79c53e3676b69d6e0295352c80a944a5e5d6472895de69973f",
+          "1": "98f3faee59e1fdc7499f8d5060a1a345b77b6ad0e1bd0715341acaf4920202ac",
+          "2": "75e7c16ef76a2efca884b3c364607fc2c253aad072aa8c5bceeb20cf0ce1310f"
+        }
+      }
+    ],
+    "initial_compilations": 3,
+    "oracle_compilations": 24,
+    "selected_recompilations": 16,
+    "clang_sha256": "b852cb4597dc56b241bcd328544b5fee60717f35f66808098cc0413946ba42f2",
+    "scope": "Three declared C include fixtures and explicitFLAG argument; objectbytes matched after each change. Resolver language is explicit, not automatic Clang observation extraction or a sound production scheduler; physical SDK held by environment, not atomically admitted."
+  }
+}

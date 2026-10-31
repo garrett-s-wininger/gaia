@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "unit_tests": 15,
+  "patch_law_counts": {
+    "composition": 625,
+    "inverse": 625,
+    "commutation": 625,
+    "join_triples": 27,
+    "stale_publish_rejected": 1
+  },
+  "dynamic_updates_with_full_oracle": 216,
+  "captured_ninja_targets": 33,
+  "real_C_compile_oracle": {
+    "scenarios": 8,
+    "initial": 3,
+    "selected": 16,
+    "oracle": 24
+  },
+  "native_frontier_random_graph_cases": 40,
+  "scheduler_traces_checked": 33,
+  "retention_policy_cases": 36,
+  "source_pins_verified_after": true,
+  "limitations": [
+    "Explicit observation-language compiler probes; automatic compiler observation integration is separate.",
+    "Scheduler and pebble quantities are model units, not tool latency or RSS.",
+    "Patch classification cost excludes complete snapshot publication.",
+    "Single-threaded authority model is not a concurrent transaction implementation."
+  ]
+}

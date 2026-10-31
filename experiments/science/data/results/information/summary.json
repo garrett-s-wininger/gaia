@@ -1,0 +1,364 @@
+{
+  "cases": [
+    {
+      "dataset": "real-package-ids",
+      "inventory_count": 3931,
+      "difference": 6,
+      "method": "full",
+      "conditional_information_bits": 798.6510156965865,
+      "conditional_information_bytes": 99.8313769620733,
+      "encoded_metadata_bytes": 251632,
+      "ratio_to_conditional_information": 2520.5702621491128
+    },
+    {
+      "dataset": "real-package-ids",
+      "inventory_count": 3931,
+      "difference": 6,
+      "method": "iblt-underestimate",
+      "conditional_information_bits": 798.6510156965865,
+      "conditional_information_bytes": 99.8313769620733,
+      "encoded_metadata_bytes": 251824,
+      "ratio_to_conditional_information": 2522.493505179938
+    },
+    {
+      "dataset": "real-package-ids",
+      "inventory_count": 3931,
+      "difference": 6,
+      "method": "iblt",
+      "conditional_information_bits": 798.6510156965865,
+      "conditional_information_bytes": 99.8313769620733,
+      "encoded_metadata_bytes": 608,
+      "ratio_to_conditional_information": 6.090269597613421
+    },
+    {
+      "dataset": "real-package-ids",
+      "inventory_count": 3931,
+      "difference": 6,
+      "method": "merkle",
+      "conditional_information_bits": 798.6510156965865,
+      "conditional_information_bytes": 99.8313769620733,
+      "encoded_metadata_bytes": 9030,
+      "ratio_to_conditional_information": 90.45252379350197
+    },
+    {
+      "dataset": "real-package-ids",
+      "inventory_count": 3931,
+      "difference": 78,
+      "method": "full",
+      "conditional_information_bits": 10141.739479234131,
+      "conditional_information_bytes": 1267.7174349042664,
+      "encoded_metadata_bytes": 251632,
+      "ratio_to_conditional_information": 198.4921821470432
+    },
+    {
+      "dataset": "real-package-ids",
+      "inventory_count": 3931,
+      "difference": 78,
+      "method": "iblt-underestimate",
+      "conditional_information_bits": 10141.739479234131,
+      "conditional_information_bytes": 1267.7174349042664,
+      "encoded_metadata_bytes": 253360,
+      "ratio_to_conditional_information": 199.8552619252514
+    },
+    {
+      "dataset": "real-package-ids",
+      "inventory_count": 3931,
+      "difference": 78,
+      "method": "iblt",
+      "conditional_information_bits": 10141.739479234131,
+      "conditional_information_bytes": 1267.7174349042664,
+      "encoded_metadata_bytes": 6848,
+      "ratio_to_conditional_information": 5.401834676602943
+    },
+    {
+      "dataset": "real-package-ids",
+      "inventory_count": 3931,
+      "difference": 78,
+      "method": "merkle",
+      "conditional_information_bits": 10141.739479234131,
+      "conditional_information_bytes": 1267.7174349042664,
+      "encoded_metadata_bytes": 54658,
+      "ratio_to_conditional_information": 43.11528617899586
+    },
+    {
+      "dataset": "real-package-ids",
+      "inventory_count": 3931,
+      "difference": 786,
+      "method": "full",
+      "conditional_information_bits": 99620.06379848944,
+      "conditional_information_bytes": 12452.50797481118,
+      "encoded_metadata_bytes": 251632,
+      "ratio_to_conditional_information": 20.20733498095315
+    },
+    {
+      "dataset": "real-package-ids",
+      "inventory_count": 3931,
+      "difference": 786,
+      "method": "iblt-underestimate",
+      "conditional_information_bits": 99620.06379848944,
+      "conditional_information_bytes": 12452.50797481118,
+      "encoded_metadata_bytes": 268624,
+      "ratio_to_conditional_information": 21.57187937910742
+    },
+    {
+      "dataset": "real-package-ids",
+      "inventory_count": 3931,
+      "difference": 786,
+      "method": "iblt",
+      "conditional_information_bits": 99620.06379848944,
+      "conditional_information_bytes": 12452.50797481118,
+      "encoded_metadata_bytes": 68000,
+      "ratio_to_conditional_information": 5.460747356078774
+    },
+    {
+      "dataset": "real-package-ids",
+      "inventory_count": 3931,
+      "difference": 786,
+      "method": "merkle",
+      "conditional_information_bits": 99620.06379848944,
+      "conditional_information_bytes": 12452.50797481118,
+      "encoded_metadata_bytes": 220154,
+      "ratio_to_conditional_information": 17.67949078573774
+    },
+    {
+      "dataset": "generated-1000",
+      "inventory_count": 1000,
+      "difference": 2,
+      "method": "full",
+      "conditional_information_bits": 265.9657842846621,
+      "conditional_information_bytes": 33.24572303558276,
+      "encoded_metadata_bytes": 64048,
+      "ratio_to_conditional_information": 1926.503446216215
+    },
+    {
+      "dataset": "generated-1000",
+      "inventory_count": 1000,
+      "difference": 2,
+      "method": "iblt-underestimate",
+      "conditional_information_bits": 265.9657842846621,
+      "conditional_information_bytes": 33.24572303558276,
+      "encoded_metadata_bytes": 64240,
+      "ratio_to_conditional_information": 1932.278625170648
+    },
+    {
+      "dataset": "generated-1000",
+      "inventory_count": 1000,
+      "difference": 2,
+      "method": "iblt",
+      "conditional_information_bits": 265.9657842846621,
+      "conditional_information_bytes": 33.24572303558276,
+      "encoded_metadata_bytes": 272,
+      "ratio_to_conditional_information": 8.181503518779829
+    },
+    {
+      "dataset": "generated-1000",
+      "inventory_count": 1000,
+      "difference": 2,
+      "method": "merkle",
+      "conditional_information_bits": 265.9657842846621,
+      "conditional_information_bytes": 33.24572303558276,
+      "encoded_metadata_bytes": 3690,
+      "ratio_to_conditional_information": 110.99172053050577
+    },
+    {
+      "dataset": "generated-1000",
+      "inventory_count": 1000,
+      "difference": 20,
+      "method": "full",
+      "conditional_information_bits": 2616.0105927769196,
+      "conditional_information_bytes": 327.00132409711495,
+      "encoded_metadata_bytes": 64048,
+      "ratio_to_conditional_information": 195.86465032471432
+    },
+    {
+      "dataset": "generated-1000",
+      "inventory_count": 1000,
+      "difference": 20,
+      "method": "iblt-underestimate",
+      "conditional_information_bits": 2616.0105927769196,
+      "conditional_information_bytes": 327.00132409711495,
+      "encoded_metadata_bytes": 64528,
+      "ratio_to_conditional_information": 197.33253428917635
+    },
+    {
+      "dataset": "generated-1000",
+      "inventory_count": 1000,
+      "difference": 20,
+      "method": "iblt",
+      "conditional_information_bits": 2616.0105927769196,
+      "conditional_information_bytes": 327.00132409711495,
+      "encoded_metadata_bytes": 1808,
+      "ratio_to_conditional_information": 5.529029599473574
+    },
+    {
+      "dataset": "generated-1000",
+      "inventory_count": 1000,
+      "difference": 20,
+      "method": "merkle",
+      "conditional_information_bits": 2616.0105927769196,
+      "conditional_information_bytes": 327.00132409711495,
+      "encoded_metadata_bytes": 12930,
+      "ratio_to_conditional_information": 39.54112429269542
+    },
+    {
+      "dataset": "generated-1000",
+      "inventory_count": 1000,
+      "difference": 200,
+      "method": "full",
+      "conditional_information_bits": 25539.657710086172,
+      "conditional_information_bytes": 3192.4572137607715,
+      "encoded_metadata_bytes": 64048,
+      "ratio_to_conditional_information": 20.06228923724566
+    },
+    {
+      "dataset": "generated-1000",
+      "inventory_count": 1000,
+      "difference": 200,
+      "method": "iblt-underestimate",
+      "conditional_information_bits": 25539.657710086172,
+      "conditional_information_bytes": 3192.4572137607715,
+      "encoded_metadata_bytes": 68416,
+      "ratio_to_conditional_information": 21.43051430888395
+    },
+    {
+      "dataset": "generated-1000",
+      "inventory_count": 1000,
+      "difference": 200,
+      "method": "iblt",
+      "conditional_information_bits": 25539.657710086172,
+      "conditional_information_bytes": 3192.4572137607715,
+      "encoded_metadata_bytes": 17360,
+      "ratio_to_conditional_information": 5.437817592408579
+    },
+    {
+      "dataset": "generated-1000",
+      "inventory_count": 1000,
+      "difference": 200,
+      "method": "merkle",
+      "conditional_information_bits": 25539.657710086172,
+      "conditional_information_bytes": 3192.4572137607715,
+      "encoded_metadata_bytes": 42650,
+      "ratio_to_conditional_information": 13.35961522558905
+    },
+    {
+      "dataset": "generated-10000",
+      "inventory_count": 10000,
+      "difference": 20,
+      "method": "full",
+      "conditional_information_bits": 2649.288507381562,
+      "conditional_information_bytes": 331.16106342269524,
+      "encoded_metadata_bytes": 640048,
+      "ratio_to_conditional_information": 1932.7392942419692
+    },
+    {
+      "dataset": "generated-10000",
+      "inventory_count": 10000,
+      "difference": 20,
+      "method": "iblt-underestimate",
+      "conditional_information_bits": 2649.288507381562,
+      "conditional_information_bytes": 331.16106342269524,
+      "encoded_metadata_bytes": 640528,
+      "ratio_to_conditional_information": 1934.1887400042185
+    },
+    {
+      "dataset": "generated-10000",
+      "inventory_count": 10000,
+      "difference": 20,
+      "method": "iblt",
+      "conditional_information_bits": 2649.288507381562,
+      "conditional_information_bytes": 331.16106342269524,
+      "encoded_metadata_bytes": 1808,
+      "ratio_to_conditional_information": 5.459579037805728
+    },
+    {
+      "dataset": "generated-10000",
+      "inventory_count": 10000,
+      "difference": 20,
+      "method": "merkle",
+      "conditional_information_bits": 2649.288507381562,
+      "conditional_information_bytes": 331.16106342269524,
+      "encoded_metadata_bytes": 26827,
+      "ratio_to_conditional_information": 81.00891971637957
+    },
+    {
+      "dataset": "generated-10000",
+      "inventory_count": 10000,
+      "difference": 200,
+      "method": "full",
+      "conditional_information_bits": 25878.524736930976,
+      "conditional_information_bytes": 3234.815592116372,
+      "encoded_metadata_bytes": 640048,
+      "ratio_to_conditional_information": 197.8622835749502
+    },
+    {
+      "dataset": "generated-10000",
+      "inventory_count": 10000,
+      "difference": 200,
+      "method": "iblt-underestimate",
+      "conditional_information_bits": 25878.524736930976,
+      "conditional_information_bytes": 3234.815592116372,
+      "encoded_metadata_bytes": 644416,
+      "ratio_to_conditional_information": 199.2125923871883
+    },
+    {
+      "dataset": "generated-10000",
+      "inventory_count": 10000,
+      "difference": 200,
+      "method": "iblt",
+      "conditional_information_bits": 25878.524736930976,
+      "conditional_information_bytes": 3234.815592116372,
+      "encoded_metadata_bytes": 17360,
+      "ratio_to_conditional_information": 5.366611946074568
+    },
+    {
+      "dataset": "generated-10000",
+      "inventory_count": 10000,
+      "difference": 200,
+      "method": "merkle",
+      "conditional_information_bits": 25878.524736930976,
+      "conditional_information_bytes": 3234.815592116372,
+      "encoded_metadata_bytes": 134635,
+      "ratio_to_conditional_information": 41.62061056219755
+    },
+    {
+      "dataset": "generated-10000",
+      "inventory_count": 10000,
+      "difference": 2000,
+      "method": "full",
+      "conditional_information_bits": 252154.3251714673,
+      "conditional_information_bytes": 31519.290646433412,
+      "encoded_metadata_bytes": 640048,
+      "ratio_to_conditional_information": 20.306548366830874
+    },
+    {
+      "dataset": "generated-10000",
+      "inventory_count": 10000,
+      "difference": 2000,
+      "method": "iblt-underestimate",
+      "conditional_information_bits": 252154.3251714673,
+      "conditional_information_bytes": 31519.290646433412,
+      "encoded_metadata_bytes": 683296,
+      "ratio_to_conditional_information": 21.67866046431216
+    },
+    {
+      "dataset": "generated-10000",
+      "inventory_count": 10000,
+      "difference": 2000,
+      "method": "iblt",
+      "conditional_information_bits": 252154.3251714673,
+      "conditional_information_bytes": 31519.290646433412,
+      "encoded_metadata_bytes": 172880,
+      "ratio_to_conditional_information": 5.484895010464404
+    },
+    {
+      "dataset": "generated-10000",
+      "inventory_count": 10000,
+      "difference": 2000,
+      "method": "merkle",
+      "conditional_information_bits": 252154.3251714673,
+      "conditional_information_bytes": 31519.290646433412,
+      "encoded_metadata_bytes": 464934,
+      "ratio_to_conditional_information": 14.75077612676572
+    }
+  ]
+}

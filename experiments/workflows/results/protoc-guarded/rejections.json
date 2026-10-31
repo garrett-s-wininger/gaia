@@ -1,0 +1,97 @@
+{
+  "contract": "exact output bytes; no normalization",
+  "source_inputs": {
+    "fixture.proto": "2a4bd7c10bf8da5594229d8838d666c64ad01b79d43645733665baf4f3c8b7bb",
+    "google/protobuf/descriptor.proto": "c96db5406336ebcc82523c1dfb122721986a1f43c4aaed45a4a4ad6996efacc2"
+  },
+  "prepared_descriptors": {
+    "descriptor": {
+      "producer_ns": 28448133,
+      "bytes": 78782,
+      "sha256": "0b14708e61bc07be90de9aa5b044598dcf2445ef10de53ba918823d1e621e61e"
+    },
+    "generated": {
+      "producer_ns": 53347839,
+      "bytes": 299239,
+      "sha256": "74db7dcf8090ffbc043160bf8359b1b09d340fc754d6b2e48a8e98460f859f7d"
+    }
+  },
+  "rejections": [
+    {
+      "case": "generated",
+      "mode": "descriptor_first_parallel",
+      "passed": false,
+      "wall_ns": 925395589,
+      "output_files": 4,
+      "rejection": {
+        "missing": [],
+        "extra": [],
+        "changed": [
+          "cpp/fixture.pb.cc",
+          "cpp/fixture.pb.h",
+          "java/gaia/schema/Fixture.java",
+          "python/fixture_pb2.py"
+        ],
+        "expected_hashes": {
+          "cpp/fixture.pb.cc": "072ca248be3fe42fb70bdcab99beaad7061f2a80389e1e1b97492ea031b91aed",
+          "cpp/fixture.pb.h": "8fee50efab7c0c07bb9700500b436ea622dd9ffc526d26c09493468de2a01180",
+          "java/gaia/schema/Fixture.java": "80904cb2e69cc9ad1c1c7b722b4e46c600e58f9546b353405dc1468816f608d7",
+          "python/fixture_pb2.py": "81bd04b1e96d6008dd294739eb1f4e48a287d30958b60253ecca38761a7eb7c7"
+        },
+        "actual_hashes": {
+          "cpp/fixture.pb.cc": "64f9302241413d715fa02fa3867454229d3d66d95be35cbc2f1edeae8e74bc99",
+          "cpp/fixture.pb.h": "0e70dcad6949833bf1663ed2fd16827d7bbe6a8f7edf1cb296ff4039c6c7a47e",
+          "java/gaia/schema/Fixture.java": "d66bb17373c0cdf2373e45f656014d0b6056fe92b2bff45584d73d2ce34a4afc",
+          "python/fixture_pb2.py": "1c03e0769d9ba2e9922304ff848ab7e4e9b0e23eeddda5a1aa5f57829da5c056"
+        },
+        "first_difference": {
+          "path": "cpp/fixture.pb.cc",
+          "expected_bytes": 8516937,
+          "actual_bytes": 8988487,
+          "first_byte_offset": 36777,
+          "expected_context_hex": "72696e67206669656c643030203d20313b0a2020202020207b3a3a5f7062693a3a54635061727365723a3a4661737455",
+          "actual_context_hex": "72696e67206669656c643030203d2031205b6a736f6e5f6e616d65203d20226669656c643030225d3b0a202020202020"
+        }
+      },
+      "reason": "exact generated-output mismatch; mode excluded rather than normalized"
+    },
+    {
+      "case": "generated",
+      "mode": "descriptor_retained_parallel",
+      "passed": false,
+      "wall_ns": 969459438,
+      "output_files": 4,
+      "rejection": {
+        "missing": [],
+        "extra": [],
+        "changed": [
+          "cpp/fixture.pb.cc",
+          "cpp/fixture.pb.h",
+          "java/gaia/schema/Fixture.java",
+          "python/fixture_pb2.py"
+        ],
+        "expected_hashes": {
+          "cpp/fixture.pb.cc": "072ca248be3fe42fb70bdcab99beaad7061f2a80389e1e1b97492ea031b91aed",
+          "cpp/fixture.pb.h": "8fee50efab7c0c07bb9700500b436ea622dd9ffc526d26c09493468de2a01180",
+          "java/gaia/schema/Fixture.java": "80904cb2e69cc9ad1c1c7b722b4e46c600e58f9546b353405dc1468816f608d7",
+          "python/fixture_pb2.py": "81bd04b1e96d6008dd294739eb1f4e48a287d30958b60253ecca38761a7eb7c7"
+        },
+        "actual_hashes": {
+          "cpp/fixture.pb.cc": "64f9302241413d715fa02fa3867454229d3d66d95be35cbc2f1edeae8e74bc99",
+          "cpp/fixture.pb.h": "0e70dcad6949833bf1663ed2fd16827d7bbe6a8f7edf1cb296ff4039c6c7a47e",
+          "java/gaia/schema/Fixture.java": "d66bb17373c0cdf2373e45f656014d0b6056fe92b2bff45584d73d2ce34a4afc",
+          "python/fixture_pb2.py": "1c03e0769d9ba2e9922304ff848ab7e4e9b0e23eeddda5a1aa5f57829da5c056"
+        },
+        "first_difference": {
+          "path": "cpp/fixture.pb.cc",
+          "expected_bytes": 8516937,
+          "actual_bytes": 8988487,
+          "first_byte_offset": 36777,
+          "expected_context_hex": "72696e67206669656c643030203d20313b0a2020202020207b3a3a5f7062693a3a54635061727365723a3a4661737455",
+          "actual_context_hex": "72696e67206669656c643030203d2031205b6a736f6e5f6e616d65203d20226669656c643030225d3b0a202020202020"
+        }
+      },
+      "reason": "exact generated-output mismatch; mode excluded rather than normalized"
+    }
+  ]
+}

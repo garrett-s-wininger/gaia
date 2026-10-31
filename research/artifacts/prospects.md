@@ -1,10 +1,10 @@
 # What to test next for artifact access
 
-The existing studies establish batching, verified local views and producer indexes. The next useful work should exercise their lifetime and network behavior in a complete consumer, rather than repeat the completed format comparisons.
+The existing studies establish batching, verified local views and producer indexes. The [shared-data follow-up](followthrough.md) adds synchronous demand consumption, a 3,931-object cache trace and direct metadata queries across three runtimes. The next useful work should extend these bounded results into real transport overlap and longer lifetimes, rather than repeat the completed format comparisons.
 
 ## Use verified data while it arrives
 
-Connect a real consumer to the progressive missing-hash stream. Include ownership, admission, callback work, cache visibility and final receipt publication in the complete clock. Test whether useful work overlaps transfer before adding chunk-interleaved multiplexing. Large-object head-of-line blocking needs its own evidence.
+The Django demand consumer executes before its final fetch, but still uses synchronous socket requests. Connect useful consumer work to the progressive missing-hash stream and measure actual transfer/CPU overlap. Include ownership, admission, callback work, cache visibility and final receipt publication in the complete clock. Large-object head-of-line blocking needs its own evidence.
 
 Keep the established-connection case separate from index discovery, connection setup and name/version lookup. A trusted lock may already name the exact content; an unresolved package request may not.
 
@@ -22,7 +22,7 @@ Include producer cost, malformed/compatibility vectors, stale-index repair and a
 
 ## Test growing caches and recovery
 
-Run longer real-artifact traces across consolidation, eviction and changed live sets. Measure a single selected blob in a large populated cache, not only a full-collection request with one miss. Account for retained readers and leases separately from serialized pack budgets.
+Extend the existing real-artifact trace beyond 3,931 objects and exercise changed live sets over longer consolidation/eviction sessions. The new single-blob probe separates open-store lookup from reopening/index reconstruction; optimize that reconstruction before assuming one lifetime. Account for retained readers and mapped leases separately from serialized pack budgets and the prototype's owned byte views.
 
 Inject cancellation, disk full, interrupted bodies, corrupt locators, restart and mismatched partial representations. Current retries retain complete verified objects; resumable byte staging needs an explicit identity and publication rule. Establish prior-index recovery and fsync ordering before promising authoritative offline durability.
 

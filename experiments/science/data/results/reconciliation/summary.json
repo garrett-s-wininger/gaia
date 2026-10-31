@@ -1,0 +1,328 @@
+{
+  "cases": [
+    {
+      "dataset": "real-package-ids",
+      "rate": 0.001,
+      "method": "full",
+      "median_ms": 3.924215,
+      "wire_bytes": 251632,
+      "round_trips": 1,
+      "fallbacks": 0
+    },
+    {
+      "dataset": "real-package-ids",
+      "rate": 0.001,
+      "method": "merkle",
+      "median_ms": 16.625601,
+      "wire_bytes": 9030,
+      "round_trips": 3,
+      "fallbacks": 0
+    },
+    {
+      "dataset": "real-package-ids",
+      "rate": 0.001,
+      "method": "iblt",
+      "median_ms": 31.82734,
+      "wire_bytes": 608,
+      "round_trips": 1,
+      "fallbacks": 0
+    },
+    {
+      "dataset": "real-package-ids",
+      "rate": 0.001,
+      "method": "iblt-underestimate",
+      "median_ms": 31.790444,
+      "wire_bytes": 251824,
+      "round_trips": 2,
+      "fallbacks": 3
+    },
+    {
+      "dataset": "real-package-ids",
+      "rate": 0.01,
+      "method": "full",
+      "median_ms": 3.529667,
+      "wire_bytes": 251632,
+      "round_trips": 1,
+      "fallbacks": 0
+    },
+    {
+      "dataset": "real-package-ids",
+      "rate": 0.01,
+      "method": "merkle",
+      "median_ms": 15.712159,
+      "wire_bytes": 54658,
+      "round_trips": 3,
+      "fallbacks": 0
+    },
+    {
+      "dataset": "real-package-ids",
+      "rate": 0.01,
+      "method": "iblt",
+      "median_ms": 25.388846,
+      "wire_bytes": 6848,
+      "round_trips": 1,
+      "fallbacks": 0
+    },
+    {
+      "dataset": "real-package-ids",
+      "rate": 0.01,
+      "method": "iblt-underestimate",
+      "median_ms": 25.569026,
+      "wire_bytes": 253360,
+      "round_trips": 2,
+      "fallbacks": 3
+    },
+    {
+      "dataset": "real-package-ids",
+      "rate": 0.1,
+      "method": "full",
+      "median_ms": 3.226874,
+      "wire_bytes": 251632,
+      "round_trips": 1,
+      "fallbacks": 0
+    },
+    {
+      "dataset": "real-package-ids",
+      "rate": 0.1,
+      "method": "merkle",
+      "median_ms": 14.322127,
+      "wire_bytes": 220154,
+      "round_trips": 3,
+      "fallbacks": 0
+    },
+    {
+      "dataset": "real-package-ids",
+      "rate": 0.1,
+      "method": "iblt",
+      "median_ms": 28.525768,
+      "wire_bytes": 68000,
+      "round_trips": 1,
+      "fallbacks": 0
+    },
+    {
+      "dataset": "real-package-ids",
+      "rate": 0.1,
+      "method": "iblt-underestimate",
+      "median_ms": 30.496763,
+      "wire_bytes": 268624,
+      "round_trips": 2,
+      "fallbacks": 3
+    },
+    {
+      "dataset": "generated-1000",
+      "rate": 0.001,
+      "method": "full",
+      "median_ms": 0.662355,
+      "wire_bytes": 64048,
+      "round_trips": 1,
+      "fallbacks": 0
+    },
+    {
+      "dataset": "generated-1000",
+      "rate": 0.001,
+      "method": "merkle",
+      "median_ms": 3.761637,
+      "wire_bytes": 3690,
+      "round_trips": 3,
+      "fallbacks": 0
+    },
+    {
+      "dataset": "generated-1000",
+      "rate": 0.001,
+      "method": "iblt",
+      "median_ms": 5.252191,
+      "wire_bytes": 272,
+      "round_trips": 1,
+      "fallbacks": 0
+    },
+    {
+      "dataset": "generated-1000",
+      "rate": 0.001,
+      "method": "iblt-underestimate",
+      "median_ms": 5.592787,
+      "wire_bytes": 64240,
+      "round_trips": 2,
+      "fallbacks": 3
+    },
+    {
+      "dataset": "generated-1000",
+      "rate": 0.01,
+      "method": "full",
+      "median_ms": 0.628191,
+      "wire_bytes": 64048,
+      "round_trips": 1,
+      "fallbacks": 0
+    },
+    {
+      "dataset": "generated-1000",
+      "rate": 0.01,
+      "method": "merkle",
+      "median_ms": 3.67849,
+      "wire_bytes": 12930,
+      "round_trips": 3,
+      "fallbacks": 0
+    },
+    {
+      "dataset": "generated-1000",
+      "rate": 0.01,
+      "method": "iblt",
+      "median_ms": 5.33633,
+      "wire_bytes": 1808,
+      "round_trips": 1,
+      "fallbacks": 0
+    },
+    {
+      "dataset": "generated-1000",
+      "rate": 0.01,
+      "method": "iblt-underestimate",
+      "median_ms": 5.593699,
+      "wire_bytes": 64528,
+      "round_trips": 2,
+      "fallbacks": 3
+    },
+    {
+      "dataset": "generated-1000",
+      "rate": 0.1,
+      "method": "full",
+      "median_ms": 0.722309,
+      "wire_bytes": 64048,
+      "round_trips": 1,
+      "fallbacks": 0
+    },
+    {
+      "dataset": "generated-1000",
+      "rate": 0.1,
+      "method": "merkle",
+      "median_ms": 3.83192,
+      "wire_bytes": 42650,
+      "round_trips": 3,
+      "fallbacks": 0
+    },
+    {
+      "dataset": "generated-1000",
+      "rate": 0.1,
+      "method": "iblt",
+      "median_ms": 6.88778,
+      "wire_bytes": 17360,
+      "round_trips": 1,
+      "fallbacks": 0
+    },
+    {
+      "dataset": "generated-1000",
+      "rate": 0.1,
+      "method": "iblt-underestimate",
+      "median_ms": 6.924771,
+      "wire_bytes": 68416,
+      "round_trips": 2,
+      "fallbacks": 3
+    },
+    {
+      "dataset": "generated-10000",
+      "rate": 0.001,
+      "method": "full",
+      "median_ms": 11.447981,
+      "wire_bytes": 640048,
+      "round_trips": 1,
+      "fallbacks": 0
+    },
+    {
+      "dataset": "generated-10000",
+      "rate": 0.001,
+      "method": "merkle",
+      "median_ms": 57.719032,
+      "wire_bytes": 26827,
+      "round_trips": 4,
+      "fallbacks": 0
+    },
+    {
+      "dataset": "generated-10000",
+      "rate": 0.001,
+      "method": "iblt",
+      "median_ms": 59.942963,
+      "wire_bytes": 1808,
+      "round_trips": 1,
+      "fallbacks": 0
+    },
+    {
+      "dataset": "generated-10000",
+      "rate": 0.001,
+      "method": "iblt-underestimate",
+      "median_ms": 63.641743,
+      "wire_bytes": 640528,
+      "round_trips": 2,
+      "fallbacks": 3
+    },
+    {
+      "dataset": "generated-10000",
+      "rate": 0.01,
+      "method": "full",
+      "median_ms": 11.436909,
+      "wire_bytes": 640048,
+      "round_trips": 1,
+      "fallbacks": 0
+    },
+    {
+      "dataset": "generated-10000",
+      "rate": 0.01,
+      "method": "merkle",
+      "median_ms": 83.729137,
+      "wire_bytes": 134635,
+      "round_trips": 4,
+      "fallbacks": 0
+    },
+    {
+      "dataset": "generated-10000",
+      "rate": 0.01,
+      "method": "iblt",
+      "median_ms": 70.570131,
+      "wire_bytes": 17360,
+      "round_trips": 1,
+      "fallbacks": 0
+    },
+    {
+      "dataset": "generated-10000",
+      "rate": 0.01,
+      "method": "iblt-underestimate",
+      "median_ms": 81.554843,
+      "wire_bytes": 644416,
+      "round_trips": 2,
+      "fallbacks": 3
+    },
+    {
+      "dataset": "generated-10000",
+      "rate": 0.1,
+      "method": "full",
+      "median_ms": 14.005053,
+      "wire_bytes": 640048,
+      "round_trips": 1,
+      "fallbacks": 0
+    },
+    {
+      "dataset": "generated-10000",
+      "rate": 0.1,
+      "method": "merkle",
+      "median_ms": 97.777558,
+      "wire_bytes": 464934,
+      "round_trips": 4,
+      "fallbacks": 0
+    },
+    {
+      "dataset": "generated-10000",
+      "rate": 0.1,
+      "method": "iblt",
+      "median_ms": 150.309831,
+      "wire_bytes": 172880,
+      "round_trips": 1,
+      "fallbacks": 0
+    },
+    {
+      "dataset": "generated-10000",
+      "rate": 0.1,
+      "method": "iblt-underestimate",
+      "median_ms": 107.409451,
+      "wire_bytes": 683296,
+      "round_trips": 2,
+      "fallbacks": 3
+    }
+  ]
+}

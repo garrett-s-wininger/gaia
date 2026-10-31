@@ -1,0 +1,33 @@
+{
+  "recorded_at_utc": "2026-10-31T16:43:54.401239+00:00",
+  "base_commit": "5d551748d6ca5cce2019563e90c0fa14f6e7fbe5",
+  "odin": "odin version dev-2026-10-nightly:84bc3fc",
+  "cc": "cc (GCC) 16.2.1 20260810",
+  "python": "3.14.8 (main, Oct  2 2026, 10:23:31) [GCC 16.2.1 20260810]",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.44",
+  "tool_binaries": {
+    "repository-scan": {
+      "bytes": 251984,
+      "sha256": "e5f394c0b6227663778d95a6a13734f9e75e63206532e2c03d30ededd708b92b"
+    },
+    "checkpoint": {
+      "bytes": 265232,
+      "sha256": "a1bc6d819e21e3ef0c42e50ddfa7f6e9ed6b0d6bd88a24db2e1f5486fffbaa53"
+    },
+    "rg": {
+      "bytes": 5408904,
+      "sha256": "e62198eb19b136b88c330af83647b5a962cb99b6b1f066758568f12de1974849"
+    }
+  },
+  "sources": {
+    "experiments/workflows/repository_scan.odin": "8b5c7b6c0f2c5110be41268db8eb9a57b6c66a561d07af9abd98d51de588c80e",
+    "experiments/workflows/test_schema_pipeline.py": "fb628dc0213a415efbe0d9d92876fda9f056e8c84875bf7b0a5e8328cde94883",
+    "experiments/workflows/test_repository_scan.py": "8ef56507d90a0a7e6379534c7634a70e17a401cde4e2a6131367898b8d61367f",
+    "experiments/workflows/checkpoint.odin": "fb054f0b08d63c273fcf4f521be2405e93d59d15887c8692c3d320bc0aefa9f9",
+    "experiments/workflows/benchmark.py": "43bc4b9abb50672f25de4bd183310b45fed9a2992c21fb09307a39ceb76b6581",
+    "experiments/workflows/schema_pipeline.py": "8c6160954c1563f8869ab98ffe18299a6779f9efe43c73761f4042896c18b348",
+    "experiments/workflows/test_checkpoint.py": "7e76877182420eda1210b81fe222d8d3f31dcc09c66b3c568a681d815fde5239"
+  },
+  "corpus": "Installed Odin core source; each selected relative path, size and digest in raw evidence. Not a portable fixed SDK path requirement.",
+  "measurement": "11 shuffled paired warm-page blocks; shared advisory timing lock across Gaia lanes. Other preparation and unrelated host activity may overlap. Schema and query clocks include operations documented in README. Checkpoint is a one-shot structural diagnostic, not a repeated speed comparison."
+}

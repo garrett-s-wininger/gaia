@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "unit_tests": 12,
+  "repository": "All native modes and ripgrep controls matched Python exact byte-count oracle on every measured operation; 11 blocks.",
+  "schema": "All independent/shared/thread output hashes identical. Early-cutoff downstream output digests and consumer summaries match full work for all edits.",
+  "checkpoint": "Typed content and snapshot identity, unchanged dedup, executable flags, historical reads, missing/corrupt objects, stale root, busy writer, malformed input and failpoints before/after root publication. Failpoint exits preserve intent for explicit private-fixture recovery. No power-loss or workspace restore guarantee.",
+  "limitations": [
+    "No filesystem snapshot atomicity, ignore semantics or symlinks in checkpoint prototype.",
+    "No public standard schema semantics or existing generator speed comparison.",
+    "Repository queries count fixed strings, not full scanners.",
+    "No isolated-machine statistical guarantee."
+  ]
+}

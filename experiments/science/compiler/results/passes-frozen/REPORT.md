@@ -1,0 +1,24 @@
+# Forked analysis and speculative backend work do not establish a new speedup
+
+This Linux Clang 22.1.8 host parses/lowers the current source once. It can run real dominator/loop and postdominator analyses serially, or fork private copy-on-write snapshots to compute them while the parent checks current pre-optimization IR and runs/awaits code generation. Another option starts a speculative backend child before that IR guard resolves. A hit cancels the child, discards private diagnostics/object staging and publishes the seeded object; a miss waits and publishes the current child's object only on success.
+
+Six modes, three source variants, two actual Zstandard translation units and three shuffled blocks produce 108 measured operations. The variants are unchanged source, an unused typedef, and an appended used data object that changes output. Every measured object matches a fresh stock-CLI reference SHA-256. The 54 analysis-enabled operations also match serial reference hashes over function/block-numbered dominator parents/levels, loop depths/headers and postdominator parents/levels, plus counts. These are actual LLVM facts, unlike the earlier detached-name analysis surrogate. Matching facts need not change when only a data object changes.
+
+| Mode | zstd_common unchanged | zstd_common semantic | zstd_lazy unchanged | zstd_lazy semantic |
+| --- | ---: | ---: | ---: | ---: |
+| Native full backend | 48.75 ms | 49.14 ms | 3,958.24 ms | 4,104.13 ms |
+| Serial IR guard | 40.84 ms | 46.40 ms | 88.28 ms | 4,076.70 ms |
+| Speculative guard | 43.52 ms | 71.99 ms | 113.90 ms | 4,057.20 ms |
+| Serial analyses + guard | 40.32 ms | 55.96 ms | 84.46 ms | 4,014.98 ms |
+| Parallel analyses + guard | 41.54 ms | 54.14 ms | 93.13 ms | 3,994.33 ms |
+| Parallel analyses + speculation | 42.43 ms | 70.34 ms | 118.03 ms | 4,062.56 ms |
+
+Values are per-source medians of three observations. The large hit gain belongs to the existing exact IR reuse mechanism. Speculation increases hit cost and materially hurts the small semantic miss. Parallel analyses are slower on unchanged inputs; the roughly 21 ms difference on the 4-second large semantic miss is not enough evidence for a robust gain from three samples. No arbitrary optimizer-pass dependency DAG, parallel mutation of one LLVM context, or general speculation win is established.
+
+The parent verifies it has exactly one thread immediately before every fork. Each child owns private COW LLVM state; mutable contexts are never concurrently traversed by threads. Supported requests produce one object only; dependency/profile/time/save-temporary outputs and detached-name parallel analysis are rejected. Private staged backend diagnostics are suppressed on cache hits. Focused tests cover real analysis equality, CLI object equality, hit cancellation/staging cleanup, miss publication, backend failure/recovery and rejection of extra output requests. The runtime thread-count guard is implemented, not an exhaustive proof of safety for every linked library or future host configuration.
+
+Request clocks include host exchange, analysis/guard/backend, joins/cancellation and object publication. Input edits, fixed SDK/context validation and fresh CLI oracle generation remain outside those clocks. Preparation costs are 0.56 seconds for the small source and 29.33 seconds for the large one; seeded caches do not acquire changed-source entries. Parent CPU comes from `/proc/PID/stat` at 100 ticks/second on this host; child CPU comes from `wait4` user+system usage. Their sum is a coarse worker estimate, excluding Python/controller CPU. It must not be interpreted as sub-millisecond complete-system CPU accounting.
+
+Review after measurement identified additional side-output rejection, exception-safe staging cleanup and pipe-draining-before-wait requirements. The implementation/tests have now been hardened separately; the table remains evidence for the exact measured source/binary pins, not a performance rerun of the hardened host. Frozen measured sources are retained locally for replay. Eight hardened native tests plus one lifecycle method now pass, alongside four broker tests. The lifecycle subcases exercise 12 KB responses, 100 KB bound rejection, 32 immediate cancellations and 32 cancellations with inherited blocked SIGTERM. Both actual measured source command lines also pass the hardened parallel/speculative host and match CLI objects. Successful primary cases use the fixed object-only flags and small child responses; those results do not cover the newly hardened failure boundaries.
+
+Source/context/host identities are checked before/after the frozen matrix. Warm pages and per-request advisory locking do not exclude unrelated preparation/host activity. [Summary](summary.json), [validation](validation.json), [provenance](provenance.json), [raw identity](raw-identity.json), [reproduce](../../README.md).

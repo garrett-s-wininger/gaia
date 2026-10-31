@@ -4,6 +4,7 @@ We have working prototypes and measurements for programmatic compilation, schedu
 
 - [Findings](findings.md): what helped, what did not, and the practical limits.
 - [Prospects](prospects.md): the next useful experiments and how to judge them.
+- [Shared frontend follow-up](followthrough/README.md): direct IR continuation, parallel-analysis controls, a production graph and invocation-identity probes.
 - [Implementation and reproduction](../../experiments/compiler/README.md): commands and adapter details.
 - [Run index](experiments.json): machine-readable evidence locations.
 - [Lab journal](../../experiments/compiler/FINDINGS.md): detailed measurements and chronological reasoning.

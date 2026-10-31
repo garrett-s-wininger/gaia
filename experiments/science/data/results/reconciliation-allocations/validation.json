@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "same_exact_differences": true,
+  "diagnostic_not_primary_latency": true
+}

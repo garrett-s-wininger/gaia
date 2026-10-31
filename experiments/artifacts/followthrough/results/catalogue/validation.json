@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "raw_sha256": "8caed582d0d576b2ca85ad90c0b8a6b2108794efea512e60363a56b9621b8b23",
+  "raw_bytes": 10583,
+  "operations": 450,
+  "same_aggregates": true,
+  "pinned_input_each_operation": true,
+  "malformed_vectors": "Python/Odin/Node reject truncated, geometry,UTF8 andu64overflow;9unit tests"
+}

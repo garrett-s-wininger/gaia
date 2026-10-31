@@ -1,0 +1,104 @@
+{
+  "construction": {
+    "lexical": {
+      "wall_ns": 17082,
+      "cpu_ns": 14427
+    },
+    "bfs": {
+      "wall_ns": 3566788,
+      "cpu_ns": 3572279
+    },
+    "force1d": {
+      "wall_ns": 38045206,
+      "cpu_ns": 38053641
+    },
+    "force3d": {
+      "wall_ns": 62188009,
+      "cpu_ns": 62194408
+    }
+  },
+  "cache_model": {
+    "lexical": {
+      "training": {
+        "read_bytes": 164659514,
+        "group_reads": 315,
+        "evictions": 299,
+        "retained_bytes": 8388608
+      },
+      "heldout": {
+        "read_bytes": 164659514,
+        "group_reads": 315,
+        "evictions": 299,
+        "retained_bytes": 8388608
+      },
+      "reverse_synthetic": {
+        "read_bytes": 164659514,
+        "group_reads": 315,
+        "evictions": 299,
+        "retained_bytes": 8143005
+      }
+    },
+    "bfs": {
+      "training": {
+        "read_bytes": 126583726,
+        "group_reads": 242,
+        "evictions": 226,
+        "retained_bytes": 8339613
+      },
+      "heldout": {
+        "read_bytes": 126583726,
+        "group_reads": 242,
+        "evictions": 226,
+        "retained_bytes": 8339613
+      },
+      "reverse_synthetic": {
+        "read_bytes": 126583726,
+        "group_reads": 242,
+        "evictions": 226,
+        "retained_bytes": 8339613
+      }
+    },
+    "force1d": {
+      "training": {
+        "read_bytes": 148177524,
+        "group_reads": 283,
+        "evictions": 267,
+        "retained_bytes": 8388608
+      },
+      "heldout": {
+        "read_bytes": 148177524,
+        "group_reads": 283,
+        "evictions": 267,
+        "retained_bytes": 8388608
+      },
+      "reverse_synthetic": {
+        "read_bytes": 148177524,
+        "group_reads": 283,
+        "evictions": 267,
+        "retained_bytes": 8388608
+      }
+    },
+    "force3d": {
+      "training": {
+        "read_bytes": 143836235,
+        "group_reads": 275,
+        "evictions": 259,
+        "retained_bytes": 8388608
+      },
+      "heldout": {
+        "read_bytes": 143836235,
+        "group_reads": 275,
+        "evictions": 259,
+        "retained_bytes": 8388608
+      },
+      "reverse_synthetic": {
+        "read_bytes": 143836235,
+        "group_reads": 275,
+        "evictions": 259,
+        "retained_bytes": 8339613
+      }
+    }
+  },
+  "nodes": 437,
+  "training_edges": 1629
+}

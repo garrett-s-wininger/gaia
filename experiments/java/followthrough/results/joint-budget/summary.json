@@ -1,0 +1,16 @@
+{
+  "raw_sha256": "d14a5e8dedc6a36a92418c427be0ee868a48e46d296eb49b742f41907f635445",
+  "raw_bytes": 95268,
+  "cases": [
+    {
+      "collector": "parallel",
+      "jvms": 1,
+      "diagnostic": false,
+      "admission_stopped_at_batch": 2,
+      "sampled_max_pss_bytes": 1099661312,
+      "whole_seconds": 9.119973804001347,
+      "late_median_batch_ms": 3942.303741499927,
+      "completed_targets": 16
+    }
+  ]
+}

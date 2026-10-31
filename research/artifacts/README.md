@@ -4,6 +4,7 @@ The artifact track examines how tools obtain immutable inputs and outputs withou
 
 - [Findings](findings.md): what the HTTP baseline and matched binary comparison establish.
 - [Prospects](prospects.md): what to measure next.
+- [Shared data and lifetimes](followthrough.md): demand admission, growing caches and direct metadata queries across Python, Odin and Node.
 - [Producer-preindexed bundles](../../components/artifact-host/preindexed-bundle-research.md): portable two-artifact flat/ZIP plans, receiver binding and complete-operation near parity.
 - [Generic resolved locks](../../components/artifact-host/generic-lock-research.md): opaque package identities, content associations and matched JSON/binary acquisition costs.
 - [Retained binary consumer metadata](../../components/artifact-host/compact-python-research.md): matched SHA-256/CRC pack and ZIP readers, setup versus full installation cost.

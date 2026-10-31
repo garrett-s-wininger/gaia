@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "operations": 15,
+  "source_pins_verified_after": true,
+  "scope": "Four scripted actors,16actual CPython source modules,detached AST-name facts plus real Python compile validation. Four declared updates peractor,private views/current generations. Strong materialized shared-content/fact cache control uses immutable hardlinks plus atomic replacement. Logical provider omits full ordinary-file namespaces, a different compatibility contract. Logical cached byte counts are not actual unique heap/RSS; historical changed-result cache entries retained only for bounded trace, not memory guarantee. All modes accept reported edits only, no unreported filesystem-change discovery."
+}

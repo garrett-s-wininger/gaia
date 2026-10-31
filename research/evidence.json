@@ -4,6 +4,31 @@
   "availability": "Local artifacts only; excluded from Git. No download location has been published.",
   "artifacts": [
     {
+      "path": "experiments/artifacts/followthrough/results/admission-frozen/results.json",
+      "bytes": 2095344,
+      "sha256": "ef92972cc086b9c4754ac6ce627f82b07dc7b0085d053991d3113980dda4bf44"
+    },
+    {
+      "path": "experiments/artifacts/followthrough/results/admission/results.json",
+      "bytes": 6248205,
+      "sha256": "7eae9bf9f8c0c5f5933cbb5a608b47cc1d464ffe26a6e64f3ac1195bda6f1f81"
+    },
+    {
+      "path": "experiments/artifacts/followthrough/results/catalogue-fused/results.json",
+      "bytes": 10889,
+      "sha256": "aa70ec8f64ff9685989ead03f7cc6c4cc8dba07adf56cf969fef7c5c1fd546df"
+    },
+    {
+      "path": "experiments/artifacts/followthrough/results/catalogue/results.json",
+      "bytes": 10583,
+      "sha256": "8caed582d0d576b2ca85ad90c0b8a6b2108794efea512e60363a56b9621b8b23"
+    },
+    {
+      "path": "experiments/artifacts/followthrough/results/lifecycle/results.json",
+      "bytes": 8392,
+      "sha256": "625e0fd3ee0f33599a7ec2ea397d36127dc55fb57c23a4089d5c216fb3e8823a"
+    },
+    {
       "path": "experiments/artifacts/results/admission/results.json",
       "bytes": 2487905,
       "sha256": "cec180c539d53117f1b1cd9cac8ec6b07ba96e2a9a8a73c1085cc1d92a688fae"
@@ -67,6 +92,26 @@
       "path": "experiments/compiler/cpp_graph/results/repeated-trace/results.json",
       "bytes": 227739,
       "sha256": "3f3c10dc2d923bf7261f9f0ccfd865f81c7b7169408513ce62e9c200b72f3504"
+    },
+    {
+      "path": "experiments/compiler/followthrough/results/analysis-parallel/results.json",
+      "bytes": 28361,
+      "sha256": "fd34a5bcbc935603a64def9f3b4d2938da9e59ef0b33479438a34271f4ccbf0e"
+    },
+    {
+      "path": "experiments/compiler/followthrough/results/graph/results.json",
+      "bytes": 199663,
+      "sha256": "87f0468fe2dee576e87e19c068061f5f885be5783cd5b1a4dcb2adc11e7d418a"
+    },
+    {
+      "path": "experiments/compiler/followthrough/results/ir/results.json",
+      "bytes": 91721,
+      "sha256": "24ed2d0023fd91d90c89ffb2d6557c2b7795893b593090c6e89593e49a7b71b2"
+    },
+    {
+      "path": "experiments/compiler/followthrough/results/reproducibility/results.json",
+      "bytes": 8057,
+      "sha256": "b2600c65688e29e31cbba4721633f8b8cf3c365014df9ab3f7be64d5ee149779"
     },
     {
       "path": "experiments/compiler/results/build-decisions/boundary-raw/results.json",
@@ -344,6 +389,41 @@
       "sha256": "ecff20b444bbbf2bef6a422f887d1f74797a1fa0b3462d6e8629a32d8dc90c71"
     },
     {
+      "path": "experiments/java/followthrough/results/groovy-index/results.json",
+      "bytes": 12120,
+      "sha256": "f68c7c6f2aef1b9db470bb61c7c3d2b35ca42fce8a9b38e229f6a0563b98e0c8"
+    },
+    {
+      "path": "experiments/java/followthrough/results/joint-budget/results.json",
+      "bytes": 95268,
+      "sha256": "d14a5e8dedc6a36a92418c427be0ee868a48e46d296eb49b742f41907f635445"
+    },
+    {
+      "path": "experiments/java/followthrough/results/low-budget/results.json",
+      "bytes": 66210,
+      "sha256": "f1d5f3b0fd7c137b27a6cfa9333f76788504819c13b279f1fb706cb62d7e5218"
+    },
+    {
+      "path": "experiments/java/followthrough/results/nmt/results.json",
+      "bytes": 69793,
+      "sha256": "9a4b66a1c1fed27b0804cd3e4dee0b4b3bdb60b4a7e5b65c7655358a307733f5"
+    },
+    {
+      "path": "experiments/java/followthrough/results/o3-control/results.json",
+      "bytes": 127292,
+      "sha256": "770e071a280510f20eed12528c54daa0ed19781d7e85af5b493b9be4ee851093"
+    },
+    {
+      "path": "experiments/java/followthrough/results/pgo/results.json",
+      "bytes": 96234,
+      "sha256": "0439ff4ab074cd94d583d598f62ddab653db6c23cfd693570b1994090f726110"
+    },
+    {
+      "path": "experiments/java/followthrough/results/queue/results.json",
+      "bytes": 1090116,
+      "sha256": "898e6833506726fdcf78afa2757fb90e99fc631734279e5bff9b118017d3cea9"
+    },
+    {
       "path": "experiments/java/startup/results/dgm-binding/initial-control/results.json",
       "bytes": 36306,
       "sha256": "53ca787aaa392d1ef2c9444b2b2fb8739d163c2e9a50e9f013467e60f92f89f8"
@@ -614,9 +694,154 @@
       "sha256": "164cd7176e00362f15c5577350f25534306249462c6d32537fd917c1c05ff413"
     },
     {
+      "path": "experiments/science/compiler/results/passes-frozen/results.json",
+      "bytes": 124548,
+      "sha256": "2a2db036b7039b74dae97fda49d1fcc7f3020f6eae2aa45348c1619ef3b429e5"
+    },
+    {
+      "path": "experiments/science/compiler/results/shared-inputs/results.json",
+      "bytes": 90308,
+      "sha256": "9f97efdbc04aba571f554af8cd1a34e96661453bba4fdeacbfffaa7549c426d5"
+    },
+    {
+      "path": "experiments/science/data/results/adapter/results.json",
+      "bytes": 93170,
+      "sha256": "70ed6398885f8f20a39ef20432cacc882feaedd8e6d11459e4d11af99a07f16d"
+    },
+    {
+      "path": "experiments/science/data/results/delivery/results.json",
+      "bytes": 692711,
+      "sha256": "18c77f70c97c82fc0a5ee37352eb3647e3a70b55cbd13b941c2d51d4f1efb445"
+    },
+    {
+      "path": "experiments/science/data/results/environment/results.json",
+      "bytes": 11108,
+      "sha256": "2e77cb0e4962421de08124263329cb06dcb493761eee7cb7c5213c9a33d92a38"
+    },
+    {
+      "path": "experiments/science/data/results/information/results.json",
+      "bytes": 13149,
+      "sha256": "3c807c8b846695dbd7dc80d97ba75e7d1a030572077a9009a8e9b987d4de2a46"
+    },
+    {
+      "path": "experiments/science/data/results/locality/results.json",
+      "bytes": 25090,
+      "sha256": "3c22b3ba721442b6b2e422e58cd3ed29d30436b0583e24869c8fdee3a4eee92d"
+    },
+    {
+      "path": "experiments/science/data/results/oci-readiness/results.json",
+      "bytes": 1432,
+      "sha256": "5267926077bc028e40fb5ff2789d6c8c988151da1ce6865df002ffb7966aa9fe"
+    },
+    {
+      "path": "experiments/science/data/results/reconciliation-allocations/results.json",
+      "bytes": 1382,
+      "sha256": "e495cefdf0f1159f5060531130e4dc0ea18f328c333dc59e6de6b693ec2c3346"
+    },
+    {
+      "path": "experiments/science/data/results/reconciliation/results.json",
+      "bytes": 43362,
+      "sha256": "8ee11f4e4b38a565fbe21bb3bef7b8c5dc0f0e0aafc98704a3d161ff27f15569"
+    },
+    {
+      "path": "experiments/science/data/results/tuning/results.json",
+      "bytes": 38049,
+      "sha256": "bef47800b736b682edbc125b80a2a1831d1e3bfa4fee93d09048c96c7f1b2040"
+    },
+    {
+      "path": "experiments/science/devices/results/capability/outside-sandbox.json",
+      "bytes": 1030,
+      "sha256": "3d7c5dee167c12ca8961d927e3e7315ada6dbf25932d70fbe311c5096e3467e7"
+    },
+    {
+      "path": "experiments/science/devices/results/capability/results.json",
+      "bytes": 1031,
+      "sha256": "3ef6359ce524d4c40ab8ec53b48f676dcdb009674d2c90f74c89219330b5fef0"
+    },
+    {
+      "path": "experiments/science/graphs/results/compiler-observations/results.json",
+      "bytes": 465943,
+      "sha256": "9539db2011f23cd340da800493b9d7cac398b9423cbb99861ab586b775aa5841"
+    },
+    {
+      "path": "experiments/science/graphs/results/first-pass/results.json",
+      "bytes": 1689793,
+      "sha256": "7eb10056df8f28e65a6e4e329b35537f88f40430de6b7a2da2b25103f143b195"
+    },
+    {
+      "path": "experiments/science/graphs/results/geometry/results.json",
+      "bytes": 68187,
+      "sha256": "f8f03c6ee0b04b91b9485a19275fdc693024649071d6c14ec46b41e682e5ad31"
+    },
+    {
+      "path": "experiments/science/graphs/results/scheduler-calibration/results.json",
+      "bytes": 200415,
+      "sha256": "563012f924937e6350e91b8cae740fa0feece07e386b889082e8870debf233b1"
+    },
+    {
+      "bytes": 176651,
+      "sha256": "b99ab87bb91b9d3528c6ebaaec24a628ab7fe788a842fc8ce0daebf059ead55f",
+      "path": "experiments/science/workflows/devices/results/results.json"
+    },
+    {
+      "path": "experiments/science/workflows/results/assets/results.json",
+      "bytes": 37587,
+      "sha256": "c4223c6526d6f3e2f665632a1f8bd0303b1befed54731d1c71a3e8084b2ad2c8"
+    },
+    {
+      "path": "experiments/science/workflows/results/doctests/results.json",
+      "bytes": 4635,
+      "sha256": "0e91e5050bbefdf19893ef64b0c151d03b91c82c52480ccaa4a0e940bba6102e"
+    },
+    {
+      "path": "experiments/science/workflows/results/editor/results.json",
+      "bytes": 7508,
+      "sha256": "2d77d56b89cf9841cd5ebf104daec631829a28dbcf2a1d7baa616a5c02fc295e"
+    },
+    {
+      "path": "experiments/science/workflows/results/native/results.json",
+      "bytes": 4598,
+      "sha256": "97eacd8d7dae01b3c450509fba76eb4af1bf81693c181c3501bbb4b32a514617"
+    },
+    {
+      "path": "experiments/science/workflows/results/workspaces/results.json",
+      "bytes": 115159,
+      "sha256": "fc27417e3faf6ceb2e288fda7389a072ccb1b3a2bfc5f2b7201b424f1a8f4985"
+    },
+    {
       "path": "experiments/storage/results/service-model/results.json",
       "bytes": 2549880,
       "sha256": "3d49830324d7309f363ee70e8dd255b007f5635692c6c7d478008ad6f7772f13"
+    },
+    {
+      "path": "experiments/testing/managed/results/database/results.json",
+      "bytes": 71185,
+      "sha256": "2b6327995fa65dc352f877e7d917ae0856fc7f47ddba6cce4f3843c05cd0fa36"
+    },
+    {
+      "path": "experiments/testing/managed/results/discovery/results.json",
+      "bytes": 13029,
+      "sha256": "2ee8775f98983d368cc7e238c4f3ef8efbbb06e4f8ac9aefb2ed4e0e8f46d8ee"
+    },
+    {
+      "path": "experiments/workflows/results/combined-control/results.json",
+      "bytes": 301544,
+      "sha256": "96dd0e107bdabbf6b1dc644ae864c071c956da787085491ab306f1412eb40cdc"
+    },
+    {
+      "path": "experiments/workflows/results/protoc-guarded/failure/results.json",
+      "bytes": 4198,
+      "sha256": "e273be2f6c452585ea0e185cdb04c97d0cbec6788b3758f3022494226e9fb871"
+    },
+    {
+      "path": "experiments/workflows/results/protoc-guarded/results.json",
+      "bytes": 14793,
+      "sha256": "f4508da8d2fd9167c9b45473d569d48c488b4c52a8bebee8e45a69473fbe9200"
+    },
+    {
+      "path": "experiments/workflows/results/reviewed/results.json",
+      "bytes": 60571,
+      "sha256": "ebaefd66df66ca7fd14185fa731968157d66ce17b53cdffa143353af6bd3fe3d"
     }
   ]
 }

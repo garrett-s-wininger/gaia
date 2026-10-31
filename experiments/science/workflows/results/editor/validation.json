@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "operations": 10,
+  "source_pins_verified_after": true,
+  "scope": "Actual ThreadPoolExecutor parse/compile/query over admitted real-source bytes, controlled12edit queued burst. One worker held at explicit barrier to make queued cancellation deterministic; not a natural typing trace or latency percentile. Byte admission and worker current-overlay analysis/query charged; initial base fact preparation reported separately. Queuedobsolete futures maycancel, running/captured generations require publicationguard. No GUI/LSPimplementation or arbitrary-effect cancellation."
+}

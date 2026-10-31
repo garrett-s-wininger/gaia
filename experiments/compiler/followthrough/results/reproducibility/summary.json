@@ -1,0 +1,33 @@
+{
+  "probes": [
+    {
+      "name": "absolute-path-and-debug",
+      "correct": true,
+      "equal": false
+    },
+    {
+      "name": "declared-path-mapping",
+      "correct": true,
+      "equal": true
+    },
+    {
+      "name": "CPATH-is-an-input",
+      "correct": true,
+      "equal": false
+    },
+    {
+      "name": "SOURCE_DATE_EPOCH-is-an-input",
+      "correct": true,
+      "equal": false
+    },
+    {
+      "name": "locale-C-vs-C.UTF-8",
+      "correct": true,
+      "equal": true
+    },
+    {
+      "name": "archive-input-order",
+      "correct": true
+    }
+  ]
+}

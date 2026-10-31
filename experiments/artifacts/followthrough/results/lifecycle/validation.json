@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "raw_sha256": "625e0fd3ee0f33599a7ec2ea397d36127dc55fb57c23a4089d5c216fb3e8823a",
+  "raw_bytes": 8392,
+  "checks": [
+    "interrupted body preserves prior and verified prefix",
+    "disk full before publication preserves previous head",
+    "head failure recovers previous index and cleans orphan pack",
+    "invalid locator rejected; availability discarded by existing policy"
+  ],
+  "objects": 3931,
+  "retained_owned_views": true,
+  "explicit_eviction_wrapper": true
+}

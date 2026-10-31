@@ -120,6 +120,71 @@
       "provenance": "experiments/artifacts/results/preindexed-bundle/provenance.json",
       "design": "components/artifact-host/preindexed-bundle-research.md",
       "findings": "research/artifacts/findings.md#producer-indexes-matter-more-than-an-intrinsic-zip-advantage"
+    },
+    {
+      "id": "AT-DEMAND-EXPLORATORY",
+      "run_id": "20261031-admission",
+      "status": "exploratory-source-constructor-drift",
+      "report": "experiments/artifacts/followthrough/results/admission/REPORT.md",
+      "raw": "experiments/artifacts/followthrough/results/admission/results.json",
+      "summary": "experiments/artifacts/followthrough/results/admission/summary.json",
+      "validation": "experiments/artifacts/followthrough/results/admission/validation.json",
+      "provenance": "experiments/artifacts/followthrough/results/admission/provenance.json",
+      "correctness": "experiments/artifacts/followthrough/results/admission/correctness-tests.txt",
+      "implementation": "experiments/artifacts/followthrough/README.md",
+      "findings": "research/artifacts/followthrough.md"
+    },
+    {
+      "id": "AT-DEMAND-FROZEN",
+      "run_id": "20261031-admission-frozen",
+      "status": "measured-one-frozen-matched-block-36fresh-consumers",
+      "report": "experiments/artifacts/followthrough/results/admission-frozen/REPORT.md",
+      "raw": "experiments/artifacts/followthrough/results/admission-frozen/results.json",
+      "summary": "experiments/artifacts/followthrough/results/admission-frozen/summary.json",
+      "validation": "experiments/artifacts/followthrough/results/admission-frozen/validation.json",
+      "provenance": "experiments/artifacts/followthrough/results/admission-frozen/provenance.json",
+      "correctness": "experiments/artifacts/followthrough/results/admission-frozen/correctness-tests.txt",
+      "implementation": "experiments/artifacts/followthrough/README.md",
+      "findings": "research/artifacts/followthrough.md"
+    },
+    {
+      "id": "AT-CACHE-LIFECYCLE",
+      "run_id": "20261031-lifecycle",
+      "status": "measured-real-object-growth-and-process-level-faults",
+      "report": "experiments/artifacts/followthrough/results/lifecycle/REPORT.md",
+      "raw": "experiments/artifacts/followthrough/results/lifecycle/results.json",
+      "summary": "experiments/artifacts/followthrough/results/lifecycle/summary.json",
+      "validation": "experiments/artifacts/followthrough/results/lifecycle/validation.json",
+      "provenance": "experiments/artifacts/followthrough/results/lifecycle/provenance.json",
+      "correctness": "experiments/artifacts/followthrough/results/lifecycle/correctness-tests.txt",
+      "implementation": "experiments/artifacts/followthrough/README.md",
+      "findings": "research/artifacts/followthrough.md"
+    },
+    {
+      "id": "AT-CROSS-RUNTIME-CATALOGUE",
+      "run_id": "20261031-catalogue",
+      "status": "measured-read-verify-validate-query-three-runtimes",
+      "report": "experiments/artifacts/followthrough/results/catalogue/REPORT.md",
+      "raw": "experiments/artifacts/followthrough/results/catalogue/results.json",
+      "summary": "experiments/artifacts/followthrough/results/catalogue/summary.json",
+      "validation": "experiments/artifacts/followthrough/results/catalogue/validation.json",
+      "provenance": "experiments/artifacts/followthrough/results/catalogue/provenance.json",
+      "correctness": "experiments/artifacts/followthrough/results/catalogue/correctness-tests.txt",
+      "implementation": "experiments/artifacts/followthrough/README.md",
+      "findings": "research/artifacts/followthrough.md"
+    },
+    {
+      "id": "AT-CATALOGUE-FUSED-PYTHON",
+      "run_id": "20261031-catalogue-fused",
+      "status": "measured-fused-python-control-three-runtimes",
+      "report": "experiments/artifacts/followthrough/results/catalogue-fused/REPORT.md",
+      "raw": "experiments/artifacts/followthrough/results/catalogue-fused/results.json",
+      "summary": "experiments/artifacts/followthrough/results/catalogue-fused/summary.json",
+      "validation": "experiments/artifacts/followthrough/results/catalogue-fused/validation.json",
+      "provenance": "experiments/artifacts/followthrough/results/catalogue-fused/provenance.json",
+      "correctness": "experiments/artifacts/followthrough/results/catalogue-fused/correctness-tests.txt",
+      "implementation": "experiments/artifacts/followthrough/README.md",
+      "findings": "research/artifacts/followthrough.md"
     }
   ],
   "raw_evidence": {

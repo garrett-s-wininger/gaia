@@ -1,0 +1,45 @@
+{
+  "status": "primary_complete_diagnostic_exit_protocol_failed",
+  "raw_sha256": "898e6833506726fdcf78afa2757fb90e99fc631734279e5bff9b118017d3cea9",
+  "raw_bytes": 1090116,
+  "primary_cases": [
+    {
+      "collector": "g1",
+      "jvms": 1,
+      "diagnostic": false,
+      "sampled_max_pss_bytes": 1312431104,
+      "whole_seconds": 34.105143665998185,
+      "late_median_batch_ms": 981.0630200008745,
+      "completed_targets": 192,
+      "post_gc_pss_mib": 866.53125,
+      "pre_gc_pss_mib": 859.517578125,
+      "post_gc_heap_used_mib": 22.94776153564453
+    },
+    {
+      "collector": "parallel",
+      "jvms": 4,
+      "diagnostic": false,
+      "admission_stopped_at_batch": 21,
+      "sampled_max_pss_bytes": 1953274880,
+      "whole_seconds": 40.45836243899976,
+      "late_median_batch_ms": 1289.0508725031395,
+      "completed_targets": 168,
+      "post_gc_pss_mib": 1807.8486328125,
+      "pre_gc_pss_mib": 1813.7822265625,
+      "post_gc_heap_used_mib": 30.37706756591797
+    },
+    {
+      "collector": "parallel",
+      "jvms": 1,
+      "diagnostic": false,
+      "sampled_max_pss_bytes": 1850285056,
+      "whole_seconds": 33.55343778799579,
+      "late_median_batch_ms": 960.4806610004744,
+      "completed_targets": 192,
+      "post_gc_pss_mib": 972.1865234375,
+      "pre_gc_pss_mib": 971.9638671875,
+      "post_gc_heap_used_mib": 20.0579833984375
+    }
+  ],
+  "diagnostic_failure": "PrintNMTStatistics writes stdout; reused G1-only protocol rejected nonempty exit stdout. All three primary cases already saved. Separate diagnostic rerun captures it."
+}

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "operations": 450,
+  "same_aggregates": true,
+  "fused_validation_query": true,
+  "unit_tests": 9,
+  "raw_sha256": "aa70ec8f64ff9685989ead03f7cc6c4cc8dba07adf56cf969fef7c5c1fd546df",
+  "raw_bytes": 10889
+}
