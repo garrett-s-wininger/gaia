@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "tests": 11,
+  "umask": "077",
+  "test_source_sha256": "36ccbaee0e88d7f0679d24c38cabe8d9c38fe4d835dcded65179f8ddcbbdfca3",
+  "scope": "Retest uses actual compiler-output permission bits rather than a fixed umask expectation; benchmark implementation unchanged."
+}

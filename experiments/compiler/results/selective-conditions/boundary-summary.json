@@ -1,0 +1,48 @@
+{
+  "run_id": "20261030T185655.134298Z",
+  "raw_sha256": "46d460105030327ca817ada427520b9ed1fc2314944bc642d79691e4bd4df25a",
+  "cases": [
+    {
+      "scenario": "high-fanout-header",
+      "engine": "gaia-fast",
+      "compilers": 26,
+      "links": 1,
+      "artifacts_match": true
+    },
+    {
+      "scenario": "high-fanout-header",
+      "engine": "gaia-selective",
+      "compilers": 26,
+      "links": 1,
+      "artifacts_match": true
+    },
+    {
+      "scenario": "flags",
+      "engine": "gaia-fast",
+      "compilers": 31,
+      "links": 1,
+      "artifacts_match": true
+    },
+    {
+      "scenario": "flags",
+      "engine": "gaia-selective",
+      "compilers": 31,
+      "links": 1,
+      "artifacts_match": true
+    },
+    {
+      "scenario": "clean",
+      "engine": "gaia-fast",
+      "compilers": 31,
+      "links": 1,
+      "artifacts_match": true
+    },
+    {
+      "scenario": "clean",
+      "engine": "gaia-selective",
+      "compilers": 31,
+      "links": 1,
+      "artifacts_match": true
+    }
+  ]
+}

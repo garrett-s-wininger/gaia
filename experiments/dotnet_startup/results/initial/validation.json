@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "operations": 14,
+  "warmups": 2,
+  "error_checks": 2,
+  "all_assemblies_pdbs_diagnostics_and_execution_match": true,
+  "composite_mapping_proved": true,
+  "raw_sha256": "4c323141808e24babd1fd30350399937b79d7d2b796f1b83da9ce738987bfcee"
+}

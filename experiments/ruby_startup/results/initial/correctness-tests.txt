@@ -1,0 +1,8 @@
+test_sha256_provider_vectors_match (test_loader.PackGuardTests.test_sha256_provider_vectors_match) ... ok
+test_short_header_and_unknown_earlier_load_path_fall_back (test_loader.PackGuardTests.test_short_header_and_unknown_earlier_load_path_fall_back) ... ok
+test_wrong_checksum_and_runtime_options_rejected (test_loader.PackGuardTests.test_wrong_checksum_and_runtime_options_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.451s
+
+OK

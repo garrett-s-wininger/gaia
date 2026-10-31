@@ -1,0 +1,854 @@
+{
+  "status": "complete",
+  "diagnostic": true,
+  "run_sha256": "943c859ac538484eee74b3884551894a801e57fd0d7da4e819fe368fac9a8990",
+  "files": 263,
+  "bytes": 3319849,
+  "jobs": 31,
+  "edit_bytes": 1685,
+  "initial_admission": {
+    "admission_ns": 2511789,
+    "hashed_bytes": 3319849,
+    "changed": true
+  },
+  "limitations": [
+    "Warm page cache; known namespace only; no directory discovery.",
+    "Strict import is a correctness adapter, not an optimized filesystem watcher.",
+    "Explicit packet body already exists; admission hashing/copying is charged."
+  ],
+  "summary": {
+    "explicit-changed-body": {
+      "median_ms": 0.050055,
+      "samples": 21
+    },
+    "strict-known-namespace-import": {
+      "median_ms": 4.875919000000001,
+      "samples": 21
+    },
+    "explicit-no-op": {
+      "median_ms": 0.038321999999999995,
+      "samples": 21
+    }
+  },
+  "observations": [
+    {
+      "block": 0,
+      "kind": "explicit-no-op",
+      "seconds": 5.6367e-05,
+      "admission": {
+        "admission_ns": 56367,
+        "hashed_bytes": 0,
+        "changed": false
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 0,
+      "kind": "strict-known-namespace-import",
+      "seconds": 0.006199396,
+      "stat_calls": 526,
+      "physical_reads": 263,
+      "physical_bytes": 3319849,
+      "admission": {
+        "admission_ns": 315177,
+        "hashed_bytes": 0,
+        "changed": false
+      }
+    },
+    {
+      "block": 0,
+      "kind": "explicit-changed-body",
+      "seconds": 5.271e-05,
+      "admission": {
+        "admission_ns": 52710,
+        "hashed_bytes": 1685,
+        "changed": true
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 1,
+      "kind": "explicit-no-op",
+      "seconds": 3.7471e-05,
+      "admission": {
+        "admission_ns": 37471,
+        "hashed_bytes": 0,
+        "changed": false
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 1,
+      "kind": "explicit-changed-body",
+      "seconds": 6.2979e-05,
+      "admission": {
+        "admission_ns": 62979,
+        "hashed_bytes": 1685,
+        "changed": true
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 1,
+      "kind": "strict-known-namespace-import",
+      "seconds": 0.004923108,
+      "stat_calls": 526,
+      "physical_reads": 263,
+      "physical_bytes": 3319849,
+      "admission": {
+        "admission_ns": 364891,
+        "hashed_bytes": 0,
+        "changed": false
+      }
+    },
+    {
+      "block": 2,
+      "kind": "explicit-changed-body",
+      "seconds": 5.3602e-05,
+      "admission": {
+        "admission_ns": 53602,
+        "hashed_bytes": 1685,
+        "changed": true
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 2,
+      "kind": "strict-known-namespace-import",
+      "seconds": 0.004909261,
+      "stat_calls": 526,
+      "physical_reads": 263,
+      "physical_bytes": 3319849,
+      "admission": {
+        "admission_ns": 308083,
+        "hashed_bytes": 0,
+        "changed": false
+      }
+    },
+    {
+      "block": 2,
+      "kind": "explicit-no-op",
+      "seconds": 4.0016e-05,
+      "admission": {
+        "admission_ns": 40016,
+        "hashed_bytes": 0,
+        "changed": false
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 3,
+      "kind": "explicit-no-op",
+      "seconds": 3.6569e-05,
+      "admission": {
+        "admission_ns": 36569,
+        "hashed_bytes": 0,
+        "changed": false
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 3,
+      "kind": "explicit-changed-body",
+      "seconds": 4.5186e-05,
+      "admission": {
+        "admission_ns": 45186,
+        "hashed_bytes": 1685,
+        "changed": true
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 3,
+      "kind": "strict-known-namespace-import",
+      "seconds": 0.004806367,
+      "stat_calls": 526,
+      "physical_reads": 263,
+      "physical_bytes": 3319849,
+      "admission": {
+        "admission_ns": 297033,
+        "hashed_bytes": 0,
+        "changed": false
+      }
+    },
+    {
+      "block": 4,
+      "kind": "explicit-no-op",
+      "seconds": 4.5055e-05,
+      "admission": {
+        "admission_ns": 45055,
+        "hashed_bytes": 0,
+        "changed": false
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 4,
+      "kind": "explicit-changed-body",
+      "seconds": 4.5887e-05,
+      "admission": {
+        "admission_ns": 45887,
+        "hashed_bytes": 1685,
+        "changed": true
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 4,
+      "kind": "strict-known-namespace-import",
+      "seconds": 0.004950059,
+      "stat_calls": 526,
+      "physical_reads": 263,
+      "physical_bytes": 3319849,
+      "admission": {
+        "admission_ns": 332209,
+        "hashed_bytes": 0,
+        "changed": false
+      }
+    },
+    {
+      "block": 5,
+      "kind": "strict-known-namespace-import",
+      "seconds": 0.004875919,
+      "stat_calls": 526,
+      "physical_reads": 263,
+      "physical_bytes": 3319849,
+      "admission": {
+        "admission_ns": 336207,
+        "hashed_bytes": 0,
+        "changed": false
+      }
+    },
+    {
+      "block": 5,
+      "kind": "explicit-changed-body",
+      "seconds": 5.9353e-05,
+      "admission": {
+        "admission_ns": 59353,
+        "hashed_bytes": 1685,
+        "changed": true
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 5,
+      "kind": "explicit-no-op",
+      "seconds": 3.7572e-05,
+      "admission": {
+        "admission_ns": 37572,
+        "hashed_bytes": 0,
+        "changed": false
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 6,
+      "kind": "strict-known-namespace-import",
+      "seconds": 0.004865669,
+      "stat_calls": 526,
+      "physical_reads": 263,
+      "physical_bytes": 3319849,
+      "admission": {
+        "admission_ns": 310379,
+        "hashed_bytes": 0,
+        "changed": false
+      }
+    },
+    {
+      "block": 6,
+      "kind": "explicit-changed-body",
+      "seconds": 6.0114e-05,
+      "admission": {
+        "admission_ns": 60114,
+        "hashed_bytes": 1685,
+        "changed": true
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 6,
+      "kind": "explicit-no-op",
+      "seconds": 3.7441e-05,
+      "admission": {
+        "admission_ns": 37441,
+        "hashed_bytes": 0,
+        "changed": false
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 7,
+      "kind": "explicit-changed-body",
+      "seconds": 3.7622e-05,
+      "admission": {
+        "admission_ns": 37622,
+        "hashed_bytes": 1685,
+        "changed": true
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 7,
+      "kind": "strict-known-namespace-import",
+      "seconds": 0.004775929,
+      "stat_calls": 526,
+      "physical_reads": 263,
+      "physical_bytes": 3319849,
+      "admission": {
+        "admission_ns": 303825,
+        "hashed_bytes": 0,
+        "changed": false
+      }
+    },
+    {
+      "block": 7,
+      "kind": "explicit-no-op",
+      "seconds": 4.4224e-05,
+      "admission": {
+        "admission_ns": 44224,
+        "hashed_bytes": 0,
+        "changed": false
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 8,
+      "kind": "explicit-changed-body",
+      "seconds": 4.766e-05,
+      "admission": {
+        "admission_ns": 47660,
+        "hashed_bytes": 1685,
+        "changed": true
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 8,
+      "kind": "explicit-no-op",
+      "seconds": 4.8351e-05,
+      "admission": {
+        "admission_ns": 48351,
+        "hashed_bytes": 0,
+        "changed": false
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 8,
+      "kind": "strict-known-namespace-import",
+      "seconds": 0.004820744,
+      "stat_calls": 526,
+      "physical_reads": 263,
+      "physical_bytes": 3319849,
+      "admission": {
+        "admission_ns": 281744,
+        "hashed_bytes": 0,
+        "changed": false
+      }
+    },
+    {
+      "block": 9,
+      "kind": "explicit-no-op",
+      "seconds": 4.0076e-05,
+      "admission": {
+        "admission_ns": 40076,
+        "hashed_bytes": 0,
+        "changed": false
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 9,
+      "kind": "strict-known-namespace-import",
+      "seconds": 0.004801668,
+      "stat_calls": 526,
+      "physical_reads": 263,
+      "physical_bytes": 3319849,
+      "admission": {
+        "admission_ns": 316991,
+        "hashed_bytes": 0,
+        "changed": false
+      }
+    },
+    {
+      "block": 9,
+      "kind": "explicit-changed-body",
+      "seconds": 5.7188e-05,
+      "admission": {
+        "admission_ns": 57188,
+        "hashed_bytes": 1685,
+        "changed": true
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 10,
+      "kind": "explicit-no-op",
+      "seconds": 3.7722e-05,
+      "admission": {
+        "admission_ns": 37722,
+        "hashed_bytes": 0,
+        "changed": false
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 10,
+      "kind": "explicit-changed-body",
+      "seconds": 3.681e-05,
+      "admission": {
+        "admission_ns": 36810,
+        "hashed_bytes": 1685,
+        "changed": true
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 10,
+      "kind": "strict-known-namespace-import",
+      "seconds": 0.004714783,
+      "stat_calls": 526,
+      "physical_reads": 263,
+      "physical_bytes": 3319849,
+      "admission": {
+        "admission_ns": 284158,
+        "hashed_bytes": 0,
+        "changed": false
+      }
+    },
+    {
+      "block": 11,
+      "kind": "explicit-no-op",
+      "seconds": 3.9445e-05,
+      "admission": {
+        "admission_ns": 39445,
+        "hashed_bytes": 0,
+        "changed": false
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 11,
+      "kind": "explicit-changed-body",
+      "seconds": 4.6738e-05,
+      "admission": {
+        "admission_ns": 46738,
+        "hashed_bytes": 1685,
+        "changed": true
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 11,
+      "kind": "strict-known-namespace-import",
+      "seconds": 0.005036854,
+      "stat_calls": 526,
+      "physical_reads": 263,
+      "physical_bytes": 3319849,
+      "admission": {
+        "admission_ns": 400178,
+        "hashed_bytes": 0,
+        "changed": false
+      }
+    },
+    {
+      "block": 12,
+      "kind": "strict-known-namespace-import",
+      "seconds": 0.004858595,
+      "stat_calls": 526,
+      "physical_reads": 263,
+      "physical_bytes": 3319849,
+      "admission": {
+        "admission_ns": 308134,
+        "hashed_bytes": 0,
+        "changed": false
+      }
+    },
+    {
+      "block": 12,
+      "kind": "explicit-no-op",
+      "seconds": 3.9635e-05,
+      "admission": {
+        "admission_ns": 39635,
+        "hashed_bytes": 0,
+        "changed": false
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 12,
+      "kind": "explicit-changed-body",
+      "seconds": 5.0055e-05,
+      "admission": {
+        "admission_ns": 50055,
+        "hashed_bytes": 1685,
+        "changed": true
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 13,
+      "kind": "explicit-no-op",
+      "seconds": 3.69e-05,
+      "admission": {
+        "admission_ns": 36900,
+        "hashed_bytes": 0,
+        "changed": false
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 13,
+      "kind": "strict-known-namespace-import",
+      "seconds": 0.005680693,
+      "stat_calls": 526,
+      "physical_reads": 263,
+      "physical_bytes": 3319849,
+      "admission": {
+        "admission_ns": 336007,
+        "hashed_bytes": 0,
+        "changed": false
+      }
+    },
+    {
+      "block": 13,
+      "kind": "explicit-changed-body",
+      "seconds": 7.3449e-05,
+      "admission": {
+        "admission_ns": 73449,
+        "hashed_bytes": 1685,
+        "changed": true
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 14,
+      "kind": "strict-known-namespace-import",
+      "seconds": 0.004684446,
+      "stat_calls": 526,
+      "physical_reads": 263,
+      "physical_bytes": 3319849,
+      "admission": {
+        "admission_ns": 279329,
+        "hashed_bytes": 0,
+        "changed": false
+      }
+    },
+    {
+      "block": 14,
+      "kind": "explicit-no-op",
+      "seconds": 3.9114e-05,
+      "admission": {
+        "admission_ns": 39114,
+        "hashed_bytes": 0,
+        "changed": false
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 14,
+      "kind": "explicit-changed-body",
+      "seconds": 4.5987e-05,
+      "admission": {
+        "admission_ns": 45987,
+        "hashed_bytes": 1685,
+        "changed": true
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 15,
+      "kind": "strict-known-namespace-import",
+      "seconds": 0.004779185,
+      "stat_calls": 526,
+      "physical_reads": 263,
+      "physical_bytes": 3319849,
+      "admission": {
+        "admission_ns": 306902,
+        "hashed_bytes": 0,
+        "changed": false
+      }
+    },
+    {
+      "block": 15,
+      "kind": "explicit-changed-body",
+      "seconds": 4.9604e-05,
+      "admission": {
+        "admission_ns": 49604,
+        "hashed_bytes": 1685,
+        "changed": true
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 15,
+      "kind": "explicit-no-op",
+      "seconds": 3.7111e-05,
+      "admission": {
+        "admission_ns": 37111,
+        "hashed_bytes": 0,
+        "changed": false
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 16,
+      "kind": "explicit-no-op",
+      "seconds": 3.5818e-05,
+      "admission": {
+        "admission_ns": 35818,
+        "hashed_bytes": 0,
+        "changed": false
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 16,
+      "kind": "explicit-changed-body",
+      "seconds": 3.5888e-05,
+      "admission": {
+        "admission_ns": 35888,
+        "hashed_bytes": 1685,
+        "changed": true
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 16,
+      "kind": "strict-known-namespace-import",
+      "seconds": 0.004888301,
+      "stat_calls": 526,
+      "physical_reads": 263,
+      "physical_bytes": 3319849,
+      "admission": {
+        "admission_ns": 316390,
+        "hashed_bytes": 0,
+        "changed": false
+      }
+    },
+    {
+      "block": 17,
+      "kind": "strict-known-namespace-import",
+      "seconds": 0.005016465,
+      "stat_calls": 526,
+      "physical_reads": 263,
+      "physical_bytes": 3319849,
+      "admission": {
+        "admission_ns": 497813,
+        "hashed_bytes": 0,
+        "changed": false
+      }
+    },
+    {
+      "block": 17,
+      "kind": "explicit-changed-body",
+      "seconds": 7.2688e-05,
+      "admission": {
+        "admission_ns": 72688,
+        "hashed_bytes": 1685,
+        "changed": true
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 17,
+      "kind": "explicit-no-op",
+      "seconds": 3.7692e-05,
+      "admission": {
+        "admission_ns": 37692,
+        "hashed_bytes": 0,
+        "changed": false
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 18,
+      "kind": "explicit-no-op",
+      "seconds": 3.665e-05,
+      "admission": {
+        "admission_ns": 36650,
+        "hashed_bytes": 0,
+        "changed": false
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 18,
+      "kind": "strict-known-namespace-import",
+      "seconds": 0.005122337,
+      "stat_calls": 526,
+      "physical_reads": 263,
+      "physical_bytes": 3319849,
+      "admission": {
+        "admission_ns": 378147,
+        "hashed_bytes": 0,
+        "changed": false
+      }
+    },
+    {
+      "block": 18,
+      "kind": "explicit-changed-body",
+      "seconds": 6.9873e-05,
+      "admission": {
+        "admission_ns": 69873,
+        "hashed_bytes": 1685,
+        "changed": true
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 19,
+      "kind": "strict-known-namespace-import",
+      "seconds": 0.004908721,
+      "stat_calls": 526,
+      "physical_reads": 263,
+      "physical_bytes": 3319849,
+      "admission": {
+        "admission_ns": 322421,
+        "hashed_bytes": 0,
+        "changed": false
+      }
+    },
+    {
+      "block": 19,
+      "kind": "explicit-changed-body",
+      "seconds": 5.5154e-05,
+      "admission": {
+        "admission_ns": 55154,
+        "hashed_bytes": 1685,
+        "changed": true
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 19,
+      "kind": "explicit-no-op",
+      "seconds": 3.8322e-05,
+      "admission": {
+        "admission_ns": 38322,
+        "hashed_bytes": 0,
+        "changed": false
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 20,
+      "kind": "explicit-changed-body",
+      "seconds": 3.698e-05,
+      "admission": {
+        "admission_ns": 36980,
+        "hashed_bytes": 1685,
+        "changed": true
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    },
+    {
+      "block": 20,
+      "kind": "strict-known-namespace-import",
+      "seconds": 0.004731184,
+      "stat_calls": 526,
+      "physical_reads": 263,
+      "physical_bytes": 3319849,
+      "admission": {
+        "admission_ns": 282515,
+        "hashed_bytes": 0,
+        "changed": false
+      }
+    },
+    {
+      "block": 20,
+      "kind": "explicit-no-op",
+      "seconds": 3.9775e-05,
+      "admission": {
+        "admission_ns": 39775,
+        "hashed_bytes": 0,
+        "changed": false
+      },
+      "physical_reads": 0,
+      "physical_bytes": 0,
+      "stat_calls": 0
+    }
+  ]
+}

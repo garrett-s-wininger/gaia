@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "timed_operations": 84,
+  "all_outputs_and_current_tokens_match": true,
+  "raw_sha256": "212b611135a7c1e59678c21c3abf8779e6d1dfa4a077be4bc3653b54887f0383",
+  "source_sha256": {
+    "controls.py": "993e7aa2b8ff2e2db89f5fe43be59c279ec1ae5be572062d067ee4f9bc78811a",
+    "EmptyMain.java": "433f12fc180a04314ced1410ebb3781f56625a3aae8ffe7289cc8329cc551940",
+    "PlainPicocli.java": "19392d60796310d44b92f162fcfff0373840d8ca7fd3f1ec1a057f9199aa011c",
+    "test_archive.py": "612cd27e00c0e1d15afb3e35b4bac4a5c89df6f29e93cbb92008f892a8f6ccbc",
+    "benchmark.py": "57e6338ade479a47d1caf6a4af08e1ba0aadd42120206e8e2b28e55c3b38a455",
+    "StaticLogic.groovy": "a7f8f20276e9a6f060cb5e5ad3f8e8a7baf3c03f7829d1aee514c374f2f3f5eb",
+    "Command.java": "184911af2781ca4ee1d70d4011b101df8cc9b16d774ac7ee9cc3bfae2dc34268"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "path_base": "repository-root",
+  "track": "managed-jvm-programmatic-compiler",
+  "experiments": [
+    {
+      "id": "JVM-COMPILER-INITIAL",
+      "run_id": "20261031T032913.223449Z",
+      "status": "measured-jlink-aot-api-and-independent-full-target-pool",
+      "report": "experiments/java/compiler/results/initial/REPORT.md",
+      "raw": "experiments/java/compiler/results/initial/results.json",
+      "summary": "experiments/java/compiler/results/initial/summary.json",
+      "validation": "experiments/java/compiler/results/initial/validation.json",
+      "provenance": "experiments/java/compiler/results/initial/provenance.json",
+      "findings": "research/compiler/jvm/findings.md"
+    }
+  ],
+  "raw_evidence": {
+    "manifest": "research/evidence.json",
+    "availability": "Ignored local observations; absent from a clean checkout with no published download."
+  }
+}

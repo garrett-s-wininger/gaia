@@ -1,0 +1,544 @@
+{
+  "run_id": "20261031T033053.134187Z",
+  "raw_sha256": "943c859ac538484eee74b3884551894a801e57fd0d7da4e819fe368fac9a8990",
+  "cases": [
+    {
+      "scenario": "unchanged",
+      "engines": {
+        "gaia-shared-inputs": {
+          "median_ms": 2.3529079990112223,
+          "min_ms": 2.264451002702117,
+          "max_ms": 2.768525999272242,
+          "samples": 7
+        },
+        "gaia-logical-inputs": {
+          "median_ms": 2.3222300005727448,
+          "min_ms": 2.21351400250569,
+          "max_ms": 2.4864660008461215,
+          "samples": 7,
+          "ingress_median_ms": 0.130227,
+          "representative_admission": {
+            "admission_ns": 129505,
+            "hashed_bytes": 0,
+            "changed": false,
+            "total_ingress_ns": 134525,
+            "source": "explicit admitted edit packet",
+            "packet_bytes": 0,
+            "generation": 0,
+            "initial_admission": null
+          }
+        },
+        "ninja": {
+          "median_ms": 3.498070997011382,
+          "min_ms": 3.146869996271562,
+          "max_ms": 3.9123130045481957,
+          "samples": 7
+        },
+        "ninja-ccache": {
+          "median_ms": 3.075658001762349,
+          "min_ms": 2.8593069946509786,
+          "max_ms": 3.9315390022238716,
+          "samples": 7
+        }
+      },
+      "paired_logical_minus_control": {
+        "gaia-shared-inputs": {
+          "median_delta_ms": -0.005709996912628412,
+          "wins": 4,
+          "blocks": 7
+        },
+        "ninja": {
+          "median_delta_ms": -1.0805150013766252,
+          "wins": 7,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": -0.7562729952041991,
+          "wins": 7,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "implementation",
+      "engines": {
+        "gaia-shared-inputs": {
+          "median_ms": 48.783240003103856,
+          "min_ms": 47.72423400572734,
+          "max_ms": 49.9946460040519,
+          "samples": 7,
+          "export_median_ms": 4.434943002706859,
+          "reference_wire_equal": true,
+          "physical_reads": 187,
+          "physical_bytes": 3016233
+        },
+        "gaia-logical-inputs": {
+          "median_ms": 42.25256299832836,
+          "min_ms": 40.383453997492325,
+          "max_ms": 43.33455700543709,
+          "samples": 7,
+          "export_median_ms": 1.5928580032777973,
+          "reference_wire_equal": true,
+          "physical_reads": 0,
+          "physical_bytes": 0,
+          "ingress_median_ms": 0.154422,
+          "representative_admission": {
+            "admission_ns": 147870,
+            "hashed_bytes": 1685,
+            "changed": true,
+            "total_ingress_ns": 151066,
+            "source": "explicit admitted edit packet",
+            "packet_bytes": 1685,
+            "generation": 5,
+            "initial_admission": null
+          }
+        },
+        "ninja": {
+          "median_ms": 66.34579799720086,
+          "min_ms": 64.75502499961294,
+          "max_ms": 69.7941920006997,
+          "samples": 7
+        },
+        "ninja-ccache": {
+          "median_ms": 98.33017700293567,
+          "min_ms": 96.63691100286087,
+          "max_ms": 101.22968300129287,
+          "samples": 7
+        }
+      },
+      "paired_logical_minus_control": {
+        "gaia-shared-inputs": {
+          "median_delta_ms": -7.071799002005719,
+          "wins": 7,
+          "blocks": 7
+        },
+        "ninja": {
+          "median_delta_ms": -24.82485400105361,
+          "wins": 7,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": -56.208542999229394,
+          "wins": 7,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "shared-header",
+      "engines": {
+        "gaia-shared-inputs": {
+          "median_ms": 27.838315996632446,
+          "min_ms": 26.60131199809257,
+          "max_ms": 29.714771000726614,
+          "samples": 7,
+          "export_median_ms": 4.315817001042888,
+          "reference_wire_equal": true,
+          "physical_reads": 187,
+          "physical_bytes": 3016231
+        },
+        "gaia-logical-inputs": {
+          "median_ms": 20.997999999963213,
+          "min_ms": 19.584508998377714,
+          "max_ms": 21.379208003054373,
+          "samples": 7,
+          "export_median_ms": 1.475134995416738,
+          "reference_wire_equal": true,
+          "physical_reads": 0,
+          "physical_bytes": 0,
+          "ingress_median_ms": 0.139665,
+          "representative_admission": {
+            "admission_ns": 123965,
+            "hashed_bytes": 22,
+            "changed": true,
+            "total_ingress_ns": 126900,
+            "source": "explicit admitted edit packet",
+            "packet_bytes": 22,
+            "generation": 6,
+            "initial_admission": null
+          }
+        },
+        "ninja": {
+          "median_ms": 44.00975599855883,
+          "min_ms": 42.3025010022684,
+          "max_ms": 44.451203000789974,
+          "samples": 7
+        },
+        "ninja-ccache": {
+          "median_ms": 66.0387259995332,
+          "min_ms": 64.83950200345134,
+          "max_ms": 67.32198600366246,
+          "samples": 7
+        }
+      },
+      "paired_logical_minus_control": {
+        "gaia-shared-inputs": {
+          "median_delta_ms": -7.236072997329757,
+          "wins": 7,
+          "blocks": 7
+        },
+        "ninja": {
+          "median_delta_ms": -23.014833001070656,
+          "wins": 7,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": -45.27817800408229,
+          "wins": 7,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "generated-header",
+      "engines": {
+        "gaia-shared-inputs": {
+          "median_ms": 27.798670998890884,
+          "min_ms": 26.426699994772207,
+          "max_ms": 29.22643599595176,
+          "samples": 7,
+          "export_median_ms": 4.366624001704622,
+          "reference_wire_equal": true,
+          "physical_reads": 187,
+          "physical_bytes": 3016231
+        },
+        "gaia-logical-inputs": {
+          "median_ms": 21.192453998082783,
+          "min_ms": 20.327596001152415,
+          "max_ms": 22.269214001426008,
+          "samples": 7,
+          "export_median_ms": 1.3318540004547685,
+          "reference_wire_equal": true,
+          "physical_reads": 0,
+          "physical_bytes": 0,
+          "ingress_median_ms": 0.144173,
+          "representative_admission": {
+            "admission_ns": 141208,
+            "hashed_bytes": 26,
+            "changed": true,
+            "total_ingress_ns": 144173,
+            "source": "explicit admitted edit packet",
+            "packet_bytes": 26,
+            "generation": 2,
+            "initial_admission": null
+          }
+        },
+        "ninja": {
+          "median_ms": 42.64610000245739,
+          "min_ms": 42.11049100558739,
+          "max_ms": 44.41100400435971,
+          "samples": 7
+        },
+        "ninja-ccache": {
+          "median_ms": 66.71947200084105,
+          "min_ms": 65.49184899631655,
+          "max_ms": 82.32435900572455,
+          "samples": 7
+        }
+      },
+      "paired_logical_minus_control": {
+        "gaia-shared-inputs": {
+          "median_delta_ms": -6.83319700328866,
+          "wins": 7,
+          "blocks": 7
+        },
+        "ninja": {
+          "median_delta_ms": -21.782895004434977,
+          "wins": 7,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": -45.7292370047071,
+          "wins": 7,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "unused-header",
+      "engines": {
+        "gaia-shared-inputs": {
+          "median_ms": 2.589925003121607,
+          "min_ms": 2.3206769983517006,
+          "max_ms": 3.1296089946408756,
+          "samples": 7
+        },
+        "gaia-logical-inputs": {
+          "median_ms": 2.2143660025903955,
+          "min_ms": 2.161315002012998,
+          "max_ms": 2.7754990005632862,
+          "samples": 7,
+          "ingress_median_ms": 0.146598,
+          "representative_admission": {
+            "admission_ns": 276143,
+            "hashed_bytes": 21,
+            "changed": true,
+            "total_ingress_ns": 285361,
+            "source": "explicit admitted edit packet",
+            "packet_bytes": 21,
+            "generation": 3,
+            "initial_admission": null
+          }
+        },
+        "ninja": {
+          "median_ms": 3.105023999523837,
+          "min_ms": 2.9730129972449504,
+          "max_ms": 3.42188300419366,
+          "samples": 7
+        },
+        "ninja-ccache": {
+          "median_ms": 3.063072006625589,
+          "min_ms": 2.9229869978735223,
+          "max_ms": 3.7420499938889407,
+          "samples": 7
+        }
+      },
+      "paired_logical_minus_control": {
+        "gaia-shared-inputs": {
+          "median_delta_ms": -0.3757900049095042,
+          "wins": 6,
+          "blocks": 7
+        },
+        "ninja": {
+          "median_delta_ms": -0.8127920009428635,
+          "wins": 7,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": -0.7727339980192482,
+          "wins": 7,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "revert",
+      "engines": {
+        "gaia-shared-inputs": {
+          "median_ms": 9.45852100267075,
+          "min_ms": 9.115078995819204,
+          "max_ms": 11.217685001611244,
+          "samples": 7
+        },
+        "gaia-logical-inputs": {
+          "median_ms": 6.534772001032252,
+          "min_ms": 6.422319995181169,
+          "max_ms": 7.460332999471575,
+          "samples": 7,
+          "ingress_median_ms": 0.156427,
+          "representative_admission": {
+            "admission_ns": 168689,
+            "hashed_bytes": 1683,
+            "changed": true,
+            "total_ingress_ns": 174461,
+            "source": "explicit admitted edit packet",
+            "packet_bytes": 1683,
+            "generation": 4,
+            "initial_admission": null
+          }
+        },
+        "ninja": {
+          "median_ms": 66.54161799815483,
+          "min_ms": 64.81895599426934,
+          "max_ms": 69.52161400113255,
+          "samples": 7
+        },
+        "ninja-ccache": {
+          "median_ms": 24.72927200142294,
+          "min_ms": 24.292149995744694,
+          "max_ms": 27.006991003872827,
+          "samples": 7
+        }
+      },
+      "paired_logical_minus_control": {
+        "gaia-shared-inputs": {
+          "median_delta_ms": -2.805174000968691,
+          "wins": 7,
+          "blocks": 7
+        },
+        "ninja": {
+          "median_delta_ms": -60.10045299626654,
+          "wins": 7,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": -17.869830000563525,
+          "wins": 7,
+          "blocks": 7
+        }
+      }
+    }
+  ],
+  "residents": {
+    "gaia-shared-inputs": {
+      "requests": 65,
+      "peak_rss_bytes": [
+        238039040,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688,
+        239730688
+      ],
+      "cpu_seconds": 12.39,
+      "serial": true,
+      "final_memory_kib": {
+        "VmSize": 871116,
+        "VmHWM": 234112,
+        "VmRSS": 145240
+      }
+    },
+    "gaia-logical-inputs": {
+      "requests": 65,
+      "peak_rss_bytes": [
+        235601920,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032,
+        237228032
+      ],
+      "cpu_seconds": 12.76,
+      "serial": true,
+      "final_memory_kib": {
+        "VmSize": 871056,
+        "VmHWM": 231668,
+        "VmRSS": 142584
+      }
+    }
+  },
+  "context": {
+    "contract": "GAIA-RECORDED-VFS-1",
+    "host_sha256": "7f3353b312b34f1e4433aa8611dd23ce1855717af0667bb732183558754e10df",
+    "tools": {
+      "clang": "b852cb4597dc56b241bcd328544b5fee60717f35f66808098cc0413946ba42f2",
+      "ld.lld": "53b86825ed1635d71a5b719f87bd702497bc0c67ad6b139105adcdd8aab7e904",
+      "libclang-cpp.so": "f8ad17a08eeab80c04e8c2f90986c43808fe760e30136ce199c945fe273b6cd6",
+      "libLLVM.so.22.1": "abe476c377d94c4375d4d804ca555dd378c0437e7b9c01f60d51e403e8cc6d6a",
+      "liblldELF.so": "773103cd194050fa4c673293bbc8a6b71d89ee0c0167155eb419ceaabc40916f",
+      "liblldCommon.so": "ead9a563e136161ba52acba8d9c7b8b528c2b50ca65577629187affda946de63",
+      "libcrypto.so.3": "a75a864dcda6ef9e4dc29fad4b7988ca832b904c3915a63c920062c40763dae1",
+      "libblake3.so.1.8.7": "bffe67ca91fd831b709da938bbb8358d31f2c4990e54daf3dd64bcf288ec4e92",
+      "blake3-helper.so": "4bf7a0ecc72b801844462623b87fbf6af88d229592c33bc0620b43e06d66ea44",
+      "verify.so": "2fa59aa610aa1179f31827e742b5f85e63bafe9c97ff6b8c851ed13b5a77e829"
+    }
+  }
+}

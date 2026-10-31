@@ -1,0 +1,17 @@
+{
+  "run_id": "20261030T231703.682942Z",
+  "passed": true,
+  "timed_fetches": 840,
+  "independently_verified_objects": 73360,
+  "all_receipts_and_payloads_match": true,
+  "all_client_server_counts_match": true,
+  "all_cache_reuse_counts_match": true,
+  "cached_all_has_zero_network_requests": true,
+  "raw_sha256": "a91373ec50d434a231aa0b227362813f3f32b578adc8f90ae556872aa2f90aaa",
+  "workers": 8,
+  "coalescing_gap_bytes": 65536,
+  "max_span_bytes": 4194304,
+  "all_mode_request_plans_match": true,
+  "all_transfer_byte_plans_match": true,
+  "measured_sources_match_frozen_and_current": true
+}

@@ -1,0 +1,17 @@
+{
+  "run_id": "20261031T005712.820765Z",
+  "passed": true,
+  "timed_builds": 168,
+  "objects_per_build": 31,
+  "all_objects_and_libraries_match": true,
+  "all_runtime_probes_pass": true,
+  "all_incremental_work_counts_match": true,
+  "high_fanout_readers": 26,
+  "raw_sha256": "f68d22b0d268eff0810eb316ffa5f0ac4537d9afa35e8176a7a4be8fa6db8135",
+  "tools": {
+    "ninja": "1.13.2",
+    "ccache": "ccache version 4.14.1",
+    "clang": "clang version 22.1.8"
+  },
+  "host_sha256": "bc26aaf84d90347300133b2b8ddfe7226d1f239d0b8cfb2a97f8b57fce09b8c3"
+}

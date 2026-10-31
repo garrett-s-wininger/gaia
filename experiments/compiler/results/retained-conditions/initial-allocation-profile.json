@@ -1,0 +1,289 @@
+{
+  "scope": "Intrusive call/allocation diagnostic, not latency samples. One selected fragment missing; logical input bytes unchanged; initial retained construction excluded.",
+  "source_run": "20261030T235738.245668Z",
+  "wire_equal": true,
+  "sources": {
+    "profile_retained_conditions.py": "8fdb0e9ee544f8f91978267f1900d9f0d311255dd8e98f18d5b45496140211dd",
+    "incremental_conditions.py": "3c8a18024c2aaef4285de3490ffbcf48fad33f9d70531d7f25bc4e9305badcd8",
+    "retained_conditions.py": "5b462ba8421dc3cd89d5a31deba0588a1cfccce61ac42c3944f5c2d404331bf0"
+  },
+  "profiles": [
+    {
+      "variant": "incremental",
+      "stats": {
+        "queries": 5266,
+        "conditions": 275,
+        "positive_files": 187,
+        "kinds": {
+          "0": 58,
+          "1": 187,
+          "2": 30
+        },
+        "bytes": 37018,
+        "target_paths": 258,
+        "condition_merges": 1950,
+        "fragment_hits": 30,
+        "fragment_misses": 1,
+        "queries_parsed": 166,
+        "fragment_cache_valid": true,
+        "fragment_cache_bytes": 37210,
+        "fragment_cache_published": true
+      },
+      "traced_current_bytes": 125707,
+      "traced_peak_bytes": 8533872,
+      "functions": [
+        {
+          "file": "incremental_conditions.py",
+          "function": "write_cache",
+          "calls": 1
+        },
+        {
+          "file": "incremental_conditions.py",
+          "function": "ids",
+          "calls": 60
+        },
+        {
+          "file": "incremental_conditions.py",
+          "function": "read_cache",
+          "calls": 1
+        },
+        {
+          "file": "condition_index.py",
+          "function": "namespace_nodes",
+          "calls": 1
+        },
+        {
+          "file": "incremental_conditions.py",
+          "function": "encode_cache",
+          "calls": 1
+        },
+        {
+          "file": "incremental_conditions.py",
+          "function": "parse_fragment",
+          "calls": 1
+        },
+        {
+          "file": "incremental_conditions.py",
+          "function": "build_incremental",
+          "calls": 1
+        },
+        {
+          "file": "incremental_conditions.py",
+          "function": "assemble",
+          "calls": 1
+        },
+        {
+          "file": "condition_index.py",
+          "function": "selected_journals",
+          "calls": 1
+        },
+        {
+          "file": "condition_index.py",
+          "function": "decode_journal",
+          "calls": 1
+        },
+        {
+          "file": "condition_index.py",
+          "function": "encode_conditions",
+          "calls": 1
+        },
+        {
+          "file": "condition_index.py",
+          "function": "<genexpr>",
+          "calls": 2
+        },
+        {
+          "file": "incremental_conditions.py",
+          "function": "<genexpr>",
+          "calls": 6045
+        },
+        {
+          "file": "incremental_conditions.py",
+          "function": "number",
+          "calls": 379
+        },
+        {
+          "file": "incremental_conditions.py",
+          "function": "<genexpr>",
+          "calls": 4390
+        },
+        {
+          "file": "incremental_conditions.py",
+          "function": "<genexpr>",
+          "calls": 4390
+        },
+        {
+          "file": "incremental_conditions.py",
+          "function": "<genexpr>",
+          "calls": 4534
+        },
+        {
+          "file": "condition_index.py",
+          "function": "<genexpr>",
+          "calls": 316
+        },
+        {
+          "file": "condition_index.py",
+          "function": "prefixes",
+          "calls": 4924
+        },
+        {
+          "file": "incremental_conditions.py",
+          "function": "add",
+          "calls": 4087
+        },
+        {
+          "file": "incremental_conditions.py",
+          "function": "__init__",
+          "calls": 1
+        },
+        {
+          "file": "incremental_conditions.py",
+          "function": "take",
+          "calls": 756
+        },
+        {
+          "file": "condition_index.py",
+          "function": "canonical",
+          "calls": 687
+        },
+        {
+          "file": "~",
+          "function": "<built-in method _hashlib.openssl_sha256>",
+          "calls": 380
+        },
+        {
+          "file": "~",
+          "function": "<method 'read' of '_io.FileIO' objects>",
+          "calls": 188
+        }
+      ]
+    },
+    {
+      "variant": "retained",
+      "stats": {
+        "queries": 5266,
+        "conditions": 275,
+        "positive_files": 187,
+        "kinds": {
+          "0": 58,
+          "1": 187,
+          "2": 30
+        },
+        "bytes": 37018,
+        "target_paths": 258,
+        "condition_merges": 0,
+        "fragment_hits": 30,
+        "fragment_misses": 1,
+        "queries_parsed": 166,
+        "fragment_cache_valid": null,
+        "fragment_cache_source": "memory",
+        "fragment_cache_bytes": 37210,
+        "fragment_cache_published": true,
+        "namespace_reused": true,
+        "condition_plan_reused": true,
+        "logical_hashes_computed": 0,
+        "logical_hashes_reused": 187,
+        "physical_reads": 187,
+        "physical_bytes": 3016231,
+        "retained": true,
+        "stages_ns": {
+          "fragment_load": 2276453,
+          "plan": 26310,
+          "verify_emit": 13277560,
+          "fragment_encode": 2056624,
+          "fragment_publish": 289271
+        }
+      },
+      "traced_current_bytes": 91450,
+      "traced_peak_bytes": 469887,
+      "functions": [
+        {
+          "file": "incremental_conditions.py",
+          "function": "write_cache",
+          "calls": 1
+        },
+        {
+          "file": "incremental_conditions.py",
+          "function": "encode_cache",
+          "calls": 1
+        },
+        {
+          "file": "incremental_conditions.py",
+          "function": "parse_fragment",
+          "calls": 1
+        },
+        {
+          "file": "condition_index.py",
+          "function": "selected_journals",
+          "calls": 1
+        },
+        {
+          "file": "condition_index.py",
+          "function": "decode_journal",
+          "calls": 1
+        },
+        {
+          "file": "retained_conditions.py",
+          "function": "intern",
+          "calls": 1
+        },
+        {
+          "file": "retained_conditions.py",
+          "function": "build",
+          "calls": 1
+        },
+        {
+          "file": "condition_index.py",
+          "function": "<genexpr>",
+          "calls": 2
+        },
+        {
+          "file": "retained_conditions.py",
+          "function": "<genexpr>",
+          "calls": 6045
+        },
+        {
+          "file": "incremental_conditions.py",
+          "function": "<genexpr>",
+          "calls": 4534
+        },
+        {
+          "file": "retained_conditions.py",
+          "function": "<genexpr>",
+          "calls": 32
+        },
+        {
+          "file": "retained_conditions.py",
+          "function": "<genexpr>",
+          "calls": 143
+        },
+        {
+          "file": "retained_conditions.py",
+          "function": "<genexpr>",
+          "calls": 1
+        },
+        {
+          "file": "retained_conditions.py",
+          "function": "<genexpr>",
+          "calls": 32
+        },
+        {
+          "file": "condition_index.py",
+          "function": "canonical",
+          "calls": 167
+        },
+        {
+          "file": "~",
+          "function": "<built-in method _hashlib.openssl_sha256>",
+          "calls": 192
+        },
+        {
+          "file": "~",
+          "function": "<method 'read' of '_io.FileIO' objects>",
+          "calls": 188
+        }
+      ]
+    }
+  ]
+}

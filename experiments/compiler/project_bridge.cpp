@@ -4,11 +4,13 @@
 
 static bool absolute_inputs(llvm::vfs::InMemoryFileSystem &fs,
                             const uint8_t *data, size_t size, const char *pin, Stats &s) {
-    if (size<16 || size>64*1024*1024 || memcmp(data,"GAIACIN2",8)) return false;
-    auto digest=llvm::SHA256::hash(llvm::ArrayRef<uint8_t>(data,size));
+    if (size<16 || size>64*1024*1024) return false;
+    bool blake3=!memcmp(data,"GAIACIN3",8);
+    if ((!blake3 && memcmp(data,"GAIACIN2",8)) || blake3!=gaia_blake3_requested) return false;
+    auto digest=gaia_query_digest(llvm::ArrayRef<uint8_t>(data,size));
     const char *digits="0123456789abcdef";std::string hex;
     for (auto v:digest) {hex+=digits[v>>4];hex+=digits[v&15];}
-    if (hex!=pin) return false;
+    if ((blake3?"blake3:"+hex:hex)!=pin) return false;
     uint64_t count=integer(data+8,8);
     if (count>100000 || count>(size-16)/14) return false;
     size_t offset=16;std::set<std::string> names;

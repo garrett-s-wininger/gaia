@@ -1,0 +1,25 @@
+{
+  "run_id": "20261030T134240.386169Z",
+  "passed": true,
+  "timed_builds": 210,
+  "objects_per_build": 31,
+  "all_objects_and_libraries_match": true,
+  "all_runtime_probes_pass": true,
+  "all_incremental_work_counts_match": true,
+  "high_fanout_readers": 26,
+  "raw_sha256": "c85a087d60e586eceacd0810f18de9599119638005c62289cb4747137b8121ab",
+  "tools": {
+    "ninja": "1.13.2",
+    "ccache": "ccache version 4.14.1",
+    "clang": "clang version 22.1.8"
+  },
+  "host_sha256": "fba58ee195972676fcc986a2005dd246e5d228f220d10a9d99f9c75928417930",
+  "decision_host_sha256": "b745a109a2044b541b8359f099b2bdc12ff84bbcd847c84b7e32acd94399291e",
+  "history_candidates_per_action": 3,
+  "native_tests": 17,
+  "decision_runtime_dependencies": [
+    "libc.so.6",
+    "ELF loader"
+  ],
+  "correctness_tests_sha256": "540d55f2f55408c9868fb0c1d558013a692da367ccf748fac71961b6adbe32ca"
+}

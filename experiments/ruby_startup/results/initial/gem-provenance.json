@@ -1,0 +1,148 @@
+{
+  "gems": [
+    {
+      "name": "ast",
+      "version": "2.4.3",
+      "filename": "ast-2.4.3.gem",
+      "url": "https://rubygems.org/downloads/ast-2.4.3.gem",
+      "sha256": "954615157c1d6a382bc27d690d973195e79db7f55e9765ac7c481c60bdb4d383",
+      "bytes": 11776
+    },
+    {
+      "name": "bootsnap",
+      "version": "1.26.1",
+      "filename": "bootsnap-1.26.1.gem",
+      "url": "https://rubygems.org/downloads/bootsnap-1.26.1.gem",
+      "sha256": "5b5bd90f8f13ea338627c1d56ffbe2ea25e743ac48c2afec1a9bea3a06a264e2",
+      "bytes": 47616
+    },
+    {
+      "name": "erb",
+      "version": "6.0.7",
+      "filename": "erb-6.0.7.gem",
+      "url": "https://rubygems.org/downloads/erb-6.0.7.gem",
+      "sha256": "c5ca6dc25b0ef974a44dc8f59fe847577122483b1968a38dec305c60bf91ee92",
+      "bytes": 27648
+    },
+    {
+      "name": "json",
+      "version": "3.1.0",
+      "filename": "json-3.1.0.gem",
+      "url": "https://rubygems.org/downloads/json-3.1.0.gem",
+      "sha256": "3ce7ccf8fde58960177a3a756c31f292a4c1e1dedee884547096a5b0604e3bd8",
+      "bytes": 107520
+    },
+    {
+      "name": "language_server-protocol",
+      "version": "3.17.0.6",
+      "filename": "language_server-protocol-3.17.0.6.gem",
+      "url": "https://rubygems.org/downloads/language_server-protocol-3.17.0.6.gem",
+      "sha256": "5ef2c0c138f8267e1bc631d3328347d354f96724b0af22f2c79516120443b7f0",
+      "bytes": 121856
+    },
+    {
+      "name": "lint_roller",
+      "version": "1.1.0",
+      "filename": "lint_roller-1.1.0.gem",
+      "url": "https://rubygems.org/downloads/lint_roller-1.1.0.gem",
+      "sha256": "2c0c845b632a7d172cb849cc90c1bce937a28c5c8ccccb50dfd46a485003cc87",
+      "bytes": 9728
+    },
+    {
+      "name": "msgpack",
+      "version": "1.8.7",
+      "filename": "msgpack-1.8.7.gem",
+      "url": "https://rubygems.org/downloads/msgpack-1.8.7.gem",
+      "sha256": "dfefec761b5f9047e6e8d95d2c7f8af4b3725d984a01942adc533aa819a2df33",
+      "bytes": 62976
+    },
+    {
+      "name": "parallel",
+      "version": "2.3.0",
+      "filename": "parallel-2.3.0.gem",
+      "url": "https://rubygems.org/downloads/parallel-2.3.0.gem",
+      "sha256": "f75a3e904101ce6a1ccb6b8dc800cbafd42166d83330192438dcf29395167a6f",
+      "bytes": 12800
+    },
+    {
+      "name": "parser",
+      "version": "3.3.13.0",
+      "filename": "parser-3.3.13.0.gem",
+      "url": "https://rubygems.org/downloads/parser-3.3.13.0.gem",
+      "sha256": "e02f9b63c2fe05b0c68f692ba4df89b3cb113b663964f75d988fbebfd6c3deca",
+      "bytes": 912384
+    },
+    {
+      "name": "prism",
+      "version": "1.9.0",
+      "filename": "prism-1.9.0.gem",
+      "url": "https://rubygems.org/downloads/prism-1.9.0.gem",
+      "sha256": "7b530c6a9f92c24300014919c9dcbc055bf4cdf51ec30aed099b06cd6674ef85",
+      "bytes": 650240
+    },
+    {
+      "name": "racc",
+      "version": "1.8.1",
+      "filename": "racc-1.8.1.gem",
+      "url": "https://rubygems.org/downloads/racc-1.8.1.gem",
+      "sha256": "4a7f6929691dbec8b5209a0b373bc2614882b55fc5d2e447a21aaa691303d62f",
+      "bytes": 65536
+    },
+    {
+      "name": "rainbow",
+      "version": "3.1.1",
+      "filename": "rainbow-3.1.1.gem",
+      "url": "https://rubygems.org/downloads/rainbow-3.1.1.gem",
+      "sha256": "039491aa3a89f42efa1d6dec2fc4e62ede96eb6acd95e52f1ad581182b79bc6a",
+      "bytes": 13824
+    },
+    {
+      "name": "regexp_parser",
+      "version": "2.13.1",
+      "filename": "regexp_parser-2.13.1.gem",
+      "url": "https://rubygems.org/downloads/regexp_parser-2.13.1.gem",
+      "sha256": "5aedb6b7c35688f51e86eef17a15374dfd287c83f4ca644b2c5f3ec50a33b44b",
+      "bytes": 53760
+    },
+    {
+      "name": "rubocop",
+      "version": "1.92.2",
+      "filename": "rubocop-1.92.2.gem",
+      "url": "https://rubygems.org/downloads/rubocop-1.92.2.gem",
+      "sha256": "14fb31eed143a0dc6f78186c550c1715e81cd38f59d05d1165050e445c1f5382",
+      "bytes": 901632
+    },
+    {
+      "name": "rubocop-ast",
+      "version": "1.50.0",
+      "filename": "rubocop-ast-1.50.0.gem",
+      "url": "https://rubygems.org/downloads/rubocop-ast-1.50.0.gem",
+      "sha256": "b9ca88300da0803ee222ad20cdb30494c0a784eed06fdc35d254b06d662788db",
+      "bytes": 62976
+    },
+    {
+      "name": "ruby-progressbar",
+      "version": "1.13.0",
+      "filename": "ruby-progressbar-1.13.0.gem",
+      "url": "https://rubygems.org/downloads/ruby-progressbar-1.13.0.gem",
+      "sha256": "80fc9c47a9b640d6834e0dc7b3c94c9df37f08cb072b7761e4a71e22cff29b33",
+      "bytes": 19456
+    },
+    {
+      "name": "unicode-display_width",
+      "version": "3.3.0",
+      "filename": "unicode-display_width-3.3.0.gem",
+      "url": "https://rubygems.org/downloads/unicode-display_width-3.3.0.gem",
+      "sha256": "4b7aa66a4b11db50f6f7e98411215cd0dd10eaecb665d36eec5bcacb3fa0b613",
+      "bytes": 18432
+    },
+    {
+      "name": "unicode-emoji",
+      "version": "4.3.0",
+      "filename": "unicode-emoji-4.3.0.gem",
+      "url": "https://rubygems.org/downloads/unicode-emoji-4.3.0.gem",
+      "sha256": "11c02fa73290378c066bb0562cd4c87d8e1b706fbbe0059ca12746a4244de8ce",
+      "bytes": 170496
+    }
+  ]
+}

@@ -1,0 +1,320 @@
+{
+  "run_id": "20261030T202147.416868Z",
+  "raw_sha256": "8c59673e142c43f430082c4ee9d6017a4ae5c7e579a8e58ec0e7b509447080cb",
+  "cases": [
+    {
+      "scenario": "high-fanout-header",
+      "engines": {
+        "gaia-incremental": {
+          "median_ms": 2822.286187998543,
+          "min_ms": 2822.286187998543,
+          "max_ms": 2822.286187998543,
+          "median_snapshot_ms": 17.680357999779517,
+          "median_export_ms": 15.77955700122402,
+          "native_medians": {
+            "setup_ns": 24738779,
+            "validation_ns": 10607667,
+            "view_build_ns": 8391800,
+            "compile_wall_ns": 2720709303,
+            "link_ns": 4599866,
+            "workload_ns": 2750154931,
+            "view_builds": 31,
+            "validation_groups": 0,
+            "memo_hits": 0,
+            "memo_bytes": 0,
+            "dependency_queries": 3070,
+            "compiler_executions": 26,
+            "historical_hits": 0,
+            "link_calls": 1
+          }
+        },
+        "gaia-shared": {
+          "median_ms": 2894.6647140001005,
+          "min_ms": 2894.6647140001005,
+          "max_ms": 2894.6647140001005,
+          "median_snapshot_ms": 17.486552998889238,
+          "median_export_ms": 15.416538000863511,
+          "native_medians": {
+            "setup_ns": 15621522,
+            "validation_ns": 2179632,
+            "view_build_ns": 11658712,
+            "compile_wall_ns": 2804768125,
+            "link_ns": 4304137,
+            "workload_ns": 2824782704,
+            "view_builds": 27,
+            "validation_groups": 1,
+            "memo_hits": 0,
+            "memo_bytes": 0,
+            "dependency_queries": 3070,
+            "compiler_executions": 26,
+            "historical_hits": 0,
+            "link_calls": 1
+          }
+        },
+        "gaia-memo": {
+          "median_ms": 2915.78044400012,
+          "min_ms": 2915.78044400012,
+          "max_ms": 2915.78044400012,
+          "median_snapshot_ms": 17.050252001354238,
+          "median_export_ms": 16.02420100243762,
+          "native_medians": {
+            "setup_ns": 14488185,
+            "validation_ns": 901800,
+            "view_build_ns": 13631915,
+            "compile_wall_ns": 2824230968,
+            "link_ns": 4213093,
+            "workload_ns": 2842985588,
+            "view_builds": 27,
+            "validation_groups": 1,
+            "memo_hits": 2809,
+            "memo_bytes": 127516,
+            "dependency_queries": 3070,
+            "compiler_executions": 26,
+            "historical_hits": 0,
+            "link_calls": 1
+          }
+        }
+      },
+      "memo_paired": {
+        "gaia-incremental": {
+          "median_delta_ms": 93.49425600157701,
+          "wins": 0,
+          "blocks": 1
+        },
+        "gaia-shared": {
+          "median_delta_ms": 21.11573000001954,
+          "wins": 0,
+          "blocks": 1
+        }
+      }
+    },
+    {
+      "scenario": "flags",
+      "engines": {
+        "gaia-incremental": {
+          "median_ms": 2921.2182099981874,
+          "min_ms": 2921.2182099981874,
+          "max_ms": 2921.2182099981874,
+          "median_snapshot_ms": 17.978764000872616,
+          "median_export_ms": 16.565275996981654,
+          "native_medians": {
+            "setup_ns": 12493104,
+            "validation_ns": 0,
+            "view_build_ns": 15590656,
+            "compile_wall_ns": 2828395200,
+            "link_ns": 4124825,
+            "workload_ns": 2845072162,
+            "view_builds": 31,
+            "validation_groups": 0,
+            "memo_hits": 0,
+            "memo_bytes": 0,
+            "dependency_queries": 0,
+            "compiler_executions": 31,
+            "historical_hits": 0,
+            "link_calls": 1
+          }
+        },
+        "gaia-shared": {
+          "median_ms": 2962.050629001169,
+          "min_ms": 2962.050629001169,
+          "max_ms": 2962.050629001169,
+          "median_snapshot_ms": 17.05327400122769,
+          "median_export_ms": 16.753063999203732,
+          "native_medians": {
+            "setup_ns": 12409896,
+            "validation_ns": 0,
+            "view_build_ns": 15731108,
+            "compile_wall_ns": 2873375391,
+            "link_ns": 4741593,
+            "workload_ns": 2890580393,
+            "view_builds": 31,
+            "validation_groups": 0,
+            "memo_hits": 0,
+            "memo_bytes": 0,
+            "dependency_queries": 0,
+            "compiler_executions": 31,
+            "historical_hits": 0,
+            "link_calls": 1
+          }
+        },
+        "gaia-memo": {
+          "median_ms": 2866.409668000415,
+          "min_ms": 2866.409668000415,
+          "max_ms": 2866.409668000415,
+          "median_snapshot_ms": 16.43570000305772,
+          "median_export_ms": 16.78982200246537,
+          "native_medians": {
+            "setup_ns": 13335433,
+            "validation_ns": 0,
+            "view_build_ns": 17881411,
+            "compile_wall_ns": 2778087527,
+            "link_ns": 3937831,
+            "workload_ns": 2795418281,
+            "view_builds": 31,
+            "validation_groups": 0,
+            "memo_hits": 0,
+            "memo_bytes": 0,
+            "dependency_queries": 0,
+            "compiler_executions": 31,
+            "historical_hits": 0,
+            "link_calls": 1
+          }
+        }
+      },
+      "memo_paired": {
+        "gaia-incremental": {
+          "median_delta_ms": -54.80854199777241,
+          "wins": 1,
+          "blocks": 1
+        },
+        "gaia-shared": {
+          "median_delta_ms": -95.64096100075403,
+          "wins": 1,
+          "blocks": 1
+        }
+      }
+    },
+    {
+      "scenario": "clean",
+      "engines": {
+        "gaia-incremental": {
+          "median_ms": 2867.623801997979,
+          "min_ms": 2867.623801997979,
+          "max_ms": 2867.623801997979,
+          "median_snapshot_ms": 15.796330997545738,
+          "median_export_ms": 15.108666000742232,
+          "native_medians": {
+            "setup_ns": 12422169,
+            "validation_ns": 0,
+            "view_build_ns": 17241262,
+            "compile_wall_ns": 2779917748,
+            "link_ns": 3881744,
+            "workload_ns": 2796304660,
+            "view_builds": 31,
+            "validation_groups": 0,
+            "memo_hits": 0,
+            "memo_bytes": 0,
+            "dependency_queries": 0,
+            "compiler_executions": 31,
+            "historical_hits": 0,
+            "link_calls": 1
+          }
+        },
+        "gaia-shared": {
+          "median_ms": 2948.764614000538,
+          "min_ms": 2948.764614000538,
+          "max_ms": 2948.764614000538,
+          "median_snapshot_ms": 14.14380900314427,
+          "median_export_ms": 15.278013001079671,
+          "native_medians": {
+            "setup_ns": 12429614,
+            "validation_ns": 0,
+            "view_build_ns": 15261643,
+            "compile_wall_ns": 2865024349,
+            "link_ns": 4041317,
+            "workload_ns": 2881553892,
+            "view_builds": 31,
+            "validation_groups": 0,
+            "memo_hits": 0,
+            "memo_bytes": 0,
+            "dependency_queries": 0,
+            "compiler_executions": 31,
+            "historical_hits": 0,
+            "link_calls": 1
+          }
+        },
+        "gaia-memo": {
+          "median_ms": 2905.1960830001917,
+          "min_ms": 2905.1960830001917,
+          "max_ms": 2905.1960830001917,
+          "median_snapshot_ms": 15.830463999009226,
+          "median_export_ms": 14.904119001585059,
+          "native_medians": {
+            "setup_ns": 12953616,
+            "validation_ns": 0,
+            "view_build_ns": 15150324,
+            "compile_wall_ns": 2820533642,
+            "link_ns": 3805540,
+            "workload_ns": 2837373883,
+            "view_builds": 31,
+            "validation_groups": 0,
+            "memo_hits": 0,
+            "memo_bytes": 0,
+            "dependency_queries": 0,
+            "compiler_executions": 31,
+            "historical_hits": 0,
+            "link_calls": 1
+          }
+        }
+      },
+      "memo_paired": {
+        "gaia-incremental": {
+          "median_delta_ms": 37.57228100221255,
+          "wins": 0,
+          "blocks": 1
+        },
+        "gaia-shared": {
+          "median_delta_ms": -43.56853100034641,
+          "wins": 1,
+          "blocks": 1
+        }
+      }
+    }
+  ],
+  "tree_group_work_counts_pass": true,
+  "memo_accounting_bound_pass": true,
+  "adapter_source_sha256": {
+    "dependency_cache_benchmark.py": "371b57a1fa0be1f2ca2c8102334110ee311a8beb2a1c0f10920c5c7f3d5eb5c8",
+    "schedule_host.odin": "0665c188951813275b0a17562a4814007c06df2cd17d1c40890787e93c32a394",
+    "dependency_host.odin": "c3dd6d4362b907b68ea3ea5977edbe8422b664695556888a0272fc6658208956",
+    "build_cache_host.py": "f57155966ba5328cc68f7c39e60c7b951fba527b5b300782c4a4f7d797230989",
+    "condition_index.py": "0b95f1538856ff0f01f50cd880c46b076fd3df219600ec028f71381071f336c6",
+    "profile_zstd.py": "63dddd4f453c44e8f6141bd89cc1bfb1fc83a37b9cfe3fb0dcaa6537dce1162a",
+    "test_ninja_benchmark.py": "adb6cddae97532725f0c171bf814d736887689b614532968e04195888bda1f8d",
+    "pool_host.odin": "0d4d42adb207d3ba6ecf6c1a3e5721cef34bf311f4f81218ec9adc4d56bde2a4",
+    "handoff_impl.h": "f8d0ed3cd9465a66a0dba4cb9fadf17b59d62bd94c3e353dfbf5445ce16a4d55",
+    "trace_inputs.py": "b911db262e7c4e2cec0294359f9179ca2923b7243b85b50fabefb85079c633d4",
+    "build_schedule_host.py": "ef4b3b34df724af2cf788e8b86aac98c4e109b91985a718c257603c9e7f0c960",
+    "cache_host.odin": "e74d212a808398781ffad2c92bbc66ae2ea144ac94438556707da24d694d661e",
+    "test_shared_validation.py": "09fc000475b10fae3d7f3ed53ca8a1103ad97499810840c7489784499488fb8a",
+    "check_dependency_cache.py": "9efb52f8181ce27066da50c8f7727ee394e2a8198ea9e1bc56474fb776170a5a",
+    "dependency_bridge.cpp": "1a5fc3f3ac830ff01949b313a8c3602b4f68f8e2ac051e442197b5e219d1e226",
+    "handoff_host.odin": "6b42fa1cdfdbfc7a33577c9357c119422ea4ebcda4407c2cb606840266c36571",
+    "profile_bridge.cpp": "1d5dc23dd5494d9ba40eecc94a36fdfdf0d6ae1bdf1678ce7ec98857770ceb59",
+    "snapshot_host.odin": "46e50b58c05401e8281bcdbb2d4bd395c651e699e0dddc7f105d3fdb50b8e797",
+    "test_condition_index.py": "f888c7373d232eea0a61d0a4e85a96d74400c703e53f4e2d9b5df52c16fd1e63",
+    "build_followup_hosts.py": "01d6a9894ebff688d87a58f16e0d1aeddbb4dd2711d2118b68011477fef6e1e1",
+    "zstd_handoff_benchmark.py": "95852a78141d46bb68a7882bf28efa9f08cbde7ff47c815ecd689c8858fe7ded",
+    "check_schedule_failure.py": "d87ceeba4b7233e766572f5a22a42d8e41175f9494642ed7a7a2125a42b07345",
+    "project_benchmark.py": "82393dbf13ddc6369c01f0395d57e57b19239a02636f332381b8c4c83ce75c75",
+    "pool_benchmark.py": "f00a53f6dab211193eb7cea2105777d0fc0198373905fcad6019e70ebad9c991",
+    "lifecycle_host.odin": "ba8c13678118f48d81a7170296a1632b84bea94e92fa104b6985e2db87517e55",
+    "ninja_benchmark.py": "d2dfd8765779bc951bb1a9033fb0a46c950d8e5b186a761c2a3d53b24fd1b613",
+    "benchmark.py": "394bfa9d274be5b73f65a645189584847f06a6e09f5a3ae1dd642f765c7d0186",
+    "check_object_cache.py": "383d4356087a659360214afae97ef23a250c76af292a2b24e9b84046b0500430",
+    "dependency_impl.h": "706e70d0df7106e8c24460f51819c916138890f453912d50278e5589d2719b98",
+    "project_host.odin": "98ff4539c7a0ee2e84361d833db2cd9ca14620a029baf4fc5b46739f7ab17249",
+    "test_toolchain.py": "45ff1d749cd0eeefdabd9705ae889b4c2adfb63dc5f91cc1dcc2b0059ec5fb87",
+    "lifecycle_benchmark.py": "041e670a1184824c203203e3194a5846a4adcf4aea42b3864538910be6d1201c",
+    "bridge.cpp": "e1eab032ecf02abcd7374ff501d47ffae968bc0a32caf40aa88e6e3235cca3fd",
+    "test_incremental_conditions.py": "8e0bc7799dc2712a3fd681d4a005f750d547381da8731f0053e418efa65af210",
+    "check_cache_upstream.py": "c9b890bfb87809ae2dc743664d0670fa3280ee0cfd2b0e52b9c49990d36ef749",
+    "lifecycle_bridge.cpp": "93672b735cbb28f67e226a3f39a302ebf71281f472562af297339860da32d82a",
+    "test_build_decisions.py": "34dab0e8cba7bdff745c30fea7a444f1b72bc7c79be9309bc6cdb1f686bbfee0",
+    "decision_host.odin": "bbb4cbf9802594cd13736ee336814a9cd5933cb9f31ce0c0fc8d227cc1bef4b1",
+    "pool_bridge.cpp": "6838a928a0d8713c87abeeb9ef15bba68da8e5947241a501a6691a5e6f6d9780",
+    "schedule_benchmark.py": "4f14fbffe59ef498af35904f249a184fd1678e03a2e6637fda21bb88b8ea0fec",
+    "build_dependency_hosts.py": "5e7b2ff4e930c49d622090c7535d7b8233c9aebff239cdf18f0edf83f56cb744",
+    "host.odin": "a464c1bc2e1713e0c5f6ab7754da93826b2e044c7b1fe9b8eaffa805ef1bd2b9",
+    "trace_handoff.py": "f67935bafed4f26bde52b099584d408abf85f63aa883b82e6eb489adae5cce5a",
+    "check_dependency_fanout.py": "b6a9a8ed54d68c09b99165031b0c62a6e65f3ee2cb843a1709451cccb71edaa4",
+    "cache_bridge.cpp": "2fdf8e56d5aeab4f6a4b2ce215a9a536301c52c3229db6e85850b41a951c0528",
+    "handoff_bridge.cpp": "5b8f7bff617031ee3b0e2c155852ea892cdcadf7cf42c51899c10a5e184e3d60",
+    "handoff_benchmark.py": "9d211fbb2d6f760f66e19defd073b829f02d3dbf8a53297f506ae0a75caa76c7",
+    "project_bridge.cpp": "28b30b3aa80e7a76f72fd7df7c4ad60dcc2baa67ec3e529cd5628ce6a45359e0",
+    "check_schedule_small.py": "8eaa8b3a89fd62cdde231e514c1f0fbd51442711cee9abce4d8e9ddbc7863023",
+    "incremental_conditions.py": "3c8a18024c2aaef4285de3490ffbcf48fad33f9d70531d7f25bc4e9305badcd8",
+    "object_cache_benchmark.py": "9c4a473a22da92d11535f6455a7713c211aec317d3357271387345e90ef85a42",
+    "trace_project_inputs.py": "6ce7622f7afe3e01bc0b27abfc047ef94d002e09b57144e9331dbae330f84fb6"
+  }
+}

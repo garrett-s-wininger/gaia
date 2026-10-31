@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "path_base": "repository-root",
+  "scope": "Ruby-specific real CLI loading, ISeq archive and full-verification provider comparison.",
+  "experiments": [
+    {
+      "id": "RUBY-RUBOCOP-STARTUP",
+      "status": "measured-bootsnap-baseline-pack-negative-and-sha-provider-refinement",
+      "report": "experiments/ruby_startup/results/initial/REPORT.md",
+      "raw": "experiments/ruby_startup/results/initial/results.json",
+      "summary": "experiments/ruby_startup/results/initial/summary.json",
+      "validation": "experiments/ruby_startup/results/initial/validation.json",
+      "initial_raw": "experiments/ruby_startup/results/initial/initial-control/results.json",
+      "initial_validation": "experiments/ruby_startup/results/initial/initial-control/validation.json",
+      "profile": "experiments/ruby_startup/results/initial/loader-profile.json",
+      "bytecode": "experiments/ruby_startup/results/initial/bytecode-equivalence.json",
+      "gems": "experiments/ruby_startup/results/initial/gem-provenance.json",
+      "findings": "research/ruby/findings.md"
+    }
+  ],
+  "raw_evidence": {
+    "manifest": "research/evidence.json",
+    "availability": "Raw observations and generated caches are ignored local artifacts; no download has been published."
+  }
+}

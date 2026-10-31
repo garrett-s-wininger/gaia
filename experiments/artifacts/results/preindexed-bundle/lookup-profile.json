@@ -1,0 +1,406 @@
+{
+  "scope": "Separate intrusive full-workload profile. Cumulative times overlap and cannot be compared to uninstrumented process medians.",
+  "correct": true,
+  "functions": [
+    {
+      "file": "persistent_zip_loader.py",
+      "line": 34,
+      "function": "exec_module",
+      "calls": 460,
+      "self_seconds": 0.000340526,
+      "cumulative_seconds": 0.16958719600000002
+    },
+    {
+      "file": "compact_python.py",
+      "line": 1,
+      "function": "<module>",
+      "calls": 1,
+      "self_seconds": 2.1799000000000003e-05,
+      "cumulative_seconds": 0.056678228000000004
+    },
+    {
+      "file": "persistent_zip_loader.py",
+      "line": 44,
+      "function": "get_code",
+      "calls": 460,
+      "self_seconds": 0.0036376250000000002,
+      "cumulative_seconds": 0.048156005
+    },
+    {
+      "file": "compact_python.py",
+      "line": 187,
+      "function": "lookup",
+      "calls": 2322,
+      "self_seconds": 0.005521049,
+      "cumulative_seconds": 0.022407611
+    },
+    {
+      "file": "compact_python.py",
+      "line": 96,
+      "function": "__getitem__",
+      "calls": 1738,
+      "self_seconds": 0.001592007,
+      "cumulative_seconds": 0.019601891
+    },
+    {
+      "file": "compact_python.py",
+      "line": 183,
+      "function": "name",
+      "calls": 23889,
+      "self_seconds": 0.007678478000000001,
+      "cumulative_seconds": 0.017627093
+    },
+    {
+      "file": "persistent_zip_loader.py",
+      "line": 118,
+      "function": "find_spec",
+      "calls": 682,
+      "self_seconds": 0.0010033800000000001,
+      "cumulative_seconds": 0.017419425000000002
+    },
+    {
+      "file": "compact_python.py",
+      "line": 196,
+      "function": "read",
+      "calls": 475,
+      "self_seconds": 0.00227608,
+      "cumulative_seconds": 0.012549566000000002
+    },
+    {
+      "file": "compact_python.py",
+      "line": 180,
+      "function": "row",
+      "calls": 26006,
+      "self_seconds": 0.006793337000000001,
+      "cumulative_seconds": 0.010729995
+    },
+    {
+      "file": "preindexed_bundle.py",
+      "line": 1,
+      "function": "<module>",
+      "calls": 1,
+      "self_seconds": 1.006e-05,
+      "cumulative_seconds": 0.0026562530000000003
+    },
+    {
+      "file": "indexed_path_loader.py",
+      "line": 19,
+      "function": "find_spec",
+      "calls": 77,
+      "self_seconds": 0.00011594,
+      "cumulative_seconds": 0.002199918
+    },
+    {
+      "file": "compact_python.py",
+      "line": 219,
+      "function": "open_archive",
+      "calls": 1300,
+      "self_seconds": 0.000378571,
+      "cumulative_seconds": 0.001720092
+    },
+    {
+      "file": "persistent_zip_loader.py",
+      "line": 73,
+      "function": "get_resource_reader",
+      "calls": 63,
+      "self_seconds": 0.00014335200000000002,
+      "cumulative_seconds": 0.001486801
+    },
+    {
+      "file": "persistent_zip_loader.py",
+      "line": 91,
+      "function": "open_archive",
+      "calls": 1300,
+      "self_seconds": 0.000147498,
+      "cumulative_seconds": 0.0013404690000000002
+    },
+    {
+      "file": "compact_python.py",
+      "line": 119,
+      "function": "__getitem__",
+      "calls": 95,
+      "self_seconds": 8.023500000000001e-05,
+      "cumulative_seconds": 0.0011854390000000002
+    },
+    {
+      "file": "preindexed_bundle.py",
+      "line": 78,
+      "function": "__init__",
+      "calls": 1,
+      "self_seconds": 0.00037825200000000004,
+      "cumulative_seconds": 0.001131113
+    },
+    {
+      "file": "indexed_path_loader.py",
+      "line": 33,
+      "function": "iter_modules",
+      "calls": 77,
+      "self_seconds": 2.6039000000000003e-05,
+      "cumulative_seconds": 0.000621963
+    },
+    {
+      "file": "compact_python.py",
+      "line": 129,
+      "function": "__getitem__",
+      "calls": 18,
+      "self_seconds": 9.4443e-05,
+      "cumulative_seconds": 0.000550151
+    },
+    {
+      "file": "persistent_zip_loader.py",
+      "line": 1,
+      "function": "<module>",
+      "calls": 1,
+      "self_seconds": 5.590000000000001e-06,
+      "cumulative_seconds": 0.000365071
+    },
+    {
+      "file": "indexed_path_loader.py",
+      "line": 59,
+      "function": "path_hook",
+      "calls": 30,
+      "self_seconds": 9.2664e-05,
+      "cumulative_seconds": 0.000145236
+    },
+    {
+      "file": "indexed_path_loader.py",
+      "line": 117,
+      "function": "close",
+      "calls": 1,
+      "self_seconds": 3.0997e-05,
+      "cumulative_seconds": 0.000124876
+    },
+    {
+      "file": "persistent_zip_loader.py",
+      "line": 132,
+      "function": "close",
+      "calls": 1,
+      "self_seconds": 3.897e-06,
+      "cumulative_seconds": 6.964200000000001e-05
+    },
+    {
+      "file": "compact_python.py",
+      "line": 205,
+      "function": "close",
+      "calls": 1,
+      "self_seconds": 8.537e-06,
+      "cumulative_seconds": 6.5745e-05
+    },
+    {
+      "file": "preindexed_bundle.py",
+      "line": 68,
+      "function": "metadata",
+      "calls": 1,
+      "self_seconds": 1.4508e-05,
+      "cumulative_seconds": 5.6858000000000003e-05
+    },
+    {
+      "file": "persistent_zip_loader.py",
+      "line": 27,
+      "function": "__init__",
+      "calls": 470,
+      "self_seconds": 4.9192000000000006e-05,
+      "cumulative_seconds": 4.9192000000000006e-05
+    },
+    {
+      "file": "indexed_path_loader.py",
+      "line": 56,
+      "function": "owns_path",
+      "calls": 53,
+      "self_seconds": 2.7737000000000002e-05,
+      "cumulative_seconds": 3.7167000000000005e-05
+    },
+    {
+      "file": "persistent_zip_loader.py",
+      "line": 31,
+      "function": "create_module",
+      "calls": 460,
+      "self_seconds": 3.4519e-05,
+      "cumulative_seconds": 3.4519e-05
+    },
+    {
+      "file": "indexed_path_loader.py",
+      "line": 1,
+      "function": "<module>",
+      "calls": 1,
+      "self_seconds": 4.168000000000001e-06,
+      "cumulative_seconds": 3.2181e-05
+    },
+    {
+      "file": "indexed_path_loader.py",
+      "line": 106,
+      "function": "install",
+      "calls": 1,
+      "self_seconds": 1.1174e-05,
+      "cumulative_seconds": 2.3334e-05
+    },
+    {
+      "file": "compact_python.py",
+      "line": 214,
+      "function": "provider_type",
+      "calls": 1,
+      "self_seconds": 2.325e-06,
+      "cumulative_seconds": 2.2884e-05
+    },
+    {
+      "file": "indexed_path_loader.py",
+      "line": 63,
+      "function": "<genexpr>",
+      "calls": 97,
+      "self_seconds": 1.4245000000000002e-05,
+      "cumulative_seconds": 1.4245000000000002e-05
+    },
+    {
+      "file": "indexed_path_loader.py",
+      "line": 48,
+      "function": "__init__",
+      "calls": 1,
+      "self_seconds": 4.619e-06,
+      "cumulative_seconds": 8.436e-06
+    },
+    {
+      "file": "indexed_path_loader.py",
+      "line": 16,
+      "function": "__init__",
+      "calls": 23,
+      "self_seconds": 4.823e-06,
+      "cumulative_seconds": 4.823e-06
+    },
+    {
+      "file": "compact_python.py",
+      "line": 137,
+      "function": "Reader",
+      "calls": 1,
+      "self_seconds": 2.735e-06,
+      "cumulative_seconds": 2.735e-06
+    },
+    {
+      "file": "compact_python.py",
+      "line": 125,
+      "function": "Children",
+      "calls": 1,
+      "self_seconds": 2.555e-06,
+      "cumulative_seconds": 2.555e-06
+    },
+    {
+      "file": "compact_python.py",
+      "line": 91,
+      "function": "Table",
+      "calls": 1,
+      "self_seconds": 2.054e-06,
+      "cumulative_seconds": 2.054e-06
+    },
+    {
+      "file": "compact_python.py",
+      "line": 105,
+      "function": "Directories",
+      "calls": 1,
+      "self_seconds": 1.7530000000000002e-06,
+      "cumulative_seconds": 1.7530000000000002e-06
+    },
+    {
+      "file": "compact_python.py",
+      "line": 113,
+      "function": "Packages",
+      "calls": 1,
+      "self_seconds": 1.6230000000000002e-06,
+      "cumulative_seconds": 1.6230000000000002e-06
+    },
+    {
+      "file": "persistent_zip_loader.py",
+      "line": 81,
+      "function": "__init__",
+      "calls": 1,
+      "self_seconds": 1.613e-06,
+      "cumulative_seconds": 1.613e-06
+    },
+    {
+      "file": "compact_python.py",
+      "line": 92,
+      "function": "__init__",
+      "calls": 3,
+      "self_seconds": 1.221e-06,
+      "cumulative_seconds": 1.221e-06
+    },
+    {
+      "file": "compact_python.py",
+      "line": 218,
+      "function": "CompactProvider",
+      "calls": 1,
+      "self_seconds": 1.142e-06,
+      "cumulative_seconds": 1.142e-06
+    },
+    {
+      "file": "compact_python.py",
+      "line": 93,
+      "function": "__len__",
+      "calls": 1,
+      "self_seconds": 1.052e-06,
+      "cumulative_seconds": 1.052e-06
+    },
+    {
+      "file": "preindexed_bundle.py",
+      "line": 27,
+      "function": "identity",
+      "calls": 1,
+      "self_seconds": 1.001e-06,
+      "cumulative_seconds": 1.001e-06
+    },
+    {
+      "file": "persistent_zip_loader.py",
+      "line": 80,
+      "function": "PersistentZipProvider",
+      "calls": 1,
+      "self_seconds": 8.91e-07,
+      "cumulative_seconds": 8.91e-07
+    },
+    {
+      "file": "indexed_path_loader.py",
+      "line": 47,
+      "function": "IndexedPathProvider",
+      "calls": 1,
+      "self_seconds": 8.610000000000001e-07,
+      "cumulative_seconds": 8.610000000000001e-07
+    },
+    {
+      "file": "compact_python.py",
+      "line": 106,
+      "function": "__init__",
+      "calls": 1,
+      "self_seconds": 8.22e-07,
+      "cumulative_seconds": 8.22e-07
+    },
+    {
+      "file": "indexed_path_loader.py",
+      "line": 15,
+      "function": "IndexPathFinder",
+      "calls": 1,
+      "self_seconds": 8.210000000000001e-07,
+      "cumulative_seconds": 8.210000000000001e-07
+    },
+    {
+      "file": "persistent_zip_loader.py",
+      "line": 26,
+      "function": "ModuleLoader",
+      "calls": 1,
+      "self_seconds": 6.71e-07,
+      "cumulative_seconds": 6.71e-07
+    },
+    {
+      "file": "preindexed_bundle.py",
+      "line": 77,
+      "function": "Reader",
+      "calls": 1,
+      "self_seconds": 6.51e-07,
+      "cumulative_seconds": 6.51e-07
+    },
+    {
+      "file": "persistent_zip_loader.py",
+      "line": 17,
+      "function": "ResourceReader",
+      "calls": 1,
+      "self_seconds": 4.71e-07,
+      "cumulative_seconds": 4.71e-07
+    }
+  ]
+}

@@ -1,0 +1,323 @@
+{
+  "purpose": "Separate diagnostic function counts; profiling adds overhead and does not supply timing samples.",
+  "source_run": "20261030T194327.477685Z",
+  "sources": {
+    "condition_index.py": "0b95f1538856ff0f01f50cd880c46b076fd3df219600ec028f71381071f336c6",
+    "incremental_conditions.py": "3c8a18024c2aaef4285de3490ffbcf48fad33f9d70531d7f25bc4e9305badcd8"
+  },
+  "profiles": [
+    {
+      "variant": "reference",
+      "metadata": {
+        "queries": 5266,
+        "conditions": 275,
+        "positive_files": 187,
+        "kinds": {
+          "0": 58,
+          "1": 187,
+          "2": 30
+        },
+        "bytes": 37018
+      },
+      "functions": [
+        {
+          "file": "condition_index.py",
+          "line": 17,
+          "function": "canonical",
+          "calls": 5499
+        },
+        {
+          "file": "condition_index.py",
+          "line": 25,
+          "function": "prefixes",
+          "calls": 4924
+        },
+        {
+          "file": "condition_index.py",
+          "line": 32,
+          "function": "namespace_nodes",
+          "calls": 1
+        },
+        {
+          "file": "condition_index.py",
+          "line": 41,
+          "function": "<genexpr>",
+          "calls": 316
+        },
+        {
+          "file": "condition_index.py",
+          "line": 57,
+          "function": "selected_journals",
+          "calls": 1
+        },
+        {
+          "file": "condition_index.py",
+          "line": 59,
+          "function": "<genexpr>",
+          "calls": 32
+        },
+        {
+          "file": "condition_index.py",
+          "line": 81,
+          "function": "decode_journal",
+          "calls": 31
+        },
+        {
+          "file": "condition_index.py",
+          "line": 110,
+          "function": "build_index",
+          "calls": 1
+        },
+        {
+          "file": "condition_index.py",
+          "line": 113,
+          "function": "add",
+          "calls": 28691
+        },
+        {
+          "file": "condition_index.py",
+          "line": 138,
+          "function": "encode_conditions",
+          "calls": 1
+        }
+      ]
+    },
+    {
+      "variant": "batched",
+      "metadata": {
+        "queries": 5266,
+        "conditions": 275,
+        "positive_files": 187,
+        "kinds": {
+          "0": 58,
+          "1": 187,
+          "2": 30
+        },
+        "bytes": 37018,
+        "target_paths": 258,
+        "condition_merges": 1950,
+        "fragment_hits": 0,
+        "fragment_misses": 31,
+        "queries_parsed": 5266
+      },
+      "functions": [
+        {
+          "file": "condition_index.py",
+          "line": 17,
+          "function": "canonical",
+          "calls": 5529
+        },
+        {
+          "file": "condition_index.py",
+          "line": 25,
+          "function": "prefixes",
+          "calls": 4924
+        },
+        {
+          "file": "condition_index.py",
+          "line": 32,
+          "function": "namespace_nodes",
+          "calls": 1
+        },
+        {
+          "file": "condition_index.py",
+          "line": 41,
+          "function": "<genexpr>",
+          "calls": 316
+        },
+        {
+          "file": "condition_index.py",
+          "line": 57,
+          "function": "selected_journals",
+          "calls": 1
+        },
+        {
+          "file": "condition_index.py",
+          "line": 59,
+          "function": "<genexpr>",
+          "calls": 32
+        },
+        {
+          "file": "condition_index.py",
+          "line": 81,
+          "function": "decode_journal",
+          "calls": 31
+        },
+        {
+          "file": "condition_index.py",
+          "line": 138,
+          "function": "encode_conditions",
+          "calls": 1
+        },
+        {
+          "file": "incremental_conditions.py",
+          "line": 27,
+          "function": "parse_fragment",
+          "calls": 31
+        },
+        {
+          "file": "incremental_conditions.py",
+          "line": 38,
+          "function": "assemble",
+          "calls": 1
+        },
+        {
+          "file": "incremental_conditions.py",
+          "line": 46,
+          "function": "add",
+          "calls": 4087
+        },
+        {
+          "file": "incremental_conditions.py",
+          "line": 82,
+          "function": "build_batched",
+          "calls": 1
+        },
+        {
+          "file": "incremental_conditions.py",
+          "line": 86,
+          "function": "<genexpr>",
+          "calls": 32
+        }
+      ]
+    },
+    {
+      "variant": "incremental-warm",
+      "metadata": {
+        "queries": 5266,
+        "conditions": 275,
+        "positive_files": 187,
+        "kinds": {
+          "0": 58,
+          "1": 187,
+          "2": 30
+        },
+        "bytes": 37018,
+        "target_paths": 258,
+        "condition_merges": 1950,
+        "fragment_hits": 31,
+        "fragment_misses": 0,
+        "queries_parsed": 0,
+        "fragment_cache_valid": true,
+        "fragment_cache_bytes": 37210,
+        "fragment_cache_published": true
+      },
+      "functions": [
+        {
+          "file": "condition_index.py",
+          "line": 17,
+          "function": "canonical",
+          "calls": 522
+        },
+        {
+          "file": "condition_index.py",
+          "line": 25,
+          "function": "prefixes",
+          "calls": 4924
+        },
+        {
+          "file": "condition_index.py",
+          "line": 32,
+          "function": "namespace_nodes",
+          "calls": 1
+        },
+        {
+          "file": "condition_index.py",
+          "line": 41,
+          "function": "<genexpr>",
+          "calls": 316
+        },
+        {
+          "file": "condition_index.py",
+          "line": 138,
+          "function": "encode_conditions",
+          "calls": 1
+        },
+        {
+          "file": "incremental_conditions.py",
+          "line": 38,
+          "function": "assemble",
+          "calls": 1
+        },
+        {
+          "file": "incremental_conditions.py",
+          "line": 46,
+          "function": "add",
+          "calls": 4087
+        },
+        {
+          "file": "incremental_conditions.py",
+          "line": 91,
+          "function": "__init__",
+          "calls": 1
+        },
+        {
+          "file": "incremental_conditions.py",
+          "line": 92,
+          "function": "take",
+          "calls": 766
+        },
+        {
+          "file": "incremental_conditions.py",
+          "line": 95,
+          "function": "number",
+          "calls": 384
+        },
+        {
+          "file": "incremental_conditions.py",
+          "line": 96,
+          "function": "ids",
+          "calls": 62
+        },
+        {
+          "file": "incremental_conditions.py",
+          "line": 100,
+          "function": "<genexpr>",
+          "calls": 4534
+        },
+        {
+          "file": "incremental_conditions.py",
+          "line": 101,
+          "function": "<genexpr>",
+          "calls": 4534
+        },
+        {
+          "file": "incremental_conditions.py",
+          "line": 106,
+          "function": "read_cache",
+          "calls": 1
+        },
+        {
+          "file": "incremental_conditions.py",
+          "line": 135,
+          "function": "encode_cache",
+          "calls": 1
+        },
+        {
+          "file": "incremental_conditions.py",
+          "line": 148,
+          "function": "<genexpr>",
+          "calls": 4534
+        },
+        {
+          "file": "incremental_conditions.py",
+          "line": 153,
+          "function": "write_cache",
+          "calls": 1
+        },
+        {
+          "file": "incremental_conditions.py",
+          "line": 162,
+          "function": "build_incremental",
+          "calls": 1
+        },
+        {
+          "file": "incremental_conditions.py",
+          "line": 168,
+          "function": "<genexpr>",
+          "calls": 6045
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+test_both_digest_and_crc_are_enforced (test_compact_python.CompactPythonTests.test_both_digest_and_crc_are_enforced) ... ok
+test_changed_container_fails_and_same_session_detects_corrupt_bytes (test_compact_python.CompactPythonTests.test_changed_container_fails_and_same_session_detects_corrupt_bytes) ... ok
+test_index_pin_binding_truncation_and_unsupported_version (test_compact_python.CompactPythonTests.test_index_pin_binding_truncation_and_unsupported_version) ... ok
+test_lookup_resources_packages_children_and_lifetime (test_compact_python.CompactPythonTests.test_lookup_resources_packages_children_and_lifetime) ... ok
+test_pack_and_zip_same_bytes_and_integrity_policy (test_compact_python.CompactPythonTests.test_pack_and_zip_same_bytes_and_integrity_policy) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.017s
+
+OK

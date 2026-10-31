@@ -1,5 +1,7 @@
 # Dependency-loader findings
 
+For current conclusions and practical limits, start with the [research review](../../../research/python/dependency-formats.md). These notes retain the detailed experiment comparisons; measured reports remain under `results/`.
+
 Latest: [the generic byte-access follow-up](#generic-byte-access-follow-up) isolates positional/mapped/resident reads while retaining the same stored ZIP bytes and CRC policy. Earlier loading/lifetime results remain below in order.
 
 Run: `20261028T203402.062015Z`. Full tables: [REPORT.md](results/REPORT.md). Raw observations and environment: results.json (local artifact, `results/results.json`). Reproduction: [README.md](README.md).

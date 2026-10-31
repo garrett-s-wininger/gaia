@@ -1,0 +1,70 @@
+{
+  "run_id": "20261030T134654.935811Z",
+  "purpose": "single-block correctness regression, not a performance conclusion",
+  "raw_sha256": "026d152debe272c7d7c9bc18df903a34be76ebc03460ab77ba5e89c9fc5782fe",
+  "cases": [
+    {
+      "scenario": "high-fanout-header",
+      "engine": "gaia-journal",
+      "compilers": 26,
+      "links": 1,
+      "artifacts_match": true
+    },
+    {
+      "scenario": "high-fanout-header",
+      "engine": "gaia-history",
+      "compilers": 26,
+      "links": 1,
+      "artifacts_match": true
+    },
+    {
+      "scenario": "high-fanout-header",
+      "engine": "gaia-fast",
+      "compilers": 26,
+      "links": 1,
+      "artifacts_match": true
+    },
+    {
+      "scenario": "flags",
+      "engine": "gaia-journal",
+      "compilers": 31,
+      "links": 1,
+      "artifacts_match": true
+    },
+    {
+      "scenario": "flags",
+      "engine": "gaia-history",
+      "compilers": 31,
+      "links": 1,
+      "artifacts_match": true
+    },
+    {
+      "scenario": "flags",
+      "engine": "gaia-fast",
+      "compilers": 31,
+      "links": 1,
+      "artifacts_match": true
+    },
+    {
+      "scenario": "clean",
+      "engine": "gaia-journal",
+      "compilers": 31,
+      "links": 1,
+      "artifacts_match": true
+    },
+    {
+      "scenario": "clean",
+      "engine": "gaia-history",
+      "compilers": 31,
+      "links": 1,
+      "artifacts_match": true
+    },
+    {
+      "scenario": "clean",
+      "engine": "gaia-fast",
+      "compilers": 31,
+      "links": 1,
+      "artifacts_match": true
+    }
+  ]
+}

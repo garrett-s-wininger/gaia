@@ -18,8 +18,8 @@ We are testing whether explicit inputs, reusable tool processes and direct data 
 | --- | --- |
 | [Source control](components/source-control/README.md) | Agreed MVP behavior and first local-engine milestone; implementation has not started. |
 | [Dependencies](components/dependencies/README.md) | Python loading and resolution experiments; broader interfaces remain open. |
-| [Compiler tools](components/compiler/README.md) | Working research prototypes for invocation, scheduling, caching and input preparation. |
+| [Compiler tools](components/compiler/README.md) | Native and managed compiler research: invocation, bounded workers, caching and explicit inputs. |
 | [Editor](components/editor/README.md) | Scope and integration questions; no implementation or agreed MVP yet. |
-| [Artifact host](components/artifact-host/README.md) | Scope and integration questions; no service or remote protocol yet. |
+| [Artifact host](components/artifact-host/README.md) | Initial transfer, framing and local-cache research; production service and public protocol remain open. |
 
 [Experiments](experiments/README.md) contain runnable research and retained evidence. They are not production implementations or standardized protocols. Use the [reproduction guide](experiments/reproducing.md) to generate inputs and results on your machine.

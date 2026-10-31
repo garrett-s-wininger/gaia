@@ -2,6 +2,9 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 
+# Shared disposable toolchains, caches and active experiment work areas.
+/experiments/_work/
+
 # Full research observations and profiler captures stay outside source history.
 # Keep reports, acquisition manifests, provenance and validation summaries.
 /experiments/**/results/**/results.json

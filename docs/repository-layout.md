@@ -9,15 +9,26 @@ components/                       product boundaries and designs
   dependencies/                   ecosystem/input-access boundary
   compiler/                       tool invocation and execution boundary
   editor/                         planned; open design questions
-  artifact-host/                  planned; open design questions
+  artifact-host/                  transfer research design; public protocol open
 docs/                             platform-wide direction and repository guidance
 research/                         findings and prospects for human readers
   compiler/                       compiler conclusions, next experiments, run index
-  python/                         loading/resolution conclusions, plans, run index
+    jvm/                          managed Java compiler findings and run index
+  python/                         Python loading/resolution and Python/Node state reuse
+  artifacts/                      transfer conclusions, next questions, run index
+  java/                           JVM framework startup findings and run index
+  ruby/                           Ruby loading findings and run index
+  dotnet/                         .NET preparation findings and run index
 experiments/                      runnable code, lab notes and evidence
   compiler/
+  artifacts/
   python/dependency_bundles/
   python/dependency_solving/
+  python/interpreter_snapshots/
+  java/startup/
+  java/compiler/
+  ruby_startup/
+  dotnet_startup/
 tools/                            repository maintenance checks
 ```
 
@@ -35,4 +46,4 @@ Commit reports, acquisition manifests, provenance and validation summaries. Full
 
 Source-control contracts live under `components/source-control/`. Python experiment plans live under `research/python/designs/`. Keep documentation current rather than retaining superseded copies; preserve measurements and reproduction evidence under `experiments/`.
 
-Run `python3 tools/check_repository.py` to check active Markdown links and run-index paths. Run focused implementation tests when moving code. Directory moves alone do not require rerunning performance matrices; new source/toolchain behavior does.
+Run `python3 tools/check_repository.py` to check versioned Markdown links, run-index paths, raw-data ignore rules and the hashes of available evidence. Run focused implementation tests when moving code. Directory moves alone do not require rerunning performance matrices; new source/toolchain behavior does.

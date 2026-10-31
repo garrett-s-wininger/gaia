@@ -1,0 +1,137 @@
+{
+  "run_id": "2026-10-31T01:38:26.125132+00:00",
+  "node": "v26.12.0",
+  "node_sha256": "6dcdb9bbe2bf22bd053ba06d5ba7b8a2d92b2d3d8c714f3b2670be3d2728c9c8",
+  "source_sha256": {
+    "typescript_workload.js": "d22ac19f38b01ae9639187db7602d148fb7fecb6d19b9a71e9fd922f3efcfa26",
+    "node_dependency_benchmark.py": "a82d185851b1842765fd2857e6e93dd5a372ab097daa7b0657f7daa319c583cc"
+  },
+  "compiler_sha256": "3ae902c92cc44dace175c0e69e13a4b0899f6983c6121d76b9ab8dd5795e7675",
+  "compiler_bytes": 9112572,
+  "bundle_sha256": "1588ec0f204261465f21c70367d3dd6220bebd6b30ae38bfc6afbfbd49920cf5",
+  "bundle_bytes": 9115310,
+  "provenance": {
+    "name": "typescript",
+    "version": "5.9.3",
+    "metadata_url": "https://registry.npmjs.org/typescript/5.9.3",
+    "dist": {
+      "shasum": "5b4f59e15310ab17a216f5d6cf53ee476ede670f",
+      "tarball": "https://registry.npmjs.org/typescript/-/typescript-5.9.3.tgz",
+      "fileCount": 132,
+      "integrity": "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==",
+      "signatures": [
+        {
+          "sig": "MEYCIQC5ifNi1il+zAZC19ov+Q5oSrhOwlpOpghAaAAXYA0RpAIhAKdcZ6pMNZGuprpke8Zi3OPB1zol9c88KVW+apJNVjTy",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "unpackedSize": 23625066
+    },
+    "tarball_sha256": "10e108c9cf7d5f2879053dff18515fb405abf2ccef63eaaf017d9c571687a1d3",
+    "bytes": 4377468
+  },
+  "prepare_seconds": 1.244945269994787,
+  "setup": [
+    {
+      "mode": "snapshot",
+      "seconds": 0.5530235639962484,
+      "bytes": 20318198,
+      "sha256": "aaef55277df8dc74f186a24ffd8a454b5cbca8995d8add08dd4d8717bdef2bd6",
+      "stderr": "(node) Warning: It's not yet fully verified whether built-in module \"perf_hooks\" works in user snapshot builder scripts.\nIt may still work in some cases, but in other cases certain run-time states may be out-of-sync after snapshot deserialization.\nTo request support for the module, use the Node.js issue tracker: https://github.com/nodejs/node/issues\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    },
+    {
+      "mode": "snapshot-no-codecache",
+      "seconds": 0.3967680710047716,
+      "bytes": 14925048,
+      "sha256": "3ffb67ce76f4e547e21c098a62f8626eab308a15fa727c6188314e9b3b7a95ee",
+      "stderr": "(node) Warning: It's not yet fully verified whether built-in module \"perf_hooks\" works in user snapshot builder scripts.\nIt may still work in some cases, but in other cases certain run-time states may be out-of-sync after snapshot deserialization.\nTo request support for the module, use the Node.js issue tracker: https://github.com/nodejs/node/issues\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    }
+  ],
+  "trials": 7,
+  "scope": "Fresh process full launch+request+stdout+normal exit; warm page cache. Snapshot retains compiler initialization only, not request results.",
+  "audit": [
+    {
+      "mode": "snapshot",
+      "source_absent": true,
+      "outputs_match": true,
+      "initialization_marker": "BUILD-snapshot"
+    },
+    {
+      "mode": "snapshot-no-codecache",
+      "source_absent": true,
+      "outputs_match": true,
+      "initialization_marker": "BUILD-snapshot-no-codecache"
+    }
+  ],
+  "raw_sha256": "2a913c42a2e8a44d8e7f0fab59f3e1c5994362935980e9e6d04f89fa8a166302",
+  "cases": [
+    {
+      "mode": "require",
+      "median_ms": 198.12354399618926,
+      "min_ms": 191.4256870004465,
+      "max_ms": 235.080113998265,
+      "rss_median_bytes": 103124992,
+      "memory_median_bytes": {
+        "rss": 103124992,
+        "heapTotal": 21610496,
+        "heapUsed": 17252464,
+        "external": 11417444,
+        "arrayBuffers": 144267
+      },
+      "paired_wins_vs_bundle": 3,
+      "paired_wins_vs_require": 0,
+      "blocks": 7
+    },
+    {
+      "mode": "bundle",
+      "median_ms": 201.57078999909572,
+      "min_ms": 190.77676899905782,
+      "max_ms": 223.30531400075415,
+      "rss_median_bytes": 102739968,
+      "memory_median_bytes": {
+        "rss": 102739968,
+        "heapTotal": 21086208,
+        "heapUsed": 17188312,
+        "external": 11420182,
+        "arrayBuffers": 144267
+      },
+      "paired_wins_vs_bundle": 0,
+      "paired_wins_vs_require": 4,
+      "blocks": 7
+    },
+    {
+      "mode": "snapshot",
+      "median_ms": 117.27984000026481,
+      "min_ms": 113.45714799972484,
+      "max_ms": 121.80311800329946,
+      "rss_median_bytes": 91254784,
+      "memory_median_bytes": {
+        "rss": 91254784,
+        "heapTotal": 27127808,
+        "heapUsed": 24082544,
+        "external": 2308626,
+        "arrayBuffers": 144267
+      },
+      "paired_wins_vs_bundle": 7,
+      "paired_wins_vs_require": 7,
+      "blocks": 7
+    },
+    {
+      "mode": "snapshot-no-codecache",
+      "median_ms": 132.40516299993033,
+      "min_ms": 130.94407899916405,
+      "max_ms": 150.4986860018107,
+      "rss_median_bytes": 87691264,
+      "memory_median_bytes": {
+        "rss": 87691264,
+        "heapTotal": 25817088,
+        "heapUsed": 22879304,
+        "external": 2308626,
+        "arrayBuffers": 144267
+      },
+      "paired_wins_vs_bundle": 7,
+      "paired_wins_vs_require": 7,
+      "blocks": 7
+    }
+  ]
+}

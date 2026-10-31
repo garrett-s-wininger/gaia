@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "timed_operations": 24,
+  "clean_boundaries": 2,
+  "independent_cli_artifacts_and_runtime_match": true,
+  "all_native_object_sha256_match": true,
+  "crt_original_alias_links_byte_identical": true,
+  "prepost_source_sdk_link_pins_checked": true,
+  "whole_link_history_disabled_both": true,
+  "raw_sha256": "3f3c10dc2d923bf7261f9f0ccfd865f81c7b7169408513ce62e9c200b72f3504"
+}

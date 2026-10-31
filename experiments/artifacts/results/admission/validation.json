@@ -1,0 +1,13 @@
+{
+  "run_id": "20261031T005250.489572Z",
+  "passed": true,
+  "timed_operations": 1344,
+  "independently_verified_objects": 117376,
+  "all_logical_views_and_materialized_files_match": true,
+  "all_receipts_match": true,
+  "matched_transfer_plans_counts_and_logical_hash_work": true,
+  "all_server_counters_match": true,
+  "all_publication_and_materialization_counts_match": true,
+  "cached_all_zero_network": true,
+  "raw_sha256": "cec180c539d53117f1b1cd9cac8ec6b07ba96e2a9a8a73c1085cc1d92a688fae"
+}

@@ -1,4 +1,19 @@
-# Programmatic compiler invocation: first findings
+# Native compiler experiment notes
+
+For current conclusions and practical limits, start with the [research review](../../research/compiler/findings.md). These notes retain the detailed experiment comparisons; measured reports remain under `results/`.
+
+The [baseline-seeded C++ graph](cpp_graph/results/baseline-seeded/REPORT.md) measures four targets/six TUs using real upstream fmt plus labelled integration fixtures. Source/header/revert take 293.49/382.32/55.10 ms versus Ninja + ccache at 397.91/423.45/71.18 ms, with 3/3 paired wins and exact compilation/link counts. Both object caches reset to baseline each block; shared immutable input caches remain warm. Whole-link history is disabled for both. Repeated-edit history hits are published separately.
+
+[Authoritative logical generations](results/logical-inputs/REPORT.md) reduce source edits to 42.25 ms versus the same-host physical adapter's 48.78 ms and low-fanout headers to about 21 versus 28 ms (7/7 paired wins). All 213 tests and 174 measured builds pass. This is an explicit editor/source-control API contract: admitted immutable bytes are authoritative, unreported physical edits are not. Strict physical import remains separately charged; the in-process checker preserves tool/output/negative/current-generation guards.
+
+[Sealed bases and explicit overlays](results/shared-inputs/REPORT.md) reduce source/header builds to 47.82/28.33/28.01 ms versus same-host full snapshots at 55.90/33.56/33.59 ms. All external checks and exact index bytes remain. All 201 tests and 174 measured libraries pass; warm seed restoration and full clean admission are explicit.
+
+
+[Batched Odin verification](results/native-conditions/REPORT.md) reduces export from 5.3–5.7 to 4.4–4.6 ms while preserving all reads/hashes and exact wire output. Both native modes pass the differential/invalidation suites; all 181 tests and 219 measured libraries pass. Final row emission adds little compared with native verification alone.
+
+
+The [retained condition producer](results/retained-conditions/REPORT.md) reduces export from about 9.2 to 5.2 ms while preserving every backing-file check and exact reference wire bytes. Matched source/header builds take 54.69/32–33 ms and beat both Ninja controls in all seven blocks. All 135 tests pass; warm-session retention and a separate shared reader fix are documented.
+
 
 The first native experiment supports **batching compiler requests in one process** and, on the header-heavy batch, **supplying immutable inputs directly to the compiler's VFS**. This is a synthetic C fixture on one Linux laptop, not a representative project benchmark or a standardized tool protocol.
 
@@ -342,3 +357,82 @@ Seventeen post-run groups inspect the seed's actual negative optional/shadow/dir
 A separate [real shared-header check](results/dependency-cache/fanout-check.json) edits Zstandard's `common/compiler.h` with an emitted marker. Independent CLI dependency discovery identifies 26 readers, and fresh CLI compilation changes exactly those 26 object files. Journal validation recompiles **26 units and reuses five**, with every object/library matching that fresh reference. This verifies actual high-fanout behavior without implying a one-unit rebuild for widely used headers; it is a correctness check outside the timing tables.
 
 The next useful optimization is an **exact-view fast path followed by journal validation on mismatch**: unchanged views and unaffected source siblings need not pay replay cost, while header/namespace edits retain selective validation. Shared observation batching, metadata/content-ID snapshots that avoid full materialization, and resident consumers are further separate experiments. The current result supports an optional compiler-observation capability and explicit incremental input updates; neither the LLVM-specific journal nor these snapshot/cache encodings are standardized protocols.
+
+## Matched Ninja incremental builds
+
+The [matched comparison](results/ninja-comparison/REPORT.md) uses seven randomized blocks across three engines and nine cases: 189 builds, 5,859 object identities and 189 libraries matching independent CLI references. All runtime probes and expected incremental compile/link counts pass. Ninja 1.13.2 and ccache 4.14.1 use the same Clang/LLVM/LLD 22.1.8 and eight-worker library configuration as the Gaia journal host. The fixed admitted namespace includes a real 26-reader project header.
+
+Gaia narrowly wins plain Ninja's clean-build median (4.745 versus 4.855 s; 6/7 paired blocks) and the global-flag rebuild (4.807 versus 4.971 s; 7/7). High-fanout results are mixed against Ninja. These are small compile-heavy gains, not an overall incremental-build win: Ninja no-op is 5.17 ms versus Gaia's 109.82 ms, and an implementation edit is 125.31 versus 171.15 ms. Ninja also skips linking when unchanged; Gaia always links.
+
+ccache's edit/revert is 43.63 ms versus Gaia's 159.45 ms. On the tested global flag, 30 preprocessing hits and one miss reduce Ninja+ccache to 378.17 ms; the flag affects only the probe, so arbitrary optimization/ABI flags are not covered. Gaia currently binds exact argv and one latest journal candidate per action.
+
+Gaia timing includes stat-scanning the known admitted namespace, changed-file reads/delta encoding, producer publication, receipt validation and the native consumer. Initial SDK admission, Ninja graph generation, editor writes, state restoration and parent validation are outside timing. Source edits must be stat-visible; new directory membership and preserved-timestamp mutations are not tested. Full clocks, ccache statistics, paired comparisons and host context are in the report and [compact summary](results/ninja-comparison/summary.json); [validation](results/ninja-comparison/validation.json) includes the ignored raw-observation checksum. Raw files remain local-only. Reproduction uses [ninja_benchmark.py](ninja_benchmark.py) with explicit tool selection and a fresh native build.
+
+The next priority is an unchanged-request decision path that avoids both LLVM startup and unnecessary linking. Exact-view journal bypass is still useful, but insufficient alone to close the roughly 100 ms no-op gap. Historical result variants are another bounded, tool-independent reuse experiment.
+
+
+## Lightweight receipts and bounded historical journal candidates
+
+The [follow-up](results/build-decisions/REPORT.md) remeasures Ninja, Ninja + ccache, the single-candidate journal, three-candidate history and history plus a fresh-process receipt gate across six incremental cases and seven randomized blocks. All 210 libraries and 6,510 object identities match CLI references, along with runtime and compile/link checks. Seventeen native/configuration/graph tests pass. [Compile-heavy boundary checks](results/build-decisions/BOUNDARIES.md) add nine libraries and 279 object identities for clean builds, global flags and the real 26-reader header.
+
+The gate reduces unchanged medians from the journal's 186.03 to 7.96 ms, avoiding producer/LLVM launches and linking. Ninja is 8.63 ms, but fast wins only 4/7 paired blocks; the result establishes similar latency rather than a reliable lead. Request/watch-list preparation, fresh-process startup, metadata validation and retained-result loading are timed. The checker links libc and the ELF loader, with no LLVM or C++ runtime dependency. Absolute timings shifted from the earlier run, so compare controls within this run.
+
+Three candidates eliminate the revert compilation: history-only takes 184.42 ms versus journal's 289.12 ms. Fast takes 202.88 ms because its receipt misses and is republished; Ninja + ccache remains faster at 69.28 ms. Every historical candidate still validates action identity, record checksums and actual filesystem observations; each replay resets logical cwd. Eviction and negative header appearance/absence are tested, as is concurrent atomic publication.
+
+The whole admitted namespace remains watched. Unused-header edits therefore still invoke the native pipeline (198.20 ms fast versus Ninja's 8.31 ms), and gate/publication overhead regresses some real edits. Receipts assume stat-visible changes, a fixed admitted namespace and serialized workspace mutation. They do not establish arbitrary directory discovery, preserved-timestamp or watcher correctness. Missing/corrupt receipts and outputs, changed requests and mutations during compilation invalidate or prevent publication. The three-candidate bound is per action, not a global byte quota.
+
+Next investigate a selective observed-condition decision index and bounded reuse of linked results on reverts. Raw observations remain ignored/local-only; versioned [statistics](results/build-decisions/summary.json), [validation](results/build-decisions/validation.json) and test output identify and summarize them.
+
+
+## Selective observed-condition decisions
+
+The [selective comparison](results/selective-conditions/REPORT.md) runs Ninja, Ninja + ccache, whole-namespace gating and selective gating across six cases and seven randomized blocks. All 168 libraries and 5,208 object identities match CLI references and expected work counts. [Compile-heavy checks](results/selective-conditions/BOUNDARIES.md) add six libraries and 186 objects for clean builds, global flags and the real high-fanout header. All 27 tests pass.
+
+Unused-header edits improve from 197.84 to 12.47 ms (15.9×; 7/7 paired wins), with no producer, LLVM or link. Selective no-op is 10.83 ms versus whole-namespace 6.83 ms and Ninja 8.60 ms. Ninja's unused-header median is 8.19 ms. The conditional boundary works, but this is not a general latency lead.
+
+The current exporter compacts 5,266 selected queries into 275 conditions: 187 positive regular files, 58 missing paths and 30 directory-kind guards. Native results identify the exact selected journals, including historical cache hits; extraction verifies action, journal, record checksum and object identity. Conditions are interpreted against the caller's explicit namespace and per-job masks, not physical host existence. Native tests cover optional-header appearance, include shadowing, invisible physical files, unrelated admission changes, content-preserving touches and positive mutation/removal. Directory listing/cwd-route tests use synthetic provider journals; the timed compiler does not enumerate directories.
+
+Changed builds regress: implementation edits are 376.67 versus 294.56 ms, and shared-header edits 294.14 versus 221.60 ms. Index construction/publication stays inside timing, including full journal parsing, condition reconstruction and positive backing-file verification; the Python export phase costs about 62–65 ms. Native lookup, namespace construction and post-build receipt publication add further costs. Read [compact statistics](results/selective-conditions/summary.json) and [validation](results/selective-conditions/validation.json) for the separate outcomes and raw-data identities.
+
+The next research angle is incremental or batched condition production using per-action fragments and job bitsets, or a native producer working from admitted content identities. Retain the existing producer as a control and preserve negative/membership correctness. A whole-view equality shortcut may avoid selective no-op overhead. Fixed virtual metadata, regular files/implicit directories and ordinary stat-visible backing changes remain explicit limits; no general POSIX or watcher protocol is established.
+
+
+## Batched and incremental condition production
+
+The [producer comparison](results/incremental-conditions/REPORT.md) remeasures Ninja, Ninja + ccache, whole-namespace gating, original selective production, batched production and incremental production across six cases and seven randomized blocks. All 252 libraries and 7,812 object identities match CLI references, with expected compile/link and fragment-reuse counts. [Compile-heavy checks](results/incremental-conditions/BOUNDARIES.md) add nine builds and 279 objects. All 51 tests pass.
+
+Bitset aggregation reduces condition merges to 1,950 versus the diagnostic profile's 28,691 calls. Incremental parsing additionally reuses 30/31 action/journal/cwd fragments: a source edit/revert parses 170 queries and an audit-header edit 62, instead of all 5,266. The final index is byte-for-byte equivalent; namespace classification and positive backing-file verification still run. The current-request fragment cache is 37,210 bytes for the fixture, capped at 64 entries and 8 MiB. Missing/corrupt state recomputes, and optional cache publication failure does not discard a valid index.
+
+Source-edit export medians are 20.09 / 13.63 / 9.28 ms for original / batched / incremental production. Complete source edits improve 121.81 → 111.31 ms; shared-header edits 99.95 → 88.67 ms; generated-header edits 99.81 → 88.26 ms; reverts 91.22 → 80.31 ms. Incremental wins all seven paired blocks against both older producers on each changed case. Every cache read/checksum, new extraction, aggregation, verification and publication remains timed. Cold construction is separately recorded and parses every action.
+
+Lookup is unchanged: incremental no-op and unused-header medians are 3.62 and 3.78 ms. Ninja still wins source edits at 68.05 ms, and Ninja + ccache reverts at 25.50 ms. Absolute timings shifted materially from earlier runs; compare the controls remeasured together. Raw samples remain ignored/local-only. Versioned [statistics](results/incremental-conditions/summary.json), [validation](results/incremental-conditions/validation.json), [test output](results/incremental-conditions/correctness-tests.txt) and [diagnostic function counts](results/incremental-conditions/publication-profile.json) retain reviewable evidence.
+
+The next research question is the remaining complete-pipeline gap: snapshot preparation/authentication, process lifetime, dependency/view construction, object import and linking. A native producer can remain a control, but the residual export cost alone no longer explains the latency difference.
+
+
+## Shared immutable validation
+
+The [matched validation comparison](results/shared-validation/REPORT.md) shares equal-visibility LLVM trees during serial cache validation and memoizes supported immutable observations by view/op/cwd/path. Compiler workers stay private. Native source-edit setup falls from 27.42 to 15.12 ms; replay from 13.04 to 1.28 ms. Complete source edits improve from 117.16 to 102.86 ms versus Ninja's 71.13 ms, closing about 31% of the gap. Header/revert medians improve roughly 15%; no-op/unused-header decisions stay around 3.5 ms. Ninja remains faster on source/header edits, ccache on reverts. Memo's smaller extra win over tree sharing varies by block.
+
+Across the main run, separate pilot and compile-heavy checks, 387 libraries and 11,997 object identities match independent references and runtime probes. Sixty-three tests include equal/distinct masks with parallel misses, negative queries, native cwd transitions, cache corruption/history and memo saturation. The memo cap accounts for key/path/record costs up to 8 MiB rather than enforcing measured allocator/RSS usage. These are fresh-process requests over an immutable explicit provider, not general mutable POSIX workspaces. Snapshot preparation, native process lifetime and export/publication remain useful targets; see [compiler prospects](../../research/compiler/prospects.md).
+
+
+## Remove redundant snapshot handoff and retain the native process
+
+The [pipeline comparison](results/pipeline-handoff/REPORT.md) reduces source edits from 96.26 to 67.44 ms versus Ninja's 65.45 ms, removing about 94% of the excess in the same run. Direct snapshot publication removes a producer round trip; a serial native worker retains process/library initialization while releasing per-request pools, input mappings, dependency state and compiler filesystems before acknowledgement. Headers remain roughly 4–5 ms slower than Ninja; reverts beat plain Ninja but remain slower than ccache. Native publication/reporting cost about 0.1/2.4 ms and were not the large residual.
+
+The main run plus compile-heavy checks validate 219 libraries and 6,789 object identities against independent references. All 74 tests pass, including exact snapshot bytes, corrupted admission, worker repetition, failure/restart and recreated output-directory handling. Residency has an explicit cost: 218.34 MiB cumulative peak in the main run, with startup included in a separate seed. This is not current idle RSS or a production memory quota. Native setup and condition export still cost about 14/9 ms; see the report for paired comparisons, cold setup, scope and remaining work.
+
+
+## Digest providers remove more native setup cost
+
+The [digest report](results/digest-providers/REPORT.md) splits setup and finds roughly 6 ms in admission plus 5.5 ms per-file hashing with LLVM SHA-256. OpenSSL SHA-256 keeps the same identities/checks and reduces setup to about 6 ms. A second matched comparison uses explicitly tagged/versioned BLAKE3 snapshots/query fingerprints, reducing setup to about 4.3 ms. Source edits take 57.27 ms versus optimized SHA-256's 59.13 ms and Ninja's 65.52 ms; headers take about 36 ms versus Ninja's 42 ms. All seven paired source/header comparisons beat Ninja. Reverts improve to 31.15 ms but ccache remains faster at 24.50 ms.
+
+SHA-256 cache-envelope, selected-journal, object, condition and receipt contracts remain unchanged. BLAKE3 uses `GAIACIN3`/`blake3:` roots, `GAIAJR02` and a separate action namespace. Both algorithms can alternate within a worker without mixing candidates. All 92 tests pass; both matched runs plus nine compile-heavy checks validate 345 libraries/10,695 object identities. The provider libraries/helper and measured sources are pinned. Main native peaks are around 224–227 MiB; startup, single-target scope, stat-visible edits and virtual provider limitations remain explicit. Condition export/preparation remain substantial, so this is no final floor claim.
+
+
+## Complete-result reuse and resident lightweight decisions
+
+The [linked-result comparison](results/linked-results/REPORT.md) now wins all seven paired blocks against Ninja and Ninja + ccache in all six measured scenarios. The latest path takes 2.51 ms unchanged, 60.94 ms on a source edit, about 38 ms on headers and 9.43 ms on revert (ccache: 24.74 ms). Retaining linked results avoids snapshot admission/import/link/export on a proven historical hit. Reusing successful completion records avoids redundant retention validation, and a small resident checker resets all request allocations before acknowledgement. No request/graph work moves outside the operation clock.
+
+Retention still adds about 3–5.5 ms to ordinary source/header misses versus unretained BLAKE3. The cache is bounded to three entries/16 MiB committed payloads per output directory, with staging/metadata accounted separately and a single-writer contract. Copied outputs are always hashed; native conditions/request/tool/stability checks remain. Current descriptor version `GAIALR02` also preserves regular mode bits. The checker finishes at 2.89 MiB RSS; native compiler residency is separate. All 113 tests and 387 libraries/11,997 object checks pass across the two matched runs and compile-heavy correctness checks. Broader linker input capture, cold workflows, full history horizons, long-run resource behavior and durable multi-file transactions remain open.

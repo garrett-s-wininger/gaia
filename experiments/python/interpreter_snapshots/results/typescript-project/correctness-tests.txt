@@ -1,0 +1,14 @@
+test_invalid_counts_and_stale_clock_metrics_fail (test_project_diagnostics.DiagnosticCounterTests.test_invalid_counts_and_stale_clock_metrics_fail) ... ok
+test_padding_and_process_memory_do_not_change_exact_counts (test_project_diagnostics.DiagnosticCounterTests.test_padding_and_process_memory_do_not_change_exact_counts) ... ok
+test_children_isolate_globals_environment_argv_random_and_normal_finalizers (test_runner.RunnerTests.test_children_isolate_globals_environment_argv_random_and_normal_finalizers) ... ok
+test_failed_child_does_not_poison_template (test_runner.RunnerTests.test_failed_child_does_not_poison_template) ... ok
+test_open_resource_and_thread_templates_rejected (test_runner.RunnerTests.test_open_resource_and_thread_templates_rejected) ... ok
+test_preloaded_environment_and_cwd_identity_rejected (test_runner.RunnerTests.test_preloaded_environment_and_cwd_identity_rejected) ... ok
+test_unknown_request_and_oversize_rejected (test_runner.RunnerTests.test_unknown_request_and_oversize_rejected) ... ok
+test_bad_archive_and_wrong_package_version_rejected (test_typescript_inputs.CorpusTests.test_bad_archive_and_wrong_package_version_rejected) ... ok
+test_corrupt_download_and_sha256_identity_rejected (test_typescript_inputs.CorpusTests.test_corrupt_download_and_sha256_identity_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.297s
+
+OK

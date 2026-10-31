@@ -1,0 +1,272 @@
+{
+  "run_id": "20261031T022710.516614Z",
+  "raw_sha256": "056b229fd515695537b9d77e2bf77e2356291c1cb4e809d0db9dfb389ae1cbc0",
+  "cases": [
+    {
+      "scenario": "high-fanout-header",
+      "engines": {
+        "gaia-native-emit": {
+          "median_ms": 2666.64552900329,
+          "min_ms": 2666.64552900329,
+          "max_ms": 2666.64552900329,
+          "samples": 1,
+          "producer_median_ms": 5.688599,
+          "native_stage_medians_ms": {
+            "input_admission_ns": 1.852017,
+            "action_admission_ns": 0.066205,
+            "content_hash_ns": 0.821808,
+            "setup_ns": 4.579856
+          },
+          "export_median_ms": 9.575383002811577,
+          "reference_wire_equal": true,
+          "physical_reads": 187,
+          "physical_bytes": 3016363
+        },
+        "gaia-shared-inputs": {
+          "median_ms": 2769.6670739969704,
+          "min_ms": 2769.6670739969704,
+          "max_ms": 2769.6670739969704,
+          "samples": 1,
+          "producer_median_ms": 0.792237,
+          "native_stage_medians_ms": {
+            "input_admission_ns": 0.645804,
+            "action_admission_ns": 0.053812,
+            "content_hash_ns": 0.025518,
+            "setup_ns": 2.616829
+          },
+          "export_median_ms": 10.21677500102669,
+          "reference_wire_equal": true,
+          "physical_reads": 187,
+          "physical_bytes": 3016363,
+          "representative_shared": {
+            "shared_segment_hits": 1,
+            "shared_new_segments": 1,
+            "shared_new_segment_bytes": 16913,
+            "shared_cache_bytes": 3361130,
+            "shared_cache_segments": 2,
+            "shared_cached_file_digests": 262,
+            "shared_manifest_bytes": 146
+          },
+          "representative_producer": {
+            "correct": true,
+            "files": 263,
+            "bytes": 146,
+            "loose_reads": 0,
+            "loose_bytes": 0,
+            "native_ns": 0,
+            "caller_ns": 792237,
+            "created_segment_bytes": 16913,
+            "sender_hash_bytes": 17059,
+            "changed_files": 1,
+            "deleted_files": 0,
+            "segments": 2,
+            "retained_segment_bytes": 3361130,
+            "compacted": false
+          }
+        }
+      },
+      "paired_shared_minus_control": {
+        "gaia-native-emit": {
+          "median_delta_ms": 103.02154499368044,
+          "wins": 0,
+          "blocks": 1
+        }
+      }
+    },
+    {
+      "scenario": "flags",
+      "engines": {
+        "gaia-native-emit": {
+          "median_ms": 2693.44341300166,
+          "min_ms": 2693.44341300166,
+          "max_ms": 2693.44341300166,
+          "samples": 1,
+          "producer_median_ms": 4.577092,
+          "native_stage_medians_ms": {
+            "input_admission_ns": 1.141573,
+            "action_admission_ns": 0.071385,
+            "content_hash_ns": 0.875028,
+            "setup_ns": 2.446736
+          },
+          "export_median_ms": 11.658572002488654,
+          "reference_wire_equal": true,
+          "physical_reads": 187,
+          "physical_bytes": 3016231
+        },
+        "gaia-shared-inputs": {
+          "median_ms": 2861.7659650044516,
+          "min_ms": 2861.7659650044516,
+          "max_ms": 2861.7659650044516,
+          "samples": 1,
+          "producer_median_ms": 0.490429,
+          "native_stage_medians_ms": {
+            "input_admission_ns": 0.528261,
+            "action_admission_ns": 0.049083,
+            "content_hash_ns": 0.041478,
+            "setup_ns": 0.967603
+          },
+          "export_median_ms": 11.074734000430908,
+          "reference_wire_equal": true,
+          "physical_reads": 187,
+          "physical_bytes": 3016231,
+          "representative_shared": {
+            "shared_segment_hits": 1,
+            "shared_new_segments": 0,
+            "shared_new_segment_bytes": 0,
+            "shared_cache_bytes": 3344217,
+            "shared_cache_segments": 1,
+            "shared_cached_file_digests": 263,
+            "shared_manifest_bytes": 89
+          },
+          "representative_producer": {
+            "correct": true,
+            "files": 263,
+            "bytes": 89,
+            "loose_reads": 0,
+            "loose_bytes": 0,
+            "native_ns": 0,
+            "caller_ns": 490429,
+            "created_segment_bytes": 0,
+            "sender_hash_bytes": 89,
+            "changed_files": 0,
+            "deleted_files": 0,
+            "segments": 1,
+            "retained_segment_bytes": 3344217,
+            "compacted": false
+          }
+        }
+      },
+      "paired_shared_minus_control": {
+        "gaia-native-emit": {
+          "median_delta_ms": 168.32255200279178,
+          "wins": 0,
+          "blocks": 1
+        }
+      }
+    },
+    {
+      "scenario": "clean",
+      "engines": {
+        "gaia-native-emit": {
+          "median_ms": 2769.0937669976847,
+          "min_ms": 2769.0937669976847,
+          "max_ms": 2769.0937669976847,
+          "samples": 1,
+          "producer_median_ms": 2.150244,
+          "native_stage_medians_ms": {
+            "input_admission_ns": 2.319325,
+            "action_admission_ns": 0.065034,
+            "content_hash_ns": 0.888363,
+            "setup_ns": 3.607216
+          },
+          "export_median_ms": 14.511537003272679,
+          "reference_wire_equal": true,
+          "physical_reads": 187,
+          "physical_bytes": 3016231
+        },
+        "gaia-shared-inputs": {
+          "median_ms": 2912.9707949978183,
+          "min_ms": 2912.9707949978183,
+          "max_ms": 2912.9707949978183,
+          "samples": 1,
+          "producer_median_ms": 2.651894,
+          "native_stage_medians_ms": {
+            "input_admission_ns": 2.423723,
+            "action_admission_ns": 0.077517,
+            "content_hash_ns": 0.027432,
+            "setup_ns": 2.871251
+          },
+          "export_median_ms": 14.530662003380712,
+          "reference_wire_equal": true,
+          "physical_reads": 187,
+          "physical_bytes": 3016231,
+          "representative_shared": {
+            "shared_segment_hits": 0,
+            "shared_new_segments": 1,
+            "shared_new_segment_bytes": 3344217,
+            "shared_cache_bytes": 3344217,
+            "shared_cache_segments": 1,
+            "shared_cached_file_digests": 0,
+            "shared_manifest_bytes": 89
+          },
+          "representative_producer": {
+            "correct": true,
+            "files": 263,
+            "bytes": 89,
+            "loose_reads": 0,
+            "loose_bytes": 0,
+            "native_ns": 0,
+            "caller_ns": 2651894,
+            "created_segment_bytes": 3344217,
+            "sender_hash_bytes": 3344306,
+            "changed_files": 263,
+            "deleted_files": 0,
+            "segments": 1,
+            "retained_segment_bytes": 3344217,
+            "compacted": true
+          }
+        }
+      },
+      "paired_shared_minus_control": {
+        "gaia-native-emit": {
+          "median_delta_ms": 143.87702800013358,
+          "wins": 0,
+          "blocks": 1
+        }
+      }
+    }
+  ],
+  "residents": {
+    "gaia-native-emit": {
+      "requests": 4,
+      "peak_rss_bytes": [
+        233586688,
+        238891008,
+        241545216,
+        241545216
+      ],
+      "cpu_seconds": 46.4,
+      "serial": true,
+      "final_memory_kib": {
+        "VmSize": 860604,
+        "VmHWM": 235884,
+        "VmRSS": 130864
+      }
+    },
+    "gaia-shared-inputs": {
+      "requests": 7,
+      "peak_rss_bytes": [
+        238415872,
+        240041984,
+        240041984,
+        240041984,
+        240041984,
+        240041984,
+        240041984
+      ],
+      "cpu_seconds": 48.02,
+      "serial": true,
+      "final_memory_kib": {
+        "VmSize": 864360,
+        "VmHWM": 234416,
+        "VmRSS": 152280
+      }
+    }
+  },
+  "context": {
+    "contract": "GAIA-RECORDED-VFS-1",
+    "host_sha256": "7f3353b312b34f1e4433aa8611dd23ce1855717af0667bb732183558754e10df",
+    "tools": {
+      "clang": "b852cb4597dc56b241bcd328544b5fee60717f35f66808098cc0413946ba42f2",
+      "ld.lld": "53b86825ed1635d71a5b719f87bd702497bc0c67ad6b139105adcdd8aab7e904",
+      "libclang-cpp.so": "f8ad17a08eeab80c04e8c2f90986c43808fe760e30136ce199c945fe273b6cd6",
+      "libLLVM.so.22.1": "abe476c377d94c4375d4d804ca555dd378c0437e7b9c01f60d51e403e8cc6d6a",
+      "liblldELF.so": "773103cd194050fa4c673293bbc8a6b71d89ee0c0167155eb419ceaabc40916f",
+      "liblldCommon.so": "ead9a563e136161ba52acba8d9c7b8b528c2b50ca65577629187affda946de63",
+      "libcrypto.so.3": "a75a864dcda6ef9e4dc29fad4b7988ca832b904c3915a63c920062c40763dae1",
+      "libblake3.so.1.8.7": "bffe67ca91fd831b709da938bbb8358d31f2c4990e54daf3dd64bcf288ec4e92",
+      "blake3-helper.so": "4bf7a0ecc72b801844462623b87fbf6af88d229592c33bc0620b43e06d66ea44",
+      "verify.so": "2fa59aa610aa1179f31827e742b5f85e63bafe9c97ff6b8c851ed13b5a77e829"
+    }
+  }
+}

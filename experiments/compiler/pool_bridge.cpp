@@ -11,7 +11,8 @@
 
 LLD_HAS_DRIVER(elf)
 
-struct InputView {std::string name;llvm::StringRef bytes;};
+struct InputView {std::string name;llvm::StringRef bytes;std::array<uint8_t,32> digest{};bool retained_digest=false;};
+#include "shared_inputs.h"
 struct JobResult {uint64_t start=0,end=0,errors=0,warnings=0;bool okay=false;std::string diagnostics;
 #ifdef GAIA_DIRECT_HANDOFF
     llvm::SmallVector<char,0> object;size_t object_size=0;uint64_t export_ns=0;
@@ -23,6 +24,7 @@ struct Pool {
     std::string output,linker,link_diagnostics;
     std::vector<std::vector<std::string>> commands,links;
     std::vector<InputView> inputs;
+    GaiaSharedCollection shared;
     std::vector<JobResult> results;
 #ifdef GAIA_DIRECT_HANDOFF
     int handoff=0;
@@ -58,7 +60,9 @@ extern "C" void *gaia_pool_open(int memory,const char *clang,const char *output,
 #endif
     if(!requests(plan,plan_size,clang,pool->commands) || !requests(link,link_size,linker,pool->links) || pool->links.size()!=1) return nullptr;
     llvm::InitializeNativeTarget();llvm::InitializeNativeTargetAsmPrinter();llvm::InitializeNativeTargetAsmParser();
-    if(memory) {
+    if(memory && size>=8 && !memcmp(data,"GAIACIN4",8)) {
+        if(!gaia_shared_inputs(data,size,pin,pool->inputs,pool->shared,pool->input_bytes)) return nullptr;
+    } else if(memory) {
         // Authenticate/validate once, then retain borrowed descriptors. Worker
         // trees are private and do not share mutable VFS state or payload copies.
         llvm::vfs::InMemoryFileSystem validation;Stats s{};
@@ -73,6 +77,10 @@ extern "C" void *gaia_pool_open(int memory,const char *clang,const char *output,
     }
     pool->results.resize(pool->commands.size());pool->setup=now()-pool->start;
     return pool.release();
+}
+
+extern "C" uint64_t gaia_shared_input_stat(void *handle,int field) {
+    auto *pool=static_cast<Pool *>(handle);return field>=0 && field<7?pool->shared.stats[field]:0;
 }
 
 extern "C" int gaia_pool_count(void *handle) {return static_cast<Pool *>(handle)->commands.size();}

@@ -1,0 +1,10 @@
+{
+  "run_id": "20261031T012523.807265Z",
+  "passed": true,
+  "timed_operations": 8,
+  "independently_verified_objects": 1024,
+  "all_views_files_and_receipts_match": true,
+  "all_server_counts_and_discovery_counts_match": true,
+  "all_selected_bytes_logical_hashes_and_publications_match": true,
+  "raw_sha256": "e9ef207c6f0a0cf77df1a67eed0e65ddd743c2b37aec788282cdfb2c76f6d6d4"
+}

@@ -1,0 +1,12 @@
+{
+  "final_baseline_ninja_object_checks": {
+    "app.o": "a81fd5f3a30c8c12f73f7081e4e75da916cd714bbba746c6f24912c91959af81",
+    "fmt-format.o": "ee858431f10109aba3fc8a8c2648976143c5b42b0db231196d8589959f4839dd",
+    "fmt-os.o": "97de0a0e618809db9be198561fb92d221bc21b046a4475e9b3b0a780ad964131",
+    "report.o": "f2f08aeaa03fcc43dbfb715bb83846aeb433eb8d2deb3ab0c6940fcbf22848a4",
+    "sum.o": "995c167b88858b91655239a303a55830d3c8120196e4116579931f68b1d91702",
+    "test.o": "26b37f0a7c711400e0f10e992076d6c4ec3a9e6221e6c10becd1358da520f3d4"
+  },
+  "passed": true,
+  "scope": "After main, all six final baseline Ninja objects independently match CLI reference bytes; per-request native object checks and all public artifacts were checked during main."
+}

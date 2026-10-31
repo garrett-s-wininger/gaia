@@ -1,0 +1,631 @@
+{
+  "run_id": "20261031T014028.106735Z",
+  "raw_sha256": "f6ee485e94ad9ee6cdb3350e50096c6e0dba8c9a7642e19293149eda59bd868a",
+  "cases": [
+    {
+      "scenario": "high-fanout-header",
+      "engines": {
+        "gaia-retained": {
+          "median_ms": 2887.975297999219,
+          "min_ms": 2887.975297999219,
+          "max_ms": 2887.975297999219,
+          "samples": 1,
+          "export_median_ms": 10.786172999360133,
+          "index_stage_medians_ms": {
+            "fragment_load": 5.984159,
+            "plan": 0.026711,
+            "verify_emit": 4.122783,
+            "fragment_encode": 0.352009,
+            "fragment_publish": 0.209929
+          },
+          "representative_index": {
+            "queries": 5266,
+            "conditions": 275,
+            "positive_files": 187,
+            "kinds": {
+              "0": 58,
+              "1": 187,
+              "2": 30
+            },
+            "bytes": 37018,
+            "target_paths": 258,
+            "condition_merges": 0,
+            "fragment_hits": 5,
+            "fragment_misses": 26,
+            "queries_parsed": 4733,
+            "fragment_cache_valid": null,
+            "fragment_cache_source": "memory",
+            "fragment_cache_bytes": 37210,
+            "fragment_cache_published": true,
+            "namespace_reused": true,
+            "condition_plan_reused": true,
+            "logical_hashes_computed": 1,
+            "logical_hashes_reused": 186,
+            "physical_reads": 187,
+            "physical_bytes": 3016363,
+            "retained": true,
+            "stages_ns": {
+              "fragment_load": 5984159,
+              "plan": 26711,
+              "verify_emit": 4122783,
+              "fragment_encode": 352009,
+              "fragment_publish": 209929
+            }
+          },
+          "reference_indices_equal": true
+        },
+        "gaia-native-verify": {
+          "median_ms": 3722.4111699979403,
+          "min_ms": 3722.4111699979403,
+          "max_ms": 3722.4111699979403,
+          "samples": 1,
+          "export_median_ms": 16.250717999355402,
+          "index_stage_medians_ms": {
+            "fragment_load": 10.993884,
+            "plan": 0.060415,
+            "verify_emit": 4.079075,
+            "fragment_encode": 0.506483,
+            "fragment_publish": 0.439155
+          },
+          "representative_index": {
+            "queries": 5266,
+            "conditions": 275,
+            "positive_files": 187,
+            "kinds": {
+              "0": 58,
+              "1": 187,
+              "2": 30
+            },
+            "bytes": 37018,
+            "target_paths": 258,
+            "condition_merges": 0,
+            "fragment_hits": 5,
+            "fragment_misses": 26,
+            "queries_parsed": 4733,
+            "fragment_cache_valid": null,
+            "fragment_cache_source": "memory",
+            "fragment_cache_bytes": 37210,
+            "fragment_cache_published": true,
+            "namespace_reused": true,
+            "condition_plan_reused": true,
+            "logical_hashes_computed": 1,
+            "logical_hashes_reused": 186,
+            "physical_reads": 187,
+            "physical_bytes": 3016363,
+            "retained": true,
+            "stages_ns": {
+              "fragment_load": 10993884,
+              "plan": 60415,
+              "verify_emit": 4079075,
+              "fragment_encode": 506483,
+              "fragment_publish": 439155
+            },
+            "native_read_ns": 526489,
+            "native_hash_ns": 1320378,
+            "native_emit_ns": 5545,
+            "native_total_ns": 3501016,
+            "ffi_ns": 3530212,
+            "native_adapter_ns": 3729030,
+            "native_mode": "verify"
+          },
+          "native_stage_medians_ms": {
+            "native_read_ns": 0.526489,
+            "native_hash_ns": 1.320378,
+            "native_emit_ns": 0.005545,
+            "native_total_ns": 3.501016,
+            "ffi_ns": 3.530212,
+            "native_adapter_ns": 3.72903
+          },
+          "reference_indices_equal": true
+        },
+        "gaia-native-emit": {
+          "median_ms": 2879.240984999342,
+          "min_ms": 2879.240984999342,
+          "max_ms": 2879.240984999342,
+          "samples": 1,
+          "export_median_ms": 10.475842005689628,
+          "index_stage_medians_ms": {
+            "fragment_load": 6.263129,
+            "plan": 0.028063,
+            "verify_emit": 3.443692,
+            "fragment_encode": 0.34715,
+            "fragment_publish": 0.288748
+          },
+          "representative_index": {
+            "queries": 5266,
+            "conditions": 275,
+            "positive_files": 187,
+            "kinds": {
+              "0": 58,
+              "1": 187,
+              "2": 30
+            },
+            "bytes": 37018,
+            "target_paths": 258,
+            "condition_merges": 0,
+            "fragment_hits": 5,
+            "fragment_misses": 26,
+            "queries_parsed": 4733,
+            "fragment_cache_valid": null,
+            "fragment_cache_source": "memory",
+            "fragment_cache_bytes": 37210,
+            "fragment_cache_published": true,
+            "namespace_reused": true,
+            "condition_plan_reused": true,
+            "logical_hashes_computed": 1,
+            "logical_hashes_reused": 186,
+            "physical_reads": 187,
+            "physical_bytes": 3016363,
+            "retained": true,
+            "stages_ns": {
+              "fragment_load": 6263129,
+              "plan": 28063,
+              "verify_emit": 3443692,
+              "fragment_encode": 347150,
+              "fragment_publish": 288748
+            },
+            "native_read_ns": 440433,
+            "native_hash_ns": 1280104,
+            "native_emit_ns": 19713,
+            "native_total_ns": 3064322,
+            "ffi_ns": 3081143,
+            "native_adapter_ns": 3159352,
+            "native_mode": "emit"
+          },
+          "native_stage_medians_ms": {
+            "native_read_ns": 0.440433,
+            "native_hash_ns": 1.280104,
+            "native_emit_ns": 0.019713,
+            "native_total_ns": 3.064322,
+            "ffi_ns": 3.081143,
+            "native_adapter_ns": 3.159352
+          },
+          "reference_indices_equal": true
+        }
+      },
+      "paired": {
+        "gaia-native-verify": {
+          "gaia-retained": {
+            "median_delta_ms": 834.4358719987213,
+            "wins": 0,
+            "blocks": 1
+          }
+        },
+        "gaia-native-emit": {
+          "gaia-retained": {
+            "median_delta_ms": -8.734312999877147,
+            "wins": 1,
+            "blocks": 1
+          },
+          "gaia-native-verify": {
+            "median_delta_ms": -843.1701849985984,
+            "wins": 1,
+            "blocks": 1
+          }
+        }
+      }
+    },
+    {
+      "scenario": "flags",
+      "engines": {
+        "gaia-retained": {
+          "median_ms": 2781.7844310047803,
+          "min_ms": 2781.7844310047803,
+          "max_ms": 2781.7844310047803,
+          "samples": 1,
+          "export_median_ms": 12.23778600251535,
+          "index_stage_medians_ms": {
+            "fragment_load": 7.111337,
+            "plan": 0.027643,
+            "verify_emit": 4.135536,
+            "fragment_encode": 0.372739,
+            "fragment_publish": 0.243913
+          },
+          "representative_index": {
+            "queries": 5266,
+            "conditions": 275,
+            "positive_files": 187,
+            "kinds": {
+              "0": 58,
+              "1": 187,
+              "2": 30
+            },
+            "bytes": 37018,
+            "target_paths": 258,
+            "condition_merges": 0,
+            "fragment_hits": 0,
+            "fragment_misses": 31,
+            "queries_parsed": 5266,
+            "fragment_cache_valid": null,
+            "fragment_cache_source": "memory",
+            "fragment_cache_bytes": 37210,
+            "fragment_cache_published": true,
+            "namespace_reused": true,
+            "condition_plan_reused": true,
+            "logical_hashes_computed": 0,
+            "logical_hashes_reused": 187,
+            "physical_reads": 187,
+            "physical_bytes": 3016231,
+            "retained": true,
+            "stages_ns": {
+              "fragment_load": 7111337,
+              "plan": 27643,
+              "verify_emit": 4135536,
+              "fragment_encode": 372739,
+              "fragment_publish": 243913
+            }
+          },
+          "reference_indices_equal": true
+        },
+        "gaia-native-verify": {
+          "median_ms": 2902.2643839998636,
+          "min_ms": 2902.2643839998636,
+          "max_ms": 2902.2643839998636,
+          "samples": 1,
+          "export_median_ms": 11.615235001954716,
+          "index_stage_medians_ms": {
+            "fragment_load": 7.473806,
+            "plan": 0.028645,
+            "verify_emit": 3.387115,
+            "fragment_encode": 0.391844,
+            "fragment_publish": 0.233314
+          },
+          "representative_index": {
+            "queries": 5266,
+            "conditions": 275,
+            "positive_files": 187,
+            "kinds": {
+              "0": 58,
+              "1": 187,
+              "2": 30
+            },
+            "bytes": 37018,
+            "target_paths": 258,
+            "condition_merges": 0,
+            "fragment_hits": 0,
+            "fragment_misses": 31,
+            "queries_parsed": 5266,
+            "fragment_cache_valid": null,
+            "fragment_cache_source": "memory",
+            "fragment_cache_bytes": 37210,
+            "fragment_cache_published": true,
+            "namespace_reused": true,
+            "condition_plan_reused": true,
+            "logical_hashes_computed": 0,
+            "logical_hashes_reused": 187,
+            "physical_reads": 187,
+            "physical_bytes": 3016231,
+            "retained": true,
+            "stages_ns": {
+              "fragment_load": 7473806,
+              "plan": 28645,
+              "verify_emit": 3387115,
+              "fragment_encode": 391844,
+              "fragment_publish": 233314
+            },
+            "native_read_ns": 427250,
+            "native_hash_ns": 1243649,
+            "native_emit_ns": 4247,
+            "native_total_ns": 3015900,
+            "ffi_ns": 3032982,
+            "native_adapter_ns": 3163601,
+            "native_mode": "verify"
+          },
+          "native_stage_medians_ms": {
+            "native_read_ns": 0.42725,
+            "native_hash_ns": 1.243649,
+            "native_emit_ns": 0.004247,
+            "native_total_ns": 3.0159,
+            "ffi_ns": 3.032982,
+            "native_adapter_ns": 3.163601
+          },
+          "reference_indices_equal": true
+        },
+        "gaia-native-emit": {
+          "median_ms": 2840.7913690025453,
+          "min_ms": 2840.7913690025453,
+          "max_ms": 2840.7913690025453,
+          "samples": 1,
+          "export_median_ms": 10.86093299818458,
+          "index_stage_medians_ms": {
+            "fragment_load": 6.80584,
+            "plan": 0.028584,
+            "verify_emit": 3.355885,
+            "fragment_encode": 0.358481,
+            "fragment_publish": 0.217864
+          },
+          "representative_index": {
+            "queries": 5266,
+            "conditions": 275,
+            "positive_files": 187,
+            "kinds": {
+              "0": 58,
+              "1": 187,
+              "2": 30
+            },
+            "bytes": 37018,
+            "target_paths": 258,
+            "condition_merges": 0,
+            "fragment_hits": 0,
+            "fragment_misses": 31,
+            "queries_parsed": 5266,
+            "fragment_cache_valid": null,
+            "fragment_cache_source": "memory",
+            "fragment_cache_bytes": 37210,
+            "fragment_cache_published": true,
+            "namespace_reused": true,
+            "condition_plan_reused": true,
+            "logical_hashes_computed": 0,
+            "logical_hashes_reused": 187,
+            "physical_reads": 187,
+            "physical_bytes": 3016231,
+            "retained": true,
+            "stages_ns": {
+              "fragment_load": 6805840,
+              "plan": 28584,
+              "verify_emit": 3355885,
+              "fragment_encode": 358481,
+              "fragment_publish": 217864
+            },
+            "native_read_ns": 419505,
+            "native_hash_ns": 1246550,
+            "native_emit_ns": 19984,
+            "native_total_ns": 3017683,
+            "ffi_ns": 3039033,
+            "native_adapter_ns": 3115168,
+            "native_mode": "emit"
+          },
+          "native_stage_medians_ms": {
+            "native_read_ns": 0.419505,
+            "native_hash_ns": 1.24655,
+            "native_emit_ns": 0.019984,
+            "native_total_ns": 3.017683,
+            "ffi_ns": 3.039033,
+            "native_adapter_ns": 3.115168
+          },
+          "reference_indices_equal": true
+        }
+      },
+      "paired": {
+        "gaia-native-verify": {
+          "gaia-retained": {
+            "median_delta_ms": 120.4799529950833,
+            "wins": 0,
+            "blocks": 1
+          }
+        },
+        "gaia-native-emit": {
+          "gaia-retained": {
+            "median_delta_ms": 59.00693799776491,
+            "wins": 0,
+            "blocks": 1
+          },
+          "gaia-native-verify": {
+            "median_delta_ms": -61.47301499731839,
+            "wins": 1,
+            "blocks": 1
+          }
+        }
+      }
+    },
+    {
+      "scenario": "clean",
+      "engines": {
+        "gaia-retained": {
+          "median_ms": 2873.636901000282,
+          "min_ms": 2873.636901000282,
+          "max_ms": 2873.636901000282,
+          "samples": 1,
+          "export_median_ms": 15.25167899671942,
+          "index_stage_medians_ms": {
+            "fragment_load": 6.734144,
+            "plan": 2.36908,
+            "verify_emit": 5.534511,
+            "fragment_encode": 0.34286,
+            "fragment_publish": 0.188377
+          },
+          "representative_index": {
+            "queries": 5266,
+            "conditions": 275,
+            "positive_files": 187,
+            "kinds": {
+              "0": 58,
+              "1": 187,
+              "2": 30
+            },
+            "bytes": 37018,
+            "target_paths": 258,
+            "condition_merges": 1950,
+            "fragment_hits": 0,
+            "fragment_misses": 31,
+            "queries_parsed": 5266,
+            "fragment_cache_valid": false,
+            "fragment_cache_source": "disk",
+            "fragment_cache_bytes": 37210,
+            "fragment_cache_published": true,
+            "namespace_reused": false,
+            "condition_plan_reused": false,
+            "logical_hashes_computed": 187,
+            "logical_hashes_reused": 0,
+            "physical_reads": 187,
+            "physical_bytes": 3016231,
+            "retained": true,
+            "stages_ns": {
+              "fragment_load": 6734144,
+              "plan": 2369080,
+              "verify_emit": 5534511,
+              "fragment_encode": 342860,
+              "fragment_publish": 188377
+            }
+          },
+          "reference_indices_equal": true
+        },
+        "gaia-native-verify": {
+          "median_ms": 3623.6327179940417,
+          "min_ms": 3623.6327179940417,
+          "max_ms": 3623.6327179940417,
+          "samples": 1,
+          "export_median_ms": 14.168556001095567,
+          "index_stage_medians_ms": {
+            "fragment_load": 6.58583,
+            "plan": 2.327044,
+            "verify_emit": 4.672102,
+            "fragment_encode": 0.347451,
+            "fragment_publish": 0.171075
+          },
+          "representative_index": {
+            "queries": 5266,
+            "conditions": 275,
+            "positive_files": 187,
+            "kinds": {
+              "0": 58,
+              "1": 187,
+              "2": 30
+            },
+            "bytes": 37018,
+            "target_paths": 258,
+            "condition_merges": 1950,
+            "fragment_hits": 0,
+            "fragment_misses": 31,
+            "queries_parsed": 5266,
+            "fragment_cache_valid": false,
+            "fragment_cache_source": "disk",
+            "fragment_cache_bytes": 37210,
+            "fragment_cache_published": true,
+            "namespace_reused": false,
+            "condition_plan_reused": false,
+            "logical_hashes_computed": 187,
+            "logical_hashes_reused": 0,
+            "physical_reads": 187,
+            "physical_bytes": 3016231,
+            "retained": true,
+            "stages_ns": {
+              "fragment_load": 6585830,
+              "plan": 2327044,
+              "verify_emit": 4672102,
+              "fragment_encode": 347451,
+              "fragment_publish": 171075
+            },
+            "native_read_ns": 435599,
+            "native_hash_ns": 1245235,
+            "native_emit_ns": 4119,
+            "native_total_ns": 2991306,
+            "ffi_ns": 3014260,
+            "native_adapter_ns": 3145479,
+            "native_mode": "verify"
+          },
+          "native_stage_medians_ms": {
+            "native_read_ns": 0.435599,
+            "native_hash_ns": 1.245235,
+            "native_emit_ns": 0.004119,
+            "native_total_ns": 2.991306,
+            "ffi_ns": 3.01426,
+            "native_adapter_ns": 3.145479
+          },
+          "reference_indices_equal": true
+        },
+        "gaia-native-emit": {
+          "median_ms": 2801.5936509982566,
+          "min_ms": 2801.5936509982566,
+          "max_ms": 2801.5936509982566,
+          "samples": 1,
+          "export_median_ms": 14.386992006620858,
+          "index_stage_medians_ms": {
+            "fragment_load": 6.817922,
+            "plan": 2.354353,
+            "verify_emit": 4.633412,
+            "fragment_encode": 0.348252,
+            "fragment_publish": 0.163821
+          },
+          "representative_index": {
+            "queries": 5266,
+            "conditions": 275,
+            "positive_files": 187,
+            "kinds": {
+              "0": 58,
+              "1": 187,
+              "2": 30
+            },
+            "bytes": 37018,
+            "target_paths": 258,
+            "condition_merges": 1950,
+            "fragment_hits": 0,
+            "fragment_misses": 31,
+            "queries_parsed": 5266,
+            "fragment_cache_valid": false,
+            "fragment_cache_source": "disk",
+            "fragment_cache_bytes": 37210,
+            "fragment_cache_published": true,
+            "namespace_reused": false,
+            "condition_plan_reused": false,
+            "logical_hashes_computed": 187,
+            "logical_hashes_reused": 0,
+            "physical_reads": 187,
+            "physical_bytes": 3016231,
+            "retained": true,
+            "stages_ns": {
+              "fragment_load": 6817922,
+              "plan": 2354353,
+              "verify_emit": 4633412,
+              "fragment_encode": 348252,
+              "fragment_publish": 163821
+            },
+            "native_read_ns": 432109,
+            "native_hash_ns": 1267852,
+            "native_emit_ns": 19969,
+            "native_total_ns": 3086264,
+            "ffi_ns": 3105961,
+            "native_adapter_ns": 3141869,
+            "native_mode": "emit"
+          },
+          "native_stage_medians_ms": {
+            "native_read_ns": 0.432109,
+            "native_hash_ns": 1.267852,
+            "native_emit_ns": 0.019969,
+            "native_total_ns": 3.086264,
+            "ffi_ns": 3.105961,
+            "native_adapter_ns": 3.141869
+          },
+          "reference_indices_equal": true
+        }
+      },
+      "paired": {
+        "gaia-native-verify": {
+          "gaia-retained": {
+            "median_delta_ms": 749.99581699376,
+            "wins": 0,
+            "blocks": 1
+          }
+        },
+        "gaia-native-emit": {
+          "gaia-retained": {
+            "median_delta_ms": -72.04325000202516,
+            "wins": 1,
+            "blocks": 1
+          },
+          "gaia-native-verify": {
+            "median_delta_ms": -822.0390669957851,
+            "wins": 1,
+            "blocks": 1
+          }
+        }
+      }
+    }
+  ],
+  "context": {
+    "contract": "GAIA-RECORDED-VFS-1",
+    "host_sha256": "bc26aaf84d90347300133b2b8ddfe7226d1f239d0b8cfb2a97f8b57fce09b8c3",
+    "tools": {
+      "clang": "b852cb4597dc56b241bcd328544b5fee60717f35f66808098cc0413946ba42f2",
+      "ld.lld": "53b86825ed1635d71a5b719f87bd702497bc0c67ad6b139105adcdd8aab7e904",
+      "libclang-cpp.so": "f8ad17a08eeab80c04e8c2f90986c43808fe760e30136ce199c945fe273b6cd6",
+      "libLLVM.so.22.1": "abe476c377d94c4375d4d804ca555dd378c0437e7b9c01f60d51e403e8cc6d6a",
+      "liblldELF.so": "773103cd194050fa4c673293bbc8a6b71d89ee0c0167155eb419ceaabc40916f",
+      "liblldCommon.so": "ead9a563e136161ba52acba8d9c7b8b528c2b50ca65577629187affda946de63",
+      "libcrypto.so.3": "a75a864dcda6ef9e4dc29fad4b7988ca832b904c3915a63c920062c40763dae1",
+      "libblake3.so.1.8.7": "bffe67ca91fd831b709da938bbb8358d31f2c4990e54daf3dd64bcf288ec4e92",
+      "blake3-helper.so": "4bf7a0ecc72b801844462623b87fbf6af88d229592c33bc0620b43e06d66ea44",
+      "verify.so": "2fa59aa610aa1179f31827e742b5f85e63bafe9c97ff6b8c851ed13b5a77e829"
+    }
+  }
+}

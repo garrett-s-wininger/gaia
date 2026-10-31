@@ -1,0 +1,534 @@
+{
+  "run_id": "20261030T194327.477685Z",
+  "raw_sha256": "405f145a52d52ced9056af8b8512214954f186a30608b3ba659c29f7f43c9751",
+  "cases": [
+    {
+      "scenario": "unchanged",
+      "engines": {
+        "ninja": {
+          "median_ms": 3.4397070012346376,
+          "median_export_ms": null,
+          "median_compilers": 0,
+          "median_links": 0,
+          "decision_hits": 0
+        },
+        "ninja-ccache": {
+          "median_ms": 3.0901770005584694,
+          "median_export_ms": null,
+          "median_compilers": 0,
+          "median_links": 0,
+          "decision_hits": 0
+        },
+        "gaia-fast": {
+          "median_ms": 2.5561680013197474,
+          "median_export_ms": null,
+          "median_compilers": 0,
+          "median_links": 0,
+          "decision_hits": 7
+        },
+        "gaia-selective": {
+          "median_ms": 3.5068649995082524,
+          "median_export_ms": null,
+          "median_compilers": 0,
+          "median_links": 0,
+          "decision_hits": 7
+        },
+        "gaia-batched": {
+          "median_ms": 3.696998999657808,
+          "median_export_ms": null,
+          "median_compilers": 0,
+          "median_links": 0,
+          "decision_hits": 7
+        },
+        "gaia-incremental": {
+          "median_ms": 3.6166440004308242,
+          "median_export_ms": null,
+          "median_compilers": 0,
+          "median_links": 0,
+          "decision_hits": 7
+        }
+      },
+      "incremental_paired": {
+        "gaia-selective": {
+          "median_delta_ms": 0.14870400264044292,
+          "wins": 1,
+          "blocks": 7
+        },
+        "gaia-batched": {
+          "median_delta_ms": -0.24238900005002506,
+          "wins": 4,
+          "blocks": 7
+        },
+        "gaia-fast": {
+          "median_delta_ms": 1.0930829994322266,
+          "wins": 0,
+          "blocks": 7
+        },
+        "ninja": {
+          "median_delta_ms": 0.403489000746049,
+          "wins": 1,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": 0.41902299926732667,
+          "wins": 1,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "implementation",
+      "engines": {
+        "ninja": {
+          "median_ms": 68.04736499907449,
+          "median_export_ms": null,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0
+        },
+        "ninja-ccache": {
+          "median_ms": 101.6703490022337,
+          "median_export_ms": null,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0
+        },
+        "gaia-fast": {
+          "median_ms": 101.77058699991903,
+          "median_export_ms": null,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0
+        },
+        "gaia-selective": {
+          "median_ms": 121.80553299913299,
+          "median_export_ms": 20.090252000954933,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0
+        },
+        "gaia-batched": {
+          "median_ms": 115.29348300246056,
+          "median_export_ms": 13.626930998725584,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0,
+          "median_fragment_hits": 0,
+          "median_fragment_misses": 31,
+          "median_queries_parsed": 5266,
+          "median_condition_merges": 1950
+        },
+        "gaia-incremental": {
+          "median_ms": 111.30889899868635,
+          "median_export_ms": 9.279482997953892,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0,
+          "median_fragment_hits": 30,
+          "median_fragment_misses": 1,
+          "median_queries_parsed": 170,
+          "median_condition_merges": 1950,
+          "median_fragment_cache_bytes": 37210
+        }
+      },
+      "incremental_paired": {
+        "gaia-selective": {
+          "median_delta_ms": -11.609026998485206,
+          "wins": 7,
+          "blocks": 7
+        },
+        "gaia-batched": {
+          "median_delta_ms": -3.8042580017645378,
+          "wins": 7,
+          "blocks": 7
+        },
+        "gaia-fast": {
+          "median_delta_ms": 11.094641999079613,
+          "wins": 0,
+          "blocks": 7
+        },
+        "ninja": {
+          "median_delta_ms": 43.83425500418525,
+          "wins": 0,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": 9.638549996452639,
+          "wins": 0,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "shared-header",
+      "engines": {
+        "ninja": {
+          "median_ms": 44.04518299998017,
+          "median_export_ms": null,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0
+        },
+        "ninja-ccache": {
+          "median_ms": 67.17225900138146,
+          "median_export_ms": null,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0
+        },
+        "gaia-fast": {
+          "median_ms": 77.05140299731283,
+          "median_export_ms": null,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0
+        },
+        "gaia-selective": {
+          "median_ms": 99.95355100181769,
+          "median_export_ms": 20.265266997739673,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0
+        },
+        "gaia-batched": {
+          "median_ms": 93.7256650031486,
+          "median_export_ms": 13.43876400278532,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0,
+          "median_fragment_hits": 0,
+          "median_fragment_misses": 31,
+          "median_queries_parsed": 5266,
+          "median_condition_merges": 1950
+        },
+        "gaia-incremental": {
+          "median_ms": 88.66714699979639,
+          "median_export_ms": 9.093249002035009,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0,
+          "median_fragment_hits": 30,
+          "median_fragment_misses": 1,
+          "median_queries_parsed": 62,
+          "median_condition_merges": 1950,
+          "median_fragment_cache_bytes": 37210
+        }
+      },
+      "incremental_paired": {
+        "gaia-selective": {
+          "median_delta_ms": -10.92686699485057,
+          "wins": 7,
+          "blocks": 7
+        },
+        "gaia-batched": {
+          "median_delta_ms": -4.289075997803593,
+          "wins": 7,
+          "blocks": 7
+        },
+        "gaia-fast": {
+          "median_delta_ms": 12.035785002808552,
+          "wins": 0,
+          "blocks": 7
+        },
+        "ninja": {
+          "median_delta_ms": 44.56670299987309,
+          "wins": 0,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": 21.820178004418267,
+          "wins": 0,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "generated-header",
+      "engines": {
+        "ninja": {
+          "median_ms": 43.70146200017189,
+          "median_export_ms": null,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0
+        },
+        "ninja-ccache": {
+          "median_ms": 67.07191299938131,
+          "median_export_ms": null,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0
+        },
+        "gaia-fast": {
+          "median_ms": 77.08657900002436,
+          "median_export_ms": null,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0
+        },
+        "gaia-selective": {
+          "median_ms": 99.80615799941006,
+          "median_export_ms": 20.086160002392717,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0
+        },
+        "gaia-batched": {
+          "median_ms": 93.3237020035449,
+          "median_export_ms": 13.469842997437809,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0,
+          "median_fragment_hits": 0,
+          "median_fragment_misses": 31,
+          "median_queries_parsed": 5266,
+          "median_condition_merges": 1950
+        },
+        "gaia-incremental": {
+          "median_ms": 88.2624100013345,
+          "median_export_ms": 9.187327999825357,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0,
+          "median_fragment_hits": 30,
+          "median_fragment_misses": 1,
+          "median_queries_parsed": 62,
+          "median_condition_merges": 1950,
+          "median_fragment_cache_bytes": 37210
+        }
+      },
+      "incremental_paired": {
+        "gaia-selective": {
+          "median_delta_ms": -12.13519299926702,
+          "wins": 7,
+          "blocks": 7
+        },
+        "gaia-batched": {
+          "median_delta_ms": -4.639562001102604,
+          "wins": 7,
+          "blocks": 7
+        },
+        "gaia-fast": {
+          "median_delta_ms": 11.655355003313161,
+          "wins": 0,
+          "blocks": 7
+        },
+        "ninja": {
+          "median_delta_ms": 44.697966000967426,
+          "wins": 0,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": 21.751612999651115,
+          "wins": 0,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "unused-header",
+      "engines": {
+        "ninja": {
+          "median_ms": 3.062332998524653,
+          "median_export_ms": null,
+          "median_compilers": 0,
+          "median_links": 0,
+          "decision_hits": 0
+        },
+        "ninja-ccache": {
+          "median_ms": 3.0333969989442267,
+          "median_export_ms": null,
+          "median_compilers": 0,
+          "median_links": 0,
+          "decision_hits": 0
+        },
+        "gaia-fast": {
+          "median_ms": 67.74436600244371,
+          "median_export_ms": null,
+          "median_compilers": 0,
+          "median_links": 1,
+          "decision_hits": 0
+        },
+        "gaia-selective": {
+          "median_ms": 3.6111909976170864,
+          "median_export_ms": null,
+          "median_compilers": 0,
+          "median_links": 0,
+          "decision_hits": 7
+        },
+        "gaia-batched": {
+          "median_ms": 3.5389650001889095,
+          "median_export_ms": null,
+          "median_compilers": 0,
+          "median_links": 0,
+          "decision_hits": 7
+        },
+        "gaia-incremental": {
+          "median_ms": 3.782821000640979,
+          "median_export_ms": null,
+          "median_compilers": 0,
+          "median_links": 0,
+          "decision_hits": 7
+        }
+      },
+      "incremental_paired": {
+        "gaia-selective": {
+          "median_delta_ms": 0.19334099852130748,
+          "wins": 3,
+          "blocks": 7
+        },
+        "gaia-batched": {
+          "median_delta_ms": 0.006367001333273947,
+          "wins": 3,
+          "blocks": 7
+        },
+        "gaia-fast": {
+          "median_delta_ms": -63.89819999822066,
+          "wins": 7,
+          "blocks": 7
+        },
+        "ninja": {
+          "median_delta_ms": 0.5174380021344405,
+          "wins": 0,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": 0.45901400153525174,
+          "wins": 0,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "revert",
+      "engines": {
+        "ninja": {
+          "median_ms": 67.87847099985811,
+          "median_export_ms": null,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0
+        },
+        "ninja-ccache": {
+          "median_ms": 25.503370001388248,
+          "median_export_ms": null,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0
+        },
+        "gaia-fast": {
+          "median_ms": 68.59170600000652,
+          "median_export_ms": null,
+          "median_compilers": 0,
+          "median_links": 1,
+          "decision_hits": 0
+        },
+        "gaia-selective": {
+          "median_ms": 91.21806999974069,
+          "median_export_ms": 20.198202000756282,
+          "median_compilers": 0,
+          "median_links": 1,
+          "decision_hits": 0
+        },
+        "gaia-batched": {
+          "median_ms": 84.21140800055582,
+          "median_export_ms": 13.368851999985054,
+          "median_compilers": 0,
+          "median_links": 1,
+          "decision_hits": 0,
+          "median_fragment_hits": 0,
+          "median_fragment_misses": 31,
+          "median_queries_parsed": 5266,
+          "median_condition_merges": 1950
+        },
+        "gaia-incremental": {
+          "median_ms": 80.31336199928774,
+          "median_export_ms": 9.33354600056191,
+          "median_compilers": 0,
+          "median_links": 1,
+          "decision_hits": 0,
+          "median_fragment_hits": 30,
+          "median_fragment_misses": 1,
+          "median_queries_parsed": 170,
+          "median_condition_merges": 1950,
+          "median_fragment_cache_bytes": 37210
+        }
+      },
+      "incremental_paired": {
+        "gaia-selective": {
+          "median_delta_ms": -10.165757998038316,
+          "wins": 7,
+          "blocks": 7
+        },
+        "gaia-batched": {
+          "median_delta_ms": -3.7749840012111235,
+          "wins": 7,
+          "blocks": 7
+        },
+        "gaia-fast": {
+          "median_delta_ms": 11.009140998794464,
+          "wins": 0,
+          "blocks": 7
+        },
+        "ninja": {
+          "median_delta_ms": 12.455156000214629,
+          "wins": 0,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": 55.06703699938953,
+          "wins": 0,
+          "blocks": 7
+        }
+      }
+    }
+  ],
+  "initial_indexes": {
+    "gaia-selective": {
+      "queries": 5266,
+      "conditions": 275,
+      "positive_files": 187,
+      "kinds": {
+        "0": 58,
+        "1": 187,
+        "2": 30
+      },
+      "bytes": 37018
+    },
+    "gaia-batched": {
+      "queries": 5266,
+      "conditions": 275,
+      "positive_files": 187,
+      "kinds": {
+        "0": 58,
+        "1": 187,
+        "2": 30
+      },
+      "bytes": 37018,
+      "target_paths": 258,
+      "condition_merges": 1950,
+      "fragment_hits": 0,
+      "fragment_misses": 31,
+      "queries_parsed": 5266
+    },
+    "gaia-incremental": {
+      "queries": 5266,
+      "conditions": 275,
+      "positive_files": 187,
+      "kinds": {
+        "0": 58,
+        "1": 187,
+        "2": 30
+      },
+      "bytes": 37018,
+      "target_paths": 258,
+      "condition_merges": 1950,
+      "fragment_hits": 0,
+      "fragment_misses": 31,
+      "queries_parsed": 5266,
+      "fragment_cache_valid": false,
+      "fragment_cache_bytes": 37210,
+      "fragment_cache_published": true
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "default_build_pass": true,
+  "optional_crypto_and_blake3_libraries_not_linked": true,
+  "optional_provider_request_rejected": true,
+  "tests_discovered": 92,
+  "tests_executed": 74,
+  "optional_tests_skipped": 18,
+  "tests_pass": true,
+  "host_sha256": "9b39d03da561af8e282f13c1d9c8d16f0bbc90b40b810c324bf936eaaeb23b4f"
+}

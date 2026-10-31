@@ -1,0 +1,8 @@
+test_capture_path_and_ninja_escaping (test_graph.GraphTests.test_capture_path_and_ninja_escaping) ... ok
+test_library_resolution_preserves_order_and_closes_search (test_graph.GraphTests.test_library_resolution_preserves_order_and_closes_search) ... ok
+test_watch_checks_content_and_inode_not_only_mtime (test_graph.GraphTests.test_watch_checks_content_and_inode_not_only_mtime) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK

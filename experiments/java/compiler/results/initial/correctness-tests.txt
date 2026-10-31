@@ -1,0 +1,8 @@
+test_memory_output_reaches_real_consumer_without_loose_classes (test_compiler.CompilerLifecycleTests.test_memory_output_reaches_real_consumer_without_loose_classes) ... ok
+test_private_pool_joint_targets_constant_edit_and_failure_recovery (test_compiler.CompilerLifecycleTests.test_private_pool_joint_targets_constant_edit_and_failure_recovery) ... ok
+test_trained_cache_does_not_freeze_target_compilation (test_compiler.CompilerLifecycleTests.test_trained_cache_does_not_freeze_target_compilation) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 16.477s
+
+OK

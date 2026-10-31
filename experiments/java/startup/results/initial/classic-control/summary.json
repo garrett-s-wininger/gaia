@@ -1,0 +1,159 @@
+{
+  "run_id": "20261031T014350.881562Z",
+  "raw_sha256": "710e8339a22a986eeed604ad2ad3ac7cfbf02b80a2163806847d3e5a0fce1c06",
+  "trials": 7,
+  "cases": [
+    {
+      "mode": "picocli",
+      "variant": "off",
+      "median_ms": 371.62664299830794,
+      "min_ms": 359.27734099823283,
+      "max_ms": 378.6510520003503,
+      "paired_wins_vs_default": 0,
+      "blocks": 7
+    },
+    {
+      "mode": "picocli",
+      "variant": "default",
+      "median_ms": 330.76201700168895,
+      "min_ms": 322.29436300258385,
+      "max_ms": 337.4395450009615,
+      "paired_wins_vs_default": 0,
+      "blocks": 7
+    },
+    {
+      "mode": "picocli",
+      "variant": "explicit",
+      "median_ms": 257.04486099857604,
+      "min_ms": 247.2605820003082,
+      "max_ms": 269.33209900016664,
+      "paired_wins_vs_default": 7,
+      "blocks": 7
+    },
+    {
+      "mode": "static",
+      "variant": "off",
+      "median_ms": 372.2397919991636,
+      "min_ms": 368.5506629990414,
+      "max_ms": 378.0314339965116,
+      "paired_wins_vs_default": 0,
+      "blocks": 7
+    },
+    {
+      "mode": "static",
+      "variant": "default",
+      "median_ms": 330.1930129964603,
+      "min_ms": 323.2213910014252,
+      "max_ms": 336.85278100165306,
+      "paired_wins_vs_default": 0,
+      "blocks": 7
+    },
+    {
+      "mode": "static",
+      "variant": "explicit",
+      "median_ms": 256.97582199791213,
+      "min_ms": 252.23631999688223,
+      "max_ms": 277.48703899851535,
+      "paired_wins_vs_default": 7,
+      "blocks": 7
+    },
+    {
+      "mode": "dynamic",
+      "variant": "off",
+      "median_ms": 930.299156003457,
+      "min_ms": 909.2086999953608,
+      "max_ms": 1052.6883440033998,
+      "paired_wins_vs_default": 0,
+      "blocks": 7
+    },
+    {
+      "mode": "dynamic",
+      "variant": "default",
+      "median_ms": 860.9067440047511,
+      "min_ms": 850.6982229955611,
+      "max_ms": 960.8141520002391,
+      "paired_wins_vs_default": 0,
+      "blocks": 7
+    },
+    {
+      "mode": "dynamic",
+      "variant": "explicit",
+      "median_ms": 684.083975997055,
+      "min_ms": 676.1755850020563,
+      "max_ms": 745.2033820009092,
+      "paired_wins_vs_default": 7,
+      "blocks": 7
+    }
+  ],
+  "setup": {
+    "groovyc_seconds": 0.9470222079980886,
+    "javac_seconds": 0.5594685530013521,
+    "archive_seconds": 1.9136078799929237,
+    "archive_bytes": 54001664,
+    "archive_sha256": "4629839913fb3cfdd9d434b5fc53f220d6ba6da572fd000c3b809032261743d8",
+    "explicit_framework_classes": 5630,
+    "classlist_sha256": "20ba6f9fa7c30f52ba9d1b6733cedf95cbcd90b5dac0eec65952bd8402328559"
+  },
+  "diagnostics": [
+    {
+      "mode": "picocli",
+      "variant": "default",
+      "loaded_classes": 2110,
+      "shared_classes": 1212,
+      "framework_loaded": 485,
+      "framework_shared": 0,
+      "framework_initializations": 290,
+      "log_sha256": "1f4e48ee8675c169d271613e21402dad24ef0e07bd5bef5af0530a2853770866"
+    },
+    {
+      "mode": "picocli",
+      "variant": "explicit",
+      "loaded_classes": 2110,
+      "shared_classes": 1699,
+      "framework_loaded": 485,
+      "framework_shared": 435,
+      "framework_initializations": 290,
+      "log_sha256": "2ee466513cf8d4292a24c643dfb8bfc7387ac41dc56016e332351f92d3b9ccb3"
+    },
+    {
+      "mode": "static",
+      "variant": "default",
+      "loaded_classes": 2114,
+      "shared_classes": 1212,
+      "framework_loaded": 487,
+      "framework_shared": 0,
+      "framework_initializations": 292,
+      "log_sha256": "a004b99dc5d6040e4e2db6748c281b64e77c9c386fae8b3e67c75aa8cffe90bc"
+    },
+    {
+      "mode": "static",
+      "variant": "explicit",
+      "loaded_classes": 2114,
+      "shared_classes": 1702,
+      "framework_loaded": 487,
+      "framework_shared": 437,
+      "framework_initializations": 292,
+      "log_sha256": "3d19f145f46bb2dfb43d4458fde680e4f8cf224eeefccab6f660ec8ec72f169e"
+    },
+    {
+      "mode": "dynamic",
+      "variant": "default",
+      "loaded_classes": 3736,
+      "shared_classes": 1297,
+      "framework_loaded": 1347,
+      "framework_shared": 0,
+      "framework_initializations": 814,
+      "log_sha256": "8c14e22ee7e37306df77c18593e5a726da06ba008e10688552868b759bde25e2"
+    },
+    {
+      "mode": "dynamic",
+      "variant": "explicit",
+      "loaded_classes": 3736,
+      "shared_classes": 2717,
+      "framework_loaded": 1347,
+      "framework_shared": 1123,
+      "framework_initializations": 814,
+      "log_sha256": "03218cbc73461f14b4ad2e837b7d7a4a93992b3a6470a57aaec89af7a6fad2f3"
+    }
+  ]
+}

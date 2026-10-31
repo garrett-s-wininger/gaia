@@ -1,0 +1,42 @@
+{
+  "scope": "Intrusive source-timer diagnostic with rebuilt registry class and matching static CDS. Stage counts only; not an uninstrumented latency comparison.",
+  "source_run": "20261031T030839.766073Z",
+  "patched_source_sha256": "650c366a0147df7698f08fed9a31bc9490d415f08eb3d79a9fbc30a59dcfeebe",
+  "jar_sha256": "56a45be6c5361911fa4972841a4076c7e89a05490d9c75806f8ac12c847094e4",
+  "source_sha256": "b8a76204005fd0e6dd01f4d723a92e26d50a0f367f0b6a99f683fd6c216063b2",
+  "records_ns": [
+    {
+      "dgm_records_and_proxy_grouping": 63809760,
+      "additional_methods": 2559289,
+      "plugin_instance_methods": 23254150,
+      "static_methods": 670471,
+      "extension_scan": 3003248,
+      "refresh_mop_methods": 507592,
+      "creation_handle": 78940,
+      "expando_metaclass": 35069030,
+      "change_listener": 724192
+    },
+    {
+      "dgm_records_and_proxy_grouping": 64515207,
+      "additional_methods": 2421778,
+      "plugin_instance_methods": 25336867,
+      "static_methods": 760721,
+      "extension_scan": 3112248,
+      "refresh_mop_methods": 651373,
+      "creation_handle": 78639,
+      "expando_metaclass": 34751143,
+      "change_listener": 523351
+    },
+    {
+      "dgm_records_and_proxy_grouping": 65974593,
+      "additional_methods": 2434703,
+      "plugin_instance_methods": 25277292,
+      "static_methods": 739671,
+      "extension_scan": 3140411,
+      "refresh_mop_methods": 631160,
+      "creation_handle": 86694,
+      "expando_metaclass": 36422977,
+      "change_listener": 516208
+    }
+  ]
+}

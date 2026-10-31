@@ -1,0 +1,14 @@
+{
+  "run_id": "20261031T000330.496972Z",
+  "passed": true,
+  "timed_fetches": 1512,
+  "independently_verified_objects": 132048,
+  "all_receipts_and_payloads_match": true,
+  "all_client_server_counts_match": true,
+  "matched_transport_requests_payloads_hash_work_and_publication_identical": true,
+  "cached_all_zero_network": true,
+  "raw_sha256": "8150302fc913afd9b8d8a28a532847847640058d8072d77022a68f213fceeabf",
+  "workers": 8,
+  "coalescing_gap_bytes": 65536,
+  "max_span_bytes": 4194304
+}

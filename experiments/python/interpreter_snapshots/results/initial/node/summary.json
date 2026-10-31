@@ -1,0 +1,51 @@
+{
+  "run_id": "2026-10-31T01:16:21.991744+00:00",
+  "node": "v26.12.0",
+  "node_sha256": "6dcdb9bbe2bf22bd053ba06d5ba7b8a2d92b2d3d8c714f3b2670be3d2728c9c8",
+  "source_sha256": "91704700c9327c6ceb493e05b93972aaed821b56533e0216f2fd9406535b8a10",
+  "scope": "Fresh Node processes; complete launch/output/normal exit. Warm page cache. Disk blobs rebuilt for the identical runtime. Synthetic object graph only.",
+  "trials": 7,
+  "setup": [
+    {
+      "count": 0,
+      "seconds": 0.23351538000133587,
+      "blob_bytes": 7205064,
+      "blob_sha256": "c051ecb0b16cfc6099c5aae7f109be9b37235a597852ddedbd410f8733c5b679",
+      "stderr": ""
+    },
+    {
+      "count": 100000,
+      "seconds": 0.9590476240045973,
+      "blob_bytes": 27716368,
+      "blob_sha256": "f703ced6a7b0f78e97a1ef5e59057b3e1a8328c5a37ec61ae8aecf4f6bc89654",
+      "stderr": ""
+    }
+  ],
+  "cases": [
+    {
+      "count": 0,
+      "mode": "exec",
+      "median_ms": 26.3282409941894,
+      "paired_wins": 0
+    },
+    {
+      "count": 0,
+      "mode": "restore",
+      "median_ms": 31.74934900016524,
+      "paired_wins": 0
+    },
+    {
+      "count": 100000,
+      "mode": "exec",
+      "median_ms": 98.9090090006357,
+      "paired_wins": 0
+    },
+    {
+      "count": 100000,
+      "mode": "restore",
+      "median_ms": 120.20262100122636,
+      "paired_wins": 0
+    }
+  ],
+  "raw_sha256": "0a0dd75b70b0a26e78e53b9a430a5ff6d013109095e6f7323f629d6b148058ef"
+}

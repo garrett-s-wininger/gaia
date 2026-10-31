@@ -234,6 +234,41 @@
       "status": "retained-evidence",
       "report": "experiments/python/dependency_solving/results/trail-scaling/REPORT.md",
       "raw": "experiments/python/dependency_solving/results/trail-scaling/results.json.gz"
+    },
+    {
+      "id": "PY-FMT-04/interpreter-state-reuse",
+      "track": "python-interpreter-state",
+      "status": "measured-resident-fork-and-synthetic-node-disk-control",
+      "report": "experiments/python/interpreter_snapshots/results/initial/REPORT.md",
+      "raw": "experiments/python/interpreter_snapshots/results/initial/results.json",
+      "summary": "experiments/python/interpreter_snapshots/results/initial/summary.json",
+      "validation": "experiments/python/interpreter_snapshots/results/initial/validation.json",
+      "node_raw": "experiments/python/interpreter_snapshots/results/initial/node/results.json",
+      "node_summary": "experiments/python/interpreter_snapshots/results/initial/node/summary.json",
+      "node_validation": "experiments/python/interpreter_snapshots/results/initial/node/validation.json",
+      "findings": "research/python/findings.md#interpreter-state-reuse-is-a-separate-tradeoff"
+    },
+    {
+      "id": "NODE-TYPESCRIPT-SNAPSHOT",
+      "track": "interpreter-state-real-node-dependency",
+      "status": "measured-real-typescript-initialization-default-and-no-codecache",
+      "report": "experiments/python/interpreter_snapshots/results/typescript/REPORT.md",
+      "raw": "experiments/python/interpreter_snapshots/results/typescript/results.json",
+      "summary": "experiments/python/interpreter_snapshots/results/typescript/summary.json",
+      "validation": "experiments/python/interpreter_snapshots/results/typescript/validation.json",
+      "provenance": "experiments/python/interpreter_snapshots/results/typescript/provenance.json",
+      "findings": "research/python/interpreter-state.md#real-typescript-initialization-changes-the-result"
+    },
+    {
+      "id": "NODE-TYPESCRIPT-PROJECT-CLI",
+      "track": "interpreter-state-real-project-cli",
+      "status": "measured-full-cli-cached-baseline-and-live-performance-rebinding",
+      "report": "experiments/python/interpreter_snapshots/results/typescript-project/REPORT.md",
+      "raw": "experiments/python/interpreter_snapshots/results/typescript-project/results.json",
+      "summary": "experiments/python/interpreter_snapshots/results/typescript-project/summary.json",
+      "validation": "experiments/python/interpreter_snapshots/results/typescript-project/validation.json",
+      "provenance": "experiments/python/interpreter_snapshots/results/typescript-project/provenance.json",
+      "findings": "research/python/interpreter-state.md#full-project-cli-and-a-competent-cached-baseline"
     }
   ],
   "raw_evidence": {

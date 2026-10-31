@@ -1,0 +1,12 @@
+{
+  "source_tests": 213,
+  "source_tests_passed": true,
+  "main_builds": 168,
+  "boundary_builds": 6,
+  "all_artifacts_and_runtime_checks_passed": true,
+  "measured_sources_match_frozen": true,
+  "documentation_links_checked": true,
+  "clean_source_copy_repository_check_passed": true,
+  "clean_source_copy_removed_after_check": true,
+  "generated_shared_work_directory_ignored": true
+}

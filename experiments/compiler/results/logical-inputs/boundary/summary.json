@@ -1,0 +1,195 @@
+{
+  "run_id": "20261031T033139.869376Z",
+  "raw_sha256": "7907123ca3f2f93a94d9bfb0930be5029aa497b14b3d4eae8708b732d720c253",
+  "cases": [
+    {
+      "scenario": "high-fanout-header",
+      "engines": {
+        "gaia-shared-inputs": {
+          "median_ms": 2656.579528003931,
+          "min_ms": 2656.579528003931,
+          "max_ms": 2656.579528003931,
+          "samples": 1,
+          "export_median_ms": 9.975110006053,
+          "reference_wire_equal": true,
+          "physical_reads": 187,
+          "physical_bytes": 3016363
+        },
+        "gaia-logical-inputs": {
+          "median_ms": 2716.415151997353,
+          "min_ms": 2716.415151997353,
+          "max_ms": 2716.415151997353,
+          "samples": 1,
+          "export_median_ms": 7.069224004226271,
+          "reference_wire_equal": true,
+          "physical_reads": 0,
+          "physical_bytes": 0,
+          "ingress_median_ms": 0.133472,
+          "representative_admission": {
+            "admission_ns": 130327,
+            "hashed_bytes": 16776,
+            "changed": true,
+            "total_ingress_ns": 133472,
+            "source": "explicit admitted edit packet",
+            "packet_bytes": 16776,
+            "generation": 1,
+            "initial_admission": null
+          }
+        }
+      },
+      "paired_logical_minus_control": {
+        "gaia-shared-inputs": {
+          "median_delta_ms": 59.835623993421905,
+          "wins": 0,
+          "blocks": 1
+        }
+      }
+    },
+    {
+      "scenario": "flags",
+      "engines": {
+        "gaia-shared-inputs": {
+          "median_ms": 2742.4100960051874,
+          "min_ms": 2742.4100960051874,
+          "max_ms": 2742.4100960051874,
+          "samples": 1,
+          "export_median_ms": 11.238705003052019,
+          "reference_wire_equal": true,
+          "physical_reads": 187,
+          "physical_bytes": 3016231
+        },
+        "gaia-logical-inputs": {
+          "median_ms": 2798.8431210033013,
+          "min_ms": 2798.8431210033013,
+          "max_ms": 2798.8431210033013,
+          "samples": 1,
+          "export_median_ms": 7.579329998407047,
+          "reference_wire_equal": true,
+          "physical_reads": 0,
+          "physical_bytes": 0,
+          "ingress_median_ms": 0.084039,
+          "representative_admission": {
+            "admission_ns": 80052,
+            "hashed_bytes": 0,
+            "changed": false,
+            "total_ingress_ns": 84039,
+            "source": "explicit admitted edit packet",
+            "packet_bytes": 0,
+            "generation": 0,
+            "initial_admission": null
+          }
+        }
+      },
+      "paired_logical_minus_control": {
+        "gaia-shared-inputs": {
+          "median_delta_ms": 56.43302499811398,
+          "wins": 0,
+          "blocks": 1
+        }
+      }
+    },
+    {
+      "scenario": "clean",
+      "engines": {
+        "gaia-shared-inputs": {
+          "median_ms": 2699.316682002973,
+          "min_ms": 2699.316682002973,
+          "max_ms": 2699.316682002973,
+          "samples": 1,
+          "export_median_ms": 13.756334003119264,
+          "reference_wire_equal": true,
+          "physical_reads": 187,
+          "physical_bytes": 3016231
+        },
+        "gaia-logical-inputs": {
+          "median_ms": 2741.689511000004,
+          "min_ms": 2741.689511000004,
+          "max_ms": 2741.689511000004,
+          "samples": 1,
+          "export_median_ms": 10.888379998505116,
+          "reference_wire_equal": true,
+          "physical_reads": 0,
+          "physical_bytes": 0,
+          "ingress_median_ms": 3.27966,
+          "representative_admission": {
+            "admission_ns": 51408,
+            "hashed_bytes": 0,
+            "changed": false,
+            "total_ingress_ns": 3279660,
+            "source": "explicit admitted edit packet",
+            "packet_bytes": 0,
+            "generation": 0,
+            "initial_admission": {
+              "admission_ns": 3194890,
+              "hashed_bytes": 3319849,
+              "changed": true
+            }
+          }
+        }
+      },
+      "paired_logical_minus_control": {
+        "gaia-shared-inputs": {
+          "median_delta_ms": 42.37282899703132,
+          "wins": 0,
+          "blocks": 1
+        }
+      }
+    }
+  ],
+  "residents": {
+    "gaia-shared-inputs": {
+      "requests": 7,
+      "peak_rss_bytes": [
+        229683200,
+        231178240,
+        241426432,
+        241426432,
+        241426432,
+        241426432,
+        241426432
+      ],
+      "cpu_seconds": 46.62,
+      "serial": true,
+      "final_memory_kib": {
+        "VmSize": 863972,
+        "VmHWM": 235768,
+        "VmRSS": 140448
+      }
+    },
+    "gaia-logical-inputs": {
+      "requests": 7,
+      "peak_rss_bytes": [
+        235028480,
+        236654592,
+        245862400,
+        245862400,
+        245862400,
+        245862400,
+        245862400
+      ],
+      "cpu_seconds": 47.18,
+      "serial": true,
+      "final_memory_kib": {
+        "VmSize": 864384,
+        "VmHWM": 240100,
+        "VmRSS": 150288
+      }
+    }
+  },
+  "context": {
+    "contract": "GAIA-RECORDED-VFS-1",
+    "host_sha256": "7f3353b312b34f1e4433aa8611dd23ce1855717af0667bb732183558754e10df",
+    "tools": {
+      "clang": "b852cb4597dc56b241bcd328544b5fee60717f35f66808098cc0413946ba42f2",
+      "ld.lld": "53b86825ed1635d71a5b719f87bd702497bc0c67ad6b139105adcdd8aab7e904",
+      "libclang-cpp.so": "f8ad17a08eeab80c04e8c2f90986c43808fe760e30136ce199c945fe273b6cd6",
+      "libLLVM.so.22.1": "abe476c377d94c4375d4d804ca555dd378c0437e7b9c01f60d51e403e8cc6d6a",
+      "liblldELF.so": "773103cd194050fa4c673293bbc8a6b71d89ee0c0167155eb419ceaabc40916f",
+      "liblldCommon.so": "ead9a563e136161ba52acba8d9c7b8b528c2b50ca65577629187affda946de63",
+      "libcrypto.so.3": "a75a864dcda6ef9e4dc29fad4b7988ca832b904c3915a63c920062c40763dae1",
+      "libblake3.so.1.8.7": "bffe67ca91fd831b709da938bbb8358d31f2c4990e54daf3dd64bcf288ec4e92",
+      "blake3-helper.so": "4bf7a0ecc72b801844462623b87fbf6af88d229592c33bc0620b43e06d66ea44",
+      "verify.so": "2fa59aa610aa1179f31827e742b5f85e63bafe9c97ff6b8c851ed13b5a77e829"
+    }
+  }
+}

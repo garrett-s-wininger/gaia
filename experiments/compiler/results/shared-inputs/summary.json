@@ -1,0 +1,553 @@
+{
+  "run_id": "20261031T022604.254307Z",
+  "raw_sha256": "f445a593b84e5e176757df18dbf22f1e9f6f2da543b35b734f06cb895afe82d4",
+  "cases": [
+    {
+      "scenario": "unchanged",
+      "engines": {
+        "ninja": {
+          "median_ms": 3.203209998901002,
+          "min_ms": 2.946823005913757,
+          "max_ms": 3.399310997338034,
+          "samples": 7
+        },
+        "ninja-ccache": {
+          "median_ms": 3.1404849942191504,
+          "min_ms": 2.9238999995868653,
+          "max_ms": 3.4135090027120896,
+          "samples": 7
+        },
+        "gaia-native-emit": {
+          "median_ms": 2.5115190001088195,
+          "min_ms": 2.34545399871422,
+          "max_ms": 4.172547996859066,
+          "samples": 7
+        },
+        "gaia-shared-inputs": {
+          "median_ms": 2.4246960019809194,
+          "min_ms": 2.2675059954053722,
+          "max_ms": 3.372970997588709,
+          "samples": 7
+        }
+      },
+      "paired_shared_minus_control": {
+        "ninja": {
+          "median_delta_ms": -0.8715519943507388,
+          "wins": 6,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": -0.6432279988075607,
+          "wins": 6,
+          "blocks": 7
+        },
+        "gaia-native-emit": {
+          "median_delta_ms": -0.17468100122641772,
+          "wins": 5,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "implementation",
+      "engines": {
+        "ninja": {
+          "median_ms": 65.74572200042894,
+          "min_ms": 63.85689399758121,
+          "max_ms": 68.7544549946324,
+          "samples": 7
+        },
+        "ninja-ccache": {
+          "median_ms": 96.91483699862147,
+          "min_ms": 94.94021499995142,
+          "max_ms": 102.03106900007697,
+          "samples": 7
+        },
+        "gaia-native-emit": {
+          "median_ms": 55.898634003824554,
+          "min_ms": 54.35737800144125,
+          "max_ms": 57.83273700217251,
+          "samples": 7,
+          "producer_median_ms": 4.804396,
+          "native_stage_medians_ms": {
+            "input_admission_ns": 1.132356,
+            "action_admission_ns": 0.066186,
+            "content_hash_ns": 0.84961,
+            "setup_ns": 4.267076
+          },
+          "export_median_ms": 4.299476000596769,
+          "reference_wire_equal": true,
+          "physical_reads": 187,
+          "physical_bytes": 3016233
+        },
+        "gaia-shared-inputs": {
+          "median_ms": 47.818307000852656,
+          "min_ms": 46.111042000120506,
+          "max_ms": 60.92194699886022,
+          "samples": 7,
+          "producer_median_ms": 0.674528,
+          "native_stage_medians_ms": {
+            "input_admission_ns": 0.640634,
+            "action_admission_ns": 0.055805,
+            "content_hash_ns": 0.025398,
+            "setup_ns": 2.893222
+          },
+          "export_median_ms": 4.547873999399599,
+          "reference_wire_equal": true,
+          "physical_reads": 187,
+          "physical_bytes": 3016233,
+          "representative_shared": {
+            "shared_segment_hits": 1,
+            "shared_new_segments": 1,
+            "shared_new_segment_bytes": 1825,
+            "shared_cache_bytes": 3346042,
+            "shared_cache_segments": 2,
+            "shared_cached_file_digests": 262,
+            "shared_manifest_bytes": 146
+          },
+          "representative_producer": {
+            "correct": true,
+            "files": 263,
+            "bytes": 146,
+            "loose_reads": 0,
+            "loose_bytes": 0,
+            "native_ns": 0,
+            "caller_ns": 676482,
+            "created_segment_bytes": 1825,
+            "sender_hash_bytes": 1971,
+            "changed_files": 1,
+            "deleted_files": 0,
+            "segments": 2,
+            "retained_segment_bytes": 3346042,
+            "compacted": false
+          }
+        }
+      },
+      "paired_shared_minus_control": {
+        "ninja": {
+          "median_delta_ms": -17.277171995374374,
+          "wins": 7,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": -48.26325100293616,
+          "wins": 7,
+          "blocks": 7
+        },
+        "gaia-native-emit": {
+          "median_delta_ms": -8.358468003279995,
+          "wins": 6,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "shared-header",
+      "engines": {
+        "ninja": {
+          "median_ms": 42.663047002861276,
+          "min_ms": 41.626044003351126,
+          "max_ms": 44.7391100024106,
+          "samples": 7
+        },
+        "ninja-ccache": {
+          "median_ms": 63.49927599512739,
+          "min_ms": 61.81932199979201,
+          "max_ms": 67.92039699939778,
+          "samples": 7
+        },
+        "gaia-native-emit": {
+          "median_ms": 33.558434995939024,
+          "min_ms": 32.12344300118275,
+          "max_ms": 34.041669001453556,
+          "samples": 7,
+          "producer_median_ms": 3.029791,
+          "native_stage_medians_ms": {
+            "input_admission_ns": 1.117848,
+            "action_admission_ns": 0.065404,
+            "content_hash_ns": 0.843979,
+            "setup_ns": 4.319896
+          },
+          "export_median_ms": 4.285148999770172,
+          "reference_wire_equal": true,
+          "physical_reads": 187,
+          "physical_bytes": 3016231
+        },
+        "gaia-shared-inputs": {
+          "median_ms": 28.32935700280359,
+          "min_ms": 27.179263001016807,
+          "max_ms": 29.94720199785661,
+          "samples": 7,
+          "producer_median_ms": 0.625435,
+          "native_stage_medians_ms": {
+            "input_admission_ns": 0.668176,
+            "action_admission_ns": 0.051528,
+            "content_hash_ns": 0.02632,
+            "setup_ns": 3.046679
+          },
+          "export_median_ms": 4.175182999460958,
+          "reference_wire_equal": true,
+          "physical_reads": 187,
+          "physical_bytes": 3016231,
+          "representative_shared": {
+            "shared_segment_hits": 1,
+            "shared_new_segments": 1,
+            "shared_new_segment_bytes": 156,
+            "shared_cache_bytes": 3344373,
+            "shared_cache_segments": 2,
+            "shared_cached_file_digests": 262,
+            "shared_manifest_bytes": 146
+          },
+          "representative_producer": {
+            "correct": true,
+            "files": 263,
+            "bytes": 146,
+            "loose_reads": 0,
+            "loose_bytes": 0,
+            "native_ns": 0,
+            "caller_ns": 679898,
+            "created_segment_bytes": 156,
+            "sender_hash_bytes": 302,
+            "changed_files": 1,
+            "deleted_files": 0,
+            "segments": 2,
+            "retained_segment_bytes": 3344373,
+            "compacted": false
+          }
+        }
+      },
+      "paired_shared_minus_control": {
+        "ninja": {
+          "median_delta_ms": -14.333690000057686,
+          "wins": 7,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": -35.58527900167974,
+          "wins": 7,
+          "blocks": 7
+        },
+        "gaia-native-emit": {
+          "median_delta_ms": -5.226904999290127,
+          "wins": 7,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "generated-header",
+      "engines": {
+        "ninja": {
+          "median_ms": 42.136572003073525,
+          "min_ms": 41.756350998184644,
+          "max_ms": 43.67196900420822,
+          "samples": 7
+        },
+        "ninja-ccache": {
+          "median_ms": 64.13389800582081,
+          "min_ms": 62.16034300450701,
+          "max_ms": 71.2213229999179,
+          "samples": 7
+        },
+        "gaia-native-emit": {
+          "median_ms": 33.588329002668615,
+          "min_ms": 31.932507001329213,
+          "max_ms": 36.94158400321612,
+          "samples": 7,
+          "producer_median_ms": 4.388383,
+          "native_stage_medians_ms": {
+            "input_admission_ns": 1.109051,
+            "action_admission_ns": 0.059252,
+            "content_hash_ns": 0.873045,
+            "setup_ns": 4.241667
+          },
+          "export_median_ms": 4.301982000470161,
+          "reference_wire_equal": true,
+          "physical_reads": 187,
+          "physical_bytes": 3016231
+        },
+        "gaia-shared-inputs": {
+          "median_ms": 28.012663999106735,
+          "min_ms": 26.306974003091455,
+          "max_ms": 29.222261997347232,
+          "samples": 7,
+          "producer_median_ms": 0.596871,
+          "native_stage_medians_ms": {
+            "input_admission_ns": 0.630655,
+            "action_admission_ns": 0.049885,
+            "content_hash_ns": 0.025578,
+            "setup_ns": 2.959057
+          },
+          "export_median_ms": 4.677684002672322,
+          "reference_wire_equal": true,
+          "physical_reads": 187,
+          "physical_bytes": 3016231,
+          "representative_shared": {
+            "shared_segment_hits": 1,
+            "shared_new_segments": 1,
+            "shared_new_segment_bytes": 163,
+            "shared_cache_bytes": 3344380,
+            "shared_cache_segments": 2,
+            "shared_cached_file_digests": 262,
+            "shared_manifest_bytes": 146
+          },
+          "representative_producer": {
+            "correct": true,
+            "files": 263,
+            "bytes": 146,
+            "loose_reads": 0,
+            "loose_bytes": 0,
+            "native_ns": 0,
+            "caller_ns": 667195,
+            "created_segment_bytes": 163,
+            "sender_hash_bytes": 309,
+            "changed_files": 1,
+            "deleted_files": 0,
+            "segments": 2,
+            "retained_segment_bytes": 3344380,
+            "compacted": false
+          }
+        }
+      },
+      "paired_shared_minus_control": {
+        "ninja": {
+          "median_delta_ms": -14.489148998109158,
+          "wins": 7,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": -36.03956699225819,
+          "wins": 7,
+          "blocks": 7
+        },
+        "gaia-native-emit": {
+          "median_delta_ms": -5.493944998306688,
+          "wins": 7,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "unused-header",
+      "engines": {
+        "ninja": {
+          "median_ms": 3.091116996074561,
+          "min_ms": 2.977092000946868,
+          "max_ms": 3.9031750056892633,
+          "samples": 7
+        },
+        "ninja-ccache": {
+          "median_ms": 2.9903559989179485,
+          "min_ms": 2.8235310019226745,
+          "max_ms": 4.258779998053797,
+          "samples": 7
+        },
+        "gaia-native-emit": {
+          "median_ms": 2.3720650060568005,
+          "min_ms": 2.30762199498713,
+          "max_ms": 2.8056459996150807,
+          "samples": 7
+        },
+        "gaia-shared-inputs": {
+          "median_ms": 2.387606000411324,
+          "min_ms": 2.2358069982146844,
+          "max_ms": 3.4619720026967116,
+          "samples": 7
+        }
+      },
+      "paired_shared_minus_control": {
+        "ninja": {
+          "median_delta_ms": -0.6038250066922046,
+          "wins": 6,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": -0.6027499985066243,
+          "wins": 6,
+          "blocks": 7
+        },
+        "gaia-native-emit": {
+          "median_delta_ms": 0.001201988197863102,
+          "wins": 3,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "revert",
+      "engines": {
+        "ninja": {
+          "median_ms": 67.79806200211169,
+          "min_ms": 63.42204300017329,
+          "max_ms": 74.26095099799568,
+          "samples": 7
+        },
+        "ninja-ccache": {
+          "median_ms": 24.160077002306934,
+          "min_ms": 23.291322999284603,
+          "max_ms": 26.715310996223707,
+          "samples": 7
+        },
+        "gaia-native-emit": {
+          "median_ms": 9.853388997726142,
+          "min_ms": 9.492363002209459,
+          "max_ms": 10.900114000833128,
+          "samples": 7
+        },
+        "gaia-shared-inputs": {
+          "median_ms": 9.134776999417227,
+          "min_ms": 8.92495099833468,
+          "max_ms": 11.264647997450083,
+          "samples": 7
+        }
+      },
+      "paired_shared_minus_control": {
+        "ninja": {
+          "median_delta_ms": -58.11419699602993,
+          "wins": 7,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": -15.075814000738319,
+          "wins": 7,
+          "blocks": 7
+        },
+        "gaia-native-emit": {
+          "median_delta_ms": -0.35758600279223174,
+          "wins": 5,
+          "blocks": 7
+        }
+      }
+    }
+  ],
+  "residents": {
+    "gaia-native-emit": {
+      "requests": 23,
+      "peak_rss_bytes": [
+        235995136,
+        237817856,
+        237817856,
+        237817856,
+        237817856,
+        237817856,
+        237817856,
+        237817856,
+        237817856,
+        237817856,
+        237817856,
+        237817856,
+        237817856,
+        237817856,
+        237817856,
+        237817856,
+        237817856,
+        237817856,
+        237817856,
+        237817856,
+        237817856,
+        237817856,
+        237817856
+      ],
+      "cpu_seconds": 12.53,
+      "serial": true,
+      "final_memory_kib": {
+        "VmSize": 867768,
+        "VmHWM": 232244,
+        "VmRSS": 138284
+      }
+    },
+    "gaia-shared-inputs": {
+      "requests": 65,
+      "peak_rss_bytes": [
+        226603008,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120,
+        228229120
+      ],
+      "cpu_seconds": 12.19,
+      "serial": true,
+      "final_memory_kib": {
+        "VmSize": 871312,
+        "VmHWM": 222880,
+        "VmRSS": 143492
+      }
+    }
+  },
+  "context": {
+    "contract": "GAIA-RECORDED-VFS-1",
+    "host_sha256": "7f3353b312b34f1e4433aa8611dd23ce1855717af0667bb732183558754e10df",
+    "tools": {
+      "clang": "b852cb4597dc56b241bcd328544b5fee60717f35f66808098cc0413946ba42f2",
+      "ld.lld": "53b86825ed1635d71a5b719f87bd702497bc0c67ad6b139105adcdd8aab7e904",
+      "libclang-cpp.so": "f8ad17a08eeab80c04e8c2f90986c43808fe760e30136ce199c945fe273b6cd6",
+      "libLLVM.so.22.1": "abe476c377d94c4375d4d804ca555dd378c0437e7b9c01f60d51e403e8cc6d6a",
+      "liblldELF.so": "773103cd194050fa4c673293bbc8a6b71d89ee0c0167155eb419ceaabc40916f",
+      "liblldCommon.so": "ead9a563e136161ba52acba8d9c7b8b528c2b50ca65577629187affda946de63",
+      "libcrypto.so.3": "a75a864dcda6ef9e4dc29fad4b7988ca832b904c3915a63c920062c40763dae1",
+      "libblake3.so.1.8.7": "bffe67ca91fd831b709da938bbb8358d31f2c4990e54daf3dd64bcf288ec4e92",
+      "blake3-helper.so": "4bf7a0ecc72b801844462623b87fbf6af88d229592c33bc0620b43e06d66ea44",
+      "verify.so": "2fa59aa610aa1179f31827e742b5f85e63bafe9c97ff6b8c851ed13b5a77e829"
+    }
+  }
+}

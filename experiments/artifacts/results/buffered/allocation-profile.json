@@ -1,0 +1,747 @@
+{
+  "scope": "one cold fetch per case under cProfile/tracemalloc/client socket wrappers; diagnostic overhead is substantial; not performance medians",
+  "corpus": "mixed",
+  "payload_bytes": 3932160,
+  "objects": 128,
+  "cases": [
+    {
+      "transport": "http",
+      "mode": "pack-coalesced",
+      "traced_current_bytes": 407695,
+      "traced_peak_bytes": 4659905,
+      "client_socket_calls": {
+        "recv_calls": 12,
+        "recv_bytes": 3946629,
+        "requested_recv_bytes": 23068672,
+        "max_requested_recv_bytes": 3932160,
+        "sendall_calls": 2,
+        "sendall_bytes": 403
+      },
+      "sample": {
+        "seconds": 0.05196449300274253,
+        "metadata_seconds": 0.014033113002369646,
+        "cache_validation_seconds": 0.0058926839992636815,
+        "payload_verify_publish_seconds": 0.031181878999632318,
+        "receipt_seconds": 0.0007224569999380037,
+        "requests": 2,
+        "response_payload_bytes": 3946058,
+        "manifest_bytes": 13898,
+        "transfer_bytes": 3932160,
+        "missing_bytes": 3932160,
+        "batch_framing_bytes": 0,
+        "overfetch_bytes": 0,
+        "hash_bytes": 3946058,
+        "cache_hits": 0,
+        "published_objects": 128,
+        "connections": 1,
+        "full_pack_fallback": false
+      },
+      "functions": [
+        {
+          "file": "transfer.py",
+          "line": 246,
+          "function": "fetch",
+          "calls": 1,
+          "self_seconds": 0.0020400550000000003,
+          "cumulative_seconds": 0.052028607000000004
+        },
+        {
+          "file": "transfer.py",
+          "line": 204,
+          "function": "get",
+          "calls": 2,
+          "self_seconds": 5.46e-06,
+          "cumulative_seconds": 0.018593875000000003
+        },
+        {
+          "file": "transfer.py",
+          "line": 35,
+          "function": "atomic_write",
+          "calls": 130,
+          "self_seconds": 0.0009665440000000001,
+          "cumulative_seconds": 0.018272606
+        },
+        {
+          "file": "transfer.py",
+          "line": 29,
+          "function": "digest",
+          "calls": 129,
+          "self_seconds": 0.000105352,
+          "cumulative_seconds": 0.002089458
+        }
+      ]
+    },
+    {
+      "transport": "http",
+      "mode": "pack-full",
+      "traced_current_bytes": 70083,
+      "traced_peak_bytes": 4317322,
+      "client_socket_calls": {
+        "recv_calls": 11,
+        "recv_bytes": 3946576,
+        "requested_recv_bytes": 24248320,
+        "max_requested_recv_bytes": 3932160,
+        "sendall_calls": 2,
+        "sendall_bytes": 379
+      },
+      "sample": {
+        "seconds": 0.035157149999577086,
+        "metadata_seconds": 0.0039416189974872395,
+        "cache_validation_seconds": 0.004844178001803812,
+        "payload_verify_publish_seconds": 0.025639198000135366,
+        "receipt_seconds": 0.0006031559969414957,
+        "requests": 2,
+        "response_payload_bytes": 3946058,
+        "manifest_bytes": 13898,
+        "transfer_bytes": 3932160,
+        "missing_bytes": 3932160,
+        "batch_framing_bytes": 0,
+        "overfetch_bytes": 0,
+        "hash_bytes": 7878218,
+        "cache_hits": 0,
+        "published_objects": 128,
+        "connections": 1,
+        "full_pack_fallback": false
+      },
+      "functions": [
+        {
+          "file": "transfer.py",
+          "line": 246,
+          "function": "fetch",
+          "calls": 1,
+          "self_seconds": 0.0007102930000000001,
+          "cumulative_seconds": 0.035194011000000004
+        },
+        {
+          "file": "transfer.py",
+          "line": 35,
+          "function": "atomic_write",
+          "calls": 130,
+          "self_seconds": 0.000817199,
+          "cumulative_seconds": 0.017317147
+        },
+        {
+          "file": "transfer.py",
+          "line": 204,
+          "function": "get",
+          "calls": 2,
+          "self_seconds": 1.491e-06,
+          "cumulative_seconds": 0.004019288
+        },
+        {
+          "file": "transfer.py",
+          "line": 29,
+          "function": "digest",
+          "calls": 130,
+          "self_seconds": 8.0006e-05,
+          "cumulative_seconds": 0.0038580550000000004
+        }
+      ]
+    },
+    {
+      "transport": "http",
+      "mode": "selected-batch",
+      "traced_current_bytes": 81164,
+      "traced_peak_bytes": 4222022,
+      "client_socket_calls": {
+        "recv_calls": 10,
+        "recv_bytes": 3951609,
+        "requested_recv_bytes": 14942208,
+        "max_requested_recv_bytes": 3801088,
+        "sendall_calls": 3,
+        "sendall_bytes": 4404
+      },
+      "sample": {
+        "seconds": 0.03632564200233901,
+        "metadata_seconds": 0.0037833359965588897,
+        "cache_validation_seconds": 0.00489472399931401,
+        "payload_verify_publish_seconds": 0.026964521006448194,
+        "receipt_seconds": 0.0005657239962602034,
+        "requests": 2,
+        "response_payload_bytes": 3951194,
+        "manifest_bytes": 13898,
+        "transfer_bytes": 3932160,
+        "missing_bytes": 3932160,
+        "batch_framing_bytes": 5136,
+        "overfetch_bytes": 0,
+        "hash_bytes": 3946058,
+        "cache_hits": 0,
+        "published_objects": 128,
+        "connections": 1,
+        "full_pack_fallback": false
+      },
+      "functions": [
+        {
+          "file": "transfer.py",
+          "line": 246,
+          "function": "fetch",
+          "calls": 1,
+          "self_seconds": 0.000836875,
+          "cumulative_seconds": 0.036364026
+        },
+        {
+          "file": "transfer.py",
+          "line": 35,
+          "function": "atomic_write",
+          "calls": 130,
+          "self_seconds": 0.000869319,
+          "cumulative_seconds": 0.017613467
+        },
+        {
+          "file": "transfer.py",
+          "line": 29,
+          "function": "digest",
+          "calls": 129,
+          "self_seconds": 8.1631e-05,
+          "cumulative_seconds": 0.0022051360000000003
+        },
+        {
+          "file": "transfer.py",
+          "line": 204,
+          "function": "get",
+          "calls": 1,
+          "self_seconds": 1.003e-06,
+          "cumulative_seconds": 0.0018481740000000002
+        }
+      ]
+    },
+    {
+      "transport": "binary",
+      "mode": "pack-coalesced",
+      "traced_current_bytes": 65971,
+      "traced_peak_bytes": 7971586,
+      "client_socket_calls": {
+        "recv_calls": 31,
+        "recv_bytes": 3946206,
+        "requested_recv_bytes": 39383850,
+        "max_requested_recv_bytes": 3932160,
+        "sendall_calls": 2,
+        "sendall_bytes": 130
+      },
+      "sample": {
+        "seconds": 0.03241587500087917,
+        "metadata_seconds": 0.003518467005051207,
+        "cache_validation_seconds": 0.004866719995334279,
+        "payload_verify_publish_seconds": 0.02334384000278078,
+        "receipt_seconds": 0.0005925759978708811,
+        "requests": 2,
+        "response_payload_bytes": 3946058,
+        "manifest_bytes": 13898,
+        "transfer_bytes": 3932160,
+        "missing_bytes": 3932160,
+        "batch_framing_bytes": 0,
+        "overfetch_bytes": 0,
+        "hash_bytes": 3946058,
+        "cache_hits": 0,
+        "published_objects": 128,
+        "connections": 1,
+        "full_pack_fallback": false
+      },
+      "functions": [
+        {
+          "file": "transfer.py",
+          "line": 246,
+          "function": "fetch",
+          "calls": 1,
+          "self_seconds": 0.0013852480000000002,
+          "cumulative_seconds": 0.032457946
+        },
+        {
+          "file": "transfer.py",
+          "line": 35,
+          "function": "atomic_write",
+          "calls": 130,
+          "self_seconds": 0.0008277380000000001,
+          "cumulative_seconds": 0.016483872
+        },
+        {
+          "file": "binary_transport.py",
+          "line": 196,
+          "function": "get",
+          "calls": 2,
+          "self_seconds": 6.88e-05,
+          "cumulative_seconds": 0.0035065630000000003
+        },
+        {
+          "file": "binary_transport.py",
+          "line": 169,
+          "function": "exchange",
+          "calls": 2,
+          "self_seconds": 7.5376e-05,
+          "cumulative_seconds": 0.002648314
+        },
+        {
+          "file": "binary_transport.py",
+          "line": 168,
+          "function": "receive",
+          "calls": 6,
+          "self_seconds": 7.851e-06,
+          "cumulative_seconds": 0.002191008
+        },
+        {
+          "file": "binary_transport.py",
+          "line": 30,
+          "function": "receive",
+          "calls": 6,
+          "self_seconds": 0.000308003,
+          "cumulative_seconds": 0.0021831570000000002
+        },
+        {
+          "file": "transfer.py",
+          "line": 29,
+          "function": "digest",
+          "calls": 129,
+          "self_seconds": 7.5943e-05,
+          "cumulative_seconds": 0.002028095
+        }
+      ]
+    },
+    {
+      "transport": "binary",
+      "mode": "pack-full",
+      "traced_current_bytes": 48202,
+      "traced_peak_bytes": 7951896,
+      "client_socket_calls": {
+        "recv_calls": 50,
+        "recv_bytes": 3946206,
+        "requested_recv_bytes": 97438126,
+        "max_requested_recv_bytes": 3932160,
+        "sendall_calls": 2,
+        "sendall_bytes": 114
+      },
+      "sample": {
+        "seconds": 0.03585223699337803,
+        "metadata_seconds": 0.003085136995650828,
+        "cache_validation_seconds": 0.0050069610006175935,
+        "payload_verify_publish_seconds": 0.027069613002822734,
+        "receipt_seconds": 0.0005985280004097149,
+        "requests": 2,
+        "response_payload_bytes": 3946058,
+        "manifest_bytes": 13898,
+        "transfer_bytes": 3932160,
+        "missing_bytes": 3932160,
+        "batch_framing_bytes": 0,
+        "overfetch_bytes": 0,
+        "hash_bytes": 7878218,
+        "cache_hits": 0,
+        "published_objects": 128,
+        "connections": 1,
+        "full_pack_fallback": false
+      },
+      "functions": [
+        {
+          "file": "transfer.py",
+          "line": 246,
+          "function": "fetch",
+          "calls": 1,
+          "self_seconds": 0.0007550430000000001,
+          "cumulative_seconds": 0.035899097000000005
+        },
+        {
+          "file": "transfer.py",
+          "line": 35,
+          "function": "atomic_write",
+          "calls": 130,
+          "self_seconds": 0.000923126,
+          "cumulative_seconds": 0.018220712
+        },
+        {
+          "file": "transfer.py",
+          "line": 29,
+          "function": "digest",
+          "calls": 130,
+          "self_seconds": 8.6187e-05,
+          "cumulative_seconds": 0.004237607
+        },
+        {
+          "file": "binary_transport.py",
+          "line": 196,
+          "function": "get",
+          "calls": 2,
+          "self_seconds": 3.0892e-05,
+          "cumulative_seconds": 0.0031570360000000002
+        },
+        {
+          "file": "binary_transport.py",
+          "line": 169,
+          "function": "exchange",
+          "calls": 2,
+          "self_seconds": 6.3664e-05,
+          "cumulative_seconds": 0.0031020590000000003
+        },
+        {
+          "file": "binary_transport.py",
+          "line": 168,
+          "function": "receive",
+          "calls": 6,
+          "self_seconds": 6.882e-06,
+          "cumulative_seconds": 0.002744639
+        },
+        {
+          "file": "binary_transport.py",
+          "line": 30,
+          "function": "receive",
+          "calls": 6,
+          "self_seconds": 0.000349656,
+          "cumulative_seconds": 0.0027377570000000004
+        }
+      ]
+    },
+    {
+      "transport": "binary",
+      "mode": "selected-batch",
+      "traced_current_bytes": 52533,
+      "traced_peak_bytes": 7968888,
+      "client_socket_calls": {
+        "recv_calls": 46,
+        "recv_bytes": 3951342,
+        "requested_recv_bytes": 86416174,
+        "max_requested_recv_bytes": 3937296,
+        "sendall_calls": 2,
+        "sendall_bytes": 4193
+      },
+      "sample": {
+        "seconds": 0.034032001000014134,
+        "metadata_seconds": 0.003226101995096542,
+        "cache_validation_seconds": 0.004933590003929567,
+        "payload_verify_publish_seconds": 0.025266867996833753,
+        "receipt_seconds": 0.0005101560018374585,
+        "requests": 2,
+        "response_payload_bytes": 3951194,
+        "manifest_bytes": 13898,
+        "transfer_bytes": 3932160,
+        "missing_bytes": 3932160,
+        "batch_framing_bytes": 5136,
+        "overfetch_bytes": 0,
+        "hash_bytes": 3946058,
+        "cache_hits": 0,
+        "published_objects": 128,
+        "connections": 1,
+        "full_pack_fallback": false
+      },
+      "functions": [
+        {
+          "file": "transfer.py",
+          "line": 246,
+          "function": "fetch",
+          "calls": 1,
+          "self_seconds": 0.0007977570000000001,
+          "cumulative_seconds": 0.034073610000000004
+        },
+        {
+          "file": "transfer.py",
+          "line": 35,
+          "function": "atomic_write",
+          "calls": 130,
+          "self_seconds": 0.0007733740000000001,
+          "cumulative_seconds": 0.016534956
+        },
+        {
+          "file": "binary_transport.py",
+          "line": 169,
+          "function": "exchange",
+          "calls": 2,
+          "self_seconds": 0.000144189,
+          "cumulative_seconds": 0.004926619
+        },
+        {
+          "file": "binary_transport.py",
+          "line": 168,
+          "function": "receive",
+          "calls": 6,
+          "self_seconds": 1.1903000000000001e-05,
+          "cumulative_seconds": 0.004517789
+        },
+        {
+          "file": "binary_transport.py",
+          "line": 30,
+          "function": "receive",
+          "calls": 6,
+          "self_seconds": 0.000364293,
+          "cumulative_seconds": 0.004505886000000001
+        },
+        {
+          "file": "transfer.py",
+          "line": 29,
+          "function": "digest",
+          "calls": 129,
+          "self_seconds": 8.449e-05,
+          "cumulative_seconds": 0.002141117
+        },
+        {
+          "file": "binary_transport.py",
+          "line": 196,
+          "function": "get",
+          "calls": 1,
+          "self_seconds": 3.2573e-05,
+          "cumulative_seconds": 0.001110721
+        }
+      ]
+    },
+    {
+      "transport": "binary-buffered",
+      "mode": "pack-coalesced",
+      "traced_current_bytes": 56463,
+      "traced_peak_bytes": 4366125,
+      "client_socket_calls": {
+        "recv_calls": 25,
+        "recv_bytes": 3946206,
+        "requested_recv_bytes": 34340864,
+        "max_requested_recv_bytes": 3866624,
+        "sendall_calls": 2,
+        "sendall_bytes": 130
+      },
+      "sample": {
+        "seconds": 0.03465332499763463,
+        "metadata_seconds": 0.0033624679999775253,
+        "cache_validation_seconds": 0.004943068997818045,
+        "payload_verify_publish_seconds": 0.025646442001743708,
+        "receipt_seconds": 0.0005819250000058673,
+        "requests": 2,
+        "response_payload_bytes": 3946058,
+        "manifest_bytes": 13898,
+        "transfer_bytes": 3932160,
+        "missing_bytes": 3932160,
+        "batch_framing_bytes": 0,
+        "overfetch_bytes": 0,
+        "hash_bytes": 3946058,
+        "cache_hits": 0,
+        "published_objects": 128,
+        "connections": 1,
+        "full_pack_fallback": false
+      },
+      "functions": [
+        {
+          "file": "transfer.py",
+          "line": 246,
+          "function": "fetch",
+          "calls": 1,
+          "self_seconds": 0.001604132,
+          "cumulative_seconds": 0.034693943000000005
+        },
+        {
+          "file": "transfer.py",
+          "line": 35,
+          "function": "atomic_write",
+          "calls": 130,
+          "self_seconds": 0.000784431,
+          "cumulative_seconds": 0.016442399
+        },
+        {
+          "file": "binary_transport.py",
+          "line": 196,
+          "function": "get",
+          "calls": 2,
+          "self_seconds": 6.3954e-05,
+          "cumulative_seconds": 0.005493729
+        },
+        {
+          "file": "binary_transport.py",
+          "line": 169,
+          "function": "exchange",
+          "calls": 2,
+          "self_seconds": 6.7914e-05,
+          "cumulative_seconds": 0.005398073000000001
+        },
+        {
+          "file": "binary_transport.py",
+          "line": 227,
+          "function": "receive",
+          "calls": 6,
+          "self_seconds": 1.8897000000000002e-05,
+          "cumulative_seconds": 0.005047556
+        },
+        {
+          "file": "transfer.py",
+          "line": 29,
+          "function": "digest",
+          "calls": 129,
+          "self_seconds": 0.000132385,
+          "cumulative_seconds": 0.002119824
+        }
+      ]
+    },
+    {
+      "transport": "binary-buffered",
+      "mode": "pack-full",
+      "traced_current_bytes": 51389,
+      "traced_peak_bytes": 4360007,
+      "client_socket_calls": {
+        "recv_calls": 9,
+        "recv_bytes": 3946206,
+        "requested_recv_bytes": 15794176,
+        "max_requested_recv_bytes": 3866624,
+        "sendall_calls": 2,
+        "sendall_bytes": 114
+      },
+      "sample": {
+        "seconds": 0.03768484399915906,
+        "metadata_seconds": 0.0030133399995975196,
+        "cache_validation_seconds": 0.0048583349998807535,
+        "payload_verify_publish_seconds": 0.029168692999519408,
+        "receipt_seconds": 0.0005269390021567233,
+        "requests": 2,
+        "response_payload_bytes": 3946058,
+        "manifest_bytes": 13898,
+        "transfer_bytes": 3932160,
+        "missing_bytes": 3932160,
+        "batch_framing_bytes": 0,
+        "overfetch_bytes": 0,
+        "hash_bytes": 7878218,
+        "cache_hits": 0,
+        "published_objects": 128,
+        "connections": 1,
+        "full_pack_fallback": false
+      },
+      "functions": [
+        {
+          "file": "transfer.py",
+          "line": 246,
+          "function": "fetch",
+          "calls": 1,
+          "self_seconds": 0.0007328030000000001,
+          "cumulative_seconds": 0.037722627
+        },
+        {
+          "file": "transfer.py",
+          "line": 35,
+          "function": "atomic_write",
+          "calls": 130,
+          "self_seconds": 0.0007872980000000001,
+          "cumulative_seconds": 0.016265461000000002
+        },
+        {
+          "file": "binary_transport.py",
+          "line": 196,
+          "function": "get",
+          "calls": 2,
+          "self_seconds": 4.6219000000000006e-05,
+          "cumulative_seconds": 0.007576153
+        },
+        {
+          "file": "binary_transport.py",
+          "line": 169,
+          "function": "exchange",
+          "calls": 2,
+          "self_seconds": 0.00011168900000000001,
+          "cumulative_seconds": 0.0075063280000000005
+        },
+        {
+          "file": "binary_transport.py",
+          "line": 227,
+          "function": "receive",
+          "calls": 6,
+          "self_seconds": 1.5776e-05,
+          "cumulative_seconds": 0.007129528
+        },
+        {
+          "file": "transfer.py",
+          "line": 29,
+          "function": "digest",
+          "calls": 130,
+          "self_seconds": 8.179900000000001e-05,
+          "cumulative_seconds": 0.004182913
+        }
+      ]
+    },
+    {
+      "transport": "binary-buffered",
+      "mode": "selected-batch",
+      "traced_current_bytes": 53395,
+      "traced_peak_bytes": 4257070,
+      "client_socket_calls": {
+        "recv_calls": 17,
+        "recv_bytes": 3951342,
+        "requested_recv_bytes": 26542080,
+        "max_requested_recv_bytes": 3866624,
+        "sendall_calls": 2,
+        "sendall_bytes": 4193
+      },
+      "sample": {
+        "seconds": 0.03359437699691625,
+        "metadata_seconds": 0.0029059360022074543,
+        "cache_validation_seconds": 0.004709165994427167,
+        "payload_verify_publish_seconds": 0.025360038001963403,
+        "receipt_seconds": 0.0005065590012236498,
+        "requests": 2,
+        "response_payload_bytes": 3951194,
+        "manifest_bytes": 13898,
+        "transfer_bytes": 3932160,
+        "missing_bytes": 3932160,
+        "batch_framing_bytes": 5136,
+        "overfetch_bytes": 0,
+        "hash_bytes": 3946058,
+        "cache_hits": 0,
+        "published_objects": 128,
+        "connections": 1,
+        "full_pack_fallback": false
+      },
+      "functions": [
+        {
+          "file": "transfer.py",
+          "line": 246,
+          "function": "fetch",
+          "calls": 1,
+          "self_seconds": 0.0008620930000000001,
+          "cumulative_seconds": 0.03363199
+        },
+        {
+          "file": "transfer.py",
+          "line": 35,
+          "function": "atomic_write",
+          "calls": 130,
+          "self_seconds": 0.000831015,
+          "cumulative_seconds": 0.017010062
+        },
+        {
+          "file": "binary_transport.py",
+          "line": 169,
+          "function": "exchange",
+          "calls": 2,
+          "self_seconds": 7.8652e-05,
+          "cumulative_seconds": 0.004300302000000001
+        },
+        {
+          "file": "binary_transport.py",
+          "line": 227,
+          "function": "receive",
+          "calls": 6,
+          "self_seconds": 1.7023e-05,
+          "cumulative_seconds": 0.003960015
+        },
+        {
+          "file": "transfer.py",
+          "line": 29,
+          "function": "digest",
+          "calls": 129,
+          "self_seconds": 7.821600000000001e-05,
+          "cumulative_seconds": 0.001980748
+        },
+        {
+          "file": "binary_transport.py",
+          "line": 196,
+          "function": "get",
+          "calls": 1,
+          "self_seconds": 2.0960000000000003e-05,
+          "cumulative_seconds": 0.000955725
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "test_buffered_transport.py": "31cd0b388a7e6ebf71036429078d258b903822db001c9d0cecc25475d382d19d",
+    "framing_benchmark.py": "10de3369c1671dab8dd02a8022ba1637e9bc0a55da551fa8652f3c729e59d14c",
+    "test_binary_transport.py": "3ef2ba245bedd8075824439c94f2b9373410424999208265cdb5b4a7b1a1bc0b",
+    "binary_transport.py": "6780f80ff32df7b27623083f04b2eb60ad06e3bdc8f9e620687146f363323f14",
+    "batch.py": "8880a46a55956c11a29953e51f654567119317b228467df85afc6880654dcaad",
+    "benchmark.py": "4371b93a7ce353187b7fec4060a96711a83c4e589daaf5530007853fd11b9127",
+    "test_transfer.py": "c3d496af536a6751d1aeac3371efafee3152a5fe134c139c31824be2d1273103",
+    "transfer.py": "eb737381207dbfe87513c78d02f7b0bf97a607137ad6a3abb63e82ea074921dd"
+  },
+  "diagnostic_source_sha256": "6ba4a8ead5c80e745004cc4dff288a34db8fc0b8fa7158f277d015cfe4909e4d",
+  "raw_profile": {
+    "path": "profile-raw/profiles.json",
+    "bytes": 54312,
+    "sha256": "981c80afb4ca120cd405a02c5063c5fc2784a1485990f0d4c36e8bfadf3bd3ac"
+  }
+}

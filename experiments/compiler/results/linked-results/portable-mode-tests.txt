@@ -1,0 +1,16 @@
+test_eviction_quota_catalog_corruption_and_optional_write_failure (test_result_history.LinkedResultTests.test_eviction_quota_catalog_corruption_and_optional_write_failure) ... ok
+test_input_mutation_during_restore_cannot_publish_receipt (test_result_history.LinkedResultTests.test_input_mutation_during_restore_cannot_publish_receipt) ... ok
+test_request_tools_and_negative_visibility_are_part_of_proof (test_result_history.LinkedResultTests.test_request_tools_and_negative_visibility_are_part_of_proof) ... ok
+test_revert_restores_previous_library_and_current_receipt (test_result_history.LinkedResultTests.test_revert_restores_previous_library_and_current_receipt) ... ok
+test_unconditional_copy_hash_rejects_preserved_metadata_corruption (test_result_history.LinkedResultTests.test_unconditional_copy_hash_rejects_preserved_metadata_corruption) ... ok
+test_completed_proof_and_copied_artifact_must_agree (test_result_history.ReboundResultTests.test_completed_proof_and_copied_artifact_must_agree) ... ok
+test_eviction_quota_catalog_corruption_and_optional_write_failure (test_result_history.ReboundResultTests.test_eviction_quota_catalog_corruption_and_optional_write_failure) ... ok
+test_input_mutation_during_restore_cannot_publish_receipt (test_result_history.ReboundResultTests.test_input_mutation_during_restore_cannot_publish_receipt) ... ok
+test_request_tools_and_negative_visibility_are_part_of_proof (test_result_history.ReboundResultTests.test_request_tools_and_negative_visibility_are_part_of_proof) ... ok
+test_revert_restores_previous_library_and_current_receipt (test_result_history.ReboundResultTests.test_revert_restores_previous_library_and_current_receipt) ... ok
+test_unconditional_copy_hash_rejects_preserved_metadata_corruption (test_result_history.ReboundResultTests.test_unconditional_copy_hash_rejects_preserved_metadata_corruption) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 1.708s
+
+OK

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "operations": 24,
+  "timed_operations": 20,
+  "same_logical_python_lock": true,
+  "same_logical_transfer_hash_and_read_bytes": true,
+  "same_consumer_behavior_and_sha_crc_policy": true,
+  "reuse_offline": true,
+  "raw_sha256": "e524132fa7c1026e9ba73c7f1f12caf06607e82cca493c98560022ebc1de5514"
+}

@@ -1,0 +1,36 @@
+{
+  "jdk": {
+    "version": "java version \"25.0.5.0.3\" 2026-10-25 LTS\nJava(TM) SE Runtime Environment (build 25.0.5.0.3+1-LTS-2)\nJava HotSpot(TM) 64-Bit Server VM (build 25.0.5.0.3+1-LTS-2, mixed mode, sharing)\n",
+    "archive_url": "https://download.oracle.com/java/25/latest/jdk-25_linux-x64_bin.tar.gz",
+    "archive_sha256": "6deafad80454d1f968105b1f582d89b8c2e88a5dfc98116a8226e0ec2fd5df8e",
+    "archive_bytes": 217100679,
+    "java_sha256": "31b74dd33a6c966a20bececb38c3892476b4b2f023811901e4e41b194b34a7bb",
+    "checksum_url": "https://download.oracle.com/java/25/latest/jdk-25_linux-x64_bin.tar.gz.sha256"
+  },
+  "jars": {
+    "groovy-6.0.0.jar": {
+      "bytes": 9361435,
+      "sha256": "6bcbec490ac1ade0dca6566dca9d02897cbb8fc31ee4008e950451aa83b1ac76",
+      "url": "https://repo.maven.apache.org/maven2/org/apache/groovy/groovy/6.0.0/groovy-6.0.0.jar"
+    },
+    "picocli-4.7.7.jar": {
+      "bytes": 417640,
+      "sha256": "f86e30fffd10d2b13b8caa8d4b237a7ee61f2ffccf5b1941de718b765d235bf8",
+      "url": "https://repo.maven.apache.org/maven2/info/picocli/picocli/4.7.7/picocli-4.7.7.jar"
+    }
+  },
+  "sources": {
+    "controls.py": "993e7aa2b8ff2e2db89f5fe43be59c279ec1ae5be572062d067ee4f9bc78811a",
+    "EmptyMain.java": "433f12fc180a04314ced1410ebb3781f56625a3aae8ffe7289cc8329cc551940",
+    "PlainPicocli.java": "19392d60796310d44b92f162fcfff0373840d8ca7fd3f1ec1a057f9199aa011c",
+    "test_archive.py": "612cd27e00c0e1d15afb3e35b4bac4a5c89df6f29e93cbb92008f892a8f6ccbc",
+    "benchmark.py": "57e6338ade479a47d1caf6a4af08e1ba0aadd42120206e8e2b28e55c3b38a455",
+    "StaticLogic.groovy": "a7f8f20276e9a6f060cb5e5ad3f8e8a7baf3c03f7829d1aee514c374f2f3f5eb",
+    "Command.java": "184911af2781ca4ee1d70d4011b101df8cc9b16d774ac7ee9cc3bfae2dc34268"
+  },
+  "test_sha256": "612cd27e00c0e1d15afb3e35b4bac4a5c89df6f29e93cbb92008f892a8f6ccbc",
+  "picocli_sources": {
+    "url": "https://repo.maven.apache.org/maven2/info/picocli/picocli/4.7.7/picocli-4.7.7-sources.jar",
+    "sha256": "87916611c616588b20d987868f96e622de6ed447e4b1ff5b662ebd947773e9a6"
+  }
+}

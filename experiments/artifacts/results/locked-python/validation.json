@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "operations": 24,
+  "timed_operations": 18,
+  "consumer_signatures_match": true,
+  "no_dependency_materialization_packed": true,
+  "reuse_offline": true,
+  "raw_sha256": "b5e4f45fc57887deb327f05d1dce5e83bf573f1c5a13bbc6612a6a698c44cae1"
+}

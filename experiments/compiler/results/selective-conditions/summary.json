@@ -1,0 +1,341 @@
+{
+  "run_id": "20261030T185318.921520Z",
+  "raw_sha256": "6ad8e3c3355b2a5ff5298fff34e0d604721582f83501c2ea5e19251ef304b752",
+  "cases": [
+    {
+      "scenario": "unchanged",
+      "engines": {
+        "ninja": {
+          "median_ms": 8.602829999290407,
+          "median_compilers": 0,
+          "median_links": 0,
+          "decision_hits": 0,
+          "median_index_export_ms": null,
+          "positive_stat_calls": null
+        },
+        "ninja-ccache": {
+          "median_ms": 8.094978002191056,
+          "median_compilers": 0,
+          "median_links": 0,
+          "decision_hits": 0,
+          "median_index_export_ms": null,
+          "positive_stat_calls": null
+        },
+        "gaia-fast": {
+          "median_ms": 6.829481000750093,
+          "median_compilers": 0,
+          "median_links": 0,
+          "decision_hits": 7,
+          "median_index_export_ms": null,
+          "positive_stat_calls": null
+        },
+        "gaia-selective": {
+          "median_ms": 10.832214000402018,
+          "median_compilers": 0,
+          "median_links": 0,
+          "decision_hits": 7,
+          "median_index_export_ms": null,
+          "positive_stat_calls": 187
+        }
+      },
+      "selective_paired": {
+        "ninja": {
+          "median_delta_ms": 2.8943450015503913,
+          "wins": 1,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": 2.948002002085559,
+          "wins": 0,
+          "blocks": 7
+        },
+        "gaia-fast": {
+          "median_delta_ms": 3.416995001316536,
+          "wins": 0,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "implementation",
+      "engines": {
+        "ninja": {
+          "median_ms": 206.72659699994256,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0,
+          "median_index_export_ms": null,
+          "positive_stat_calls": null
+        },
+        "ninja-ccache": {
+          "median_ms": 316.97784700008924,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0,
+          "median_index_export_ms": null,
+          "positive_stat_calls": null
+        },
+        "gaia-fast": {
+          "median_ms": 294.55996800243156,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0,
+          "median_index_export_ms": null,
+          "positive_stat_calls": null
+        },
+        "gaia-selective": {
+          "median_ms": 376.6735629978939,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0,
+          "median_index_export_ms": 65.04795699947863,
+          "positive_stat_calls": 25
+        }
+      },
+      "selective_paired": {
+        "ninja": {
+          "median_delta_ms": 169.94696599795134,
+          "wins": 0,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": 52.42279500089353,
+          "wins": 0,
+          "blocks": 7
+        },
+        "gaia-fast": {
+          "median_delta_ms": 81.90286899844068,
+          "wins": 0,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "shared-header",
+      "engines": {
+        "ninja": {
+          "median_ms": 125.34438100192347,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0,
+          "median_index_export_ms": null,
+          "positive_stat_calls": null
+        },
+        "ninja-ccache": {
+          "median_ms": 187.53035799818463,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0,
+          "median_index_export_ms": null,
+          "positive_stat_calls": null
+        },
+        "gaia-fast": {
+          "median_ms": 221.60489700036123,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0,
+          "median_index_export_ms": null,
+          "positive_stat_calls": null
+        },
+        "gaia-selective": {
+          "median_ms": 294.1361240009428,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0,
+          "median_index_export_ms": 64.19215699861525,
+          "positive_stat_calls": 3
+        }
+      },
+      "selective_paired": {
+        "ninja": {
+          "median_delta_ms": 168.19809000298847,
+          "wins": 0,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": 104.90403799849446,
+          "wins": 0,
+          "blocks": 7
+        },
+        "gaia-fast": {
+          "median_delta_ms": 76.66699299807078,
+          "wins": 0,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "generated-header",
+      "engines": {
+        "ninja": {
+          "median_ms": 122.90923399996245,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0,
+          "median_index_export_ms": null,
+          "positive_stat_calls": null
+        },
+        "ninja-ccache": {
+          "median_ms": 191.37745999978506,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0,
+          "median_index_export_ms": null,
+          "positive_stat_calls": null
+        },
+        "gaia-fast": {
+          "median_ms": 222.78986799938139,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0,
+          "median_index_export_ms": null,
+          "positive_stat_calls": null
+        },
+        "gaia-selective": {
+          "median_ms": 293.0634510012169,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0,
+          "median_index_export_ms": 62.438654997095,
+          "positive_stat_calls": 1
+        }
+      },
+      "selective_paired": {
+        "ninja": {
+          "median_delta_ms": 170.15421700125444,
+          "wins": 0,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": 95.35128099741996,
+          "wins": 0,
+          "blocks": 7
+        },
+        "gaia-fast": {
+          "median_delta_ms": 71.60391999786953,
+          "wins": 0,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "unused-header",
+      "engines": {
+        "ninja": {
+          "median_ms": 8.194276997528505,
+          "median_compilers": 0,
+          "median_links": 0,
+          "decision_hits": 0,
+          "median_index_export_ms": null,
+          "positive_stat_calls": null
+        },
+        "ninja-ccache": {
+          "median_ms": 8.020244000363164,
+          "median_compilers": 0,
+          "median_links": 0,
+          "decision_hits": 0,
+          "median_index_export_ms": null,
+          "positive_stat_calls": null
+        },
+        "gaia-fast": {
+          "median_ms": 197.84143500146456,
+          "median_compilers": 0,
+          "median_links": 1,
+          "decision_hits": 0,
+          "median_index_export_ms": null,
+          "positive_stat_calls": null
+        },
+        "gaia-selective": {
+          "median_ms": 12.474358998588286,
+          "median_compilers": 0,
+          "median_links": 0,
+          "decision_hits": 7,
+          "median_index_export_ms": null,
+          "positive_stat_calls": 187
+        }
+      },
+      "selective_paired": {
+        "ninja": {
+          "median_delta_ms": 3.6519409986794926,
+          "wins": 0,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": 4.410278001159895,
+          "wins": 1,
+          "blocks": 7
+        },
+        "gaia-fast": {
+          "median_delta_ms": -187.31079200370004,
+          "wins": 7,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "revert",
+      "engines": {
+        "ninja": {
+          "median_ms": 209.50919999813777,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0,
+          "median_index_export_ms": null,
+          "positive_stat_calls": null
+        },
+        "ninja-ccache": {
+          "median_ms": 76.11579700096627,
+          "median_compilers": 1,
+          "median_links": 1,
+          "decision_hits": 0,
+          "median_index_export_ms": null,
+          "positive_stat_calls": null
+        },
+        "gaia-fast": {
+          "median_ms": 199.58394300192595,
+          "median_compilers": 0,
+          "median_links": 1,
+          "decision_hits": 0,
+          "median_index_export_ms": null,
+          "positive_stat_calls": null
+        },
+        "gaia-selective": {
+          "median_ms": 276.6207300010137,
+          "median_compilers": 0,
+          "median_links": 1,
+          "decision_hits": 0,
+          "median_index_export_ms": 62.36945600176114,
+          "positive_stat_calls": 25
+        }
+      },
+      "selective_paired": {
+        "ninja": {
+          "median_delta_ms": 66.57791299949167,
+          "wins": 0,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": 185.00577899976633,
+          "wins": 0,
+          "blocks": 7
+        },
+        "gaia-fast": {
+          "median_delta_ms": 75.05032300105086,
+          "wins": 0,
+          "blocks": 7
+        }
+      }
+    }
+  ],
+  "initial_index": {
+    "queries": 5266,
+    "conditions": 275,
+    "positive_files": 187,
+    "kinds": {
+      "0": 58,
+      "1": 187,
+      "2": 30
+    },
+    "bytes": 37018
+  }
+}

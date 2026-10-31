@@ -1,0 +1,11 @@
+test_cache_owns_fd_and_live_lease_survives_reset_and_eviction (test_shared_native_inputs.SharedNativeInputsTests.test_cache_owns_fd_and_live_lease_survives_reset_and_eviction) ... ok
+test_manifest_framing_counts_paths_bounds_and_tree_collisions (test_shared_native_inputs.SharedNativeInputsTests.test_manifest_framing_counts_paths_bounds_and_tree_collisions) ... ok
+test_reset_keep_is_atomic_on_malformed_input (test_shared_native_inputs.SharedNativeInputsTests.test_reset_keep_is_atomic_on_malformed_input) ... ok
+test_utf8_canonical_paths_cached_size_and_kernel_seals (test_shared_native_inputs.SharedNativeInputsTests.test_utf8_canonical_paths_cached_size_and_kernel_seals) ... ok
+test_valid_overlay_delete_and_retained_digest_counts (test_shared_native_inputs.SharedNativeInputsTests.test_valid_overlay_delete_and_retained_digest_counts) ... ok
+test_wrong_pins_unsealed_truncated_and_algorithm_rejected (test_shared_native_inputs.SharedNativeInputsTests.test_wrong_pins_unsealed_truncated_and_algorithm_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.014s
+
+OK

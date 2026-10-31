@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "timed_operations": 63,
+  "all_outputs_and_current_tokens_match": true,
+  "raw_sha256": "37fbe59b147253463545054fdb681defbdfe90edb08a8150c51fc9b928831336",
+  "source_sha256": {
+    "test_archive.py": "612cd27e00c0e1d15afb3e35b4bac4a5c89df6f29e93cbb92008f892a8f6ccbc",
+    "benchmark.py": "b33852ad5489c4642a924e20a47efb1fb7204c2034117009346c0e4c3a5869da",
+    "StaticLogic.groovy": "a7f8f20276e9a6f060cb5e5ad3f8e8a7baf3c03f7829d1aee514c374f2f3f5eb",
+    "Command.java": "184911af2781ca4ee1d70d4011b101df8cc9b16d774ac7ee9cc3bfae2dc34268"
+  }
+}

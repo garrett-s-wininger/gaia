@@ -1,0 +1,123 @@
+{
+  "scope": "Separate diagnostic harness; normal complete JVM lifetime. Monotonic phase timestamps correlated on this Linux JVM and validated inside launch/wait interval. Not directly interchangeable with original fixture timings.",
+  "trials": 7,
+  "source_run": "20261031T015505.049690Z",
+  "source_sha256": {
+    "EmptyMain.java": "433f12fc180a04314ced1410ebb3781f56625a3aae8ffe7289cc8329cc551940",
+    "PlainPicocli.java": "19392d60796310d44b92f162fcfff0373840d8ca7fd3f1ec1a057f9199aa011c",
+    "controls.py": "993e7aa2b8ff2e2db89f5fe43be59c279ec1ae5be572062d067ee4f9bc78811a"
+  },
+  "diagnostics": [
+    {
+      "variant": "empty",
+      "loaded_classes": 871,
+      "groovy_loaded": 0,
+      "groovy_initialized": 0,
+      "log_sha256": "b1884abeb7c79ed8fc8cf49e4f081fa18c9738e6c4925a9801a353bd75731c48"
+    },
+    {
+      "variant": "picocli-only",
+      "loaded_classes": 1388,
+      "groovy_loaded": 0,
+      "groovy_initialized": 0,
+      "log_sha256": "4e015490a8e2af4ec64120e05e50ee13aa0d76d06b78139d1c5a180d00761a78"
+    },
+    {
+      "variant": "with-groovy",
+      "loaded_classes": 2114,
+      "groovy_loaded": 317,
+      "groovy_initialized": 183,
+      "log_sha256": "ccc3af2b0be901262a8b704f6f866d54904faa96ef1624b7aeb8916f7f2165d6"
+    },
+    {
+      "variant": "with-groovy-no-closures",
+      "loaded_classes": 1388,
+      "groovy_loaded": 0,
+      "groovy_initialized": 0,
+      "log_sha256": "17a619a4eb119410d14db8bf9b0c062a3c0b29b4786616617ab61bf45f92d082"
+    },
+    {
+      "variant": "with-groovy-cds",
+      "loaded_classes": 2114,
+      "groovy_loaded": 317,
+      "groovy_initialized": 183,
+      "log_sha256": "c1542f831ef69021d4b1bf592e8a2789b67c2521110f09df62d82ef3aab2d610"
+    },
+    {
+      "variant": "with-groovy-no-closures-cds",
+      "loaded_classes": 1391,
+      "groovy_loaded": 0,
+      "groovy_initialized": 0,
+      "log_sha256": "c3fb85e3c988701b20c6cfedf97f6b892843223c81257cebc9be435144e26283"
+    }
+  ],
+  "raw_sha256": "c10cf683a7c9e6bb8741ab938df0af4c52a59a7caa741d5b1fd594f9bd2f137d",
+  "cases": [
+    {
+      "variant": "empty",
+      "median_ms": 39.700691000000006,
+      "phase_medians_ms": {
+        "launch_to_main_ns": 22.92184,
+        "construct_ns": 0.0,
+        "execute_ns": 7.121473,
+        "after_execute_to_hook_ns": 4.153509,
+        "hook_to_exit_ns": 5.384959
+      }
+    },
+    {
+      "variant": "picocli-only",
+      "median_ms": 151.03876499999998,
+      "phase_medians_ms": {
+        "launch_to_main_ns": 28.509187,
+        "construct_ns": 97.876187,
+        "execute_ns": 12.654687,
+        "after_execute_to_hook_ns": 2.703665,
+        "hook_to_exit_ns": 9.109661
+      }
+    },
+    {
+      "variant": "with-groovy",
+      "median_ms": 326.884114,
+      "phase_medians_ms": {
+        "launch_to_main_ns": 33.39262,
+        "construct_ns": 272.308816,
+        "execute_ns": 10.742524,
+        "after_execute_to_hook_ns": 1.055791,
+        "hook_to_exit_ns": 10.187038
+      }
+    },
+    {
+      "variant": "with-groovy-no-closures",
+      "median_ms": 169.340725,
+      "phase_medians_ms": {
+        "launch_to_main_ns": 33.976443,
+        "construct_ns": 111.353984,
+        "execute_ns": 13.968426,
+        "after_execute_to_hook_ns": 2.883821,
+        "hook_to_exit_ns": 8.950085
+      }
+    },
+    {
+      "variant": "with-groovy-cds",
+      "median_ms": 255.240447,
+      "phase_medians_ms": {
+        "launch_to_main_ns": 38.325847,
+        "construct_ns": 197.197639,
+        "execute_ns": 9.694749,
+        "after_execute_to_hook_ns": 1.081042,
+        "hook_to_exit_ns": 11.818414
+      }
+    },
+    {
+      "variant": "with-groovy-no-closures-cds",
+      "median_ms": 147.88002,
+      "phase_medians_ms": {
+        "launch_to_main_ns": 38.538249,
+        "construct_ns": 82.059548,
+        "execute_ns": 13.182718,
+        "after_execute_to_hook_ns": 2.79331,
+        "hook_to_exit_ns": 11.055056
+      }
+    }
+  ]
+}

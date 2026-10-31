@@ -11,3 +11,5 @@ We have working prototypes and measurements for programmatic compilation, schedu
 The [compiler component](../../components/compiler/README.md) is the home for future product design. These experiments do not establish a production service or portable protocol.
 
 Full raw observations and profiler captures are excluded from Git. Their original identities are recorded in the [evidence manifest](../evidence.json); raw files are local-only, with no published download location. Reports and validation summaries remain versioned.
+
+The independent [managed JVM compiler track](jvm/README.md) measures jlink runtimes, prepared caches, public compiler APIs and private whole-target queues. Its results have their own clocks and controls; they should not be combined with Clang/LLD timings.

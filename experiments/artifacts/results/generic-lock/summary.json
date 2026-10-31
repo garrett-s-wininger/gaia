@@ -1,0 +1,166 @@
+{
+  "run_id": "20261031T023718.134084Z",
+  "corpus": {
+    "packages": 5,
+    "artifacts": 3932,
+    "associations": 4018,
+    "metadata": 1,
+    "versions": {
+      "django": "6.1.2",
+      "asgiref": "3.13.0",
+      "sqlparse": "0.6.0",
+      "rest_framework": "3.18.3",
+      "django_filters": "26.2"
+    },
+    "resources": {
+      "django:contrib/admin/templates/admin/login.html": "677f75af1d7f9d3f87398eaa66292bcb46540556ae518e86a26e879e343396c1",
+      "django:contrib/admin/static/admin/js/core.js": "0a407584ab225a7adfcc3df14729baa2a8f4f4bd5efc6f062233c70ddb9bc6fe",
+      "django:forms/templates/django/forms/widgets/text.html": "7d7a5bc4ccc075bbff6af7d60b9e3ae200f68c59e0f77d44abbbf36f3cb5fb20"
+    },
+    "payload_bytes": 28590716
+  },
+  "rows": [
+    {
+      "kind": "json",
+      "profile": "cold",
+      "format_production_ms": 8.38514600036433,
+      "acquisition_ms": 78.29291799862403,
+      "adapter_ms": 22.55365100427298,
+      "install_ms": 212.70048100268468,
+      "process_ms": 293.17948300013086,
+      "total_ms": 505.93660100275883,
+      "lock_parse_ms": 8.449228000245057,
+      "lock_bytes": 882337,
+      "reader_setup_ms": 1.2227570041432045,
+      "process_spread_ratio": 1.1645353093769029
+    },
+    {
+      "kind": "binary",
+      "profile": "cold",
+      "format_production_ms": 8.352575001481455,
+      "acquisition_ms": 79.08551099535543,
+      "adapter_ms": 24.186154994822573,
+      "install_ms": 215.3117440029746,
+      "process_ms": 285.76336900005117,
+      "total_ms": 498.86418400274124,
+      "lock_parse_ms": 2.7312450038152747,
+      "lock_bytes": 498747,
+      "reader_setup_ms": 1.162953005405143,
+      "process_spread_ratio": 1.2592230960217956
+    },
+    {
+      "kind": "json",
+      "profile": "reuse",
+      "format_production_ms": 0.002544999006204307,
+      "acquisition_ms": 47.32881100062514,
+      "adapter_ms": 0,
+      "install_ms": 47.44080299860798,
+      "process_ms": 288.2346750047873,
+      "total_ms": 342.98512100212974,
+      "lock_parse_ms": 8.81109399779234,
+      "lock_bytes": 882337,
+      "reader_setup_ms": 1.24840500211576,
+      "process_spread_ratio": 1.1192900375348684
+    },
+    {
+      "kind": "binary",
+      "profile": "reuse",
+      "format_production_ms": 0.0017929996829479933,
+      "acquisition_ms": 42.511453000770416,
+      "adapter_ms": 0,
+      "install_ms": 42.60769599932246,
+      "process_ms": 290.7292250019964,
+      "total_ms": 333.13810800609645,
+      "lock_parse_ms": 2.8498100000433624,
+      "lock_bytes": 498747,
+      "reader_setup_ms": 1.1909969980479218,
+      "process_spread_ratio": 1.0863583203349416
+    }
+  ],
+  "paired": [
+    {
+      "profile": "cold",
+      "blocks": [
+        {
+          "block": 0,
+          "acquisition_delta_ms": 38.367111003026366,
+          "install_delta_ms": 29.09682799509028,
+          "process_delta_ms": 44.79591300332686,
+          "total_delta_ms": 73.9172769972356
+        },
+        {
+          "block": 1,
+          "acquisition_delta_ms": -44.770582993805874,
+          "install_delta_ms": -40.52159299317282,
+          "process_delta_ms": -37.40730800200254,
+          "total_delta_ms": -77.92738799616927
+        },
+        {
+          "block": 2,
+          "acquisition_delta_ms": -0.23321899789152667,
+          "install_delta_ms": 1.2426579996827058,
+          "process_delta_ms": -9.099586997763254,
+          "total_delta_ms": -7.844535000913311
+        },
+        {
+          "block": 3,
+          "acquisition_delta_ms": 0.7925929967314005,
+          "install_delta_ms": 3.170686999510508,
+          "process_delta_ms": 12.113414006307721,
+          "total_delta_ms": 15.280995008652098
+        },
+        {
+          "block": 4,
+          "acquisition_delta_ms": 2.181864001613576,
+          "install_delta_ms": 7.284872001037002,
+          "process_delta_ms": 7.793386001139879,
+          "total_delta_ms": 15.07975099957548
+        }
+      ],
+      "total_wins": 2,
+      "acquisition_wins": 2
+    },
+    {
+      "profile": "reuse",
+      "blocks": [
+        {
+          "block": 0,
+          "acquisition_delta_ms": 2.8445780044421554,
+          "install_delta_ms": 2.846882001904305,
+          "process_delta_ms": -13.804843991238158,
+          "total_delta_ms": -10.935148995486088
+        },
+        {
+          "block": 1,
+          "acquisition_delta_ms": -1.6924770025070757,
+          "install_delta_ms": -1.6831290049594827,
+          "process_delta_ms": 17.322212996077724,
+          "total_delta_ms": 15.663509999285452
+        },
+        {
+          "block": 2,
+          "acquisition_delta_ms": -15.242714995110873,
+          "install_delta_ms": -15.227245996356942,
+          "process_delta_ms": -1.578812996740453,
+          "total_delta_ms": -16.80340399616398
+        },
+        {
+          "block": 3,
+          "acquisition_delta_ms": -2.33316400408512,
+          "install_delta_ms": -2.3255199994309805,
+          "process_delta_ms": -1.4108929972280748,
+          "total_delta_ms": -3.7333169966586865
+        },
+        {
+          "block": 4,
+          "acquisition_delta_ms": -15.87546799419215,
+          "install_delta_ms": -15.856863006774802,
+          "process_delta_ms": -1.7951069967239164,
+          "total_delta_ms": -17.644977000600193
+        }
+      ],
+      "total_wins": 4,
+      "acquisition_wins": 4
+    }
+  ]
+}

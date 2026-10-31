@@ -1,0 +1,23 @@
+[
+  {
+    "variant": "explicit",
+    "archive_valid": true,
+    "archived_classes": 7301,
+    "archived_selected_jar_classes": 5613,
+    "log_sha256": "686fb7d3f5ec5033fe62c32ae7896910875a87f307975cac0f439b54dd9eee92"
+  },
+  {
+    "variant": "linked",
+    "archive_valid": true,
+    "archived_classes": 6604,
+    "archived_selected_jar_classes": 4999,
+    "log_sha256": "32401fb138cdbb38cdd41f35d7dc71e9c8eecadb2e9bb398badb523f7854a594"
+  },
+  {
+    "variant": "core-linked",
+    "archive_valid": true,
+    "archived_classes": 1587,
+    "archived_selected_jar_classes": 113,
+    "log_sha256": "28a0aa81807907bcad73348b5bc3b5acc8b380f415f88fea9425d2fc76a6d0cf"
+  }
+]

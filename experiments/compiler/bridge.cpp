@@ -13,6 +13,7 @@
 #include <cstring>
 #include <set>
 #include <string>
+#include "sha256_impl.h"
 
 struct Stats {
     uint64_t setup_ns, compile_ns, dispose_ns, input_files, input_bytes;
@@ -49,7 +50,7 @@ static uint64_t integer(const uint8_t *p, unsigned n) {
 static bool load(llvm::vfs::InMemoryFileSystem &fs, const char *root,
                  const uint8_t *data, size_t size, const char *pin, Stats &s) {
     if (size<16 || size>64*1024*1024 || memcmp(data,"GAIACIN1",8)) return false;
-    auto digest=llvm::SHA256::hash(llvm::ArrayRef<uint8_t>(data,size));
+    auto digest=gaia_sha256(llvm::ArrayRef<uint8_t>(data,size));
     const char *digits="0123456789abcdef";
     std::string hex;
     for (auto v:digest) {hex+=digits[v>>4];hex+=digits[v&15];}

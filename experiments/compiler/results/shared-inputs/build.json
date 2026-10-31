@@ -1,0 +1,15 @@
+{
+  "seconds": 9.545544873995823,
+  "final_odin_relink_seconds": 3.217395747997216,
+  "host_sha256": "7f3353b312b34f1e4433aa8611dd23ce1855717af0667bb732183558754e10df",
+  "odin_version": "/opt/odin/nightly/odin version dev-2026-10-nightly:84bc3fc",
+  "sources": {
+    "dependency_host.odin": "08548b5ed4789db822679f2ba26f518fc382779a05f1c91d53bcededee264fba",
+    "pool_bridge.cpp": "ab4549f917d577d1ba212dfbc338a6a8ef5e88f98513ab2cd46dbfbb452f980c",
+    "dependency_impl.h": "46435dde46f3925202c426ecd4e3182a889327945d6f55c22bdebc208fe3cb1b",
+    "shared_inputs.h": "52e5a22636dda627f06cd8b51d33b71e584b22a2014b424e04f55df89ae3c97b",
+    "shared_inputs.py": "439d11d4b8821f1aead77ac806ecf3d77628086dd8f2003ebf6cb28a204f8def",
+    "shared_input_probe.cpp": "0aaa9d44985e2bd5db1ee7bb389a96607154ab9a2488edfa53928fbed7dcf0e9"
+  },
+  "probe_sha256": "573667694d4bc53806c7e438dad6b7ee58a78b7778fcd24e2b5640c43ce349a2"
+}

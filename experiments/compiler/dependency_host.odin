@@ -17,6 +17,11 @@ Stats :: struct {
 }
 foreign import shim "system:c"
 foreign shim {
+    gaia_shared_cache_reset :: proc(keep: cstring) -> c.int ---
+    gaia_shared_cache_prime :: proc(data: [^]u8,size:c.size_t,pin:cstring) -> c.int ---
+    gaia_shared_input_stat :: proc(handle:rawptr,field:c.int) -> u64 ---
+    gaia_blake3_backend :: proc(enabled: c.int) ---
+    gaia_sha256_backend :: proc(accelerated: c.int) -> c.int ---
     gaia_pool_open :: proc(memory: c.int, clang, output: cstring, data: [^]u8, size: c.size_t,
         pin: cstring, plan: [^]u8, plan_size: c.size_t, linker: cstring, link: [^]u8, link_size: c.size_t) -> rawptr ---
     gaia_pool_count :: proc(handle: rawptr) -> c.int ---
@@ -77,17 +82,36 @@ peak_rss :: proc() -> u64 {
     }
     return 0
 }
-main :: proc() {
-    if len(os.args)!=17 {fmt.eprintln("host memory|physical CLANG ROOT BUNDLE PIN OUT PLAN WORKERS internal|external|retry LINKER LINKPLAN direct off|whole|scoped|journal CACHE VIEWS CONTEXT-ID");os.exit(2)}
-    mode:=os.args[1];if mode!="memory" {os.exit(2)}
-    count,ok:=strconv.parse_int(os.args[8]);if !ok || count<1 || count>16 {os.exit(2)}
-    link_mode:=os.args[9];if link_mode!="internal" && link_mode!="external" && link_mode!="retry" {os.exit(2)}
-    handoff:=os.args[12];handoff_id: c.int
+request :: proc(args: []string) {
+    if len(args)==3 && args[1]=="shared-reset" {
+        keep:=strings.clone_to_cstring(args[2]);defer delete(keep)
+        status:=gaia_shared_cache_reset(keep)
+        fmt.print("{");fmt.printf("\"correct\":%s,\"peak_rss_bytes\":%d}\n",("true" if status==0 else "false"),peak_rss());return
+    }
+    if len(args)==5 && args[1]=="shared-prime" {
+        gaia_sha256_backend(1);gaia_blake3_backend(1)
+        keep:=strings.clone_to_cstring(args[4]);defer delete(keep)
+        if gaia_shared_cache_reset(keep)!=0 {os.exit(3)}
+        path:=strings.clone_to_cstring(args[2]);defer delete(path)
+        input:=map_file(path,4*1024*1024);defer unmap(input)
+        pin:=strings.clone_to_cstring(args[3]);defer delete(pin)
+        status:=gaia_shared_cache_prime(raw_data(input.data),c.size_t(len(input.data)),pin)
+        fmt.print("{");fmt.printf("\"correct\":%s,\"peak_rss_bytes\":%d}\n",("true" if status==0 else "false"),peak_rss());return
+    }
+    if len(args)!=17 {fmt.eprintln("host memory|physical CLANG ROOT BUNDLE PIN OUT PLAN WORKERS internal|external|retry LINKER LINKPLAN direct off|whole|scoped|journal CACHE VIEWS CONTEXT-ID");os.exit(2)}
+    mode:=args[1];if mode!="memory" {os.exit(2)}
+    count,ok:=strconv.parse_int(args[8]);if !ok || count<1 || count>16 {os.exit(2)}
+    link_mode:=args[9];if link_mode!="internal" && link_mode!="external" && link_mode!="retry" {os.exit(2)}
+    handoff:=args[12];handoff_id: c.int
     switch handoff {case "file": handoff_id=0;case "buffer-file": handoff_id=1;case "direct", "direct-export": handoff_id=2;case: os.exit(2)}
     if handoff_id==2 && link_mode=="external" {os.exit(2)}
     if handoff!="direct" || link_mode!="internal" {os.exit(2)}
-    cache_mode:=os.args[13];if cache_mode!="off" && cache_mode!="whole" && cache_mode!="scoped" && cache_mode!="journal" {os.exit(2)}
-    paths:=[]string{os.args[2],os.args[6],os.args[5],os.args[4],os.args[7],os.args[10],os.args[11]}
+    cache_mode:=args[13];blake3:=cache_mode=="journal-history-blake3";fast_hash:=cache_mode=="journal-history-fast-hash" || blake3;memo:=cache_mode=="journal-history-memo" || fast_hash;shared:=cache_mode=="journal-history-shared" || memo;history:=cache_mode=="journal-history" || shared
+    if cache_mode!="off" && cache_mode!="whole" && cache_mode!="scoped" && cache_mode!="journal" && !history {os.exit(2)}
+    if gaia_sha256_backend(c.int(fast_hash))!=0 {fmt.eprintln("requested SHA-256 provider unavailable");os.exit(2)}
+    gaia_blake3_backend(c.int(blake3))
+    journal_mode:=cache_mode=="journal" || history
+    paths:=[]string{args[2],args[6],args[5],args[4],args[7],args[10],args[11]}
     names: [7]cstring;for path,i in paths {names[i]=strings.clone_to_cstring(path)}
     defer {for name in names {delete(name)}}
     start:=time.tick_now();input: Mapping
@@ -98,21 +122,30 @@ main :: proc() {
     handle:=gaia_pool_open(c.int(mode=="memory"),names[0],names[1],raw_data(input.data),c.size_t(len(input.data)),
         names[2],raw_data(plan.data),c.size_t(len(plan.data)),names[5],raw_data(link.data),c.size_t(len(link.data)))
     if handle==nil {fmt.eprintln("input/request admission failed");os.exit(3)}
+    opened:=time.tick_now()
     defer gaia_pool_close(handle)
     gaia_handoff_mode(handle,handoff_id)
     p:=Pool{handle=handle,count=i32(gaia_pool_count(handle))}
     if p.count<1 || p.count>64 {os.exit(3)}
-    p.cwd=strings.clone_to_cstring(os.args[3]);defer delete(p.cwd)
-    admission:=cache_admit(input.data,plan.data,os.args[15],int(p.count),os.args[3],os.args[16],cache_mode)
+    p.cwd=strings.clone_to_cstring(args[3]);defer delete(p.cwd)
+    admission:=cache_admit(input.data,plan.data,args[15],int(p.count),args[3],args[16],"journal" if history else cache_mode,blake3)
+    admitted:=time.tick_now()
     defer {delete(admission.masks);delete(admission.keys)}
-    p.masks=admission.masks;hits,corrupt,writes,write_errors: int
-    dep:=gaia_dep_open(handle,raw_data(p.masks),c.size_t(len(p.masks)),p.cwd,c.int(cache_mode=="journal"))
+    p.masks=admission.masks;hits,corrupt,writes,write_errors,historical_hits: int
+    dep:=gaia_dep_open(handle,raw_data(p.masks),c.size_t(len(p.masks)),p.cwd,(3 if memo else 2 if shared else c.int(journal_mode)))
     if dep==nil {os.exit(3)};defer gaia_dep_close(dep)
+    hashed:=time.tick_now()
     if cache_mode!="off" {
         for key,i in admission.keys {
             found,bad: bool
-            if cache_mode=="journal" {found,bad=dependency_load(handle,i,key,os.args[14])}
-            else {found,bad=cache_load(handle,i,key,os.args[14])}
+            if journal_mode {
+                for slot in 0..<(3 if history else 1) {
+                    h,b:=dependency_load(handle,i,key,args[14],slot)
+                    bad=bad || b
+                    if h {found=true;if slot>0 {historical_hits+=1};break}
+                }
+            }
+            else {found,bad=cache_load(handle,i,key,args[14])}
             if found {p.hits[i]=true;hits+=1}
             if bad {corrupt+=1}
         }
@@ -134,13 +167,18 @@ main :: proc() {
     if status==0 && len(string(messages))==0 && cache_mode!="off" {
         for key,i in admission.keys {if !p.hits[i] {
             okay: bool
-            if cache_mode=="journal" {okay=dependency_store(handle,i,key,os.args[14])}
-            else {okay=cache_store(handle,i,key,os.args[14])}
+            if journal_mode {okay=dependency_store(handle,i,key,args[14],history)}
+            else {okay=cache_store(handle,i,key,args[14])}
             if okay {writes+=1} else {write_errors+=1}
         }}
     }
+    published:=time.tick_now()
     if len(string(messages))>0 {fmt.eprint(string(messages))}
     fmt.print("{")
+    if string(input.data[:8])=="GAIACIN4" {
+        fmt.printf("\"shared_segment_hits\":%d,\"shared_new_segments\":%d,\"shared_new_segment_bytes\":%d,\"shared_cache_bytes\":%d,\"shared_cache_segments\":%d,\"shared_cached_file_digests\":%d,\"shared_manifest_bytes\":%d,",gaia_shared_input_stat(handle,0),gaia_shared_input_stat(handle,1),gaia_shared_input_stat(handle,2),gaia_shared_input_stat(handle,3),gaia_shared_input_stat(handle,4),gaia_shared_input_stat(handle,5),gaia_shared_input_stat(handle,6))
+    }
+    fmt.printf("\"input_admission_ns\":%d,\"action_admission_ns\":%d,\"content_hash_ns\":%d,\"candidate_load_ns\":%d,",time.duration_nanoseconds(time.tick_diff(start,opened)),time.duration_nanoseconds(time.tick_diff(opened,admitted)),time.duration_nanoseconds(time.tick_diff(admitted,hashed)),time.duration_nanoseconds(time.tick_diff(hashed,ready)))
     fmt.printf("\"correct\":%v,\"workers\":%d,\"compiled\":%d,\"errors\":%d,\"warnings\":%d,"+
         "\"job_count\":%d,\"peak_active\":%d,\"link_calls\":%d,\"link_result\":%d,\"can_run_again\":%v,"+
         "\"retry_result\":%d,\"setup_ns\":%d,\"compile_wall_ns\":%d,\"link_ns\":%d,\"workload_ns\":%d,\"peak_rss_bytes\":%d,\"jobs\":[",
@@ -165,11 +203,66 @@ main :: proc() {
         }
     }
     fmt.print("],")
+    fmt.printf("\"historical_hits\":%d,",historical_hits)
     fmt.printf("\"cache_hits\":%d,\"cache_corrupt\":%d,\"cache_writes\":%d,\"cache_write_errors\":%d,\"compiler_executions\":%d,\"ready_objects\":%d,\"cache_keys\":[",hits,corrupt,writes,write_errors,sync.atomic_load(&p.executions),s.compiled)
     if cache_mode!="off" {for key,i in admission.keys {if i>0 {fmt.print(",")};hex:=hex_digest(key);fmt.printf("\"%s\"",hex);delete(hex)}}
     fmt.print("],")
+    fmt.print("\"journal_sha256\":[")
+    if journal_mode {
+        for i in 0..<int(p.count) {
+            if i>0 {fmt.print(",")};size: c.size_t
+            ptr:=gaia_dep_journal(handle,c.int(i),&size)
+            if size==0 {fmt.print("null")} else {
+                digest:=hash_bytes(ptr[:int(size)]);text:=hex_digest(digest)
+                fmt.printf("\"%s\"",text);delete(text)
+            }
+        }
+    }
+    fmt.print("],")
+    reported:=time.tick_now()
+    fmt.printf("\"publication_ns\":%d,\"report_ns\":%d,",time.duration_nanoseconds(time.tick_diff(finished,published)),time.duration_nanoseconds(time.tick_diff(published,reported)))
+    fmt.printf("\"memo_hits\":%d,\"validation_ns\":%d,\"memo_bytes\":%d,",gaia_dep_stat(dep,6),gaia_dep_stat(dep,7),gaia_dep_stat(dep,8))
+    fmt.printf("\"view_builds\":%d,\"view_build_ns\":%d,\"validation_groups\":%d,",gaia_dep_stat(dep,3),gaia_dep_stat(dep,4),gaia_dep_stat(dep,5))
     fmt.printf("\"dependency_queries\":%d,\"dependency_negatives\":%d,\"dependency_invalidations\":%d}\n",gaia_dep_stat(dep,0),gaia_dep_stat(dep,1),gaia_dep_stat(dep,2))
     if status!=0 {os.exit(status)}
+}
+
+// Experimental local transport: one length-framed argv request at a time.
+// Request defers finish before accepting the next frame. Errors end the worker.
+read_exact :: proc(data: []u8, eof_ok: bool=false) -> bool {
+    offset:=0
+    for offset<len(data) {
+        remaining:=len(data)-offset
+        n:=posix.read(0,raw_data(data[offset:]),c.size_t(remaining))
+        if n==0 && offset==0 && eof_ok {return false}
+        if n<=0 {os.exit(3)};offset+=int(n)
+    }
+    return true
+}
+main :: proc() {
+    if len(os.args)!=2 || os.args[1]!="--serve" {request(os.args);return}
+    for {
+        header: [8]u8;if !read_exact(header[:],true) {break}
+        size:=read_integer(header[:],0,8);if size<4 || size>4*1024*1024 {os.exit(3)}
+        body:=make([]u8,int(size));read_exact(body)
+        count:=int(read_integer(body,0,4));if count!=17 && count!=3 && count!=5 {os.exit(3)}
+        args:=make([]string,count);offset:=4
+        for &arg in args {
+            n:=int(read_integer(body,offset,4));offset+=4
+            if n>65536 || offset>len(body)-n {os.exit(3)}
+            arg=string(body[offset:offset+n]);if strings.contains(arg,"\x00") {os.exit(3)};offset+=n
+        }
+        if offset!=len(body) {os.exit(3)}
+        // The standalone launcher runs in the output directory. Re-enter that
+        // directory each request: the caller may have replaced its inode.
+        if count==17 {
+            cwd:=strings.clone_to_cstring(args[6])
+            if posix.chdir(cwd)!=nil {os.exit(3)};delete(cwd)
+        } else if !((count==3 && args[1]=="shared-reset") || (count==5 && args[1]=="shared-prime")) {os.exit(3)}
+        request(args);delete(args);delete(body)
+        // Acknowledgement follows request defers, including pool/VFS teardown.
+        fmt.println("GAIA-DONE")
+    }
 }
 
 Digest :: [32]u8
@@ -189,7 +282,7 @@ hex_digest :: proc(digest: Digest) -> string {
     for b,i in digest {out[2*i]=chars[b>>4];out[2*i+1]=chars[b&15]};return string(out)
 }
 Admission :: struct {masks: []u64, keys: []Digest}
-cache_admit :: proc(blob,plan: []u8,mask_path: string,count: int,cwd,context_id,mode: string) -> Admission {
+cache_admit :: proc(blob,plan: []u8,mask_path: string,count: int,cwd,context_id,mode: string,blake3: bool=false) -> Admission {
     if len(context_id)!=64 {fmt.eprintln("expected execution-context SHA-256");os.exit(3)}
     for b in transmute([]u8)context_id {if !(b>='0' && b<='9') && !(b>='a' && b<='f') {os.exit(3)}}
     n:=int(read_integer(blob,8,8));if n<1 || n>100000 {os.exit(3)}
@@ -201,9 +294,12 @@ cache_admit :: proc(blob,plan: []u8,mask_path: string,count: int,cwd,context_id,
     a:=Admission{masks=make([]u64,n),keys=make([]Digest,count)}
     all_bits:=~u64(0);if count<64 {all_bits=(u64(1)<<u64(count))-1}
     for i in 0..<n {v,ok:=strconv.parse_uint(fields[i+1],10);if !ok || (u64(v)&~all_bits)!=0 {os.exit(3)};a.masks[i]=u64(v)}
+    leaves:=make([]Digest,n);defer delete(leaves);offset:=16
+    shared_input:=string(blob[:8])=="GAIACIN4"
+    if shared_input && (mode!="journal" || !blake3) {os.exit(3)}
+    if !shared_input {
     // The compiler has already authenticated/validated the immutable collection.
     // Per-file hashes form framed Merkle leaves; scoped roots hash only metadata.
-    leaves:=make([]Digest,n);defer delete(leaves);offset:=16
     for i in 0..<n {
         name_len:=int(read_integer(blob,offset,4));size:=int(read_integer(blob,offset+4,8));offset+=12
         name:=string(blob[offset:offset+name_len]);offset+=name_len+1
@@ -214,6 +310,7 @@ cache_admit :: proc(blob,plan: []u8,mask_path: string,count: int,cwd,context_id,
         offset+=size+1
     }
     if offset!=len(blob) {os.exit(3)}
+    }
     full: Digest
     if mode!="off" && mode!="journal" {
         h: sha2.Context_256;sha2.init_256(&h);hash_string(&h,"GAIA-FULL-INPUT-1");hash_u64(&h,u64(n))
@@ -232,7 +329,7 @@ cache_admit :: proc(blob,plan: []u8,mask_path: string,count: int,cwd,context_id,
         if !date_guard {fmt.eprintln("cache fixture requires date-time macro guard");os.exit(3)}
         if mode=="off" {continue}
         if mode=="journal" {
-            h: sha2.Context_256;sha2.init_256(&h);hash_string(&h,"GAIA-DEPENDENCY-ACTION-1")
+            h: sha2.Context_256;sha2.init_256(&h);hash_string(&h,"GAIA-DEPENDENCY-ACTION-BLAKE3-1" if blake3 else "GAIA-DEPENDENCY-ACTION-1")
             hash_string(&h,cwd);hash_string(&h,context_id);hash_u64(&h,u64(offset-begin));sha2.update(&h,plan[begin:offset])
             sha2.final(&h,a.keys[job][:]);continue
         }
@@ -280,8 +377,13 @@ cache_store :: proc(handle: rawptr,index: int,key: Digest,root: string) -> bool 
 
 // One atomic record binds the candidate action, journal and object together.
 // The filename is a candidate index, not a claim that argv alone identifies output.
-dependency_load :: proc(handle: rawptr,index: int,key: Digest,root: string) -> (hit,corrupt: bool) {
-    hex:=hex_digest(key);defer delete(hex);path:=fmt.aprintf("%s/%s.gdo",root,hex);defer delete(path)
+dependency_path :: proc(root: string,key: Digest,slot: int) -> string {
+    hex:=hex_digest(key);defer delete(hex)
+    if slot==0 {return fmt.aprintf("%s/%s.gdo",root,hex)}
+    return fmt.aprintf("%s/%s.%d.gdo",root,hex,slot)
+}
+dependency_load :: proc(handle: rawptr,index: int,key: Digest,root: string,slot: int=0) -> (hit,corrupt: bool) {
+    path:=dependency_path(root,key,slot);defer delete(path)
     file,err:=os.open(path);if err!=nil {return false,false};defer os.close(file)
     size,e:=os.file_size(file);if e!=nil || size<101 || size>80*1024*1024+88 {return false,true}
     data,re:=os.read_entire_file(file,context.allocator);if re!=nil {return false,true};defer delete(data)
@@ -296,7 +398,7 @@ dependency_load :: proc(handle: rawptr,index: int,key: Digest,root: string) -> (
     if gaia_cache_import(handle,c.int(index),raw_data(data[88+int(journal):]),c.size_t(object))!=0 {return false,true}
     return true,false
 }
-dependency_store :: proc(handle: rawptr,index: int,key: Digest,root: string) -> bool {
+dependency_store :: proc(handle: rawptr,index: int,key: Digest,root: string,history: bool=false) -> bool {
     js,bs: c.size_t;journal:=gaia_dep_journal(handle,c.int(index),&js);object:=gaia_cache_object(handle,c.int(index),&bs)
     if js<12 || js>16*1024*1024 || bs==0 || bs>64*1024*1024 {return false}
     data:=make([]u8,88+int(js)+int(bs));defer delete(data);copy(data[:8],"GAIADC01");k:=key;copy(data[8:40],k[:])
@@ -308,5 +410,15 @@ dependency_store :: proc(handle: rawptr,index: int,key: Digest,root: string) -> 
     file,err:=os.open(tmp,{.Write,.Create,.Excl},{.Read_User,.Write_User});if err!=nil {return false}
     okay:=true;offset:=0
     for offset<len(data) {n,e:=os.write(file,data[offset:]);if e!=nil || n<=0 {okay=false;break};offset+=n}
-    if os.close(file)!=nil {okay=false};if okay {okay=os.rename(tmp,path)==nil};if !okay {os.remove(tmp)};return okay
+    if os.close(file)!=nil {okay=false}
+    if okay && history {
+        // Rotation may lose cache candidates under concurrent writers; each
+        // candidate is still an atomically published, self-validating record.
+        // A crash/missing slot is a miss, never permission to trust stale bytes.
+        for slot:=2;slot>=1;slot-=1 {
+            old:=dependency_path(root,key,slot-1);next:=dependency_path(root,key,slot)
+            os.rename(old,next);delete(old);delete(next)
+        }
+    }
+    if okay {okay=os.rename(tmp,path)==nil};if !okay {os.remove(tmp)};return okay
 }

@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "operations": 56,
+  "all_semantics_match": true,
+  "nonces_unique": true,
+  "raw_sha256": "7976a51c3289da9ce12c1a83a3b6e6867f9780f719a351a1626d3353fb82548c",
+  "source_sha256": {
+    "experiments/python/interpreter_snapshots/benchmark.py": "95003528ea7cab59ac6cd2c67ec87a26719db286e7d323f039d0b09107f780a7",
+    "experiments/python/interpreter_snapshots/django_workload.py": "2b06920c834e161ad62013015a9ed1676647814aa0ac1033c0334b9e005466ce",
+    "experiments/python/interpreter_snapshots/node_benchmark.py": "fc5e97d1e9eef2bf7e0d78d36b08860a9f62c112b69247f65e0bc4e8ee0b86f0",
+    "experiments/python/interpreter_snapshots/probe_workload.py": "8b38658d45d6de4cb975b5779ccf301ee6c06f2ede1bab97aff453311f7bfe2c",
+    "experiments/python/interpreter_snapshots/runner.py": "7f2bd22dc0fd25227727c2f21aadde7ae97488e83331d15ced186b34fd2e5432",
+    "experiments/python/interpreter_snapshots/test_runner.py": "968e7ca79b2b2e6027219ea95b07b468b33e0ad761a62e658b7eaf5fc7d1fe0e",
+    "experiments/python/interpreter_snapshots/node_graph.js": "91704700c9327c6ceb493e05b93972aaed821b56533e0216f2fd9406535b8a10",
+    "experiments/python/dependency_bundles/django_fixture/__init__.py": "79ff859686250d321d2206a3475395d909be936da14662f2cc697b6ecb844270",
+    "experiments/python/dependency_bundles/django_fixture/apps.py": "e3aff4430a7a41172d95837991d2f8967c3f7b3fd49e583a6c1657c5f84643d0",
+    "experiments/python/dependency_bundles/django_fixture/models.py": "f4c301ce8bf45dee9464de85ee3f8beb159f4f24c408d0968cdcb7d8c47b9ef5",
+    "experiments/python/dependency_bundles/django_fixture/settings.py": "90111fe31f81f7349a4828871102955ec4d1b285c9074999c3d12a649586a79a",
+    "experiments/python/dependency_bundles/django_fixture/template_loader.py": "6299a28142049cb13747c81bf00b2e83bcb9e5fd936669c6be2c217962b27c33",
+    "experiments/python/dependency_bundles/django_fixture/urls.py": "51230db255c0b7991ee15b71418b5cd0996f10285b68ab21e315a297990bc38d"
+  }
+}

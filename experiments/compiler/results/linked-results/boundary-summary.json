@@ -1,0 +1,380 @@
+{
+  "run_id": "20261031T000524.156349Z",
+  "raw_sha256": "935a590ee0d42d7ddb27711091aadce3ce3186a2f93ab292f4a46988f463976c",
+  "target": "gaia-rebound",
+  "cases": [
+    {
+      "scenario": "high-fanout-header",
+      "engines": {
+        "gaia-blake3": {
+          "median_ms": 2756.4204990048893,
+          "min_ms": 2756.4204990048893,
+          "max_ms": 2756.4204990048893,
+          "linked_hits": 0,
+          "median_candidates": 0,
+          "median_restored_bytes": 0,
+          "median_retained_payload_bytes": 0,
+          "rebound_publications": 0,
+          "native_medians": {
+            "setup_ns": 4539071,
+            "compiler_executions": 26,
+            "historical_hits": 0,
+            "link_calls": 1,
+            "view_builds": 27,
+            "validation_groups": 1
+          }
+        },
+        "gaia-linked": {
+          "median_ms": 2740.4970089992275,
+          "min_ms": 2740.4970089992275,
+          "max_ms": 2740.4970089992275,
+          "linked_hits": 0,
+          "median_candidates": 1,
+          "median_restored_bytes": 0,
+          "median_retained_payload_bytes": 1736814,
+          "rebound_publications": 0,
+          "native_medians": {
+            "setup_ns": 4408573,
+            "compiler_executions": 26,
+            "historical_hits": 0,
+            "link_calls": 1,
+            "view_builds": 27,
+            "validation_groups": 1
+          }
+        },
+        "gaia-rebound": {
+          "median_ms": 2677.2749919982743,
+          "min_ms": 2677.2749919982743,
+          "max_ms": 2677.2749919982743,
+          "linked_hits": 0,
+          "median_candidates": 1,
+          "median_restored_bytes": 0,
+          "median_retained_payload_bytes": 1662395,
+          "rebound_publications": 1,
+          "native_medians": {
+            "setup_ns": 4071585,
+            "compiler_executions": 26,
+            "historical_hits": 0,
+            "link_calls": 1,
+            "view_builds": 27,
+            "validation_groups": 1
+          }
+        }
+      },
+      "target_paired": {
+        "gaia-blake3": {
+          "median_delta_ms": -79.14550700661493,
+          "wins": 1,
+          "blocks": 1
+        },
+        "gaia-linked": {
+          "median_delta_ms": -63.2220170009532,
+          "wins": 1,
+          "blocks": 1
+        }
+      }
+    },
+    {
+      "scenario": "flags",
+      "engines": {
+        "gaia-blake3": {
+          "median_ms": 2783.437326994317,
+          "min_ms": 2783.437326994317,
+          "max_ms": 2783.437326994317,
+          "linked_hits": 0,
+          "median_candidates": 0,
+          "median_restored_bytes": 0,
+          "median_retained_payload_bytes": 0,
+          "rebound_publications": 0,
+          "native_medians": {
+            "setup_ns": 2567792,
+            "compiler_executions": 31,
+            "historical_hits": 0,
+            "link_calls": 1,
+            "view_builds": 31,
+            "validation_groups": 0
+          }
+        },
+        "gaia-linked": {
+          "median_ms": 2798.029053999926,
+          "min_ms": 2798.029053999926,
+          "max_ms": 2798.029053999926,
+          "linked_hits": 0,
+          "median_candidates": 0,
+          "median_restored_bytes": 0,
+          "median_retained_payload_bytes": 1735558,
+          "rebound_publications": 0,
+          "native_medians": {
+            "setup_ns": 3379150,
+            "compiler_executions": 31,
+            "historical_hits": 0,
+            "link_calls": 1,
+            "view_builds": 31,
+            "validation_groups": 0
+          }
+        },
+        "gaia-rebound": {
+          "median_ms": 2693.677076000313,
+          "min_ms": 2693.677076000313,
+          "max_ms": 2693.677076000313,
+          "linked_hits": 0,
+          "median_candidates": 0,
+          "median_restored_bytes": 0,
+          "median_retained_payload_bytes": 1661138,
+          "rebound_publications": 1,
+          "native_medians": {
+            "setup_ns": 2963155,
+            "compiler_executions": 31,
+            "historical_hits": 0,
+            "link_calls": 1,
+            "view_builds": 31,
+            "validation_groups": 0
+          }
+        }
+      },
+      "target_paired": {
+        "gaia-blake3": {
+          "median_delta_ms": -89.76025099400431,
+          "wins": 1,
+          "blocks": 1
+        },
+        "gaia-linked": {
+          "median_delta_ms": -104.35197799961315,
+          "wins": 1,
+          "blocks": 1
+        }
+      }
+    },
+    {
+      "scenario": "clean",
+      "engines": {
+        "gaia-blake3": {
+          "median_ms": 2956.3987430010457,
+          "min_ms": 2956.3987430010457,
+          "max_ms": 2956.3987430010457,
+          "linked_hits": 0,
+          "median_candidates": 0,
+          "median_restored_bytes": 0,
+          "median_retained_payload_bytes": 0,
+          "rebound_publications": 0,
+          "native_medians": {
+            "setup_ns": 2880778,
+            "compiler_executions": 31,
+            "historical_hits": 0,
+            "link_calls": 1,
+            "view_builds": 31,
+            "validation_groups": 0
+          }
+        },
+        "gaia-linked": {
+          "median_ms": 2695.3392519935733,
+          "min_ms": 2695.3392519935733,
+          "max_ms": 2695.3392519935733,
+          "linked_hits": 0,
+          "median_candidates": 0,
+          "median_restored_bytes": 0,
+          "median_retained_payload_bytes": 867777,
+          "rebound_publications": 0,
+          "native_medians": {
+            "setup_ns": 2224775,
+            "compiler_executions": 31,
+            "historical_hits": 0,
+            "link_calls": 1,
+            "view_builds": 31,
+            "validation_groups": 0
+          }
+        },
+        "gaia-rebound": {
+          "median_ms": 2856.281794003735,
+          "min_ms": 2856.281794003735,
+          "max_ms": 2856.281794003735,
+          "linked_hits": 0,
+          "median_candidates": 0,
+          "median_restored_bytes": 0,
+          "median_retained_payload_bytes": 830563,
+          "rebound_publications": 1,
+          "native_medians": {
+            "setup_ns": 2302914,
+            "compiler_executions": 31,
+            "historical_hits": 0,
+            "link_calls": 1,
+            "view_builds": 31,
+            "validation_groups": 0
+          }
+        }
+      },
+      "target_paired": {
+        "gaia-blake3": {
+          "median_delta_ms": -100.11694899731083,
+          "wins": 1,
+          "blocks": 1
+        },
+        "gaia-linked": {
+          "median_delta_ms": 160.94254201016156,
+          "wins": 0,
+          "blocks": 1
+        }
+      }
+    }
+  ],
+  "residents": {
+    "gaia-blake3": {
+      "requests": 4,
+      "peak_rss_bytes": [
+        236158976,
+        244400128,
+        244400128,
+        245780480
+      ],
+      "cpu_seconds": 47.7,
+      "serial": true,
+      "final_memory_kib": {
+        "VmSize": 860656,
+        "VmHWM": 240020,
+        "VmRSS": 128780
+      }
+    },
+    "gaia-linked": {
+      "requests": 4,
+      "peak_rss_bytes": [
+        223703040,
+        238972928,
+        242323456,
+        242323456
+      ],
+      "cpu_seconds": 48.02,
+      "serial": true,
+      "final_memory_kib": {
+        "VmSize": 860580,
+        "VmHWM": 236644,
+        "VmRSS": 128108
+      }
+    },
+    "gaia-rebound": {
+      "requests": 4,
+      "peak_rss_bytes": [
+        233508864,
+        243126272,
+        243126272,
+        245678080
+      ],
+      "cpu_seconds": 47.89,
+      "serial": true,
+      "final_memory_kib": {
+        "VmSize": 860948,
+        "VmHWM": 239920,
+        "VmRSS": 132144
+      }
+    }
+  },
+  "decision_workers": {
+    "gaia-rebound": {
+      "requests": 9,
+      "cpu_seconds": 0.0,
+      "serial": true,
+      "arena_used_bytes": [
+        179671,
+        1088247,
+        255823,
+        1088241,
+        179671,
+        1088238,
+        260615,
+        290975,
+        1089498
+      ],
+      "arena_reserved_bytes": 67108864,
+      "final_memory_kib": {
+        "VmSize": 72780,
+        "VmHWM": 2956,
+        "VmRSS": 2956
+      }
+    }
+  },
+  "source_sha256": {
+    "blake3_digest.py": "16f149167a6b1a71d1ea9145e140bbbebc93d83de2d259ae053e328434b283e8",
+    "dependency_cache_benchmark.py": "371b57a1fa0be1f2ca2c8102334110ee311a8beb2a1c0f10920c5c7f3d5eb5c8",
+    "schedule_host.odin": "0665c188951813275b0a17562a4814007c06df2cd17d1c40890787e93c32a394",
+    "test_resident_host.py": "fe8801255c9ab33751fcd7bb652ba1e348cad6ee54889c4ca20626345fdc8c28",
+    "dependency_host.odin": "071f6a8411a53bef5f5bcdf8fa51e808fd6d71833df0dc340fc915a04b2eac72",
+    "build_cache_host.py": "f57155966ba5328cc68f7c39e60c7b951fba527b5b300782c4a4f7d797230989",
+    "resident_host.py": "4ced6e3380c5adef421b944c897f488dff068ca2f3375996fd7130865de15d93",
+    "condition_index.py": "e8c69684955dd004bd1961d02d8e800b90cf439d010e9ff217504f2436f80a43",
+    "profile_zstd.py": "63dddd4f453c44e8f6141bd89cc1bfb1fc83a37b9cfe3fb0dcaa6537dce1162a",
+    "test_ninja_benchmark.py": "adb6cddae97532725f0c171bf814d736887689b614532968e04195888bda1f8d",
+    "pool_host.odin": "0d4d42adb207d3ba6ecf6c1a3e5721cef34bf311f4f81218ec9adc4d56bde2a4",
+    "handoff_impl.h": "b6d096f289339cbdcd53f1d5a59cce7d889321d0e9e79a598dac098580337365",
+    "trace_inputs.py": "b911db262e7c4e2cec0294359f9179ca2923b7243b85b50fabefb85079c633d4",
+    "build_schedule_host.py": "ef4b3b34df724af2cf788e8b86aac98c4e109b91985a718c257603c9e7f0c960",
+    "cache_host.odin": "e74d212a808398781ffad2c92bbc66ae2ea144ac94438556707da24d694d661e",
+    "test_hash_provider.py": "7a025216657a7577faca56dd55e65d13c88fe76488b87ddabae5453bb2644467",
+    "test_shared_validation.py": "99e4ef9404f30b0123b7a2c67a1a59d3f943c85a649de65750ad070db6610f2c",
+    "check_dependency_cache.py": "9efb52f8181ce27066da50c8f7727ee394e2a8198ea9e1bc56474fb776170a5a",
+    "dependency_bridge.cpp": "1a5fc3f3ac830ff01949b313a8c3602b4f68f8e2ac051e442197b5e219d1e226",
+    "handoff_host.odin": "6b42fa1cdfdbfc7a33577c9357c119422ea4ebcda4407c2cb606840266c36571",
+    "profile_bridge.cpp": "1d5dc23dd5494d9ba40eecc94a36fdfdf0d6ae1bdf1678ce7ec98857770ceb59",
+    "snapshot_host.odin": "46e50b58c05401e8281bcdbb2d4bd395c651e699e0dddc7f105d3fdb50b8e797",
+    "test_condition_index.py": "f888c7373d232eea0a61d0a4e85a96d74400c703e53f4e2d9b5df52c16fd1e63",
+    "result_history.py": "08d5310e97abbb87a410103d22bd2db116e259d6ef0aa47d36b9fcbdd453c74a",
+    "build_followup_hosts.py": "01d6a9894ebff688d87a58f16e0d1aeddbb4dd2711d2118b68011477fef6e1e1",
+    "zstd_handoff_benchmark.py": "95852a78141d46bb68a7882bf28efa9f08cbde7ff47c815ecd689c8858fe7ded",
+    "check_schedule_failure.py": "d87ceeba4b7233e766572f5a22a42d8e41175f9494642ed7a7a2125a42b07345",
+    "test_result_history.py": "fcc2fa2902766d80a704f1a1dd749f1650fd2d6247dff7d5a1c8e1237ac48f40",
+    "project_benchmark.py": "2597005e15eca0c11d660de939dd4394630a36a59cea9a0cdf0a1c4765507c94",
+    "test_inline_snapshot.py": "3c84604b27393a923f688c3b8c49d8f9ca1a959ad83fee80bd0fc1b0e14b17fb",
+    "pool_benchmark.py": "f00a53f6dab211193eb7cea2105777d0fc0198373905fcad6019e70ebad9c991",
+    "lifecycle_host.odin": "ba8c13678118f48d81a7170296a1632b84bea94e92fa104b6985e2db87517e55",
+    "ninja_benchmark.py": "ff9c12d46ef3d429b5d1e9e3e38c0f037078e9466831f0ae08b68247897be383",
+    "blake3_bridge.c": "243ca58072e05f440d4ffc993e7723846d6a575751bfeb6a6acb6cadd93afb83",
+    "benchmark.py": "394bfa9d274be5b73f65a645189584847f06a6e09f5a3ae1dd642f765c7d0186",
+    "test_blake3_provider.py": "95aaf3f5381d81697bb4df6eefcccac39e220841ca4bee04badda6d97f948d2c",
+    "check_object_cache.py": "383d4356087a659360214afae97ef23a250c76af292a2b24e9b84046b0500430",
+    "dependency_impl.h": "8ddf74b72b1f49327ea0880652efa100afbff4ff711e5665b76a3805ec5f11df",
+    "project_host.odin": "98ff4539c7a0ee2e84361d833db2cd9ca14620a029baf4fc5b46739f7ab17249",
+    "test_toolchain.py": "45ff1d749cd0eeefdabd9705ae889b4c2adfb63dc5f91cc1dcc2b0059ec5fb87",
+    "lifecycle_benchmark.py": "041e670a1184824c203203e3194a5846a4adcf4aea42b3864538910be6d1201c",
+    "bridge.cpp": "7161087cd2859e1e07deef79020d52adf2914bf68da72ebcf0fe7302ae478ed2",
+    "test_incremental_conditions.py": "8e0bc7799dc2712a3fd681d4a005f750d547381da8731f0053e418efa65af210",
+    "check_cache_upstream.py": "c9b890bfb87809ae2dc743664d0670fa3280ee0cfd2b0e52b9c49990d36ef749",
+    "lifecycle_bridge.cpp": "93672b735cbb28f67e226a3f39a302ebf71281f472562af297339860da32d82a",
+    "test_build_decisions.py": "34dab0e8cba7bdff745c30fea7a444f1b72bc7c79be9309bc6cdb1f686bbfee0",
+    "decision_host.odin": "ad3cb71417387a0063ee95a768703d9c4a645f10287eeb0bc82b7559ab40c974",
+    "pool_bridge.cpp": "6838a928a0d8713c87abeeb9ef15bba68da8e5947241a501a6691a5e6f6d9780",
+    "schedule_benchmark.py": "4f14fbffe59ef498af35904f249a184fd1678e03a2e6637fda21bb88b8ea0fec",
+    "test_resident_decision.py": "93b8cb060024530de4747eaa7768f9b617726bbcc564381e1d39c4405108b215",
+    "build_dependency_hosts.py": "0dda1a2f963402a91c8577b376a325284b43fb037644caa708285fea962eadb4",
+    "startup_floor.py": "f088367ea18c28be2a0412d9d0da725d28c3378ba58cb33ec5eac3d0922a5847",
+    "sha256_impl.h": "b10250fe28e8c483d6f1e88e2b9b6d55e977b302fef7b7bbb436e0a685e1d381",
+    "host.odin": "a464c1bc2e1713e0c5f6ab7754da93826b2e044c7b1fe9b8eaffa805ef1bd2b9",
+    "trace_handoff.py": "f67935bafed4f26bde52b099584d408abf85f63aa883b82e6eb489adae5cce5a",
+    "inline_snapshot.py": "0950578f78b0a476bffff88115b09d0e04417de96674f5e733ce672a13914f29",
+    "check_dependency_fanout.py": "b6a9a8ed54d68c09b99165031b0c62a6e65f3ee2cb843a1709451cccb71edaa4",
+    "accelerated_dependency_bridge.cpp": "a6586b568e9c2910facbad8c6209e8b6170b8ca315bf57eda4cbf05490cf6a01",
+    "cache_bridge.cpp": "2fdf8e56d5aeab4f6a4b2ce215a9a536301c52c3229db6e85850b41a951c0528",
+    "handoff_bridge.cpp": "5b8f7bff617031ee3b0e2c155852ea892cdcadf7cf42c51899c10a5e184e3d60",
+    "handoff_benchmark.py": "9d211fbb2d6f760f66e19defd073b829f02d3dbf8a53297f506ae0a75caa76c7",
+    "project_bridge.cpp": "06d485a7438829270586106db03aff13ea9828f8a7492490094732d15f88dd78",
+    "check_schedule_small.py": "8eaa8b3a89fd62cdde231e514c1f0fbd51442711cee9abce4d8e9ddbc7863023",
+    "incremental_conditions.py": "3c8a18024c2aaef4285de3490ffbcf48fad33f9d70531d7f25bc4e9305badcd8",
+    "object_cache_benchmark.py": "9c4a473a22da92d11535f6455a7713c211aec317d3357271387345e90ef85a42",
+    "trace_project_inputs.py": "6ce7622f7afe3e01bc0b27abfc047ef94d002e09b57144e9331dbae330f84fb6"
+  },
+  "setup": [
+    {
+      "engine": "gaia-blake3",
+      "state": "unchanged",
+      "seconds": 2.7213347740034806
+    },
+    {
+      "engine": "gaia-linked",
+      "state": "unchanged",
+      "seconds": 2.757653444998141
+    },
+    {
+      "engine": "gaia-rebound",
+      "state": "unchanged",
+      "seconds": 2.705855350002821
+    }
+  ],
+  "linked_bounds_and_skip_counts_pass": true
+}

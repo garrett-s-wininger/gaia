@@ -1,10 +1,11 @@
-# Python dependency research
+# Python dependency and interpreter research
 
-The work covers loading an already selected dependency set and resolving package versions from an admitted candidate inventory. It does not combine those operations into an application-startup number.
+The work separates dependency loading, package resolution and interpreter-state reuse. Their timings are independent; the new state-reuse comparison does not rewrite earlier loading results.
 
 - [Findings](findings.md): the conclusions in plain language.
 - [Prospects](prospects.md): useful reasons to reopen this track.
 - [Loading review](dependency-formats.md) and [resolution review](resolution.md): detailed comparisons and implementation maps.
+- [Interpreter-state review](interpreter-state.md): resident templates versus actual disk restore.
 - [Run index](experiments.json): retained reports and raw data.
 - [Technical task register](follow-up.md): stable task IDs and acceptance criteria.
 

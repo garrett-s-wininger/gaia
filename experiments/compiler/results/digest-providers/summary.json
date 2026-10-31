@@ -1,0 +1,677 @@
+{
+  "run_id": "20261030T232026.999455Z",
+  "raw_sha256": "30849249bde627c61ff1a028ae8926c6ea7a5a08a2646ee2db85f7082c08756f",
+  "target": "gaia-blake3",
+  "cases": [
+    {
+      "scenario": "unchanged",
+      "engines": {
+        "ninja": {
+          "median_ms": 3.087983001023531,
+          "min_ms": 3.0309950016089715,
+          "max_ms": 3.908036000211723
+        },
+        "ninja-ccache": {
+          "median_ms": 3.1276650006475393,
+          "min_ms": 2.9580480004369747,
+          "max_ms": 3.724330999830272
+        },
+        "gaia-fast-sha": {
+          "median_ms": 3.4763479998218827,
+          "min_ms": 3.4393599999020807,
+          "max_ms": 3.7946579977869987,
+          "median_preparation_ms": 0,
+          "median_native_request_ms": 0,
+          "median_condition_export_ms": 0,
+          "native_medians": {
+            "setup_ns": 0,
+            "input_admission_ns": 0,
+            "action_admission_ns": 0,
+            "content_hash_ns": 0,
+            "candidate_load_ns": 0,
+            "validation_ns": 0,
+            "compile_wall_ns": 0,
+            "link_ns": 0,
+            "publication_ns": 0,
+            "report_ns": 0,
+            "view_builds": 0,
+            "validation_groups": 0,
+            "memo_hits": 0,
+            "memo_bytes": 0,
+            "compiler_executions": 0,
+            "historical_hits": 0,
+            "link_calls": 0,
+            "peak_rss_bytes": 0
+          }
+        },
+        "gaia-blake3": {
+          "median_ms": 3.4522139976616018,
+          "min_ms": 3.3096930019382853,
+          "max_ms": 4.564077000395628,
+          "median_preparation_ms": 0,
+          "median_native_request_ms": 0,
+          "median_condition_export_ms": 0,
+          "native_medians": {
+            "setup_ns": 0,
+            "input_admission_ns": 0,
+            "action_admission_ns": 0,
+            "content_hash_ns": 0,
+            "candidate_load_ns": 0,
+            "validation_ns": 0,
+            "compile_wall_ns": 0,
+            "link_ns": 0,
+            "publication_ns": 0,
+            "report_ns": 0,
+            "view_builds": 0,
+            "validation_groups": 0,
+            "memo_hits": 0,
+            "memo_bytes": 0,
+            "compiler_executions": 0,
+            "historical_hits": 0,
+            "link_calls": 0,
+            "peak_rss_bytes": 0
+          }
+        }
+      },
+      "target_paired": {
+        "ninja": {
+          "median_delta_ms": 0.3328630009491462,
+          "wins": 3,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": 0.3248510038247332,
+          "wins": 1,
+          "blocks": 7
+        },
+        "gaia-fast-sha": {
+          "median_delta_ms": -0.05993399827275425,
+          "wins": 4,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "implementation",
+      "engines": {
+        "ninja": {
+          "median_ms": 65.52124500012724,
+          "min_ms": 64.71645299825468,
+          "max_ms": 66.40733300082502
+        },
+        "ninja-ccache": {
+          "median_ms": 97.87095499996212,
+          "min_ms": 97.22618000159855,
+          "max_ms": 107.58547800287488
+        },
+        "gaia-fast-sha": {
+          "median_ms": 59.126158001163276,
+          "min_ms": 58.178535000479314,
+          "max_ms": 61.38616000316688,
+          "median_preparation_ms": 9.624849000829272,
+          "median_native_request_ms": 36.23339300247608,
+          "median_condition_export_ms": 9.392714997375151,
+          "native_medians": {
+            "setup_ns": 5989029,
+            "input_admission_ns": 2120849,
+            "action_admission_ns": 72808,
+            "content_hash_ns": 1437473,
+            "candidate_load_ns": 2306430,
+            "validation_ns": 1138014,
+            "compile_wall_ns": 25274341,
+            "link_ns": 2982349,
+            "publication_ns": 117623,
+            "report_ns": 1115143,
+            "view_builds": 2,
+            "validation_groups": 1,
+            "memo_hits": 4779,
+            "memo_bytes": 193104,
+            "compiler_executions": 1,
+            "historical_hits": 0,
+            "link_calls": 1,
+            "peak_rss_bytes": 237953024
+          }
+        },
+        "gaia-blake3": {
+          "median_ms": 57.27449999903911,
+          "min_ms": 56.36143399897264,
+          "max_ms": 58.55576399699203,
+          "median_preparation_ms": 8.451639998384053,
+          "median_native_request_ms": 35.373136000998784,
+          "median_condition_export_ms": 9.334747002867516,
+          "native_medians": {
+            "setup_ns": 4300639,
+            "input_admission_ns": 1126074,
+            "action_admission_ns": 65955,
+            "content_hash_ns": 850512,
+            "candidate_load_ns": 2250544,
+            "validation_ns": 1101943,
+            "compile_wall_ns": 25781307,
+            "link_ns": 2753307,
+            "publication_ns": 121230,
+            "report_ns": 1317968,
+            "view_builds": 2,
+            "validation_groups": 1,
+            "memo_hits": 4779,
+            "memo_bytes": 193104,
+            "compiler_executions": 1,
+            "historical_hits": 0,
+            "link_calls": 1,
+            "peak_rss_bytes": 235401216
+          }
+        }
+      },
+      "target_paired": {
+        "ninja": {
+          "median_delta_ms": -8.44426199546433,
+          "wins": 7,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": -41.17934399982914,
+          "wins": 7,
+          "blocks": 7
+        },
+        "gaia-fast-sha": {
+          "median_delta_ms": -1.7156200010504108,
+          "wins": 7,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "shared-header",
+      "engines": {
+        "ninja": {
+          "median_ms": 42.200111001875484,
+          "min_ms": 40.874059002817376,
+          "max_ms": 44.30353900170303
+        },
+        "ninja-ccache": {
+          "median_ms": 63.11905500115245,
+          "min_ms": 62.26683299973956,
+          "max_ms": 66.00289700145368
+        },
+        "gaia-fast-sha": {
+          "median_ms": 39.53458300020429,
+          "min_ms": 37.09947300012573,
+          "max_ms": 42.6179919995775,
+          "median_preparation_ms": 10.325371000362793,
+          "median_native_request_ms": 15.652246998797636,
+          "median_condition_export_ms": 9.744918999786023,
+          "native_medians": {
+            "setup_ns": 6092795,
+            "input_admission_ns": 2337429,
+            "action_admission_ns": 68940,
+            "content_hash_ns": 1442764,
+            "candidate_load_ns": 2285130,
+            "validation_ns": 1120368,
+            "compile_wall_ns": 4757605,
+            "link_ns": 2753822,
+            "publication_ns": 100791,
+            "report_ns": 1031835,
+            "view_builds": 2,
+            "validation_groups": 1,
+            "memo_hits": 4886,
+            "memo_bytes": 194260,
+            "compiler_executions": 1,
+            "historical_hits": 0,
+            "link_calls": 1,
+            "peak_rss_bytes": 237953024
+          }
+        },
+        "gaia-blake3": {
+          "median_ms": 36.243501999706496,
+          "min_ms": 34.93866100325249,
+          "max_ms": 41.750306998437736,
+          "median_preparation_ms": 8.362611002667109,
+          "median_native_request_ms": 14.331402999232523,
+          "median_condition_export_ms": 9.393395997904008,
+          "native_medians": {
+            "setup_ns": 4470501,
+            "input_admission_ns": 1143186,
+            "action_admission_ns": 67188,
+            "content_hash_ns": 872573,
+            "candidate_load_ns": 2322902,
+            "validation_ns": 1135877,
+            "compile_wall_ns": 4929864,
+            "link_ns": 2775490,
+            "publication_ns": 106642,
+            "report_ns": 1372802,
+            "view_builds": 2,
+            "validation_groups": 1,
+            "memo_hits": 4886,
+            "memo_bytes": 194260,
+            "compiler_executions": 1,
+            "historical_hits": 0,
+            "link_calls": 1,
+            "peak_rss_bytes": 235401216
+          }
+        }
+      },
+      "target_paired": {
+        "ninja": {
+          "median_delta_ms": -5.8873829984804615,
+          "wins": 7,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": -26.586332998704165,
+          "wins": 7,
+          "blocks": 7
+        },
+        "gaia-fast-sha": {
+          "median_delta_ms": -2.6231349947920535,
+          "wins": 7,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "generated-header",
+      "engines": {
+        "ninja": {
+          "median_ms": 42.005834002338815,
+          "min_ms": 40.71576800197363,
+          "max_ms": 46.3601480005309
+        },
+        "ninja-ccache": {
+          "median_ms": 63.75191999904928,
+          "min_ms": 62.2214899995015,
+          "max_ms": 65.44622100045672
+        },
+        "gaia-fast-sha": {
+          "median_ms": 37.31814899947494,
+          "min_ms": 36.881619998894166,
+          "max_ms": 39.13238399763941,
+          "median_preparation_ms": 9.314360002463218,
+          "median_native_request_ms": 15.04848900003708,
+          "median_condition_export_ms": 9.243898999557132,
+          "native_medians": {
+            "setup_ns": 6035857,
+            "input_admission_ns": 2172247,
+            "action_admission_ns": 68049,
+            "content_hash_ns": 1438536,
+            "candidate_load_ns": 2330076,
+            "validation_ns": 1158452,
+            "compile_wall_ns": 4355114,
+            "link_ns": 2545036,
+            "publication_ns": 94329,
+            "report_ns": 1290626,
+            "view_builds": 2,
+            "validation_groups": 1,
+            "memo_hits": 4886,
+            "memo_bytes": 194836,
+            "compiler_executions": 1,
+            "historical_hits": 0,
+            "link_calls": 1,
+            "peak_rss_bytes": 237953024
+          }
+        },
+        "gaia-blake3": {
+          "median_ms": 36.32229800132336,
+          "min_ms": 34.6572880007443,
+          "max_ms": 37.68193900032202,
+          "median_preparation_ms": 8.324474001710769,
+          "median_native_request_ms": 14.217093998013297,
+          "median_condition_export_ms": 9.355677997518796,
+          "native_medians": {
+            "setup_ns": 4356292,
+            "input_admission_ns": 1160409,
+            "action_admission_ns": 64843,
+            "content_hash_ns": 874187,
+            "candidate_load_ns": 2265453,
+            "validation_ns": 1105941,
+            "compile_wall_ns": 4957885,
+            "link_ns": 2505365,
+            "publication_ns": 99087,
+            "report_ns": 1246672,
+            "view_builds": 2,
+            "validation_groups": 1,
+            "memo_hits": 4886,
+            "memo_bytes": 194836,
+            "compiler_executions": 1,
+            "historical_hits": 0,
+            "link_calls": 1,
+            "peak_rss_bytes": 235401216
+          }
+        }
+      },
+      "target_paired": {
+        "ninja": {
+          "median_delta_ms": -6.602141998882871,
+          "wins": 7,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": -28.090917996451026,
+          "wins": 7,
+          "blocks": 7
+        },
+        "gaia-fast-sha": {
+          "median_delta_ms": -1.7940940015250817,
+          "wins": 6,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "unused-header",
+      "engines": {
+        "ninja": {
+          "median_ms": 3.559950000635581,
+          "min_ms": 3.0490370008919854,
+          "max_ms": 4.379830999823753
+        },
+        "ninja-ccache": {
+          "median_ms": 3.047255999263143,
+          "min_ms": 2.901144998759264,
+          "max_ms": 3.419712000322761
+        },
+        "gaia-fast-sha": {
+          "median_ms": 3.530448000674369,
+          "min_ms": 3.36282799980836,
+          "max_ms": 3.9734230012982152,
+          "median_preparation_ms": 0,
+          "median_native_request_ms": 0,
+          "median_condition_export_ms": 0,
+          "native_medians": {
+            "setup_ns": 0,
+            "input_admission_ns": 0,
+            "action_admission_ns": 0,
+            "content_hash_ns": 0,
+            "candidate_load_ns": 0,
+            "validation_ns": 0,
+            "compile_wall_ns": 0,
+            "link_ns": 0,
+            "publication_ns": 0,
+            "report_ns": 0,
+            "view_builds": 0,
+            "validation_groups": 0,
+            "memo_hits": 0,
+            "memo_bytes": 0,
+            "compiler_executions": 0,
+            "historical_hits": 0,
+            "link_calls": 0,
+            "peak_rss_bytes": 0
+          }
+        },
+        "gaia-blake3": {
+          "median_ms": 3.581332002795534,
+          "min_ms": 3.469648003374459,
+          "max_ms": 5.134388000442414,
+          "median_preparation_ms": 0,
+          "median_native_request_ms": 0,
+          "median_condition_export_ms": 0,
+          "native_medians": {
+            "setup_ns": 0,
+            "input_admission_ns": 0,
+            "action_admission_ns": 0,
+            "content_hash_ns": 0,
+            "candidate_load_ns": 0,
+            "validation_ns": 0,
+            "compile_wall_ns": 0,
+            "link_ns": 0,
+            "publication_ns": 0,
+            "report_ns": 0,
+            "view_builds": 0,
+            "validation_groups": 0,
+            "memo_hits": 0,
+            "memo_bytes": 0,
+            "compiler_executions": 0,
+            "historical_hits": 0,
+            "link_calls": 0,
+            "peak_rss_bytes": 0
+          }
+        }
+      },
+      "target_paired": {
+        "ninja": {
+          "median_delta_ms": 0.36084200110053644,
+          "wins": 2,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": 0.5981050016998779,
+          "wins": 0,
+          "blocks": 7
+        },
+        "gaia-fast-sha": {
+          "median_delta_ms": 0.06636000398430042,
+          "wins": 2,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "revert",
+      "engines": {
+        "ninja": {
+          "median_ms": 64.9064970020845,
+          "min_ms": 63.99813299867674,
+          "max_ms": 67.08949599851621
+        },
+        "ninja-ccache": {
+          "median_ms": 24.49452299697441,
+          "min_ms": 23.315547001402592,
+          "max_ms": 24.964336000266485
+        },
+        "gaia-fast-sha": {
+          "median_ms": 33.938732001843164,
+          "min_ms": 32.554422003158834,
+          "max_ms": 35.542960999009665,
+          "median_preparation_ms": 9.547892997943563,
+          "median_native_request_ms": 10.201506000157678,
+          "median_condition_export_ms": 9.56131299972185,
+          "native_medians": {
+            "setup_ns": 6074571,
+            "input_admission_ns": 2131188,
+            "action_admission_ns": 68059,
+            "content_hash_ns": 1453815,
+            "candidate_load_ns": 2311770,
+            "validation_ns": 1102193,
+            "compile_wall_ns": 431,
+            "link_ns": 2508212,
+            "publication_ns": 1252,
+            "report_ns": 1302248,
+            "view_builds": 1,
+            "validation_groups": 1,
+            "memo_hits": 4946,
+            "memo_bytes": 194836,
+            "compiler_executions": 0,
+            "historical_hits": 1,
+            "link_calls": 1,
+            "peak_rss_bytes": 237953024
+          }
+        },
+        "gaia-blake3": {
+          "median_ms": 31.14935399935348,
+          "min_ms": 30.358615000295686,
+          "max_ms": 31.527228999038925,
+          "median_preparation_ms": 8.497750000969972,
+          "median_native_request_ms": 8.78024699704838,
+          "median_condition_export_ms": 9.339889998955186,
+          "native_medians": {
+            "setup_ns": 4510577,
+            "input_admission_ns": 1193902,
+            "action_admission_ns": 66306,
+            "content_hash_ns": 869638,
+            "candidate_load_ns": 2334083,
+            "validation_ns": 1135890,
+            "compile_wall_ns": 430,
+            "link_ns": 2486839,
+            "publication_ns": 1263,
+            "report_ns": 1284675,
+            "view_builds": 1,
+            "validation_groups": 1,
+            "memo_hits": 4946,
+            "memo_bytes": 194836,
+            "compiler_executions": 0,
+            "historical_hits": 1,
+            "link_calls": 1,
+            "peak_rss_bytes": 235401216
+          }
+        }
+      },
+      "target_paired": {
+        "ninja": {
+          "median_delta_ms": -34.23233600187814,
+          "wins": 7,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": 6.666016004601261,
+          "wins": 0,
+          "blocks": 7
+        },
+        "gaia-fast-sha": {
+          "median_delta_ms": -2.7974949989584275,
+          "wins": 7,
+          "blocks": 7
+        }
+      }
+    }
+  ],
+  "residents": {
+    "gaia-fast-sha": {
+      "requests": 30,
+      "peak_rss_bytes": [
+        237953024,
+        237953024,
+        237953024,
+        237953024,
+        237953024,
+        237953024,
+        237953024,
+        237953024,
+        237953024,
+        237953024,
+        237953024,
+        237953024,
+        237953024,
+        237953024,
+        237953024,
+        237953024,
+        237953024,
+        237953024,
+        237953024,
+        237953024,
+        237953024,
+        237953024,
+        237953024,
+        237953024,
+        237953024,
+        237953024,
+        237953024,
+        237953024,
+        237953024,
+        237953024
+      ],
+      "cpu_seconds": 12.64,
+      "serial": true
+    },
+    "gaia-blake3": {
+      "requests": 30,
+      "peak_rss_bytes": [
+        233705472,
+        235401216,
+        235401216,
+        235401216,
+        235401216,
+        235401216,
+        235401216,
+        235401216,
+        235401216,
+        235401216,
+        235401216,
+        235401216,
+        235401216,
+        235401216,
+        235401216,
+        235401216,
+        235401216,
+        235401216,
+        235401216,
+        235401216,
+        235401216,
+        235401216,
+        235401216,
+        235401216,
+        235401216,
+        235401216,
+        235401216,
+        235401216,
+        235401216,
+        235401216
+      ],
+      "cpu_seconds": 12.77,
+      "serial": true
+    }
+  },
+  "source_sha256": {
+    "blake3_digest.py": "16f149167a6b1a71d1ea9145e140bbbebc93d83de2d259ae053e328434b283e8",
+    "dependency_cache_benchmark.py": "371b57a1fa0be1f2ca2c8102334110ee311a8beb2a1c0f10920c5c7f3d5eb5c8",
+    "schedule_host.odin": "0665c188951813275b0a17562a4814007c06df2cd17d1c40890787e93c32a394",
+    "test_resident_host.py": "fe8801255c9ab33751fcd7bb652ba1e348cad6ee54889c4ca20626345fdc8c28",
+    "dependency_host.odin": "071f6a8411a53bef5f5bcdf8fa51e808fd6d71833df0dc340fc915a04b2eac72",
+    "build_cache_host.py": "f57155966ba5328cc68f7c39e60c7b951fba527b5b300782c4a4f7d797230989",
+    "resident_host.py": "3f98fa66800be0a1e4f7e25ba408e9b9645a263fb9b7338599790aa0280985ed",
+    "condition_index.py": "e8c69684955dd004bd1961d02d8e800b90cf439d010e9ff217504f2436f80a43",
+    "profile_zstd.py": "63dddd4f453c44e8f6141bd89cc1bfb1fc83a37b9cfe3fb0dcaa6537dce1162a",
+    "test_ninja_benchmark.py": "adb6cddae97532725f0c171bf814d736887689b614532968e04195888bda1f8d",
+    "pool_host.odin": "0d4d42adb207d3ba6ecf6c1a3e5721cef34bf311f4f81218ec9adc4d56bde2a4",
+    "handoff_impl.h": "b6d096f289339cbdcd53f1d5a59cce7d889321d0e9e79a598dac098580337365",
+    "trace_inputs.py": "b911db262e7c4e2cec0294359f9179ca2923b7243b85b50fabefb85079c633d4",
+    "build_schedule_host.py": "ef4b3b34df724af2cf788e8b86aac98c4e109b91985a718c257603c9e7f0c960",
+    "cache_host.odin": "e74d212a808398781ffad2c92bbc66ae2ea144ac94438556707da24d694d661e",
+    "test_hash_provider.py": "7a025216657a7577faca56dd55e65d13c88fe76488b87ddabae5453bb2644467",
+    "test_shared_validation.py": "99e4ef9404f30b0123b7a2c67a1a59d3f943c85a649de65750ad070db6610f2c",
+    "check_dependency_cache.py": "9efb52f8181ce27066da50c8f7727ee394e2a8198ea9e1bc56474fb776170a5a",
+    "dependency_bridge.cpp": "1a5fc3f3ac830ff01949b313a8c3602b4f68f8e2ac051e442197b5e219d1e226",
+    "handoff_host.odin": "6b42fa1cdfdbfc7a33577c9357c119422ea4ebcda4407c2cb606840266c36571",
+    "profile_bridge.cpp": "1d5dc23dd5494d9ba40eecc94a36fdfdf0d6ae1bdf1678ce7ec98857770ceb59",
+    "snapshot_host.odin": "46e50b58c05401e8281bcdbb2d4bd395c651e699e0dddc7f105d3fdb50b8e797",
+    "test_condition_index.py": "f888c7373d232eea0a61d0a4e85a96d74400c703e53f4e2d9b5df52c16fd1e63",
+    "build_followup_hosts.py": "01d6a9894ebff688d87a58f16e0d1aeddbb4dd2711d2118b68011477fef6e1e1",
+    "zstd_handoff_benchmark.py": "95852a78141d46bb68a7882bf28efa9f08cbde7ff47c815ecd689c8858fe7ded",
+    "check_schedule_failure.py": "d87ceeba4b7233e766572f5a22a42d8e41175f9494642ed7a7a2125a42b07345",
+    "project_benchmark.py": "2597005e15eca0c11d660de939dd4394630a36a59cea9a0cdf0a1c4765507c94",
+    "test_inline_snapshot.py": "3c84604b27393a923f688c3b8c49d8f9ca1a959ad83fee80bd0fc1b0e14b17fb",
+    "pool_benchmark.py": "f00a53f6dab211193eb7cea2105777d0fc0198373905fcad6019e70ebad9c991",
+    "lifecycle_host.odin": "ba8c13678118f48d81a7170296a1632b84bea94e92fa104b6985e2db87517e55",
+    "ninja_benchmark.py": "0cf4dd353af4fb40cfaa542bd87b47492503dc9da06e343a2467603686723b5b",
+    "blake3_bridge.c": "243ca58072e05f440d4ffc993e7723846d6a575751bfeb6a6acb6cadd93afb83",
+    "benchmark.py": "394bfa9d274be5b73f65a645189584847f06a6e09f5a3ae1dd642f765c7d0186",
+    "test_blake3_provider.py": "95aaf3f5381d81697bb4df6eefcccac39e220841ca4bee04badda6d97f948d2c",
+    "check_object_cache.py": "383d4356087a659360214afae97ef23a250c76af292a2b24e9b84046b0500430",
+    "dependency_impl.h": "8ddf74b72b1f49327ea0880652efa100afbff4ff711e5665b76a3805ec5f11df",
+    "project_host.odin": "98ff4539c7a0ee2e84361d833db2cd9ca14620a029baf4fc5b46739f7ab17249",
+    "test_toolchain.py": "45ff1d749cd0eeefdabd9705ae889b4c2adfb63dc5f91cc1dcc2b0059ec5fb87",
+    "lifecycle_benchmark.py": "041e670a1184824c203203e3194a5846a4adcf4aea42b3864538910be6d1201c",
+    "bridge.cpp": "7161087cd2859e1e07deef79020d52adf2914bf68da72ebcf0fe7302ae478ed2",
+    "test_incremental_conditions.py": "8e0bc7799dc2712a3fd681d4a005f750d547381da8731f0053e418efa65af210",
+    "check_cache_upstream.py": "c9b890bfb87809ae2dc743664d0670fa3280ee0cfd2b0e52b9c49990d36ef749",
+    "lifecycle_bridge.cpp": "93672b735cbb28f67e226a3f39a302ebf71281f472562af297339860da32d82a",
+    "test_build_decisions.py": "34dab0e8cba7bdff745c30fea7a444f1b72bc7c79be9309bc6cdb1f686bbfee0",
+    "decision_host.odin": "bbb4cbf9802594cd13736ee336814a9cd5933cb9f31ce0c0fc8d227cc1bef4b1",
+    "pool_bridge.cpp": "6838a928a0d8713c87abeeb9ef15bba68da8e5947241a501a6691a5e6f6d9780",
+    "schedule_benchmark.py": "4f14fbffe59ef498af35904f249a184fd1678e03a2e6637fda21bb88b8ea0fec",
+    "build_dependency_hosts.py": "0dda1a2f963402a91c8577b376a325284b43fb037644caa708285fea962eadb4",
+    "startup_floor.py": "f088367ea18c28be2a0412d9d0da725d28c3378ba58cb33ec5eac3d0922a5847",
+    "sha256_impl.h": "b10250fe28e8c483d6f1e88e2b9b6d55e977b302fef7b7bbb436e0a685e1d381",
+    "host.odin": "a464c1bc2e1713e0c5f6ab7754da93826b2e044c7b1fe9b8eaffa805ef1bd2b9",
+    "trace_handoff.py": "f67935bafed4f26bde52b099584d408abf85f63aa883b82e6eb489adae5cce5a",
+    "inline_snapshot.py": "0950578f78b0a476bffff88115b09d0e04417de96674f5e733ce672a13914f29",
+    "check_dependency_fanout.py": "b6a9a8ed54d68c09b99165031b0c62a6e65f3ee2cb843a1709451cccb71edaa4",
+    "accelerated_dependency_bridge.cpp": "a6586b568e9c2910facbad8c6209e8b6170b8ca315bf57eda4cbf05490cf6a01",
+    "cache_bridge.cpp": "2fdf8e56d5aeab4f6a4b2ce215a9a536301c52c3229db6e85850b41a951c0528",
+    "handoff_bridge.cpp": "5b8f7bff617031ee3b0e2c155852ea892cdcadf7cf42c51899c10a5e184e3d60",
+    "handoff_benchmark.py": "9d211fbb2d6f760f66e19defd073b829f02d3dbf8a53297f506ae0a75caa76c7",
+    "project_bridge.cpp": "06d485a7438829270586106db03aff13ea9828f8a7492490094732d15f88dd78",
+    "check_schedule_small.py": "8eaa8b3a89fd62cdde231e514c1f0fbd51442711cee9abce4d8e9ddbc7863023",
+    "incremental_conditions.py": "3c8a18024c2aaef4285de3490ffbcf48fad33f9d70531d7f25bc4e9305badcd8",
+    "object_cache_benchmark.py": "9c4a473a22da92d11535f6455a7713c211aec317d3357271387345e90ef85a42",
+    "trace_project_inputs.py": "6ce7622f7afe3e01bc0b27abfc047ef94d002e09b57144e9331dbae330f84fb6"
+  },
+  "tree_launch_algorithm_and_memo_bounds_pass": true
+}

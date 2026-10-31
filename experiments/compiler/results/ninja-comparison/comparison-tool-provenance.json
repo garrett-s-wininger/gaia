@@ -1,0 +1,22 @@
+[
+  {
+    "package": "ninja",
+    "url": "https://fastly.mirror.pkgbuild.com/extra/os/x86_64/ninja-1.13.2-3-x86_64.pkg.tar.zst",
+    "sha256": "19e12c1a169d27e427c3fa678ed3573825ac2a1043c6d47dd96e76ec3d34236c"
+  },
+  {
+    "package": "fmt",
+    "url": "https://fastly.mirror.pkgbuild.com/extra/os/x86_64/fmt-12.2.0-1-x86_64.pkg.tar.zst",
+    "sha256": "c4a52130bd29119063c5b8b5209926c8f0d74773047234fcf7ce68ae078dc948"
+  },
+  {
+    "package": "hiredis",
+    "url": "https://fastly.mirror.pkgbuild.com/extra/os/x86_64/hiredis-1.4.1-1-x86_64.pkg.tar.zst",
+    "sha256": "9bacc58ce0196995e154313164d28730eb25dd745590accbde8d85e9a72a1b37"
+  },
+  {
+    "package": "ccache",
+    "url": "https://fastly.mirror.pkgbuild.com/extra/os/x86_64/ccache-4.14.1-1-x86_64.pkg.tar.zst",
+    "sha256": "fefc984b335b224b0ad24e85f7d95613683b8cf34980642fcc75e3664c13cda9"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "timed_operations": 30,
+  "all_compiled_class_counts_bytes_and_hashes_match_reference": true,
+  "all_resident_in_memory_consumers_pass": true,
+  "raw_sha256": "295fb132549ec249cd0ab464ef585e4373512c7bf21dab0634a1f2d7ac3294e2"
+}

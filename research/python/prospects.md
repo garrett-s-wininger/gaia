@@ -1,6 +1,6 @@
 # Where Python research could go next
 
-Python research is paused while the independent compiler track develops. Reopen it for a specific unanswered question rather than another tiny improvement to the same fixture.
+Further loader or resolver tuning should address a concrete workload or compatibility gap. Interpreter-state reuse has its own lifetime and isolation questions.
 
 ## Measure an actual developer tool
 
@@ -15,6 +15,10 @@ Native wheels, namespace packages, package metadata/entry points and editable de
 The published Django fixture has only a small candidate inventory. A larger pinned universe could test whether the gains survive denser conflicts and realistic version alternatives. Separate source/metadata delivery from search, and compare selected artifact identities under a documented policy.
 
 ## Investigate reuse as its own problem
+
+The [state-reuse comparisons](interpreter-state.md) support live templates and faster TypeScript library initialization, but the complete project snapshot loses to the cached stock CLI. A broader tool or service should justify preparation, rebuild and resource-rebinding costs against that baseline.
+
+Measure startup, first request, repeated work and teardown together, with simultaneous memory and failure/restart behavior. Extend the live performance bridge only with explicit filesystem/watch/resource semantics. Keep current source/configuration inputs fresh and compare default versus code-cache-free snapshots where it explains a real cost.
 
 Interpreter sessions need isolation, invalidation, finalizer behavior and memory limits. Resolver sessions need immutable universe/target/policy identities. Treat these as lifetime experiments; faster container reads alone do not answer them.
 

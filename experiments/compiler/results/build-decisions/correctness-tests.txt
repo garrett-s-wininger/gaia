@@ -1,0 +1,22 @@
+test_changed_inputs_during_build_cannot_publish (test_build_decisions.DecisionTests.test_changed_inputs_during_build_cannot_publish) ... ok
+test_missing_and_corrupt_outputs (test_build_decisions.DecisionTests.test_missing_and_corrupt_outputs) ... ok
+test_missing_inputs_cannot_hit_or_publish (test_build_decisions.DecisionTests.test_missing_inputs_cannot_hit_or_publish) ... ok
+test_output_list_and_watch_membership_changes_invalidate (test_build_decisions.DecisionTests.test_output_list_and_watch_membership_changes_invalidate) ... ok
+test_receipt_corruption_and_valid_checksum_bad_framing (test_build_decisions.DecisionTests.test_receipt_corruption_and_valid_checksum_bad_framing) ... ok
+test_success_restart_and_request_changes (test_build_decisions.DecisionTests.test_success_restart_and_request_changes) ... ok
+test_unchanged_bytes_with_new_output_metadata_are_validated (test_build_decisions.DecisionTests.test_unchanged_bytes_with_new_output_metadata_are_validated) ... ok
+test_concurrent_publication_and_single_candidate_control (test_build_decisions.HistoricalCandidateTests.test_concurrent_publication_and_single_candidate_control) ... ok
+test_exact_flags_remain_part_of_action_identity (test_build_decisions.HistoricalCandidateTests.test_exact_flags_remain_part_of_action_identity) ... ok
+test_history_revert_eviction_and_corruption (test_build_decisions.HistoricalCandidateTests.test_history_revert_eviction_and_corruption) ... ok
+test_negative_lookup_appearance_and_historical_absence (test_build_decisions.HistoricalCandidateTests.test_negative_lookup_appearance_and_historical_absence) ... ok
+test_scan_reads_changed_files_and_elides_same_content (test_ninja_benchmark.DeltaTests.test_scan_reads_changed_files_and_elides_same_content) ... ok
+test_depfiles_noop_revert_and_engine_log_isolation (test_ninja_benchmark.IncrementalGraphTests.test_depfiles_noop_revert_and_engine_log_isolation) ... ok
+test_admitted_tool_survives_arbitrary_location_but_rejects_changes (test_toolchain.ToolchainTests.test_admitted_tool_survives_arbitrary_location_but_rejects_changes) ... ok
+test_explicit_paths_override_environment (test_toolchain.ToolchainTests.test_explicit_paths_override_environment) ... ok
+test_missing_configuration_requires_explicit_selection (test_toolchain.ToolchainTests.test_missing_configuration_requires_explicit_selection) ... ok
+test_prefix_header_default_and_odin_override (test_toolchain.ToolchainTests.test_prefix_header_default_and_odin_override) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 3.980s
+
+OK

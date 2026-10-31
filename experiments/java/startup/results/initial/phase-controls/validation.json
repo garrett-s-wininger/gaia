@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "timed_operations": 42,
+  "all_outputs_tokens_and_phase_bounds_match": true,
+  "raw_sha256": "c10cf683a7c9e6bb8741ab938df0af4c52a59a7caa741d5b1fd594f9bd2f137d"
+}

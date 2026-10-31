@@ -1,0 +1,276 @@
+{
+  "run_id": "20261031T011606.163500Z",
+  "raw_sha256": "7976a51c3289da9ce12c1a83a3b6e6867f9780f719a351a1626d3353fb82548c",
+  "cases": [
+    {
+      "scenario": "core",
+      "mode": "exec",
+      "median_ms": 250.99813799897674,
+      "min_ms": 227.19414200400934,
+      "max_ms": 279.7675949987024,
+      "memory_median": {
+        "Rss": 52346880,
+        "Pss": 39953408,
+        "Shared_Clean": 14376960,
+        "Shared_Dirty": 0,
+        "Private_Clean": 77824,
+        "Private_Dirty": 37892096
+      },
+      "paired_wins_vs_exec": 0,
+      "blocks": 7
+    },
+    {
+      "scenario": "core",
+      "mode": "minimal",
+      "median_ms": 219.95445500215283,
+      "min_ms": 211.63295800215565,
+      "max_ms": 244.25104099645978,
+      "memory_median": {
+        "Rss": 50577408,
+        "Pss": 38877184,
+        "Shared_Clean": 12550144,
+        "Shared_Dirty": 1970176,
+        "Private_Clean": 81920,
+        "Private_Dirty": 35979264
+      },
+      "paired_wins_vs_exec": 6,
+      "blocks": 7,
+      "amortized_ms": {
+        "1": 243.92922799597727,
+        "2": 231.94184149906505,
+        "5": 224.74940960091772,
+        "10": 222.35193230153527,
+        "100": 220.19420273209107
+      },
+      "break_even_requests": 1
+    },
+    {
+      "scenario": "core",
+      "mode": "imports",
+      "median_ms": 135.09682600124506,
+      "min_ms": 130.66528200579342,
+      "max_ms": 140.1647079983377,
+      "memory_median": {
+        "Rss": 47816704,
+        "Pss": 32419840,
+        "Shared_Clean": 9719808,
+        "Shared_Dirty": 14209024,
+        "Private_Clean": 151552,
+        "Private_Dirty": 23736320
+      },
+      "paired_wins_vs_exec": 7,
+      "blocks": 7,
+      "amortized_ms": {
+        "1": 291.5275699997437,
+        "2": 213.3121980004944,
+        "5": 166.3829748009448,
+        "10": 150.73990040109493,
+        "100": 136.66113344123005
+      },
+      "break_even_requests": 2
+    },
+    {
+      "scenario": "core",
+      "mode": "framework",
+      "median_ms": 105.26671099796658,
+      "min_ms": 101.96212700247997,
+      "max_ms": 132.3615789951873,
+      "memory_median": {
+        "Rss": 46604288,
+        "Pss": 30895104,
+        "Shared_Clean": 8536064,
+        "Shared_Dirty": 17002496,
+        "Private_Clean": 122880,
+        "Private_Dirty": 20946944
+      },
+      "paired_wins_vs_exec": 7,
+      "blocks": 7,
+      "amortized_ms": {
+        "1": 329.6613280035672,
+        "2": 217.46401950076688,
+        "5": 150.1456343990867,
+        "10": 127.70617269852663,
+        "100": 107.51065716802259
+      },
+      "break_even_requests": 2
+    },
+    {
+      "scenario": "rest",
+      "mode": "exec",
+      "median_ms": 256.03888100158656,
+      "min_ms": 239.64977799914777,
+      "max_ms": 275.1221029975568,
+      "memory_median": {
+        "Rss": 54521856,
+        "Pss": 42145792,
+        "Shared_Clean": 14372864,
+        "Shared_Dirty": 0,
+        "Private_Clean": 94208,
+        "Private_Dirty": 40062976
+      },
+      "paired_wins_vs_exec": 0,
+      "blocks": 7
+    },
+    {
+      "scenario": "rest",
+      "mode": "minimal",
+      "median_ms": 248.50714599597268,
+      "min_ms": 233.5338499979116,
+      "max_ms": 258.34861699695466,
+      "memory_median": {
+        "Rss": 52854784,
+        "Pss": 41178112,
+        "Shared_Clean": 12529664,
+        "Shared_Dirty": 1966080,
+        "Private_Clean": 192512,
+        "Private_Dirty": 38170624
+      },
+      "paired_wins_vs_exec": 6,
+      "blocks": 7,
+      "amortized_ms": {
+        "1": 270.98371599277016,
+        "2": 259.7454309943714,
+        "5": 253.00245999533217,
+        "10": 250.75480299565245,
+        "100": 248.73191169594065
+      },
+      "break_even_requests": 3
+    },
+    {
+      "scenario": "rest",
+      "mode": "imports",
+      "median_ms": 160.5234190064948,
+      "min_ms": 157.16372900351416,
+      "max_ms": 170.619919001183,
+      "memory_median": {
+        "Rss": 50135040,
+        "Pss": 34735104,
+        "Shared_Clean": 9797632,
+        "Shared_Dirty": 14073856,
+        "Private_Clean": 184320,
+        "Private_Dirty": 26079232
+      },
+      "paired_wins_vs_exec": 7,
+      "blocks": 7,
+      "amortized_ms": {
+        "1": 304.8602269991534,
+        "2": 232.6918230028241,
+        "5": 189.39078060502652,
+        "10": 174.95709980576066,
+        "100": 161.9667870864214
+      },
+      "break_even_requests": 2
+    },
+    {
+      "scenario": "rest",
+      "mode": "framework",
+      "median_ms": 130.94056300178636,
+      "min_ms": 115.7484180002939,
+      "max_ms": 134.74436300020898,
+      "memory_median": {
+        "Rss": 48746496,
+        "Pss": 33154048,
+        "Shared_Clean": 8503296,
+        "Shared_Dirty": 16789504,
+        "Private_Clean": 102400,
+        "Private_Dirty": 23351296
+      },
+      "paired_wins_vs_exec": 7,
+      "blocks": 7,
+      "amortized_ms": {
+        "1": 356.5874289997737,
+        "2": 243.76399600078003,
+        "5": 176.06993620138383,
+        "10": 153.5052496015851,
+        "100": 133.19703166176623
+      },
+      "break_even_requests": 2
+    }
+  ],
+  "setup": {
+    "core-minimal": {
+      "start_seconds": 0.018165913999837358,
+      "prepare_seconds": 0.0001452569995308295,
+      "memory": {
+        "Rss": 16625664,
+        "Pss": 9179136,
+        "Shared_Clean": 10444800,
+        "Shared_Dirty": 0,
+        "Private_Clean": 12288,
+        "Private_Dirty": 6168576
+      },
+      "threads": 1,
+      "shutdown_seconds": 0.005808858993987087
+    },
+    "core-imports": {
+      "start_seconds": 0.11744472999998834,
+      "prepare_seconds": 0.09947425800055498,
+      "memory": {
+        "Rss": 42192896,
+        "Pss": 33122304,
+        "Shared_Clean": 11735040,
+        "Shared_Dirty": 0,
+        "Private_Clean": 909312,
+        "Private_Dirty": 29548544
+      },
+      "threads": 1,
+      "shutdown_seconds": 0.038986013998510316
+    },
+    "core-framework": {
+      "start_seconds": 0.17026950500439852,
+      "prepare_seconds": 0.1523467660008464,
+      "memory": {
+        "Rss": 48476160,
+        "Pss": 38069248,
+        "Shared_Clean": 13103104,
+        "Shared_Dirty": 0,
+        "Private_Clean": 266240,
+        "Private_Dirty": 35106816
+      },
+      "threads": 1,
+      "shutdown_seconds": 0.05412511200120207
+    },
+    "rest-minimal": {
+      "start_seconds": 0.01697517599677667,
+      "prepare_seconds": 0.00013300400314619765,
+      "memory": {
+        "Rss": 16674816,
+        "Pss": 7549952,
+        "Shared_Clean": 10506240,
+        "Shared_Dirty": 0,
+        "Private_Clean": 0,
+        "Private_Dirty": 6168576
+      },
+      "threads": 1,
+      "shutdown_seconds": 0.0055013940000208095
+    },
+    "rest-imports": {
+      "start_seconds": 0.11199411699635675,
+      "prepare_seconds": 0.0936203969977214,
+      "memory": {
+        "Rss": 42139648,
+        "Pss": 31320064,
+        "Shared_Clean": 12566528,
+        "Shared_Dirty": 0,
+        "Private_Clean": 32768,
+        "Private_Dirty": 29540352
+      },
+      "threads": 1,
+      "shutdown_seconds": 0.032342690996301826
+    },
+    "rest-framework": {
+      "start_seconds": 0.1649855329960701,
+      "prepare_seconds": 0.14571541199984495,
+      "memory": {
+        "Rss": 48922624,
+        "Pss": 37398528,
+        "Shared_Clean": 13299712,
+        "Shared_Dirty": 0,
+        "Private_Clean": 20480,
+        "Private_Dirty": 35602432
+      },
+      "threads": 1,
+      "shutdown_seconds": 0.06066133300191723
+    }
+  }
+}

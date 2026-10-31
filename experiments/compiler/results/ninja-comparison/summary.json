@@ -1,0 +1,447 @@
+{
+  "run_id": "20261030T030550.682856Z",
+  "raw_sha256": "5f724547fdaff6f3249d116a98eeaf401934a745f823090ff2540cc12b14c5b0",
+  "cases": [
+    {
+      "scenario": "unchanged",
+      "medians_ms": {
+        "ninja": 5.16693600002327,
+        "ninja-ccache": 5.52423500266741,
+        "gaia-journal": 109.82386900286656
+      },
+      "paired": {
+        "ninja": {
+          "median_delta_ms": 104.45264800000587,
+          "wins": 0,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": 104.49237700231606,
+          "wins": 0,
+          "blocks": 7
+        }
+      },
+      "work": {
+        "ninja": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ninja-ccache": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "gaia-journal": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "scenario": "implementation",
+      "medians_ms": {
+        "ninja": 125.31145899993135,
+        "ninja-ccache": 182.0058949997474,
+        "gaia-journal": 171.15300400109845
+      },
+      "paired": {
+        "ninja": {
+          "median_delta_ms": 37.953229002596345,
+          "wins": 1,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": -12.860463997640181,
+          "wins": 4,
+          "blocks": 7
+        }
+      },
+      "work": {
+        "ninja": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "ninja-ccache": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "gaia-journal": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "scenario": "shared-header",
+      "medians_ms": {
+        "ninja": 81.85319100084598,
+        "ninja-ccache": 126.84453000110807,
+        "gaia-journal": 122.3634280031547
+      },
+      "paired": {
+        "ninja": {
+          "median_delta_ms": 40.2969499991741,
+          "wins": 0,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": -6.265108000661712,
+          "wins": 5,
+          "blocks": 7
+        }
+      },
+      "work": {
+        "ninja": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "ninja-ccache": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "gaia-journal": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "scenario": "generated-header",
+      "medians_ms": {
+        "ninja": 78.93407400115393,
+        "ninja-ccache": 121.09255100222072,
+        "gaia-journal": 125.05605700062006
+      },
+      "paired": {
+        "ninja": {
+          "median_delta_ms": 45.838691999961156,
+          "wins": 0,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": 5.449519998364849,
+          "wins": 2,
+          "blocks": 7
+        }
+      },
+      "work": {
+        "ninja": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "ninja-ccache": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "gaia-journal": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "scenario": "unused-header",
+      "medians_ms": {
+        "ninja": 5.471401000249898,
+        "ninja-ccache": 6.02093099951162,
+        "gaia-journal": 108.74526999759837
+      },
+      "paired": {
+        "ninja": {
+          "median_delta_ms": 103.00109399759094,
+          "wins": 0,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": 101.20696599551593,
+          "wins": 0,
+          "blocks": 7
+        }
+      },
+      "work": {
+        "ninja": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ninja-ccache": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "gaia-journal": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "scenario": "high-fanout-header",
+      "medians_ms": {
+        "ninja": 4750.659315002849,
+        "ninja-ccache": 5060.229038997932,
+        "gaia-journal": 4777.137025001139
+      },
+      "paired": {
+        "ninja": {
+          "median_delta_ms": -83.32767699539545,
+          "wins": 4,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": -244.20634799753316,
+          "wins": 7,
+          "blocks": 7
+        }
+      },
+      "work": {
+        "ninja": [
+          26,
+          26,
+          26,
+          26,
+          26,
+          26,
+          26
+        ],
+        "ninja-ccache": [
+          26,
+          26,
+          26,
+          26,
+          26,
+          26,
+          26
+        ],
+        "gaia-journal": [
+          26,
+          26,
+          26,
+          26,
+          26,
+          26,
+          26
+        ]
+      }
+    },
+    {
+      "scenario": "flags",
+      "medians_ms": {
+        "ninja": 4970.9387390030315,
+        "ninja-ccache": 378.1735539996589,
+        "gaia-journal": 4806.6172229991935
+      },
+      "paired": {
+        "ninja": {
+          "median_delta_ms": -156.99492099884083,
+          "wins": 7,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": 4412.311337000574,
+          "wins": 0,
+          "blocks": 7
+        }
+      },
+      "work": {
+        "ninja": [
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31
+        ],
+        "ninja-ccache": [
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31
+        ],
+        "gaia-journal": [
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31
+        ]
+      }
+    },
+    {
+      "scenario": "revert",
+      "medians_ms": {
+        "ninja": 127.19588999971165,
+        "ninja-ccache": 43.63209300208837,
+        "gaia-journal": 159.44958399995812
+      },
+      "paired": {
+        "ninja": {
+          "median_delta_ms": 32.98153200375964,
+          "wins": 0,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": 116.4946679964487,
+          "wins": 0,
+          "blocks": 7
+        }
+      },
+      "work": {
+        "ninja": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "ninja-ccache": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "gaia-journal": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "scenario": "clean",
+      "medians_ms": {
+        "ninja": 4854.502694000985,
+        "ninja-ccache": 5133.552879997296,
+        "gaia-journal": 4744.865787997696
+      },
+      "paired": {
+        "ninja": {
+          "median_delta_ms": -109.63690600328846,
+          "wins": 6,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": -409.72380099992733,
+          "wins": 7,
+          "blocks": 7
+        }
+      },
+      "work": {
+        "ninja": [
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31
+        ],
+        "ninja-ccache": [
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31
+        ],
+        "gaia-journal": [
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31
+        ]
+      }
+    }
+  ]
+}

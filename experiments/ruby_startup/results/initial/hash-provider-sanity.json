@@ -1,0 +1,15 @@
+{
+  "bytes": 26540787,
+  "openssl": "OpenSSL 3.6.3 9 Jun 2026",
+  "openssl_gem": "3.3.3",
+  "results": {
+    "Digest::SHA256": {
+      "seconds": 0.06532685900310753,
+      "sha256": "c72113faf91b2552ce53fa778660a5bf70efd65a8fce215813d28de34b6e4865"
+    },
+    "OpenSSL::Digest::SHA256": {
+      "seconds": 0.01222509399667615,
+      "sha256": "c72113faf91b2552ce53fa778660a5bf70efd65a8fce215813d28de34b6e4865"
+    }
+  }
+}

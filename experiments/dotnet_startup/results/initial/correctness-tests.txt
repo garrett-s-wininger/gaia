@@ -1,0 +1,7 @@
+test_non_pe_and_truncated_headers_rejected (test_pe_info.PEGuardTests.test_non_pe_and_truncated_headers_rejected) ... ok
+test_shipping_and_composite_r2r_vs_emitted_il (test_pe_info.PEGuardTests.test_shipping_and_composite_r2r_vs_emitted_il) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.017s
+
+OK

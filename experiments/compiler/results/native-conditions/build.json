@@ -1,0 +1,29 @@
+{
+  "seconds": 0.3452670710030361,
+  "commands": [
+    [
+      "<odin>",
+      "build",
+      "experiments/compiler/condition_verify.odin",
+      "-file",
+      "-o:speed",
+      "-build-mode:obj",
+      "-reloc-mode:pic",
+      "-out:<work>/verify.o"
+    ],
+    [
+      "<llvm>/bin/clang",
+      "-shared",
+      "<work>/verify.o",
+      "<crypto>",
+      "-pthread",
+      "-ldl",
+      "-o",
+      "<work>/verify.so"
+    ]
+  ],
+  "odin_version": "/opt/odin/nightly/odin version dev-2026-10-nightly:84bc3fc\n",
+  "source_sha256": "313f9bcb447de2f5b9074883ddd5cff69d4a28741269b23536824eac8ae7cb25",
+  "library_sha256": "2fa59aa610aa1179f31827e742b5f85e63bafe9c97ff6b8c851ed13b5a77e829",
+  "crypto_sha256": "a75a864dcda6ef9e4dc29fad4b7988ca832b904c3915a63c920062c40763dae1"
+}

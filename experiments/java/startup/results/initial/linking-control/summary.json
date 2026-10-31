@@ -1,0 +1,196 @@
+{
+  "run_id": "20261031T015505.049690Z",
+  "raw_sha256": "37fbe59b147253463545054fdb681defbdfe90edb08a8150c51fc9b928831336",
+  "trials": 7,
+  "cases": [
+    {
+      "mode": "picocli",
+      "variant": "default",
+      "median_ms": 339.7973320024903,
+      "min_ms": 328.81671699578874,
+      "max_ms": 342.3690810013795,
+      "paired_wins_vs_default": 0,
+      "blocks": 7
+    },
+    {
+      "mode": "picocli",
+      "variant": "explicit",
+      "median_ms": 261.68510500428965,
+      "min_ms": 254.72764799633296,
+      "max_ms": 267.5882749972516,
+      "paired_wins_vs_default": 7,
+      "blocks": 7
+    },
+    {
+      "mode": "picocli",
+      "variant": "linked",
+      "median_ms": 322.80838699807646,
+      "min_ms": 311.986856002477,
+      "max_ms": 339.989792999404,
+      "paired_wins_vs_default": 7,
+      "blocks": 7
+    },
+    {
+      "mode": "static",
+      "variant": "default",
+      "median_ms": 341.21106899692677,
+      "min_ms": 328.6943790008081,
+      "max_ms": 347.6860160008073,
+      "paired_wins_vs_default": 0,
+      "blocks": 7
+    },
+    {
+      "mode": "static",
+      "variant": "explicit",
+      "median_ms": 258.3295100048417,
+      "min_ms": 251.49901300028432,
+      "max_ms": 274.2903049947927,
+      "paired_wins_vs_default": 7,
+      "blocks": 7
+    },
+    {
+      "mode": "static",
+      "variant": "linked",
+      "median_ms": 323.3678889955627,
+      "min_ms": 314.117169000383,
+      "max_ms": 335.0262309977552,
+      "paired_wins_vs_default": 7,
+      "blocks": 7
+    },
+    {
+      "mode": "dynamic",
+      "variant": "default",
+      "median_ms": 908.171103001223,
+      "min_ms": 890.5907080043107,
+      "max_ms": 992.4190589954378,
+      "paired_wins_vs_default": 0,
+      "blocks": 7
+    },
+    {
+      "mode": "dynamic",
+      "variant": "explicit",
+      "median_ms": 734.9767299965606,
+      "min_ms": 717.1125780005241,
+      "max_ms": 773.0790610003169,
+      "paired_wins_vs_default": 7,
+      "blocks": 7
+    },
+    {
+      "mode": "dynamic",
+      "variant": "linked",
+      "median_ms": 767.3482350000995,
+      "min_ms": 752.8769199998351,
+      "max_ms": 791.782054999203,
+      "paired_wins_vs_default": 7,
+      "blocks": 7
+    }
+  ],
+  "setup": {
+    "linked": {
+      "seconds": 1.7661238299988327,
+      "bytes": 49876992,
+      "sha256": "0848e1f4b64160680f8b1803e251c2d9e97c41414f5adc510d08fd7b93f62e98",
+      "warning_lines": 650,
+      "log_sha256": "a0a0ac7250f1b7e2406c9e32ee14f73d8d6b0a324375bac7df161e17c34dc0fd"
+    },
+    "groovyc_seconds": 0.9845841940041282,
+    "javac_seconds": 0.5732332970001153,
+    "archive_seconds": 1.993496988005063,
+    "archive_bytes": 54001664,
+    "archive_sha256": "87db8ea6902b9182701b7bf708bd5df051088d444d0024ef6757d554249c0613",
+    "explicit_framework_classes": 5630,
+    "classlist_sha256": "20ba6f9fa7c30f52ba9d1b6733cedf95cbcd90b5dac0eec65952bd8402328559"
+  },
+  "diagnostics": [
+    {
+      "mode": "picocli",
+      "variant": "default",
+      "loaded_classes": 2110,
+      "shared_classes": 1212,
+      "framework_loaded": 485,
+      "framework_shared": 0,
+      "framework_initializations": 290,
+      "log_sha256": "025541cdcb7ccec376fc69e18edd25c8b67adfc78276cea08c07bdef53b3f948"
+    },
+    {
+      "mode": "picocli",
+      "variant": "explicit",
+      "loaded_classes": 2110,
+      "shared_classes": 1699,
+      "framework_loaded": 485,
+      "framework_shared": 435,
+      "framework_initializations": 290,
+      "log_sha256": "18103f1c4e9de0482295128df6e6e1c061224561be5f03abfdf69445af15e6f5"
+    },
+    {
+      "mode": "picocli",
+      "variant": "linked",
+      "loaded_classes": 7258,
+      "shared_classes": 6620,
+      "framework_loaded": 4367,
+      "framework_shared": 4133,
+      "framework_initializations": 290,
+      "log_sha256": "612ae2c5b8afe7a56df3dc3692bc1654cecb8e29c71c9d5deed1bf83ebebfc86"
+    },
+    {
+      "mode": "static",
+      "variant": "default",
+      "loaded_classes": 2114,
+      "shared_classes": 1212,
+      "framework_loaded": 487,
+      "framework_shared": 0,
+      "framework_initializations": 292,
+      "log_sha256": "6048a04a1ad91f9c017efe3b864855d7aa3aae1774fdeb5b746b0a344615baf9"
+    },
+    {
+      "mode": "static",
+      "variant": "explicit",
+      "loaded_classes": 2114,
+      "shared_classes": 1702,
+      "framework_loaded": 487,
+      "framework_shared": 437,
+      "framework_initializations": 292,
+      "log_sha256": "ded44ad4607397f8cb98b84432c81410718dbe18753f9087557d709d64831af8"
+    },
+    {
+      "mode": "static",
+      "variant": "linked",
+      "loaded_classes": 7259,
+      "shared_classes": 6620,
+      "framework_loaded": 4367,
+      "framework_shared": 4133,
+      "framework_initializations": 292,
+      "log_sha256": "fa2f31a9ca1267755239f397f4d49d0d565a908968a64d6070b8efc1f9a14176"
+    },
+    {
+      "mode": "dynamic",
+      "variant": "default",
+      "loaded_classes": 3736,
+      "shared_classes": 1297,
+      "framework_loaded": 1347,
+      "framework_shared": 0,
+      "framework_initializations": 814,
+      "log_sha256": "730899984286c2fff802659e1e62a0def28bea6e675ba1db8bef28a936a0fd72"
+    },
+    {
+      "mode": "dynamic",
+      "variant": "explicit",
+      "loaded_classes": 3736,
+      "shared_classes": 2717,
+      "framework_loaded": 1347,
+      "framework_shared": 1123,
+      "framework_initializations": 814,
+      "log_sha256": "09906db5c9f6c25a5dbfb79f7b4a39b27a899ecc30439d29aebdec5f64c09d03"
+    },
+    {
+      "mode": "dynamic",
+      "variant": "linked",
+      "loaded_classes": 7894,
+      "shared_classes": 6620,
+      "framework_loaded": 4542,
+      "framework_shared": 4133,
+      "framework_initializations": 814,
+      "log_sha256": "70fe4ef6ba2d4a3b20b029748e8792effbe0f946f56c56f9c2cc70554d3bb017"
+    }
+  ]
+}

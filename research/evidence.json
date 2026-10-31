@@ -4,6 +4,81 @@
   "availability": "Local artifacts only; excluded from Git. No download location has been published.",
   "artifacts": [
     {
+      "path": "experiments/artifacts/results/admission/results.json",
+      "bytes": 2487905,
+      "sha256": "cec180c539d53117f1b1cd9cac8ec6b07ba96e2a9a8a73c1085cc1d92a688fae"
+    },
+    {
+      "path": "experiments/artifacts/results/buffered/profile-raw/profiles.json",
+      "bytes": 54312,
+      "sha256": "981c80afb4ca120cd405a02c5063c5fc2784a1485990f0d4c36e8bfadf3bd3ac"
+    },
+    {
+      "path": "experiments/artifacts/results/buffered/results.json",
+      "bytes": 1263346,
+      "sha256": "8150302fc913afd9b8d8a28a532847847640058d8072d77022a68f213fceeabf"
+    },
+    {
+      "path": "experiments/artifacts/results/compact-python/results.json",
+      "bytes": 2289627,
+      "sha256": "b738a2071cd2aa693bae949e323cbceee9558c66b4c02463ca1cbd581922514e"
+    },
+    {
+      "path": "experiments/artifacts/results/framing/results.json",
+      "bytes": 1681104,
+      "sha256": "d982698c8989af9de0a867a24a783423d406da3627c962b53f24c4b4214d1d15"
+    },
+    {
+      "path": "experiments/artifacts/results/generic-lock/results.json",
+      "bytes": 1157563,
+      "sha256": "e524132fa7c1026e9ba73c7f1f12caf06607e82cca493c98560022ebc1de5514"
+    },
+    {
+      "path": "experiments/artifacts/results/initial/results.json",
+      "bytes": 544385,
+      "sha256": "a91373ec50d434a231aa0b227362813f3f32b578adc8f90ae556872aa2f90aaa"
+    },
+    {
+      "path": "experiments/artifacts/results/locked-python/results.json",
+      "bytes": 1143124,
+      "sha256": "b5e4f45fc57887deb327f05d1dce5e83bf573f1c5a13bbc6612a6a698c44cae1"
+    },
+    {
+      "path": "experiments/artifacts/results/pipeline/boundary/results.json",
+      "bytes": 14326,
+      "sha256": "e9ef207c6f0a0cf77df1a67eed0e65ddd743c2b37aec788282cdfb2c76f6d6d4"
+    },
+    {
+      "path": "experiments/artifacts/results/pipeline/results.json",
+      "bytes": 209798,
+      "sha256": "e732d38b8eb4e8bd796c932d18dfe81238c3c840dd7126240411eeb043d54343"
+    },
+    {
+      "path": "experiments/artifacts/results/preindexed-bundle/results.json",
+      "bytes": 1155227,
+      "sha256": "49865f830a375581993385506542832c1f7b0b9fb83d99e2882faf13af0c94b2"
+    },
+    {
+      "path": "experiments/compiler/cpp_graph/results/baseline-seeded/results.json",
+      "bytes": 228249,
+      "sha256": "34c442640b0f81be5e1c1fecd6fe9d23fe867be1c58f2bb9e760632e939335dd"
+    },
+    {
+      "path": "experiments/compiler/cpp_graph/results/repeated-trace/results.json",
+      "bytes": 227739,
+      "sha256": "3f3c10dc2d923bf7261f9f0ccfd865f81c7b7169408513ce62e9c200b72f3504"
+    },
+    {
+      "path": "experiments/compiler/results/build-decisions/boundary-raw/results.json",
+      "bytes": 159309,
+      "sha256": "026d152debe272c7d7c9bc18df903a34be76ebc03460ab77ba5e89c9fc5782fe"
+    },
+    {
+      "path": "experiments/compiler/results/build-decisions/results.json",
+      "bytes": 1669705,
+      "sha256": "c85a087d60e586eceacd0810f18de9599119638005c62289cb4747137b8121ab"
+    },
+    {
       "path": "experiments/compiler/results/compiler-lifecycle/compiler-1-trace.json",
       "bytes": 738733,
       "sha256": "216de280f0c77f472a80fe2386d376c62f1030e3ada9fc4ea491caccd8e579e7"
@@ -29,9 +104,34 @@
       "sha256": "d1bbecffcb8ba21b7a240aa593e4a114bd11b1fdbaf4a53020bf8434af76cd8a"
     },
     {
+      "path": "experiments/compiler/results/digest-providers/boundary-raw/results.json",
+      "bytes": 210205,
+      "sha256": "a80b6409c5bd82769cd269ccf8b3afe4b1e3e4cb076712f17b09c5e879a63cfb"
+    },
+    {
+      "path": "experiments/compiler/results/digest-providers/results.json",
+      "bytes": 1241125,
+      "sha256": "30849249bde627c61ff1a028ae8926c6ea7a5a08a2646ee2db85f7082c08756f"
+    },
+    {
+      "path": "experiments/compiler/results/digest-providers/sha256-control/results.json",
+      "bytes": 1240037,
+      "sha256": "2939b20b8eff0259bfda039ad09207353ef4adc264d1e0a44c3261473229e2bd"
+    },
+    {
       "path": "experiments/compiler/results/direct-handoff/results.json",
       "bytes": 706675,
       "sha256": "039fc86a6f4d6e869d6816e0f1eb365be323848645d73359c4824c9201faf766"
+    },
+    {
+      "path": "experiments/compiler/results/incremental-conditions/boundary-raw/results.json",
+      "bytes": 199942,
+      "sha256": "6669247339cbc444cc76c76c69acbbf5031986f52a0b4174d27fe8ba2d45d121"
+    },
+    {
+      "path": "experiments/compiler/results/incremental-conditions/results.json",
+      "bytes": 2281625,
+      "sha256": "405f145a52d52ced9056af8b8512214954f186a30608b3ba659c29f7f43c9751"
     },
     {
       "path": "experiments/compiler/results/initial/results.json",
@@ -39,14 +139,114 @@
       "sha256": "df2bb637d0b5848251b74572738bc4b0c8c09bdd5132f2aa2feb4d57791049d4"
     },
     {
+      "path": "experiments/compiler/results/linked-results/boundary-raw/results.json",
+      "bytes": 213775,
+      "sha256": "935a590ee0d42d7ddb27711091aadce3ce3186a2f93ab292f4a46988f463976c"
+    },
+    {
+      "path": "experiments/compiler/results/linked-results/initial-retention/results.json",
+      "bytes": 1169048,
+      "sha256": "440d32c3e47957e0f4c24b44d504b6809ce203cd62de205c80721443e28a9891"
+    },
+    {
+      "path": "experiments/compiler/results/linked-results/results.json",
+      "bytes": 1639723,
+      "sha256": "63ab42a2c97acdc9c69750c97c20c38858540a8bb8b7ffeb1e6a769a12a3478a"
+    },
+    {
+      "path": "experiments/compiler/results/logical-inputs/boundary/results.json",
+      "bytes": 162493,
+      "sha256": "7907123ca3f2f93a94d9bfb0930be5029aa497b14b3d4eae8708b732d720c253"
+    },
+    {
+      "path": "experiments/compiler/results/logical-inputs/results.json",
+      "bytes": 1176252,
+      "sha256": "943c859ac538484eee74b3884551894a801e57fd0d7da4e819fe368fac9a8990"
+    },
+    {
+      "path": "experiments/compiler/results/native-conditions/boundary/results.json",
+      "bytes": 226493,
+      "sha256": "f6ee485e94ad9ee6cdb3350e50096c6e0dba8c9a7642e19293149eda59bd868a"
+    },
+    {
+      "path": "experiments/compiler/results/native-conditions/results.json",
+      "bytes": 1629645,
+      "sha256": "30dc3508eb2341f7e50f76161d11e15a5b117dab920b74da9297616456cfadc3"
+    },
+    {
+      "path": "experiments/compiler/results/ninja-comparison/results.json",
+      "bytes": 1030890,
+      "sha256": "5f724547fdaff6f3249d116a98eeaf401934a745f823090ff2540cc12b14c5b0"
+    },
+    {
       "path": "experiments/compiler/results/object-cache/results.json",
       "bytes": 3079255,
       "sha256": "92ce052809e43e313b7d025f3e5a3925f2b40380e1786052158ac7b4ea718e0b"
     },
     {
+      "path": "experiments/compiler/results/pipeline-handoff/boundary-raw/results.json",
+      "bytes": 206471,
+      "sha256": "6963dea7f72bb2c4516693f33c5c62a70abac6079f69723d033c5c21956335ed"
+    },
+    {
+      "path": "experiments/compiler/results/pipeline-handoff/results.json",
+      "bytes": 1757830,
+      "sha256": "4469eedf6b0827d17a793372f3f5058c8baddc11ddd048f4bc7df980f32303d8"
+    },
+    {
       "path": "experiments/compiler/results/pool-link/results.json",
       "bytes": 529098,
       "sha256": "e3e15bda8733b05349a03d7da33c0c575a8db5d9559df4f3fc4a72cebca786c5"
+    },
+    {
+      "path": "experiments/compiler/results/retained-conditions/boundary-raw/results.json",
+      "bytes": 151926,
+      "sha256": "b33f3ef343db1a989bf35173b65567140875aaf89dc057a729a6ed7773482a90"
+    },
+    {
+      "path": "experiments/compiler/results/retained-conditions/initial-control/results.json",
+      "bytes": 1118724,
+      "sha256": "ac631ddadf1550e13b4d4284b418c37c7efb06d1a6df831e73c8dffdad44158d"
+    },
+    {
+      "path": "experiments/compiler/results/retained-conditions/results.json",
+      "bytes": 1118685,
+      "sha256": "f68d22b0d268eff0810eb316ffa5f0ac4537d9afa35e8176a7a4be8fa6db8135"
+    },
+    {
+      "path": "experiments/compiler/results/selective-conditions/boundary-raw/results.json",
+      "bytes": 134679,
+      "sha256": "46d460105030327ca817ada427520b9ed1fc2314944bc642d79691e4bd4df25a"
+    },
+    {
+      "path": "experiments/compiler/results/selective-conditions/results.json",
+      "bytes": 1243407,
+      "sha256": "6ad8e3c3355b2a5ff5298fff34e0d604721582f83501c2ea5e19251ef304b752"
+    },
+    {
+      "path": "experiments/compiler/results/shared-inputs/boundary/results.json",
+      "bytes": 159798,
+      "sha256": "056b229fd515695537b9d77e2bf77e2356291c1cb4e809d0db9dfb389ae1cbc0"
+    },
+    {
+      "path": "experiments/compiler/results/shared-inputs/results.json",
+      "bytes": 1158664,
+      "sha256": "f445a593b84e5e176757df18dbf22f1e9f6f2da543b35b734f06cb895afe82d4"
+    },
+    {
+      "path": "experiments/compiler/results/shared-validation/boundary-raw/results.json",
+      "bytes": 204100,
+      "sha256": "8c59673e142c43f430082c4ee9d6017a4ae5c7e579a8e58ec0e7b509447080cb"
+    },
+    {
+      "path": "experiments/compiler/results/shared-validation/results.json",
+      "bytes": 1742253,
+      "sha256": "3f63104d2343731e42d56e5e4a656f29e76201158bf25f073d88760a53fd5e6b"
+    },
+    {
+      "path": "experiments/compiler/results/shared-validation/sharing-pilot/results.json",
+      "bytes": 1209595,
+      "sha256": "a1c237b95f02c71c863fe63d674ad6b8ece22f4c21ee32018f3a456f9cd7cc7f"
     },
     {
       "path": "experiments/compiler/results/zlib/results.json",
@@ -67,6 +267,46 @@
       "path": "experiments/compiler/results/zstd-handoff/results.json",
       "bytes": 586872,
       "sha256": "35178b93eef00e7dac7d4d291d3283248f3387567c4a168561afb4c5a146788c"
+    },
+    {
+      "path": "experiments/dotnet_startup/results/initial/results.json",
+      "bytes": 60836,
+      "sha256": "4c323141808e24babd1fd30350399937b79d7d2b796f1b83da9ce738987bfcee"
+    },
+    {
+      "path": "experiments/java/compiler/results/initial/results.json",
+      "bytes": 27405,
+      "sha256": "295fb132549ec249cd0ab464ef585e4373512c7bf21dab0634a1f2d7ac3294e2"
+    },
+    {
+      "path": "experiments/java/startup/results/dgm-binding/initial-control/results.json",
+      "bytes": 36306,
+      "sha256": "53ca787aaa392d1ef2c9444b2b2fb8739d163c2e9a50e9f013467e60f92f89f8"
+    },
+    {
+      "path": "experiments/java/startup/results/dgm-binding/results.json",
+      "bytes": 48054,
+      "sha256": "f43e6f297b56a9f635ff3c4b6f99f70352f7d9fcdc44f02a318a8983b38f5ccb"
+    },
+    {
+      "path": "experiments/java/startup/results/initial/classic-control/results.json",
+      "bytes": 15694,
+      "sha256": "710e8339a22a986eeed604ad2ad3ac7cfbf02b80a2163806847d3e5a0fce1c06"
+    },
+    {
+      "path": "experiments/java/startup/results/initial/linking-control/results.json",
+      "bytes": 17017,
+      "sha256": "37fbe59b147253463545054fdb681defbdfe90edb08a8150c51fc9b928831336"
+    },
+    {
+      "path": "experiments/java/startup/results/initial/phase-controls/results.json",
+      "bytes": 15046,
+      "sha256": "c10cf683a7c9e6bb8741ab938df0af4c52a59a7caa741d5b1fd594f9bd2f137d"
+    },
+    {
+      "path": "experiments/java/startup/results/initial/results.json",
+      "bytes": 33523,
+      "sha256": "212b611135a7c1e59678c21c3abf8779e6d1dfa4a077be4bc3653b54887f0383"
     },
     {
       "path": "experiments/python/dependency_bundles/results/access-loader/results.json",
@@ -267,6 +507,36 @@
       "path": "experiments/python/dependency_solving/results/trail/results.json",
       "bytes": 9006624,
       "sha256": "063c303dec7a8c9cf4fc69561cdc726616ed064c7fb2b49bbec4da6fdd9da903"
+    },
+    {
+      "path": "experiments/python/interpreter_snapshots/results/initial/node/results.json",
+      "bytes": 7985,
+      "sha256": "0a0dd75b70b0a26e78e53b9a430a5ff6d013109095e6f7323f629d6b148058ef"
+    },
+    {
+      "path": "experiments/python/interpreter_snapshots/results/initial/results.json",
+      "bytes": 1125893,
+      "sha256": "7976a51c3289da9ce12c1a83a3b6e6867f9780f719a351a1626d3353fb82548c"
+    },
+    {
+      "path": "experiments/python/interpreter_snapshots/results/typescript-project/results.json",
+      "bytes": 864028,
+      "sha256": "5d8a7da8d13c17c07140a9d5d089e4619d86b4a92b88d6087e85e6a04ff45309"
+    },
+    {
+      "path": "experiments/python/interpreter_snapshots/results/typescript/results.json",
+      "bytes": 52899,
+      "sha256": "2a913c42a2e8a44d8e7f0fab59f3e1c5994362935980e9e6d04f89fa8a166302"
+    },
+    {
+      "path": "experiments/ruby_startup/results/initial/initial-control/results.json",
+      "bytes": 6333857,
+      "sha256": "3dfd6a204da282a127e89dce78bd15f5b0a0ef4304270e44b92c97dd69812283"
+    },
+    {
+      "path": "experiments/ruby_startup/results/initial/results.json",
+      "bytes": 8192989,
+      "sha256": "164cd7176e00362f15c5577350f25534306249462c6d32537fd917c1c05ff413"
     }
   ]
 }

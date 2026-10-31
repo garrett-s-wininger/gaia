@@ -1,0 +1,185 @@
+{
+  "run_id": "20261031T025359.647842Z",
+  "status": "complete",
+  "trials": 7,
+  "scope": "Fresh ordinary-bytecode JVMs with normal shutdown and warm pages; each variant has matching classic static CDS. Same packaged DGM bytes and fresh class/registry/extension bindings.",
+  "jdk": "java version \"25.0.5.0.3\" 2026-10-25 LTS\nJava(TM) SE Runtime Environment (build 25.0.5.0.3+1-LTS-2)\nJava HotSpot(TM) 64-Bit Server VM (build 25.0.5.0.3+1-LTS-2, mixed mode, sharing)\n",
+  "preparation": {
+    "schema": "GAIA-DGM-BIND-1",
+    "base_jar_sha256": "6bcbec490ac1ade0dca6566dca9d02897cbb8fc31ee4008e950451aa83b1ac76",
+    "source_jar_sha256": "94a6e1d6ddd94cfe31e64d50a8564026badc72a43f19d380726a787c9a11104b",
+    "variants": {
+      "serial": {
+        "jar_sha256": "9a813886f4d88fee757ac665ff465ae1ba56b52e929b1865b121a6d32cfc2a0f",
+        "patched_source_sha256": "d093dcf2f1fdf830094f36d40afa600f708489ad4d17e1324eec3046eb76a8c7",
+        "dgminfo_sha256": "b64a1072023a6a897276692702f1f4f89046a20d534b8534310bda7a46fcaed8"
+      },
+      "dense": {
+        "jar_sha256": "831d8cbd3e94dccf8d9e4d64299ff6b1aa0fc618c361fea0a628b036181e57e1",
+        "patched_source_sha256": "e32258990b130d4a447f5b3505fb011e7166630813a8da62770b76ba2e5862c3",
+        "dgminfo_sha256": "b64a1072023a6a897276692702f1f4f89046a20d534b8534310bda7a46fcaed8"
+      }
+    }
+  },
+  "patch_build_seconds": 3.8626923720003106,
+  "setup": {
+    "stock": {
+      "archive_seconds": 1.8235815679945517,
+      "archive_bytes": 54001664,
+      "archive_sha256": "8a636c6761dfe8814911d8a4983c5e751017f0d9e6327f1708d59339b027120c",
+      "classlist_sha256": "3fa894d0205000fe4987f2cc182bd1709f8c1d2728dc1b3be1cf58c8245daef8",
+      "jar_sha256": "6bcbec490ac1ade0dca6566dca9d02897cbb8fc31ee4008e950451aa83b1ac76"
+    },
+    "serial": {
+      "archive_seconds": 1.776109685000847,
+      "archive_bytes": 54001664,
+      "archive_sha256": "fab3052b1792a322ca81b930864f2cfcfac2cc281d318bc1007fbe983744a6a3",
+      "classlist_sha256": "3fa894d0205000fe4987f2cc182bd1709f8c1d2728dc1b3be1cf58c8245daef8",
+      "jar_sha256": "9a813886f4d88fee757ac665ff465ae1ba56b52e929b1865b121a6d32cfc2a0f"
+    },
+    "dense": {
+      "archive_seconds": 1.790799928996421,
+      "archive_bytes": 54001664,
+      "archive_sha256": "bec7d75291a3cd11c179e47c026823890a11aa20cd54293fc97e107edb5ff240",
+      "classlist_sha256": "3fa894d0205000fe4987f2cc182bd1709f8c1d2728dc1b3be1cf58c8245daef8",
+      "jar_sha256": "831d8cbd3e94dccf8d9e4d64299ff6b1aa0fc618c361fea0a628b036181e57e1"
+    }
+  },
+  "source_sha256": {
+    "dgm_prepare.py": "984d01f6bd81081cf328aa98ef193ed43da5747dae37f32fe4ef4b7d1b26503e",
+    "dgm_benchmark.py": "9925f3cbdcdb6c19d4ef339323e2dd9a2b8651558d7c5157217e4f2471b55725",
+    "FrameworkPhases.java": "23bd84bdd762bfa9f6d7e3702a13c1ae97a19ef8ff04a4e3d2609a2d191b7e19",
+    "Command.java": "184911af2781ca4ee1d70d4011b101df8cc9b16d774ac7ee9cc3bfae2dc34268",
+    "StaticLogic.groovy": "a7f8f20276e9a6f060cb5e5ad3f8e8a7baf3c03f7829d1aee514c374f2f3f5eb"
+  },
+  "record_identity": {
+    "count": 2007,
+    "sha256": "bd1ce6165f692ce8bf4a8b56e8eb386d16b526247533b176103932ab99c5b4a3"
+  },
+  "raw_sha256": "53ca787aaa392d1ef2c9444b2b2fb8739d163c2e9a50e9f013467e60f92f89f8",
+  "cases": [
+    {
+      "mode": "records",
+      "variant": "stock",
+      "median_ms": 105.37077799381223,
+      "paired_wins_vs_stock": 0,
+      "blocks": 7,
+      "phase_medians_ms": {
+        "decode_ns": 23.970925
+      }
+    },
+    {
+      "mode": "records",
+      "variant": "serial",
+      "median_ms": 103.73408399755135,
+      "paired_wins_vs_stock": 5,
+      "blocks": 7,
+      "phase_medians_ms": {
+        "decode_ns": 22.210653
+      }
+    },
+    {
+      "mode": "records",
+      "variant": "dense",
+      "median_ms": 98.98949299531523,
+      "paired_wins_vs_stock": 7,
+      "blocks": 7,
+      "phase_medians_ms": {
+        "decode_ns": 18.047083
+      }
+    },
+    {
+      "mode": "registry",
+      "variant": "stock",
+      "median_ms": 202.63848699687514,
+      "paired_wins_vs_stock": 0,
+      "blocks": 7,
+      "phase_medians_ms": {
+        "registry_ns": 148.184876
+      }
+    },
+    {
+      "mode": "registry",
+      "variant": "serial",
+      "median_ms": 204.23303399729775,
+      "paired_wins_vs_stock": 1,
+      "blocks": 7,
+      "phase_medians_ms": {
+        "registry_ns": 149.454236
+      }
+    },
+    {
+      "mode": "registry",
+      "variant": "dense",
+      "median_ms": 199.09306900080992,
+      "paired_wins_vs_stock": 5,
+      "blocks": 7,
+      "phase_medians_ms": {
+        "registry_ns": 143.982754
+      }
+    },
+    {
+      "mode": "parser",
+      "variant": "stock",
+      "median_ms": 265.0632260047132,
+      "paired_wins_vs_stock": 0,
+      "blocks": 7,
+      "phase_medians_ms": {}
+    },
+    {
+      "mode": "parser",
+      "variant": "serial",
+      "median_ms": 264.01946999976644,
+      "paired_wins_vs_stock": 4,
+      "blocks": 7,
+      "phase_medians_ms": {}
+    },
+    {
+      "mode": "parser",
+      "variant": "dense",
+      "median_ms": 263.8664379992406,
+      "paired_wins_vs_stock": 4,
+      "blocks": 7,
+      "phase_medians_ms": {}
+    },
+    {
+      "mode": "basic",
+      "variant": "stock",
+      "median_ms": 709.0965440002037,
+      "paired_wins_vs_stock": 0,
+      "blocks": 7,
+      "phase_medians_ms": {
+        "registry_ns": 146.683075,
+        "shell_ns": 9.958237,
+        "compile_ns": 400.874351,
+        "run_ns": 87.192495
+      }
+    },
+    {
+      "mode": "basic",
+      "variant": "serial",
+      "median_ms": 707.6625600020634,
+      "paired_wins_vs_stock": 4,
+      "blocks": 7,
+      "phase_medians_ms": {
+        "registry_ns": 145.336282,
+        "shell_ns": 9.991237,
+        "compile_ns": 394.379116,
+        "run_ns": 95.120712
+      }
+    },
+    {
+      "mode": "basic",
+      "variant": "dense",
+      "median_ms": 714.88503600267,
+      "paired_wins_vs_stock": 1,
+      "blocks": 7,
+      "phase_medians_ms": {
+        "registry_ns": 143.362595,
+        "shell_ns": 9.429786,
+        "compile_ns": 407.842545,
+        "run_ns": 94.713385
+      }
+    }
+  ]
+}

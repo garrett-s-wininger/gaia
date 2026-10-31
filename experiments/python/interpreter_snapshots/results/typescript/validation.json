@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "operations": 28,
+  "compiler_outputs_diagnostics_ast_and_requests_match": true,
+  "normal_exit_markers_match": true,
+  "source_absent_audits": 2,
+  "raw_sha256": "2a913c42a2e8a44d8e7f0fab59f3e1c5994362935980e9e6d04f89fa8a166302"
+}

@@ -1,0 +1,6 @@
+test_selected_class_is_not_an_initialized_heap (test_archive.ArchiveTests.test_selected_class_is_not_an_initialized_heap) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 1.187s
+
+OK

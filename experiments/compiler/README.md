@@ -2,6 +2,10 @@
 
 For human review, start with the [research page](../../research/compiler/README.md). This is an independent native compiler track, not part of the Python dependency-format or resolution results.
 
+The [Ninja comparison](#ninja-incremental-build-comparison) measures actual incremental builds against Ninja and Ninja + ccache, including no-op/link skipping and input preparation.
+
+The separate [C++ graph experiment](cpp_graph/README.md) extends this to upstream fmt and a labelled integration library/two executables. Its [baseline-seeded report](cpp_graph/results/baseline-seeded/REPORT.md) separates actual recompilation from repeated-edit object-history hits.
+
 The fixture compiles real freestanding C objects using Clang/LLVM 22.1.8 at `-O2` for Linux x86-64. It compares ordinary CLI (one command for the whole source set), an Odin host calling Clang in process with physical inputs, and that host using one authenticated mmap-backed input collection through LLVM's in-memory VFS. Both one and eight translation units include either 32 or 512 generated headers. Native code uses Odin; [bridge.cpp](bridge.cpp) isolates Clang's C++ API behind a C ABI. ToolInvocation still parses its argument vector for every request; there is no precomputed compiler invocation, AST/PCH/result cache or hidden warm worker.
 
 ## Reproduce
@@ -239,3 +243,341 @@ Timed header edits are low-fanout audit cases, consumed only by the probe. A sep
 Five randomized blocks measure delta+off, delta+coarse scoped cache, delta+journal and full+journal. Combined timing includes the producer process, publication, receipt handoff, consumer admission/revalidation, misses/linking, cache publication/reporting and both normal process lifecycles. Parent correctness checks follow timing. Every object and ELF must match freshly rebuilt CLI references, and runtime probes verify the intended behavior. Separate checks inspect recorded negative queries; exercise deletion, reversion, corruption, same-action/different-input concurrent writers, reordered requests, diagnostic repetition and failed producer updates; and execute upstream examples against every final native/CLI library.
 
 See the [report](results/dependency-cache/REPORT.md), raw data (local artifact, `results/dependency-cache/results.json`), [boundary checks](results/dependency-cache/checks.json), [upstream checks](results/dependency-cache/upstream-checks.json), and [findings](FINDINGS.md#dependency-journals-and-incremental-snapshots). Cold storage, arbitrary aliases/metadata, complete SDK admission, persistent workers, cache quotas/eviction and a portable observation protocol remain separate work.
+
+## Ninja incremental-build comparison
+
+[ninja_benchmark.py](ninja_benchmark.py) creates a fresh fixture from the pinned Zstandard 1.5.7 archive. It compares Ninja, Ninja + ccache and the existing Gaia dependency-journal host on the same 31-unit library, with eight workers, identical optimization flags and fixed link order. Install Ninja and ccache through your own platform's package workflow, or pass their executable paths with `--ninja` and `--ccache`. The driver performs no downloads or system installation.
+
+With LLVM configured as described in the [reproduction guide](../reproducing.md), build a fresh native adapter, then run:
+
+```sh
+python3 -B experiments/compiler/build_dependency_hosts.py --work experiments/compiler/_work/ninja-comparison-host
+python3 -B experiments/compiler/ninja_benchmark.py \
+  --engines ninja ninja-ccache gaia-journal \
+  --host experiments/compiler/_work/ninja-comparison-host/build/host \
+  --producer experiments/compiler/_work/ninja-comparison-host/snapshot-host
+```
+
+The driver needs only the pinned archive, toolchain and newly built host/producer. It does not consume old benchmark datasets or binaries. Default output is ignored `_work/runs/ninja-comparison/`. `--scenarios unchanged implementation revert --trials 1` provides a smoke run. A locally extracted comparison tool can use `--tool-library-path` for its runtime dependencies. Run the graph/state tests with `GAIA_TEST_NINJA=/path/to/ninja python3 -B -m unittest discover -s experiments/compiler -p test_ninja_benchmark.py -v`.
+
+Cases cover unchanged builds, implementation edits, low-fanout shared/generated headers, an unused header, a real high-fanout header, global compiler flags, edit/revert and clean builds. Each observation restores independent output, Ninja log/dependency database and cache state. Reverts begin from the edited build after visiting baseline and edited states. Cache variants from earlier timed trials cannot leak into later observations. Ninja uses `-MD` depfiles plus `deps = gcc`; its normal no-op and link skipping remain enabled. ccache uses an isolated configuration/cache, content-based compiler identity and no remote storage, without relaxed correctness settings.
+
+Timing begins after applying the editor's source change. Gaia includes scanning stat metadata for the admitted namespace, reading changed files, encoding the delta/plan, launching the snapshot producer, receipt handoff and the native consumer. SDK admission and build-graph generation are setup costs; normal stat-visible changes are assumed. Directory membership discovery, preserved-timestamp mutations and arbitrary SDK changes are outside this fixed-namespace experiment. A flag change regenerates Ninja's build description before the build-request clock; Gaia plan encoding remains inside its clock. Ninja's compile depfile production stays inside its clock.
+
+Every timed library and all object hashes must match independently compiled CLI references. Runtime probes check the edits. Compile/link counts are checked independently of timing, including zero Ninja compile/link edges for no-op and unused-header cases. Gaia always links and performs its own object-result hashing/reporting within consumer time; Ninja parent validation is outside timing. All controls use warm page cache and fresh top-level processes. Initial cache population, state restoration, reference builds and parent validation are outside the build-request clock.
+
+The manifest and graph helpers preserve paths with spaces and dollar signs. Integration tests cover depfiles, no-op builds, header edits, reverts, unused headers and isolation of Ninja's persistent logs between engines. Published reports should include the generated validation summary and identify the ignored raw observations by checksum.
+
+
+## Lightweight build decisions and bounded history
+
+The dependency builder now also emits `decision-host`: a pure Odin executable linked with the C driver and no LLVM or C++ runtime dependency. Build all three hosts in a fresh work directory, then select the new comparison controls:
+
+```sh
+python3 -B experiments/compiler/build_dependency_hosts.py --work experiments/compiler/_work/build-decisions-host
+python3 -B experiments/compiler/ninja_benchmark.py \
+  --host experiments/compiler/_work/build-decisions-host/build/host \
+  --producer experiments/compiler/_work/build-decisions-host/snapshot-host \
+  --decision experiments/compiler/_work/build-decisions-host/decision-host \
+  --scenarios unchanged implementation shared-header generated-header unused-header revert \
+  --output experiments/compiler/_work/runs/build-decisions
+```
+
+The controls include Ninja, Ninja + ccache, `gaia-journal` (the existing single-candidate policy), `gaia-history` (three candidates per action), `gaia-fast` (history plus a receipt check), and the selective producer variants described below. Use `--engines` to select a matched comparison. Their compile/link counts and artifact identities are independently validated. The fast no-op includes watch-list/request preparation, a fresh lightweight process and retained-result loading. It starts no snapshot producer or LLVM host and performs no link on a receipt hit. A miss invalidates the old receipt before the pipeline starts; only a successful result with stable pre/post input metadata can publish a replacement. Receipt publication failure alone does not invalidate a successful build.
+
+The experimental `GAIASK01` receipt binds a caller-framed request SHA-256, an ordered input metadata stamp, output paths, size/mtime and content hashes, plus a checksum over the complete receipt. Request identity includes argv, ordered linking, logical cwd, admitted context, namespace membership and visibility masks. All admitted files and tool identities are watched. A changed native tool requires readmission before reusing its context. Missing/corrupt receipts or outputs miss; changed output metadata triggers a content check. Mutations preserving size/mtime are outside this stat-visible contract, as are arbitrary directory discovery, watchers and concurrent workspace writers. Receipt reads are capped at 1 MiB, watch lists at 4 MiB and output reads at 64 MiB per file.
+
+`journal-history` retains the latest `.gdo` plus `.1.gdo` and `.2.gdo` for each action. It still validates framing, action identity, checksum, journal observations and object payload before import. Each candidate replay resets the logical cwd. Publication is atomic per complete record, with best-effort rotation: races may lose reuse opportunities but must not authorize a mismatched object. This caps candidates per action, not total cache size or action count. Existing `journal` behavior and wire records remain compatible.
+
+Run the receipt, history and graph correctness tests against newly built native hosts:
+
+```sh
+GAIA_DECISION_HOST=/path/to/decision-host GAIA_HISTORY_HOST=/path/to/host GAIA_LLVM=/path/to/llvm \
+  GAIA_TEST_NINJA=/path/to/ninja python3 -B -m unittest discover -s experiments/compiler -p 'test_*.py' -v
+```
+
+The tests cover process restart, request/membership changes, missing/corrupt outputs and receipts, stable output contents with changed metadata, refusal to publish after input mutation, exact compiler flags, eviction, negative header lookup/appearance, concurrent cache publication and independent CLI object/library identities.
+
+## Selective observed-condition decisions
+
+`gaia-selective` builds a compact condition index from the exact compiler journals selected by successful compilation or object reuse. The native result identifies each selected journal by SHA-256. [condition_index.py](condition_index.py) finds the matching checksummed cache record, verifies the action/journal/object identities and exports conservative conditions. This uses actual compiler observations, including failed lookups, rather than a positive-only depfile list.
+
+Build fresh hosts, then compare with the whole-namespace gate and existing tools:
+
+```sh
+python3 -B experiments/compiler/build_dependency_hosts.py --work experiments/compiler/_work/selective-host
+python3 -B experiments/compiler/ninja_benchmark.py \
+  --host experiments/compiler/_work/selective-host/build/host \
+  --producer experiments/compiler/_work/selective-host/snapshot-host \
+  --decision experiments/compiler/_work/selective-host/decision-host \
+  --engines ninja ninja-ccache gaia-fast gaia-selective \
+  --scenarios unchanged implementation shared-header generated-header unused-header revert \
+  --output experiments/compiler/_work/runs/selective-conditions
+```
+
+The lightweight checker evaluates conditions against an explicit namespace with per-job visibility masks. Physical host existence is not evidence that a path exists in the compiler's virtual view. Conditions cover queried regular-file contents, missing paths, ancestor kinds and sorted direct directory membership. Request identity still binds exact argv, ordered link inputs, logical cwd, tool context and provider contract. It no longer invalidates automatically for every unrelated namespace/mask change: those changes must preserve the recorded conditions. Existing whole-namespace receipt mode remains a control.
+
+The model is deliberately conservative: even metadata-only queries against a regular file guard its full contents. Namespace paths are canonical absolute names; files and implicit directories have fixed virtual metadata, no aliases or symlinks, and directory entries are ordered. The pinned [LLVM provider implementation](https://github.com/llvm/llvm-project/blob/llvmorg-22.1.8/llvm/lib/Support/VirtualFileSystem.cpp) supplies those semantics. This does not emulate arbitrary POSIX filesystems or plugins.
+
+Experimental wire records are versioned: `GAIANS01` describes current file names/masks; `GAIACQ01` contains kind/job-mask/path conditions, file content identities and publication-time stat tokens, directory digests and a checksum. The original `GAIASK01` receipt binds the index identity, tool metadata and retained outputs. The namespace manifest is caller-supplied, not discovered by a watcher. Its complete physical backing is checked before/after a fallback build; relevant content is checked when a publication-time stat token changes. Ordinary stat-visible mutations are required. Unsupported or unavailable journals prevent a selective receipt from being published, while the completed build remains usable.
+
+Lookup, namespace construction, receipt checks, journal extraction, index construction, positive-file verification and publication are included in build-request timing. Index generation is currently Python research code; it reparses all selected journals after a changed build. Its cost must not be attributed to the lightweight Odin lookup. Frozen source snapshots and full observations stay under ignored work directories; reports and compact validation stay versioned.
+
+The condition tests use real compiler journals for positive reads, negative header appearance, include shadowing and unrelated admission changes. Directory enumeration, ancestor changes and view masks also have synthetic-query model tests; the measured compiler fixture does not exercise directory enumeration. Existing receipt/output corruption, request/tool changes, pre/post mutation, eviction and concurrency checks remain. Run the full suite using the explicit native host variables described above.
+
+
+## Incremental condition production
+
+[incremental_conditions.py](incremental_conditions.py) adds two producer controls while keeping the original `GAIACQ01` index and native checker unchanged:
+
+- `gaia-batched` resolves each action's query paths, combines jobs into target bitsets, then classifies each path ancestor across those jobs together. Directory children are indexed once; each job still gets its exact visible listing.
+- `gaia-incremental` also caches parsed query structure by action identity, selected journal SHA-256 and logical cwd. Unchanged fragments are reused and rebound to current job positions. Current namespace classification, visibility, positive contents/stat tokens, backing-file verification and final index serialization are always rebuilt.
+
+The versioned `GAIACF01` cache uses a shared canonical-path table, per-action target/listing references and a whole-record checksum. It retains only the current request, up to 64 entries and 8 MiB, and is atomically replaced. A corrupt/missing/incompatible cache reparses successful journals. Cache publication failure alone does not prevent a valid condition index from publishing. It is a local integrity mechanism, not a remotely authenticated record or a global object-cache quota.
+
+A reused fragment's exact selected journal identity comes from the successful native invocation, which already validated its cache record and observations. Newly encountered fragments are extracted from matching checksummed records and checked against the native object/journal identities. Reused fragments do not reopen those object records merely to reconstruct the same parsed paths. No previous namespace classification or file verification is trusted from the fragment cache.
+
+Using freshly built hosts as in the preceding section, compare all three producers with the existing tools:
+
+```sh
+python3 -B experiments/compiler/ninja_benchmark.py \
+  --host experiments/compiler/_work/selective-host/build/host \
+  --producer experiments/compiler/_work/selective-host/snapshot-host \
+  --decision experiments/compiler/_work/selective-host/decision-host \
+  --engines ninja ninja-ccache gaia-fast gaia-selective gaia-batched gaia-incremental \
+  --scenarios unchanged implementation shared-header generated-header unused-header revert \
+  --output experiments/compiler/_work/runs/incremental-conditions
+```
+
+All fragment-cache reads/checksums, new-journal extraction, aggregation, backing-file verification, serialization and cache publication are timed. Seed preparation is recorded separately; cold construction parses every action. Ordinary edit/revert observations restore a baseline/edited seed and verify reuse of 30 fragments plus one new parse, rather than letting earlier timed variants leak into later observations. Clean/flag cases decode all 31; the real 26-reader header reuses five and decodes 26.
+
+The [report](results/incremental-conditions/REPORT.md) includes matched medians, stage timings, paired wins and limitations. The 51-test suite compares exact index bytes against the original across randomized visibility masks, every query kind, cwd transitions, action reorder, changed inputs, cache corruption and publication failures, and repeats the native invalidation checks. The shared serializer retains the original wire/verification behavior. Frozen measured source copies and full samples remain ignored local artifacts.
+
+## Share immutable validation work
+
+`gaia-shared` uses the incremental condition producer and native `journal-history-shared` policy. During serial object-cache validation, actions with exactly equal input visibility share an LLVM in-memory filesystem. Group membership is computed from every admitted file's job mask, rather than a lossy namespace hash. Every historical candidate resets the filesystem's cwd. Actual compiler workers construct private filesystems and cwd state; they never access the shared validation map.
+
+`gaia-memo` adds the native `journal-history-memo` policy. A request-local map reuses supported observation fingerprints for the same filesystem, operation, cwd and original query path. Cwd mutations always execute, including unsuccessful mutations. Contents and virtual metadata remain immutable for the request. The map stops inserting at 8 MiB of accounted key/path/record costs; this is an accounting bound, not a measured allocator/RSS limit. Unsupported observations are never memoized. Full candidate framing, checksums, action identity, query comparisons and object integrity checks still run. No record format, lightweight checker or condition producer changes.
+
+With fresh hosts and explicit tool paths as above:
+
+```sh
+python3 -B experiments/compiler/ninja_benchmark.py \
+  --host /path/to/host --producer /path/to/snapshot-host --decision /path/to/decision-host \
+  --engines ninja ninja-ccache gaia-incremental gaia-shared gaia-memo \
+  --scenarios unchanged implementation shared-header generated-header unused-header revert \
+  --output experiments/compiler/_work/runs/shared-validation
+```
+
+Use `--scenarios high-fanout-header flags clean --trials 1` for separate compile-heavy correctness checks. Native counters expose tree constructions/time, shared validation groups, replay time, memo hits and accounted bytes. These diagnostic clocks overlap (tree construction is inside replay and setup); they must not be summed. The full request clock includes process startup/teardown and all producer/export/publication work. No daemon or retained compiler state is assumed.
+
+The full test command above covers both new policies, including negative lookup changes, eviction, corruption, concurrent writers, equal/distinct masks with parallel misses and independent CLI byte comparisons. A synthetic native journal also exercises repeated cwd transitions with opposite relative-path existence results. Directory enumeration is supported by the replay model but is not exercised by this real compiler workload.
+
+The [matched report](results/shared-validation/REPORT.md) includes complete request medians, paired comparisons, native diagnostics, the separate sharing pilot and compile-heavy checks. All 63 tests pass, including saturation of the bounded observation memo.
+
+## Remove the snapshot round trip and reuse the native process
+
+`gaia-inline` retains the memo policy and condition producer, but [inline_snapshot.py](inline_snapshot.py) publishes the existing snapshot format directly from the caller's admitted bytes plus observed edits. This removes rereading/hashing the old bundle, delta serialization, the producer subprocess and reconstruction of the same full snapshot. Encoding, hashing, atomic publication and native admission of the resulting full snapshot remain timed. This is appropriate only when the caller already owns the full admitted collection, as this harness does. It does not move fresh admission or loose-file discovery outside the request clock.
+
+`gaia-resident` adds one serial native worker via [resident_host.py](resident_host.py) and `host --serve`. Native requests use the same memo policy and release their pool, mapped inputs, dependency state and worker filesystems before the completion acknowledgement. The worker re-enters the output directory each request so directory recreation does not leave a stale process cwd. No AST, objects, filesystem or parsed journal state is intentionally retained between requests; process/library state remains initialized. Each request still validates current cache records and inputs. The worker drains at most eight compiler threads for the measured fixture, as the fresh host does.
+
+The private experimental transport uses a little-endian 64-bit body length (at most 4 MiB), then a 32-bit argument count and length-prefixed byte strings, bounded to 17 arguments of at most 65,536 bytes each. A JSON result is followed by `GAIA-DONE` after request defers/cleanup. Invalid framing or a failed native request terminates the worker; the prototype caller reports failure, and restarting a worker recovers independently. There is no automatic retry, cancellation, request multiplexing, idle eviction or production service protocol yet.
+
+The first resident seed includes process startup; later randomized observations use that worker. Cold setup is recorded separately, rather than presenting an already-running worker as free. CPU accounting adds `/proc` worker ticks because a live child is absent from `RUSAGE_CHILDREN`; that counter is coarse. Peak RSS is cumulative process high-water memory, including LLVM's retained globals, rather than per-request live bytes or an enforced quota. Tests include repeated requests with a large admitted input and failure/restart recovery. Native request timing includes cleanup acknowledgement; export and receipt publication still happen afterward inside the full operation clock.
+
+```sh
+python3 -B experiments/compiler/ninja_benchmark.py \
+  --host /path/to/host --producer /path/to/snapshot-host --decision /path/to/decision-host \
+  --engines ninja ninja-ccache gaia-memo gaia-inline gaia-resident \
+  --scenarios unchanged implementation shared-header generated-header unused-header revert \
+  --output experiments/compiler/_work/runs/pipeline-handoff
+```
+
+For the full suite, also set `GAIA_SNAPSHOT_HOST=/path/to/snapshot-host` so the native producer/inline wire-equivalence test runs. The native consumer corruption check verifies that direct publication preserves admission checks. `publication_ns` and `report_ns` diagnose work after compilation/linking; `native_process_seconds` covers a full fresh process or a resident request through cleanup. Neither replaces the complete request clock.
+
+
+The [pipeline handoff report](results/pipeline-handoff/REPORT.md) records the seven-block comparison, cold setup, resident high-water observations, separate startup diagnostic and compile-heavy checks. Its 74-test log includes the strengthened library placement check. The prototype uses diagnostic-free requests; production warning forwarding is not established.
+
+## Compare SHA-256 implementations without changing identities
+
+The optional [digest provider](sha256_impl.h) keeps SHA-256 identities and every existing integrity check. Ordinary builds use LLVM's implementation. Build with `--sha256-library /path/to/libcrypto.so.3` to also compile the [OpenSSL adapter](accelerated_dependency_bridge.cpp). `gaia-fast-sha` selects that provider within the resident request; `gaia-resident` uses LLVM in the same binary. Separate serial workers retain each control's process state. The selection is made before workers start and reset on every request.
+
+This changes the C++ shim's snapshot authentication, per-file content hashing, observation fingerprints and reported object digests. Odin action/record/journal hashing, snapshot publication and the Python condition producer remain unchanged. Unsupported accelerated requests fail explicitly in ordinary builds. It is a comparison provider, not a decision to require OpenSSL in Gaia's eventual native core.
+
+```sh
+python3 -B experiments/compiler/build_dependency_hosts.py \
+  --sha256-library /path/to/libcrypto.so.3 --work experiments/compiler/_work/hash-host
+python3 -B experiments/compiler/ninja_benchmark.py \
+  --sha256-library /path/to/libcrypto.so.3 \
+  --host experiments/compiler/_work/hash-host/build/host \
+  --producer experiments/compiler/_work/hash-host/snapshot-host \
+  --decision experiments/compiler/_work/hash-host/decision-host \
+  --engines ninja ninja-ccache gaia-resident gaia-fast-sha \
+  --scenarios unchanged implementation shared-header generated-header unused-header revert \
+  --output experiments/compiler/_work/runs/hash-provider
+```
+
+Supply the LLVM/tool paths described above. The crypto library is hashed into the execution context and checked with other admitted tools; the accelerated engine requires that explicit argument. Standard builds and default engine selection do not require the optional library. Run the complete native suite with `GAIA_FAST_HASH=1` and the freshly built hosts to exercise accelerated history/recovery plus alternating providers within one worker. Boundary-sized and arbitrary binary admitted contents, journal identities and object identities must agree across providers.
+
+Native setup now exposes four nested stage counters: `input_admission_ns` (mapping, target setup and snapshot authentication/framing), `action_admission_ns` (handoff setup, cwd and mask/action preparation), `content_hash_ns` (dependency-state construction and per-file hashes), and `candidate_load_ns` (record integrity, replay, object import and pre-worker setup). These sit inside `setup_ns`; the complete request remains the comparison clock. No integrity boundary is removed by this experiment.
+
+## BLAKE3 with explicit algorithm contracts
+
+`gaia-blake3` compares BLAKE3-256 snapshot authentication and native query fingerprints with the optimized SHA-256 path. The native shim uses LLVM's BLAKE3 wrapper. The caller uses a small [one-shot C helper](blake3_bridge.c) linked to a separately pinned BLAKE3 library through [blake3_digest.py](blake3_digest.py); library-private struct layouts never cross the Python ABI. Both implementations must agree on real snapshot bytes, and the suite checks the official empty-input vector. These are unkeyed 32-byte digests; see the [official C API](https://github.com/BLAKE3-team/BLAKE3/blob/master/c/README.md).
+
+Algorithm changes are explicit:
+
+- `GAIACIN2` retains its SHA-256 snapshot pin. `GAIACIN3` uses a `blake3:`-prefixed BLAKE3-256 pin. A request's selected algorithm must match the snapshot header; missing tags and wrong versions fail admission.
+- `GAIAJR01` fingerprints use SHA-256. `GAIAJR02` fingerprints use BLAKE3-256. The action-key domain also changes, so incompatible candidates have separate keys. Native replay checks the expected journal version.
+- The object cache envelope checksum, selected-journal identity, object-result checks, condition index, backing-file verification and receipt remain SHA-256. This deliberately tests the expensive snapshot/content/query stages without relabeling externally compared object hashes or claiming an all-BLAKE3 pipeline.
+
+The condition exporter can read either validated journal version: it uses query paths/outcomes and treats native fingerprints as opaque. Its exported condition identities remain SHA-256. Source bytes, compilation flags, per-job visibility, link order and corruption/stability checks remain unchanged.
+
+```sh
+python3 -B experiments/compiler/build_dependency_hosts.py \
+  --sha256-library /path/to/libcrypto.so.3 --blake3-library /path/to/libblake3.so \
+  --work experiments/compiler/_work/blake3-host
+python3 -B experiments/compiler/ninja_benchmark.py \
+  --sha256-library /path/to/libcrypto.so.3 --blake3-library /path/to/libblake3.so \
+  --blake3-helper experiments/compiler/_work/blake3-host/blake3-helper.so \
+  --host experiments/compiler/_work/blake3-host/build/host \
+  --producer experiments/compiler/_work/blake3-host/snapshot-host \
+  --decision experiments/compiler/_work/blake3-host/decision-host \
+  --engines ninja ninja-ccache gaia-fast-sha gaia-blake3 \
+  --scenarios unchanged implementation shared-header generated-header unused-header revert \
+  --output experiments/compiler/_work/runs/blake3-provider
+```
+
+For correctness, set `GAIA_FAST_HASH=1`, `GAIA_BLAKE3_HELPER=/path/to/blake3-helper.so` and the existing native test variables. Tests alternate SHA-256/BLAKE3 requests in a single worker, require separate action/journal identities and identical independently compiled objects, check version/tag rejection, and repeat history/corruption/recovery checks. Standard engine defaults do not require the optional libraries or helper. The BLAKE3 and crypto libraries plus caller helper are hashed into the benchmark execution context.
+
+
+The [digest-provider report](results/digest-providers/REPORT.md) records separate matched SHA-256 implementation and BLAKE3 algorithm comparisons, setup-stage attribution, 92 correctness tests, tagged/versioned compatibility and compile-heavy checks. Native object/reference identities remain SHA-256 throughout.
+
+## Retain complete linked results
+
+`gaia-linked` adds [result_history.py](result_history.py) to the BLAKE3 control. On a current-result gate miss it tries at most three retained linked results, newest first. A candidate must match the exact logical request (all compiler commands, ordered link inputs/flags, cwd, tool context and digest contract) and the compiler-derived positive/negative/visibility/directory conditions. This is a whole-result proof; action/object history alone cannot establish that an earlier linked library is correct.
+
+The private per-output cache retains the library, native result identities, condition index and optional parsed-fragment cache. `GAIALR02` entry descriptors (including regular permission bits) and a `GAIALC01` catalog use checksummed JSON with bounded counts, names, sizes and explicit requests. At most three committed entries and 16 MiB of artifact payloads are retained. One in-flight candidate may temporarily add up to another payload budget; descriptors/catalog/filesystem overhead is separate. A bounded scan removes known unreferenced cache directories, and excess/unknown debris disables new publication instead of causing an unbounded sweep. This is not a global native-object quota or a concurrent-writer cache design.
+
+The lightweight `selective-history-check` verifies metadata stability before and after candidate matching and returns a full preflight stamp even on a hit. After that proof, every retained artifact is read with a size bound and rehashed against the descriptor. Restoration atomically replaces each current artifact, then publishes the current completion receipt last, after rechecking input stability and the conditions. Input mutation aborts the restore and leaves no new valid receipt; corrupt/missing candidates miss. Per-file replacement is atomic, but the collection has no crash-consistent multi-file transaction or fsync durability guarantee. Its receipt is the completion marker. Only serial writers to the build output/cache are supported.
+
+A successful hit skips snapshot encoding/admission, native object import, compilation, linking and condition export. It still pays lookup, current input/tool/condition checks, payload verification/copying and receipt publication. A miss also pays bounded lookup and later retention/publication; those costs remain inside the request clock. The unchanged/irrelevant-input gate remains the first path, avoiding historical lookup on ordinary hits.
+
+```sh
+python3 -B experiments/compiler/ninja_benchmark.py \
+  --sha256-library /path/to/libcrypto.so.3 --blake3-library /path/to/libblake3.so \
+  --blake3-helper /path/to/blake3-helper.so \
+  --host /path/to/host --producer /path/to/snapshot-host --decision /path/to/decision-host \
+  --engines ninja ninja-ccache gaia-blake3 gaia-linked \
+  --scenarios unchanged implementation shared-header generated-header unused-header revert \
+  --output experiments/compiler/_work/runs/linked-results
+```
+
+Build fresh hosts with the optional libraries as above. The native suite includes complete-result revert/receipt reuse, unconditional payload checks after preserved-metadata cache corruption, request/tool/negative-lookup invalidation, mutation during restore, eviction, payload quotas, catalog corruption and optional-publication failure. The measured linker is an explicitly ordered object-only fixture; scripts, extra libraries and other implicit linker inputs would need complete capture before extending this proof to them.
+
+
+## Reuse completion records and keep the checker resident
+
+`gaia-rebound` adds two controls to complete-result retention. It keeps a lightweight checker alive, and it rebinds an already successful `GAIASK01` completion record to the retained copies instead of asking a second checker to repeat the same output hashing. The exact request and input-condition identity are preserved. Every copied required output must hash to the digest in that successful record before a retained receipt can be constructed. A future hit still performs native condition/tool/request validation, unconditional copied-payload hashing and the final input-stability/current-receipt checks. These are trusted local completion records, not remote signatures or attestations.
+
+The fast retention path stores all outputs covered by the completion record (library, native identities and condition index in the fixture), and omits optional parsed fragments that the record does not cover. The current fragment cache can be reused/recomputed by the normal producer later. `GAIALR02` stores mode bits restricted to `0777`, which are restored along with bytes; older descriptor versions miss. The original `gaia-linked` path remains a matched control and uses separate native retention validation.
+
+The checker’s private `--serve` IPC reuses the serial length-framed argv transport, with at most 4 MiB per frame, 64 arguments and 65,536 bytes per argument. A fixed 64 MiB virtual arena serves request allocations; all data is reset before the `GAIA-DONE used reserved` acknowledgement. The checker retains no parsed namespaces, conditions or prior decisions. The reservation is not a promise of 64 MiB RSS, and argv/runtime/OS memory sits outside that arena. Too-large requests fail the worker; production deadlines, cancellation and automatic restart remain open. Standalone CLI behavior remains available.
+
+Use the same benchmark command with `--engines ninja ninja-ccache gaia-blake3 gaia-linked gaia-rebound`. Request construction, namespace serialization, tool checks, all checker requests, copying, validation, retention and receipt publication stay inside timing; no graph work is moved outside the clock. The resident checker’s cold start is included in its first recorded seed build. Longer tests check independent restart, malformed frame rejection and repeated requests with identical arena usage after warmup. The native compiler process remains separately resident, with its larger memory cost.
+
+
+The [linked-result report](results/linked-results/REPORT.md) includes the initial retention tradeoff, matched completion reuse/resident checking, paired comparisons, allocation/RSS observations, 113 tests and compile-heavy checks. The latest path wins all six measured scenarios against both Ninja baselines, while retained-result misses still cost more than the unretained BLAKE3 path. Older prototype source/wire contracts remain pinned to their own frozen runs.
+
+## Retained condition production
+
+The [retained producer report](results/retained-conditions/REPORT.md) measures `gaia-retained` against `gaia-rebound`, Ninja and Ninja + ccache. It reuses immutable parsed structures and exact logical byte identities; physical positive-file checks and persistent publication remain timed. Native binaries are unchanged from the linked-result experiment.
+
+Use the linked-result host/tool setup above, then run:
+
+```sh
+python3 -B experiments/compiler/ninja_benchmark.py \
+  --llvm /usr/lib/llvm22 \
+  --sha256-library /usr/lib/libcrypto.so.3 \
+  --blake3-library /usr/lib/libblake3.so.1.8.7 \
+  --blake3-helper experiments/compiler/_work/rebound-result-host/blake3-helper.so \
+  --host experiments/compiler/_work/rebound-result-host/build/host \
+  --producer experiments/compiler/_work/rebound-result-host/snapshot-host \
+  --decision experiments/compiler/_work/rebound-result-host/decision-host \
+  --ninja experiments/compiler/_work/comparison-tools/usr/bin/ninja \
+  --ccache experiments/compiler/_work/comparison-tools/usr/bin/ccache \
+  --tool-library-path experiments/compiler/_work/comparison-tools/usr/lib \
+  --engines ninja ninja-ccache gaia-rebound gaia-retained \
+  --trials 7 \
+  --scenarios unchanged implementation shared-header generated-header unused-header revert \
+  --output experiments/compiler/_work/runs/retained-conditions-repro
+```
+
+Adapt library/tool locations to the machine. The driver restores both disk caches and immutable producer seed state outside each timed observation, resets state for clean builds, and checks every actual retained index against the original reference outside the clock. For correctness boundaries select `--engines gaia-rebound gaia-retained --trials 1 --scenarios high-fanout-header flags clean` with a separate output directory.
+
+The [producer tests](test_retained_conditions.py) extend the existing native/differential suites. Run the compiler unittest discovery with the optional native provider environment documented above to exercise all 135 tests. The [profiling tool](profile_retained_conditions.py) accepts `--source-run PATH/results.json --output DIRECTORY`; it records intrusive allocation/call diagnostics rather than complete-operation latency. Its retained initialization is excluded from per-call allocation figures.
+
+## Batched Odin condition verification
+
+The [native verification report](results/native-conditions/REPORT.md) compares the retained Python loop with one Odin call, first returning verified stat rows (`gaia-native-verify`), then patching/hashing the final index too (`gaia-native-emit`). Both read and SHA-256-check every physical positive file. Request/template construction, result conversion and persistent publication remain timed.
+
+Build the optional Linux helper into a fresh ignored directory:
+
+```sh
+python3 -B experiments/compiler/build_condition_verifier.py \
+  --llvm /usr/lib/llvm22 --crypto /usr/lib/libcrypto.so.3 \
+  --work experiments/compiler/_work/condition-verifier-repro
+```
+
+Use the preceding retained-producer benchmark command, adding `--condition-verifier experiments/compiler/_work/condition-verifier-repro/verify.so` and selecting `--engines ninja ninja-ccache gaia-retained gaia-native-verify gaia-native-emit`. Choose a fresh output. The driver hashes the helper and crypto library into the common context. Loader setup and producer seed restoration are outside the warm-operation clock; clean builds reset retained state. Every actual native index is independently compared with the original reference after timing.
+
+For correctness set `GAIA_CONDITION_VERIFIER` to the same helper, along with the native provider variables above, and run the compiler unittest discovery. All 181 tests run when optional providers are enabled. The helper is limited to regular files/symlinks to regular files, 64 MiB per body, 8 MiB wire buffers and 4,096 path bytes; unsupported native inputs fail explicitly. This is a trusted caller-buffer ABI, not an external admission protocol or a production RSS limit.
+
+## Shared immutable compiler inputs
+
+The [shared-input report](results/shared-inputs/REPORT.md) and [lifetime/encoding design](../../components/compiler/immutable-input-research.md) describe the optional Linux `gaia-shared-inputs` path. It shares sealed bases, explicit overlays and verified BLAKE3 file digests across compiler/native replay requests. External positive-file hashing/receipt checks still run.
+
+Build a fresh accelerated host from current sources:
+
+```sh
+python3 -B experiments/compiler/build_dependency_hosts.py \
+  --llvm /usr/lib/llvm22 \
+  --llvm-headers experiments/compiler/_work/toolchain/usr/lib/llvm22/include \
+  --sha256-library /usr/lib/libcrypto.so.3 \
+  --blake3-library /usr/lib/libblake3.so.1.8.7 \
+  --work experiments/compiler/_work/shared-input-repro
+```
+
+Use the retained/native benchmark command with this new host, snapshot/decision binaries and BLAKE3 helper; retain the condition verifier from the preceding section. Select `--engines ninja ninja-ccache gaia-native-emit gaia-shared-inputs` and a fresh output. The sender and receiver seed states are restored outside each warm observation, including dropping prior overlays; actual edit creation/sealing/hashing/admission remain inside timing. `--scenarios high-fanout-header flags clean --trials 1` supplies separate correctness boundaries; clean admits the full base inside timing.
+
+## Authoritative logical compiler inputs
+
+The [logical-generation report](results/logical-inputs/REPORT.md) measures the optional `gaia-logical-inputs` engine, which uses [immutable API generations](logical_workspace.py) instead of treating the physical source mirror as authoritative. Use the shared-input command above with `--engines gaia-shared-inputs gaia-logical-inputs ninja ninja-ccache`, seven trials and `--scenarios unchanged implementation shared-header generated-header unused-header revert`. Use a new output directory. Run `high-fanout-header flags clean` separately for boundary correctness. The same native compiler binary, object history, bounded linked-result history, SDK and flags remain active.
+
+Edit-packet admission and body hashing occur inside the clock. Initial fixture/SDK discovery remains common setup; first logical admission appears in recorded seeds and clean builds. The logical checker runs in process, hashes every copied output and preserves current-generation publication checks. Child CPU therefore cannot be compared as if the checker still lived in a child process. Unreported physical edits do not change logical authority; this is an explicit interface experiment rather than a drop-in filesystem optimization. See the [contract](../../components/compiler/immutable-input-research.md#authoritative-logical-workspace-experiment).
+
+Run the focused semantic tests with `python3 -B -m unittest discover -s experiments/compiler -p 'test_logical_workspace.py' -v`. The optional `test_logical_native.py` uses the same `GAIA_SHARED_INPUTS`/native-provider environment as the shared-input tests. It compares real compiler journals against the independent normalized reference and tests relevant versus unrelated updates during completion.
+
+After a completed benchmark, retain its generated work directory and measure strict physical import separately:
+
+```sh
+python3 -B experiments/compiler/profile_logical_admission.py \
+  --run experiments/compiler/_work/runs/logical-inputs/results.json \
+  --output experiments/compiler/_work/runs/logical-inputs/admission.json
+```
+
+This diagnostic reads a known namespace between global before/after metadata checks. It charges full physical reads and compares them with admission of an already supplied source-edit packet. It does not measure directory discovery or implement an optimized watcher. It verifies the physical baseline before profiling and never rewrites those source files.
+
+For the six real native-parser/lease tests, build the optional probe (adapt tool/header/library paths):
+
+```sh
+/usr/lib/llvm22/bin/clang++ -std=c++17 -O2 -fPIC -shared \
+  -I/usr/lib/llvm22/include \
+  -Iexperiments/compiler/_work/toolchain/usr/lib/llvm22/include \
+  experiments/compiler/shared_input_probe.cpp \
+  /usr/lib/llvm22/lib/libclang-cpp.so /usr/lib/llvm22/lib/libLLVM.so.22.1 \
+  -pthread -ldl -Wl,-rpath,/usr/lib/llvm22/lib \
+  -o experiments/compiler/_work/shared-input-repro/probe.so
+```
+
+Set `GAIA_SHARED_PROBE` to that library and `GAIA_SHARED_INPUTS=1`, together with the native provider variables above pointing to the newly built host. Full compiler unittest discovery runs all 201 tests when providers are enabled. The publisher's focused tests also run without optional native tools. Generated memfds, overlays, probe binaries and raw observations are not version-controlled.

@@ -1,0 +1,23 @@
+{
+  "scope": "Untimed post-measurement javac-version diagnostic with identical VM settings plus class/CDS logging; default CDS mode, no forced archive. Both share base classes while archived module graph falls back for module-main launch.",
+  "records": [
+    {
+      "runtime": "full",
+      "shared_class_loads_in_version_probe": 856,
+      "default_archive_opened": true,
+      "mapped_static_regions": true,
+      "archived_module_graph_reused": false,
+      "module_graph_fallback": true,
+      "log_sha256": "45f84c388e7ea380da64092014b6632cb6ccf377a3794e37f6577085fda4ec72"
+    },
+    {
+      "runtime": "image",
+      "shared_class_loads_in_version_probe": 887,
+      "default_archive_opened": true,
+      "mapped_static_regions": true,
+      "archived_module_graph_reused": false,
+      "module_graph_fallback": true,
+      "log_sha256": "10eb121be6cf5632481f51a8e4d80f7ad429a429f97ce6189052ac46a1be233d"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "run_id": "20261031T013718.168635Z",
+  "corpus": {
+    "versions": {
+      "django": "6.1.2",
+      "asgiref": "3.13.0",
+      "sqlparse": "0.6.0",
+      "rest_framework": "3.18.3",
+      "django_filters": "26.2"
+    },
+    "resources": {
+      "django:contrib/admin/templates/admin/login.html": "677f75af1d7f9d3f87398eaa66292bcb46540556ae518e86a26e879e343396c1",
+      "django:contrib/admin/static/admin/js/core.js": "0a407584ab225a7adfcc3df14729baa2a8f4f4bd5efc6f062233c70ddb9bc6fe",
+      "django:forms/templates/django/forms/widgets/text.html": "7d7a5bc4ccc075bbff6af7d60b9e3ae200f68c59e0f77d44abbbf36f3cb5fb20"
+    },
+    "files": 4018,
+    "logical_unique_objects": 3931,
+    "logical_bytes": 28696585,
+    "zip_bytes": 29396999,
+    "index_bytes": 264934,
+    "logical_lock_sha256": "91570892b87f1b2a37858ec2928bed14c4be8f4356eb840315ec2fb1a2451f04",
+    "package_lock_sha256": "616181d3b5d998cf6cfd105114b0e26fc9c20201281f6b532019263d78051036"
+  },
+  "rows": [
+    {
+      "mode": "directory",
+      "profile": "cold",
+      "samples": 3,
+      "acquisition_ms": 39.08257199509535,
+      "install_ms": 385.4204790040967,
+      "process_ms": 414.0823550042114,
+      "total_ms": 799.5506350052892,
+      "ready_ms": 160.88683500129264,
+      "modules": 455,
+      "requests": 1,
+      "transfer_bytes": 29661933
+    },
+    {
+      "mode": "indexed-zip",
+      "profile": "cold",
+      "samples": 3,
+      "acquisition_ms": 37.34280999924522,
+      "install_ms": 46.47895000380231,
+      "process_ms": 396.22843099641614,
+      "total_ms": 442.7857900009258,
+      "ready_ms": 158.77229300531326,
+      "modules": 455,
+      "requests": 1,
+      "transfer_bytes": 29661933
+    },
+    {
+      "mode": "packed",
+      "profile": "cold",
+      "samples": 3,
+      "acquisition_ms": 98.3315620032954,
+      "install_ms": 98.33281399914995,
+      "process_ms": 579.964922995714,
+      "total_ms": 683.2628379997914,
+      "ready_ms": 272.2444929968333,
+      "modules": 455,
+      "requests": 1,
+      "transfer_bytes": 28590229
+    },
+    {
+      "mode": "directory",
+      "profile": "reuse",
+      "samples": 3,
+      "acquisition_ms": 18.69699300004868,
+      "install_ms": 18.72219100187067,
+      "process_ms": 403.937692004547,
+      "total_ms": 422.71520800568396,
+      "ready_ms": 171.7072030005511,
+      "modules": 455,
+      "requests": 0,
+      "transfer_bytes": 0
+    },
+    {
+      "mode": "indexed-zip",
+      "profile": "reuse",
+      "samples": 3,
+      "acquisition_ms": 17.443374999857042,
+      "install_ms": 17.644677995122038,
+      "process_ms": 461.0488269972848,
+      "total_ms": 478.784196995548,
+      "ready_ms": 166.8566720036324,
+      "modules": 455,
+      "requests": 0,
+      "transfer_bytes": 0
+    },
+    {
+      "mode": "packed",
+      "profile": "reuse",
+      "samples": 3,
+      "acquisition_ms": 52.51164099900052,
+      "install_ms": 52.514707000227645,
+      "process_ms": 548.7057299978915,
+      "total_ms": 625.4647859968827,
+      "ready_ms": 225.74288199393777,
+      "modules": 455,
+      "requests": 0,
+      "transfer_bytes": 0
+    }
+  ]
+}

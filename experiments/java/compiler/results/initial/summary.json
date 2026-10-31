@@ -1,0 +1,333 @@
+{
+  "run_id": "20261031T032913.223449Z",
+  "raw_sha256": "295fb132549ec249cd0ab464ef585e4373512c7bf21dab0634a1f2d7ac3294e2",
+  "trials": 3,
+  "reference": {
+    "classes": 227,
+    "bytes": 755217,
+    "sha256": "b2444bc506cb537a4acf29406d41ba33271ffab79f2856c2e776e388fa37c2ae"
+  },
+  "cases": [
+    {
+      "engine": "full-cli",
+      "targets": 1,
+      "median_ms": 1492.1155629999703,
+      "min_ms": 1425.0521120047779,
+      "max_ms": 1540.5975679968833,
+      "paired_wins_vs_full_cli": 0,
+      "blocks": 3
+    },
+    {
+      "engine": "image-cli",
+      "targets": 1,
+      "median_ms": 1470.9715450007934,
+      "min_ms": 1428.8938790050452,
+      "max_ms": 1555.5496529996162,
+      "paired_wins_vs_full_cli": 1,
+      "blocks": 3
+    },
+    {
+      "engine": "full-api-cold",
+      "targets": 1,
+      "median_ms": 1528.8325430010445,
+      "min_ms": 1513.4759869979462,
+      "max_ms": 1565.4129019967513,
+      "paired_wins_vs_full_cli": 0,
+      "blocks": 3,
+      "compile_ns_median": 1359802726,
+      "materialize_ns_median": 41917607,
+      "hash_ns_median": 20133617,
+      "rss_bytes_median": 210608128,
+      "heap_used_bytes_median": 63457728
+    },
+    {
+      "engine": "image-api-cold",
+      "targets": 1,
+      "median_ms": 1562.7757889960776,
+      "min_ms": 1536.3106829972821,
+      "max_ms": 2026.4860280003631,
+      "paired_wins_vs_full_cli": 0,
+      "blocks": 3,
+      "compile_ns_median": 1385892180,
+      "materialize_ns_median": 40492723,
+      "hash_ns_median": 21161546,
+      "rss_bytes_median": 202518528,
+      "heap_used_bytes_median": 67352504
+    },
+    {
+      "engine": "image-api-aot-cold",
+      "targets": 1,
+      "median_ms": 1129.5899230026407,
+      "min_ms": 1021.7504460015334,
+      "max_ms": 1159.7924969973974,
+      "paired_wins_vs_full_cli": 3,
+      "blocks": 3,
+      "compile_ns_median": 984104952,
+      "materialize_ns_median": 41480533,
+      "hash_ns_median": 15216815,
+      "rss_bytes_median": 193810432,
+      "heap_used_bytes_median": 36463840
+    },
+    {
+      "engine": "image-api-resident",
+      "targets": 1,
+      "median_ms": 415.17536099854624,
+      "min_ms": 380.2749979950022,
+      "max_ms": 450.31682300032116,
+      "paired_wins_vs_full_cli": 3,
+      "blocks": 3,
+      "compile_ns_median": 381530895,
+      "materialize_ns_median": 30647008,
+      "hash_ns_median": 1083764,
+      "rss_bytes_median": 348401664,
+      "heap_used_bytes_median": 114107632
+    },
+    {
+      "engine": "image-api-memory-resident",
+      "targets": 1,
+      "median_ms": 353.91506299492903,
+      "min_ms": 322.2463290003361,
+      "max_ms": 438.3954849981819,
+      "paired_wins_vs_full_cli": 3,
+      "blocks": 3,
+      "compile_ns_median": 351986843,
+      "materialize_ns_median": 120,
+      "hash_ns_median": 1175337,
+      "rss_bytes_median": 327360512,
+      "heap_used_bytes_median": 136753208
+    },
+    {
+      "engine": "full-cli-pair",
+      "targets": 2,
+      "median_ms": 1968.830234996858,
+      "min_ms": 1855.4971039993688,
+      "max_ms": 2111.3356459973147,
+      "paired_wins_vs_full_cli": 0,
+      "blocks": 3
+    },
+    {
+      "engine": "image-api-sequential-pair-resident",
+      "targets": 2,
+      "median_ms": 618.8734900060808,
+      "min_ms": 608.754091001174,
+      "max_ms": 665.7824370049639,
+      "paired_wins_vs_full_cli": 3,
+      "blocks": 3,
+      "compile_ns_median": 564521138,
+      "materialize_ns_median": 54509883,
+      "hash_ns_median": 1801294,
+      "rss_bytes_median": 331104256,
+      "heap_used_bytes_median": 74731456
+    },
+    {
+      "engine": "image-pool2-pair-resident",
+      "targets": 2,
+      "median_ms": 448.3196630026214,
+      "min_ms": 425.4127439999138,
+      "max_ms": 450.6263980001677,
+      "paired_wins_vs_full_cli": 3,
+      "blocks": 3,
+      "compile_ns_median": 384699490,
+      "materialize_ns_median": 57623571,
+      "hash_ns_median": 1819408,
+      "rss_bytes_median": 465244160,
+      "heap_used_bytes_median": 187609144
+    }
+  ],
+  "residents": {
+    "image-api-resident": {
+      "start_seconds": 0.08932394799921894,
+      "ready": {
+        "workers": 1,
+        "rss_bytes": 52310016
+      },
+      "first_request": {
+        "ok": true,
+        "token": "first-image-api-resident",
+        "requests": 1,
+        "units": 3,
+        "targets": 1,
+        "classes": 227,
+        "bytes": 755217,
+        "sha256": "b2444bc506cb537a4acf29406d41ba33271ffab79f2856c2e776e388fa37c2ae",
+        "compile_ns": 1306854401,
+        "materialize_ns": 38284246,
+        "hash_ns": 22508704,
+        "rss_bytes": 275128320,
+        "heap_used_bytes": 78032952,
+        "seconds": 1.373228038995876
+      },
+      "in_memory_consumer": {
+        "ok": true,
+        "versions": [
+          "4.7.7"
+        ],
+        "consumer_ns": 38181069,
+        "seconds": 0.0392686249979306
+      },
+      "normal_shutdown": {
+        "seconds": 0.034526666000601836,
+        "stderr": ""
+      },
+      "modeled_session_average_ms": {
+        "1": 1497.0786529956968,
+        "2": 956.1270069971215,
+        "5": 631.5560193979763,
+        "10": 523.3656901982613
+      }
+    },
+    "image-api-memory-resident": {
+      "start_seconds": 0.0972741989971837,
+      "ready": {
+        "workers": 1,
+        "rss_bytes": 52219904
+      },
+      "first_request": {
+        "ok": true,
+        "token": "first-image-api-memory-resident",
+        "requests": 1,
+        "units": 3,
+        "targets": 1,
+        "classes": 227,
+        "bytes": 755217,
+        "sha256": "b2444bc506cb537a4acf29406d41ba33271ffab79f2856c2e776e388fa37c2ae",
+        "compile_ns": 1488743574,
+        "materialize_ns": 371,
+        "hash_ns": 22066629,
+        "rss_bytes": 233508864,
+        "heap_used_bytes": 60994912,
+        "seconds": 1.5157697890026611
+      },
+      "in_memory_consumer": {
+        "ok": true,
+        "versions": [
+          "4.7.7"
+        ],
+        "consumer_ns": 27039773,
+        "seconds": 0.02803796299849637
+      },
+      "normal_shutdown": {
+        "seconds": 0.031581388000631705,
+        "stderr": ""
+      },
+      "modeled_session_average_ms": {
+        "1": 1644.6253760004765,
+        "2": 999.2702194977028,
+        "5": 612.0571255960385,
+        "10": 482.9860942954838
+      }
+    },
+    "image-api-sequential-pair-resident": {
+      "start_seconds": 0.12463151599513367,
+      "ready": {
+        "workers": 1,
+        "rss_bytes": 52166656
+      },
+      "first_request": {
+        "ok": true,
+        "token": "pair-first-image-api-sequential-pair-resident",
+        "requests": 1,
+        "units": 6,
+        "targets": 2,
+        "classes": 454,
+        "bytes": 1510478,
+        "sha256": "72ce000a96819b44bda29ddf88444aaf7692cd8933d6bf1c0c571815870d580d",
+        "compile_ns": 2043914522,
+        "materialize_ns": 65689031,
+        "hash_ns": 19616128,
+        "rss_bytes": 309518336,
+        "heap_used_bytes": 81212856,
+        "seconds": 2.1346252229996026
+      },
+      "in_memory_consumer": {
+        "ok": true,
+        "versions": [
+          "4.7.7",
+          "4.7.7-gaia-probe"
+        ],
+        "consumer_ns": 50288093,
+        "seconds": 0.05205050600488903
+      },
+      "normal_shutdown": {
+        "seconds": 0.026262109000526834,
+        "stderr": ""
+      },
+      "modeled_session_average_ms": {
+        "1": 2285.518847995263,
+        "2": 1452.196169000672,
+        "5": 952.2025616039173,
+        "10": 785.538025804999
+      }
+    },
+    "image-pool2-pair-resident": {
+      "start_seconds": 0.1103308140009176,
+      "ready": {
+        "workers": 2,
+        "rss_bytes": 60743680
+      },
+      "first_request": {
+        "ok": true,
+        "token": "pair-first-image-pool2-pair-resident",
+        "requests": 1,
+        "units": 6,
+        "targets": 2,
+        "classes": 454,
+        "bytes": 1510478,
+        "sha256": "72ce000a96819b44bda29ddf88444aaf7692cd8933d6bf1c0c571815870d580d",
+        "compile_ns": 1528060492,
+        "materialize_ns": 74538118,
+        "hash_ns": 19100882,
+        "rss_bytes": 322154496,
+        "heap_used_bytes": 112895200,
+        "seconds": 1.6266424599962193
+      },
+      "in_memory_consumer": {
+        "ok": true,
+        "versions": [
+          "4.7.7",
+          "4.7.7-gaia-probe"
+        ],
+        "consumer_ns": 38425475,
+        "seconds": 0.03964902900042944
+      },
+      "normal_shutdown": {
+        "seconds": 0.04492077200120548,
+        "stderr": ""
+      },
+      "modeled_session_average_ms": {
+        "1": 1781.8940459983423,
+        "2": 1115.1068545004819,
+        "5": 715.0345396017656,
+        "10": 581.6771013021935
+      }
+    }
+  },
+  "setup": {
+    "harness_compile_seconds": 0.8073585539968917,
+    "jlink_seconds": 2.6311288150027394,
+    "image_bytes": 69976872,
+    "default_cds_seconds": 0.4856695690032211,
+    "default_cds_bytes": 14036992,
+    "image_modules": [
+      "java.base@25.0.5.0.3",
+      "java.compiler@25.0.5.0.3",
+      "jdk.compiler@25.0.5.0.3",
+      "jdk.internal.opt@25.0.5.0.3",
+      "jdk.zipfs@25.0.5.0.3"
+    ],
+    "harness_rebuild_seconds": 0.9114043020017562,
+    "aot": {
+      "seconds": 2.957175752002513,
+      "bytes": 28119040,
+      "sha256": "3a8ca4bce2caa58e1550ea4288d8973bf9b4b6d949d63666664bdbaa55b39748",
+      "assembly_log_sha256": "705dac0c00a433f3cc5bc0991b41f878d825ed74d8156dca146ee172f46ee38e",
+      "assembly_log_lines": 1
+    }
+  },
+  "pair_reference": {
+    "classes": 454,
+    "bytes": 1510478,
+    "sha256": "72ce000a96819b44bda29ddf88444aaf7692cd8933d6bf1c0c571815870d580d"
+  },
+  "scope": "One-target and two-target rows are separate work counts. Normal startup/shutdown included in cold modes; resident lifecycles recorded separately. CPU time was not collected."
+}

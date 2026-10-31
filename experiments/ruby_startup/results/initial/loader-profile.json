@@ -1,0 +1,49 @@
+{
+  "scope": "Intrusive stage/call diagnostic on existing admitted inputs and warmed caches; not main latency samples.",
+  "source_run": "2026-10-31T03:12:01.842444+00:00",
+  "source_sha256": {
+    "packed_loader.rb": "557e5e5b3067f0e8fb002ff8c65848030f35393dda617208abdeb5b2272dcdf8",
+    "bootstrap.rb": "30c0c87c600c52b342e2d082734dea7f702db770ddb797e6c12008904b36d2d5",
+    "profile_loader.py": "44000b4e2fe62bdb64200834ff4669d5870d3d0e282d730d787d353018774576"
+  },
+  "pack_bytes": 26540787,
+  "wire_and_offenses_match": true,
+  "profiles": [
+    {
+      "mode": "bootsnap",
+      "stages": {
+        "common_ns": 3050409,
+        "loader_setup_ns": 16466459,
+        "iseq_ns": 84799926,
+        "iseq_calls": 962,
+        "iseq_hits": 962,
+        "cli_ns": 418003974
+      },
+      "pack": null,
+      "offenses": 8
+    },
+    {
+      "mode": "packed",
+      "stages": {
+        "common_ns": 2753548,
+        "read_ns": 15931304,
+        "hash_ns": 60655924,
+        "index_decode_ns": 9756385,
+        "loader_setup_ns": 87816495,
+        "resolve_ns": 1323473,
+        "resolve_calls": 580,
+        "iseq_ns": 90444690,
+        "iseq_calls": 996,
+        "iseq_hits": 996,
+        "packed_requested_bytes": 6684420,
+        "cli_ns": 395453191
+      },
+      "pack": {
+        "iseq_hits": 996,
+        "resolved": 102,
+        "fallbacks": 7
+      },
+      "offenses": 8
+    }
+  ]
+}

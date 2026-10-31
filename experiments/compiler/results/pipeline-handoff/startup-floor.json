@@ -1,0 +1,110 @@
+{
+  "scope": "fresh process; invalid argc or version only; no valid request or input admission",
+  "trials": 15,
+  "cases": {
+    "native-invalid-argc": {
+      "command": [
+        "host"
+      ],
+      "exit_code": 2,
+      "samples_ms": [
+        16.163588,
+        16.543912,
+        13.693906,
+        13.790078,
+        14.194243,
+        12.824548,
+        14.77793,
+        13.478878,
+        13.528462,
+        15.061414,
+        13.386823,
+        14.858973,
+        15.125382,
+        13.820796,
+        14.512516
+      ],
+      "median_ms": 14.194243,
+      "sha256": "7ace7c087671d1a18c735af646b252fb70d5e9428ce1ad1da8c2c0ee179e5fdb"
+    },
+    "decision-invalid-argc": {
+      "command": [
+        "decision-host"
+      ],
+      "exit_code": 2,
+      "samples_ms": [
+        1.50592,
+        1.0452,
+        0.997338,
+        1.376865,
+        1.56041,
+        1.042666,
+        1.035562,
+        1.11387,
+        1.303512,
+        1.305529,
+        1.191398,
+        1.30718,
+        1.045571,
+        0.875048,
+        0.999073
+      ],
+      "median_ms": 1.11387,
+      "sha256": "20b19e143ea07022956ab0386a1635747a4f6da044a1a7c726cf7348ecc67f95"
+    },
+    "clang-version": {
+      "command": [
+        "clang-22",
+        "--version"
+      ],
+      "exit_code": 0,
+      "samples_ms": [
+        18.569366,
+        20.125644,
+        17.225787,
+        16.711427,
+        16.752407,
+        16.602627,
+        16.918434,
+        16.866318,
+        17.373167,
+        17.023093,
+        16.367221,
+        17.884118,
+        16.879333,
+        16.470406,
+        17.076755
+      ],
+      "median_ms": 16.918434,
+      "sha256": "b852cb4597dc56b241bcd328544b5fee60717f35f66808098cc0413946ba42f2"
+    },
+    "linker-version": {
+      "command": [
+        "ld.lld",
+        "--version"
+      ],
+      "exit_code": 0,
+      "samples_ms": [
+        13.459281,
+        13.569239,
+        11.305086,
+        10.270087,
+        11.40016,
+        10.876167,
+        11.205951,
+        11.644884,
+        11.09688,
+        11.87719,
+        11.06846,
+        11.320625,
+        11.445626,
+        11.44325,
+        12.221085
+      ],
+      "median_ms": 11.40016,
+      "sha256": "53b86825ed1635d71a5b719f87bd702497bc0c67ad6b139105adcdd8aab7e904"
+    }
+  },
+  "source_sha256": "f088367ea18c28be2a0412d9d0da725d28c3378ba58cb33ec5eac3d0922a5847",
+  "command_note": "Executable locations omitted; supply explicit local paths to startup_floor.py."
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "path_base": "repository-root",
+  "scope": ".NET-specific Roslyn CLI startup with shipping R2R and application-only composite R2R.",
+  "experiments": [
+    {
+      "id": "DOTNET-ROSLYN-COMPOSITE",
+      "status": "measured-shipping-r2r-vs-application-composite",
+      "report": "experiments/dotnet_startup/results/initial/REPORT.md",
+      "raw": "experiments/dotnet_startup/results/initial/results.json",
+      "summary": "experiments/dotnet_startup/results/initial/summary.json",
+      "validation": "experiments/dotnet_startup/results/initial/validation.json",
+      "toolchain": "experiments/dotnet_startup/results/initial/toolchain-provenance.json",
+      "findings": "research/dotnet/findings.md"
+    }
+  ],
+  "raw_evidence": {
+    "manifest": "research/evidence.json",
+    "availability": "Raw observations, toolchains and native images are ignored local artifacts; no download has been published."
+  }
+}

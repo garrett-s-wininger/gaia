@@ -1,0 +1,2779 @@
+{
+  "run_id": "20261030T231703.682942Z",
+  "status": "complete",
+  "rows": [
+    {
+      "corpus": "small",
+      "delay_ms": 0.0,
+      "scenario": "metadata-only",
+      "modes": {
+        "objects-serial": {
+          "median_ms": 1.1171420010214206,
+          "min_ms": 0.9687179990578443,
+          "max_ms": 1.830654000514187,
+          "requests": 1,
+          "transfer_bytes": 0,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 0,
+          "connections": 1,
+          "hash_bytes": 13689,
+          "median_metadata_ms": 0.9937279974110425,
+          "median_cache_validation_ms": 0.009688999853096902,
+          "median_payload_verify_publish_ms": 0.0014130018826108426,
+          "median_receipt_ms": 0.06029400174156763
+        },
+        "objects-parallel": {
+          "median_ms": 1.1914739989151713,
+          "min_ms": 0.9917890020005871,
+          "max_ms": 1.9380529993213713,
+          "requests": 1,
+          "transfer_bytes": 0,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 0,
+          "connections": 1,
+          "hash_bytes": 13689,
+          "median_metadata_ms": 1.0566990022198297,
+          "median_cache_validation_ms": 0.010409999958937988,
+          "median_payload_verify_publish_ms": 0.0020139996195212007,
+          "median_receipt_ms": 0.06330999894998968
+        },
+        "pack-exact": {
+          "median_ms": 1.1304409999866039,
+          "min_ms": 0.9645559985074215,
+          "max_ms": 1.7671009991317987,
+          "requests": 1,
+          "transfer_bytes": 0,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 0,
+          "connections": 1,
+          "hash_bytes": 13689,
+          "median_metadata_ms": 0.9916889976011589,
+          "median_cache_validation_ms": 0.010059000487672165,
+          "median_payload_verify_publish_ms": 0.0014229990483727306,
+          "median_receipt_ms": 0.06342000051517971
+        },
+        "pack-coalesced": {
+          "median_ms": 1.1380760006431956,
+          "min_ms": 0.9842449981078971,
+          "max_ms": 1.2708880021818914,
+          "requests": 1,
+          "transfer_bytes": 0,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 0,
+          "connections": 1,
+          "hash_bytes": 13689,
+          "median_metadata_ms": 1.0007260025304276,
+          "median_cache_validation_ms": 0.009728999430080876,
+          "median_payload_verify_publish_ms": 0.0014430006558541209,
+          "median_receipt_ms": 0.062498002080246806
+        },
+        "pack-full": {
+          "median_ms": 1.3839320017723367,
+          "min_ms": 1.0185819992329925,
+          "max_ms": 1.5098399999260437,
+          "requests": 1,
+          "transfer_bytes": 0,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 0,
+          "connections": 1,
+          "hash_bytes": 13689,
+          "median_metadata_ms": 1.2456280019250698,
+          "median_cache_validation_ms": 0.00994900256046094,
+          "median_payload_verify_publish_ms": 0.002043998392764479,
+          "median_receipt_ms": 0.06220800059963949
+        }
+      },
+      "coalesced_paired": {
+        "objects-serial": {
+          "median_delta_ms": 0.015526999050052837,
+          "wins": 3,
+          "blocks": 7
+        },
+        "objects-parallel": {
+          "median_delta_ms": -0.04401199839776382,
+          "wins": 5,
+          "blocks": 7
+        },
+        "pack-exact": {
+          "median_delta_ms": 0.013538003258872777,
+          "wins": 2,
+          "blocks": 7
+        },
+        "pack-full": {
+          "median_delta_ms": -0.23643799795536324,
+          "wins": 6,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "corpus": "small",
+      "delay_ms": 0.0,
+      "scenario": "cold-all",
+      "modes": {
+        "objects-serial": {
+          "median_ms": 53.95734299963806,
+          "min_ms": 46.920377000787994,
+          "max_ms": 55.78223499833257,
+          "requests": 129,
+          "transfer_bytes": 524288,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 128,
+          "connections": 1,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 1.0560910013737157,
+          "median_cache_validation_ms": 1.3298320009198505,
+          "median_payload_verify_publish_ms": 51.34875200019451,
+          "median_receipt_ms": 0.10923700028797612
+        },
+        "objects-parallel": {
+          "median_ms": 102.22331399927498,
+          "min_ms": 90.4758260003291,
+          "max_ms": 105.30479499720968,
+          "requests": 129,
+          "transfer_bytes": 524288,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 128,
+          "connections": 9,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 0.9379369985254016,
+          "median_cache_validation_ms": 1.4505090002785437,
+          "median_payload_verify_publish_ms": 98.82583700164105,
+          "median_receipt_ms": 0.16343899915227666
+        },
+        "pack-exact": {
+          "median_ms": 55.477246998634655,
+          "min_ms": 48.35747499964782,
+          "max_ms": 58.095890999538824,
+          "requests": 129,
+          "transfer_bytes": 524288,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 128,
+          "connections": 1,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 1.0902229987550527,
+          "median_cache_validation_ms": 1.331532999756746,
+          "median_payload_verify_publish_ms": 53.03094299961231,
+          "median_receipt_ms": 0.10976799967465922
+        },
+        "pack-coalesced": {
+          "median_ms": 9.603553997294512,
+          "min_ms": 9.214220997819211,
+          "max_ms": 10.796107999340165,
+          "requests": 2,
+          "transfer_bytes": 524288,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 128,
+          "connections": 1,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 1.0590460005914792,
+          "median_cache_validation_ms": 1.5220109999063425,
+          "median_payload_verify_publish_ms": 6.767392998881405,
+          "median_receipt_ms": 0.08421899838140234
+        },
+        "pack-full": {
+          "median_ms": 10.7829890002904,
+          "min_ms": 8.589640001446242,
+          "max_ms": 12.104657998861512,
+          "requests": 2,
+          "transfer_bytes": 524288,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 128,
+          "connections": 1,
+          "hash_bytes": 1062265,
+          "median_metadata_ms": 1.2599219990079291,
+          "median_cache_validation_ms": 1.4684400011901744,
+          "median_payload_verify_publish_ms": 7.7477490012825,
+          "median_receipt_ms": 0.09502099783276208
+        }
+      },
+      "coalesced_paired": {
+        "objects-serial": {
+          "median_delta_ms": -44.2628529999638,
+          "wins": 7,
+          "blocks": 7
+        },
+        "objects-parallel": {
+          "median_delta_ms": -91.42720599993481,
+          "wins": 7,
+          "blocks": 7
+        },
+        "pack-exact": {
+          "median_delta_ms": -45.87369300134014,
+          "wins": 7,
+          "blocks": 7
+        },
+        "pack-full": {
+          "median_delta_ms": -1.159908999397885,
+          "wins": 5,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "corpus": "small",
+      "delay_ms": 0.0,
+      "scenario": "cached-all",
+      "modes": {
+        "objects-serial": {
+          "median_ms": 2.3207169979286846,
+          "min_ms": 1.9848609990731347,
+          "max_ms": 2.8241059990250506,
+          "requests": 0,
+          "transfer_bytes": 0,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 128,
+          "published_objects": 0,
+          "connections": 0,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 0.29694199838559143,
+          "median_cache_validation_ms": 1.862750003056135,
+          "median_payload_verify_publish_ms": 0.0023139982658904046,
+          "median_receipt_ms": 0.12075899940100498
+        },
+        "objects-parallel": {
+          "median_ms": 2.8530060008051805,
+          "min_ms": 2.1169110004848335,
+          "max_ms": 3.33273999785888,
+          "requests": 0,
+          "transfer_bytes": 0,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 128,
+          "published_objects": 0,
+          "connections": 0,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 0.58369599719299,
+          "median_cache_validation_ms": 1.9754040004045237,
+          "median_payload_verify_publish_ms": 0.0025849985831882805,
+          "median_receipt_ms": 0.1245359999302309
+        },
+        "pack-exact": {
+          "median_ms": 2.5345549984194804,
+          "min_ms": 1.969521999853896,
+          "max_ms": 2.9562939998868387,
+          "requests": 0,
+          "transfer_bytes": 0,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 128,
+          "published_objects": 0,
+          "connections": 0,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 0.2862529981939588,
+          "median_cache_validation_ms": 1.8634730004123412,
+          "median_payload_verify_publish_ms": 0.0022040003386791795,
+          "median_receipt_ms": 0.1156190010078717
+        },
+        "pack-coalesced": {
+          "median_ms": 2.5373329990543425,
+          "min_ms": 2.1091259986860678,
+          "max_ms": 3.856988998450106,
+          "requests": 0,
+          "transfer_bytes": 0,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 128,
+          "published_objects": 0,
+          "connections": 0,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 0.32773100247140974,
+          "median_cache_validation_ms": 1.9396509997022804,
+          "median_payload_verify_publish_ms": 0.0026149973564315587,
+          "median_receipt_ms": 0.12240200157975778
+        },
+        "pack-full": {
+          "median_ms": 2.5986120017478243,
+          "min_ms": 2.0674679981311783,
+          "max_ms": 3.160471002047416,
+          "requests": 0,
+          "transfer_bytes": 0,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 128,
+          "published_objects": 0,
+          "connections": 0,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 0.4639180006051902,
+          "median_cache_validation_ms": 1.9613849981396925,
+          "median_payload_verify_publish_ms": 0.002353997842874378,
+          "median_receipt_ms": 0.12829299885197543
+        }
+      },
+      "coalesced_paired": {
+        "objects-serial": {
+          "median_delta_ms": 0.1071719998435583,
+          "wins": 2,
+          "blocks": 7
+        },
+        "objects-parallel": {
+          "median_delta_ms": -0.13366600251174532,
+          "wins": 4,
+          "blocks": 7
+        },
+        "pack-exact": {
+          "median_delta_ms": 0.2963779988931492,
+          "wins": 3,
+          "blocks": 7
+        },
+        "pack-full": {
+          "median_delta_ms": 0.14373899830388837,
+          "wins": 3,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "corpus": "small",
+      "delay_ms": 0.0,
+      "scenario": "cached-90",
+      "modes": {
+        "objects-serial": {
+          "median_ms": 8.003790000657318,
+          "min_ms": 7.24771699970006,
+          "max_ms": 9.758111998962704,
+          "requests": 13,
+          "transfer_bytes": 53248,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 115,
+          "published_objects": 13,
+          "connections": 1,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 0.26208700001006946,
+          "median_cache_validation_ms": 1.7874059994937852,
+          "median_payload_verify_publish_ms": 5.678377001459012,
+          "median_receipt_ms": 0.09657299960963428
+        },
+        "objects-parallel": {
+          "median_ms": 17.072065002139425,
+          "min_ms": 14.726404999237275,
+          "max_ms": 18.095784002071014,
+          "requests": 13,
+          "transfer_bytes": 53248,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 115,
+          "published_objects": 13,
+          "connections": 8,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 0.2872650002245791,
+          "median_cache_validation_ms": 1.9290210002509411,
+          "median_payload_verify_publish_ms": 14.014579999638954,
+          "median_receipt_ms": 0.15502400128752925
+        },
+        "pack-exact": {
+          "median_ms": 8.175541999662528,
+          "min_ms": 7.711464997555595,
+          "max_ms": 10.064784000860527,
+          "requests": 13,
+          "transfer_bytes": 53248,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 115,
+          "published_objects": 13,
+          "connections": 1,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 0.43876099880435504,
+          "median_cache_validation_ms": 1.893527998618083,
+          "median_payload_verify_publish_ms": 6.019376000040211,
+          "median_receipt_ms": 0.10121100058313459
+        },
+        "pack-coalesced": {
+          "median_ms": 4.1751600001589395,
+          "min_ms": 3.6980069999117404,
+          "max_ms": 4.837185999349458,
+          "requests": 2,
+          "transfer_bytes": 385024,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 331776,
+          "cache_hits": 115,
+          "published_objects": 13,
+          "connections": 1,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 0.2699409997148905,
+          "median_cache_validation_ms": 1.8362390001129825,
+          "median_payload_verify_publish_ms": 1.8258790005347691,
+          "median_receipt_ms": 0.08321800123667344
+        },
+        "pack-full": {
+          "median_ms": 4.949879003106616,
+          "min_ms": 3.672096001537284,
+          "max_ms": 5.770646999735618,
+          "requests": 1,
+          "transfer_bytes": 524288,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 471040,
+          "cache_hits": 115,
+          "published_objects": 13,
+          "connections": 1,
+          "hash_bytes": 1062265,
+          "median_metadata_ms": 0.2789290010696277,
+          "median_cache_validation_ms": 1.995030001125997,
+          "median_payload_verify_publish_ms": 2.091351998387836,
+          "median_receipt_ms": 0.08104399967123754
+        }
+      },
+      "coalesced_paired": {
+        "objects-serial": {
+          "median_delta_ms": -3.8705059960193466,
+          "wins": 7,
+          "blocks": 7
+        },
+        "objects-parallel": {
+          "median_delta_ms": -12.973170003533596,
+          "wins": 7,
+          "blocks": 7
+        },
+        "pack-exact": {
+          "median_delta_ms": -4.477534999750787,
+          "wins": 7,
+          "blocks": 7
+        },
+        "pack-full": {
+          "median_delta_ms": -0.7770720003463794,
+          "wins": 5,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "corpus": "small",
+      "delay_ms": 0.0,
+      "scenario": "sparse-10",
+      "modes": {
+        "objects-serial": {
+          "median_ms": 5.9033580000686925,
+          "min_ms": 5.116110001836205,
+          "max_ms": 6.464570000389358,
+          "requests": 13,
+          "transfer_bytes": 49152,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 12,
+          "connections": 1,
+          "hash_bytes": 62841,
+          "median_metadata_ms": 1.0701999999582767,
+          "median_cache_validation_ms": 0.11946700033149682,
+          "median_payload_verify_publish_ms": 4.477407001104439,
+          "median_receipt_ms": 0.06824899901403114
+        },
+        "objects-parallel": {
+          "median_ms": 14.822563996858662,
+          "min_ms": 13.941036999312928,
+          "max_ms": 15.470627997274278,
+          "requests": 13,
+          "transfer_bytes": 49152,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 12,
+          "connections": 9,
+          "hash_bytes": 62841,
+          "median_metadata_ms": 0.9785100010049064,
+          "median_cache_validation_ms": 0.15702800010330975,
+          "median_payload_verify_publish_ms": 13.078357998892898,
+          "median_receipt_ms": 0.13202000263845548
+        },
+        "pack-exact": {
+          "median_ms": 6.4250499999616295,
+          "min_ms": 5.4820580007799435,
+          "max_ms": 7.22529199993005,
+          "requests": 13,
+          "transfer_bytes": 49152,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 12,
+          "connections": 1,
+          "hash_bytes": 62841,
+          "median_metadata_ms": 1.0069099989777897,
+          "median_cache_validation_ms": 0.12072800018358976,
+          "median_payload_verify_publish_ms": 4.917749000014737,
+          "median_receipt_ms": 0.06740799653925933
+        },
+        "pack-coalesced": {
+          "median_ms": 3.0007550012669526,
+          "min_ms": 2.671957998245489,
+          "max_ms": 4.022179000457982,
+          "requests": 4,
+          "transfer_bytes": 258048,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 208896,
+          "cache_hits": 0,
+          "published_objects": 12,
+          "connections": 1,
+          "hash_bytes": 62841,
+          "median_metadata_ms": 0.9730409983603749,
+          "median_cache_validation_ms": 0.16056399908848107,
+          "median_payload_verify_publish_ms": 1.646979999350151,
+          "median_receipt_ms": 0.05998399865347892
+        },
+        "pack-full": {
+          "median_ms": 2.765180001006229,
+          "min_ms": 2.3516049986938015,
+          "max_ms": 5.309292999299942,
+          "requests": 2,
+          "transfer_bytes": 524288,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 475136,
+          "cache_hits": 0,
+          "published_objects": 12,
+          "connections": 1,
+          "hash_bytes": 587129,
+          "median_metadata_ms": 1.025353998556966,
+          "median_cache_validation_ms": 0.12125000284868293,
+          "median_payload_verify_publish_ms": 1.400543002091581,
+          "median_receipt_ms": 0.05996300023980439
+        }
+      },
+      "coalesced_paired": {
+        "objects-serial": {
+          "median_delta_ms": -2.4228530019172467,
+          "wins": 7,
+          "blocks": 7
+        },
+        "objects-parallel": {
+          "median_delta_ms": -11.503763002110645,
+          "wins": 7,
+          "blocks": 7
+        },
+        "pack-exact": {
+          "median_delta_ms": -3.2013279997045174,
+          "wins": 7,
+          "blocks": 7
+        },
+        "pack-full": {
+          "median_delta_ms": 0.3203529995516874,
+          "wins": 3,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "corpus": "small",
+      "delay_ms": 0.0,
+      "scenario": "one-missing",
+      "modes": {
+        "objects-serial": {
+          "median_ms": 3.258002001530258,
+          "min_ms": 2.8010640016873367,
+          "max_ms": 3.943923002225347,
+          "requests": 1,
+          "transfer_bytes": 4096,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 127,
+          "published_objects": 1,
+          "connections": 1,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 0.35463200038066134,
+          "median_cache_validation_ms": 1.823374997911742,
+          "median_payload_verify_publish_ms": 0.8662840009492356,
+          "median_receipt_ms": 0.09058100113179535
+        },
+        "objects-parallel": {
+          "median_ms": 3.9766139998391736,
+          "min_ms": 3.6210210018907674,
+          "max_ms": 4.381417002150556,
+          "requests": 1,
+          "transfer_bytes": 4096,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 127,
+          "published_objects": 1,
+          "connections": 1,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 0.4232239989505615,
+          "median_cache_validation_ms": 1.9369799993000925,
+          "median_payload_verify_publish_ms": 1.4623139977629762,
+          "median_receipt_ms": 0.14591600120184012
+        },
+        "pack-exact": {
+          "median_ms": 3.73725100143929,
+          "min_ms": 2.954716001113411,
+          "max_ms": 4.345691999333212,
+          "requests": 1,
+          "transfer_bytes": 4096,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 127,
+          "published_objects": 1,
+          "connections": 1,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 0.40168100167647935,
+          "median_cache_validation_ms": 1.8450759998813737,
+          "median_payload_verify_publish_ms": 1.2927950010634959,
+          "median_receipt_ms": 0.09237500125891529
+        },
+        "pack-coalesced": {
+          "median_ms": 3.512706000037724,
+          "min_ms": 3.111622998403618,
+          "max_ms": 4.323072000261163,
+          "requests": 1,
+          "transfer_bytes": 4096,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 127,
+          "published_objects": 1,
+          "connections": 1,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 0.3042560019821394,
+          "median_cache_validation_ms": 1.8854819973057602,
+          "median_payload_verify_publish_ms": 1.0799359988595825,
+          "median_receipt_ms": 0.23641799998586066
+        },
+        "pack-full": {
+          "median_ms": 3.8081159982539248,
+          "min_ms": 3.052684998692712,
+          "max_ms": 4.841214002226479,
+          "requests": 1,
+          "transfer_bytes": 524288,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 520192,
+          "cache_hits": 127,
+          "published_objects": 1,
+          "connections": 1,
+          "hash_bytes": 1062265,
+          "median_metadata_ms": 0.3408150005270727,
+          "median_cache_validation_ms": 1.8491639966669027,
+          "median_payload_verify_publish_ms": 1.2902650014439132,
+          "median_receipt_ms": 0.0968630010902416
+        }
+      },
+      "coalesced_paired": {
+        "objects-serial": {
+          "median_delta_ms": 0.3791489980358165,
+          "wins": 1,
+          "blocks": 7
+        },
+        "objects-parallel": {
+          "median_delta_ms": -0.4639079998014495,
+          "wins": 5,
+          "blocks": 7
+        },
+        "pack-exact": {
+          "median_delta_ms": -0.08658300066599622,
+          "wins": 4,
+          "blocks": 7
+        },
+        "pack-full": {
+          "median_delta_ms": 0.06953399861231446,
+          "wins": 3,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "corpus": "small",
+      "delay_ms": 2.0,
+      "scenario": "metadata-only",
+      "modes": {
+        "objects-serial": {
+          "median_ms": 3.481677002127981,
+          "min_ms": 3.2431540021207184,
+          "max_ms": 3.8581129992962815,
+          "requests": 1,
+          "transfer_bytes": 0,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 0,
+          "connections": 1,
+          "hash_bytes": 13689,
+          "median_metadata_ms": 3.341652001836337,
+          "median_cache_validation_ms": 0.01061999864759855,
+          "median_payload_verify_publish_ms": 0.0023050015443004668,
+          "median_receipt_ms": 0.06906099952175282
+        },
+        "objects-parallel": {
+          "median_ms": 3.451352000411134,
+          "min_ms": 3.337844002089696,
+          "max_ms": 3.6054939992027357,
+          "requests": 1,
+          "transfer_bytes": 0,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 0,
+          "connections": 1,
+          "hash_bytes": 13689,
+          "median_metadata_ms": 3.3027909994416405,
+          "median_cache_validation_ms": 0.010399999155197293,
+          "median_payload_verify_publish_ms": 0.0017230013327207416,
+          "median_receipt_ms": 0.06432199734263122
+        },
+        "pack-exact": {
+          "median_ms": 3.8946019994909875,
+          "min_ms": 3.2861769977898803,
+          "max_ms": 4.145194001466734,
+          "requests": 1,
+          "transfer_bytes": 0,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 0,
+          "connections": 1,
+          "hash_bytes": 13689,
+          "median_metadata_ms": 3.6735229987243656,
+          "median_cache_validation_ms": 0.012082997272955254,
+          "median_payload_verify_publish_ms": 0.0028859976737294346,
+          "median_receipt_ms": 0.07542299863416702
+        },
+        "pack-coalesced": {
+          "median_ms": 3.762987002119189,
+          "min_ms": 3.317784001410473,
+          "max_ms": 4.693024999141926,
+          "requests": 1,
+          "transfer_bytes": 0,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 0,
+          "connections": 1,
+          "hash_bytes": 13689,
+          "median_metadata_ms": 3.46516300123767,
+          "median_cache_validation_ms": 0.011211002856725827,
+          "median_payload_verify_publish_ms": 0.0024849978217389435,
+          "median_receipt_ms": 0.07434199869749136
+        },
+        "pack-full": {
+          "median_ms": 3.5974580023321323,
+          "min_ms": 3.2067339998320676,
+          "max_ms": 4.446810999070294,
+          "requests": 1,
+          "transfer_bytes": 0,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 0,
+          "connections": 1,
+          "hash_bytes": 13689,
+          "median_metadata_ms": 3.4305320004932582,
+          "median_cache_validation_ms": 0.01066100230673328,
+          "median_payload_verify_publish_ms": 0.0015929981600493193,
+          "median_receipt_ms": 0.06337000013445504
+        }
+      },
+      "coalesced_paired": {
+        "objects-serial": {
+          "median_delta_ms": 0.3114620012638625,
+          "wins": 3,
+          "blocks": 7
+        },
+        "objects-parallel": {
+          "median_delta_ms": 0.3116350017080549,
+          "wins": 2,
+          "blocks": 7
+        },
+        "pack-exact": {
+          "median_delta_ms": -0.11053100388380699,
+          "wins": 4,
+          "blocks": 7
+        },
+        "pack-full": {
+          "median_delta_ms": 0.22153600366436876,
+          "wins": 2,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "corpus": "small",
+      "delay_ms": 2.0,
+      "scenario": "cold-all",
+      "modes": {
+        "objects-serial": {
+          "median_ms": 351.91979199953494,
+          "min_ms": 340.6396030004544,
+          "max_ms": 357.8537480025261,
+          "requests": 129,
+          "transfer_bytes": 524288,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 128,
+          "connections": 1,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 3.2805110022309236,
+          "median_cache_validation_ms": 1.5676399998483248,
+          "median_payload_verify_publish_ms": 346.4488370009349,
+          "median_receipt_ms": 0.1261590005015023
+        },
+        "objects-parallel": {
+          "median_ms": 107.02394399777404,
+          "min_ms": 105.11947499981034,
+          "max_ms": 135.53029999820865,
+          "requests": 129,
+          "transfer_bytes": 524288,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 128,
+          "connections": 9,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 3.247020002163481,
+          "median_cache_validation_ms": 1.505026997620007,
+          "median_payload_verify_publish_ms": 101.05694100275286,
+          "median_receipt_ms": 0.16642499758745544
+        },
+        "pack-exact": {
+          "median_ms": 365.40729099942837,
+          "min_ms": 350.86593099913443,
+          "max_ms": 371.9936579982459,
+          "requests": 129,
+          "transfer_bytes": 524288,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 128,
+          "connections": 1,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 3.4445500023139175,
+          "median_cache_validation_ms": 1.7256249993806705,
+          "median_payload_verify_publish_ms": 359.6261099992262,
+          "median_receipt_ms": 0.12048900316585787
+        },
+        "pack-coalesced": {
+          "median_ms": 14.786913998250384,
+          "min_ms": 13.60204199954751,
+          "max_ms": 15.878199999860954,
+          "requests": 2,
+          "transfer_bytes": 524288,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 128,
+          "connections": 1,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 3.2439599999634083,
+          "median_cache_validation_ms": 1.5638680015399586,
+          "median_payload_verify_publish_ms": 9.053865000169026,
+          "median_receipt_ms": 0.10020999980042689
+        },
+        "pack-full": {
+          "median_ms": 15.298613001505146,
+          "min_ms": 13.763483002549037,
+          "max_ms": 16.403083001932828,
+          "requests": 2,
+          "transfer_bytes": 524288,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 128,
+          "connections": 1,
+          "hash_bytes": 1062265,
+          "median_metadata_ms": 3.345935001561884,
+          "median_cache_validation_ms": 1.7726689984556288,
+          "median_payload_verify_publish_ms": 9.41705299919704,
+          "median_receipt_ms": 0.09678399874246679
+        }
+      },
+      "coalesced_paired": {
+        "objects-serial": {
+          "median_delta_ms": -336.041591999674,
+          "wins": 7,
+          "blocks": 7
+        },
+        "objects-parallel": {
+          "median_delta_ms": -92.86797599997954,
+          "wins": 7,
+          "blocks": 7
+        },
+        "pack-exact": {
+          "median_delta_ms": -349.6889160014689,
+          "wins": 7,
+          "blocks": 7
+        },
+        "pack-full": {
+          "median_delta_ms": -0.5116990032547619,
+          "wins": 4,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "corpus": "small",
+      "delay_ms": 2.0,
+      "scenario": "cached-all",
+      "modes": {
+        "objects-serial": {
+          "median_ms": 2.5963970001612324,
+          "min_ms": 2.2676840017084032,
+          "max_ms": 2.921133000199916,
+          "requests": 0,
+          "transfer_bytes": 0,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 128,
+          "published_objects": 0,
+          "connections": 0,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 0.5765339992649388,
+          "median_cache_validation_ms": 1.960172001417959,
+          "median_payload_verify_publish_ms": 0.0028650028980337083,
+          "median_receipt_ms": 0.12835399684263393
+        },
+        "objects-parallel": {
+          "median_ms": 2.914843000326073,
+          "min_ms": 2.4170280012185685,
+          "max_ms": 4.484017001232132,
+          "requests": 0,
+          "transfer_bytes": 0,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 128,
+          "published_objects": 0,
+          "connections": 0,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 0.7322000019485131,
+          "median_cache_validation_ms": 2.0104030008951668,
+          "median_payload_verify_publish_ms": 0.003296998329460621,
+          "median_receipt_ms": 0.1265800019609742
+        },
+        "pack-exact": {
+          "median_ms": 2.395166000496829,
+          "min_ms": 2.2400750021915883,
+          "max_ms": 2.9883369970775675,
+          "requests": 0,
+          "transfer_bytes": 0,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 128,
+          "published_objects": 0,
+          "connections": 0,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 0.3274509981565643,
+          "median_cache_validation_ms": 1.9319130005897023,
+          "median_payload_verify_publish_ms": 0.002725002559600398,
+          "median_receipt_ms": 0.12695999976131134
+        },
+        "pack-coalesced": {
+          "median_ms": 2.7155950010637753,
+          "min_ms": 2.210498998465482,
+          "max_ms": 3.243744002247695,
+          "requests": 0,
+          "transfer_bytes": 0,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 128,
+          "published_objects": 0,
+          "connections": 0,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 0.47596299918950535,
+          "median_cache_validation_ms": 1.933637002366595,
+          "median_payload_verify_publish_ms": 0.002824999683070928,
+          "median_receipt_ms": 0.13100800060783513
+        },
+        "pack-full": {
+          "median_ms": 2.4603899983048905,
+          "min_ms": 2.304075998836197,
+          "max_ms": 3.3693660006974824,
+          "requests": 0,
+          "transfer_bytes": 0,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 128,
+          "published_objects": 0,
+          "connections": 0,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 0.29973800337756984,
+          "median_cache_validation_ms": 1.959492998139467,
+          "median_payload_verify_publish_ms": 0.002425000275252387,
+          "median_receipt_ms": 0.1279419993807096
+        }
+      },
+      "coalesced_paired": {
+        "objects-serial": {
+          "median_delta_ms": -0.12470399815356359,
+          "wins": 4,
+          "blocks": 7
+        },
+        "objects-parallel": {
+          "median_delta_ms": 0.027094003598904237,
+          "wins": 2,
+          "blocks": 7
+        },
+        "pack-exact": {
+          "median_delta_ms": 0.3475109988357872,
+          "wins": 2,
+          "blocks": 7
+        },
+        "pack-full": {
+          "median_delta_ms": -0.09269200018025003,
+          "wins": 4,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "corpus": "small",
+      "delay_ms": 2.0,
+      "scenario": "cached-90",
+      "modes": {
+        "objects-serial": {
+          "median_ms": 37.59085099954973,
+          "min_ms": 37.272241002938244,
+          "max_ms": 39.4308059985633,
+          "requests": 13,
+          "transfer_bytes": 53248,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 115,
+          "published_objects": 13,
+          "connections": 1,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 0.3474099976301659,
+          "median_cache_validation_ms": 1.9855879982060287,
+          "median_payload_verify_publish_ms": 34.922760001791175,
+          "median_receipt_ms": 0.11054000060539693
+        },
+        "objects-parallel": {
+          "median_ms": 17.236110998055665,
+          "min_ms": 16.58025099823135,
+          "max_ms": 18.33689500199398,
+          "requests": 13,
+          "transfer_bytes": 53248,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 115,
+          "published_objects": 13,
+          "connections": 8,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 0.36403100239112973,
+          "median_cache_validation_ms": 1.8923509996966459,
+          "median_payload_verify_publish_ms": 14.455122000072151,
+          "median_receipt_ms": 0.16497300021001138
+        },
+        "pack-exact": {
+          "median_ms": 37.54610100077116,
+          "min_ms": 36.51894100039499,
+          "max_ms": 40.018537001742516,
+          "requests": 13,
+          "transfer_bytes": 53248,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 115,
+          "published_objects": 13,
+          "connections": 1,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 0.32342399936169386,
+          "median_cache_validation_ms": 1.8790910035022534,
+          "median_payload_verify_publish_ms": 34.96766499665682,
+          "median_receipt_ms": 0.15812000128789805
+        },
+        "pack-coalesced": {
+          "median_ms": 9.226965998095693,
+          "min_ms": 8.71220900080516,
+          "max_ms": 10.330896002415102,
+          "requests": 2,
+          "transfer_bytes": 385024,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 331776,
+          "cache_hits": 115,
+          "published_objects": 13,
+          "connections": 1,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 0.3018829993379768,
+          "median_cache_validation_ms": 1.8427060022077058,
+          "median_payload_verify_publish_ms": 6.809050999436295,
+          "median_receipt_ms": 0.08965999950305559
+        },
+        "pack-full": {
+          "median_ms": 7.606393999594729,
+          "min_ms": 6.982337999943411,
+          "max_ms": 8.076260997768259,
+          "requests": 1,
+          "transfer_bytes": 524288,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 471040,
+          "cache_hits": 115,
+          "published_objects": 13,
+          "connections": 1,
+          "hash_bytes": 1062265,
+          "median_metadata_ms": 0.6824550000601448,
+          "median_cache_validation_ms": 1.8914860011136625,
+          "median_payload_verify_publish_ms": 4.952317001880147,
+          "median_receipt_ms": 0.08272700142697431
+        }
+      },
+      "coalesced_paired": {
+        "objects-serial": {
+          "median_delta_ms": -28.56044399959501,
+          "wins": 7,
+          "blocks": 7
+        },
+        "objects-parallel": {
+          "median_delta_ms": -8.103665997623466,
+          "wins": 7,
+          "blocks": 7
+        },
+        "pack-exact": {
+          "median_delta_ms": -28.313206999882823,
+          "wins": 7,
+          "blocks": 7
+        },
+        "pack-full": {
+          "median_delta_ms": 1.8162939995818306,
+          "wins": 0,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "corpus": "small",
+      "delay_ms": 2.0,
+      "scenario": "sparse-10",
+      "modes": {
+        "objects-serial": {
+          "median_ms": 35.55046499968739,
+          "min_ms": 34.34459399795742,
+          "max_ms": 40.17373500028043,
+          "requests": 13,
+          "transfer_bytes": 49152,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 12,
+          "connections": 1,
+          "hash_bytes": 62841,
+          "median_metadata_ms": 3.349470000102883,
+          "median_cache_validation_ms": 0.12151000191806816,
+          "median_payload_verify_publish_ms": 31.56457599834539,
+          "median_receipt_ms": 0.08544099910068326
+        },
+        "objects-parallel": {
+          "median_ms": 17.298553997534327,
+          "min_ms": 16.663640999468043,
+          "max_ms": 19.420759999775328,
+          "requests": 13,
+          "transfer_bytes": 49152,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 12,
+          "connections": 9,
+          "hash_bytes": 62841,
+          "median_metadata_ms": 3.378952002094593,
+          "median_cache_validation_ms": 0.13200999819673598,
+          "median_payload_verify_publish_ms": 13.163607000024058,
+          "median_receipt_ms": 0.13232199853518978
+        },
+        "pack-exact": {
+          "median_ms": 36.450522999075474,
+          "min_ms": 35.19218400106183,
+          "max_ms": 37.61663600016618,
+          "requests": 13,
+          "transfer_bytes": 49152,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 12,
+          "connections": 1,
+          "hash_bytes": 62841,
+          "median_metadata_ms": 3.709417000209214,
+          "median_cache_validation_ms": 0.29943800109322183,
+          "median_payload_verify_publish_ms": 32.442668998555746,
+          "median_receipt_ms": 0.0823560003482271
+        },
+        "pack-coalesced": {
+          "median_ms": 13.549626000894932,
+          "min_ms": 12.14117199924658,
+          "max_ms": 14.14877600109321,
+          "requests": 4,
+          "transfer_bytes": 258048,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 208896,
+          "cache_hits": 0,
+          "published_objects": 12,
+          "connections": 1,
+          "hash_bytes": 62841,
+          "median_metadata_ms": 3.469283998128958,
+          "median_cache_validation_ms": 0.12853400039603002,
+          "median_payload_verify_publish_ms": 9.145447002083529,
+          "median_receipt_ms": 0.12492600217228755
+        },
+        "pack-full": {
+          "median_ms": 8.035865997953806,
+          "min_ms": 6.712886999594048,
+          "max_ms": 9.345549999125069,
+          "requests": 2,
+          "transfer_bytes": 524288,
+          "manifest_bytes": 13689,
+          "overfetch_bytes": 475136,
+          "cache_hits": 0,
+          "published_objects": 12,
+          "connections": 1,
+          "hash_bytes": 587129,
+          "median_metadata_ms": 3.459676998318173,
+          "median_cache_validation_ms": 0.1239140001416672,
+          "median_payload_verify_publish_ms": 3.886804999638116,
+          "median_receipt_ms": 0.08277599772554822
+        }
+      },
+      "coalesced_paired": {
+        "objects-serial": {
+          "median_delta_ms": -21.824264997121645,
+          "wins": 7,
+          "blocks": 7
+        },
+        "objects-parallel": {
+          "median_delta_ms": -3.913652995834127,
+          "wins": 7,
+          "blocks": 7
+        },
+        "pack-exact": {
+          "median_delta_ms": -22.301746997982264,
+          "wins": 7,
+          "blocks": 7
+        },
+        "pack-full": {
+          "median_delta_ms": 5.349035003746394,
+          "wins": 0,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "corpus": "small",
+      "delay_ms": 2.0,
+      "scenario": "one-missing",
+      "modes": {
+        "objects-serial": {
+          "median_ms": 5.789509003079729,
+          "min_ms": 5.331241998646874,
+          "max_ms": 6.837937999080168,
+          "requests": 1,
+          "transfer_bytes": 4096,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 127,
+          "published_objects": 1,
+          "connections": 1,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 0.5006190003769007,
+          "median_cache_validation_ms": 1.9306079993839376,
+          "median_payload_verify_publish_ms": 3.240771999116987,
+          "median_receipt_ms": 0.184240001544822
+        },
+        "objects-parallel": {
+          "median_ms": 6.564470997545868,
+          "min_ms": 6.120521000411827,
+          "max_ms": 6.641656000283547,
+          "requests": 1,
+          "transfer_bytes": 4096,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 127,
+          "published_objects": 1,
+          "connections": 1,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 0.3374700027052313,
+          "median_cache_validation_ms": 1.9762069969146978,
+          "median_payload_verify_publish_ms": 3.8819030014565215,
+          "median_receipt_ms": 0.17072400078177452
+        },
+        "pack-exact": {
+          "median_ms": 5.858169999555685,
+          "min_ms": 5.084584998257924,
+          "max_ms": 6.986499000049662,
+          "requests": 1,
+          "transfer_bytes": 4096,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 127,
+          "published_objects": 1,
+          "connections": 1,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 0.3394329978618771,
+          "median_cache_validation_ms": 1.9795369989878964,
+          "median_payload_verify_publish_ms": 3.3910090023709927,
+          "median_receipt_ms": 0.09787499948288314
+        },
+        "pack-coalesced": {
+          "median_ms": 5.801754003186943,
+          "min_ms": 5.322182001691544,
+          "max_ms": 6.373997999617131,
+          "requests": 1,
+          "transfer_bytes": 4096,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 127,
+          "published_objects": 1,
+          "connections": 1,
+          "hash_bytes": 537977,
+          "median_metadata_ms": 0.31730100090499036,
+          "median_cache_validation_ms": 1.9647629997052718,
+          "median_payload_verify_publish_ms": 3.0960559997765813,
+          "median_receipt_ms": 0.10234400178887881
+        },
+        "pack-full": {
+          "median_ms": 6.598060001124395,
+          "min_ms": 5.8320579992141575,
+          "max_ms": 7.063918001222191,
+          "requests": 1,
+          "transfer_bytes": 524288,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 520192,
+          "cache_hits": 127,
+          "published_objects": 1,
+          "connections": 1,
+          "hash_bytes": 1062265,
+          "median_metadata_ms": 0.5979050001769792,
+          "median_cache_validation_ms": 2.004453999688849,
+          "median_payload_verify_publish_ms": 3.533684001013171,
+          "median_receipt_ms": 0.1944190007634461
+        }
+      },
+      "coalesced_paired": {
+        "objects-serial": {
+          "median_delta_ms": -0.21574699712800793,
+          "wins": 6,
+          "blocks": 7
+        },
+        "objects-parallel": {
+          "median_delta_ms": -0.7627169943589251,
+          "wins": 6,
+          "blocks": 7
+        },
+        "pack-exact": {
+          "median_delta_ms": -0.023338001483352855,
+          "wins": 4,
+          "blocks": 7
+        },
+        "pack-full": {
+          "median_delta_ms": -0.796305997937452,
+          "wins": 6,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "corpus": "mixed",
+      "delay_ms": 0.0,
+      "scenario": "metadata-only",
+      "modes": {
+        "objects-serial": {
+          "median_ms": 1.1283159983577207,
+          "min_ms": 1.004336001642514,
+          "max_ms": 1.5265930014720652,
+          "requests": 1,
+          "transfer_bytes": 0,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 0,
+          "connections": 1,
+          "hash_bytes": 13898,
+          "median_metadata_ms": 0.9968269987439271,
+          "median_cache_validation_ms": 0.00959899989538826,
+          "median_payload_verify_publish_ms": 0.0020040024537593126,
+          "median_receipt_ms": 0.06012400262989104
+        },
+        "objects-parallel": {
+          "median_ms": 1.0379480008850805,
+          "min_ms": 0.9278489997086581,
+          "max_ms": 1.430136999260867,
+          "requests": 1,
+          "transfer_bytes": 0,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 0,
+          "connections": 1,
+          "hash_bytes": 13898,
+          "median_metadata_ms": 0.9086730024137069,
+          "median_cache_validation_ms": 0.009438001143280417,
+          "median_payload_verify_publish_ms": 0.0021740015654359013,
+          "median_receipt_ms": 0.0578500003030058
+        },
+        "pack-exact": {
+          "median_ms": 1.2860520000685938,
+          "min_ms": 1.0085880021506455,
+          "max_ms": 2.0118690008530393,
+          "requests": 1,
+          "transfer_bytes": 0,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 0,
+          "connections": 1,
+          "hash_bytes": 13898,
+          "median_metadata_ms": 1.150525000412017,
+          "median_cache_validation_ms": 0.009637999028200284,
+          "median_payload_verify_publish_ms": 0.002333999873371795,
+          "median_receipt_ms": 0.061656999605474994
+        },
+        "pack-coalesced": {
+          "median_ms": 1.1249710005358793,
+          "min_ms": 0.9596109994163271,
+          "max_ms": 1.7064730018319096,
+          "requests": 1,
+          "transfer_bytes": 0,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 0,
+          "connections": 1,
+          "hash_bytes": 13898,
+          "median_metadata_ms": 0.9760899993125349,
+          "median_cache_validation_ms": 0.009398001566296443,
+          "median_payload_verify_publish_ms": 0.0020139996195212007,
+          "median_receipt_ms": 0.05795000106445514
+        },
+        "pack-full": {
+          "median_ms": 1.3757870001427364,
+          "min_ms": 0.9803280008782167,
+          "max_ms": 1.6525229984836187,
+          "requests": 1,
+          "transfer_bytes": 0,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 0,
+          "connections": 1,
+          "hash_bytes": 13898,
+          "median_metadata_ms": 1.2420940001902636,
+          "median_cache_validation_ms": 0.010078998457174748,
+          "median_payload_verify_publish_ms": 0.002064000000245869,
+          "median_receipt_ms": 0.06482299795607105
+        }
+      },
+      "coalesced_paired": {
+        "objects-serial": {
+          "median_delta_ms": 0.004601999535225332,
+          "wins": 3,
+          "blocks": 7
+        },
+        "objects-parallel": {
+          "median_delta_ms": 0.013889999536331743,
+          "wins": 3,
+          "blocks": 7
+        },
+        "pack-exact": {
+          "median_delta_ms": -0.23286600116989575,
+          "wins": 4,
+          "blocks": 7
+        },
+        "pack-full": {
+          "median_delta_ms": -0.0412499975936953,
+          "wins": 4,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "corpus": "mixed",
+      "delay_ms": 0.0,
+      "scenario": "cold-all",
+      "modes": {
+        "objects-serial": {
+          "median_ms": 50.803543999791145,
+          "min_ms": 48.833136999746785,
+          "max_ms": 55.657558998063905,
+          "requests": 129,
+          "transfer_bytes": 3932160,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 128,
+          "connections": 1,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 1.1841739978990518,
+          "median_cache_validation_ms": 1.2511419990914874,
+          "median_payload_verify_publish_ms": 48.308241999620805,
+          "median_receipt_ms": 0.10189300155616365
+        },
+        "objects-parallel": {
+          "median_ms": 92.9780770020443,
+          "min_ms": 92.14482300012605,
+          "max_ms": 94.27427999980864,
+          "requests": 129,
+          "transfer_bytes": 3932160,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 128,
+          "connections": 9,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 0.9727459982968867,
+          "median_cache_validation_ms": 1.2611919992195908,
+          "median_payload_verify_publish_ms": 90.23596800034284,
+          "median_receipt_ms": 0.14962299974285997
+        },
+        "pack-exact": {
+          "median_ms": 53.26663199957693,
+          "min_ms": 51.637914999446366,
+          "max_ms": 55.84377500053961,
+          "requests": 129,
+          "transfer_bytes": 3932160,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 128,
+          "connections": 1,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 1.1419649999879766,
+          "median_cache_validation_ms": 1.2300500020501204,
+          "median_payload_verify_publish_ms": 50.706638998235576,
+          "median_receipt_ms": 0.10003900024457835
+        },
+        "pack-coalesced": {
+          "median_ms": 13.144305001333123,
+          "min_ms": 12.790462998964358,
+          "max_ms": 15.980741998646408,
+          "requests": 2,
+          "transfer_bytes": 3932160,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 128,
+          "connections": 1,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 1.1786249997385312,
+          "median_cache_validation_ms": 1.4445550004893448,
+          "median_payload_verify_publish_ms": 10.107491998496698,
+          "median_receipt_ms": 0.0968630010902416
+        },
+        "pack-full": {
+          "median_ms": 15.212786001939094,
+          "min_ms": 12.73149600092438,
+          "max_ms": 16.130264000821626,
+          "requests": 2,
+          "transfer_bytes": 3932160,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 128,
+          "connections": 1,
+          "hash_bytes": 7878218,
+          "median_metadata_ms": 1.0997640019922983,
+          "median_cache_validation_ms": 1.134439000452403,
+          "median_payload_verify_publish_ms": 11.760843997763004,
+          "median_receipt_ms": 0.10400699829915538
+        }
+      },
+      "coalesced_paired": {
+        "objects-serial": {
+          "median_delta_ms": -37.542539001151454,
+          "wins": 7,
+          "blocks": 7
+        },
+        "objects-parallel": {
+          "median_delta_ms": -79.25221500045154,
+          "wins": 7,
+          "blocks": 7
+        },
+        "pack-exact": {
+          "median_delta_ms": -39.8630330018932,
+          "wins": 7,
+          "blocks": 7
+        },
+        "pack-full": {
+          "median_delta_ms": -0.4232930004945956,
+          "wins": 5,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "corpus": "mixed",
+      "delay_ms": 0.0,
+      "scenario": "cached-all",
+      "modes": {
+        "objects-serial": {
+          "median_ms": 4.162256998824887,
+          "min_ms": 3.8801519986009225,
+          "max_ms": 4.814383999473648,
+          "requests": 0,
+          "transfer_bytes": 0,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 128,
+          "published_objects": 0,
+          "connections": 0,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 0.3195850003976375,
+          "median_cache_validation_ms": 3.6338360005174764,
+          "median_payload_verify_publish_ms": 0.0032759999157860875,
+          "median_receipt_ms": 0.13364400001592003
+        },
+        "objects-parallel": {
+          "median_ms": 4.394151001179125,
+          "min_ms": 4.132220001338283,
+          "max_ms": 5.4339819980668835,
+          "requests": 0,
+          "transfer_bytes": 0,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 128,
+          "published_objects": 0,
+          "connections": 0,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 0.5263169987301808,
+          "median_cache_validation_ms": 3.6647070010076277,
+          "median_payload_verify_publish_ms": 0.003516001015668735,
+          "median_receipt_ms": 0.13809200027026236
+        },
+        "pack-exact": {
+          "median_ms": 4.1142339978250675,
+          "min_ms": 3.995628001575824,
+          "max_ms": 4.804889002116397,
+          "requests": 0,
+          "transfer_bytes": 0,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 128,
+          "published_objects": 0,
+          "connections": 0,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 0.33170900132972747,
+          "median_cache_validation_ms": 3.6467960017034784,
+          "median_payload_verify_publish_ms": 0.0033659998734947294,
+          "median_receipt_ms": 0.1295749971177429
+        },
+        "pack-coalesced": {
+          "median_ms": 4.27720399966347,
+          "min_ms": 3.9843840022513177,
+          "max_ms": 4.448710998985916,
+          "requests": 0,
+          "transfer_bytes": 0,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 128,
+          "published_objects": 0,
+          "connections": 0,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 0.35853899680660106,
+          "median_cache_validation_ms": 3.690360998007236,
+          "median_payload_verify_publish_ms": 0.0034469994716346264,
+          "median_receipt_ms": 0.14245999773265794
+        },
+        "pack-full": {
+          "median_ms": 4.244648000167217,
+          "min_ms": 4.026959999464452,
+          "max_ms": 5.430421999335522,
+          "requests": 0,
+          "transfer_bytes": 0,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 128,
+          "published_objects": 0,
+          "connections": 0,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 0.33595700006117113,
+          "median_cache_validation_ms": 3.682012000354007,
+          "median_payload_verify_publish_ms": 0.0031960007618181407,
+          "median_receipt_ms": 0.13405400022747926
+        }
+      },
+      "coalesced_paired": {
+        "objects-serial": {
+          "median_delta_ms": -0.0396249997720588,
+          "wins": 4,
+          "blocks": 7
+        },
+        "objects-parallel": {
+          "median_delta_ms": -0.16623700139462017,
+          "wins": 6,
+          "blocks": 7
+        },
+        "pack-exact": {
+          "median_delta_ms": 0.16297000183840282,
+          "wins": 3,
+          "blocks": 7
+        },
+        "pack-full": {
+          "median_delta_ms": -0.08178499774658121,
+          "wins": 4,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "corpus": "mixed",
+      "delay_ms": 0.0,
+      "scenario": "cached-90",
+      "modes": {
+        "objects-serial": {
+          "median_ms": 9.824652999668615,
+          "min_ms": 9.22725099735544,
+          "max_ms": 11.150065001857001,
+          "requests": 13,
+          "transfer_bytes": 450560,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 115,
+          "published_objects": 13,
+          "connections": 1,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 0.372947000869317,
+          "median_cache_validation_ms": 3.4543960027804133,
+          "median_payload_verify_publish_ms": 5.8192059987050015,
+          "median_receipt_ms": 0.14706900037708692
+        },
+        "objects-parallel": {
+          "median_ms": 17.25142000213964,
+          "min_ms": 16.97256099942024,
+          "max_ms": 17.772629998944467,
+          "requests": 13,
+          "transfer_bytes": 450560,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 115,
+          "published_objects": 13,
+          "connections": 8,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 0.334664000547491,
+          "median_cache_validation_ms": 3.3653180034889374,
+          "median_payload_verify_publish_ms": 13.092591001623077,
+          "median_receipt_ms": 0.14707900118082762
+        },
+        "pack-exact": {
+          "median_ms": 9.972527997888392,
+          "min_ms": 9.355153000797145,
+          "max_ms": 10.93173900153488,
+          "requests": 13,
+          "transfer_bytes": 450560,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 115,
+          "published_objects": 13,
+          "connections": 1,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 0.444444998720428,
+          "median_cache_validation_ms": 3.355044998897938,
+          "median_payload_verify_publish_ms": 5.882091998500982,
+          "median_receipt_ms": 0.09078199946088716
+        },
+        "pack-coalesced": {
+          "median_ms": 9.96086599843693,
+          "min_ms": 9.634957001253497,
+          "max_ms": 11.479351996968035,
+          "requests": 12,
+          "transfer_bytes": 450560,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 115,
+          "published_objects": 13,
+          "connections": 1,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 0.7062859986035619,
+          "median_cache_validation_ms": 3.5447670015855692,
+          "median_payload_verify_publish_ms": 5.814830998133402,
+          "median_receipt_ms": 0.09384800068801269
+        },
+        "pack-full": {
+          "median_ms": 8.386844998312881,
+          "min_ms": 7.917275001091184,
+          "max_ms": 9.320118999312399,
+          "requests": 1,
+          "transfer_bytes": 3932160,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 3481600,
+          "cache_hits": 115,
+          "published_objects": 13,
+          "connections": 1,
+          "hash_bytes": 7878218,
+          "median_metadata_ms": 0.30687199978274293,
+          "median_cache_validation_ms": 3.388668999832589,
+          "median_payload_verify_publish_ms": 4.526873999566305,
+          "median_receipt_ms": 0.09532100011711009
+        }
+      },
+      "coalesced_paired": {
+        "objects-serial": {
+          "median_delta_ms": 0.5796319965156727,
+          "wins": 3,
+          "blocks": 7
+        },
+        "objects-parallel": {
+          "median_delta_ms": -7.0285309993778355,
+          "wins": 7,
+          "blocks": 7
+        },
+        "pack-exact": {
+          "median_delta_ms": 0.6057129976397846,
+          "wins": 2,
+          "blocks": 7
+        },
+        "pack-full": {
+          "median_delta_ms": 1.6082300026027951,
+          "wins": 0,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "corpus": "mixed",
+      "delay_ms": 0.0,
+      "scenario": "sparse-10",
+      "modes": {
+        "objects-serial": {
+          "median_ms": 5.985916999634355,
+          "min_ms": 5.454713998915395,
+          "max_ms": 6.707466000079876,
+          "requests": 13,
+          "transfer_bytes": 544768,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 12,
+          "connections": 1,
+          "hash_bytes": 558666,
+          "median_metadata_ms": 1.207419001730159,
+          "median_cache_validation_ms": 0.10894600200117566,
+          "median_payload_verify_publish_ms": 4.463812001631595,
+          "median_receipt_ms": 0.06232799933059141
+        },
+        "objects-parallel": {
+          "median_ms": 14.331339996715542,
+          "min_ms": 13.586127999587916,
+          "max_ms": 14.750809001270682,
+          "requests": 13,
+          "transfer_bytes": 544768,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 12,
+          "connections": 9,
+          "hash_bytes": 558666,
+          "median_metadata_ms": 1.0336099985579494,
+          "median_cache_validation_ms": 0.11038899901905097,
+          "median_payload_verify_publish_ms": 12.481434998335317,
+          "median_receipt_ms": 0.11838499995064922
+        },
+        "pack-exact": {
+          "median_ms": 6.287947002419969,
+          "min_ms": 5.724403999920469,
+          "max_ms": 7.016640000074403,
+          "requests": 13,
+          "transfer_bytes": 544768,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 12,
+          "connections": 1,
+          "hash_bytes": 558666,
+          "median_metadata_ms": 1.0744640021584928,
+          "median_cache_validation_ms": 0.10828499944182113,
+          "median_payload_verify_publish_ms": 4.872114001045702,
+          "median_receipt_ms": 0.06712699905619957
+        },
+        "pack-coalesced": {
+          "median_ms": 6.520344999444205,
+          "min_ms": 5.552505001105601,
+          "max_ms": 7.7836890013713855,
+          "requests": 11,
+          "transfer_bytes": 610304,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 65536,
+          "cache_hits": 0,
+          "published_objects": 12,
+          "connections": 1,
+          "hash_bytes": 558666,
+          "median_metadata_ms": 1.5324480009439867,
+          "median_cache_validation_ms": 0.10869600009755231,
+          "median_payload_verify_publish_ms": 4.705219998868415,
+          "median_receipt_ms": 0.06642600055783987
+        },
+        "pack-full": {
+          "median_ms": 5.4135340033099055,
+          "min_ms": 5.001413999707438,
+          "max_ms": 10.74665999840363,
+          "requests": 2,
+          "transfer_bytes": 3932160,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 3387392,
+          "cache_hits": 0,
+          "published_objects": 12,
+          "connections": 1,
+          "hash_bytes": 4490826,
+          "median_metadata_ms": 1.1547089998202864,
+          "median_cache_validation_ms": 0.14314099826151505,
+          "median_payload_verify_publish_ms": 3.8212479994399473,
+          "median_receipt_ms": 0.061586997617268935
+        }
+      },
+      "coalesced_paired": {
+        "objects-serial": {
+          "median_delta_ms": 0.42248300087521784,
+          "wins": 1,
+          "blocks": 7
+        },
+        "objects-parallel": {
+          "median_delta_ms": -7.592410995130194,
+          "wins": 7,
+          "blocks": 7
+        },
+        "pack-exact": {
+          "median_delta_ms": 0.29621100111398846,
+          "wins": 1,
+          "blocks": 7
+        },
+        "pack-full": {
+          "median_delta_ms": 0.9011530019051861,
+          "wins": 1,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "corpus": "mixed",
+      "delay_ms": 0.0,
+      "scenario": "one-missing",
+      "modes": {
+        "objects-serial": {
+          "median_ms": 5.482620999828214,
+          "min_ms": 4.88268600020092,
+          "max_ms": 6.220187999133486,
+          "requests": 1,
+          "transfer_bytes": 4096,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 127,
+          "published_objects": 1,
+          "connections": 1,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 0.32731000101193786,
+          "median_cache_validation_ms": 3.6472609972406644,
+          "median_payload_verify_publish_ms": 1.066568998794537,
+          "median_receipt_ms": 0.09407799734617583
+        },
+        "objects-parallel": {
+          "median_ms": 6.200420997629408,
+          "min_ms": 5.207288999372395,
+          "max_ms": 6.6615769974305294,
+          "requests": 1,
+          "transfer_bytes": 4096,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 127,
+          "published_objects": 1,
+          "connections": 1,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 0.3065810014959425,
+          "median_cache_validation_ms": 3.6742089978361037,
+          "median_payload_verify_publish_ms": 1.514971001597587,
+          "median_receipt_ms": 0.1813039998523891
+        },
+        "pack-exact": {
+          "median_ms": 5.4948369979683775,
+          "min_ms": 5.189306000829674,
+          "max_ms": 5.786524998256937,
+          "requests": 1,
+          "transfer_bytes": 4096,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 127,
+          "published_objects": 1,
+          "connections": 1,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 0.3286829996795859,
+          "median_cache_validation_ms": 3.6594550001609605,
+          "median_payload_verify_publish_ms": 1.1554990014701616,
+          "median_receipt_ms": 0.10855499931494705
+        },
+        "pack-coalesced": {
+          "median_ms": 5.25668399859569,
+          "min_ms": 4.816713997570332,
+          "max_ms": 6.994542996835662,
+          "requests": 1,
+          "transfer_bytes": 4096,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 127,
+          "published_objects": 1,
+          "connections": 1,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 0.36361000093165785,
+          "median_cache_validation_ms": 3.669349000119837,
+          "median_payload_verify_publish_ms": 0.917596000363119,
+          "median_receipt_ms": 0.09119300011661835
+        },
+        "pack-full": {
+          "median_ms": 7.663891999982297,
+          "min_ms": 7.398401001410093,
+          "max_ms": 7.892343997809803,
+          "requests": 1,
+          "transfer_bytes": 3932160,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 3928064,
+          "cache_hits": 127,
+          "published_objects": 1,
+          "connections": 1,
+          "hash_bytes": 7878218,
+          "median_metadata_ms": 0.3956789987569209,
+          "median_cache_validation_ms": 3.6238759967091028,
+          "median_payload_verify_publish_ms": 3.4268230010638945,
+          "median_receipt_ms": 0.10416799705126323
+        }
+      },
+      "coalesced_paired": {
+        "objects-serial": {
+          "median_delta_ms": -0.07938800263218582,
+          "wins": 4,
+          "blocks": 7
+        },
+        "objects-parallel": {
+          "median_delta_ms": -0.8457199983240571,
+          "wins": 6,
+          "blocks": 7
+        },
+        "pack-exact": {
+          "median_delta_ms": -0.1794299969333224,
+          "wins": 4,
+          "blocks": 7
+        },
+        "pack-full": {
+          "median_delta_ms": -2.382053000474116,
+          "wins": 7,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "corpus": "mixed",
+      "delay_ms": 2.0,
+      "scenario": "metadata-only",
+      "modes": {
+        "objects-serial": {
+          "median_ms": 3.4278950006410014,
+          "min_ms": 3.207363002729835,
+          "max_ms": 4.02296100219246,
+          "requests": 1,
+          "transfer_bytes": 0,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 0,
+          "connections": 1,
+          "hash_bytes": 13898,
+          "median_metadata_ms": 3.150469001411693,
+          "median_cache_validation_ms": 0.010830000974237919,
+          "median_payload_verify_publish_ms": 0.002634998963912949,
+          "median_receipt_ms": 0.06899100117152557
+        },
+        "objects-parallel": {
+          "median_ms": 3.8022049993742257,
+          "min_ms": 3.1173580027825665,
+          "max_ms": 4.325567999330815,
+          "requests": 1,
+          "transfer_bytes": 0,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 0,
+          "connections": 1,
+          "hash_bytes": 13898,
+          "median_metadata_ms": 3.548434000549605,
+          "median_cache_validation_ms": 0.01049899947247468,
+          "median_payload_verify_publish_ms": 0.002525001036701724,
+          "median_receipt_ms": 0.07278800330823287
+        },
+        "pack-exact": {
+          "median_ms": 3.3282470030826516,
+          "min_ms": 3.1058159984240774,
+          "max_ms": 3.9726390023133717,
+          "requests": 1,
+          "transfer_bytes": 0,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 0,
+          "connections": 1,
+          "hash_bytes": 13898,
+          "median_metadata_ms": 3.173203000187641,
+          "median_cache_validation_ms": 0.010750001820269972,
+          "median_payload_verify_publish_ms": 0.0023139982658904046,
+          "median_receipt_ms": 0.06892000237712637
+        },
+        "pack-coalesced": {
+          "median_ms": 3.525907002767781,
+          "min_ms": 3.147226001601666,
+          "max_ms": 4.483646996959578,
+          "requests": 1,
+          "transfer_bytes": 0,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 0,
+          "connections": 1,
+          "hash_bytes": 13898,
+          "median_metadata_ms": 3.296623002825072,
+          "median_cache_validation_ms": 0.010789997759275138,
+          "median_payload_verify_publish_ms": 0.0025650006136856973,
+          "median_receipt_ms": 0.06685699918307364
+        },
+        "pack-full": {
+          "median_ms": 3.4164140015491284,
+          "min_ms": 3.1374940008390695,
+          "max_ms": 3.8835759987705387,
+          "requests": 1,
+          "transfer_bytes": 0,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 0,
+          "connections": 1,
+          "hash_bytes": 13898,
+          "median_metadata_ms": 3.2682029996067286,
+          "median_cache_validation_ms": 0.01038000118569471,
+          "median_payload_verify_publish_ms": 0.00222400194616057,
+          "median_receipt_ms": 0.06828899859101512
+        }
+      },
+      "coalesced_paired": {
+        "objects-serial": {
+          "median_delta_ms": -0.04316399645176716,
+          "wins": 4,
+          "blocks": 7
+        },
+        "objects-parallel": {
+          "median_delta_ms": 0.04061299841850996,
+          "wins": 3,
+          "blocks": 7
+        },
+        "pack-exact": {
+          "median_delta_ms": 0.01541299934615381,
+          "wins": 3,
+          "blocks": 7
+        },
+        "pack-full": {
+          "median_delta_ms": 0.06934299381100573,
+          "wins": 2,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "corpus": "mixed",
+      "delay_ms": 2.0,
+      "scenario": "cold-all",
+      "modes": {
+        "objects-serial": {
+          "median_ms": 373.78969400015194,
+          "min_ms": 354.47514900079113,
+          "max_ms": 384.589490997314,
+          "requests": 129,
+          "transfer_bytes": 3932160,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 128,
+          "connections": 1,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 3.7646929995389655,
+          "median_cache_validation_ms": 1.7696249997243285,
+          "median_payload_verify_publish_ms": 368.4726379979111,
+          "median_receipt_ms": 0.11514799916767515
+        },
+        "objects-parallel": {
+          "median_ms": 97.32661499947426,
+          "min_ms": 94.9906319983711,
+          "max_ms": 110.36424099802389,
+          "requests": 129,
+          "transfer_bytes": 3932160,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 128,
+          "connections": 9,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 3.2035309995990247,
+          "median_cache_validation_ms": 2.22205899990513,
+          "median_payload_verify_publish_ms": 91.2573310015432,
+          "median_receipt_ms": 0.15140699906623922
+        },
+        "pack-exact": {
+          "median_ms": 367.865742999129,
+          "min_ms": 361.9303170016792,
+          "max_ms": 378.73784199837246,
+          "requests": 129,
+          "transfer_bytes": 3932160,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 128,
+          "connections": 1,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 3.226314001949504,
+          "median_cache_validation_ms": 2.251445999718271,
+          "median_payload_verify_publish_ms": 362.5246019983024,
+          "median_receipt_ms": 0.1852509994932916
+        },
+        "pack-coalesced": {
+          "median_ms": 19.583110999519704,
+          "min_ms": 17.601020001166034,
+          "max_ms": 23.564445997180883,
+          "requests": 2,
+          "transfer_bytes": 3932160,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 128,
+          "connections": 1,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 3.364848002092913,
+          "median_cache_validation_ms": 1.389334000123199,
+          "median_payload_verify_publish_ms": 13.722825999138877,
+          "median_receipt_ms": 0.10034999650088139
+        },
+        "pack-full": {
+          "median_ms": 20.162935001280857,
+          "min_ms": 18.880556999647524,
+          "max_ms": 23.1022399966605,
+          "requests": 2,
+          "transfer_bytes": 3932160,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 128,
+          "connections": 1,
+          "hash_bytes": 7878218,
+          "median_metadata_ms": 3.192152002156945,
+          "median_cache_validation_ms": 2.021980999415973,
+          "median_payload_verify_publish_ms": 15.009333001216874,
+          "median_receipt_ms": 0.1036770008795429
+        }
+      },
+      "coalesced_paired": {
+        "objects-serial": {
+          "median_delta_ms": -353.1197560005239,
+          "wins": 7,
+          "blocks": 7
+        },
+        "objects-parallel": {
+          "median_delta_ms": -77.36145600210875,
+          "wins": 7,
+          "blocks": 7
+        },
+        "pack-exact": {
+          "median_delta_ms": -347.62770099769114,
+          "wins": 7,
+          "blocks": 7
+        },
+        "pack-full": {
+          "median_delta_ms": 0.09978900197893381,
+          "wins": 3,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "corpus": "mixed",
+      "delay_ms": 2.0,
+      "scenario": "cached-all",
+      "modes": {
+        "objects-serial": {
+          "median_ms": 4.62495499959914,
+          "min_ms": 4.037080998386955,
+          "max_ms": 5.588535001152195,
+          "requests": 0,
+          "transfer_bytes": 0,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 128,
+          "published_objects": 0,
+          "connections": 0,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 0.3779360013140831,
+          "median_cache_validation_ms": 4.1134150014841,
+          "median_payload_verify_publish_ms": 0.0036569981602951884,
+          "median_receipt_ms": 0.14401199950953014
+        },
+        "objects-parallel": {
+          "median_ms": 4.629430000932189,
+          "min_ms": 4.023797999252565,
+          "max_ms": 5.102921000798233,
+          "requests": 0,
+          "transfer_bytes": 0,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 128,
+          "published_objects": 0,
+          "connections": 0,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 0.4940659964631777,
+          "median_cache_validation_ms": 3.8289029980660416,
+          "median_payload_verify_publish_ms": 0.003796998498728499,
+          "median_receipt_ms": 0.15631700080120936
+        },
+        "pack-exact": {
+          "median_ms": 4.641977000574116,
+          "min_ms": 4.102353999769548,
+          "max_ms": 5.128490000060992,
+          "requests": 0,
+          "transfer_bytes": 0,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 128,
+          "published_objects": 0,
+          "connections": 0,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 0.5270090005069505,
+          "median_cache_validation_ms": 3.9701790010440163,
+          "median_payload_verify_publish_ms": 0.0033760006772354245,
+          "median_receipt_ms": 0.14519599790219218
+        },
+        "pack-coalesced": {
+          "median_ms": 4.527673001575749,
+          "min_ms": 3.9635009998164605,
+          "max_ms": 5.0156930010416545,
+          "requests": 0,
+          "transfer_bytes": 0,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 128,
+          "published_objects": 0,
+          "connections": 0,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 0.3293049994681496,
+          "median_cache_validation_ms": 4.037677997985156,
+          "median_payload_verify_publish_ms": 0.0032860007195267826,
+          "median_receipt_ms": 0.14042600014363416
+        },
+        "pack-full": {
+          "median_ms": 4.842450998694403,
+          "min_ms": 4.120211000554264,
+          "max_ms": 5.661077000695514,
+          "requests": 0,
+          "transfer_bytes": 0,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 128,
+          "published_objects": 0,
+          "connections": 0,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 0.5689589997928124,
+          "median_cache_validation_ms": 4.0835330000845715,
+          "median_payload_verify_publish_ms": 0.0035470002330839634,
+          "median_receipt_ms": 0.14945400107535534
+        }
+      },
+      "coalesced_paired": {
+        "objects-serial": {
+          "median_delta_ms": -0.6508430014946498,
+          "wins": 5,
+          "blocks": 7
+        },
+        "objects-parallel": {
+          "median_delta_ms": -0.08722799975657836,
+          "wins": 4,
+          "blocks": 7
+        },
+        "pack-exact": {
+          "median_delta_ms": 0.14827899576630443,
+          "wins": 3,
+          "blocks": 7
+        },
+        "pack-full": {
+          "median_delta_ms": -0.5615059999399818,
+          "wins": 4,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "corpus": "mixed",
+      "delay_ms": 2.0,
+      "scenario": "cached-90",
+      "modes": {
+        "objects-serial": {
+          "median_ms": 41.43753200332867,
+          "min_ms": 39.25389500000165,
+          "max_ms": 41.83803100022487,
+          "requests": 13,
+          "transfer_bytes": 450560,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 115,
+          "published_objects": 13,
+          "connections": 1,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 0.6538589987030718,
+          "median_cache_validation_ms": 3.8101380014268216,
+          "median_payload_verify_publish_ms": 36.00038300282904,
+          "median_receipt_ms": 0.2174319997720886
+        },
+        "objects-parallel": {
+          "median_ms": 18.740682997304248,
+          "min_ms": 16.432652999355923,
+          "max_ms": 20.919252001476707,
+          "requests": 13,
+          "transfer_bytes": 450560,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 115,
+          "published_objects": 13,
+          "connections": 8,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 0.4759719995490741,
+          "median_cache_validation_ms": 3.7961999987601303,
+          "median_payload_verify_publish_ms": 14.231616998586105,
+          "median_receipt_ms": 0.14948399984859861
+        },
+        "pack-exact": {
+          "median_ms": 40.7860619998246,
+          "min_ms": 38.995426999463234,
+          "max_ms": 48.17750099755358,
+          "requests": 13,
+          "transfer_bytes": 450560,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 115,
+          "published_objects": 13,
+          "connections": 1,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 0.5271789996186271,
+          "median_cache_validation_ms": 3.6095119976380374,
+          "median_payload_verify_publish_ms": 36.77495000010822,
+          "median_receipt_ms": 0.1087159980670549
+        },
+        "pack-coalesced": {
+          "median_ms": 38.56442899996182,
+          "min_ms": 36.38959099771455,
+          "max_ms": 41.08405200167908,
+          "requests": 12,
+          "transfer_bytes": 450560,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 115,
+          "published_objects": 13,
+          "connections": 1,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 0.4912209988106042,
+          "median_cache_validation_ms": 3.913607997674262,
+          "median_payload_verify_publish_ms": 33.757943001546664,
+          "median_receipt_ms": 0.21531799939111806
+        },
+        "pack-full": {
+          "median_ms": 11.133617997984402,
+          "min_ms": 10.40513100087992,
+          "max_ms": 12.788455998816062,
+          "requests": 1,
+          "transfer_bytes": 3932160,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 3481600,
+          "cache_hits": 115,
+          "published_objects": 13,
+          "connections": 1,
+          "hash_bytes": 7878218,
+          "median_metadata_ms": 0.371154001186369,
+          "median_cache_validation_ms": 3.585390997614013,
+          "median_payload_verify_publish_ms": 6.840312998974696,
+          "median_receipt_ms": 0.0992580025922507
+        }
+      },
+      "coalesced_paired": {
+        "objects-serial": {
+          "median_delta_ms": -1.2612009995791595,
+          "wins": 6,
+          "blocks": 7
+        },
+        "objects-parallel": {
+          "median_delta_ms": 19.72924799702014,
+          "wins": 0,
+          "blocks": 7
+        },
+        "pack-exact": {
+          "median_delta_ms": -3.5396249986661132,
+          "wins": 6,
+          "blocks": 7
+        },
+        "pack-full": {
+          "median_delta_ms": 27.20947100169724,
+          "wins": 0,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "corpus": "mixed",
+      "delay_ms": 2.0,
+      "scenario": "sparse-10",
+      "modes": {
+        "objects-serial": {
+          "median_ms": 35.681614997884026,
+          "min_ms": 34.88630799984094,
+          "max_ms": 37.11149499940802,
+          "requests": 13,
+          "transfer_bytes": 544768,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 12,
+          "connections": 1,
+          "hash_bytes": 558666,
+          "median_metadata_ms": 3.1183160026557744,
+          "median_cache_validation_ms": 0.11387500126147643,
+          "median_payload_verify_publish_ms": 32.07248999751755,
+          "median_receipt_ms": 0.170363000506768
+        },
+        "objects-parallel": {
+          "median_ms": 17.41651200063643,
+          "min_ms": 15.42848899771343,
+          "max_ms": 18.275533002451994,
+          "requests": 13,
+          "transfer_bytes": 544768,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 12,
+          "connections": 9,
+          "hash_bytes": 558666,
+          "median_metadata_ms": 3.2921360034379177,
+          "median_cache_validation_ms": 0.12365500151645392,
+          "median_payload_verify_publish_ms": 13.109510000504088,
+          "median_receipt_ms": 0.13473500075633638
+        },
+        "pack-exact": {
+          "median_ms": 35.377201998926466,
+          "min_ms": 34.919114001240814,
+          "max_ms": 39.88186399874394,
+          "requests": 13,
+          "transfer_bytes": 544768,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 0,
+          "cache_hits": 0,
+          "published_objects": 12,
+          "connections": 1,
+          "hash_bytes": 558666,
+          "median_metadata_ms": 3.4859659972426016,
+          "median_cache_validation_ms": 0.12037800115649588,
+          "median_payload_verify_publish_ms": 32.07059600026696,
+          "median_receipt_ms": 0.08356800026376732
+        },
+        "pack-coalesced": {
+          "median_ms": 31.560383999021724,
+          "min_ms": 29.895587998908013,
+          "max_ms": 33.84407299745362,
+          "requests": 11,
+          "transfer_bytes": 610304,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 65536,
+          "cache_hits": 0,
+          "published_objects": 12,
+          "connections": 1,
+          "hash_bytes": 558666,
+          "median_metadata_ms": 3.3302890005870722,
+          "median_cache_validation_ms": 0.2608940012578387,
+          "median_payload_verify_publish_ms": 27.32134299731115,
+          "median_receipt_ms": 0.07997200009413064
+        },
+        "pack-full": {
+          "median_ms": 12.03521999923396,
+          "min_ms": 9.940943997207796,
+          "max_ms": 12.927725998451933,
+          "requests": 2,
+          "transfer_bytes": 3932160,
+          "manifest_bytes": 13898,
+          "overfetch_bytes": 3387392,
+          "cache_hits": 0,
+          "published_objects": 12,
+          "connections": 1,
+          "hash_bytes": 4490826,
+          "median_metadata_ms": 3.758571998332627,
+          "median_cache_validation_ms": 0.19830599921988323,
+          "median_payload_verify_publish_ms": 7.592773999931524,
+          "median_receipt_ms": 0.0666759988234844
+        }
+      },
+      "coalesced_paired": {
+        "objects-serial": {
+          "median_delta_ms": -4.152039997279644,
+          "wins": 7,
+          "blocks": 7
+        },
+        "objects-parallel": {
+          "median_delta_ms": 14.145966000796761,
+          "wins": 0,
+          "blocks": 7
+        },
+        "pack-exact": {
+          "median_delta_ms": -4.763386998092756,
+          "wins": 7,
+          "blocks": 7
+        },
+        "pack-full": {
+          "median_delta_ms": 20.135513001150684,
+          "wins": 0,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "corpus": "mixed",
+      "delay_ms": 2.0,
+      "scenario": "one-missing",
+      "modes": {
+        "objects-serial": {
+          "median_ms": 7.730254001216963,
+          "min_ms": 6.895202001032885,
+          "max_ms": 9.174896997137694,
+          "requests": 1,
+          "transfer_bytes": 4096,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 127,
+          "published_objects": 1,
+          "connections": 1,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 0.34229899756610394,
+          "median_cache_validation_ms": 3.8879630010342225,
+          "median_payload_verify_publish_ms": 2.976312996906927,
+          "median_receipt_ms": 0.10265400123898871
+        },
+        "objects-parallel": {
+          "median_ms": 8.291504000226269,
+          "min_ms": 7.748089999950025,
+          "max_ms": 9.56434800173156,
+          "requests": 1,
+          "transfer_bytes": 4096,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 127,
+          "published_objects": 1,
+          "connections": 1,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 0.7472360011888668,
+          "median_cache_validation_ms": 4.000961998826824,
+          "median_payload_verify_publish_ms": 3.630997998698149,
+          "median_receipt_ms": 0.15324099877034314
+        },
+        "pack-exact": {
+          "median_ms": 8.476546001475072,
+          "min_ms": 7.122196999262087,
+          "max_ms": 9.055228998477105,
+          "requests": 1,
+          "transfer_bytes": 4096,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 127,
+          "published_objects": 1,
+          "connections": 1,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 0.40143799924408086,
+          "median_cache_validation_ms": 4.0861669986043125,
+          "median_payload_verify_publish_ms": 3.064038999582408,
+          "median_receipt_ms": 0.14687899965792894
+        },
+        "pack-coalesced": {
+          "median_ms": 8.283864997792989,
+          "min_ms": 7.168652999098413,
+          "max_ms": 9.512788001302397,
+          "requests": 1,
+          "transfer_bytes": 4096,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 0,
+          "cache_hits": 127,
+          "published_objects": 1,
+          "connections": 1,
+          "hash_bytes": 3946058,
+          "median_metadata_ms": 0.32766200092737563,
+          "median_cache_validation_ms": 4.044805002195062,
+          "median_payload_verify_publish_ms": 3.2921099991654046,
+          "median_receipt_ms": 0.1248459993803408
+        },
+        "pack-full": {
+          "median_ms": 11.319480003294302,
+          "min_ms": 10.959430001094006,
+          "max_ms": 13.927053001680179,
+          "requests": 1,
+          "transfer_bytes": 3932160,
+          "manifest_bytes": 0,
+          "overfetch_bytes": 3928064,
+          "cache_hits": 127,
+          "published_objects": 1,
+          "connections": 1,
+          "hash_bytes": 7878218,
+          "median_metadata_ms": 0.45113499800208956,
+          "median_cache_validation_ms": 4.119801000342704,
+          "median_payload_verify_publish_ms": 6.559880999702727,
+          "median_receipt_ms": 0.11634099791990593
+        }
+      },
+      "coalesced_paired": {
+        "objects-serial": {
+          "median_delta_ms": 0.41269500070484355,
+          "wins": 2,
+          "blocks": 7
+        },
+        "objects-parallel": {
+          "median_delta_ms": -0.8280800029751845,
+          "wins": 5,
+          "blocks": 7
+        },
+        "pack-exact": {
+          "median_delta_ms": -0.09801100168260746,
+          "wins": 4,
+          "blocks": 7
+        },
+        "pack-full": {
+          "median_delta_ms": -3.3109750002040528,
+          "wins": 7,
+          "blocks": 7
+        }
+      }
+    }
+  ],
+  "corpora": {
+    "small": {
+      "objects": 128,
+      "payload_bytes": 524288,
+      "manifest_bytes": 13689,
+      "manifest_sha256": "1717ba2ae972ce5d81fc58771a938e41e341226879caa9e6913843902dbeb7ad",
+      "pack_sha256": "d762cca89e93e5ce4a6cd44fb79ce0f9209c664e1a8e7c9cadccd3d2770e3f95"
+    },
+    "mixed": {
+      "objects": 128,
+      "payload_bytes": 3932160,
+      "manifest_bytes": 13898,
+      "manifest_sha256": "d3707ba7a5a19bc40f2d59e76dc1df44b264d29c25d9cb601fe87bbbf7114506",
+      "pack_sha256": "dc28da997b30f845bfa99280835c8f00c34e3e2967a9a147134d21989aa00b6e"
+    }
+  },
+  "trials": 7,
+  "scenarios": [
+    "metadata-only",
+    "cold-all",
+    "cached-all",
+    "cached-90",
+    "sparse-10",
+    "one-missing"
+  ],
+  "modes": [
+    "objects-serial",
+    "objects-parallel",
+    "pack-exact",
+    "pack-coalesced",
+    "pack-full"
+  ],
+  "source_sha256": {
+    "benchmark.py": "64e58cc1a3f9cc1e370caf95814899bf67615efd1fadee6e7556fa87258bc320",
+    "test_transfer.py": "c3d496af536a6751d1aeac3371efafee3152a5fe134c139c31824be2d1273103",
+    "transfer.py": "a569e541b86e3f8ffacfac1482e1a90099f50119ab84561070d7f373878dc3b0"
+  }
+}

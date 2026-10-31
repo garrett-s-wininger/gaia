@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "operations": 24,
+  "timed_operations": 20,
+  "same_consumer_behavior": true,
+  "same_logical_read_bytes_and_sha_crc_policy": true,
+  "two_cas_artifacts_both": true,
+  "reuse_offline": true,
+  "raw_sha256": "49865f830a375581993385506542832c1f7b0b9fb83d99e2882faf13af0c94b2"
+}

@@ -1,0 +1,23 @@
+{
+  "sdk": {
+    "version": "10.0.403",
+    "metadata_url": "https://builds.dotnet.microsoft.com/dotnet/release-metadata/10.0/releases.json",
+    "file": {
+      "name": "dotnet-sdk-linux-x64.tar.gz",
+      "rid": "linux-x64",
+      "url": "https://builds.dotnet.microsoft.com/dotnet/Sdk/10.0.403/dotnet-sdk-10.0.403-linux-x64.tar.gz",
+      "hash": "b7b3d8461cf98b07d2552ce9199702fa3ad010ac2671a5f8cd5136f7534e50f6855ba7bbb02b11494563f1d04156276a31cda1103b900e5eecd0d9473dc7b9c5"
+    },
+    "bytes": 240199984,
+    "sha512": "b7b3d8461cf98b07d2552ce9199702fa3ad010ac2671a5f8cd5136f7534e50f6855ba7bbb02b11494563f1d04156276a31cda1103b900e5eecd0d9473dc7b9c5"
+  },
+  "crossgen": {
+    "name": "microsoft.netcore.app.crossgen2.linux-x64",
+    "version": "10.0.14",
+    "url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app.crossgen2.linux-x64/10.0.14/microsoft.netcore.app.crossgen2.linux-x64.10.0.14.nupkg",
+    "metadata_url": "https://api.nuget.org/v3/catalog0/data/2026.10.25.18.11.22/microsoft.netcore.app.crossgen2.linux-x64.10.0.14.json",
+    "sha512": "EtXOHonxkJL6n0wkN2eQqrI7O4P19VF8HHGfT86XMZaEUgXYg6UftnJ/iXa3re3tE7sSOIF4x/Kg6hoaA4E02A==",
+    "sha256": "1f31979ed33bc407b39692a4e3c10d4f18fa4c04890dcf35b882b3e46733d6d1",
+    "bytes": 12430245
+  }
+}

@@ -1,0 +1,18 @@
+test_all_modes_match_payloads_and_independent_server_counters (test_transfer.HTTPTests.test_all_modes_match_payloads_and_independent_server_counters) ... ok
+test_bad_manifest_digest_is_rejected_before_payload (test_transfer.HTTPTests.test_bad_manifest_digest_is_rejected_before_payload) ... ok
+test_corrupt_cache_is_refetched_and_failure_clears_ready_marker (test_transfer.HTTPTests.test_corrupt_cache_is_refetched_and_failure_clears_ready_marker) ... ok
+test_corrupt_truncated_wrong_validator_range_and_encoding_fail (test_transfer.HTTPTests.test_corrupt_truncated_wrong_validator_range_and_encoding_fail) ... ----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 43780)
+ok
+test_ignored_range_uses_bounded_full_pack_fallback (test_transfer.HTTPTests.test_ignored_range_uses_bounded_full_pack_fallback) ... ok
+test_pinned_metadata_and_all_objects_work_offline (test_transfer.HTTPTests.test_pinned_metadata_and_all_objects_work_offline) ... ok
+test_verified_objects_survive_partial_failure_and_resume_next_call (test_transfer.HTTPTests.test_verified_objects_survive_partial_failure_and_resume_next_call) ... ok
+test_atomic_write_failure_preserves_previous_content (test_transfer.ModelTests.test_atomic_write_failure_preserves_previous_content) ... ok
+test_coalescing_respects_gap_and_span (test_transfer.ModelTests.test_coalescing_respects_gap_and_span) ... ok
+test_collection_deduplicates_and_zero_size (test_transfer.ModelTests.test_collection_deduplicates_and_zero_size) ... ok
+test_manifest_rejects_ambiguous_schema_and_geometry (test_transfer.ModelTests.test_manifest_rejects_ambiguous_schema_and_geometry) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.952s
+
+OK

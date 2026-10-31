@@ -1,0 +1,207 @@
+{
+  "scope": "separate intrusive constructor diagnostic; overlapping cumulative times must not be added",
+  "lock_parse_seconds": 0.010461060002853628,
+  "local_cache_load_seconds": 0.008523960001184605,
+  "old_reader_profile": [
+    {
+      "file": "locked_python.py",
+      "line": 74,
+      "function": "__init__",
+      "calls": 1,
+      "self_seconds": 0.026339710000000002,
+      "cumulative_seconds": 0.218378121
+    },
+    {
+      "file": "<frozen _collections_abc>",
+      "line": 1015,
+      "function": "__iter__",
+      "calls": 28773,
+      "self_seconds": 0.006861553,
+      "cumulative_seconds": 0.12275151200000001
+    },
+    {
+      "file": "__init__.py",
+      "line": 63,
+      "function": "__getitem__",
+      "calls": 28773,
+      "self_seconds": 0.018062645000000002,
+      "cumulative_seconds": 0.115889959
+    },
+    {
+      "file": "__init__.py",
+      "line": 269,
+      "function": "_from_parsed_parts",
+      "calls": 24755,
+      "self_seconds": 0.009114822,
+      "cumulative_seconds": 0.074039332
+    },
+    {
+      "file": "__init__.py",
+      "line": 276,
+      "function": "_from_parsed_string",
+      "calls": 24755,
+      "self_seconds": 0.0053969180000000005,
+      "cumulative_seconds": 0.047310732
+    },
+    {
+      "file": "__init__.py",
+      "line": 157,
+      "function": "with_segments",
+      "calls": 24762,
+      "self_seconds": 0.012067044,
+      "cumulative_seconds": 0.041941998
+    },
+    {
+      "file": "__init__.py",
+      "line": 135,
+      "function": "__init__",
+      "calls": 28784,
+      "self_seconds": 0.016407259,
+      "cumulative_seconds": 0.026817102000000002
+    },
+    {
+      "file": "locked_python.py",
+      "line": 13,
+      "function": "parse_lock",
+      "calls": 1,
+      "self_seconds": 0.01100157,
+      "cumulative_seconds": 0.024897042
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.len>",
+      "calls": 115042,
+      "self_seconds": 0.013731578000000001,
+      "cumulative_seconds": 0.021741381
+    },
+    {
+      "file": "__init__.py",
+      "line": 261,
+      "function": "_format_parsed_parts",
+      "calls": 24764,
+      "self_seconds": 0.008438275,
+      "cumulative_seconds": 0.017637193000000002
+    },
+    {
+      "file": "cache_store.py",
+      "line": 82,
+      "function": "__init__",
+      "calls": 1,
+      "self_seconds": 8.826600000000001e-05,
+      "cumulative_seconds": 0.01610301
+    },
+    {
+      "file": "cache_store.py",
+      "line": 93,
+      "function": "_load",
+      "calls": 1,
+      "self_seconds": 0.006277053,
+      "cumulative_seconds": 0.015068981
+    },
+    {
+      "file": "__init__.py",
+      "line": 391,
+      "function": "parents",
+      "calls": 4018,
+      "self_seconds": 0.001186894,
+      "cumulative_seconds": 0.013975252
+    },
+    {
+      "file": "__init__.py",
+      "line": 54,
+      "function": "__init__",
+      "calls": 4018,
+      "self_seconds": 0.0018515720000000001,
+      "cumulative_seconds": 0.012788358000000001
+    },
+    {
+      "file": "__init__.py",
+      "line": 60,
+      "function": "__len__",
+      "calls": 53528,
+      "self_seconds": 0.008009803000000001,
+      "cumulative_seconds": 0.011283319
+    },
+    {
+      "file": "__init__.py",
+      "line": 341,
+      "function": "drive",
+      "calls": 4027,
+      "self_seconds": 0.003605717,
+      "cumulative_seconds": 0.010352041000000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.isinstance>",
+      "calls": 110218,
+      "self_seconds": 0.009195593,
+      "cumulative_seconds": 0.009195593
+    },
+    {
+      "file": "__init__.py",
+      "line": 125,
+      "function": "__new__",
+      "calls": 28773,
+      "self_seconds": 0.0049432650000000005,
+      "cumulative_seconds": 0.008180443
+    },
+    {
+      "file": "__init__.py",
+      "line": 304,
+      "function": "loads",
+      "calls": 3,
+      "self_seconds": 2.1118e-05,
+      "cumulative_seconds": 0.007952627
+    },
+    {
+      "file": "decoder.py",
+      "line": 340,
+      "function": "decode",
+      "calls": 3,
+      "self_seconds": 1.2626e-05,
+      "cumulative_seconds": 0.007446019000000001
+    },
+    {
+      "file": "decoder.py",
+      "line": 351,
+      "function": "raw_decode",
+      "calls": 3,
+      "self_seconds": 0.004570079,
+      "cumulative_seconds": 0.007421962000000001
+    },
+    {
+      "file": "<frozen posixpath>",
+      "line": 131,
+      "function": "splitdrive",
+      "calls": 20737,
+      "self_seconds": 0.004056932,
+      "cumulative_seconds": 0.005582766
+    },
+    {
+      "file": "__init__.py",
+      "line": 281,
+      "function": "_parse_path",
+      "calls": 4029,
+      "self_seconds": 0.003060681,
+      "cumulative_seconds": 0.00554436
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'fullmatch' of 're.Pattern' objects>",
+      "calls": 7953,
+      "self_seconds": 0.0039173260000000005,
+      "cumulative_seconds": 0.0039173260000000005
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method posix.fspath>",
+      "calls": 49535,
+      "self_seconds": 0.003895799,
+      "cumulative_seconds": 0.003895799
+    }
+  ]
+}

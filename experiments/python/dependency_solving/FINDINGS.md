@@ -1,5 +1,7 @@
 # Local solver measurements
 
+For current conclusions and practical limits, start with the [research review](../../../research/python/resolution.md). These notes retain the detailed experiment comparisons; measured reports remain under `results/`.
+
 Run `20261028T232923.464853Z` isolates dependency solving from pip CLI startup, module loading and installation. The same pinned `packaging`/`resolvelib` libraries and the same finite candidate set are retained within each comparison. This is a Python reference provider over local wheels, not a native solver or a drop-in pip replacement. [Full report](results/initial/REPORT.md), raw observations (local artifact, `results/initial/results.json`), [reproduction](README.md).
 
 There are **30 cases and 450 timed fresh processes**, 15 randomized trials per case. Each process performs three fresh solves against one immutable session, giving **1,350 timed solves**. Metadata/parsed predicates may persist; a completed solution never does. Admission, source open and repeated solve costs are separate, and successful closures are independently revalidated outside timing. The cache-free variants retain the same lexical decision order and must produce identical artifact selections. A separate smallest-candidate-set heuristic can change order and is reported independently.

@@ -1,0 +1,42 @@
+{
+  "ruby": "ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux]",
+  "options": {
+    "inline_const_cache": true,
+    "peephole_optimization": true,
+    "tailcall_optimization": false,
+    "specialized_instruction": true,
+    "operands_unification": true,
+    "instructions_unification": false,
+    "debug_frozen_string_literal": false,
+    "coverage_enabled": true,
+    "debug_level": 0,
+    "frozen_string_literal": null
+  },
+  "files": [
+    {
+      "file": "lib/rubocop/version.rb",
+      "bytes": 8420,
+      "trees_equal": true,
+      "direct_sha256": "4d472db72f3af6af4c44a462082e9bcb0445c337e423419ad068a3b7da02ce8b",
+      "bootsnap_roundtrip_sha256": "4d472db72f3af6af4c44a462082e9bcb0445c337e423419ad068a3b7da02ce8b",
+      "packed_sha256": "4d472db72f3af6af4c44a462082e9bcb0445c337e423419ad068a3b7da02ce8b"
+    },
+    {
+      "file": "lib/rubocop/cop/base.rb",
+      "bytes": 25128,
+      "trees_equal": true,
+      "direct_sha256": "200db3f06a43ed9acceb9e929ebf5f936a6482fa0380bc7373c5c1e12aac0254",
+      "bootsnap_roundtrip_sha256": "200db3f06a43ed9acceb9e929ebf5f936a6482fa0380bc7373c5c1e12aac0254",
+      "packed_sha256": "200db3f06a43ed9acceb9e929ebf5f936a6482fa0380bc7373c5c1e12aac0254"
+    },
+    {
+      "file": "lib/rubocop/runner.rb",
+      "bytes": 37444,
+      "trees_equal": true,
+      "direct_sha256": "7fb3e2d4437f1cc97225cfcddb05f76666f68262a2a41daf969ef7b8c3236249",
+      "bootsnap_roundtrip_sha256": "7fb3e2d4437f1cc97225cfcddb05f76666f68262a2a41daf969ef7b8c3236249",
+      "packed_sha256": "7fb3e2d4437f1cc97225cfcddb05f76666f68262a2a41daf969ef7b8c3236249"
+    }
+  ],
+  "all_instruction_trees_equal": true
+}

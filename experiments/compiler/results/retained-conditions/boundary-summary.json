@@ -1,0 +1,178 @@
+{
+  "run_id": "20261031T010104.453292Z",
+  "raw_sha256": "b33f3ef343db1a989bf35173b65567140875aaf89dc057a729a6ed7773482a90",
+  "cases": [
+    {
+      "scenario": "high-fanout-header",
+      "engines": {
+        "gaia-rebound": {
+          "median_ms": 2744.868761001271,
+          "samples": 1,
+          "export_median_ms": 14.82182399922749
+        },
+        "gaia-retained": {
+          "median_ms": 5653.86885299813,
+          "samples": 1,
+          "export_median_ms": 44.661800005997065,
+          "reference_equal": true,
+          "representative_index": {
+            "queries": 5266,
+            "conditions": 275,
+            "positive_files": 187,
+            "kinds": {
+              "0": 58,
+              "1": 187,
+              "2": 30
+            },
+            "bytes": 37018,
+            "target_paths": 258,
+            "condition_merges": 0,
+            "fragment_hits": 5,
+            "fragment_misses": 26,
+            "queries_parsed": 4733,
+            "fragment_cache_valid": null,
+            "fragment_cache_source": "memory",
+            "fragment_cache_bytes": 37210,
+            "fragment_cache_published": true,
+            "namespace_reused": true,
+            "condition_plan_reused": true,
+            "logical_hashes_computed": 1,
+            "logical_hashes_reused": 186,
+            "physical_reads": 187,
+            "physical_bytes": 3016363,
+            "retained": true,
+            "stages_ns": {
+              "fragment_load": 32167158,
+              "plan": 79662,
+              "verify_emit": 10576700,
+              "fragment_encode": 718783,
+              "fragment_publish": 570058
+            }
+          }
+        }
+      },
+      "paired_retained_minus_control": {
+        "gaia-rebound": {
+          "median_delta_ms": 2909.000091996859,
+          "wins": 0,
+          "blocks": 1
+        }
+      }
+    },
+    {
+      "scenario": "flags",
+      "engines": {
+        "gaia-rebound": {
+          "median_ms": 5271.469382001669,
+          "samples": 1,
+          "export_median_ms": 29.47449700150173
+        },
+        "gaia-retained": {
+          "median_ms": 4719.474910001736,
+          "samples": 1,
+          "export_median_ms": 13.799936001305468,
+          "reference_equal": true,
+          "representative_index": {
+            "queries": 5266,
+            "conditions": 275,
+            "positive_files": 187,
+            "kinds": {
+              "0": 58,
+              "1": 187,
+              "2": 30
+            },
+            "bytes": 37018,
+            "target_paths": 258,
+            "condition_merges": 0,
+            "fragment_hits": 0,
+            "fragment_misses": 31,
+            "queries_parsed": 5266,
+            "fragment_cache_valid": null,
+            "fragment_cache_source": "memory",
+            "fragment_cache_bytes": 37210,
+            "fragment_cache_published": true,
+            "namespace_reused": true,
+            "condition_plan_reused": true,
+            "logical_hashes_computed": 0,
+            "logical_hashes_reused": 187,
+            "physical_reads": 187,
+            "physical_bytes": 3016231,
+            "retained": true,
+            "stages_ns": {
+              "fragment_load": 7215376,
+              "plan": 28916,
+              "verify_emit": 5271312,
+              "fragment_encode": 362993,
+              "fragment_publish": 292689
+            }
+          }
+        }
+      },
+      "paired_retained_minus_control": {
+        "gaia-rebound": {
+          "median_delta_ms": -551.994471999933,
+          "wins": 1,
+          "blocks": 1
+        }
+      }
+    },
+    {
+      "scenario": "clean",
+      "engines": {
+        "gaia-rebound": {
+          "median_ms": 2808.8319999951636,
+          "samples": 1,
+          "export_median_ms": 14.60064200364286
+        },
+        "gaia-retained": {
+          "median_ms": 2715.801972997724,
+          "samples": 1,
+          "export_median_ms": 16.35318999615265,
+          "reference_equal": true,
+          "representative_index": {
+            "queries": 5266,
+            "conditions": 275,
+            "positive_files": 187,
+            "kinds": {
+              "0": 58,
+              "1": 187,
+              "2": 30
+            },
+            "bytes": 37018,
+            "target_paths": 258,
+            "condition_merges": 1950,
+            "fragment_hits": 0,
+            "fragment_misses": 31,
+            "queries_parsed": 5266,
+            "fragment_cache_valid": false,
+            "fragment_cache_source": "disk",
+            "fragment_cache_bytes": 37210,
+            "fragment_cache_published": true,
+            "namespace_reused": false,
+            "condition_plan_reused": false,
+            "logical_hashes_computed": 187,
+            "logical_hashes_reused": 0,
+            "physical_reads": 187,
+            "physical_bytes": 3016231,
+            "retained": true,
+            "stages_ns": {
+              "fragment_load": 6691865,
+              "plan": 2823297,
+              "verify_emit": 6251339,
+              "fragment_encode": 339377,
+              "fragment_publish": 174003
+            }
+          }
+        }
+      },
+      "paired_retained_minus_control": {
+        "gaia-rebound": {
+          "median_delta_ms": -93.03002699743956,
+          "wins": 1,
+          "blocks": 1
+        }
+      }
+    }
+  ],
+  "scope": "Warm resident single C target; full operations, with exact reference index checks outside the clock."
+}

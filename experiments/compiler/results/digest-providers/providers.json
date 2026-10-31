@@ -1,0 +1,32 @@
+{
+  "native_blake3": "LLVM 22.1.8 BLAKE3 wrapper; linked LLVM binary is pinned in each raw execution context",
+  "caller_blake3": "BLAKE3 C library 1.8.7 via one-shot buffer helper",
+  "libraries": {
+    "crypto": {
+      "sha256": "a75a864dcda6ef9e4dc29fad4b7988ca832b904c3915a63c920062c40763dae1"
+    },
+    "caller_blake3": {
+      "sha256": "bffe67ca91fd831b709da938bbb8358d31f2c4990e54daf3dd64bcf288ec4e92"
+    },
+    "caller_blake3_helper": {
+      "sha256": "4bf7a0ecc72b801844462623b87fbf6af88d229592c33bc0620b43e06d66ea44"
+    }
+  },
+  "output_bits": 256,
+  "snapshot_contracts": {
+    "GAIACIN2": "SHA-256 hexadecimal pin",
+    "GAIACIN3": "blake3:-prefixed BLAKE3-256 pin"
+  },
+  "journal_contracts": {
+    "GAIAJR01": "SHA-256 file/query fingerprints",
+    "GAIAJR02": "BLAKE3-256 file/query fingerprints"
+  },
+  "unchanged_sha256": [
+    "object record envelope checksum",
+    "selected-journal identity",
+    "reported object digest",
+    "condition index/backing verification",
+    "fragment cache",
+    "receipt"
+  ]
+}

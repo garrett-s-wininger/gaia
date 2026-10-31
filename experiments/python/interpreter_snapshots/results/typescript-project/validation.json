@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "operations": 35,
+  "warmups": 5,
+  "boundary_operations": 29,
+  "all_stdout_and_emission_and_runtime_checks_match": true,
+  "performance_binding_warning_free": true,
+  "raw_sha256": "5d8a7da8d13c17c07140a9d5d089e4619d86b4a92b88d6087e85e6a04ff45309"
+}

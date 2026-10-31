@@ -1,53 +1,71 @@
 # What the compiler experiments taught us
 
-The biggest gains came from reusing work that did not need to run again. Process reuse and scheduling helped too. Replacing warm-cache object files with native buffers changed the mechanism but added little measured speed on the tested libraries.
+Programmatic compilation is useful when the caller can retain inputs, initialized tools and correctly scoped results. The prototypes now improve several incremental operations against matched Ninja controls. Direct object buffers alone produced little consistent benefit; avoiding repeated preparation and validation made the larger difference.
 
-The experiments use real C compilation through Clang/LLD, with Odin orchestration. They include zlib and Zstandard, plus small generated fixtures and explicit probes for invalidation behavior. The current baselines rebuild a complete native batch; they are not matched comparisons with make/ninja/ccache incremental builds.
+Native experiments use Odin with narrow Clang/LLVM/LLD adapters. They cover zlib, Zstandard and a small C++ dependency graph on one Linux laptop. [Managed JVM compilation](jvm/findings.md) is a separate experiment with a different runtime and lifetime contract.
 
-## Reuse needs the right input boundary
+## Current incremental results
 
-With already prepared inputs, local object reuse reduced a Zstandard-plus-probe unchanged consumer from 4.65 seconds to 53 ms. A light implementation edit took 117 ms with 30 of 31 objects reused. Editing the expensive implementation still took 3.77 seconds because that object had to be regenerated. [Object-cache measurements](../../experiments/compiler/results/object-cache/REPORT.md).
+The latest C comparison uses Zstandard 1.5.7 plus an invalidation probe: 31 objects, eight workers and seven randomized paired blocks. Each output matches an independent CLI build.
 
-A key containing the entire collection invalidated every object after any source edit. Per-request input-view keys preserved reuse for unrelated source files, but still treated every visible header as relevant. That was safe and unnecessarily broad.
+| Operation | Physical compatibility adapter | Authoritative logical API | Ninja | Ninja + ccache |
+| --- | ---: | ---: | ---: | ---: |
+| Unchanged | 2.35 ms | 2.32 ms | 3.50 ms | 3.08 ms |
+| Source edit | 48.78 ms | 42.25 ms | 66.35 ms | 98.33 ms |
+| Shared audit header | 27.84 ms | 21.00 ms | 44.01 ms | 66.04 ms |
+| Generated audit header | 27.80 ms | 21.19 ms | 42.65 ms | 66.72 ms |
+| Unused header | 2.59 ms | 2.21 ms | 3.11 ms | 3.06 ms |
+| Revert | 9.46 ms | 6.53 ms | 66.54 ms | 24.73 ms |
 
-## Record what the compiler actually observed
+Logical source/header edits win all seven pairs against the physical adapter. The audit headers have low fanout; a separate real header correctly rebuilds 26 objects. These are warm operations after initial input/tool admission. See the [complete report](../../experiments/compiler/results/logical-inputs/REPORT.md), including clean builds and strict physical-import costs.
 
-The next prototype retained reads, metadata/existence checks and failed lookups. Before reusing an object, it checked that those observations still held in the new hermetic input view. A new optional header or an earlier include-path match correctly changed the result instead of returning an old object.
+## Workspace authority determines what validation can avoid
 
-These timings include snapshot preparation, receipt handoff, linking and normal shutdown of both native processes:
+An editor or source-control API can publish an immutable generation of file bytes and visibility. A build consumes one generation, records its positive and negative input conditions, and checks those conditions against the current generation before declaring readiness. Relevant concurrent edits reject publication; unrelated edits can remain selective. Tool identities and output hashes still matter.
 
-| Change | Coarse view cache | Observed-query cache | Compilers executed |
-| --- | ---: | ---: | ---: |
-| Shared audit header | 4.624 s | 110 ms | 1 of 31 |
-| Generated audit header | 4.678 s | 116 ms | 1 of 31 |
-| Optional header appears | 4.683 s | 115 ms | 1 of 31 |
-| Earlier header shadows fallback | 4.620 s | 119 ms | 1 of 31 |
-| Unused header changes | 4.711 s | 102 ms | 0 of 31 |
+That contract removes repeated source-mirror reads. Condition export falls from about 4.4 to 1.3–1.6 ms in the matched run. It does not discover unreported filesystem edits: a mutable-directory adapter must still observe and import changes. Separately, strict import of a known 263-file namespace takes 4.88 ms; admission of an already supplied source edit takes 0.050 ms. Initial SDK discovery is additional work. The current logical map copies on update, so large-repository update cost remains unproven.
 
-Those audit headers are visible to every request but consumed only by the probe. A real Zstandard shared-header check rebuilt its 26 independently identified readers and reused five objects. Widely used headers still require rebuilding their readers. [Pipeline measurements](../../experiments/compiler/results/dependency-cache/REPORT.md), [real shared-header check](../../experiments/compiler/results/dependency-cache/fanout-check.json).
+The checker transport also changes from a resident process to an in-process reference implementation. Complete wall time includes that change; child-only CPU would not be comparable. The [input/lifetime contract](../../components/compiler/immutable-input-research.md) records the precise boundary.
 
-Precision has overhead. Unchanged pipelines rose from 77 to 104 ms, and implementation-edit pipelines from 129 to 164 ms. Replaying observations when an entire input view is unchanged is avoidable work; it is the strongest next experiment.
+## A small C++ graph preserves dependency propagation
 
-## Updating an admitted snapshot is cheaper than refreshing every file
+The C++ experiment combines two unchanged upstream fmt sources with a labelled integration library and two executables: four targets and six translation units.
 
-Applying supplied changes to a prior snapshot opened no loose project/SDK files. A full refresh opened 198–199. Producer savings were only about 3–8 ms on this warm-cache fixture: both implementations still serialized and hashed the complete roughly 3 MiB collection.
+| Operation | Programmatic host | Ninja + ccache |
+| --- | ---: | ---: |
+| Source edit | 293.49 ms | 397.91 ms |
+| Used header | 382.32 ms | 423.45 ms |
+| Revert | 55.10 ms | 71.18 ms |
 
-This is an update to an already admitted namespace. Initial SDK discovery and creating the change events are separate costs. Complete-pipeline improvements from the producer alone were smaller and mixed. The large header-edit gains came from selective compilation reuse. [Producer/consumer comparison](../../experiments/compiler/results/dependency-cache/REPORT.md).
+Changed operations win all three paired blocks. Source/header edits compile exactly one/four units and relink three dependent targets. Both object caches reset to baseline before each block; input authentication stays warm. Neither path restores complete historical linked results. No-op stays near parity at about 24 ms, while clean builds favor Ninja.
 
-## Process lifetime and scheduling offer smaller, useful gains
+The [primary report](../../experiments/compiler/cpp_graph/results/baseline-seeded/REPORT.md) distinguishes these actual compilation misses from a [repeated-edit trace](../../experiments/compiler/cpp_graph/results/repeated-trace/REPORT.md). Objects, public artifacts, runtime behavior and byte-identical CRT aliases are checked independently. This validates graph mechanics, not large-production-project scale or arbitrary linker inputs.
 
-Four independent complete builds per process saved about 36 ms per build, with compiler state recreated each time. It validates finite batching, not an indefinitely running or crash-isolated worker. [Lifetime comparison](../../experiments/compiler/results/compiler-lifecycle/REPORT.md).
+## The mechanisms behind the gains
 
-Starting historically expensive jobs first improved Zstandard wall medians by 2.3–5.2%, with 165–221 ms paired median savings. Aggregate CPU rose 1.6–2.9%. This is an optional scheduling policy with compatible history, not a universal default. [Scheduling comparison](../../experiments/compiler/results/cost-scheduling/REPORT.md).
+The experiments below isolate different repeated work. Their absolute timings come from separate runs and must not be added together.
 
-## Direct handoff was not the main bottleneck
+| Mechanism | What changed | Evidence |
+| --- | --- | --- |
+| Selective build decisions | Skip producer, LLVM and linking when compiler-observed conditions still hold, including missing paths and visibility. | [Decision gate](../../experiments/compiler/results/build-decisions/REPORT.md), [selective conditions](../../experiments/compiler/results/selective-conditions/REPORT.md) |
+| Shared validation structures | Reuse namespace/replay structures and batch job masks instead of rebuilding equivalent data. | [Shared validation](../../experiments/compiler/results/shared-validation/REPORT.md), [incremental production](../../experiments/compiler/results/incremental-conditions/REPORT.md) |
+| Retained producer data | Reuse parsed condition fragments and admitted logical hashes; physical backing-file guards still run. | [Retained production](../../experiments/compiler/results/retained-conditions/REPORT.md) |
+| Resident tools and direct publication | Avoid a producer round trip and repeated LLVM/LLD startup; dispose request state before acknowledgement. | [Pipeline handoff](../../experiments/compiler/results/pipeline-handoff/REPORT.md) |
+| Complete-result history | Restore a bounded successful linked result and revalidate its completion proof, making reverts cheap. | [Linked results](../../experiments/compiler/results/linked-results/REPORT.md) |
+| Digest providers | Faster SHA-256 implementation first, then separately versioned BLAKE3 identities for selected native inputs. | [Digest comparisons](../../experiments/compiler/results/digest-providers/REPORT.md) |
+| Native physical verification | Batch the same file reads, hashes and stability checks through one Odin call; the ABI transition is only about 17 microseconds. | [Native conditions](../../experiments/compiler/results/native-conditions/REPORT.md) |
+| Shared immutable input segments | Publish and authenticate small edits instead of repeating a full 3.34 MB collection and unchanged file digests. | [Shared inputs](../../experiments/compiler/results/shared-inputs/REPORT.md) |
 
-Direct buffers removed generated-object filesystem calls. They did not establish a consistent extra parallel-build win in zlib or in Zstandard release/debug builds. The complete embedded link was small relative to compilation; separate traces placed 86–88% of summed Zstandard job spans in the backend. Those spans include scheduling delays and are not CPU samples. [Direct handoff](../../experiments/compiler/results/direct-handoff/REPORT.md), [larger project](../../experiments/compiler/results/zstd-handoff/REPORT.md), [phase attribution](../../experiments/compiler/results/zstd-handoff/PHASES.md).
+A complete-result hit still proves request/tool identity, observed input conditions and copied-output integrity. Selectivity includes failed lookups: hashing only successful reads would miss optional-header appearance or include shadowing. Cache quotas and staging are explicit; a serialized payload budget is not a process memory limit.
 
-## How much confidence to place in this
+## What helped less
 
-The latest journal comparison checked all 4,960 timed object identities and 160 libraries against fresh CLI references, plus negative-lookup/failure/corruption/concurrency checks and 246 upstream round trips. Earlier reports retain their own validation counts.
+Direct object buffers remove generated-object filesystem calls, but did not consistently accelerate parallel zlib or Zstandard builds. Compilation dominated; the recorded compiler phase spans are not CPU samples. [Direct handoff](../../experiments/compiler/results/direct-handoff/REPORT.md), [larger-library comparison](../../experiments/compiler/results/zstd-handoff/REPORT.md).
 
-The provider uses explicit regular-file namespaces and fixed metadata. It has no host-input fallback. Arbitrary aliases, plugins, complete SDK discovery, remote trust, storage quotas and persistent crash recovery remain open. Experiments use warm page cache on one Linux laptop. Compare controls within a run; their absolute medians cannot be combined into a larger claimed speedup.
+Cost-based dispatch improves Zstandard wall medians by 2.3–5.2% with slightly more aggregate CPU. It is an optional policy using compatible history, not a universal ordering rule. [Scheduling comparison](../../experiments/compiler/results/cost-scheduling/REPORT.md).
 
-Read the [prospects](prospects.md) for the next decisions. Detailed implementation limits and evidence remain in the [lab journal](../../experiments/compiler/FINDINGS.md).
+## Confidence and remaining limits
+
+The combined compiler suite passes 213 tests with optional providers enabled; the separate graph has three helper tests and exact work-count assertions. Reports retain their own independent artifact, runtime, corruption, failure and boundary checks. No performance matrix was rerun merely to reorganize the repository.
+
+The current providers have explicit regular-file namespaces, pinned toolchains and narrow link contracts. Linux process-local descriptors, active leases, retained generations and warm workers have lifecycle costs. Arbitrary aliases/plugins, full SDK discovery, cancellation, crash isolation, long-run memory bounds and durable concurrent storage remain open. Read the [prospects](prospects.md) before extending the prototype into a service.

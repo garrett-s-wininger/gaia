@@ -1,15 +1,22 @@
 # Experiments
 
-Runnable research, technical lab notes and retained measurements live here. For interpretation, start with the [human research guide](../research/README.md).
+This directory contains runnable research, technical lab notes and measured evidence. Start with the [research guide](../research/README.md) for conclusions and the [reproduction guide](reproducing.md) for setup and experiment order.
 
-| Area | Code and reproduction | Evidence |
+| Area | Code and reproduction | Evidence index |
 | --- | --- | --- |
-| Native compiler tools | [compiler](compiler/README.md) | [Compiler run index](../research/compiler/experiments.json) |
-| Python formats/loading | [python/dependency_bundles](python/dependency_bundles/README.md) | [Python run index](../research/python/experiments.json) |
-| Python resolution | [python/dependency_solving](python/dependency_solving/README.md) | [Python run index](../research/python/experiments.json) |
+| Native compiler tools | [compiler](compiler/README.md) | [Compiler runs](../research/compiler/experiments.json) |
+| C++ dependency graph | [compiler/cpp_graph](compiler/cpp_graph/README.md) | [Compiler runs](../research/compiler/experiments.json) |
+| Managed JVM compilers | [java/compiler](java/compiler/README.md) | [JVM compiler runs](../research/compiler/jvm/experiments.json) |
+| Artifact transfer and access | [artifacts](artifacts/README.md) | [Artifact runs](../research/artifacts/experiments.json) |
+| Python dependency loading | [python/dependency_bundles](python/dependency_bundles/README.md) | [Python runs](../research/python/experiments.json) |
+| Python resolution | [python/dependency_solving](python/dependency_solving/README.md) | [Python runs](../research/python/experiments.json) |
+| Python/Node interpreter state | [python/interpreter_snapshots](python/interpreter_snapshots/README.md) | [Python runs](../research/python/experiments.json) |
+| JVM framework startup | [java/startup](java/startup/README.md) | [JVM startup runs](../research/java/experiments.json) |
+| Ruby tool startup | [ruby_startup](ruby_startup/README.md) | [Ruby runs](../research/ruby/experiments.json) |
+| .NET tool startup | [dotnet_startup](dotnet_startup/README.md) | [.NET runs](../research/dotnet/experiments.json) |
 
-Each experiment owns its source, reproduction README, detailed `FINDINGS.md`, retained reports under `results/` and ignored local `_work/`. Reports, acquisition manifests, provenance and validation summaries belong in Git. Full raw observations, profiler captures, replay plans, downloads and built tools stay ignored. The [evidence manifest](../research/evidence.json) records excluded original artifacts by path, size and SHA-256. They have not been published separately and are absent from a clean checkout.
+The [Java overview](java/README.md) distinguishes framework startup from managed compilation and their different preparation contracts.
 
-## Reproduce elsewhere
+Reports, acquisition manifests, provenance and compact validation summaries belong in Git. Downloads, built tools, caches, full observations and profiler captures stay ignored. The [evidence manifest](../research/evidence.json) identifies retained raw data by path, size and hash; those files have no separately published download location.
 
-Follow the [reproduction guide](reproducing.md) for toolchain configuration, input-generation order and fresh output locations. Commands recorded in published results describe the original environment; do not replay their absolute paths. Generate predecessor datasets and build native adapters on the machine being measured. No compatibility aliases or retained local binaries are required.
+Each experiment owns its reproduction README and reports under `results/`. Detailed `FINDINGS.md` files are lab notes; current interpretations live under `research/`. Generate fresh inputs and adapters on the machine being measured. Commands in retained observations describe their original environment and should not be replayed with the recorded absolute paths.

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "tests_discovered": 113,
+  "tests_executed": 95,
+  "optional_tests_skipped": 18,
+  "optional_crypto_and_blake3_not_linked": true,
+  "checker_compiler_crypto_libraries_not_linked": true,
+  "unsupported_provider_rejected": true,
+  "host_sha256": "9b39d03da561af8e282f13c1d9c8d16f0bbc90b40b810c324bf936eaaeb23b4f",
+  "decision_sha256": "6bb23126df50457207d0820198e3da46d4846bbe77579759242a609621352263"
+}

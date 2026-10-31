@@ -1,0 +1,32 @@
+test_all_modes_match_payloads_and_independent_server_counters (test_binary_transport.BinaryHTTPContracts.test_all_modes_match_payloads_and_independent_server_counters) ... ok
+test_bad_manifest_digest_is_rejected_before_payload (test_binary_transport.BinaryHTTPContracts.test_bad_manifest_digest_is_rejected_before_payload) ... ok
+test_corrupt_cache_is_refetched_and_failure_clears_ready_marker (test_binary_transport.BinaryHTTPContracts.test_corrupt_cache_is_refetched_and_failure_clears_ready_marker) ... ok
+test_corrupt_truncated_wrong_validator_range_and_encoding_fail (test_binary_transport.BinaryHTTPContracts.test_corrupt_truncated_wrong_validator_range_and_encoding_fail) ... ok
+test_ignored_range_uses_bounded_full_pack_fallback (test_binary_transport.BinaryHTTPContracts.test_ignored_range_uses_bounded_full_pack_fallback) ... ok
+test_pinned_metadata_and_all_objects_work_offline (test_binary_transport.BinaryHTTPContracts.test_pinned_metadata_and_all_objects_work_offline) ... ok
+test_verified_objects_survive_partial_failure_and_resume_next_call (test_binary_transport.BinaryHTTPContracts.test_verified_objects_survive_partial_failure_and_resume_next_call) ... ok
+test_duplicate_request_id_is_rejected (test_binary_transport.BinaryNetworkTests.test_duplicate_request_id_is_rejected) ... ok
+test_malformed_request_frames_close_without_unbounded_body_reads (test_binary_transport.BinaryNetworkTests.test_malformed_request_frames_close_without_unbounded_body_reads) ... ok
+test_shared_batch_bytes_and_failure_contract_over_both_transports (test_binary_transport.BinaryNetworkTests.test_shared_batch_bytes_and_failure_contract_over_both_transports) ... ok
+test_wrong_response_identity_version_opcode_length_and_truncation (test_binary_transport.BinaryNetworkTests.test_wrong_response_identity_version_opcode_length_and_truncation) ... ok
+test_batch_identity_bounds_and_version (test_binary_transport.CodecTests.test_batch_identity_bounds_and_version) ... ok
+test_independent_header_vector_and_short_reads (test_binary_transport.CodecTests.test_independent_header_vector_and_short_reads) ... ok
+test_oversized_reply_rejected_before_body_allocation (test_binary_transport.CodecTests.test_oversized_reply_rejected_before_body_allocation) ... ok
+test_all_modes_match_payloads_and_independent_server_counters (test_transfer.HTTPTests.test_all_modes_match_payloads_and_independent_server_counters) ... ok
+test_bad_manifest_digest_is_rejected_before_payload (test_transfer.HTTPTests.test_bad_manifest_digest_is_rejected_before_payload) ... ok
+test_corrupt_cache_is_refetched_and_failure_clears_ready_marker (test_transfer.HTTPTests.test_corrupt_cache_is_refetched_and_failure_clears_ready_marker) ... ok
+test_corrupt_truncated_wrong_validator_range_and_encoding_fail (test_transfer.HTTPTests.test_corrupt_truncated_wrong_validator_range_and_encoding_fail) ... ----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 38678)
+ok
+test_ignored_range_uses_bounded_full_pack_fallback (test_transfer.HTTPTests.test_ignored_range_uses_bounded_full_pack_fallback) ... ok
+test_pinned_metadata_and_all_objects_work_offline (test_transfer.HTTPTests.test_pinned_metadata_and_all_objects_work_offline) ... ok
+test_verified_objects_survive_partial_failure_and_resume_next_call (test_transfer.HTTPTests.test_verified_objects_survive_partial_failure_and_resume_next_call) ... ok
+test_atomic_write_failure_preserves_previous_content (test_transfer.ModelTests.test_atomic_write_failure_preserves_previous_content) ... ok
+test_coalescing_respects_gap_and_span (test_transfer.ModelTests.test_coalescing_respects_gap_and_span) ... ok
+test_collection_deduplicates_and_zero_size (test_transfer.ModelTests.test_collection_deduplicates_and_zero_size) ... ok
+test_manifest_rejects_ambiguous_schema_and_geometry (test_transfer.ModelTests.test_manifest_rejects_ambiguous_schema_and_geometry) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 2.690s
+
+OK

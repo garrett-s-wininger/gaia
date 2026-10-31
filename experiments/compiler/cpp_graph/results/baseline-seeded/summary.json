@@ -1,0 +1,272 @@
+{
+  "run_id": "20261031T033811.923406Z",
+  "cache_policy": "baseline-seeded",
+  "cache_lifetimes": {
+    "input_session": "resident sealed segments and authenticated input digests retained across blocks",
+    "linked_history": "disabled; only current target receipt retained",
+    "object_cache": "restored baseline-only before each block",
+    "seed_restore_timing": "outside operation timing"
+  },
+  "trials": 3,
+  "rows": [
+    {
+      "engine": "ninja-ccache",
+      "scenario": "unchanged",
+      "median_ms": 24.420107998594176,
+      "min_ms": 24.234156000602525,
+      "max_ms": 25.20712599653052,
+      "native_compiler_executions": null,
+      "native_link_calls": null,
+      "scheduled_ccache_commands": [
+        0,
+        0,
+        0
+      ],
+      "scheduled_link_commands": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "engine": "programmatic",
+      "scenario": "unchanged",
+      "median_ms": 23.841483001888264,
+      "min_ms": 23.588553005538415,
+      "max_ms": 25.30528499482898,
+      "native_compiler_executions": [
+        0,
+        0,
+        0
+      ],
+      "native_link_calls": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "engine": "ninja-ccache",
+      "scenario": "source",
+      "median_ms": 397.9127869970398,
+      "min_ms": 395.02740500029176,
+      "max_ms": 400.41182300046785,
+      "native_compiler_executions": null,
+      "native_link_calls": null,
+      "scheduled_ccache_commands": [
+        1,
+        1,
+        1
+      ],
+      "scheduled_link_commands": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "engine": "programmatic",
+      "scenario": "source",
+      "median_ms": 293.4903560017119,
+      "min_ms": 292.433857001015,
+      "max_ms": 303.608185997291,
+      "native_compiler_executions": [
+        1,
+        1,
+        1
+      ],
+      "native_link_calls": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "engine": "ninja-ccache",
+      "scenario": "header",
+      "median_ms": 423.4484929984319,
+      "min_ms": 420.12624599738047,
+      "max_ms": 443.44191900017904,
+      "native_compiler_executions": null,
+      "native_link_calls": null,
+      "scheduled_ccache_commands": [
+        4,
+        4,
+        4
+      ],
+      "scheduled_link_commands": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "engine": "programmatic",
+      "scenario": "header",
+      "median_ms": 382.32168499962427,
+      "min_ms": 380.67218799551483,
+      "max_ms": 391.31124000414275,
+      "native_compiler_executions": [
+        4,
+        4,
+        4
+      ],
+      "native_link_calls": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "engine": "ninja-ccache",
+      "scenario": "revert",
+      "median_ms": 71.18186300067464,
+      "min_ms": 70.76447899453342,
+      "max_ms": 71.40254200203344,
+      "native_compiler_executions": null,
+      "native_link_calls": null,
+      "scheduled_ccache_commands": [
+        4,
+        4,
+        4
+      ],
+      "scheduled_link_commands": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "engine": "programmatic",
+      "scenario": "revert",
+      "median_ms": 55.09592000453267,
+      "min_ms": 54.83362099766964,
+      "max_ms": 56.327937003516126,
+      "native_compiler_executions": [
+        0,
+        0,
+        0
+      ],
+      "native_link_calls": [
+        3,
+        3,
+        3
+      ]
+    }
+  ],
+  "paired": [
+    {
+      "scenario": "unchanged",
+      "deltas_ms": [
+        1.0711289942264557,
+        -0.578624996705912,
+        -1.6185729909921065
+      ],
+      "programmatic_wins": 2
+    },
+    {
+      "scenario": "source",
+      "deltas_ms": [
+        -107.97796599945286,
+        -94.3046009997488,
+        -101.53704899857985
+      ],
+      "programmatic_wins": 3
+    },
+    {
+      "scenario": "header",
+      "deltas_ms": [
+        -32.137252994289156,
+        -61.120234000554774,
+        -39.45405800186563
+      ],
+      "programmatic_wins": 3
+    },
+    {
+      "scenario": "revert",
+      "deltas_ms": [
+        -16.5689210043638,
+        -14.436541991017293,
+        -16.085942996141966
+      ],
+      "programmatic_wins": 3
+    }
+  ],
+  "boundaries": [
+    {
+      "engine": "ninja-ccache",
+      "engine_setup_ms": 633.9725669968175,
+      "clean_ms": 1931.6255249941605,
+      "native_compiler_executions": null,
+      "native_link_calls": null
+    },
+    {
+      "engine": "programmatic",
+      "engine_setup_ms": 638.8121650015819,
+      "clean_ms": 2201.5725530000054,
+      "native_compiler_executions": 6,
+      "native_link_calls": 4
+    }
+  ],
+  "admitted_files": 1363,
+  "admitted_bytes": 31894193,
+  "external_input_pins": 63,
+  "graph": [
+    {
+      "name": "fmt",
+      "translation_units": 2,
+      "output": "libfmt_graph.so",
+      "deps": []
+    },
+    {
+      "name": "integration",
+      "translation_units": 2,
+      "output": "libintegration.so",
+      "deps": [
+        "fmt"
+      ]
+    },
+    {
+      "name": "app",
+      "translation_units": 1,
+      "output": "report-cli",
+      "deps": [
+        "integration",
+        "fmt"
+      ]
+    },
+    {
+      "name": "test",
+      "translation_units": 1,
+      "output": "graph-test",
+      "deps": [
+        "integration",
+        "fmt"
+      ]
+    }
+  ],
+  "versions": {
+    "ccache": "ccache version 4.14.1",
+    "clang": "clang version 22.1.8",
+    "ninja": "1.13.2"
+  },
+  "source_sha256": {
+    "capture.py": "28416d17fe8039c1eb7a3d087a881fa11e262457d7f960dfa873103bbbf0630f",
+    "fixture/app.cpp": "1e66c6a4d31b58ba3f69d650ab2891d64d0bfa38b3a8e1674676aef775f7100c",
+    "fixture/graph.h": "76c156114a3f32c7b8d662a2bf3352fcca5c5b85fc159acfedb9c36273938176",
+    "fixture/report.cpp": "c56192fe72d74daaecc03f2ab137ba8601a3bd70dd4d118cfd3ac2e888f760f5",
+    "fixture/sum.cpp": "54491763f730a6c8c88f0140942032f583b24e27bf4f277ec9fa41d11a31ea1a",
+    "fixture/test.cpp": "56e6f6b224962ec955bd1f7386355a96861ceaa0a6aec97a95f2fb26fe1e5c00",
+    "graph.py": "2e12d88fceb64bea9eb4591080d8d3015e7a7e9efaed48c30556ebd51795d35c",
+    "run_graph.py": "a7a27b6af28e78dece392c7f1a57a957d75e14950a6e90d424da468ca2c40687",
+    "test_graph.py": "f76c4e2d052555a38b6f9e250b6d5207ab6702c2d62278213f176f3780ff159f"
+  },
+  "common_source_sha256": {
+    "benchmark.py": "394bfa9d274be5b73f65a645189584847f06a6e09f5a3ae1dd642f765c7d0186",
+    "blake3_digest.py": "16f149167a6b1a71d1ea9145e140bbbebc93d83de2d259ae053e328434b283e8",
+    "object_cache_benchmark.py": "9c4a473a22da92d11535f6455a7713c211aec317d3357271387345e90ef85a42",
+    "project_benchmark.py": "2597005e15eca0c11d660de939dd4394630a36a59cea9a0cdf0a1c4765507c94",
+    "resident_host.py": "4ced6e3380c5adef421b944c897f488dff068ca2f3375996fd7130865de15d93",
+    "shared_inputs.py": "439d11d4b8821f1aead77ac806ecf3d77628086dd8f2003ebf6cb28a204f8def"
+  }
+}

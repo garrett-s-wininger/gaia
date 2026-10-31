@@ -79,7 +79,7 @@ extern "C" uint64_t gaia_handoff_stat(void *handle,int field,int index) {
 }
 extern "C" void gaia_handoff_digest(void *handle,int index,char *out) {
     auto &r=static_cast<Pool *>(handle)->results[index];
-    auto hash=llvm::SHA256::hash(llvm::ArrayRef<uint8_t>(reinterpret_cast<uint8_t *>(r.object.data()),r.object_size));
+    auto hash=gaia_sha256(llvm::ArrayRef<uint8_t>(reinterpret_cast<uint8_t *>(r.object.data()),r.object_size));
     const char *hex="0123456789abcdef";
     for(size_t i=0;i<hash.size();++i) {out[2*i]=hex[hash[i]>>4];out[2*i+1]=hex[hash[i]&15];}
     out[64]=0;

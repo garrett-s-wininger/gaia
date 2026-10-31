@@ -1,0 +1,87 @@
+{
+  "source_run": "20261031T032913.223449Z",
+  "jdk": "java version \"25.0.5.0.3\" 2026-10-25 LTS\nJava(TM) SE Runtime Environment (build 25.0.5.0.3+1-LTS-2)\nJava HotSpot(TM) 64-Bit Server VM (build 25.0.5.0.3+1-LTS-2, mixed mode, sharing)\n",
+  "inputs": {
+    "picocli_jar_sha256": "f86e30fffd10d2b13b8caa8d4b237a7ee61f2ffccf5b1941de718b765d235bf8",
+    "sources_sha256": "87916611c616588b20d987868f96e622de6ed447e4b1ff5b662ebd947773e9a6",
+    "jdk_java_sha256": "31b74dd33a6c966a20bececb38c3892476b4b2f023811901e4e41b194b34a7bb",
+    "jdk_modules_sha256": "f1c3cff6a4b07fafa56c48522526b690bb791e3e86befb1b490e3a529ae4058e",
+    "harness_jar_sha256": "d66dd739135fc65f563f22d6d00e457c7d6c4d97478ce71ca05da51ab3e9bb9a"
+  },
+  "original_picocli_version": "4.7.7",
+  "target_sdk": "Same full JDK supplied via --system for every compiler runtime",
+  "source_sha256": {
+    "picocli/AutoComplete.java": "0216345e21611a3ca3862b0c668a4f1426c4c2c2d7d3d21ff4bfb10f417424ae",
+    "picocli/CommandLine.java": "ab19325b58729b4fb7530af5e07151f9336620e1c0e9afead798bf48ec94c086",
+    "picocli/package-info.java": "3c88fb2435bb96c1ea2b1f91280ba34b26065ad4076a666d78f81f4c5cc4ded0"
+  },
+  "edited_source_sha256": {
+    "picocli/AutoComplete.java": "0216345e21611a3ca3862b0c668a4f1426c4c2c2d7d3d21ff4bfb10f417424ae",
+    "picocli/CommandLine.java": "cdb9c5eb1e49855c830056a4ce50e793f46b7e31f92c1e03246f46c5ffe235e9",
+    "picocli/package-info.java": "3c88fb2435bb96c1ea2b1f91280ba34b26065ad4076a666d78f81f4c5cc4ded0"
+  },
+  "harness_sources": {
+    "CompilerHarness.java": "777d2f64b4b08aded52ea9d7a8b377b684a92af6fb6191e0ed576a821ed04e04",
+    "benchmark.py": "71a4a2594912dd9fe6a9f7a65eb236e261d76528536905797d0fa27609ccbdba"
+  },
+  "test_sha256": "e5041128f6383d01304c9831b1745b8b00f35bdcd667774036773e057c9d8237",
+  "vm_flags": [
+    "-Xms32m",
+    "-Xmx768m",
+    "-XX:ActiveProcessorCount=4"
+  ],
+  "compiler_flags": [
+    "-encoding",
+    "UTF-8",
+    "-g:none",
+    "-proc:none",
+    "-implicit:none",
+    "-source",
+    "25",
+    "-target",
+    "25",
+    "--system",
+    "<same admitted full JDK>",
+    "-classpath",
+    "<empty directory>",
+    "-sourcepath",
+    "<empty directory>"
+  ],
+  "jlink_modules": [
+    "java.base@25.0.5.0.3",
+    "java.compiler@25.0.5.0.3",
+    "jdk.compiler@25.0.5.0.3",
+    "jdk.internal.opt@25.0.5.0.3",
+    "jdk.zipfs@25.0.5.0.3"
+  ],
+  "trained_cache_sha256": "3a8ca4bce2caa58e1550ea4288d8973bf9b4b6d949d63666664bdbaa55b39748",
+  "acquisition": {
+    "jdk_archive_url": "https://download.oracle.com/java/25/latest/jdk-25_linux-x64_bin.tar.gz",
+    "jdk_archive_sha256": "6deafad80454d1f968105b1f582d89b8c2e88a5dfc98116a8226e0ec2fd5df8e",
+    "picocli_url": "https://repo.maven.apache.org/maven2/info/picocli/picocli/4.7.7/picocli-4.7.7.jar",
+    "picocli_sources_url": "https://repo.maven.apache.org/maven2/info/picocli/picocli/4.7.7/picocli-4.7.7-sources.jar"
+  },
+  "default_cds_validation": {
+    "scope": "Untimed post-measurement javac-version diagnostic with identical VM settings plus class/CDS logging; default CDS mode, no forced archive. Both share base classes while archived module graph falls back for module-main launch.",
+    "records": [
+      {
+        "runtime": "full",
+        "shared_class_loads_in_version_probe": 856,
+        "default_archive_opened": true,
+        "mapped_static_regions": true,
+        "archived_module_graph_reused": false,
+        "module_graph_fallback": true,
+        "log_sha256": "45f84c388e7ea380da64092014b6632cb6ccf377a3794e37f6577085fda4ec72"
+      },
+      {
+        "runtime": "image",
+        "shared_class_loads_in_version_probe": 887,
+        "default_archive_opened": true,
+        "mapped_static_regions": true,
+        "archived_module_graph_reused": false,
+        "module_graph_fallback": true,
+        "log_sha256": "10eb121be6cf5632481f51a8e4d80f7ad429a429f97ce6189052ac46a1be233d"
+      }
+    ]
+  }
+}

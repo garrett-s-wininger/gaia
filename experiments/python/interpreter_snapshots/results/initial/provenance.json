@@ -1,0 +1,56 @@
+{
+  "artifacts": [
+    {
+      "project": "django",
+      "version": "6.1.2",
+      "filename": "django-6.1.2-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/c9/83/90ff2dbfac7b519ed77620bdbb827cd2d1a83faf00d076bf95056428bce7/django-6.1.2-py3-none-any.whl",
+      "sha256": "141efee6ec64d1db6db90683bf734c550102450f444fb099063b0be1bd27d991"
+    },
+    {
+      "project": "asgiref",
+      "version": "3.13.0",
+      "filename": "asgiref-3.13.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/2e/b0/ec211e1f7966247cb6469158d856bac9aa4c2fe13621bd6a352e4f850453/asgiref-3.13.0-py3-none-any.whl",
+      "sha256": "f9596a2434512686473d50f96ff6207fbba49ae1a785dfac614df4aeb085674d"
+    },
+    {
+      "project": "sqlparse",
+      "version": "0.6.0",
+      "filename": "sqlparse-0.6.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/d9/50/f00935da0ec7cbf325f8dc4f772ae46fbc7b672dd62876e73f0a94adda57/sqlparse-0.6.0-py3-none-any.whl",
+      "sha256": "b861c0288ce2fa56209a9a6412d2e066ac664b3873b89c26c9d8415e8e32996f"
+    },
+    {
+      "project": "djangorestframework",
+      "version": "3.18.3",
+      "filename": "djangorestframework-3.18.3-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/c4/dd/de5f4543765bec94e036a5e9593a42f8fa7efec8de78eb56b9ca834385f3/djangorestframework-3.18.3-py3-none-any.whl",
+      "sha256": "8544bb674846731b1e3c9b309236ee1dc412905a0aa725be2ec193ca950a7d12"
+    },
+    {
+      "project": "django-filter",
+      "version": "26.2",
+      "filename": "django_filter-26.2-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/4a/92/6b098caa5b980a9d13a8db4825b7670410fa572e9195e39648f7700f2a37/django_filter-26.2-py3-none-any.whl",
+      "sha256": "df8f737841d6359df00b84dda9b5ab59067fe60292091f1bdae1e3e6281cedb0"
+    }
+  ],
+  "source_sha256": {
+    "experiments/python/interpreter_snapshots/benchmark.py": "95003528ea7cab59ac6cd2c67ec87a26719db286e7d323f039d0b09107f780a7",
+    "experiments/python/interpreter_snapshots/django_workload.py": "2b06920c834e161ad62013015a9ed1676647814aa0ac1033c0334b9e005466ce",
+    "experiments/python/interpreter_snapshots/node_benchmark.py": "fc5e97d1e9eef2bf7e0d78d36b08860a9f62c112b69247f65e0bc4e8ee0b86f0",
+    "experiments/python/interpreter_snapshots/probe_workload.py": "8b38658d45d6de4cb975b5779ccf301ee6c06f2ede1bab97aff453311f7bfe2c",
+    "experiments/python/interpreter_snapshots/runner.py": "7f2bd22dc0fd25227727c2f21aadde7ae97488e83331d15ced186b34fd2e5432",
+    "experiments/python/interpreter_snapshots/test_runner.py": "968e7ca79b2b2e6027219ea95b07b468b33e0ad761a62e658b7eaf5fc7d1fe0e",
+    "experiments/python/interpreter_snapshots/node_graph.js": "91704700c9327c6ceb493e05b93972aaed821b56533e0216f2fd9406535b8a10",
+    "experiments/python/dependency_bundles/django_fixture/__init__.py": "79ff859686250d321d2206a3475395d909be936da14662f2cc697b6ecb844270",
+    "experiments/python/dependency_bundles/django_fixture/apps.py": "e3aff4430a7a41172d95837991d2f8967c3f7b3fd49e583a6c1657c5f84643d0",
+    "experiments/python/dependency_bundles/django_fixture/models.py": "f4c301ce8bf45dee9464de85ee3f8beb159f4f24c408d0968cdcb7d8c47b9ef5",
+    "experiments/python/dependency_bundles/django_fixture/settings.py": "90111fe31f81f7349a4828871102955ec4d1b285c9074999c3d12a649586a79a",
+    "experiments/python/dependency_bundles/django_fixture/template_loader.py": "6299a28142049cb13747c81bf00b2e83bcb9e5fd936669c6be2c217962b27c33",
+    "experiments/python/dependency_bundles/django_fixture/urls.py": "51230db255c0b7991ee15b71418b5cd0996f10285b68ab21e315a297990bc38d"
+  },
+  "python": "3.14.8 (main, Oct  2 2026, 10:23:31) [GCC 16.2.1 20260810]",
+  "executable_sha256": "375532f83be620283ab780c14ca6bcc5907dc379d2b621de0c5d0a112cf5458b"
+}

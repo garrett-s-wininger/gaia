@@ -1,0 +1,199 @@
+{
+  "run_id": "20261031T030432.875992Z",
+  "producer": {
+    "flat": {
+      "kind": "flat",
+      "lock_pin": "ad19842a91ca9187506d315ab5edf97d5c0596e29ae317c89abe6cf709fbcec3",
+      "payload_descriptor": {
+        "algorithm": "sha256",
+        "digest": "dbdd5c761bcc1480b09e94d5b5358aa715d4b6e7c8d1a79ba80333c4cfe845fc",
+        "size": 28590237
+      },
+      "index_descriptor": {
+        "algorithm": "sha256",
+        "digest": "067906c997212b468aa949a60d3c6d7daefae23639f99f9a8f50f789a4a0ceea",
+        "size": 672773
+      },
+      "producer_seconds": 0.21218809700076235
+    },
+    "zip": {
+      "kind": "zip",
+      "lock_pin": "3d68b95681152e76a0471a0badca71223661936221c09b879828be8fa6b23099",
+      "payload_descriptor": {
+        "algorithm": "sha256",
+        "digest": "1661c7e917fd9ba88fde36623c569ab34e83f4cfe57b556875cd91583d3c2a88",
+        "size": 29396999
+      },
+      "index_descriptor": {
+        "algorithm": "sha256",
+        "digest": "776c2cb74e6b1452d085306e7fcc94a91a32a367012bf303118757a7f0cac00e",
+        "size": 672772
+      },
+      "producer_seconds": 0.280053342001338
+    }
+  },
+  "corpus": {
+    "files": 4018,
+    "versions": {
+      "django": "6.1.2",
+      "asgiref": "3.13.0",
+      "sqlparse": "0.6.0",
+      "rest_framework": "3.18.3",
+      "django_filters": "26.2"
+    },
+    "resources": {
+      "django:contrib/admin/templates/admin/login.html": "677f75af1d7f9d3f87398eaa66292bcb46540556ae518e86a26e879e343396c1",
+      "django:contrib/admin/static/admin/js/core.js": "0a407584ab225a7adfcc3df14729baa2a8f4f4bd5efc6f062233c70ddb9bc6fe",
+      "django:forms/templates/django/forms/widgets/text.html": "7d7a5bc4ccc075bbff6af7d60b9e3ae200f68c59e0f77d44abbbf36f3cb5fb20"
+    },
+    "logical_pin": "91570892b87f1b2a37858ec2928bed14c4be8f4356eb840315ec2fb1a2451f04"
+  },
+  "rows": [
+    {
+      "kind": "flat",
+      "profile": "cold",
+      "acquisition_ms": 39.29104500275571,
+      "admission_ms": 5.934102002356667,
+      "install_ms": 45.29787600040436,
+      "process_ms": 277.63257100014016,
+      "total_ms": 322.7231170021696,
+      "reader_setup_ms": 1.07598899921868,
+      "reader_read_ms": 3.5254639296908863,
+      "reader_hash_ms": 4.493776948947925,
+      "process_spread_ratio": 1.046261297135307,
+      "requests": 1,
+      "transfer_bytes": 29263010
+    },
+    {
+      "kind": "zip",
+      "profile": "cold",
+      "acquisition_ms": 39.598105002369266,
+      "admission_ms": 5.797583995445166,
+      "install_ms": 45.56515900185332,
+      "process_ms": 289.8030599972117,
+      "total_ms": 336.1473909972119,
+      "reader_setup_ms": 1.4792319998377934,
+      "reader_read_ms": 3.8268220305326395,
+      "reader_hash_ms": 4.713921880465932,
+      "process_spread_ratio": 1.130399260839744,
+      "requests": 1,
+      "transfer_bytes": 30069771
+    },
+    {
+      "kind": "flat",
+      "profile": "reuse",
+      "acquisition_ms": 14.262436001445167,
+      "admission_ms": 0.07989200094016269,
+      "install_ms": 14.348479002364911,
+      "process_ms": 283.12762700079475,
+      "total_ms": 297.40546199900564,
+      "reader_setup_ms": 1.1031699978047982,
+      "reader_read_ms": 3.5236129406257533,
+      "reader_hash_ms": 4.521556016698014,
+      "process_spread_ratio": 1.0773694316535734,
+      "requests": 0,
+      "transfer_bytes": 0
+    },
+    {
+      "kind": "zip",
+      "profile": "reuse",
+      "acquisition_ms": 14.81067799613811,
+      "admission_ms": 0.08164399332599714,
+      "install_ms": 14.881372000672854,
+      "process_ms": 283.2572019979125,
+      "total_ms": 298.1499059969792,
+      "reader_setup_ms": 1.1070270047639497,
+      "reader_read_ms": 3.4443629483575933,
+      "reader_hash_ms": 4.56107703212183,
+      "process_spread_ratio": 1.1692792065439583,
+      "requests": 0,
+      "transfer_bytes": 0
+    }
+  ],
+  "paired": [
+    {
+      "profile": "cold",
+      "blocks": [
+        {
+          "block": 0,
+          "acquisition_delta_ms": 1.2094310004613362,
+          "install_delta_ms": 1.4090990007389337,
+          "process_delta_ms": -15.275349003786687,
+          "total_delta_ms": -13.864325999747962
+        },
+        {
+          "block": 1,
+          "acquisition_delta_ms": 0.33684099616948515,
+          "install_delta_ms": 0.4386340006021783,
+          "process_delta_ms": 2.067057997919619,
+          "total_delta_ms": 2.5054619982256554
+        },
+        {
+          "block": 2,
+          "acquisition_delta_ms": -8.06441500026267,
+          "install_delta_ms": -8.219098002882674,
+          "process_delta_ms": -32.38870799395954,
+          "total_delta_ms": -40.61916699720314
+        },
+        {
+          "block": 3,
+          "acquisition_delta_ms": 5.165971990209073,
+          "install_delta_ms": 5.25186399318045,
+          "process_delta_ms": 10.509947998798452,
+          "total_delta_ms": 15.73899899085518
+        },
+        {
+          "block": 4,
+          "acquisition_delta_ms": -1.1225229973206297,
+          "install_delta_ms": -0.8628919968032278,
+          "process_delta_ms": -15.987243998097256,
+          "total_delta_ms": -16.848081992066
+        }
+      ],
+      "total_wins": 3,
+      "process_wins": 3
+    },
+    {
+      "profile": "reuse",
+      "blocks": [
+        {
+          "block": 0,
+          "acquisition_delta_ms": -0.7359450028161518,
+          "install_delta_ms": -0.763387004553806,
+          "process_delta_ms": -3.387377000763081,
+          "total_delta_ms": -4.164299003605265
+        },
+        {
+          "block": 1,
+          "acquisition_delta_ms": -0.3406000032555312,
+          "install_delta_ms": -0.33620099566178396,
+          "process_delta_ms": 8.926024005631916,
+          "total_delta_ms": 8.587497999542393
+        },
+        {
+          "block": 2,
+          "acquisition_delta_ms": -0.5095999949844554,
+          "install_delta_ms": -0.4958439967595041,
+          "process_delta_ms": -27.65388500120025,
+          "total_delta_ms": -28.120793991547544
+        },
+        {
+          "block": 3,
+          "acquisition_delta_ms": -0.6359789986163378,
+          "install_delta_ms": -0.6314810016192496,
+          "process_delta_ms": -0.1295749971177429,
+          "total_delta_ms": -0.7444439979735762
+        },
+        {
+          "block": 4,
+          "acquisition_delta_ms": -0.6746650033164769,
+          "install_delta_ms": -0.6803450014558621,
+          "process_delta_ms": 14.524673009873368,
+          "total_delta_ms": 13.836693004122935
+        }
+      ],
+      "total_wins": 3,
+      "process_wins": 3
+    }
+  ]
+}

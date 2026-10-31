@@ -1,6 +1,6 @@
 # Python dependency formats and loading: review
 
-**Conclusion:** immutable admission, retained indexes and avoiding bulk Python metadata reconstruction help the measured loading paths. An Odin byte reader by itself does not establish faster framework startup. The latest generic bootstrap changes help short commands substantially and Django modestly; framework-specific tuning is paused.
+**Conclusion:** immutable admission, retained indexes and avoiding bulk Python metadata reconstruction help the measured loading paths. An Odin byte reader by itself does not establish faster framework startup. Generic bootstrap changes help short commands substantially and Django modestly; framework-specific tuning is paused.
 
 This is Python-specific evidence, including CPython bytecode, importlib/resource adapters and a Django fixture. Mechanisms such as compact mapped metadata may transfer to other consumers, but those consumers need independent measurements. No experimental sidecar is a standard format.
 
@@ -32,6 +32,12 @@ The [experiment README](../../experiments/python/dependency_bundles/README.md) c
 
 Check trusted immutable admission versus per-open whole-file authentication, payload CRC, malformed-input bounds, mapping/decoder lifetimes and source-inspection behavior before comparing timings. Source-only and precompiled bytecode inputs are separate controls. Warm page cache is not cold storage. Producer cost, mount/setup, actual workload, validation and full shutdown need distinct clocks.
 
-The latest bootstrap research retains 405 validated timed processes and 70 passing regression tests. Earlier reports have their own test/sample counts. Synthetic large catalogs hold imported modules fixed; they are not millions of executed modules. Django is a pinned ORM/admin/REST fixture, not an arbitrary deployed application.
+The bootstrap research retains 405 validated timed processes and 70 passing regression tests. Earlier reports have their own test/sample counts. Synthetic large catalogs hold imported modules fixed; they are not millions of executed modules. Django is a pinned ORM/admin/REST fixture, not an arbitrary deployed application.
 
-Read [follow-up IDs PY-FMT-01 through PY-FMT-04](follow-up.md) before reopening this track. Deeper CPython state reuse is possible separate research; no claim that all generic interpreter optimizations are exhausted is made.
+The [technical task register](follow-up.md) retains acceptance criteria. Interpreter preparation and lifetime are covered separately in the [state-reuse review](interpreter-state.md).
+
+## Connection to artifact delivery
+
+The artifact experiments connect a trusted hash lock to the same real Django dependency workload. Python imports and resources can use a retained pack without extracting loose files. A compact retained index removes most eager reader setup; charging producer construction and acquisition still matters. When both flat payloads and ZIP receive producer-built portable indexes and identical per-read SHA-256/CRC checks, cold installation is near parity around 45 ms, with no reliable complete-startup lead for flat payloads.
+
+The [artifact findings](../artifacts/findings.md), [preindexed comparison](../../experiments/artifacts/results/preindexed-bundle/REPORT.md) and [lock/consumer contract](../../components/artifact-host/locked-python-research.md) own the detailed evidence. This extends Python consumer integration without selecting a universal dependency format or replacing ecosystem selection rules.

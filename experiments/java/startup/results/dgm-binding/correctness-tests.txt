@@ -1,0 +1,8 @@
+test_dynamic_metaclass_replacement_and_private_loader (test_dgm.DgmRuntimeTests.test_dynamic_metaclass_replacement_and_private_loader) ... ok
+test_new_classpath_extension_is_discovered_and_required (test_dgm.DgmRuntimeTests.test_new_classpath_extension_is_discovered_and_required) ... ok
+test_record_descriptors_and_registry_fresh_binding (test_dgm.DgmRuntimeTests.test_record_descriptors_and_registry_fresh_binding) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 13.011s
+
+OK

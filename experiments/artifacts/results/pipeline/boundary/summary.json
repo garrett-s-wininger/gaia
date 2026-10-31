@@ -1,0 +1,246 @@
+{
+  "run_id": "20261031T012523.807265Z",
+  "status": "complete",
+  "trials": 1,
+  "rows": [
+    {
+      "corpus": "mixed",
+      "delay_ms": 2.0,
+      "profile": "cold-index",
+      "layout": "files",
+      "paths": {
+        "batch-buffered": {
+          "median_ms": 23.70840399817098,
+          "first_new_verified_ms": 10.835633001988754,
+          "median_materialization_ms": 0.24297199706779793,
+          "with_ordinary_files_ms": 23.951375995238777,
+          "requests": 2,
+          "connections": 1,
+          "manifest_requests": 1,
+          "payload_bytes": 3932160,
+          "response_framing_bytes": 148,
+          "request_wire_bytes": 4193,
+          "peak_pending": 0,
+          "reordered_completions": 0,
+          "median_access_ms": 4.044663000968285,
+          "atomic_publications": 130
+        },
+        "batch-streamed": {
+          "median_ms": 22.236233999137767,
+          "first_new_verified_ms": 7.968475998495705,
+          "median_materialization_ms": 0.20890700398012996,
+          "with_ordinary_files_ms": 22.445141003117897,
+          "requests": 2,
+          "connections": 1,
+          "manifest_requests": 1,
+          "payload_bytes": 3932160,
+          "response_framing_bytes": 9590,
+          "request_wire_bytes": 4193,
+          "peak_pending": 0,
+          "reordered_completions": 0,
+          "median_access_ms": 3.826367996225599,
+          "atomic_publications": 130
+        }
+      },
+      "paired": {
+        "batch-streamed": {
+          "median_delta_ms": -1.4721699990332127,
+          "wins": 1,
+          "blocks": 1
+        }
+      }
+    },
+    {
+      "corpus": "mixed",
+      "delay_ms": 2.0,
+      "profile": "cold-index",
+      "layout": "packed",
+      "paths": {
+        "batch-buffered": {
+          "median_ms": 18.22345300024608,
+          "first_new_verified_ms": 9.840817998338025,
+          "median_materialization_ms": 10.133503994438797,
+          "with_ordinary_files_ms": 28.35695699468488,
+          "requests": 2,
+          "connections": 1,
+          "manifest_requests": 1,
+          "payload_bytes": 3932160,
+          "response_framing_bytes": 148,
+          "request_wire_bytes": 4193,
+          "peak_pending": 0,
+          "reordered_completions": 0,
+          "median_access_ms": 2.845823000825476,
+          "atomic_publications": 5
+        },
+        "batch-streamed": {
+          "median_ms": 16.36374399822671,
+          "first_new_verified_ms": 5.7795120010268874,
+          "median_materialization_ms": 6.659616999968421,
+          "with_ordinary_files_ms": 23.02336099819513,
+          "requests": 2,
+          "connections": 1,
+          "manifest_requests": 1,
+          "payload_bytes": 3932160,
+          "response_framing_bytes": 9590,
+          "request_wire_bytes": 4193,
+          "peak_pending": 0,
+          "reordered_completions": 0,
+          "median_access_ms": 2.894635996199213,
+          "atomic_publications": 5
+        }
+      },
+      "paired": {
+        "batch-streamed": {
+          "median_delta_ms": -1.8597090020193718,
+          "wins": 1,
+          "blocks": 1
+        }
+      }
+    },
+    {
+      "corpus": "mixed",
+      "delay_ms": 2.0,
+      "profile": "offline",
+      "layout": "files",
+      "paths": {
+        "batch-buffered": {
+          "median_ms": 9.298024997406173,
+          "first_new_verified_ms": null,
+          "median_materialization_ms": 0.22214300406631082,
+          "with_ordinary_files_ms": 9.520168001472484,
+          "requests": 0,
+          "connections": 0,
+          "manifest_requests": 0,
+          "payload_bytes": 0,
+          "response_framing_bytes": 0,
+          "request_wire_bytes": 0,
+          "peak_pending": 0,
+          "reordered_completions": 0,
+          "median_access_ms": 5.028723993746098,
+          "atomic_publications": 1
+        },
+        "batch-streamed": {
+          "median_ms": 9.589189001417253,
+          "first_new_verified_ms": null,
+          "median_materialization_ms": 0.5869759988854639,
+          "with_ordinary_files_ms": 10.176165000302717,
+          "requests": 0,
+          "connections": 0,
+          "manifest_requests": 0,
+          "payload_bytes": 0,
+          "response_framing_bytes": 0,
+          "request_wire_bytes": 0,
+          "peak_pending": 0,
+          "reordered_completions": 0,
+          "median_access_ms": 5.093096995551605,
+          "atomic_publications": 1
+        }
+      },
+      "paired": {
+        "batch-streamed": {
+          "median_delta_ms": 0.29116400401107967,
+          "wins": 0,
+          "blocks": 1
+        }
+      }
+    },
+    {
+      "corpus": "mixed",
+      "delay_ms": 2.0,
+      "profile": "offline",
+      "layout": "packed",
+      "paths": {
+        "batch-buffered": {
+          "median_ms": 7.17682100366801,
+          "first_new_verified_ms": null,
+          "median_materialization_ms": 6.490013998700306,
+          "with_ordinary_files_ms": 13.666835002368316,
+          "requests": 0,
+          "connections": 0,
+          "manifest_requests": 0,
+          "payload_bytes": 0,
+          "response_framing_bytes": 0,
+          "request_wire_bytes": 0,
+          "peak_pending": 0,
+          "reordered_completions": 0,
+          "median_access_ms": 2.584706002380699,
+          "atomic_publications": 1
+        },
+        "batch-streamed": {
+          "median_ms": 5.83781299792463,
+          "first_new_verified_ms": null,
+          "median_materialization_ms": 6.78805100324098,
+          "with_ordinary_files_ms": 12.62586400116561,
+          "requests": 0,
+          "connections": 0,
+          "manifest_requests": 0,
+          "payload_bytes": 0,
+          "response_framing_bytes": 0,
+          "request_wire_bytes": 0,
+          "peak_pending": 0,
+          "reordered_completions": 0,
+          "median_access_ms": 2.6248430003761314,
+          "atomic_publications": 1
+        }
+      },
+      "paired": {
+        "batch-streamed": {
+          "median_delta_ms": -1.3390080057433806,
+          "wins": 1,
+          "blocks": 1
+        }
+      }
+    }
+  ],
+  "connection_setup": [
+    {
+      "corpus": "mixed",
+      "delay_ms": 2.0,
+      "layout": "files",
+      "path": "batch-buffered",
+      "connect_seconds": 0.0013447579985950142,
+      "prime_seconds": 0.0005249280002317391
+    },
+    {
+      "corpus": "mixed",
+      "delay_ms": 2.0,
+      "layout": "files",
+      "path": "batch-streamed",
+      "connect_seconds": 8.858799992594868e-05,
+      "prime_seconds": 0.0004497929985518567
+    },
+    {
+      "corpus": "mixed",
+      "delay_ms": 2.0,
+      "layout": "packed",
+      "path": "batch-buffered",
+      "connect_seconds": 8.235700079239905e-05,
+      "prime_seconds": 0.00042635299905668944
+    },
+    {
+      "corpus": "mixed",
+      "delay_ms": 2.0,
+      "layout": "packed",
+      "path": "batch-streamed",
+      "connect_seconds": 7.899999764049426e-05,
+      "prime_seconds": 0.00041801999759627506
+    }
+  ],
+  "source_sha256": {
+    "pipeline_benchmark.py": "e881c275186f12da9323866323c430b726424886bcb53819cf1d1bfa9b287390",
+    "test_pipeline_transport.py": "0715d05039dd0d0da3b2d970ad219e3b8834cfd98fb1e385aa1171bb3d346763",
+    "pipeline_transport.py": "2c1cf9ff331501e1f5e37a6878c36c95d7fe2b6c760bd598fb3e8a18bb478bcb",
+    "admission_benchmark.py": "dfc83e192e27f9ac00497cc37ab0de61a50db053b8a743d50f59eb4ad9c59c61",
+    "test_cache_store.py": "7f9667f63796e3222c9b86ff02be0179d64a42f6ccfe73ddd3b178ba76891c4f",
+    "cache_store.py": "fc48732e2d7fa1e99a27651640eade3176c378db21497586789424263e724d27",
+    "profile_transfer.py": "6ba4a8ead5c80e745004cc4dff288a34db8fc0b8fa7158f277d015cfe4909e4d",
+    "test_buffered_transport.py": "31cd0b388a7e6ebf71036429078d258b903822db001c9d0cecc25475d382d19d",
+    "framing_benchmark.py": "10de3369c1671dab8dd02a8022ba1637e9bc0a55da551fa8652f3c729e59d14c",
+    "test_binary_transport.py": "3ef2ba245bedd8075824439c94f2b9373410424999208265cdb5b4a7b1a1bc0b",
+    "binary_transport.py": "6780f80ff32df7b27623083f04b2eb60ad06e3bdc8f9e620687146f363323f14",
+    "batch.py": "8880a46a55956c11a29953e51f654567119317b228467df85afc6880654dcaad",
+    "benchmark.py": "4371b93a7ce353187b7fec4060a96711a83c4e589daaf5530007853fd11b9127",
+    "test_transfer.py": "c3d496af536a6751d1aeac3371efafee3152a5fe134c139c31824be2d1273103",
+    "transfer.py": "60f515cc4bfabd9ec286f4bf40e8b1e5f39fa9f6c464af077d0a92d480d1f597"
+  }
+}

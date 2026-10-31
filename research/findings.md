@@ -1,31 +1,42 @@
 # What we have learned
 
-The strongest gains came from avoiding repeated work and preserving useful knowledge between stages. Changing a container or replacing a reader with native code helped only when it removed work from the complete workflow.
+The useful gains came from retaining information that tools would otherwise reconstruct: input identity, observed dependencies, loaded compiler code and verified content locations. A new container or a native implementation helped when it removed that repeated work. Existing caches often removed much of the same work already.
 
-## Compiler work can often be reused
+The comparisons below come from separate runs on one Linux developer laptop, mostly with warm filesystem pages. Read each row within its own experiment; the differences cannot be added into a combined speedup.
 
-On the tested Zstandard library, a native full build takes roughly 4.6 seconds. With already admitted inputs, local object reuse reduces an unchanged consumer to about 53 ms and a light implementation edit to about 117 ms. A heavy implementation edit still takes about 3.77 seconds because that object must be regenerated.
+## Compiler processes and explicit inputs are worth pursuing
 
-Broader keys lose reuse. Our first conservative policy included every visible header, so changing an unused shared input rebuilt everything. Recording what the compiler actually observed recovered that reuse while preserving negative lookups and include shadowing. Low-fanout header-edit pipelines then took about 110–121 ms **including snapshot preparation**. A real widely shared header correctly rebuilt its 26 readers and reused five objects.
+The native compiler prototypes now beat the matched Ninja controls on several incremental operations while preserving artifact identity and dependency invalidation. A separate four-target C++ fixture extends the result beyond one C library. Managed Java compilation also benefits substantially from retaining initialized compiler processes.
 
-That precision costs something. Journal validation slowed unchanged pipelines from 77 to 104 ms. An exact-view fast path before replay is the next focused experiment. Read the [compiler findings](compiler/findings.md) for matched evidence and limits.
+| Measured operation | Candidate | Control | What the comparison establishes |
+| --- | ---: | ---: | --- |
+| C source edit, authoritative API inputs | 42.25 ms | 48.78 ms, physical adapter | Supplied edits can avoid repeated physical validation; seven of seven paired wins. |
+| C++ source edit, baseline object caches | 293.49 ms | 397.91 ms, Ninja + ccache | Four-target propagation works with one actual compilation and three links; three of three wins. |
+| Two complete Java targets | 448 ms, warm two-worker pool | 1,969 ms, parallel cold CLIs | Process lifetime matters; every target still performs joint source compilation. |
 
-## Process lifetime and scheduling matter
+The API workspace owns admitted bytes. It does not discover unreported filesystem changes. The C++ graph contains real fmt sources plus a small labelled integration fixture; its repeated-edit history hits are reported separately from object-cache misses. The Java pool retains memory and pays startup on its first request. None of these is a general large-project or service guarantee. See [native compiler findings](compiler/findings.md) and [JVM compiler findings](compiler/jvm/findings.md).
 
-Four complete independent builds per process saved about 36 ms per build without caching ASTs or compiled results. Starting predicted expensive jobs first improved Zstandard build medians by 2.3–5.2%, with slightly higher CPU consumption. Neither is a general proof of a production worker service or build-DAG scheduler.
+## Artifact delivery benefits from fewer operations and direct access
 
-Direct compiler-to-linker buffers removed object-file I/O, but did not produce a consistent extra parallel-build win on the C libraries we tested. The larger library still spent most measured compiler time in optimization and code generation. Fewer syscalls are useful evidence about mechanism, not sufficient evidence of faster work.
+Sending a known list of missing hashes avoids one request per object. A verified local pack can also reduce publication and open calls for consumers that accept logical byte views. Requiring ordinary files can reverse the gain, so materialization belongs in the complete operation.
 
-## Python benefits depend on the workload
+A generic binary resolved lock reduces parsing CPU from 9.24 to 2.84 ms and encoded size by 43% against the same JSON data. Once both flat payloads and stored ZIP receive producer-built portable indexes, cold installation is nearly equal at about 45 ms. The flat representation sends 2.7% fewer bytes, but it has no reliable complete-startup lead. The reusable result is the admission/access contract, rather than a selected universal archive. See [artifact findings](artifacts/findings.md).
 
-Keeping archive/index state alive and avoiding eager reconstruction of unused metadata helped the measured Python loading paths. Generic startup changes improved short commands substantially, while the Django improvement was more modest. Moving bytes through Odin alone did not make the framework start faster.
+## Startup depends on what is retained and on the existing baseline
 
-The resolver experiments found repeated scans, predicate work and state copying that could be removed. Those improvements do not make dependency solving easy in general, or replace pip's full behavior. Read the [Python findings](python/findings.md) for the distinction between loading, resolution and full-process startup.
+| Ecosystem and workload | Result | Practical limit |
+| --- | --- | --- |
+| Python dependency loading and resolution | Retained indexes and less resolver bookkeeping help. | Interpreter/framework work and full installer behavior remain separate. |
+| Python prepared processes | Complete core/REST requests fall from 251/256 to 105/131 ms. | A live Linux template, explicit framework preparation and repeated requests are required. |
+| Node / TypeScript | Library snapshot 117 vs 202 ms for the same bundle. | Full-project snapshot 738 ms loses to the warmed stock CLI at 722 ms. |
+| Ruby / RuboCop | Faster full SHA verification saves about 48 ms. | Packed startup remains 438 vs warmed Bootsnap's 428 ms, with higher RSS. |
+| JVM / Groovy | Supplied class knowledge reduces dynamic startup from 909 to 735 ms. | Class metadata sharing does not restore arbitrary initialized runtime state; denser DGM data adds no dependable full-command gain. |
+| .NET / Roslyn | Composite R2R takes 440 vs the shipping compiler's 458 ms. | The 13.3-second producer cost needs roughly 770 such invocations to amortize. |
 
-## What the evidence does not establish
+These are different preparation and lifetime mechanisms, not interchangeable snapshots. Details and compatibility limits live in the [Python](python/findings.md), [interpreter-state](python/interpreter-state.md), [Ruby](ruby/findings.md), [JVM startup](java/findings.md) and [.NET](dotnet/findings.md) guides.
 
-The compiler baselines are full uncached batches, not a head-to-head comparison with existing incremental build tools. Header timing cases deliberately have low fanout. Input/SDK admission and edit discovery can be substantial work outside a consumer clock; the latest pipeline comparison includes updating a known snapshot, not discovering an arbitrary new SDK.
+## What this suggests for Gaia
 
-Measurements use the available Linux laptop, pinned software and warm page cache. Results from different runs should not be added together. No artifact-host protocol, editor, general compiler service or source-control implementation follows from these experiments.
+Explicit named inputs, bounded tool sessions, observed dependencies and independently retrievable metadata are useful boundaries to develop. Compatibility adapters remain part of the cost: filesystem imports, extracted files, target SDKs and language-specific rules still matter. Integrity checks, failures, cancellation, retained memory and preparation must remain visible when comparing complete operations.
 
-The [prospects](prospects.md) explain the next measurements that could change our decisions.
+The [component designs](../components/README.md) own product decisions. Source control has an agreed MVP design; these experiments do not expand it into a compiler service, CI executor or artifact server. The [next research questions](prospects.md) follow from the remaining uncertainty.

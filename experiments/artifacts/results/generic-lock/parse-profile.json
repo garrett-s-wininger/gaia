@@ -1,0 +1,74 @@
+{
+  "scope": "Standalone full pin/structure validation; provided input bytes excluded from allocations. Allocation tracing is separate from latency samples.",
+  "trials": 5,
+  "samples": {
+    "json": [
+      {
+        "block": 0,
+        "wall_ms": 9.403055999428034,
+        "cpu_ms": 9.397108000000376
+      },
+      {
+        "block": 1,
+        "wall_ms": 9.12085099844262,
+        "cpu_ms": 9.116224999999645
+      },
+      {
+        "block": 2,
+        "wall_ms": 8.528729005774949,
+        "cpu_ms": 8.524113
+      },
+      {
+        "block": 3,
+        "wall_ms": 13.962434000859503,
+        "cpu_ms": 10.316660999999616
+      },
+      {
+        "block": 4,
+        "wall_ms": 9.246078996511642,
+        "cpu_ms": 9.239368999999886
+      }
+    ],
+    "binary": [
+      {
+        "block": 0,
+        "wall_ms": 2.8162460002931766,
+        "cpu_ms": 2.8088629999998282
+      },
+      {
+        "block": 1,
+        "wall_ms": 2.921013998275157,
+        "cpu_ms": 2.9170870000001514
+      },
+      {
+        "block": 2,
+        "wall_ms": 2.818248998664785,
+        "cpu_ms": 2.813801999999921
+      },
+      {
+        "block": 3,
+        "wall_ms": 3.0590559981646948,
+        "cpu_ms": 3.052856000000048
+      },
+      {
+        "block": 4,
+        "wall_ms": 2.8490780023275875,
+        "cpu_ms": 2.8429980000002075
+      }
+    ]
+  },
+  "allocations": {
+    "json": {
+      "retained_traced_bytes": 2911967,
+      "peak_traced_bytes": 3795247
+    },
+    "binary": {
+      "retained_traced_bytes": 2616,
+      "peak_traced_bytes": 390336
+    }
+  },
+  "bytes": {
+    "json": 882337,
+    "binary": 498747
+  }
+}

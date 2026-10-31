@@ -1,0 +1,346 @@
+{
+  "run_id": "20261031T004036.581497Z",
+  "raw_sha256": "ac631ddadf1550e13b4d4284b418c37c7efb06d1a6df831e73c8dffdad44158d",
+  "cases": [
+    {
+      "scenario": "unchanged",
+      "engines": {
+        "ninja": {
+          "median_ms": 3.216258999600541,
+          "samples": 7
+        },
+        "ninja-ccache": {
+          "median_ms": 3.018239003722556,
+          "samples": 7
+        },
+        "gaia-rebound": {
+          "median_ms": 2.4751090022618882,
+          "samples": 7
+        },
+        "gaia-retained": {
+          "median_ms": 2.5320380009361543,
+          "samples": 7
+        }
+      },
+      "paired_retained_minus_control": {
+        "ninja": {
+          "median_delta_ms": -0.6714850023854524,
+          "wins": 6,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": -0.5384309988585301,
+          "wins": 5,
+          "blocks": 7
+        },
+        "gaia-rebound": {
+          "median_delta_ms": 0.07074599125189707,
+          "wins": 2,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "implementation",
+      "engines": {
+        "ninja": {
+          "median_ms": 64.15145799837774,
+          "samples": 7
+        },
+        "ninja-ccache": {
+          "median_ms": 95.0945500007947,
+          "samples": 7
+        },
+        "gaia-rebound": {
+          "median_ms": 58.01163199794246,
+          "samples": 7,
+          "export_median_ms": 9.249369999452028
+        },
+        "gaia-retained": {
+          "median_ms": 54.32732900226256,
+          "samples": 7,
+          "export_median_ms": 5.331307998858392,
+          "reference_equal": true,
+          "representative_index": {
+            "queries": 5266,
+            "conditions": 275,
+            "positive_files": 187,
+            "kinds": {
+              "0": 58,
+              "1": 187,
+              "2": 30
+            },
+            "bytes": 37018,
+            "target_paths": 258,
+            "condition_merges": 0,
+            "fragment_hits": 30,
+            "fragment_misses": 1,
+            "queries_parsed": 170,
+            "fragment_cache_valid": null,
+            "fragment_cache_source": "memory",
+            "fragment_cache_bytes": 37210,
+            "fragment_cache_published": true,
+            "namespace_reused": true,
+            "condition_plan_reused": true,
+            "logical_hashes_computed": 1,
+            "logical_hashes_reused": 186,
+            "physical_reads": 187,
+            "physical_bytes": 3016233,
+            "retained": true,
+            "stages_ns": {
+              "fragment_load": 616791,
+              "plan": 22433,
+              "verify_emit": 4440862,
+              "fragment_encode": 424433,
+              "fragment_publish": 215242
+            }
+          }
+        }
+      },
+      "paired_retained_minus_control": {
+        "ninja": {
+          "median_delta_ms": -8.702501996594947,
+          "wins": 7,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": -41.93694399873493,
+          "wins": 7,
+          "blocks": 7
+        },
+        "gaia-rebound": {
+          "median_delta_ms": -3.9359270085697062,
+          "wins": 7,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "shared-header",
+      "engines": {
+        "ninja": {
+          "median_ms": 41.07580600248184,
+          "samples": 7
+        },
+        "ninja-ccache": {
+          "median_ms": 62.703035000595264,
+          "samples": 7
+        },
+        "gaia-rebound": {
+          "median_ms": 36.326303001260385,
+          "samples": 7,
+          "export_median_ms": 9.19582699862076
+        },
+        "gaia-retained": {
+          "median_ms": 32.92248199431924,
+          "samples": 7,
+          "export_median_ms": 5.129751996719278,
+          "reference_equal": true,
+          "representative_index": {
+            "queries": 5266,
+            "conditions": 275,
+            "positive_files": 187,
+            "kinds": {
+              "0": 58,
+              "1": 187,
+              "2": 30
+            },
+            "bytes": 37018,
+            "target_paths": 258,
+            "condition_merges": 0,
+            "fragment_hits": 30,
+            "fragment_misses": 1,
+            "queries_parsed": 62,
+            "fragment_cache_valid": null,
+            "fragment_cache_source": "memory",
+            "fragment_cache_bytes": 37210,
+            "fragment_cache_published": true,
+            "namespace_reused": true,
+            "condition_plan_reused": true,
+            "logical_hashes_computed": 1,
+            "logical_hashes_reused": 186,
+            "physical_reads": 187,
+            "physical_bytes": 3016231,
+            "retained": true,
+            "stages_ns": {
+              "fragment_load": 313630,
+              "plan": 21281,
+              "verify_emit": 4109969,
+              "fragment_encode": 353637,
+              "fragment_publish": 220713
+            }
+          }
+        }
+      },
+      "paired_retained_minus_control": {
+        "ninja": {
+          "median_delta_ms": -8.176543997251429,
+          "wins": 7,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": -30.0073840044206,
+          "wins": 7,
+          "blocks": 7
+        },
+        "gaia-rebound": {
+          "median_delta_ms": -3.1475470022996888,
+          "wins": 7,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "generated-header",
+      "engines": {
+        "ninja": {
+          "median_ms": 41.072840002016164,
+          "samples": 7
+        },
+        "ninja-ccache": {
+          "median_ms": 62.05582600523485,
+          "samples": 7
+        },
+        "gaia-rebound": {
+          "median_ms": 37.59523200278636,
+          "samples": 7,
+          "export_median_ms": 9.32587900024373
+        },
+        "gaia-retained": {
+          "median_ms": 33.69463099807035,
+          "samples": 7,
+          "export_median_ms": 5.191730000660755,
+          "reference_equal": true,
+          "representative_index": {
+            "queries": 5266,
+            "conditions": 275,
+            "positive_files": 187,
+            "kinds": {
+              "0": 58,
+              "1": 187,
+              "2": 30
+            },
+            "bytes": 37018,
+            "target_paths": 258,
+            "condition_merges": 0,
+            "fragment_hits": 30,
+            "fragment_misses": 1,
+            "queries_parsed": 62,
+            "fragment_cache_valid": null,
+            "fragment_cache_source": "memory",
+            "fragment_cache_bytes": 37210,
+            "fragment_cache_published": true,
+            "namespace_reused": true,
+            "condition_plan_reused": true,
+            "logical_hashes_computed": 1,
+            "logical_hashes_reused": 186,
+            "physical_reads": 187,
+            "physical_bytes": 3016231,
+            "retained": true,
+            "stages_ns": {
+              "fragment_load": 317178,
+              "plan": 21631,
+              "verify_emit": 4132542,
+              "fragment_encode": 346865,
+              "fragment_publish": 212456
+            }
+          }
+        }
+      },
+      "paired_retained_minus_control": {
+        "ninja": {
+          "median_delta_ms": -7.722325004579034,
+          "wins": 7,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": -29.223279001598712,
+          "wins": 7,
+          "blocks": 7
+        },
+        "gaia-rebound": {
+          "median_delta_ms": -3.951015001803171,
+          "wins": 7,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "unused-header",
+      "engines": {
+        "ninja": {
+          "median_ms": 3.0101739976089448,
+          "samples": 7
+        },
+        "ninja-ccache": {
+          "median_ms": 2.9698869984713383,
+          "samples": 7
+        },
+        "gaia-rebound": {
+          "median_ms": 2.390847999777179,
+          "samples": 7
+        },
+        "gaia-retained": {
+          "median_ms": 2.5049659961950965,
+          "samples": 7
+        }
+      },
+      "paired_retained_minus_control": {
+        "ninja": {
+          "median_delta_ms": -0.5052080014138483,
+          "wins": 6,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": -0.42263900104444474,
+          "wins": 6,
+          "blocks": 7
+        },
+        "gaia-rebound": {
+          "median_delta_ms": -0.002544999006204307,
+          "wins": 4,
+          "blocks": 7
+        }
+      }
+    },
+    {
+      "scenario": "revert",
+      "engines": {
+        "ninja": {
+          "median_ms": 63.55129900475731,
+          "samples": 7
+        },
+        "ninja-ccache": {
+          "median_ms": 24.086610006634146,
+          "samples": 7
+        },
+        "gaia-rebound": {
+          "median_ms": 9.517784004856367,
+          "samples": 7
+        },
+        "gaia-retained": {
+          "median_ms": 10.065645998110995,
+          "samples": 7
+        }
+      },
+      "paired_retained_minus_control": {
+        "ninja": {
+          "median_delta_ms": -53.14125099539524,
+          "wins": 7,
+          "blocks": 7
+        },
+        "ninja-ccache": {
+          "median_delta_ms": -14.00773700879654,
+          "wins": 7,
+          "blocks": 7
+        },
+        "gaia-rebound": {
+          "median_delta_ms": 0.12587200035341084,
+          "wins": 3,
+          "blocks": 7
+        }
+      }
+    }
+  ],
+  "scope": "Warm resident single C target; full operations, with exact reference index checks outside the clock."
+}

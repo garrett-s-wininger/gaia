@@ -23,8 +23,9 @@ SOURCE_SHA='bb329a0a2cd0274d05519d61c667c062e06990d72e125ee2dfa8de64f0119d16'
 MODES=('make-serial','make-parallel','cli-batch','physical','memory')
 
 
-def encode_inputs(files):
-    result=bytearray(b'GAIACIN2'+struct.pack('<Q',len(files)))
+def encode_inputs(files,magic=b'GAIACIN2'):
+    if magic not in (b'GAIACIN2',b'GAIACIN3'):raise ValueError('snapshot wire version')
+    result=bytearray(magic+struct.pack('<Q',len(files)))
     for path,body in sorted(files.items()):
         name=path.encode();result+=struct.pack('<IQ',len(name),len(body))+name+b'\0'+body+b'\0'
     return result

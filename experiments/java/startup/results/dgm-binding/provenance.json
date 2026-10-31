@@ -1,0 +1,36 @@
+{
+  "source_run": "20261031T030839.766073Z",
+  "schema": "GAIA-DGM-BIND-1",
+  "inputs": {
+    "schema": "GAIA-DGM-BIND-1",
+    "base_jar_sha256": "6bcbec490ac1ade0dca6566dca9d02897cbb8fc31ee4008e950451aa83b1ac76",
+    "source_jar_sha256": "94a6e1d6ddd94cfe31e64d50a8564026badc72a43f19d380726a787c9a11104b",
+    "variants": {
+      "rebuilt": {
+        "jar_sha256": "90e2b3b085e906eeb2edbadab63c17c51d590ca25ffae05e65c5b19d8d3cfa84",
+        "patched_source_sha256": "5b9cd6cf17a5ee83bbf796f84e98db797a9a186dd8c889cce4880e8c5171ba7b",
+        "dgminfo_sha256": "b64a1072023a6a897276692702f1f4f89046a20d534b8534310bda7a46fcaed8"
+      },
+      "serial": {
+        "jar_sha256": "9a813886f4d88fee757ac665ff465ae1ba56b52e929b1865b121a6d32cfc2a0f",
+        "patched_source_sha256": "d093dcf2f1fdf830094f36d40afa600f708489ad4d17e1324eec3046eb76a8c7",
+        "dgminfo_sha256": "b64a1072023a6a897276692702f1f4f89046a20d534b8534310bda7a46fcaed8"
+      },
+      "dense": {
+        "jar_sha256": "831d8cbd3e94dccf8d9e4d64299ff6b1aa0fc618c361fea0a628b036181e57e1",
+        "patched_source_sha256": "e32258990b130d4a447f5b3505fb011e7166630813a8da62770b76ba2e5862c3",
+        "dgminfo_sha256": "b64a1072023a6a897276692702f1f4f89046a20d534b8534310bda7a46fcaed8"
+      }
+    }
+  },
+  "sources": {
+    "dgm_prepare.py": "03a2bbae7b76da5a17ba4c539ddbbc56557f2b6149519e4da29d673ad6f9a04b",
+    "dgm_benchmark.py": "9925f3cbdcdb6c19d4ef339323e2dd9a2b8651558d7c5157217e4f2471b55725",
+    "FrameworkPhases.java": "23bd84bdd762bfa9f6d7e3702a13c1ae97a19ef8ff04a4e3d2609a2d191b7e19",
+    "Command.java": "184911af2781ca4ee1d70d4011b101df8cc9b16d774ac7ee9cc3bfae2dc34268",
+    "StaticLogic.groovy": "a7f8f20276e9a6f060cb5e5ad3f8e8a7baf3c03f7829d1aee514c374f2f3f5eb"
+  },
+  "tests_sha256": "59cdb524e5194e3f21f07b86620e8f2fe52fcbfc9f3ae15ad268937b49e62cc3",
+  "extension_source_sha256": "07db81f2bb97034dd995eb0a79c66538ffd8a973002c0497dc1fde77c1649747",
+  "profile_script_sha256": "b8a76204005fd0e6dd01f4d723a92e26d50a0f367f0b6a99f683fd6c216063b2"
+}

@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "path_base": "repository-root",
+  "track": "immutable-artifact-transfer",
+  "experiments": [
+    {
+      "id": "AT-HTTP-BASELINE",
+      "run_id": "20261030T231703.682942Z",
+      "status": "measured-loopback-request-byte-amplification",
+      "report": "experiments/artifacts/results/initial/REPORT.md",
+      "raw": "experiments/artifacts/results/initial/results.json",
+      "summary": "experiments/artifacts/results/initial/summary.json",
+      "validation": "experiments/artifacts/results/initial/validation.json",
+      "correctness": "experiments/artifacts/results/initial/correctness-tests.txt",
+      "findings": "research/artifacts/findings.md"
+    },
+    {
+      "id": "AT-BINARY-FRAMING",
+      "run_id": "20261030T234421.715464Z",
+      "status": "measured-matched-http-binary-envelopes-and-shared-selected-batch",
+      "report": "experiments/artifacts/results/framing/REPORT.md",
+      "raw": "experiments/artifacts/results/framing/results.json",
+      "summary": "experiments/artifacts/results/framing/summary.json",
+      "validation": "experiments/artifacts/results/framing/validation.json",
+      "correctness": "experiments/artifacts/results/framing/correctness-tests.txt",
+      "format": "components/artifact-host/binary-framing.md",
+      "findings": "research/artifacts/findings.md#binary-helps-repeated-small-operations-batching-remains-the-larger-gain"
+    },
+    {
+      "id": "AT-BUFFERED-BINARY",
+      "run_id": "20261031T000330.496972Z",
+      "status": "measured-bounded-receiver-allocation-and-selective-latency-improvement",
+      "report": "experiments/artifacts/results/buffered/REPORT.md",
+      "raw": "experiments/artifacts/results/buffered/results.json",
+      "summary": "experiments/artifacts/results/buffered/summary.json",
+      "validation": "experiments/artifacts/results/buffered/validation.json",
+      "correctness": "experiments/artifacts/results/buffered/correctness-tests.txt",
+      "profile": "experiments/artifacts/results/buffered/allocation-profile.json",
+      "profile_raw": "experiments/artifacts/results/buffered/profile-raw/profiles.json",
+      "findings": "research/artifacts/findings.md#receiver-copying-was-avoidable-publication-remains-shared-work"
+    },
+    {
+      "id": "AT-VERIFIED-LOCAL-PACK",
+      "run_id": "20261031T005250.489572Z",
+      "status": "measured-shared-pack-index-admission-access-and-explicit-materialization",
+      "report": "experiments/artifacts/results/admission/REPORT.md",
+      "raw": "experiments/artifacts/results/admission/results.json",
+      "summary": "experiments/artifacts/results/admission/summary.json",
+      "validation": "experiments/artifacts/results/admission/validation.json",
+      "correctness": "experiments/artifacts/results/admission/correctness-tests.txt",
+      "design": "components/artifact-host/local-cache-research.md",
+      "findings": "research/artifacts/findings.md#a-local-packindex-helps-direct-logical-byte-consumers-on-both-transports"
+    },
+    {
+      "id": "AT-PIPELINED-STREAMED-BATCH",
+      "run_id": "20261031T012507.804972Z",
+      "status": "measured-bounded-independent-request-window-and-progressive-known-list-batch",
+      "report": "experiments/artifacts/results/pipeline/REPORT.md",
+      "raw": "experiments/artifacts/results/pipeline/results.json",
+      "summary": "experiments/artifacts/results/pipeline/summary.json",
+      "validation": "experiments/artifacts/results/pipeline/validation.json",
+      "correctness": "experiments/artifacts/results/pipeline/correctness-tests.txt",
+      "boundary_summary": "experiments/artifacts/results/pipeline/boundary/summary.json",
+      "boundary_raw": "experiments/artifacts/results/pipeline/boundary/results.json",
+      "boundary_validation": "experiments/artifacts/results/pipeline/boundary/validation.json",
+      "design": "components/artifact-host/pipeline-research.md",
+      "findings": "research/artifacts/findings.md#one-known-list-request-avoids-request-amplification-streaming-adds-progress"
+    },
+    {
+      "id": "AT-LOCKED-PYTHON-CONSUMER",
+      "run_id": "20261031T013718.168635Z",
+      "status": "functional-direct-packed-django-consumer-exploratory-timings-with-drift",
+      "report": "experiments/artifacts/results/locked-python/REPORT.md",
+      "raw": "experiments/artifacts/results/locked-python/results.json",
+      "summary": "experiments/artifacts/results/locked-python/summary.json",
+      "validation": "experiments/artifacts/results/locked-python/validation.json",
+      "correctness": "experiments/artifacts/results/locked-python/correctness-tests.txt",
+      "provenance": "experiments/artifacts/results/locked-python/provenance.json",
+      "design": "components/artifact-host/locked-python-research.md",
+      "findings": "research/artifacts/findings.md#a-trusted-hash-lock-can-drive-real-python-directly-from-the-retained-pack"
+    },
+    {
+      "id": "AT-COMPACT-PYTHON-INDEX",
+      "run_id": "20261031T021308.848988Z",
+      "status": "measured-retained-binary-setup-and-matched-per-read-sha256-crc32-zip-pack",
+      "report": "experiments/artifacts/results/compact-python/REPORT.md",
+      "raw": "experiments/artifacts/results/compact-python/results.json",
+      "summary": "experiments/artifacts/results/compact-python/summary.json",
+      "validation": "experiments/artifacts/results/compact-python/validation.json",
+      "correctness": "experiments/artifacts/results/compact-python/correctness-tests.txt",
+      "compact_correctness": "experiments/artifacts/results/compact-python/compact-correctness-tests.txt",
+      "profile": "experiments/artifacts/results/compact-python/setup-profile.json",
+      "design": "components/artifact-host/compact-python-research.md",
+      "findings": "research/artifacts/findings.md#retained-binary-metadata-closes-the-python-setup-gap-but-not-acquisition"
+    },
+    {
+      "id": "AT-GENERIC-BINARY-LOCK",
+      "run_id": "20261031T023718.134084Z",
+      "status": "measured-matched-generic-json-binary-resolved-manifest-and-identical-packed-python-consumer",
+      "report": "experiments/artifacts/results/generic-lock/REPORT.md",
+      "raw": "experiments/artifacts/results/generic-lock/results.json",
+      "summary": "experiments/artifacts/results/generic-lock/summary.json",
+      "validation": "experiments/artifacts/results/generic-lock/validation.json",
+      "correctness": "experiments/artifacts/results/generic-lock/correctness-tests.txt",
+      "parse_profile": "experiments/artifacts/results/generic-lock/parse-profile.json",
+      "design": "components/artifact-host/generic-lock-research.md",
+      "findings": "research/artifacts/findings.md#a-generic-binary-resolved-lock-reduces-parse-cost-without-owning-ecosystem-semantics",
+      "provenance": "experiments/artifacts/results/generic-lock/provenance.json"
+    },
+    {
+      "id": "AT-PRODUCER-PREINDEXED-BUNDLE",
+      "run_id": "20261031T030432.875992Z",
+      "status": "measured-matched-portable-producer-index-and-two-cas-artifacts-flat-zip-near-parity",
+      "report": "experiments/artifacts/results/preindexed-bundle/REPORT.md",
+      "raw": "experiments/artifacts/results/preindexed-bundle/results.json",
+      "summary": "experiments/artifacts/results/preindexed-bundle/summary.json",
+      "validation": "experiments/artifacts/results/preindexed-bundle/validation.json",
+      "correctness": "experiments/artifacts/results/preindexed-bundle/correctness-tests.txt",
+      "profile": "experiments/artifacts/results/preindexed-bundle/lookup-profile.json",
+      "provenance": "experiments/artifacts/results/preindexed-bundle/provenance.json",
+      "design": "components/artifact-host/preindexed-bundle-research.md",
+      "findings": "research/artifacts/findings.md#producer-preindexing-removes-receiver-work-for-both-flat-payloads-and-zip"
+    }
+  ],
+  "raw_evidence": {
+    "manifest": "research/evidence.json",
+    "availability": "Full observations are ignored local artifacts, absent from a clean checkout; no download is published."
+  }
+}

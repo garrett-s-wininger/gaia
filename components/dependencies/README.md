@@ -15,3 +15,5 @@ Read the [Python findings](../../research/python/findings.md) and [prospects](..
 - How are target/toolchain configuration, provenance and integrity represented?
 
 The [artifact host](../artifact-host/README.md) would provide storage/access; dependency adapters interpret ecosystem meaning. The [compiler component](../compiler/README.md) consumes admitted inputs. These are proposed boundaries, not finalized protocols.
+
+The [artifact research](../../research/artifacts/findings.md) adds generic resolved-lock descriptors, verified content transfer and packed Python consumer integration. Descriptors can be shared across ecosystems while version resolution, target selection and loading behavior stay with their adapters.

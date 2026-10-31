@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "operations": 28,
+  "all_offenses_tool_features_exit_statuses_and_request_identities_match": true,
+  "raw_sha256": "164cd7176e00362f15c5577350f25534306249462c6d32537fd917c1c05ff413"
+}

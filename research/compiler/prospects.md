@@ -1,29 +1,31 @@
 # Where compiler research should go next
 
-## First: an exact-view fast path
+The [shared-input comparison](../../experiments/compiler/results/shared-inputs/REPORT.md) removed repeated full publication/admission and unchanged native file digests. The [logical-generation follow-up](../../experiments/compiler/results/logical-inputs/REPORT.md) now tests the validation boundary too. Research should extend scale, lifecycle and workload coverage rather than repeat these completed small-target experiments.
 
-The dependency journal recovered header-edit reuse but added about 30 ms to unchanged and simple source-edit pipelines. Check exact input-view equality first, then replay observations only on mismatch.
+## Follow authoritative collection validation into scale and lifecycle
 
-Keep the coarse and journal controls in the same executable. Test unchanged work, source edits, used/unused headers, optional-file appearance, shadowing, deletion and request reordering. A useful result preserves header-edit correctness and brings already-cheap cases back toward coarse-cache costs. Retain the existing conservative path if the new policy does not earn its complexity.
+The [logical-generation experiment](../../experiments/compiler/results/logical-inputs/REPORT.md) now tests this boundary: source edits take 42.25 versus 48.78 ms through the physical adapter, with selective publication against captured/current generations. It preserves tool/output/negative conditions and charges edit admission. Strict physical import remains separate; the API is authoritative only for admitted updates.
 
-## Then: avoid rebuilding the entire snapshot representation
+Next measure larger namespaces and longer concurrent edit/build traces, not another isolated replay of the completed small-map experiment. The current map copies on updates; persistent structures and indexed directory listings could matter at repository scale. Compare their admission cost, retained generations and total residency, preserving the existing condition reference and current-generation publication rules.
 
-The delta producer avoids loose reads but still copies and hashes a complete roughly 3 MiB snapshot. Compare retained immutable bases, metadata/content-ID snapshots or a structured overlay against the current materialized collection. Include producer work, admission and consumer access in one clock.
+Develop filesystem discovery/import as its own measured adapter, including membership changes and racing writers. A mutable directory must still be imported/verified; merely caching stat results is not an equivalent proof. Preserve tests for optional-file appearance, include shadowing, hidden files and conflicting generations. Establish a generic update transport before selecting an editor/source-control protocol.
 
-Keep the SDK/input contract explicit. New compiler configurations may need readmission. A filesystem watcher or edit-to-delta adapter is separate work; change detection must be measured when claiming complete edit latency.
+## Broaden the C++ graph beyond the integration fixture
 
-## Establish bounded process reuse
+The [initial C++ graph](../../experiments/compiler/cpp_graph/results/baseline-seeded/REPORT.md) now covers upstream fmt, a labelled integration library and two executables. It improves source/header/revert operations against Ninja + ccache across three paired blocks while preserving object/link/runtime identity. Source edits compile one TU, header edits four; whole-link history is disabled for both paths. Its six TUs do not establish broad production-project scale.
 
-Finite batching saved time. A service experiment needs memory-growth limits, cancellation, orderly failure handling and crash recovery. Compare threaded and isolated-process workers with identical inputs and output checks. Fast paths must still preserve diagnostics and normal cleanup.
+Next use a larger production graph with generated inputs, configuration changes and wider frontend pressure. Compare genuine fresh object misses separately from repeated-edit hits, preserving baseline cache seeds and recording warm input-authentication state. Explore shared admitted workspace validation across targets: this fixture's common pre/post physical input checks already make no-ops about 24 ms on both paths. Keep SDK discovery/admission, full link inputs and resource accounting explicit. Expand the `.o` handoff contract rather than relying permanently on the documented byte-identical CRT aliases.
 
-## Broaden the workload and the comparison
+## Measure longer traces, bounds and recovery
 
-Use a multi-target C++ project to test target readiness, frontend work and resource-aware scheduling. Measure clean builds, implementation edits, low- and high-fanout headers, configuration changes and branch/revert behavior. Add matched existing incremental-build/cache controls before making an ecosystem-level performance claim.
+Run realistic edit sequences across compaction, cache eviction and the full three-candidate result-history horizon. Measure sender, compiler, checker and live lease residency together; serialized cache budgets are not process-RSS limits. Record cold first admission alongside warm updates and explain amortization.
 
-## Questions for storage and interfaces
+The current shared-input cache is serial and Linux-local. Test native restart, closing publisher descriptors, explicit descriptor transfer, cancellation, orderly failure and diagnostics before selecting a service architecture. Keep active bytes alive through pool teardown and preserve all corruption/integrity guards. Concurrent writers and durable global retention remain separate work.
 
-The current cache retains one latest journal candidate per action. Eviction, quotas, deduplication, historical variants and authenticated remote records need design and measurements. The [artifact-host component](../../components/artifact-host/README.md) is the home for that broader scope.
+## Keep remaining optimizations proportional
 
-Observed conditions could become a useful tool-result capability. First define their identity, completeness, negative-query semantics and lifetime. The current LLVM adapter and binary records are evidence for that discussion, not the open protocol itself.
+Profile candidate screening, copied-result hashing/publication, completion records and receipt handoff in complete operations. The checker already makes unchanged decisions around 2.5 ms, while compilation still dominates heavier edits. Native verification-only and verification-plus-emission differ little; a larger rewrite has no demonstrated payoff from row emission alone.
 
-For source code, fixtures and the run index, start with the [research guide](README.md). These are prospects, not implementations already in progress.
+Do not drop code-generation/ABI flags to increase reuse. The current object-only ordered link contract needs expansion for discovered libraries, linker scripts and other implicit inputs before broad result reuse. Standard source/module/diagnostic capture and negative-query semantics belong in the eventual generic tool interface.
+
+The [compiler component](../../components/compiler/README.md) owns product design; the [immutable-input research contract](../../components/compiler/immutable-input-research.md) records the current experimental boundary. These are research prospects, not selected production protocols.
