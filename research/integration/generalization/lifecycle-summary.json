@@ -1,0 +1,323 @@
+{
+  "schema_version": 1,
+  "startup": [
+    {
+      "project": "xxhash",
+      "mode": "serial",
+      "seconds": {
+        "median": 0.7523361259954982,
+        "minimum": 0.7074209290003637,
+        "maximum": 0.758545499003958,
+        "observations": 3
+      }
+    },
+    {
+      "project": "xxhash",
+      "mode": "queue",
+      "seconds": {
+        "median": 0.6753647959994851,
+        "minimum": 0.6670770500059007,
+        "maximum": 0.681826390005881,
+        "observations": 3
+      }
+    },
+    {
+      "project": "xxhash",
+      "mode": "ninja-ccache",
+      "seconds": {
+        "median": 1.0226436920056585,
+        "minimum": 1.0120347420015605,
+        "maximum": 1.1028914009948494,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "mode": "serial",
+      "seconds": {
+        "median": 11.620604403011384,
+        "minimum": 11.308387426004629,
+        "maximum": 11.739662002990372,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "mode": "queue",
+      "seconds": {
+        "median": 9.443699964991538,
+        "minimum": 9.289511358001619,
+        "maximum": 9.641798757991637,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "mode": "ninja-ccache",
+      "seconds": {
+        "median": 12.597031177996541,
+        "minimum": 12.241781989010633,
+        "maximum": 12.815253156004474,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "mode": "serial",
+      "seconds": {
+        "median": 23.831431677012006,
+        "minimum": 23.566673462002655,
+        "maximum": 23.94645241901162,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "mode": "queue",
+      "seconds": {
+        "median": 23.988898053008597,
+        "minimum": 23.540218469002866,
+        "maximum": 24.288510310987476,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "mode": "ninja-ccache",
+      "seconds": {
+        "median": 30.34016635599255,
+        "minimum": 30.035723241002415,
+        "maximum": 30.55001561300014,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "mode": "serial",
+      "seconds": {
+        "median": 17.194325985998148,
+        "minimum": 17.08239650899486,
+        "maximum": 17.226821932999883,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "mode": "queue",
+      "seconds": {
+        "median": 16.475244171000668,
+        "minimum": 16.450795904005645,
+        "maximum": 16.65611688401259,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "mode": "ninja-ccache",
+      "seconds": {
+        "median": 30.174753065992263,
+        "minimum": 30.149155184990377,
+        "maximum": 30.49307489101193,
+        "observations": 3
+      }
+    }
+  ],
+  "resources": [
+    {
+      "project": "xxhash",
+      "mode": "serial",
+      "scenario": "remove-NDEBUG",
+      "process_tree_cpu_seconds": 0.6866019999999997,
+      "peak_sampled_descendant_pss_bytes": 156726272,
+      "peak_controller_pss_bytes": 21576704,
+      "sample_count": 89,
+      "sampling_interval_seconds": {
+        "median": 0.007981174501765054,
+        "minimum": 0.0075055079942103475,
+        "maximum": 0.01074231399979908,
+        "observations": 88
+      },
+      "peak_descendant_processes": 4
+    },
+    {
+      "project": "xxhash",
+      "mode": "queue",
+      "scenario": "remove-NDEBUG",
+      "process_tree_cpu_seconds": 0.7382079999999993,
+      "peak_sampled_descendant_pss_bytes": 120549376,
+      "peak_controller_pss_bytes": 21630976,
+      "sample_count": 81,
+      "sampling_interval_seconds": {
+        "median": 0.00829910249740351,
+        "minimum": 0.007084766999469139,
+        "maximum": 0.010517046990571544,
+        "observations": 80
+      },
+      "peak_descendant_processes": 4
+    },
+    {
+      "project": "xxhash",
+      "mode": "ninja-ccache",
+      "scenario": "remove-NDEBUG",
+      "process_tree_cpu_seconds": 0.6959520000000001,
+      "peak_sampled_descendant_pss_bytes": 138672128,
+      "peak_controller_pss_bytes": 21711872,
+      "sample_count": 72,
+      "sampling_interval_seconds": {
+        "median": 0.009056540002347901,
+        "minimum": 0.007250299007864669,
+        "maximum": 0.014898711000569165,
+        "observations": 71
+      },
+      "peak_descendant_processes": 5
+    },
+    {
+      "project": "spdlog",
+      "mode": "serial",
+      "scenario": "remove-NDEBUG",
+      "process_tree_cpu_seconds": 11.312015999999986,
+      "peak_sampled_descendant_pss_bytes": 356936704,
+      "peak_controller_pss_bytes": 23317504,
+      "sample_count": 1075,
+      "sampling_interval_seconds": {
+        "median": 0.01064154649793636,
+        "minimum": 0.009558871010085568,
+        "maximum": 0.024838954996084794,
+        "observations": 1074
+      },
+      "peak_descendant_processes": 4
+    },
+    {
+      "project": "spdlog",
+      "mode": "queue",
+      "scenario": "remove-NDEBUG",
+      "process_tree_cpu_seconds": 12.683845999999999,
+      "peak_sampled_descendant_pss_bytes": 448785408,
+      "peak_controller_pss_bytes": 23548928,
+      "sample_count": 712,
+      "sampling_interval_seconds": {
+        "median": 0.013996552006574348,
+        "minimum": 0.009199680003803223,
+        "maximum": 0.03594854898983613,
+        "observations": 711
+      },
+      "peak_descendant_processes": 4
+    },
+    {
+      "project": "spdlog",
+      "mode": "ninja-ccache",
+      "scenario": "remove-NDEBUG",
+      "process_tree_cpu_seconds": 17.505907000000008,
+      "peak_sampled_descendant_pss_bytes": 412201984,
+      "peak_controller_pss_bytes": 23782400,
+      "sample_count": 1023,
+      "sampling_interval_seconds": {
+        "median": 0.012595868502103258,
+        "minimum": 0.009146429001702927,
+        "maximum": 0.021786090001114644,
+        "observations": 1022
+      },
+      "peak_descendant_processes": 5
+    },
+    {
+      "project": "re2c",
+      "mode": "serial",
+      "scenario": "remove-NDEBUG",
+      "process_tree_cpu_seconds": 25.299848000000054,
+      "peak_sampled_descendant_pss_bytes": 247661568,
+      "peak_controller_pss_bytes": 29746176,
+      "sample_count": 2731,
+      "sampling_interval_seconds": {
+        "median": 0.009611296503862832,
+        "minimum": 0.00846594299946446,
+        "maximum": 0.014489299996057525,
+        "observations": 2730
+      },
+      "peak_descendant_processes": 4
+    },
+    {
+      "project": "re2c",
+      "mode": "queue",
+      "scenario": "remove-NDEBUG",
+      "process_tree_cpu_seconds": 25.148128999999983,
+      "peak_sampled_descendant_pss_bytes": 247644160,
+      "peak_controller_pss_bytes": 30036992,
+      "sample_count": 2726,
+      "sampling_interval_seconds": {
+        "median": 0.009646786988014355,
+        "minimum": 0.008385095003177412,
+        "maximum": 0.014970718999393284,
+        "observations": 2725
+      },
+      "peak_descendant_processes": 4
+    },
+    {
+      "project": "re2c",
+      "mode": "ninja-ccache",
+      "scenario": "remove-NDEBUG",
+      "process_tree_cpu_seconds": 20.779209999999978,
+      "peak_sampled_descendant_pss_bytes": 187000832,
+      "peak_controller_pss_bytes": 29760512,
+      "sample_count": 1786,
+      "sampling_interval_seconds": {
+        "median": 0.008963483007391915,
+        "minimum": 0.007796959005645476,
+        "maximum": 0.016753313000663184,
+        "observations": 1785
+      },
+      "peak_descendant_processes": 5
+    },
+    {
+      "project": "curl",
+      "mode": "serial",
+      "scenario": "remove-NDEBUG",
+      "process_tree_cpu_seconds": 18.717964000000052,
+      "peak_sampled_descendant_pss_bytes": 540050432,
+      "peak_controller_pss_bytes": 44338176,
+      "sample_count": 1681,
+      "sampling_interval_seconds": {
+        "median": 0.013627889500639867,
+        "minimum": 0.012130996998166665,
+        "maximum": 0.020772839998244308,
+        "observations": 1680
+      },
+      "peak_descendant_processes": 4
+    },
+    {
+      "project": "curl",
+      "mode": "queue",
+      "scenario": "remove-NDEBUG",
+      "process_tree_cpu_seconds": 28.97464900000014,
+      "peak_sampled_descendant_pss_bytes": 532670464,
+      "peak_controller_pss_bytes": 44336128,
+      "sample_count": 1342,
+      "sampling_interval_seconds": {
+        "median": 0.014278618997195736,
+        "minimum": 0.01132623000012245,
+        "maximum": 0.058011832006741315,
+        "observations": 1341
+      },
+      "peak_descendant_processes": 4
+    },
+    {
+      "project": "curl",
+      "mode": "ninja-ccache",
+      "scenario": "remove-NDEBUG",
+      "process_tree_cpu_seconds": 40.97644700000001,
+      "peak_sampled_descendant_pss_bytes": 539645952,
+      "peak_controller_pss_bytes": 44356608,
+      "sample_count": 2076,
+      "sampling_interval_seconds": {
+        "median": 0.015107078012079,
+        "minimum": 0.012177654993138276,
+        "maximum": 0.03690799001196865,
+        "observations": 2075
+      },
+      "peak_descendant_processes": 5
+    }
+  ],
+  "input_sha256": {
+    "startup": "2b1f50f8c7466315d6dffd1b07e4295145fd251a7010f2d30afd8bf4308a07d8",
+    "resources": "6c0c16700b7ec8af643907248573559d8ea1c5897ba3f00f8a1daf4f3ea16437"
+  }
+}

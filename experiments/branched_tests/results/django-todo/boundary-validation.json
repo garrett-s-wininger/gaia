@@ -1,0 +1,176 @@
+{
+  "fork_seed": {
+    "after_explicit_restart": null,
+    "following_request": {
+      "child_maxrss_kib": 67716,
+      "child_status": 0,
+      "execution_protocol_ns": 186418425,
+      "exit": 0,
+      "finalization_wait_ns": 195911688,
+      "log": ".\n1 passed in 0.02s\n",
+      "memory": {
+        "Private_Dirty_bytes": 43872256,
+        "Pss_bytes": 54367232,
+        "Rss_bytes": 69369856,
+        "Shared_Clean_bytes": 10493952,
+        "Shared_Dirty_bytes": 14405632
+      },
+      "parent_memory": {
+        "Private_Dirty_bytes": 40357888,
+        "Pss_bytes": 52066304,
+        "Rss_bytes": 69656576,
+        "Shared_Clean_bytes": 13996032,
+        "Shared_Dirty_bytes": 14397440
+      },
+      "pid": 12,
+      "pytest_ns": 159325392,
+      "reports": [
+        {
+          "nodeid": "todo/tests/test_gaia_boundary.py::test_generation_and_resources",
+          "outcome": "passed",
+          "when": "setup"
+        },
+        {
+          "nodeid": "todo/tests/test_gaia_boundary.py::test_generation_and_resources",
+          "outcome": "passed",
+          "when": "call"
+        },
+        {
+          "nodeid": "todo/tests/test_gaia_boundary.py::test_generation_and_resources",
+          "outcome": "passed",
+          "when": "teardown"
+        }
+      ]
+    },
+    "successful_mutating_request": {
+      "child_maxrss_kib": 67704,
+      "child_status": 0,
+      "execution_protocol_ns": 212307671,
+      "exit": 0,
+      "finalization_wait_ns": 158531237,
+      "log": ".\n1 passed in 0.04s\n",
+      "memory": {
+        "Private_Dirty_bytes": 44429312,
+        "Pss_bytes": 54641664,
+        "Rss_bytes": 69341184,
+        "Shared_Clean_bytes": 10489856,
+        "Shared_Dirty_bytes": 13824000
+      },
+      "parent_memory": {
+        "Private_Dirty_bytes": 40931328,
+        "Pss_bytes": 52316160,
+        "Rss_bytes": 69570560,
+        "Shared_Clean_bytes": 13926400,
+        "Shared_Dirty_bytes": 13815808
+      },
+      "pid": 11,
+      "pytest_ns": 185774413,
+      "reports": [
+        {
+          "nodeid": "todo/tests/test_gaia_boundary.py::test_successful_effects",
+          "outcome": "passed",
+          "when": "setup"
+        },
+        {
+          "nodeid": "todo/tests/test_gaia_boundary.py::test_successful_effects",
+          "outcome": "passed",
+          "when": "call"
+        },
+        {
+          "nodeid": "todo/tests/test_gaia_boundary.py::test_successful_effects",
+          "outcome": "passed",
+          "when": "teardown"
+        }
+      ]
+    },
+    "unannounced_source_edit_rejected": true
+  },
+  "warm_seed": {
+    "after_explicit_restart": {
+      "exit": 0,
+      "log": ".\n1 passed in 0.02s\n",
+      "memory": {
+        "Private_Dirty_bytes": 53886976,
+        "Pss_bytes": 60667904,
+        "Rss_bytes": 69971968,
+        "Shared_Clean_bytes": 12447744,
+        "Shared_Dirty_bytes": 0
+      },
+      "pid": 9,
+      "pytest_ns": 118013235,
+      "reports": [
+        {
+          "nodeid": "todo/tests/test_gaia_boundary.py::test_generation_and_resources",
+          "outcome": "passed",
+          "when": "setup"
+        },
+        {
+          "nodeid": "todo/tests/test_gaia_boundary.py::test_generation_and_resources",
+          "outcome": "passed",
+          "when": "call"
+        },
+        {
+          "nodeid": "todo/tests/test_gaia_boundary.py::test_generation_and_resources",
+          "outcome": "passed",
+          "when": "teardown"
+        }
+      ]
+    },
+    "following_request": {
+      "exit": 1,
+      "log": "E\n==================================== ERRORS ====================================\n_______________ ERROR at setup of test_generation_and_resources ________________\n\ndjango_user_model = <class 'django.contrib.auth.models.User'>, db = None\n\n    @pytest.fixture\n    def todo_setup(django_user_model, db):\n        if _gaia_os.environ.get(\"GAIA_PREPARED\") != \"1\":\n            _gaia_seed(django_user_model)\n>       _gaia_verify()\n\ntodo/tests/conftest.py:55: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def verify_fixture():\n        from django.conf import settings\n        from todo.models import Attachment, Task, TaskList\n        from django.contrib.auth import get_user_model\n        assert Task.objects.count() == 6\n        assert sorted(Task.objects.values_list(\"title\", flat=True)) == [\"Task 1\", \"Task 1\", \"Task 2\", \"Task 2\", \"Task 3\", \"Task 3\"]\n        assert TaskList.objects.count() == 2\n        assert get_user_model().objects.count() == 3\n        attachment = Attachment.objects.get()\n        assert Path(attachment.file.path).read_bytes() == b\"prepared attachment\\n\"\n        assert Path(attachment.file.path).resolve().is_relative_to(Path(settings.MEDIA_ROOT).resolve())\n        assert not (Path(settings.MEDIA_ROOT) / \"leaked.txt\").exists()\n        import todo.models\n>       assert not hasattr(todo.models, \"_gaia_leaked_heap\")\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError\n\n../../../../branched_tests/case_support.py:30: AssertionError\n=========================== short test summary info ============================\nERROR todo/tests/test_gaia_boundary.py::test_generation_and_resources - Asser...\n1 error in 0.04s\n",
+      "memory": {
+        "Private_Dirty_bytes": 58257408,
+        "Pss_bytes": 65161216,
+        "Rss_bytes": 74465280,
+        "Shared_Clean_bytes": 12468224,
+        "Shared_Dirty_bytes": 0
+      },
+      "pid": 8,
+      "pytest_ns": 118307536,
+      "reports": [
+        {
+          "nodeid": "todo/tests/test_gaia_boundary.py::test_generation_and_resources",
+          "outcome": "failed",
+          "when": "setup"
+        },
+        {
+          "nodeid": "todo/tests/test_gaia_boundary.py::test_generation_and_resources",
+          "outcome": "passed",
+          "when": "teardown"
+        }
+      ]
+    },
+    "successful_mutating_request": {
+      "exit": 0,
+      "log": ".\n1 passed in 0.03s\n",
+      "memory": {
+        "Private_Dirty_bytes": 58253312,
+        "Pss_bytes": 65157120,
+        "Rss_bytes": 74461184,
+        "Shared_Clean_bytes": 12468224,
+        "Shared_Dirty_bytes": 0
+      },
+      "pid": 8,
+      "pytest_ns": 145225739,
+      "reports": [
+        {
+          "nodeid": "todo/tests/test_gaia_boundary.py::test_successful_effects",
+          "outcome": "passed",
+          "when": "setup"
+        },
+        {
+          "nodeid": "todo/tests/test_gaia_boundary.py::test_successful_effects",
+          "outcome": "passed",
+          "when": "call"
+        },
+        {
+          "nodeid": "todo/tests/test_gaia_boundary.py::test_successful_effects",
+          "outcome": "passed",
+          "when": "teardown"
+        }
+      ]
+    },
+    "unannounced_source_edit_rejected": true
+  }
+}

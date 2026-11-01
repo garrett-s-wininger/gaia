@@ -1,0 +1,14 @@
+{
+  "fresh_full_linter_violation_sets_minimum_witness_lengths_current_edges_locations_equal": true,
+  "fresh_unmodified_grimp_graph_edges_and_all_metadata_equal": true,
+  "limits": "Fixed single root package and parser options. Static import graphs and single-explanation editor diagnostics; no Python execution/type fidelity, concurrent requests or full CLI output equivalence.",
+  "native_syntax_relative_lazy_namespace_fallback_tests": true,
+  "old_response_immutable": true,
+  "passed": true,
+  "random_source_update_batches": 360,
+  "responses_checked": 378,
+  "selected_inputs_verified_after": true,
+  "stale_generation_and_syntax_failure_rollback_tested": true,
+  "tests": "....\n----------------------------------------------------------------------\nRan 4 tests in 1.054s\n\nOK\n",
+  "traces": 21
+}

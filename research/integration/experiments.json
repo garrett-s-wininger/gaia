@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "path_base": "repository-root",
+  "track": "shared-workspace-and-simd-integration",
+  "experiments": [
+    {
+      "id": "WORKSPACE-GENERALIZATION-FROZEN",
+      "status": "measured-bounded-integration",
+      "report": "research/integration/generalization/README.md",
+      "raw": "experiments/_work/generalization/matrix-v2/results.json",
+      "summary": "research/integration/generalization/summary.json",
+      "lifecycle_summary": "research/integration/generalization/lifecycle-summary.json",
+      "validation": "research/integration/generalization/validation.json",
+      "provenance": "research/integration/generalization/provenance.json",
+      "raw_identity": "research/integration/generalization/raw-identity.json",
+      "implementation": "experiments/integration/generalization/README.md"
+    },
+    {
+      "id": "WORKSPACE-SHARED-CONSUMERS",
+      "status": "measured-bounded-integration",
+      "report": "experiments/integration/workspace/results/combined/REPORT.md",
+      "raw": "experiments/integration/workspace/results/combined/results.json",
+      "summary": "experiments/integration/workspace/results/combined/summary.json",
+      "validation": "experiments/integration/workspace/results/combined/validation.json",
+      "provenance": "experiments/integration/workspace/results/combined/provenance.json",
+      "raw_identity": "experiments/integration/workspace/results/combined/raw-identity.json",
+      "implementation": "experiments/integration/workspace/README.md",
+      "findings": "research/integration/findings.md"
+    },
+    {
+      "id": "WORKSPACE-CREATED-HEADER-CACHE",
+      "status": "measured-bounded-integration",
+      "report": "experiments/integration/workspace/results/negative-cache/REPORT.md",
+      "raw": "experiments/integration/workspace/results/negative-cache/results.json",
+      "summary": "experiments/integration/workspace/results/negative-cache/summary.json",
+      "validation": "experiments/integration/workspace/results/negative-cache/validation.json",
+      "provenance": "experiments/integration/workspace/results/negative-cache/provenance.json",
+      "raw_identity": "experiments/integration/workspace/results/negative-cache/raw-identity.json",
+      "implementation": "experiments/integration/workspace/probe_cache.py",
+      "findings": "research/integration/findings.md"
+    },
+    {
+      "id": "SIMD-GENERIC-CODEGEN",
+      "status": "measured-bounded-integration",
+      "report": "experiments/integration/simd/results/generic/REPORT.md",
+      "raw": "experiments/integration/simd/results/generic/results.json",
+      "summary": "experiments/integration/simd/results/generic/summary.json",
+      "validation": "experiments/integration/simd/results/generic/validation.json",
+      "provenance": "experiments/integration/simd/results/generic/provenance.json",
+      "raw_identity": "experiments/integration/simd/results/generic/raw-identity.json",
+      "implementation": "experiments/integration/simd/README.md",
+      "findings": "research/integration/findings.md"
+    },
+    {
+      "id": "SIMD-NATIVE-CODEGEN",
+      "status": "measured-bounded-integration",
+      "report": "experiments/integration/simd/results/native/REPORT.md",
+      "raw": "experiments/integration/simd/results/native/results.json",
+      "summary": "experiments/integration/simd/results/native/summary.json",
+      "validation": "experiments/integration/simd/results/native/validation.json",
+      "provenance": "experiments/integration/simd/results/native/provenance.json",
+      "raw_identity": "experiments/integration/simd/results/native/raw-identity.json",
+      "implementation": "experiments/integration/simd/README.md",
+      "findings": "research/integration/findings.md"
+    },
+    {
+      "id": "CPU-DISPATCHED-IDENTITY-SCAN",
+      "status": "measured-real-scan-with-exact-SHA256-contract",
+      "report": "experiments/integration/hash_dispatch/results/scan/REPORT.md",
+      "raw": "experiments/integration/hash_dispatch/results/scan/results.json",
+      "summary": "experiments/integration/hash_dispatch/results/scan/summary.json",
+      "validation": "experiments/integration/hash_dispatch/results/scan/validation.json",
+      "provenance": "experiments/integration/hash_dispatch/results/scan/provenance.json",
+      "raw_identity": "experiments/integration/hash_dispatch/results/scan/raw-identity.json",
+      "implementation": "experiments/integration/hash_dispatch/README.md",
+      "findings": "research/integration/findings.md"
+    },
+    {
+      "id": "WORKSPACE-REFINED-MATRIX",
+      "status": "measured-before-failure-path-hardening",
+      "report": "experiments/integration/refinements/results/combined/REPORT.md",
+      "raw": "experiments/integration/refinements/results/combined/results.json",
+      "summary": "experiments/integration/refinements/results/combined/summary.json",
+      "validation": "experiments/integration/refinements/results/combined/validation.json",
+      "provenance": "experiments/integration/refinements/results/combined/provenance.json",
+      "raw_identity": "experiments/integration/refinements/results/combined/raw-identity.json",
+      "implementation": "experiments/integration/refinements/README.md",
+      "findings": "research/integration/refinements/README.md"
+    },
+    {
+      "id": "WORKSPACE-CACHED-IDENTITY-SCAN",
+      "status": "measured-current-hardened-host",
+      "report": "experiments/integration/refinements/results/scan/REPORT.md",
+      "raw": "experiments/integration/refinements/results/scan/results.json",
+      "summary": "experiments/integration/refinements/results/scan/summary.json",
+      "validation": "experiments/integration/refinements/results/scan/validation.json",
+      "provenance": "experiments/integration/refinements/results/scan/provenance.json",
+      "raw_identity": "experiments/integration/refinements/results/scan/raw-identity.json",
+      "implementation": "experiments/integration/refinements/README.md",
+      "findings": "research/integration/refinements/README.md"
+    },
+    {
+      "id": "WORKSPACE-HARDENED-HANDOFF",
+      "status": "measured-actual-productionTU-after-hardening",
+      "report": "experiments/integration/refinements/results/handoff/REPORT.md",
+      "raw": "experiments/integration/refinements/results/handoff/results.json",
+      "summary": "experiments/integration/refinements/results/handoff/summary.json",
+      "validation": "experiments/integration/refinements/results/handoff/validation.json",
+      "provenance": "experiments/integration/refinements/results/handoff/provenance.json",
+      "raw_identity": "experiments/integration/refinements/results/handoff/raw-identity.json",
+      "implementation": "experiments/integration/refinements/README.md",
+      "findings": "research/integration/refinements/README.md"
+    }
+  ]
+}

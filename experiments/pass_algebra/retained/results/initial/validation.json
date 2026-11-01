@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "kernel_and_extraction_tests": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.241s\n\nOK\n",
+  "hand_checked_slice_queries": 24,
+  "fixture_trace_responses": 30,
+  "real_ir_trace_responses": 630,
+  "exact_liveness_and_slice_comparison": true,
+  "stale_generation_and_invalid_argument_rejection": true,
+  "old_result_immutability": true,
+  "exact_function_invalidation_counts": true,
+  "frozen_inputs_verified_after": true,
+  "limits": "Declared edits, single-threaded requests, syntactic intraprocedural data edges only; no alias/control/call effects or source-to-binary cycle."
+}

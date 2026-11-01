@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "native_operations": 14,
+  "paired_object_and_fact_checks": 7,
+  "stock_cli_object_checks": 7,
+  "actual_early_receipts": 14,
+  "frozen_inputs_verified_after": true
+}

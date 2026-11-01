@@ -1,0 +1,280 @@
+{
+  "app": "/tmp/gaia-substrate-connections/experiments/_work/branched-tests-source/django_todo-2.7.0",
+  "app_manifest": {
+    "LICENSE": "2b387a463a7760328df3759793c957e4c9a74880b352b4b4a2c2af627380afdf",
+    "MANIFEST.in": "023f5c0e501b5446c994b4da8a1ef55f2456eac279ec7c82d787ffa0cb187b8e",
+    "PKG-INFO": "d6a218e797d775eb6f009ce146bc8a68156d9ce763202d401aebfe9a267f2fb7",
+    "README.md": "231d9e8d1f4f357c7fcea165fcf52221a4da3a4f7ab50674f4de317e23f63c70",
+    "django_todo.egg-info/PKG-INFO": "d6a218e797d775eb6f009ce146bc8a68156d9ce763202d401aebfe9a267f2fb7",
+    "django_todo.egg-info/SOURCES.txt": "04eec146eec17fec5b284f8f35dace2507e98849add1f5c259378988071d2c0a",
+    "django_todo.egg-info/dependency_links.txt": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "django_todo.egg-info/requires.txt": "74c595c4eea0258365a01bd8033231d92928c494aa855a127a65b5c033960a44",
+    "django_todo.egg-info/top_level.txt": "d165baef0ceaa4384ca2f9130912a381b5e5705c0cbb3ff9efef99bf72276263",
+    "pyproject.toml": "e700bbeec1623375d96456ee3f3f7cb6c91f1c94cf7e8981fedf96729f2fae72",
+    "setup.cfg": "1c473cbaee8da5fc46e7f0158794af5cea4414c34a3cf3f180c2001f5e38bd3e",
+    "setup.py": "843ac26c38a41abae578250bc0f9419194b320a0f67327d941037a4268f6cfe7",
+    "todo/__init__.py": "fe7cb5d0135acabd2d9832427f7d80bb96d97a4c4db17b18a4a923b0dc02c096",
+    "todo/admin.py": "49aab8aa9bbac42d87a3611d2de1254a6b3a4a6067798cb9a67cba31885f504c",
+    "todo/check.py": "c6871cdea1d29bead02891a34857587622e376e65e16d0cc3f99e0f8402eac11",
+    "todo/data/import_example.csv": "bcaf6ebc108e3ab43bd5520609fb610fcf1a39eb3237655c3da1ea9f6472c51f",
+    "todo/defaults.py": "3c97432bb1778742bb369043d78ad388860536404e848da44473ed4fcab765fa",
+    "todo/features.py": "e3e799ac9b3e938e6f7c57fcab717db8cbfb0794b9f84b602bb08abb2b6ee615",
+    "todo/forms.py": "780c8e9fb6d8eba923558e781f92f3c057387550c8ab966fa53e414b89f78723",
+    "todo/mail/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "todo/mail/consumers/__init__.py": "8f62bee5fcaebacbcfd9bbb23cb04092f8e617d90fa3e2e707fc6bdc8ec304d4",
+    "todo/mail/consumers/tracker.py": "c122097e3193880007c2fd7d71210797bc24992659315f10685160fc6c836e4c",
+    "todo/mail/delivery.py": "24db390a8ce682249e1ba1d2d4a9c2efa734ba5033238eb33aeb4c97dbca7075",
+    "todo/mail/producers/__init__.py": "7cae23a8aac8667ec7f254a5412d5b67c97d1b3131a8da576414fe8ccf295ea6",
+    "todo/mail/producers/imap.py": "a1e3d1b07dcb858581937686ba95f9cfbcb884235d1efa237c9f8d227b09a15f",
+    "todo/management/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "todo/management/commands/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "todo/management/commands/hopper.py": "34c284846bf7a096c7fd4fc638406988313befdbdf89ba9b59f6c75558f04f8f",
+    "todo/management/commands/import_csv.py": "031ee252705a11dfbea5a381ace0e4a452515f04e5e3b9c8ba5d9d88c198a184",
+    "todo/management/commands/mail_worker.py": "d88060eba173f276517f858f7a1fcc40a339143283d1585e732dd69308b37e23",
+    "todo/migrations/0001_initial.py": "64d1a73a4f0ceef429f034d3578d793af102b69b4ffe1717946f27557c4184c9",
+    "todo/migrations/0002_auto_20150614_2339.py": "085c6b36cc604618bd1991d8bffb5053f09229293d0c6cf12c46f7632232e27b",
+    "todo/migrations/0003_assignee_optional.py": "669190daa6aee5730dcba727b09fbeacc726c78cf31ab7b301ec8b8bb4f36378",
+    "todo/migrations/0004_rename_list_tasklist.py": "d0dc5c7a0847f946f46311882470785cca0850981e1cae6bb17ec04778305d40",
+    "todo/migrations/0005_auto_20180212_2325.py": "eacf193a21863a69a56029176523c0aaf4ad6d42239a763fc2be6202aea71e81",
+    "todo/migrations/0006_rename_item_model.py": "0b37bb6390356029fd269a6161e89b7e5fb8b49e5ec89e6061bda5d09547f991",
+    "todo/migrations/0007_auto_update_created_date.py": "adf227f50de17da46e9cc1a1cca68fef6dc76c3022adef2d5388db2b1a9f08f3",
+    "todo/migrations/0008_mail_tracker.py": "0870c1ad404f84369257c259b34330a9721da98c1232adad83fffde0a77f4d50",
+    "todo/migrations/0009_priority_optional.py": "849744b5db2dfdf474a2bd4c011356dcc1a64cf60279e10bdc94da31d3253487",
+    "todo/migrations/0010_attachment.py": "c13eb4e94f99255c0da6f7ef064655d97c5fe3dd1cdd356b4256ec24a611ba8c",
+    "todo/migrations/0011_add_related_name_to_created_by.py": "4ac88746ca963a11e2e2682d43492e71be740f8864f6f32479944232dab6e4c1",
+    "todo/migrations/0012_add_related_name_to_comments.py": "4ba1cc3f7a1704c5f9530654e3be419244860e76ca96a2c2666f4f3e8fa07e56",
+    "todo/migrations/0013_assigned_to_m2m.py": "3de838e0b1abdf699477e9ac294eaaf0dbd570f825e51974352acc542e101973",
+    "todo/migrations/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "todo/models.py": "d62b26adebff80b7266cd5978d8e45d89341956c45845d636bae420b13567dea",
+    "todo/operations/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "todo/operations/csv_importer.py": "9d9bae44d1ebf82245a7f5f8ea17a5b1a3054fdbfa20db88e449f05f348ff631",
+    "todo/static/todo/css/styles.css": "56aa7a68c0bd3a54ef374ebdf43c0bf9da898397158e02ad8aa3082470f5b2b1",
+    "todo/static/todo/js/jquery.tablednd_0_5.js": "25da469c95327acd222340524385cbb12b5dc003c15092d82af4439d1f2e568f",
+    "todo/templates/base.html": "c44977c66ce5d61231ab145538418d3bec22a4cbe62816660eed0dd5891debe4",
+    "todo/templates/todo/add_list.html": "31e04a2621b05d61618d58ae43994b29e81202a63c872ffedff92f564e692065",
+    "todo/templates/todo/add_task_external.html": "786343fd9fbe283937b4256dce5e6df7f737296489b14169b8326eaaf3b64920",
+    "todo/templates/todo/base.html": "1e60b61fedc526c2101c2b9f330b65e242ae3e78dad26fcfed78fc1d6b3274c0",
+    "todo/templates/todo/del_list.html": "20e87a9bf507b33a6d0eeb850fe70a40962b30de70949a2998ecba258ef68469",
+    "todo/templates/todo/email/assigned_body.txt": "e53ee07daf33f54ccde333116fbba880485b38f251b76ecde1a358f465135650",
+    "todo/templates/todo/email/assigned_subject.txt": "c08b6eb17a89da222264731f3aff3c0c3c9b7f517fd37914cf0decf461e3fa27",
+    "todo/templates/todo/email/newcomment_body.txt": "2f7aa54a07d959b493bf0513d3d162b923fb2eca0f1bd81f1167cd3555668a5c",
+    "todo/templates/todo/import_csv.html": "bd67f9320218032784f4daf4cae46c667b1d88468f93d8f44cd4df0d8c3199f4",
+    "todo/templates/todo/include/task_edit.html": "866befa3cb6b150b1cc2ec948c017676f1a0debd2b51c15a597377c8fad487b3",
+    "todo/templates/todo/include/toggle_delete.html": "ebcb81b524e7808ee6b0e6fd92d8573740613624453479bed9556280b04a4b25",
+    "todo/templates/todo/list_detail.html": "f90ab72e351dc7bd2b5efe71c93ed89127292685fd30b8a08ae5306144c45c58",
+    "todo/templates/todo/list_lists.html": "30c966d6bddb58622bcf60a1d3c8292e46a7690a6228c2434a55ee40323d5f05",
+    "todo/templates/todo/search_results.html": "a7b274a6eaf5fd7e78fe518624d5d8db5485296dbb1fda6f3ab9f85e8811b342",
+    "todo/templates/todo/task_detail.html": "a613704b86d07881b59cc2d19a5e1cfbba545b246f3e3590b6e9dd277f068262",
+    "todo/templatetags/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "todo/templatetags/todo_tags.py": "0652d109c506089eb6b5c9b6f1de764289121c2df4fe28a70e398d692999f83d",
+    "todo/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "todo/tests/conftest.py": "9f5b0777b00d19f2d21753e0ba22e1b3e9387fb1532728e6ee0ff4e2d4090cbd",
+    "todo/tests/test_import.py": "5c3eca0ad8fc146e39743d54fb9d664491ae7544f1fb1e8ad9c3f3e1bf864153",
+    "todo/tests/test_tracker.py": "829f4f4d90212c4c9899853f03661d244882257112f9dd3c415a726d9dce7af4",
+    "todo/tests/test_utils.py": "c9df15de6ec31e9cc45d573d364c74c7ca370fd98f5d25ad3a61886758d9c030",
+    "todo/tests/test_views.py": "1e91db1535f47b3c1d1aae5b4328d8d3ba67885c2afed8444b2d02dbd42e674d",
+    "todo/urls.py": "e06938825e8fecf0d87fff552ce5b2fcb292567fd18072bc1de8c49d12331239",
+    "todo/utils.py": "1d7a80f08c6a4ea38068d15ba9ff5193b180752ee325038189cc28652b844070",
+    "todo/views/__init__.py": "cf6d0cd10c677b8bbf7a21847fbf442ccea46e300663e347dd74fc87f37dfb5f",
+    "todo/views/add_list.py": "ff0ed97b8e27d858260e8108081442ba183432fa7e4b089acbd826f8aa28d9cf",
+    "todo/views/del_list.py": "83d464836ea93a7099c5ff577679ac83ab94b889fbd4bfc6ec8f1a41784c82d8",
+    "todo/views/delete_task.py": "355ab9f67fa0100dc31448554550c9088d15180d6df154b3148e242293297cde",
+    "todo/views/external_add.py": "6a976fd2d5ae171f652ee442f9f4692b26b3b7ff503c03df24cb6f4a39812518",
+    "todo/views/import_csv.py": "ed2f6ebf1bf7d8131442440288f3875712d28cd155e08d3b8b087a5b07f93ce2",
+    "todo/views/list_detail.py": "f68f62130ae86c80dac096ab8e6da0f62222f3433244dc3b586e67b85fbb00a4",
+    "todo/views/list_lists.py": "646a3a3e0b26018b00a851a060b35bb859d0dc8a21ff2ada84d73194c15f4be7",
+    "todo/views/remove_attachment.py": "5d85ae50773d7529f774d31e5e5e8a6a6ca5edb7ee6c359d223facfc6e92841f",
+    "todo/views/reorder_tasks.py": "9d412c6333902a0c48a973b2e852cc5a2c58a84786cf1eba1ce368252a57c1c2",
+    "todo/views/search.py": "458136d3d7acace284c0057497a8a7ce7c088952312b58d654d9b1b8a1b5fffc",
+    "todo/views/task_autocomplete.py": "fd7cf49921ab2e18be7a5cd7ead340009ca54d757b41974a856692bbe58456fe",
+    "todo/views/task_detail.py": "26a9163c076fe74e95d1efdd9645251f8529baec013bb323b31dbf43efee2e1e",
+    "todo/views/toggle_done.py": "f5afad0a179d9ae682d1d9fc8ecc31217705dfdf2ca25e2515d5154d566e6f2a"
+  },
+  "clock": "perf_counter_ns; full trace includes source copy, all preparations, cleanup and shutdown",
+  "cpu": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           48 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  16\nOn-line CPU(s) list:                     0-15\nVendor ID:                               AuthenticAMD\nModel name:                              AMD Ryzen AI 7 PRO 450 w/ Radeon 860M\nCPU family:                              26\nModel:                                   96\nThread(s) per core:                      2\nCore(s) per socket:                      8\nSocket(s):                               1\nStepping:                                0\nMicrocode version:                       0xffffffff\nBogoMIPS:                                3992.42\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves avx_vnni avx512_bf16 clzero xsaveerptr arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload avx512vbmi umip avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid fsrm avx512_vp2intersect\nVirtualization:                          AMD-V\nHypervisor vendor:                       Microsoft\nVirtualization type:                     full\nL1d cache:                               384 KiB (8 instances)\nL1i cache:                               256 KiB (8 instances)\nL2 cache:                                8 MiB (8 instances)\nL3 cache:                                16 MiB (1 instance)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0-15\nVulnerability Gather data sampling:      Not affected\nVulnerability Ghostwrite:                Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Not affected\nVulnerability Mmio stale data:           Not affected\nVulnerability Old microcode:             Not affected\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Not affected\nVulnerability Spec rstack overflow:      Vulnerable: Safe RET, no microcode\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP always-on; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Not affected\n",
+  "executable": "/tmp/gaia-substrate-connections/experiments/_work/branched-tests-env/bin/python",
+  "filesystem": "Filesystem     Type  1K-blocks    Used Available Use% Mounted on\ntmpfs          tmpfs   6035276 3062644   2972632  51% /tmp\n",
+  "finished_utc": "2026-11-01T04:12:28.763236+00:00",
+  "harness_sha256": {
+    "case_support.py": "7c3665be5a49a2e6f9f9a7df7c2d8d025cff3fdc8a864bf5d6c40a01e813d998",
+    "check_boundary.py": "b713a697b539ef2b0c308c607c2a8154fa7939a6c8fdd006adc32b3a66c15d7f",
+    "gaia_settings.py": "5d29b9e8af7377ce01746f8d2bc82c0d4edf8c626ea32c703e2d1e38c135eb76",
+    "gaia_urls.py": "ce00126c8e7787839aee1fd78af9d309a960fe993b31a56194c98c216193c3e7",
+    "profile_tests.py": "4eb50f272fe44ed7ca8aa62657a56baaf5d1be59280e1c49cccb68be4ac9852a",
+    "run.py": "38930e4a68dd9d9456bbe4281a0005dd3a49aa0b7b1621956be5ca4116228bec",
+    "worker.py": "5567bfb7a55c41c773aab0ffa44fa3740e1d0dde164450123b2fe98b2eb351d7"
+  },
+  "interpreter": {
+    "binary_sha256": "375532f83be620283ab780c14ca6bcc5907dc379d2b621de0c5d0a112cf5458b",
+    "version": "3.14.8 (main, Oct  2 2026, 10:23:31) [GCC 16.2.1 20260810]"
+  },
+  "lock": "/root/source/gaia/experiments/_work/integration-20261102/measurement.lock",
+  "machine": "x86_64",
+  "packages": {
+    "Django": {
+      "digest": "3835a71c4e573eaeff67ace86f54b70de995abd31ec1cf25447c54cbcfde8495",
+      "files": 885,
+      "version": "5.2.8"
+    },
+    "Faker": {
+      "digest": "b34b60d0dd27ab8584bbdd1cbd268566764adcc8b3a087ceeb3e9ee19a05c2e8",
+      "files": 753,
+      "version": "40.44.0"
+    },
+    "Pygments": {
+      "digest": "5605e763be61e88e0c1d38ce8e62de4eba5e5de90d5c66c5b864d285212605e4",
+      "files": 345,
+      "version": "2.21.0"
+    },
+    "asgiref": {
+      "digest": "e9303abbf98041e03de6bb11dc1139bc74ab2e3914edbd968d57ee2a20bb8ffc",
+      "files": 12,
+      "version": "3.13.0"
+    },
+    "bleach": {
+      "digest": "5b95208b480e7d988cedc6d06fa03cf542825d548111c36f1e9a62220a72c054",
+      "files": 47,
+      "version": "6.4.0"
+    },
+    "django-autocomplete-light": {
+      "digest": "10ee658f1cdd6598bb9ec79f4d53ab92441ced72e0037d462751e197fc9691f2",
+      "files": 43,
+      "version": "5.0.0"
+    },
+    "factory_boy": {
+      "digest": "ada836bd1a4af6ab1079f0624dc64434dfe84405312c631cd321188679e330c8",
+      "files": 17,
+      "version": "3.3.3"
+    },
+    "html2text": {
+      "digest": "97146c041b36b165e14008b19131209794493eb5999e38f9ba83b138519c6eb8",
+      "files": 10,
+      "version": "2025.4.15"
+    },
+    "iniconfig": {
+      "digest": "df947db6622631ad653d5d5e1d5ff08c16e519c302e2b16cd95ed216e7051d26",
+      "files": 6,
+      "version": "2.3.1"
+    },
+    "packaging": {
+      "digest": "4c4b797921e24fade1fe075776d05f1a0b08ea4d1c174d3de1c55354670a7810",
+      "files": 24,
+      "version": "26.3"
+    },
+    "pip": {
+      "digest": "ec8df6b242d3ff8de81ef28686b789fef56fbb443435ab5c380f89ca14f193dc",
+      "files": 406,
+      "version": "26.2.1"
+    },
+    "pluggy": {
+      "digest": "6d0fc74b59909da2e040098e45f7f45f3d67fd4275b0c1f2725f45004a4c406a",
+      "files": 15,
+      "version": "1.7.0"
+    },
+    "pytest": {
+      "digest": "affca0cc99c373e16235a9da90f3ed7d97c7a57694a1b196414257bbcba62715",
+      "files": 84,
+      "version": "9.2.0"
+    },
+    "pytest-django": {
+      "digest": "339981a89ffdda86fb209d6998db445fb41f03acd046a96f6349e1771b02b358",
+      "files": 11,
+      "version": "4.14.0"
+    },
+    "pytest-mock": {
+      "digest": "f99e948951e7beab73a3f2980241611b05da4d2a4c9602ca5e3dbbc45302df84",
+      "files": 6,
+      "version": "3.17.0"
+    },
+    "sqlparse": {
+      "digest": "56242eccd805f25d490650ee934d6f4f2c15c2008798d6c806a6123567ce4f0c",
+      "files": 23,
+      "version": "0.6.0"
+    },
+    "titlecase": {
+      "digest": "dc25e4018e6c0a2399bae8ea9807e1f916a5b019871e30b2e4f1109b3df9c961",
+      "files": 4,
+      "version": "2.4.1"
+    },
+    "webencodings": {
+      "digest": "de643b9c6cc70ee0ca2b5d4dc818f8d4c8c35e95eb7688423969bb931837f955",
+      "files": 5,
+      "version": "0.6.1"
+    }
+  },
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.44",
+  "python": "3.14.8 (main, Oct  2 2026, 10:23:31) [GCC 16.2.1 20260810]",
+  "random_order_seed_base": 87291,
+  "trace": [
+    [
+      "initial",
+      "original",
+      "0",
+      "",
+      "todo/tests/test_utils.py::test_locked_atomic_transaction"
+    ],
+    [
+      "permission",
+      "original",
+      "0",
+      "",
+      "todo/tests/test_views.py::test_move_task_to_another_list_in_users_group"
+    ],
+    [
+      "failure",
+      "original",
+      "0",
+      "fail",
+      null
+    ],
+    [
+      "after_failure",
+      "original",
+      "0",
+      "",
+      "todo/tests/test_views.py::test_cannot_move_task_to_list_outside_users_groups"
+    ],
+    [
+      "termination",
+      "original",
+      "0",
+      "kill",
+      null
+    ],
+    [
+      "after_termination",
+      "original",
+      "0",
+      "",
+      "todo/tests/test_utils.py::test_locked_atomic_transaction"
+    ],
+    [
+      "source_edit",
+      "inclusive",
+      "0",
+      "",
+      "todo/tests/test_utils.py::test_locked_atomic_transaction"
+    ],
+    [
+      "source_repeat",
+      "inclusive",
+      "0",
+      "",
+      "todo/tests/test_views.py::test_move_task_to_another_list_in_users_group"
+    ],
+    [
+      "settings_edit",
+      "inclusive",
+      "1",
+      "",
+      "todo/tests/test_views.py::test_cannot_move_task_to_list_outside_users_groups"
+    ],
+    [
+      "restore",
+      "original",
+      "0",
+      "",
+      "todo/tests/test_utils.py::test_locked_atomic_transaction"
+    ]
+  ]
+}

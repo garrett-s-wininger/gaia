@@ -1,0 +1,146 @@
+{
+  "archive_sha256": "974d6b2f4eeefa25625d34da3cb36bdcebe7fbce40f4c16ac0835fd1c0cbae17",
+  "sdk_and_tool_count": 410,
+  "sdk_and_tool_manifest_sha256": "9fbfcb8bf868493d70508bdf35ea2ed708b53d9c97d7105cc5b414c9b29698e8",
+  "environment_sha256": "31e9736105983c81e3c3e2134889b7a4e0f9a9fe6d3b78e0885901960363bac3",
+  "measured_refinement_sources": {
+    "experiments/integration/workspace/run.py": "b0e41a970a7bfd5ab44a73444011988bc554653ddcfe80e93522673c1da93551",
+    "experiments/integration/workspace/host.cpp": "ce424e6a9c6540d7218f546fe3ee00e2203698be19acbe1f58794c36c680a8e4",
+    "experiments/integration/workspace/protocol.py": "65a798eef85f95f1eef4ca2771fc77366fbf11979527bde7215c74e5ca6ee701",
+    "experiments/integration/refinements/refined_protocol.py": "e6c7bb090788c24b5fc97a31dac0aafc13b707e79580698063b0e0b0b1d2c08e",
+    "experiments/integration/refinements/run.py": "00e1fd1157863e2ae96d9f31db1962ec425bfbb47aa5a9c57ddfb085a429f13f",
+    "experiments/integration/refinements/refine_host.py": "0919efae645f4e82d91c6355f7dc74d133c060d0fc0c15a8c335b04992fd8348",
+    "experiments/integration/refinements/test_refinements.py": "61eb329af06f86bb95e4df3f8d53bc0b5a09679b0a9d111be015b50582fff24f",
+    "measured-tool/workspace-host-final": "12710dff797bf344cbc720ab5e08f2a5df33927edbe19ad9804c6420c32c6e8c",
+    "measured-tool/host": "b74d566b69fe6b652be6bb1f7f6baabbaef11ecd35a4868e9fdba3dd7a9c9546"
+  },
+  "generated_runner_sha256": "941a6265c7d8edef7e3b557972c560b88fa51a1945694f797596fa5ff44f4da4",
+  "preparation_ns": 7959240115,
+  "reference_ns": 144517557262,
+  "warmups": [
+    {
+      "block": 0,
+      "mode": "original",
+      "ns": 14536911442,
+      "source_bytes": 1141231,
+      "worker_memory": [
+        {
+          "Rss_kib": 198076,
+          "Pss_kib": 193799,
+          "Private_Dirty_kib": 101896
+        }
+      ]
+    },
+    {
+      "block": 0,
+      "mode": "ninja-ccache",
+      "ns": 7673981936,
+      "source_bytes": 1141231,
+      "worker_memory": [
+        {
+          "Rss_kib": 136840,
+          "Pss_kib": 132571,
+          "Private_Dirty_kib": 79484
+        }
+      ]
+    },
+    {
+      "block": 0,
+      "mode": "refined",
+      "ns": 14431774454,
+      "source_bytes": 1141231,
+      "worker_memory": [
+        {
+          "Rss_kib": 217160,
+          "Pss_kib": 212883,
+          "Private_Dirty_kib": 120948
+        }
+      ]
+    },
+    {
+      "block": 1,
+      "mode": "refined",
+      "ns": 14451840470,
+      "source_bytes": 1141231,
+      "worker_memory": [
+        {
+          "Rss_kib": 217516,
+          "Pss_kib": 213265,
+          "Private_Dirty_kib": 121332
+        }
+      ]
+    },
+    {
+      "block": 1,
+      "mode": "original",
+      "ns": 13790094031,
+      "source_bytes": 1141231,
+      "worker_memory": [
+        {
+          "Rss_kib": 200960,
+          "Pss_kib": 196683,
+          "Private_Dirty_kib": 104732
+        }
+      ]
+    },
+    {
+      "block": 1,
+      "mode": "ninja-ccache",
+      "ns": 12370183380,
+      "source_bytes": 1141231,
+      "worker_memory": [
+        {
+          "Rss_kib": 136780,
+          "Pss_kib": 131972,
+          "Private_Dirty_kib": 79444
+        }
+      ]
+    },
+    {
+      "block": 2,
+      "mode": "ninja-ccache",
+      "ns": 7972460490,
+      "source_bytes": 1141231,
+      "worker_memory": [
+        {
+          "Rss_kib": 136884,
+          "Pss_kib": 93890,
+          "Private_Dirty_kib": 79488
+        }
+      ]
+    },
+    {
+      "block": 2,
+      "mode": "original",
+      "ns": 17097481101,
+      "source_bytes": 1141231,
+      "worker_memory": [
+        {
+          "Rss_kib": 197788,
+          "Pss_kib": 158778,
+          "Private_Dirty_kib": 101664
+        }
+      ]
+    },
+    {
+      "block": 2,
+      "mode": "refined",
+      "ns": 18683222789,
+      "source_bytes": 1141231,
+      "worker_memory": [
+        {
+          "Rss_kib": 217736,
+          "Pss_kib": 171335,
+          "Private_Dirty_kib": 121424
+        }
+      ]
+    }
+  ],
+  "scope": "Frozen production fixture and full physical oracles. Original shared path versus cached identities, bounded multi-version result history, conservative numeric-macro projection and actual frontend events. Ninja + ccache uses refined standalone index as stronger control.",
+  "source_replay": "Apply measured-source.patch to a disposable copy of the current refinements directory. Historical timing source and current hardened source are distinct.",
+  "hardening": "Published-output failure marker, explicit cached output restoration, buffered event framing, builtin macro handling and effective metadata-option guards were hardened after the full matrix. No full-matrix timing-equivalence claim. Supplemental actual production-TU measurements and current regressions validate the hardened path.",
+  "measurement": "One laptop, three shuffled trace blocks; cooperating per-case lock excludes other timings, not all preparation or unrelated load. Current worker PSS is not a peak/RAM quota; CPU uses coarse ticks. Different operations use different worker arrangements.",
+  "measured_host_source_sha256": "c1bbe89cf4e21ae38c3dff24a04fd3e2047ba593be751fd85d9d0ead50fcab0d",
+  "reconstruction_patch_sha256": "0341754144c56e6269172aa16bf965497e2de72ff4d6e04809c55f49b9116dc3",
+  "source_reconstruction_verified": true
+}

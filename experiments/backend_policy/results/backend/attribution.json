@@ -1,0 +1,713 @@
+{
+  "raw_sha256": "125bb15058e277e7954c4a873b7e9e62de746d1092292f0eb0b2e4b22d9bc41c",
+  "analysis_source_sha256": "2fde62954b3b13e1547da2d8850fc60e164c3ea7f786bdc8f4149fa59a63ff6f",
+  "profiles": [
+    {
+      "edit": "search_budget",
+      "policy": "O2",
+      "legacy_pass_events_inclusive": [
+        {
+          "name": "X86 DAG->DAG Instruction Selection",
+          "ms": 288.685,
+          "count": 89
+        },
+        {
+          "name": "Loop Pass Manager",
+          "ms": 198.437,
+          "count": 89
+        },
+        {
+          "name": "Greedy Register Allocator",
+          "ms": 135.883,
+          "count": 178
+        },
+        {
+          "name": "Machine Instruction Scheduler",
+          "ms": 38.192,
+          "count": 89
+        },
+        {
+          "name": "CodeGen Prepare",
+          "ms": 29.763,
+          "count": 89
+        },
+        {
+          "name": "Register Coalescer",
+          "ms": 29.506,
+          "count": 89
+        },
+        {
+          "name": "Live Interval Analysis",
+          "ms": 21.239,
+          "count": 89
+        },
+        {
+          "name": "Reaching Definitions Analysis",
+          "ms": 15.436,
+          "count": 89
+        },
+        {
+          "name": "Machine Copy Propagation Pass",
+          "ms": 15.334,
+          "count": 178
+        },
+        {
+          "name": "Branch Probability Basic Block Placement",
+          "ms": 15.026,
+          "count": 89
+        },
+        {
+          "name": "Live Variable Analysis",
+          "ms": 13.659,
+          "count": 89
+        },
+        {
+          "name": "X86 Assembly Printer",
+          "ms": 12.844,
+          "count": 89
+        }
+      ]
+    },
+    {
+      "edit": "search_budget",
+      "policy": "O2_fast_machine",
+      "legacy_pass_events_inclusive": [
+        {
+          "name": "Loop Pass Manager",
+          "ms": 170.88,
+          "count": 89
+        },
+        {
+          "name": "X86 DAG->DAG Instruction Selection",
+          "ms": 85.89,
+          "count": 89
+        },
+        {
+          "name": "CodeGen Prepare",
+          "ms": 26.993,
+          "count": 89
+        },
+        {
+          "name": "Fast Register Allocator",
+          "ms": 16.875,
+          "count": 89
+        },
+        {
+          "name": "Reaching Definitions Analysis",
+          "ms": 14.369,
+          "count": 89
+        },
+        {
+          "name": "X86 Assembly Printer",
+          "ms": 12.712,
+          "count": 89
+        },
+        {
+          "name": "Machine Common Subexpression Elimination",
+          "ms": 10.052,
+          "count": 89
+        },
+        {
+          "name": "Machine Copy Propagation Pass",
+          "ms": 8.596,
+          "count": 89
+        },
+        {
+          "name": "Machine code sinking",
+          "ms": 7.961,
+          "count": 89
+        },
+        {
+          "name": "Branch Probability Basic Block Placement",
+          "ms": 7.387,
+          "count": 89
+        },
+        {
+          "name": "Prologue/Epilogue Insertion & Frame Finalization",
+          "ms": 6.477,
+          "count": 89
+        },
+        {
+          "name": "Early Machine Loop Invariant Code Motion",
+          "ms": 6.339,
+          "count": 89
+        }
+      ]
+    },
+    {
+      "edit": "lazy_depth",
+      "policy": "O2",
+      "legacy_pass_events_inclusive": [
+        {
+          "name": "X86 DAG->DAG Instruction Selection",
+          "ms": 283.348,
+          "count": 89
+        },
+        {
+          "name": "Loop Pass Manager",
+          "ms": 188.206,
+          "count": 89
+        },
+        {
+          "name": "Greedy Register Allocator",
+          "ms": 125.654,
+          "count": 178
+        },
+        {
+          "name": "Machine Instruction Scheduler",
+          "ms": 36.689,
+          "count": 89
+        },
+        {
+          "name": "Register Coalescer",
+          "ms": 28.524,
+          "count": 89
+        },
+        {
+          "name": "CodeGen Prepare",
+          "ms": 28.098,
+          "count": 89
+        },
+        {
+          "name": "Live Interval Analysis",
+          "ms": 20.054,
+          "count": 89
+        },
+        {
+          "name": "Machine Copy Propagation Pass",
+          "ms": 14.549,
+          "count": 178
+        },
+        {
+          "name": "Reaching Definitions Analysis",
+          "ms": 14.433,
+          "count": 89
+        },
+        {
+          "name": "Branch Probability Basic Block Placement",
+          "ms": 14.391,
+          "count": 89
+        },
+        {
+          "name": "Live Variable Analysis",
+          "ms": 12.905,
+          "count": 89
+        },
+        {
+          "name": "X86 Assembly Printer",
+          "ms": 12.128,
+          "count": 89
+        }
+      ]
+    },
+    {
+      "edit": "lazy_depth",
+      "policy": "O2_fast_machine",
+      "legacy_pass_events_inclusive": [
+        {
+          "name": "Loop Pass Manager",
+          "ms": 171.425,
+          "count": 89
+        },
+        {
+          "name": "X86 DAG->DAG Instruction Selection",
+          "ms": 87.783,
+          "count": 89
+        },
+        {
+          "name": "CodeGen Prepare",
+          "ms": 26.901,
+          "count": 89
+        },
+        {
+          "name": "Fast Register Allocator",
+          "ms": 17.523,
+          "count": 89
+        },
+        {
+          "name": "Reaching Definitions Analysis",
+          "ms": 15.888,
+          "count": 89
+        },
+        {
+          "name": "X86 Assembly Printer",
+          "ms": 12.919,
+          "count": 89
+        },
+        {
+          "name": "Machine Common Subexpression Elimination",
+          "ms": 10.086,
+          "count": 89
+        },
+        {
+          "name": "Machine Copy Propagation Pass",
+          "ms": 8.593,
+          "count": 89
+        },
+        {
+          "name": "Machine code sinking",
+          "ms": 7.907,
+          "count": 89
+        },
+        {
+          "name": "Branch Probability Basic Block Placement",
+          "ms": 7.343,
+          "count": 89
+        },
+        {
+          "name": "Prologue/Epilogue Insertion & Frame Finalization",
+          "ms": 6.964,
+          "count": 89
+        },
+        {
+          "name": "Early Machine Loop Invariant Code Motion",
+          "ms": 6.381,
+          "count": 89
+        }
+      ]
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "edit": "search_budget",
+      "candidate": "O0",
+      "control": "Og",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 7,
+        "cycle_ns": 7,
+        "long_demand_sum_ns": 7
+      }
+    },
+    {
+      "edit": "search_budget",
+      "candidate": "O0",
+      "control": "O1",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 7,
+        "cycle_ns": 7,
+        "long_demand_sum_ns": 7
+      }
+    },
+    {
+      "edit": "search_budget",
+      "candidate": "O0",
+      "control": "O2",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 7,
+        "cycle_ns": 7,
+        "long_demand_sum_ns": 7
+      }
+    },
+    {
+      "edit": "search_budget",
+      "candidate": "O0",
+      "control": "O2_fast_machine",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 7,
+        "cycle_ns": 7,
+        "long_demand_sum_ns": 7
+      }
+    },
+    {
+      "edit": "search_budget",
+      "candidate": "Og",
+      "control": "O0",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 0,
+        "cycle_ns": 0,
+        "long_demand_sum_ns": 0
+      }
+    },
+    {
+      "edit": "search_budget",
+      "candidate": "Og",
+      "control": "O1",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 5,
+        "cycle_ns": 6,
+        "long_demand_sum_ns": 5
+      }
+    },
+    {
+      "edit": "search_budget",
+      "candidate": "Og",
+      "control": "O2",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 7,
+        "cycle_ns": 7,
+        "long_demand_sum_ns": 7
+      }
+    },
+    {
+      "edit": "search_budget",
+      "candidate": "Og",
+      "control": "O2_fast_machine",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 6,
+        "cycle_ns": 7,
+        "long_demand_sum_ns": 7
+      }
+    },
+    {
+      "edit": "search_budget",
+      "candidate": "O1",
+      "control": "O0",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 0,
+        "cycle_ns": 0,
+        "long_demand_sum_ns": 0
+      }
+    },
+    {
+      "edit": "search_budget",
+      "candidate": "O1",
+      "control": "Og",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 2,
+        "cycle_ns": 1,
+        "long_demand_sum_ns": 2
+      }
+    },
+    {
+      "edit": "search_budget",
+      "candidate": "O1",
+      "control": "O2",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 6,
+        "cycle_ns": 6,
+        "long_demand_sum_ns": 6
+      }
+    },
+    {
+      "edit": "search_budget",
+      "candidate": "O1",
+      "control": "O2_fast_machine",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 4,
+        "cycle_ns": 4,
+        "long_demand_sum_ns": 4
+      }
+    },
+    {
+      "edit": "search_budget",
+      "candidate": "O2",
+      "control": "O0",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 0,
+        "cycle_ns": 0,
+        "long_demand_sum_ns": 0
+      }
+    },
+    {
+      "edit": "search_budget",
+      "candidate": "O2",
+      "control": "Og",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 0,
+        "cycle_ns": 0,
+        "long_demand_sum_ns": 0
+      }
+    },
+    {
+      "edit": "search_budget",
+      "candidate": "O2",
+      "control": "O1",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 1,
+        "cycle_ns": 1,
+        "long_demand_sum_ns": 1
+      }
+    },
+    {
+      "edit": "search_budget",
+      "candidate": "O2",
+      "control": "O2_fast_machine",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 0,
+        "cycle_ns": 0,
+        "long_demand_sum_ns": 0
+      }
+    },
+    {
+      "edit": "search_budget",
+      "candidate": "O2_fast_machine",
+      "control": "O0",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 0,
+        "cycle_ns": 0,
+        "long_demand_sum_ns": 0
+      }
+    },
+    {
+      "edit": "search_budget",
+      "candidate": "O2_fast_machine",
+      "control": "Og",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 1,
+        "cycle_ns": 0,
+        "long_demand_sum_ns": 0
+      }
+    },
+    {
+      "edit": "search_budget",
+      "candidate": "O2_fast_machine",
+      "control": "O1",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 3,
+        "cycle_ns": 3,
+        "long_demand_sum_ns": 3
+      }
+    },
+    {
+      "edit": "search_budget",
+      "candidate": "O2_fast_machine",
+      "control": "O2",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 7,
+        "cycle_ns": 7,
+        "long_demand_sum_ns": 7
+      }
+    },
+    {
+      "edit": "lazy_depth",
+      "candidate": "O0",
+      "control": "Og",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 7,
+        "cycle_ns": 7,
+        "long_demand_sum_ns": 7
+      }
+    },
+    {
+      "edit": "lazy_depth",
+      "candidate": "O0",
+      "control": "O1",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 7,
+        "cycle_ns": 7,
+        "long_demand_sum_ns": 7
+      }
+    },
+    {
+      "edit": "lazy_depth",
+      "candidate": "O0",
+      "control": "O2",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 7,
+        "cycle_ns": 7,
+        "long_demand_sum_ns": 7
+      }
+    },
+    {
+      "edit": "lazy_depth",
+      "candidate": "O0",
+      "control": "O2_fast_machine",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 7,
+        "cycle_ns": 7,
+        "long_demand_sum_ns": 7
+      }
+    },
+    {
+      "edit": "lazy_depth",
+      "candidate": "Og",
+      "control": "O0",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 0,
+        "cycle_ns": 0,
+        "long_demand_sum_ns": 0
+      }
+    },
+    {
+      "edit": "lazy_depth",
+      "candidate": "Og",
+      "control": "O1",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 4,
+        "cycle_ns": 4,
+        "long_demand_sum_ns": 4
+      }
+    },
+    {
+      "edit": "lazy_depth",
+      "candidate": "Og",
+      "control": "O2",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 6,
+        "cycle_ns": 6,
+        "long_demand_sum_ns": 6
+      }
+    },
+    {
+      "edit": "lazy_depth",
+      "candidate": "Og",
+      "control": "O2_fast_machine",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 5,
+        "cycle_ns": 5,
+        "long_demand_sum_ns": 6
+      }
+    },
+    {
+      "edit": "lazy_depth",
+      "candidate": "O1",
+      "control": "O0",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 0,
+        "cycle_ns": 0,
+        "long_demand_sum_ns": 0
+      }
+    },
+    {
+      "edit": "lazy_depth",
+      "candidate": "O1",
+      "control": "Og",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 3,
+        "cycle_ns": 3,
+        "long_demand_sum_ns": 3
+      }
+    },
+    {
+      "edit": "lazy_depth",
+      "candidate": "O1",
+      "control": "O2",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 6,
+        "cycle_ns": 6,
+        "long_demand_sum_ns": 6
+      }
+    },
+    {
+      "edit": "lazy_depth",
+      "candidate": "O1",
+      "control": "O2_fast_machine",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 5,
+        "cycle_ns": 5,
+        "long_demand_sum_ns": 5
+      }
+    },
+    {
+      "edit": "lazy_depth",
+      "candidate": "O2",
+      "control": "O0",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 0,
+        "cycle_ns": 0,
+        "long_demand_sum_ns": 0
+      }
+    },
+    {
+      "edit": "lazy_depth",
+      "candidate": "O2",
+      "control": "Og",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 1,
+        "cycle_ns": 1,
+        "long_demand_sum_ns": 1
+      }
+    },
+    {
+      "edit": "lazy_depth",
+      "candidate": "O2",
+      "control": "O1",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 1,
+        "cycle_ns": 1,
+        "long_demand_sum_ns": 1
+      }
+    },
+    {
+      "edit": "lazy_depth",
+      "candidate": "O2",
+      "control": "O2_fast_machine",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 0,
+        "cycle_ns": 0,
+        "long_demand_sum_ns": 0
+      }
+    },
+    {
+      "edit": "lazy_depth",
+      "candidate": "O2_fast_machine",
+      "control": "O0",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 0,
+        "cycle_ns": 0,
+        "long_demand_sum_ns": 0
+      }
+    },
+    {
+      "edit": "lazy_depth",
+      "candidate": "O2_fast_machine",
+      "control": "Og",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 2,
+        "cycle_ns": 2,
+        "long_demand_sum_ns": 1
+      }
+    },
+    {
+      "edit": "lazy_depth",
+      "candidate": "O2_fast_machine",
+      "control": "O1",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 2,
+        "cycle_ns": 2,
+        "long_demand_sum_ns": 2
+      }
+    },
+    {
+      "edit": "lazy_depth",
+      "candidate": "O2_fast_machine",
+      "control": "O2",
+      "pairs": 7,
+      "wins": {
+        "compile_ns": 7,
+        "cycle_ns": 7,
+        "long_demand_sum_ns": 7
+      }
+    }
+  ],
+  "scope": "Pass events are inclusive diagnostics; sum neither wrappers and children nor different runs. No crossover extrapolation is made."
+}

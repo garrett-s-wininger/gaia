@@ -1,0 +1,44 @@
+{
+  "generation": "a525f3012550d461eb5747593deb50bc711076e3f9546b9a1b6ae08dc4896ecf",
+  "status": "current-source",
+  "file": "src/jinja2/environment.py",
+  "symbol": "Environment.overlay",
+  "source_sha256": "a4ac945f9c3cec13a05f3bee0df0477973948513a0e024c69e98d7d8084b9107",
+  "line": 386,
+  "body_line": 411,
+  "end_line": 455,
+  "body_identity": "d888b7e33654e85f3c7a3d3de0e19e00482be17aff385f8317c58c028c6e24f0",
+  "excerpt": "    def overlay(\n        self,\n        block_start_string: str = missing,\n        block_end_string: str = missing,\n        variable_start_string: str = missing,\n        variable_end_string: str = missing,\n        comment_start_string: str = missing,\n        comment_end_string: str = missing,\n        line_statement_prefix: t.Optional[str] = missing,\n        line_comment_prefix: t.Optional[str] = missing,\n        trim_blocks: bool = missing,\n        lstrip_blocks: bool = missing,\n        newline_sequence: \"te.Literal['\\\\n', '\\\\r\\\\n', '\\\\r']\" = missing,\n        keep_trailing_newline: bool = missing,\n        extensions: t.Sequence[t.Union[str, t.Type[\"Extension\"]]] = missing,\n        optimized: bool = missing,\n        undefined: t.Type[Undefined] = missing,\n        finalize: t.Optional[t.Callable[..., t.Any]] = missing,\n        autoescape: t.Union[bool, t.Callable[[t.Optional[str]], bool]] = missing,\n        loader: t.Optional[\"BaseLoader\"] = missing,\n        cache_size: int = missing,\n        auto_reload: bool = missing,\n        bytecode_cache: t.Optional[\"BytecodeCache\"] = missing,\n        enable_async: bool = missing,\n    ) -> \"Environment\":\n        \"\"\"Create a new overlay environment that shares all the data with the\n        current environment except for cache and the overridden attributes.\n        Extensions cannot be removed for an overlayed environment.  An overlayed\n        environment automatically gets all the extensions of the environment it\n        is linked to plus optional extra extensions.\n\n        Creating overlays should happen after the initial environment was set\n        up completely.  Not all attributes are truly linked, some are just\n        copied over so modifications on the original environment may not shine\n        through.\n\n        .. versionchanged:: 3.1.5\n            ``enable_async`` is applied correctly.\n\n        .. versionchanged:: 3.1.2\n            Added the ``newline_sequence``, ``keep_trailing_newline``,\n            and ``enable_async`` parameters to match ``__init__``.\n        \"\"\"\n        args = dict(locals())\n        del args[\"self\"], args[\"cache_size\"], args[\"extensions\"], args[\"enable_async\"]\n\n        rv = object.__new__(self.__class__)\n        rv.__dict__.update(self.__dict__)\n        rv.overlayed = True\n        rv.linked_to = self\n\n        for key, value in args.items():\n            if value is not missing:\n                setattr(rv, key, value)\n\n        if cache_size is not missing:\n            rv.cache = create_cache(cache_size)\n        else:\n            rv.cache = copy_cache(self.cache)\n\n        rv.extensions = {}\n        for key, value in self.extensions.items():\n            rv.extensions[key] = value.bind(rv)\n        if extensions is not missing:\n            rv.extensions.update(load_extensions(rv, extensions))\n\n        if enable_async is not missing:\n            rv.is_async = enable_async\n\n        return _environment_config_check(rv)",
+  "excerpt_truncated": false,
+  "observations": [
+    {
+      "test": "tests/test_api.py::test_overlay_enable_async",
+      "observed_generation": "a525f3012550d461eb5747593deb50bc711076e3f9546b9a1b6ae08dc4896ecf",
+      "status": "current",
+      "same_function_ast": true,
+      "observed_line": 386,
+      "outcome": "passed"
+    },
+    {
+      "test": "tests/test_gaia_issue_reproduction.py::test_overlay_inherits_async_mode",
+      "observed_generation": "a525f3012550d461eb5747593deb50bc711076e3f9546b9a1b6ae08dc4896ecf",
+      "status": "current",
+      "same_function_ast": true,
+      "observed_line": 386,
+      "outcome": "passed"
+    },
+    {
+      "test": "tests/test_ext.py::TestExtensions::test_rebinding",
+      "observed_generation": "a525f3012550d461eb5747593deb50bc711076e3f9546b9a1b6ae08dc4896ecf",
+      "status": "current",
+      "same_function_ast": true,
+      "observed_line": 386,
+      "outcome": "passed"
+    }
+  ],
+  "observation_count": 3,
+  "current_count": 3,
+  "observations_truncated": false,
+  "complete_impact_set": false,
+  "meaning": "Execution observed under these test contexts in this lexical function body. Deferred callbacks can be attributed here. Not a complete impact or bug-detection proof."
+}

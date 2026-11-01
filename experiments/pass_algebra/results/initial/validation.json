@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "real_source_functions": 121,
+  "formulations": 3,
+  "oracle": "independent ordered-set synchronous least fixed point; every output bit checked",
+  "source_and_tool_pins_verified_after": true,
+  "tests": {
+    "passed": true,
+    "methods": 4,
+    "exhaustive_graph_fact_combinations": 4096,
+    "random_graph_fact_combinations": 175,
+    "hand_checked_llvm_functions": 6,
+    "stdout": "",
+    "stderr": "test_empty_and_invalid_dispatch (test_liveness.LivenessTests.test_empty_and_invalid_dispatch) ... ok\ntest_exhaustive_two_blocks_two_values (test_liveness.LivenessTests.test_exhaustive_two_blocks_two_values) ... ok\ntest_hand_checked_phi_and_unreachable_extraction (test_liveness.LivenessTests.test_hand_checked_phi_and_unreachable_extraction) ... ok\ntest_random_cycles_and_word_boundaries (test_liveness.LivenessTests.test_random_cycles_and_word_boundaries) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.435s\n\nOK\n"
+  },
+  "limits": "Extraction is shared across formulations; hand-checked LLVM fixtures validate its edge semantics. No stock LLVM liveness implementation is timed."
+}

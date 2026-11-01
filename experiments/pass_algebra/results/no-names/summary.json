@@ -1,0 +1,214 @@
+{
+  "cases": {
+    "zstd-common-O1": {
+      "functions": 6,
+      "blocks": 6,
+      "values": 16,
+      "edges": 0,
+      "seed_facts": 4,
+      "live_facts": 4,
+      "phis": 0,
+      "phi_operands": 0,
+      "max_function_blocks": 1,
+      "max_function_values": 6,
+      "parse_and_verify_ms": 0.816931,
+      "modes": {
+        "block_worklist": {
+          "retained_payload_and_scratch_bytes": 254,
+          "layout_ms": 0.004609,
+          "work_units": 4,
+          "prepared_kernel": {
+            "median_ms": 0.0001453,
+            "min_ms": 8.42e-05,
+            "max_ms": 0.0002184,
+            "blocks": 7
+          },
+          "resident_ir_to_result": {
+            "median_ms": 0.0077691,
+            "min_ms": 0.0037473000000000003,
+            "max_ms": 0.034522300000000006,
+            "blocks": 7
+          }
+        },
+        "boolean_sweeps": {
+          "retained_payload_and_scratch_bytes": 176,
+          "layout_ms": 0.003537,
+          "work_units": 4,
+          "prepared_kernel": {
+            "median_ms": 0.0001773,
+            "min_ms": 0.0001242,
+            "max_ms": 0.0002034,
+            "blocks": 7,
+            "paired_wins_vs_worklist": 1
+          },
+          "resident_ir_to_result": {
+            "median_ms": 0.0055278,
+            "min_ms": 0.0029237,
+            "max_ms": 0.0071699,
+            "blocks": 7,
+            "paired_wins_vs_worklist": 7
+          }
+        },
+        "per_value_sparse": {
+          "retained_payload_and_scratch_bytes": 240,
+          "layout_ms": 0.002736,
+          "work_units": 4,
+          "prepared_kernel": {
+            "median_ms": 0.00013130000000000002,
+            "min_ms": 6.12e-05,
+            "max_ms": 0.00016230000000000001,
+            "blocks": 7,
+            "paired_wins_vs_worklist": 4
+          },
+          "resident_ir_to_result": {
+            "median_ms": 0.0076228,
+            "min_ms": 0.0035298,
+            "max_ms": 0.0089274,
+            "blocks": 7,
+            "paired_wins_vs_worklist": 4
+          }
+        }
+      }
+    },
+    "zstd-lazy-O1": {
+      "functions": 89,
+      "blocks": 5319,
+      "values": 31447,
+      "edges": 8550,
+      "seed_facts": 16721,
+      "live_facts": 177616,
+      "phis": 3841,
+      "phi_operands": 8617,
+      "max_function_blocks": 191,
+      "max_function_values": 746,
+      "parse_and_verify_ms": 65.009062,
+      "modes": {
+        "block_worklist": {
+          "retained_payload_and_scratch_bytes": 1068611,
+          "layout_ms": 1.487728,
+          "work_units": 12716,
+          "prepared_kernel": {
+            "median_ms": 0.2996607,
+            "min_ms": 0.25654170000000004,
+            "max_ms": 0.3812285,
+            "blocks": 7
+          },
+          "resident_ir_to_result": {
+            "median_ms": 11.520615300000001,
+            "min_ms": 10.785799800000001,
+            "max_ms": 11.880244099999999,
+            "blocks": 7
+          }
+        },
+        "boolean_sweeps": {
+          "retained_payload_and_scratch_bytes": 1290648,
+          "layout_ms": 1.53014,
+          "work_units": 1461,
+          "prepared_kernel": {
+            "median_ms": 1.9872155,
+            "min_ms": 1.8217044,
+            "max_ms": 2.0767529,
+            "blocks": 7,
+            "paired_wins_vs_worklist": 0
+          },
+          "resident_ir_to_result": {
+            "median_ms": 12.5605856,
+            "min_ms": 12.0598273,
+            "max_ms": 13.629655099999999,
+            "blocks": 7,
+            "paired_wins_vs_worklist": 0
+          }
+        },
+        "per_value_sparse": {
+          "retained_payload_and_scratch_bytes": 887544,
+          "layout_ms": 2.948985,
+          "work_units": 177616,
+          "prepared_kernel": {
+            "median_ms": 0.8836672,
+            "min_ms": 0.6061126,
+            "max_ms": 0.9481077,
+            "blocks": 7,
+            "paired_wins_vs_worklist": 0
+          },
+          "resident_ir_to_result": {
+            "median_ms": 12.639467199999999,
+            "min_ms": 12.1638167,
+            "max_ms": 13.0396526,
+            "blocks": 7,
+            "paired_wins_vs_worklist": 0
+          }
+        }
+      }
+    },
+    "zlib-deflate-O1": {
+      "functions": 26,
+      "blocks": 653,
+      "values": 3722,
+      "edges": 1040,
+      "seed_facts": 1369,
+      "live_facts": 8148,
+      "phis": 113,
+      "phi_operands": 188,
+      "max_function_blocks": 142,
+      "max_function_values": 758,
+      "parse_and_verify_ms": 8.573462,
+      "modes": {
+        "block_worklist": {
+          "retained_payload_and_scratch_bytes": 103073,
+          "layout_ms": 0.231852,
+          "work_units": 938,
+          "prepared_kernel": {
+            "median_ms": 0.019576200000000002,
+            "min_ms": 0.0184309,
+            "max_ms": 0.0276519,
+            "blocks": 7
+          },
+          "resident_ir_to_result": {
+            "median_ms": 0.9266295,
+            "min_ms": 0.7798337,
+            "max_ms": 1.2328332,
+            "blocks": 7
+          }
+        },
+        "boolean_sweeps": {
+          "retained_payload_and_scratch_bytes": 120892,
+          "layout_ms": 0.105816,
+          "work_units": 199,
+          "prepared_kernel": {
+            "median_ms": 0.1397031,
+            "min_ms": 0.1100985,
+            "max_ms": 0.18774870000000002,
+            "blocks": 7,
+            "paired_wins_vs_worklist": 0
+          },
+          "resident_ir_to_result": {
+            "median_ms": 1.0360542,
+            "min_ms": 0.8001294,
+            "max_ms": 1.2363945,
+            "blocks": 7,
+            "paired_wins_vs_worklist": 3
+          }
+        },
+        "per_value_sparse": {
+          "retained_payload_and_scratch_bytes": 86964,
+          "layout_ms": 0.255307,
+          "work_units": 8148,
+          "prepared_kernel": {
+            "median_ms": 0.0351254,
+            "min_ms": 0.0297209,
+            "max_ms": 0.0657378,
+            "blocks": 7,
+            "paired_wins_vs_worklist": 0
+          },
+          "resident_ir_to_result": {
+            "median_ms": 0.9671662,
+            "min_ms": 0.8352528,
+            "max_ms": 1.1698526,
+            "blocks": 7,
+            "paired_wins_vs_worklist": 2
+          }
+        }
+      }
+    }
+  }
+}

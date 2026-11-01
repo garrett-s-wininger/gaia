@@ -1,0 +1,62 @@
+{
+  "namespace-tuple": {
+    "exact_match": false,
+    "extra": [
+      [
+        "tests/test_api.py::TestUndefined::test_default_undefined",
+        "src/jinja2/environment.py::Template.generate"
+      ],
+      [
+        "tests/test_nativetypes.py::test_booleans[{{ value }}-True]",
+        "src/jinja2/loaders.py::ModuleLoader.__init__"
+      ]
+    ],
+    "missing": [
+      [
+        "tests/test_async.py::test_basic_async[trio]",
+        "src/jinja2/environment.py::Template.generate"
+      ]
+    ],
+    "native_pairs": 101780,
+    "oracle_pairs": 101779,
+    "tests": 906,
+    "query_missing": [],
+    "query_extra": [],
+    "queried_functions_match": true,
+    "queried_function_pairs": 311
+  },
+  "overlay-async": {
+    "exact_match": false,
+    "extra": [
+      [
+        "tests/test_nativetypes.py::test_booleans[{{ 1 == 1 }}-True]",
+        "src/jinja2/loaders.py::ModuleLoader.__init__"
+      ]
+    ],
+    "missing": [],
+    "native_pairs": 101600,
+    "oracle_pairs": 101599,
+    "tests": 901,
+    "query_missing": [],
+    "query_extra": [],
+    "queried_functions_match": true,
+    "queried_function_pairs": 1
+  },
+  "scientific-int": {
+    "exact_match": false,
+    "extra": [],
+    "missing": [
+      [
+        "tests/test_api.py::TestUndefined::test_logging_undefined",
+        "src/jinja2/environment.py::Template.generate"
+      ]
+    ],
+    "native_pairs": 100736,
+    "oracle_pairs": 100737,
+    "tests": 876,
+    "query_missing": [],
+    "query_extra": [],
+    "queried_functions_match": true,
+    "queried_function_pairs": 13
+  }
+}

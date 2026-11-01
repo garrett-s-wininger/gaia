@@ -1,0 +1,14 @@
+{
+  "cached_after_module_appears": [
+    "django.utils"
+  ],
+  "fresh_after_module_appears": [
+    "django.utils.later"
+  ],
+  "initial_dependencies": [
+    "django.utils"
+  ],
+  "rotated_cache_after_module_appears": [
+    "django.utils.later"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "fixtures": 11,
+  "query_outputs_per_mode": 704,
+  "exact_mode_query_comparisons": 3520,
+  "unit_test_methods": 2,
+  "source_input_binary_pins_verified_after": true
+}

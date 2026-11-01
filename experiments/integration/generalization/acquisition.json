@@ -1,0 +1,38 @@
+[
+  {
+    "name": "xxhash-0.8.3.tar.gz",
+    "url": "https://codeload.github.com/Cyan4973/xxHash/tar.gz/refs/tags/v0.8.3",
+    "bytes": 1147630,
+    "sha256": "aae608dfe8213dfd05d909a57718ef82f30722c392344583d3f39050c7f29a80"
+  },
+  {
+    "name": "spdlog-1.16.0.tar.gz",
+    "url": "https://codeload.github.com/gabime/spdlog/tar.gz/refs/tags/v1.16.0",
+    "bytes": 280382,
+    "sha256": "8741753e488a78dd0d0024c980e1fb5b5c85888447e309d9cb9d949bdb52aa3e"
+  },
+  {
+    "name": "re2c-4.2.tar.xz",
+    "url": "https://github.com/skvadrik/re2c/releases/download/4.2/re2c-4.2.tar.xz",
+    "bytes": 1838068,
+    "sha256": "c9dc2b24f340d135a07a1ac63ff53f7f8f74997fed5a4e9132a64050dbc3da1f"
+  },
+  {
+    "name": "curl-8.16.0.tar.xz",
+    "url": "https://curl.se/download/curl-8.16.0.tar.xz",
+    "bytes": 2788632,
+    "sha256": "40c8cddbcb6cc6251c03dea423a472a6cea4037be654ba5cf5dec6eb2d22ff1d"
+  },
+  {
+    "name": "cmake-4.1.2-linux-x86_64.tar.gz",
+    "url": "https://github.com/Kitware/CMake/releases/download/v4.1.2/cmake-4.1.2-linux-x86_64.tar.gz",
+    "bytes": 56422378,
+    "sha256": "773cc679c3a7395413bd096523f8e5d6c39f8718af4e12eb4e4195f72f35e4ab"
+  },
+  {
+    "name": "cmake-4.1.2-SHA-256.txt",
+    "url": "https://github.com/Kitware/CMake/releases/download/v4.1.2/cmake-4.1.2-SHA-256.txt",
+    "bytes": 2015,
+    "sha256": "7c95edbf6ce0f5f10502ecccb0f483775bc6f1bf893cfc91cefc6fd9fc670439"
+  }
+]

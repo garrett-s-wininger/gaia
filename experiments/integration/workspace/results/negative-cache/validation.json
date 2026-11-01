@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "modes": 2,
+  "reference": "Uncached same-command Clang object",
+  "direct_output_rejected": true,
+  "preprocessor_output_matches": true
+}

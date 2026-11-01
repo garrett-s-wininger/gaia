@@ -1,0 +1,4480 @@
+{
+  "schema_version": 1,
+  "units": "seconds",
+  "primary_rows": 333,
+  "operations": [
+    {
+      "project": "xxhash",
+      "case": "no_op",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 0.0008253479900304228,
+        "minimum": 0.0006727010040776804,
+        "maximum": 0.0008604080067016184,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.0006840200076112524,
+        "minimum": 0.0005283469945425168,
+        "maximum": 0.0007178980013122782,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "xxhash",
+      "case": "single_source_comment",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 0.08303631999297068,
+        "minimum": 0.08066906798921991,
+        "maximum": 0.0835465580021264,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.01886880400707014,
+        "minimum": 0.01884361899283249,
+        "maximum": 0.019128860003547743,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "xxhash",
+      "case": "single_source_semantic",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 0.18417911099095363,
+        "minimum": 0.1769110500026727,
+        "maximum": 0.20489941300184,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.01990355299494695,
+        "minimum": 0.019376597003429197,
+        "maximum": 0.021006308001233265,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "xxhash",
+      "case": "observed_header_comment",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 0.22668124199844897,
+        "minimum": 0.22357744800683577,
+        "maximum": 0.22762733299168758,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.1652306219912134,
+        "minimum": 0.16203032799239736,
+        "maximum": 0.1653829169954406,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 5,
+        "minimum": 5,
+        "maximum": 5,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "xxhash",
+      "case": "observed_header_semantic",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 0.12724745299783535,
+        "minimum": 0.126498758996604,
+        "maximum": 0.12838167900918052,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.06681591800588649,
+        "minimum": 0.06651875500392634,
+        "maximum": 0.06800114500219934,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 5,
+        "minimum": 5,
+        "maximum": 5,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "xxhash",
+      "case": "unused_numeric_definition",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 0.6508275889937067,
+        "minimum": 0.6383530919993063,
+        "maximum": 0.664605854995898,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.26267134898807853,
+        "minimum": 0.262613829007023,
+        "maximum": 0.2893167690053815,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 4,
+        "minimum": 4,
+        "maximum": 4,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 2,
+        "minimum": 2,
+        "maximum": 2,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 3,
+        "minimum": 3,
+        "maximum": 3,
+        "observations": 3
+      }
+    },
+    {
+      "project": "xxhash",
+      "case": "widely_used_definition",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 0.6669154179980978,
+        "minimum": 0.6629458739917027,
+        "maximum": 0.6684948440088192,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.29201521500363015,
+        "minimum": 0.28910076900501736,
+        "maximum": 0.2934077700047055,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 6,
+        "minimum": 6,
+        "maximum": 6,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "observations": 3
+      }
+    },
+    {
+      "project": "xxhash",
+      "case": "compiler_option_change",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 0.553397995987325,
+        "minimum": 0.5484916510031326,
+        "maximum": 0.5630180099979043,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.27979176699591335,
+        "minimum": 0.2748522239999147,
+        "maximum": 0.2862506710080197,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 7,
+        "minimum": 7,
+        "maximum": 7,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "xxhash",
+      "case": "return_to_seen_state",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 0.06042425200575963,
+        "minimum": 0.05912087998876814,
+        "maximum": 0.06127791100880131,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.0017245329945581034,
+        "minimum": 0.0014116019883658737,
+        "maximum": 0.0021495539986062795,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 7,
+        "minimum": 7,
+        "maximum": 7,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "xxhash",
+      "case": "no_op",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 0.0008644990011816844,
+        "minimum": 0.0008312799909617752,
+        "maximum": 0.0010807929938891903,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.0005479329993249848,
+        "minimum": 0.0005341539945220575,
+        "maximum": 0.0007130349986255169,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "xxhash",
+      "case": "single_source_comment",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 0.08354104300087783,
+        "minimum": 0.0816911560104927,
+        "maximum": 0.0838478849909734,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.019118094991426915,
+        "minimum": 0.018724727997323498,
+        "maximum": 0.019553758000256494,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "xxhash",
+      "case": "single_source_semantic",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 0.18691711500287056,
+        "minimum": 0.18619142900570296,
+        "maximum": 0.18795028499152977,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.019229427009122446,
+        "minimum": 0.019011267999303527,
+        "maximum": 0.01923938600521069,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "xxhash",
+      "case": "observed_header_comment",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 0.18970384399290197,
+        "minimum": 0.1884729680023156,
+        "maximum": 0.1921006119955564,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.07475112901011016,
+        "minimum": 0.07429202400089707,
+        "maximum": 0.0757146130054025,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 5,
+        "minimum": 5,
+        "maximum": 5,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "xxhash",
+      "case": "observed_header_semantic",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 0.13110241100366693,
+        "minimum": 0.12848101599956863,
+        "maximum": 0.13131943201005924,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.06851692400232423,
+        "minimum": 0.06825183400360402,
+        "maximum": 0.07076386499102227,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 5,
+        "minimum": 5,
+        "maximum": 5,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "xxhash",
+      "case": "unused_numeric_definition",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 0.6161657129996456,
+        "minimum": 0.6154699239996262,
+        "maximum": 0.6310131819918752,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.2363305580074666,
+        "minimum": 0.2353140259947395,
+        "maximum": 0.24537970298842993,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 4,
+        "minimum": 4,
+        "maximum": 4,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 2,
+        "minimum": 2,
+        "maximum": 2,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 3,
+        "minimum": 3,
+        "maximum": 3,
+        "observations": 3
+      }
+    },
+    {
+      "project": "xxhash",
+      "case": "widely_used_definition",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 0.6686153519985965,
+        "minimum": 0.6495535019930685,
+        "maximum": 0.6749467870104127,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.27205291400605347,
+        "minimum": 0.27192912600003183,
+        "maximum": 0.2768551190092694,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 6,
+        "minimum": 6,
+        "maximum": 6,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "observations": 3
+      }
+    },
+    {
+      "project": "xxhash",
+      "case": "compiler_option_change",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 0.5609340369992424,
+        "minimum": 0.5495630619989242,
+        "maximum": 0.5613864369952353,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.27482708300522063,
+        "minimum": 0.2685970239981543,
+        "maximum": 0.27501432099961676,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 7,
+        "minimum": 7,
+        "maximum": 7,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "xxhash",
+      "case": "return_to_seen_state",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 0.06219599400355946,
+        "minimum": 0.05886627599829808,
+        "maximum": 0.08779679900908377,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.0011721060000127181,
+        "minimum": 0.0010163310071220621,
+        "maximum": 0.0016734919918235391,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 7,
+        "minimum": 7,
+        "maximum": 7,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "xxhash",
+      "case": "no_op",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 0.004843582006287761,
+        "minimum": 0.004352539996034466,
+        "maximum": 0.005396911990828812,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.0008056090009631589,
+        "minimum": 0.0006889790092827752,
+        "maximum": 0.000960379999014549,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 0.003405486000701785,
+        "minimum": 0.003405169991310686,
+        "maximum": 0.003589239000575617,
+        "observations": 3
+      }
+    },
+    {
+      "project": "xxhash",
+      "case": "single_source_comment",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 0.06796921000932343,
+        "minimum": 0.0662858099967707,
+        "maximum": 0.07080472999950871,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.017116032002377324,
+        "minimum": 0.016928531986195594,
+        "maximum": 0.019568930991226807,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 0.06570392700086813,
+        "minimum": 0.06448944000294432,
+        "maximum": 0.06884458300191909,
+        "observations": 3
+      }
+    },
+    {
+      "project": "xxhash",
+      "case": "single_source_semantic",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 0.2062605910032289,
+        "minimum": 0.20089700000244193,
+        "maximum": 0.21918974799336866,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.018247815998620354,
+        "minimum": 0.01719588199921418,
+        "maximum": 0.02098469100019429,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 0.20423016899439972,
+        "minimum": 0.19893769999907818,
+        "maximum": 0.21723128399753477,
+        "observations": 3
+      }
+    },
+    {
+      "project": "xxhash",
+      "case": "observed_header_comment",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 0.18625481599883642,
+        "minimum": 0.18619733999366872,
+        "maximum": 0.2028597940079635,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.05922568999812938,
+        "minimum": 0.05886612999893259,
+        "maximum": 0.05955359600193333,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 5,
+        "minimum": 5,
+        "maximum": 5,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 0.18405901300138794,
+        "minimum": 0.18399888699059375,
+        "maximum": 0.18409612000687048,
+        "observations": 3
+      }
+    },
+    {
+      "project": "xxhash",
+      "case": "observed_header_semantic",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 0.5322587879927596,
+        "minimum": 0.5302862819953589,
+        "maximum": 0.5374690600001486,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.059778925991849974,
+        "minimum": 0.059434073002194054,
+        "maximum": 0.0600090500083752,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 5,
+        "minimum": 5,
+        "maximum": 5,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 0.5309476330003235,
+        "minimum": 0.5283820269978605,
+        "maximum": 0.5342628770013107,
+        "observations": 3
+      }
+    },
+    {
+      "project": "xxhash",
+      "case": "unused_numeric_definition",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 0.2766407749877544,
+        "minimum": 0.27221189699776005,
+        "maximum": 0.2768419130006805,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.07326420900062658,
+        "minimum": 0.07164859000477009,
+        "maximum": 0.07375957099429797,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 4,
+        "minimum": 4,
+        "maximum": 4,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 3,
+        "minimum": 3,
+        "maximum": 3,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 0.27499541600991506,
+        "minimum": 0.27085725399956573,
+        "maximum": 0.27552432600350585,
+        "observations": 3
+      }
+    },
+    {
+      "project": "xxhash",
+      "case": "widely_used_definition",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 0.5597100320010213,
+        "minimum": 0.556935902000987,
+        "maximum": 0.5632970659935381,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.0897140080051031,
+        "minimum": 0.088532876005047,
+        "maximum": 0.09134587999142241,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 6,
+        "minimum": 6,
+        "maximum": 6,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 0.5589861829939764,
+        "minimum": 0.5555940750055015,
+        "maximum": 0.5624898249952821,
+        "observations": 3
+      }
+    },
+    {
+      "project": "xxhash",
+      "case": "compiler_option_change",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 0.9032620399957523,
+        "minimum": 0.8875520559959114,
+        "maximum": 0.9114368300070055,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.09479365400329698,
+        "minimum": 0.09458448000077624,
+        "maximum": 0.09564395199413411,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 7,
+        "minimum": 7,
+        "maximum": 7,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 0.9010609539982397,
+        "minimum": 0.8868240339943441,
+        "maximum": 0.9053251129953424,
+        "observations": 3
+      }
+    },
+    {
+      "project": "xxhash",
+      "case": "return_to_seen_state",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 0.10311224398901686,
+        "minimum": 0.10191910600406118,
+        "maximum": 0.10637775900249835,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.0010018359898822382,
+        "minimum": 0.00073424399306532,
+        "maximum": 0.0011453469924163073,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 0.10200428499956615,
+        "minimum": 0.10124851200089324,
+        "maximum": 0.10566889199253637,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "case": "no_op",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 0.0011368800041964278,
+        "minimum": 0.0011293959978502244,
+        "maximum": 0.001204589003464207,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.001029184990329668,
+        "minimum": 0.0010093180026160553,
+        "maximum": 0.001035606997902505,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "case": "single_source_comment",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 1.205418419005582,
+        "minimum": 1.1718808220030041,
+        "maximum": 1.217190829993342,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 1.0037349809863372,
+        "minimum": 0.979869274990051,
+        "maximum": 1.0121430130093358,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "case": "single_source_semantic",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 2.726304424009868,
+        "minimum": 2.66556137400039,
+        "maximum": 2.8032993490051012,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 1.027274006002699,
+        "minimum": 0.986001147000934,
+        "maximum": 1.0511789610027336,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "case": "observed_header_comment",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 7.35842422398855,
+        "minimum": 7.143217042001197,
+        "maximum": 7.485757838003337,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 7.1799059430049965,
+        "minimum": 6.952238224999746,
+        "maximum": 7.301357158008614,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 8,
+        "minimum": 8,
+        "maximum": 8,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "case": "observed_header_semantic",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 5.7242905530001735,
+        "minimum": 5.704052385000978,
+        "maximum": 5.905610175992479,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 5.541226708010072,
+        "minimum": 5.5323835570015945,
+        "maximum": 5.722256906999974,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 8,
+        "minimum": 8,
+        "maximum": 8,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "case": "unused_numeric_definition",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 0.14783008700760547,
+        "minimum": 0.13724719700985588,
+        "maximum": 0.1577312479930697,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.00735994400747586,
+        "minimum": 0.00688567099859938,
+        "maximum": 0.007540708989836276,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 8,
+        "minimum": 8,
+        "maximum": 8,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 8,
+        "minimum": 8,
+        "maximum": 8,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "case": "widely_used_definition",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 11.878053987005842,
+        "minimum": 10.595584085996961,
+        "maximum": 11.949194229004206,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 10.241954965997138,
+        "minimum": 9.103772351998487,
+        "maximum": 10.298468181994394,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 8,
+        "minimum": 8,
+        "maximum": 8,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "case": "compiler_option_change",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 10.460963410005206,
+        "minimum": 9.252223888004664,
+        "maximum": 10.478862903008121,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 9.21452876800322,
+        "minimum": 8.171530894993339,
+        "maximum": 9.248425982004846,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 8,
+        "minimum": 8,
+        "maximum": 8,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "case": "return_to_seen_state",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 0.14064962200063746,
+        "minimum": 0.13395555900933687,
+        "maximum": 0.15145715800463222,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.006089305010391399,
+        "minimum": 0.006065141002181917,
+        "maximum": 0.006116550997830927,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 8,
+        "minimum": 8,
+        "maximum": 8,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "case": "no_op",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 0.0011301240010652691,
+        "minimum": 0.0011148079938720912,
+        "maximum": 0.001197841003886424,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.0008841699891490862,
+        "minimum": 0.0008695589931448922,
+        "maximum": 0.0009223719971487299,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "case": "single_source_comment",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 1.2750122010038467,
+        "minimum": 1.1931318610004382,
+        "maximum": 1.312543938998715,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 1.0721091189916478,
+        "minimum": 0.9969337640068261,
+        "maximum": 1.1040528309968067,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "case": "single_source_semantic",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 2.80278754500614,
+        "minimum": 2.5926134110050043,
+        "maximum": 2.8859469879971584,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 1.1115334030037047,
+        "minimum": 0.9631263949995628,
+        "maximum": 1.1924763580027502,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "case": "observed_header_comment",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 6.489388633010094,
+        "minimum": 5.972750546003226,
+        "maximum": 6.575453800003743,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 6.300612776991329,
+        "minimum": 5.79345646200818,
+        "maximum": 6.387344061004114,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 8,
+        "minimum": 8,
+        "maximum": 8,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "case": "observed_header_semantic",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 5.95594819400867,
+        "minimum": 5.365083886994398,
+        "maximum": 6.078345312009333,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 5.765924185005133,
+        "minimum": 5.192779955003061,
+        "maximum": 5.893582988996059,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 8,
+        "minimum": 8,
+        "maximum": 8,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "case": "unused_numeric_definition",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 0.15002888899471145,
+        "minimum": 0.14749867000500672,
+        "maximum": 0.15073496699915268,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.007175445003667846,
+        "minimum": 0.007074948007357307,
+        "maximum": 0.008167856998625211,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 8,
+        "minimum": 8,
+        "maximum": 8,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 8,
+        "minimum": 8,
+        "maximum": 8,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "case": "widely_used_definition",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 9.868463880004128,
+        "minimum": 8.988399444002425,
+        "maximum": 9.959053429993219,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 8.061468625994166,
+        "minimum": 7.426985678001074,
+        "maximum": 8.220448605003185,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 8,
+        "minimum": 8,
+        "maximum": 8,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "case": "compiler_option_change",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 8.690326006006217,
+        "minimum": 8.66697923099855,
+        "maximum": 9.04350407399761,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 7.4581891920097405,
+        "minimum": 7.409791429992765,
+        "maximum": 7.771334115008358,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 8,
+        "minimum": 8,
+        "maximum": 8,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "case": "return_to_seen_state",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 0.14541747399198357,
+        "minimum": 0.138545460999012,
+        "maximum": 0.14849845999560785,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.006242158997338265,
+        "minimum": 0.005983166993246414,
+        "maximum": 0.006854662002297118,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 8,
+        "minimum": 8,
+        "maximum": 8,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "case": "no_op",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 0.005730135992052965,
+        "minimum": 0.00547918799566105,
+        "maximum": 0.005852375004906207,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.000801076996140182,
+        "minimum": 0.0006806839955970645,
+        "maximum": 0.0010488359985174611,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 0.004544516996247694,
+        "minimum": 0.00448833400150761,
+        "maximum": 0.004770105006173253,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "case": "single_source_comment",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 0.8448287100036396,
+        "minimum": 0.8441283839929383,
+        "maximum": 0.9224614249978913,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.8430855390033685,
+        "minimum": 0.8416842809965601,
+        "maximum": 0.9205905639973935,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 0.218968337008846,
+        "minimum": 0.21491579498979263,
+        "maximum": 0.2583827439957531,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "case": "single_source_semantic",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 2.589839373002178,
+        "minimum": 2.5674042550090235,
+        "maximum": 2.602555071003735,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.8800838460010709,
+        "minimum": 0.8646838310087333,
+        "maximum": 0.9082625949959038,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 2.5881674029951682,
+        "minimum": 2.5651844020030694,
+        "maximum": 2.6006742979952833,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "case": "observed_header_comment",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 4.565921620000154,
+        "minimum": 4.560363444994437,
+        "maximum": 4.612420324003324,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 4.560213700999157,
+        "minimum": 4.554767042995081,
+        "maximum": 4.607227487998898,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 8,
+        "minimum": 8,
+        "maximum": 8,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 1.0012067149946233,
+        "minimum": 0.9977476969943382,
+        "maximum": 1.018021199008217,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "case": "observed_header_semantic",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 12.208594242998515,
+        "minimum": 12.194404255002155,
+        "maximum": 12.347647583999787,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 4.953322967994609,
+        "minimum": 4.869691856001737,
+        "maximum": 5.094422661000863,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 8,
+        "minimum": 8,
+        "maximum": 8,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 12.204139858993585,
+        "minimum": 12.189936321010464,
+        "maximum": 12.343370810005581,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "case": "unused_numeric_definition",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 0.9514684780006064,
+        "minimum": 0.9401196130056633,
+        "maximum": 1.0007066010002745,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.0039183400076581165,
+        "minimum": 0.003533056005835533,
+        "maximum": 0.004508437996264547,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 8,
+        "minimum": 8,
+        "maximum": 8,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 0.9467853189999005,
+        "minimum": 0.9354001739993691,
+        "maximum": 0.9954790049960138,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "case": "widely_used_definition",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 12.191804055997636,
+        "minimum": 12.009782533001271,
+        "maximum": 13.094640904004336,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 5.046096897000098,
+        "minimum": 4.970314209989738,
+        "maximum": 5.611695532992599,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 8,
+        "minimum": 8,
+        "maximum": 8,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 12.191011287999572,
+        "minimum": 12.009070066007553,
+        "maximum": 13.093751541004167,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "case": "compiler_option_change",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 10.758994367002742,
+        "minimum": 10.261740478003048,
+        "maximum": 15.048815422996995,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 5.488225163004245,
+        "minimum": 4.986170050004148,
+        "maximum": 5.608853626996279,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 8,
+        "minimum": 8,
+        "maximum": 8,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 10.758343039997271,
+        "minimum": 10.260667059003026,
+        "maximum": 15.047810969001148,
+        "observations": 3
+      }
+    },
+    {
+      "project": "spdlog",
+      "case": "return_to_seen_state",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 0.20309131799149327,
+        "minimum": 0.20048956999380607,
+        "maximum": 0.2152894899918465,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.0019322489970363677,
+        "minimum": 0.0019149370054947212,
+        "maximum": 0.004902478001895361,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 0.20209758300916292,
+        "minimum": 0.19961922599759419,
+        "maximum": 0.21451327500108164,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "no_op",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 19.434493218999705,
+        "minimum": 19.008580266003264,
+        "maximum": 20.800826216000132,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 19.06850913800008,
+        "minimum": 18.672150566999335,
+        "maximum": 20.46348495798884,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 38,
+        "minimum": 38,
+        "maximum": 38,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "single_source_comment",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 12.396100454992848,
+        "minimum": 12.02662903899909,
+        "maximum": 12.448540209006751,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 12.284170109996921,
+        "minimum": 11.914832840993768,
+        "maximum": 12.337161887000548,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 38,
+        "minimum": 38,
+        "maximum": 38,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "single_source_semantic",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 12.535821030993247,
+        "minimum": 12.191809411990107,
+        "maximum": 12.558411523990799,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 12.421353294004803,
+        "minimum": 12.07748312401236,
+        "maximum": 12.440302703005727,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 38,
+        "minimum": 38,
+        "maximum": 38,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "observed_header_comment",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 16.158841406009742,
+        "minimum": 15.602468612007215,
+        "maximum": 16.167849236997426,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 16.04823223099811,
+        "minimum": 15.491913911988377,
+        "maximum": 16.057880819003913,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 56,
+        "minimum": 56,
+        "maximum": 56,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "observed_header_semantic",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 15.308456377999391,
+        "minimum": 14.880603477999102,
+        "maximum": 15.400714916992001,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 15.20114294301311,
+        "minimum": 14.773900325002614,
+        "maximum": 15.29326122198836,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 56,
+        "minimum": 56,
+        "maximum": 56,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "unused_numeric_definition",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 23.099897747000796,
+        "minimum": 22.569283574004658,
+        "maximum": 30.97166420999565,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 23.0083196600026,
+        "minimum": 22.47356142499484,
+        "maximum": 30.84975551700336,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 66,
+        "minimum": 66,
+        "maximum": 66,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "widely_used_definition",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 25.30726929800585,
+        "minimum": 22.72631687000103,
+        "maximum": 25.499925743002677,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 25.178575894009555,
+        "minimum": 22.635038196996902,
+        "maximum": 25.37846089300001,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 66,
+        "minimum": 66,
+        "maximum": 66,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "compiler_option_change",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 21.968556838008226,
+        "minimum": 21.750833826998132,
+        "maximum": 25.026784303991008,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 21.85496966300707,
+        "minimum": 21.63534221900045,
+        "maximum": 24.925754412994138,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 66,
+        "minimum": 66,
+        "maximum": 66,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "return_to_seen_state",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 20.789983654991374,
+        "minimum": 19.532827030008775,
+        "maximum": 21.141636708998703,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 20.454463931004284,
+        "minimum": 19.21067020400369,
+        "maximum": 20.818587982008466,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 38,
+        "minimum": 38,
+        "maximum": 38,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 28,
+        "minimum": 28,
+        "maximum": 28,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "explicit_generated_input_change",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 13.894849393996992,
+        "minimum": 13.593334072997095,
+        "maximum": 15.316922133992193,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 13.766832353998325,
+        "minimum": 13.469055266992655,
+        "maximum": 15.18804529600311,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 38,
+        "minimum": 38,
+        "maximum": 38,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "no_op",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 21.923201872006757,
+        "minimum": 21.365434962994186,
+        "maximum": 40.215830129003734,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 21.559272484009853,
+        "minimum": 21.001378101005685,
+        "maximum": 39.86677216400858,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 38,
+        "minimum": 38,
+        "maximum": 38,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "single_source_comment",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 13.388433294006973,
+        "minimum": 12.772885499012773,
+        "maximum": 14.08402773400303,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 13.269179306997103,
+        "minimum": 12.64534968600492,
+        "maximum": 13.95120757901168,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 38,
+        "minimum": 38,
+        "maximum": 38,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "single_source_semantic",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 14.088585891004186,
+        "minimum": 12.664620561001357,
+        "maximum": 16.49924810801167,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 13.96800078600063,
+        "minimum": 12.547420436996617,
+        "maximum": 16.37654911800928,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 38,
+        "minimum": 38,
+        "maximum": 38,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "observed_header_comment",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 18.1438161549886,
+        "minimum": 16.380292308007483,
+        "maximum": 18.472251700994093,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 18.02463471000374,
+        "minimum": 16.266427394002676,
+        "maximum": 18.352750196994748,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 56,
+        "minimum": 56,
+        "maximum": 56,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "observed_header_semantic",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 16.8266182239895,
+        "minimum": 15.454093968000961,
+        "maximum": 17.300506344996393,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 16.71586261500488,
+        "minimum": 15.342435637998278,
+        "maximum": 17.1847362970002,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 56,
+        "minimum": 56,
+        "maximum": 56,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "unused_numeric_definition",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 25.75960315699922,
+        "minimum": 23.512849214996095,
+        "maximum": 26.387186328996904,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 25.654841436000424,
+        "minimum": 23.41679049699451,
+        "maximum": 26.290111798996804,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 66,
+        "minimum": 66,
+        "maximum": 66,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "widely_used_definition",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 26.292829329991946,
+        "minimum": 23.511799068000983,
+        "maximum": 27.110525062002125,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 26.19074211298721,
+        "minimum": 23.402115150995087,
+        "maximum": 27.016380961998948,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 66,
+        "minimum": 66,
+        "maximum": 66,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "compiler_option_change",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 21.946253821995924,
+        "minimum": 21.83173393001198,
+        "maximum": 24.243025780990138,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 21.85070763200929,
+        "minimum": 21.73513572399679,
+        "maximum": 24.138937729003374,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 66,
+        "minimum": 66,
+        "maximum": 66,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "return_to_seen_state",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 19.458361375000095,
+        "minimum": 19.43218502899981,
+        "maximum": 22.386562974003027,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 19.133495728994603,
+        "minimum": 19.109903193995706,
+        "maximum": 22.000908052999876,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 38,
+        "minimum": 38,
+        "maximum": 38,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 28,
+        "minimum": 28,
+        "maximum": 28,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "explicit_generated_input_change",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 13.86114453600021,
+        "minimum": 13.810108213001513,
+        "maximum": 15.542974190000677,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 13.735584070003824,
+        "minimum": 13.684795480003231,
+        "maximum": 15.405506758994306,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 38,
+        "minimum": 38,
+        "maximum": 38,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "no_op",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 11.68171009499929,
+        "minimum": 11.121380672004307,
+        "maximum": 12.115276412994717,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 11.661900605002302,
+        "minimum": 11.102041150006698,
+        "maximum": 12.093723673009663,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 38,
+        "minimum": 38,
+        "maximum": 38,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 0.019963362996350043,
+        "minimum": 0.017902164996485226,
+        "maximum": 0.02259778999723494,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "single_source_comment",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 11.566333720998955,
+        "minimum": 11.307363859988982,
+        "maximum": 12.531250505999196,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 11.543824531996506,
+        "minimum": 11.284261039996636,
+        "maximum": 12.507485106005333,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 38,
+        "minimum": 38,
+        "maximum": 38,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 0.1807376469951123,
+        "minimum": 0.17307185599929653,
+        "maximum": 0.21088456199504435,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "single_source_semantic",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 12.176046184002189,
+        "minimum": 11.222674877993995,
+        "maximum": 12.397176233993378,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 12.153128496996942,
+        "minimum": 11.199761192008737,
+        "maximum": 12.336290271996404,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 38,
+        "minimum": 38,
+        "maximum": 38,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 0.6520515489974059,
+        "minimum": 0.6471178509964375,
+        "maximum": 0.6804393570055254,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "observed_header_comment",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 14.930383532002452,
+        "minimum": 14.388227926989202,
+        "maximum": 15.541989698001998,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 14.902033779013436,
+        "minimum": 14.365293859009398,
+        "maximum": 15.518239643002744,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 56,
+        "minimum": 56,
+        "maximum": 56,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 4.935166929004481,
+        "minimum": 4.737743245001184,
+        "maximum": 4.973747401993023,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "observed_header_semantic",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 29.07050316799723,
+        "minimum": 28.459753671995713,
+        "maximum": 57.21090742399974,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 15.711213282993413,
+        "minimum": 15.371972995999386,
+        "maximum": 16.655076629991527,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 56,
+        "minimum": 56,
+        "maximum": 56,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 29.05009250700823,
+        "minimum": 28.439840736988117,
+        "maximum": 57.189523877998,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "unused_numeric_definition",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 21.97321810600988,
+        "minimum": 17.956692253006622,
+        "maximum": 26.84713410800032,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 21.95232521899743,
+        "minimum": 17.934032577002654,
+        "maximum": 26.734457272992586,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 66,
+        "minimum": 66,
+        "maximum": 66,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 5.058479788989644,
+        "minimum": 4.993018168999697,
+        "maximum": 7.790587701005279,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "widely_used_definition",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 16.588062003997038,
+        "minimum": 15.120033826999133,
+        "maximum": 22.596612138004275,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 16.567129579998436,
+        "minimum": 15.098762491994421,
+        "maximum": 22.558406675001606,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 66,
+        "minimum": 66,
+        "maximum": 66,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 5.471635453999625,
+        "minimum": 5.164237139004399,
+        "maximum": 7.721408260011231,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "compiler_option_change",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 27.895651729006204,
+        "minimum": 27.792125357998884,
+        "maximum": 29.126574902998982,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 15.968093500996474,
+        "minimum": 15.86723384600191,
+        "maximum": 17.05598806400667,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 66,
+        "minimum": 66,
+        "maximum": 66,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 27.87754281699017,
+        "minimum": 27.77359140999033,
+        "maximum": 29.1069590900006,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "return_to_seen_state",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 11.277254796994384,
+        "minimum": 11.17259200999979,
+        "maximum": 11.427481393999187,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 11.258624070003862,
+        "minimum": 11.154152617004002,
+        "maximum": 11.407585299995844,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 38,
+        "minimum": 38,
+        "maximum": 38,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 1.3936774960020557,
+        "minimum": 1.3916253060015151,
+        "maximum": 1.4261267120018601,
+        "observations": 3
+      }
+    },
+    {
+      "project": "re2c",
+      "case": "explicit_generated_input_change",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 11.497500919998856,
+        "minimum": 11.15389676799532,
+        "maximum": 11.512348707998171,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 11.461803269994562,
+        "minimum": 11.096489094008575,
+        "maximum": 11.475619584001834,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 38,
+        "minimum": 38,
+        "maximum": 38,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 1.6869966160011245,
+        "minimum": 1.5784233259910252,
+        "maximum": 1.7844278889970155,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "case": "no_op",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 2.1954685089876875,
+        "minimum": 2.187985647993628,
+        "maximum": 2.2068897009885404,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 2.022943703996134,
+        "minimum": 2.0117512260039803,
+        "maximum": 2.030583325002226,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 17,
+        "minimum": 17,
+        "maximum": 17,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "case": "single_source_comment",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 1.319970213007764,
+        "minimum": 1.2995277809968684,
+        "maximum": 1.366221822987427,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 1.1405067649902776,
+        "minimum": 1.1253249540022807,
+        "maximum": 1.1853485949977767,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 18,
+        "minimum": 18,
+        "maximum": 18,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "case": "single_source_semantic",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 1.3328306809999049,
+        "minimum": 1.3294166489940835,
+        "maximum": 1.3344960359972902,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 1.1551339400029974,
+        "minimum": 1.150545497002895,
+        "maximum": 1.1581656409980496,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 18,
+        "minimum": 18,
+        "maximum": 18,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "case": "observed_header_comment",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 16.90719296199677,
+        "minimum": 16.80895580998913,
+        "maximum": 16.954346632992383,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 16.698900709001464,
+        "minimum": 16.614881545989192,
+        "maximum": 16.74221744100214,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 222,
+        "minimum": 222,
+        "maximum": 222,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "case": "observed_header_semantic",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 17.329910988992197,
+        "minimum": 17.114781515003415,
+        "maximum": 17.432871078010066,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 17.128122344001895,
+        "minimum": 16.92602501899819,
+        "maximum": 17.242907816005754,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 222,
+        "minimum": 222,
+        "maximum": 222,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "case": "unused_numeric_definition",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 17.776424373994814,
+        "minimum": 17.679699878994143,
+        "maximum": 17.903994249994867,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 17.58439288599766,
+        "minimum": 17.491316758998437,
+        "maximum": 17.709725820997846,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 222,
+        "minimum": 222,
+        "maximum": 222,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "case": "widely_used_definition",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 18.047899038007017,
+        "minimum": 18.008434105999186,
+        "maximum": 18.434456684990437,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 17.86128320499847,
+        "minimum": 17.8211966700037,
+        "maximum": 18.232238711992977,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 222,
+        "minimum": 222,
+        "maximum": 222,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "case": "compiler_option_change",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 17.064507495000726,
+        "minimum": 16.941419267997844,
+        "maximum": 17.082855336993816,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 16.875847488990985,
+        "minimum": 16.746824955000193,
+        "maximum": 16.894417623989284,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 222,
+        "minimum": 222,
+        "maximum": 222,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "case": "return_to_seen_state",
+      "mode": "serial",
+      "whole_operation": {
+        "median": 18.257022615987808,
+        "minimum": 18.256413587994757,
+        "maximum": 18.495161544997245,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 18.065557262001676,
+        "minimum": 18.06447699200362,
+        "maximum": 18.29604583600303,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 222,
+        "minimum": 222,
+        "maximum": 222,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "case": "no_op",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 1.994675426001777,
+        "minimum": 1.9621163840056397,
+        "maximum": 2.0160674619983183,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 1.8176849159935955,
+        "minimum": 1.7835764629999176,
+        "maximum": 1.835912897993694,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 17,
+        "minimum": 17,
+        "maximum": 17,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "case": "single_source_comment",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 1.3206449369899929,
+        "minimum": 1.2972427560016513,
+        "maximum": 1.3365563549887156,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 1.141604673000984,
+        "minimum": 1.1212689240055624,
+        "maximum": 1.1511823659966467,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 18,
+        "minimum": 18,
+        "maximum": 18,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "case": "single_source_semantic",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 1.295434194005793,
+        "minimum": 1.294404491010937,
+        "maximum": 1.332232077998924,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 1.1190362889901735,
+        "minimum": 1.1162793900002725,
+        "maximum": 1.1490079119976144,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 18,
+        "minimum": 18,
+        "maximum": 18,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "case": "observed_header_comment",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 18.798690427996917,
+        "minimum": 18.592071866994957,
+        "maximum": 18.90220733800379,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 18.535321043993463,
+        "minimum": 18.36997349699959,
+        "maximum": 18.67280164299882,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 222,
+        "minimum": 222,
+        "maximum": 222,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "case": "observed_header_semantic",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 20.294459013995947,
+        "minimum": 20.123803030001,
+        "maximum": 20.47357429600379,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 20.06784527799755,
+        "minimum": 19.89307074500539,
+        "maximum": 20.233335591998184,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 222,
+        "minimum": 222,
+        "maximum": 222,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "case": "unused_numeric_definition",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 22.415408861998003,
+        "minimum": 22.24146252000355,
+        "maximum": 22.880033355992055,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 22.185340169991832,
+        "minimum": 22.01229266100563,
+        "maximum": 22.64397780399304,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 222,
+        "minimum": 222,
+        "maximum": 222,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "case": "widely_used_definition",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 23.59043601900339,
+        "minimum": 23.550155306002125,
+        "maximum": 23.69105930700607,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 23.326157754010637,
+        "minimum": 23.32311985900742,
+        "maximum": 23.462652733011055,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 222,
+        "minimum": 222,
+        "maximum": 222,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "case": "compiler_option_change",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 22.8937338609976,
+        "minimum": 22.592727890994865,
+        "maximum": 23.1055007790128,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 22.665636591991642,
+        "minimum": 22.37055302799854,
+        "maximum": 22.873871693998808,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 222,
+        "minimum": 222,
+        "maximum": 222,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "case": "return_to_seen_state",
+      "mode": "queue",
+      "whole_operation": {
+        "median": 24.702925350007717,
+        "minimum": 23.843079564991058,
+        "maximum": 24.936794289009413,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 24.47645755400299,
+        "minimum": 23.616565026997705,
+        "maximum": 24.698725885988097,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 222,
+        "minimum": 222,
+        "maximum": 222,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "case": "no_op",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 0.9141135079989908,
+        "minimum": 0.9081067710067146,
+        "maximum": 1.0040015919948928,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.9110234999970999,
+        "minimum": 0.9043155620020116,
+        "maximum": 1.0006281569949351,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 17,
+        "minimum": 17,
+        "maximum": 17,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 0.010555522996583022,
+        "minimum": 0.010125150001840666,
+        "maximum": 0.017006014008075,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "case": "single_source_comment",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 0.9910789130080957,
+        "minimum": 0.9707441400096286,
+        "maximum": 1.1137820790027035,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 0.9759620319964597,
+        "minimum": 0.964861643005861,
+        "maximum": 1.1059665399952792,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 18,
+        "minimum": 18,
+        "maximum": 18,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 0.24068357299256604,
+        "minimum": 0.23882867500651628,
+        "maximum": 0.26270732400007546,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "case": "single_source_semantic",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 1.0243106109992368,
+        "minimum": 0.9849582970055053,
+        "maximum": 1.0697371599962935,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 1.0179371470003389,
+        "minimum": 0.9714961650024634,
+        "maximum": 1.064479135995498,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 18,
+        "minimum": 18,
+        "maximum": 18,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 0.3636783599940827,
+        "minimum": 0.34166034500231035,
+        "maximum": 0.3734921610011952,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "case": "observed_header_comment",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 11.420876802993007,
+        "minimum": 10.846845742009464,
+        "maximum": 13.458072419001837,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 10.083127067991882,
+        "minimum": 9.386707044992363,
+        "maximum": 12.284690370011958,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 222,
+        "minimum": 222,
+        "maximum": 222,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 11.413884102992597,
+        "minimum": 10.836920066998573,
+        "maximum": 13.45351045699499,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "case": "observed_header_semantic",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 29.515597603996866,
+        "minimum": 28.52564916400297,
+        "maximum": 30.870791389999795,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 10.109862766010338,
+        "minimum": 9.650827328994637,
+        "maximum": 11.2695801009977,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 222,
+        "minimum": 222,
+        "maximum": 222,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 29.50066377899202,
+        "minimum": 28.514554770008544,
+        "maximum": 30.86628393099818,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "case": "unused_numeric_definition",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 10.887466911997763,
+        "minimum": 10.872188028006349,
+        "maximum": 10.947974474998773,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 9.970697473996552,
+        "minimum": 9.9239572170045,
+        "maximum": 10.00700165599119,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 222,
+        "minimum": 222,
+        "maximum": 222,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 10.854881285005831,
+        "minimum": 10.84849496599054,
+        "maximum": 10.935268991990597,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "case": "widely_used_definition",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 30.037614765999024,
+        "minimum": 28.532366729006753,
+        "maximum": 30.69926191099512,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 10.305747018996044,
+        "minimum": 10.083104076999007,
+        "maximum": 10.615790016003302,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 222,
+        "minimum": 222,
+        "maximum": 222,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 30.019716217997484,
+        "minimum": 28.518499937999877,
+        "maximum": 30.664362003997667,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "case": "compiler_option_change",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 28.220992347007268,
+        "minimum": 27.693170578990248,
+        "maximum": 30.399813868003548,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 10.634539728009258,
+        "minimum": 10.492880194011377,
+        "maximum": 13.352415272995131,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 222,
+        "minimum": 222,
+        "maximum": 222,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 28.205357591999928,
+        "minimum": 27.68677830300294,
+        "maximum": 30.38949520001188,
+        "observations": 3
+      }
+    },
+    {
+      "project": "curl",
+      "case": "return_to_seen_state",
+      "mode": "ninja-ccache",
+      "whole_operation": {
+        "median": 9.91072085199994,
+        "minimum": 9.804114480997669,
+        "maximum": 10.173657752995496,
+        "observations": 3
+      },
+      "facts_component": {
+        "median": 9.904824148994521,
+        "minimum": 9.80087349000678,
+        "maximum": 10.168771067998023,
+        "observations": 3
+      },
+      "dirty_targets": {
+        "median": 222,
+        "minimum": 222,
+        "maximum": 222,
+        "observations": 3
+      },
+      "restored_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "projected_targets": {
+        "median": 0,
+        "minimum": 0,
+        "maximum": 0,
+        "observations": 3
+      },
+      "physical_build_only_reference": {
+        "median": 1.855552175999037,
+        "minimum": 1.8113659549999284,
+        "maximum": 1.958877596000093,
+        "observations": 3
+      }
+    }
+  ],
+  "traces": [
+    {
+      "project": "xxhash",
+      "mode": "serial",
+      "trace": {
+        "median": 2.5530248009454226,
+        "minimum": 2.55241625502822,
+        "maximum": 2.5680462069867644,
+        "observations": 3
+      },
+      "setup": {
+        "median": 0.6914418800006388,
+        "minimum": 0.6897675389918732,
+        "maximum": 0.6949915430013789,
+        "observations": 3
+      },
+      "compiled_response_counts": {
+        "compiled_responses": 87,
+        "projection_supported": 87,
+        "projection_safe": 27,
+        "backend_pending": 0,
+        "queue_fallback": 0,
+        "diagnostic_responses": 0,
+        "ir_hit_responses": 30,
+        "validation_hit_responses": 0,
+        "projection_reason:unclean-identifier": 60
+      }
+    },
+    {
+      "project": "xxhash",
+      "mode": "queue",
+      "trace": {
+        "median": 2.5001220489793923,
+        "minimum": 2.4864737820171285,
+        "maximum": 2.5240070019935956,
+        "observations": 3
+      },
+      "setup": {
+        "median": 0.6785070400073892,
+        "minimum": 0.6736548389890231,
+        "maximum": 0.6800726799992844,
+        "observations": 3
+      },
+      "compiled_response_counts": {
+        "compiled_responses": 87,
+        "projection_supported": 87,
+        "projection_safe": 27,
+        "backend_pending": 57,
+        "queue_fallback": 0,
+        "diagnostic_responses": 0,
+        "ir_hit_responses": 30,
+        "validation_hit_responses": 0,
+        "projection_reason:unclean-identifier": 60
+      }
+    },
+    {
+      "project": "xxhash",
+      "mode": "ninja-ccache",
+      "trace": {
+        "median": 2.8480596209992655,
+        "minimum": 2.8404796149989124,
+        "maximum": 2.852084586964338,
+        "observations": 3
+      },
+      "setup": {
+        "median": 1.138193211008911,
+        "minimum": 1.1280372269975487,
+        "maximum": 1.1389653980004368,
+        "observations": 3
+      },
+      "compiled_response_counts": {
+        "compiled_responses": 87,
+        "projection_supported": 87,
+        "projection_safe": 27,
+        "backend_pending": 0,
+        "queue_fallback": 0,
+        "diagnostic_responses": 0,
+        "ir_hit_responses": 0,
+        "validation_hit_responses": 0,
+        "projection_reason:unclean-identifier": 60
+      }
+    },
+    {
+      "project": "spdlog",
+      "mode": "serial",
+      "trace": {
+        "median": 39.73087406702689,
+        "minimum": 36.80492694202985,
+        "maximum": 40.06243066600291,
+        "observations": 3
+      },
+      "setup": {
+        "median": 12.589974501999677,
+        "minimum": 11.392258409992792,
+        "maximum": 14.244552885007579,
+        "observations": 3
+      },
+      "compiled_response_counts": {
+        "compiled_responses": 102,
+        "projection_supported": 102,
+        "projection_safe": 102,
+        "backend_pending": 0,
+        "queue_fallback": 0,
+        "diagnostic_responses": 0,
+        "ir_hit_responses": 48,
+        "validation_hit_responses": 0
+      }
+    },
+    {
+      "project": "spdlog",
+      "mode": "queue",
+      "trace": {
+        "median": 35.735535795029136,
+        "minimum": 33.0894640940096,
+        "maximum": 35.77489918698848,
+        "observations": 3
+      },
+      "setup": {
+        "median": 10.148607611001353,
+        "minimum": 9.940146049004397,
+        "maximum": 10.521697727002902,
+        "observations": 3
+      },
+      "compiled_response_counts": {
+        "compiled_responses": 102,
+        "projection_supported": 102,
+        "projection_safe": 102,
+        "backend_pending": 54,
+        "queue_fallback": 0,
+        "diagnostic_responses": 0,
+        "ir_hit_responses": 48,
+        "validation_hit_responses": 0
+      }
+    },
+    {
+      "project": "spdlog",
+      "mode": "ninja-ccache",
+      "trace": {
+        "median": 44.18327519200102,
+        "minimum": 43.92510793500696,
+        "maximum": 49.646190091982135,
+        "observations": 3
+      },
+      "setup": {
+        "median": 17.82240811199881,
+        "minimum": 16.459365663002245,
+        "maximum": 17.82643972399819,
+        "observations": 3
+      },
+      "compiled_response_counts": {
+        "compiled_responses": 102,
+        "projection_supported": 102,
+        "projection_safe": 102,
+        "backend_pending": 0,
+        "queue_fallback": 0,
+        "diagnostic_responses": 0,
+        "ir_hit_responses": 0,
+        "validation_hit_responses": 0
+      }
+    },
+    {
+      "project": "re2c",
+      "mode": "serial",
+      "trace": {
+        "median": 184.42161848999967,
+        "minimum": 177.08115387799626,
+        "maximum": 188.60745843697805,
+        "observations": 3
+      },
+      "setup": {
+        "median": 26.517139022005722,
+        "minimum": 23.946826265004347,
+        "maximum": 27.606816016006633,
+        "observations": 3
+      },
+      "compiled_response_counts": {
+        "compiled_responses": 1500,
+        "projection_supported": 0,
+        "projection_safe": 450,
+        "backend_pending": 0,
+        "queue_fallback": 0,
+        "diagnostic_responses": 1140,
+        "ir_hit_responses": 603,
+        "validation_hit_responses": 0,
+        "projection_reason:unclean-identifier": 1050
+      }
+    },
+    {
+      "project": "re2c",
+      "mode": "queue",
+      "trace": {
+        "median": 198.03788395896845,
+        "minimum": 196.85097432302427,
+        "maximum": 199.77813048101962,
+        "observations": 3
+      },
+      "setup": {
+        "median": 24.965530045010382,
+        "minimum": 23.224596522995853,
+        "maximum": 25.741973308002343,
+        "observations": 3
+      },
+      "compiled_response_counts": {
+        "compiled_responses": 1500,
+        "projection_supported": 0,
+        "projection_safe": 450,
+        "backend_pending": 0,
+        "queue_fallback": 1500,
+        "diagnostic_responses": 1140,
+        "ir_hit_responses": 603,
+        "validation_hit_responses": 0,
+        "projection_reason:unclean-identifier": 1050
+      }
+    },
+    {
+      "project": "re2c",
+      "mode": "ninja-ccache",
+      "trace": {
+        "median": 165.62756219397124,
+        "minimum": 163.33718461100943,
+        "maximum": 210.69341020198772,
+        "observations": 3
+      },
+      "setup": {
+        "median": 45.15506400799495,
+        "minimum": 43.64865208600531,
+        "maximum": 47.06601590299397,
+        "observations": 3
+      },
+      "compiled_response_counts": {
+        "compiled_responses": 1500,
+        "projection_supported": 0,
+        "projection_safe": 450,
+        "backend_pending": 0,
+        "queue_fallback": 0,
+        "diagnostic_responses": 1140,
+        "ir_hit_responses": 0,
+        "validation_hit_responses": 0,
+        "projection_reason:unclean-identifier": 1050
+      }
+    },
+    {
+      "project": "curl",
+      "mode": "serial",
+      "trace": {
+        "median": 110.20332680297724,
+        "minimum": 109.77584224897146,
+        "maximum": 111.08998515694111,
+        "observations": 3
+      },
+      "setup": {
+        "median": 16.438426658001845,
+        "minimum": 16.402479780997965,
+        "maximum": 16.529881435009884,
+        "observations": 3
+      },
+      "compiled_response_counts": {
+        "compiled_responses": 4155,
+        "projection_supported": 0,
+        "projection_safe": 4119,
+        "backend_pending": 0,
+        "queue_fallback": 0,
+        "diagnostic_responses": 462,
+        "ir_hit_responses": 117,
+        "validation_hit_responses": 0,
+        "projection_reason:unclean-identifier": 36
+      }
+    },
+    {
+      "project": "curl",
+      "mode": "queue",
+      "trace": {
+        "median": 137.2101661550114,
+        "minimum": 135.6939290339942,
+        "maximum": 138.5734019720112,
+        "observations": 3
+      },
+      "setup": {
+        "median": 15.863538649995462,
+        "minimum": 15.805301747997873,
+        "maximum": 16.14655376599694,
+        "observations": 3
+      },
+      "compiled_response_counts": {
+        "compiled_responses": 4155,
+        "projection_supported": 0,
+        "projection_safe": 4119,
+        "backend_pending": 4038,
+        "queue_fallback": 0,
+        "diagnostic_responses": 462,
+        "ir_hit_responses": 117,
+        "validation_hit_responses": 0,
+        "projection_reason:unclean-identifier": 36
+      }
+    },
+    {
+      "project": "curl",
+      "mode": "ninja-ccache",
+      "trace": {
+        "median": 124.85942836498725,
+        "minimum": 119.24475030203757,
+        "maximum": 127.69383022699913,
+        "observations": 3
+      },
+      "setup": {
+        "median": 37.446981834000326,
+        "minimum": 37.23905014299089,
+        "maximum": 39.195353265997255,
+        "observations": 3
+      },
+      "compiled_response_counts": {
+        "compiled_responses": 4155,
+        "projection_supported": 0,
+        "projection_safe": 4119,
+        "backend_pending": 0,
+        "queue_fallback": 0,
+        "diagnostic_responses": 462,
+        "ir_hit_responses": 0,
+        "validation_hit_responses": 0,
+        "projection_reason:unclean-identifier": 36
+      }
+    }
+  ],
+  "projects": [
+    {
+      "project": "curl",
+      "translation_units": 222,
+      "source_files": 443,
+      "source_bytes": 6905670,
+      "header": "lib/functypes.h",
+      "header_fanout": 222,
+      "translation_unit": "lib/altsvc.c",
+      "generated_input": null
+    },
+    {
+      "project": "re2c",
+      "translation_units": 66,
+      "source_files": 131,
+      "source_bytes": 1576637,
+      "header": "src/util/forbid_copy.h",
+      "header_fanout": 56,
+      "translation_unit": "src/options/parse_opts.cc",
+      "generated_input": "include/syntax/c"
+    },
+    {
+      "project": "spdlog",
+      "translation_units": 8,
+      "source_files": 79,
+      "source_bytes": 752328,
+      "header": "include/spdlog/fmt/bundled/format.h",
+      "header_fanout": 8,
+      "translation_unit": "example/example.cpp",
+      "generated_input": null
+    },
+    {
+      "project": "xxhash",
+      "translation_units": 7,
+      "source_files": 14,
+      "source_bytes": 415371,
+      "header": "cli/xsum_config.h",
+      "header_fanout": 5,
+      "translation_unit": "cli/xxhsum.c",
+      "generated_input": null
+    }
+  ],
+  "scope": "Controlled invalidation probes on selected upstream target closures; descriptive three-trial ranges, not a natural edit distribution or cross-project speedup."
+}

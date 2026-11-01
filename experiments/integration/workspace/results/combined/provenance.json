@@ -1,0 +1,152 @@
+{
+  "project": "Ninja 1.13.2 + labelled probes",
+  "archive_sha256": "974d6b2f4eeefa25625d34da3cb36bdcebe7fbce40f4c16ac0835fd1c0cbae17",
+  "implementation_sha256": {
+    "run.py": "b0e41a970a7bfd5ab44a73444011988bc554653ddcfe80e93522673c1da93551",
+    "test_workspace.py": "fd91385df499fb7b882728e523114c4eb832b36e7ef26a64963a8e1fd0e446cf",
+    "host.cpp": "ce424e6a9c6540d7218f546fe3ee00e2203698be19acbe1f58794c36c680a8e4",
+    "protocol.py": "65a798eef85f95f1eef4ca2771fc77366fbf11979527bde7215c74e5ca6ee701",
+    "probe_cache.py": "2fa30895e18dab6a4ccd78311cfaff16db52defbe3e3dcef6d9206f456923023"
+  },
+  "fixed_sdk_and_tool_count": 409,
+  "fixed_sdk_and_tool_manifest_sha256": "f80862a13085e28be5ed73bfea6176c436aa0feee2175e65ddf96812e714f75f",
+  "environment_sha256": "18c02e40ad19f57022c1838f97bd65eed867e7349535a1e8fab06cdaada6a2f7",
+  "preparation_seconds": 15.535395922,
+  "oracle_seconds": 276.959496582,
+  "warmups": [
+    {
+      "block": 0,
+      "mode": "shared",
+      "ns": 28240722233,
+      "source_bytes": 1141231,
+      "worker_memory": [
+        {
+          "Rss_kib": 198820,
+          "Pss_kib": 194473,
+          "Private_Dirty_kib": 102600
+        }
+      ]
+    },
+    {
+      "block": 0,
+      "mode": "ninja-ccache",
+      "ns": 16180718249,
+      "source_bytes": 1141231,
+      "worker_memory": [
+        {
+          "Rss_kib": 114284,
+          "Pss_kib": 110010,
+          "Private_Dirty_kib": 56960
+        }
+      ]
+    },
+    {
+      "block": 0,
+      "mode": "independent",
+      "ns": 42370289041,
+      "source_bytes": 1141231,
+      "worker_memory": [
+        {
+          "Rss_kib": 198756,
+          "Pss_kib": 169785,
+          "Private_Dirty_kib": 103612
+        },
+        {
+          "Rss_kib": 112116,
+          "Pss_kib": 83197,
+          "Private_Dirty_kib": 56964
+        }
+      ]
+    },
+    {
+      "block": 1,
+      "mode": "independent",
+      "ns": 46062524313,
+      "source_bytes": 1141231,
+      "worker_memory": [
+        {
+          "Rss_kib": 195988,
+          "Pss_kib": 150254,
+          "Private_Dirty_kib": 101260
+        },
+        {
+          "Rss_kib": 111116,
+          "Pss_kib": 71001,
+          "Private_Dirty_kib": 56952
+        }
+      ]
+    },
+    {
+      "block": 1,
+      "mode": "shared",
+      "ns": 27515104695,
+      "source_bytes": 1141231,
+      "worker_memory": [
+        {
+          "Rss_kib": 200512,
+          "Pss_kib": 196293,
+          "Private_Dirty_kib": 104388
+        }
+      ]
+    },
+    {
+      "block": 1,
+      "mode": "ninja-ccache",
+      "ns": 14615133925,
+      "source_bytes": 1141231,
+      "worker_memory": [
+        {
+          "Rss_kib": 114220,
+          "Pss_kib": 109937,
+          "Private_Dirty_kib": 56952
+        }
+      ]
+    },
+    {
+      "block": 2,
+      "mode": "ninja-ccache",
+      "ns": 13741856834,
+      "source_bytes": 1141231,
+      "worker_memory": [
+        {
+          "Rss_kib": 114248,
+          "Pss_kib": 109935,
+          "Private_Dirty_kib": 56960
+        }
+      ]
+    },
+    {
+      "block": 2,
+      "mode": "shared",
+      "ns": 28631768566,
+      "source_bytes": 1141231,
+      "worker_memory": [
+        {
+          "Rss_kib": 198664,
+          "Pss_kib": 194366,
+          "Private_Dirty_kib": 102464
+        }
+      ]
+    },
+    {
+      "block": 2,
+      "mode": "independent",
+      "ns": 39977644073,
+      "source_bytes": 1141231,
+      "worker_memory": [
+        {
+          "Rss_kib": 198396,
+          "Pss_kib": 169888,
+          "Private_Dirty_kib": 103636
+        },
+        {
+          "Rss_kib": 111524,
+          "Pss_kib": 83100,
+          "Private_Dirty_kib": 56952
+        }
+      ]
+    }
+  ],
+  "cache_policy": "Independent traces from baseline-only restored ccache seed; native observations/index retain their latest state and IR stores one latest object per context, while ccache retains encountered versions. Same repeated generations per trace; no cross-trace native retention.",
+  "scope": "One shared native worker versus concurrent build/index workers; explicit fixture membership hints for Ninja; external baseline-positive SDK/environment fixed, not complete arbitrary-effect capture. Source and tools frozen. Current worker PSS excludes controller/peaks, and CPU uses coarse native process ticks."
+}

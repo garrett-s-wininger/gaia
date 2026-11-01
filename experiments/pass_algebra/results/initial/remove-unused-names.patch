@@ -1,0 +1,36 @@
+--- before/host.cpp
++++ after/host.cpp
+@@ -47,15 +47,21 @@
+ static void uniqueRows(Rows &rows) {
+     for (auto &row: rows) { std::sort(row.begin(),row.end()); row.erase(std::unique(row.begin(),row.end()),row.end()); }
+ }
+-static std::vector<Facts> extract(llvm::Module &module) {
++static std::vector<Facts> extract(llvm::Module &module, bool include_names=false) {
+     std::vector<Facts> result;
+     for (auto &function: module) {
+         if (function.isDeclaration()) continue;
+         Facts f; f.name = function.getName().str();
+         llvm::DenseMap<const llvm::BasicBlock*,uint32_t> blocks;
+         llvm::DenseMap<const llvm::Value*,uint32_t> values;
+-        for (auto &block: function) { blocks[&block]=blocks.size(); f.block_names.push_back(operandName(block)); }
+-        auto addValue = [&](const llvm::Value &v) { values[&v]=values.size(); f.value_names.push_back(operandName(v)); };
++        for (auto &block: function) {
++            blocks[&block]=blocks.size();
++            if(include_names) f.block_names.push_back(operandName(block));
++        }
++        auto addValue = [&](const llvm::Value &v) {
++            values[&v]=values.size();
++            if(include_names) f.value_names.push_back(operandName(v));
++        };
+         for (auto &arg: function.args()) addValue(arg);
+         for (auto &block: function) for (auto &inst: block)
+             if (!inst.getType()->isVoidTy()) addValue(inst);
+@@ -180,7 +186,7 @@
+ }
+ static llvm::json::Object dump(llvm::Module &module,Kernel kernel) {
+     llvm::json::Array functions;
+-    for (const auto &f:extract(module)) {
++    for (const auto &f:extract(module,true)) {
+         auto expected=oracle(f); Rows live;
+         for (const auto &row:expected) live.emplace_back(row.begin(),row.end());
+         for (unsigned mode=0;mode<3;++mode) { Prepared p(f,mode); p.solve(mode,kernel); check(f,p,expected); }

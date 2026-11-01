@@ -1,0 +1,82 @@
+{
+  "boundaries": [
+    {
+      "configuration_mismatch_rejected": true,
+      "incomplete_source_withheld": true,
+      "late_result_rejected": true,
+      "location_remapped": true,
+      "old_links_historical": true,
+      "stale_query_rejected": true
+    },
+    {
+      "configuration_mismatch_rejected": true,
+      "incomplete_source_withheld": true,
+      "late_result_rejected": true,
+      "location_remapped": true,
+      "old_links_historical": true,
+      "stale_query_rejected": true
+    },
+    {
+      "configuration_mismatch_rejected": true,
+      "incomplete_source_withheld": true,
+      "late_result_rejected": true,
+      "location_remapped": true,
+      "old_links_historical": true,
+      "stale_query_rejected": true
+    },
+    {
+      "configuration_mismatch_rejected": true,
+      "incomplete_source_withheld": true,
+      "late_result_rejected": true,
+      "location_remapped": true,
+      "old_links_historical": true,
+      "stale_query_rejected": true
+    },
+    {
+      "configuration_mismatch_rejected": true,
+      "incomplete_source_withheld": true,
+      "late_result_rejected": true,
+      "location_remapped": true,
+      "old_links_historical": true,
+      "stale_query_rejected": true
+    },
+    {
+      "configuration_mismatch_rejected": true,
+      "incomplete_source_withheld": true,
+      "late_result_rejected": true,
+      "location_remapped": true,
+      "old_links_historical": true,
+      "stale_query_rejected": true
+    },
+    {
+      "configuration_mismatch_rejected": true,
+      "incomplete_source_withheld": true,
+      "late_result_rejected": true,
+      "location_remapped": true,
+      "old_links_historical": true,
+      "stale_query_rejected": true
+    },
+    {
+      "configuration_mismatch_rejected": true,
+      "incomplete_source_withheld": true,
+      "late_result_rejected": true,
+      "location_remapped": true,
+      "old_links_historical": true,
+      "stale_query_rejected": true
+    },
+    {
+      "configuration_mismatch_rejected": true,
+      "incomplete_source_withheld": true,
+      "late_result_rejected": true,
+      "location_remapped": true,
+      "old_links_historical": true,
+      "stale_query_rejected": true
+    }
+  ],
+  "expected_failures_verified": true,
+  "full_suite_failure_sets_match": true,
+  "human_or_agent_task_completion_measured": false,
+  "native_and_shared_selection_identical": true,
+  "trials": 27,
+  "validation_runs": 162
+}

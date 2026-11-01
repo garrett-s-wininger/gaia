@@ -1,0 +1,105 @@
+{
+  "test_executions": 95802,
+  "expected_failing_executions": 54,
+  "tasks": {
+    "scientific-int": {
+      "full_suite": {
+        "range_s": [
+          11.994384179,
+          38.207604666
+        ],
+        "max_pytest_peak_rss_mib": 167.9609375,
+        "query_ms_median": 30.140509,
+        "retained_evidence_bytes": []
+      },
+      "native_testmon": {
+        "range_s": [
+          9.437602678,
+          9.893427945
+        ],
+        "max_pytest_peak_rss_mib": 167.9609375,
+        "query_ms_median": 29.772137,
+        "retained_evidence_bytes": []
+      },
+      "shared_evidence": {
+        "range_s": [
+          10.714555524,
+          10.960641548
+        ],
+        "max_pytest_peak_rss_mib": 167.9609375,
+        "query_ms_median": 31.3602405,
+        "retained_evidence_bytes": [
+          7005671
+        ]
+      }
+    },
+    "overlay-async": {
+      "full_suite": {
+        "range_s": [
+          12.174652601,
+          21.221002343
+        ],
+        "max_pytest_peak_rss_mib": 167.9609375,
+        "query_ms_median": 28.7955885,
+        "retained_evidence_bytes": []
+      },
+      "native_testmon": {
+        "range_s": [
+          21.206102299,
+          22.552010196
+        ],
+        "max_pytest_peak_rss_mib": 167.9609375,
+        "query_ms_median": 30.3354325,
+        "retained_evidence_bytes": []
+      },
+      "shared_evidence": {
+        "range_s": [
+          22.342284295,
+          23.60995455
+        ],
+        "max_pytest_peak_rss_mib": 167.171875,
+        "query_ms_median": 31.717610999999998,
+        "retained_evidence_bytes": [
+          21985564
+        ]
+      }
+    },
+    "namespace-tuple": {
+      "full_suite": {
+        "range_s": [
+          12.486276947,
+          13.946170967
+        ],
+        "max_pytest_peak_rss_mib": 167.9609375,
+        "query_ms_median": 63.493501,
+        "retained_evidence_bytes": []
+      },
+      "native_testmon": {
+        "range_s": [
+          21.936271058,
+          22.192972614
+        ],
+        "max_pytest_peak_rss_mib": 167.171875,
+        "query_ms_median": 63.0777835,
+        "retained_evidence_bytes": []
+      },
+      "shared_evidence": {
+        "range_s": [
+          24.132211775,
+          33.67206291
+        ],
+        "max_pytest_peak_rss_mib": 167.9609375,
+        "query_ms_median": 71.70107150000001,
+        "retained_evidence_bytes": [
+          22293726
+        ]
+      }
+    }
+  },
+  "metric_scope": {
+    "query_ms_median": "Median of individual query batches across all before/after stages and blocks. Each batch includes literal search and all predetermined function inspections; it excludes CLI startup/loading a persisted store.",
+    "retained_evidence_bytes": "Serialized six-stage evidence store in the retained first-block workspace; not resident memory.",
+    "max_pytest_peak_rss_mib": "Maximum RUSAGE_SELF high-water reading in a pytest child. It does not include concurrent controller memory, may include launch-time inherited memory, and is not used to infer incremental or total workflow memory cost.",
+    "range_s": "Observed complete-trace wall-time range over three blocks; descriptive, not a confidence interval."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "primary_operations": 333,
+  "unique_expected_operations": 333,
+  "first_requests": 36,
+  "resource_scenarios": 12,
+  "unit_and_regression_tests": 26,
+  "checks": [
+    "Every primary state has physical Clang object and uncached physical declaration-fact oracles.",
+    "Every accepted operation matches object bytes, dependency-file bytes and complete fact digests; required archive/link commands succeed.",
+    "First requests and instrumented resource scenarios match objects and complete facts against the physical build/index control.",
+    "Rendered ccache launchers, real cache calls and stored results verified; independent real-CMake regression requires an actual cache hit.",
+    "Resource sampler finds subprocesses created by worker threads.",
+    "Source and executable hashes match measured pins."
+  ],
+  "scope": "Selected target closures, fixed external SDK/environment and tested arguments; current declaration-summary/gaia_ consumer. CLI diagnostic presentation, arbitrary editor queries and long-session memory bounds are not established.",
+  "test_log": "experiments/_work/generalization/tests.txt",
+  "repository_checks": {
+    "documentation_pages": 265,
+    "local_links": 1761,
+    "indexed_paths": 826,
+    "ignored_raw_artifacts": 193,
+    "available_raw_hashes_verified": 193,
+    "source_only_checkout": "passed with zero raw artifacts present",
+    "candidate_files": 1289,
+    "binary_files": 0,
+    "symlinks": 0,
+    "files_above_1MiB": 0,
+    "new_or_modified_trailing_whitespace": 0,
+    "legacy_text_fixtures": "preserved"
+  }
+}

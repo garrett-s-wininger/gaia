@@ -1,0 +1,29 @@
+{
+  "artifacts": [
+    {
+      "file": "results.json",
+      "bytes": 370775,
+      "sha256": "125bb15058e277e7954c4a873b7e9e62de746d1092292f0eb0b2e4b22d9bc41c"
+    },
+    {
+      "file": "compiler-lazy_depth-O2-trace.json",
+      "bytes": 10874124,
+      "sha256": "152b4853ff7e5383595a46cd1ad365e278dae2b57696b35e11433a2e4afe87e4"
+    },
+    {
+      "file": "compiler-lazy_depth-O2_fast_machine-trace.json",
+      "bytes": 10622761,
+      "sha256": "13a6e546ef2675ab81cba9d52c20053fb97937f4a26e1ef713f7088f87880983"
+    },
+    {
+      "file": "compiler-search_budget-O2-trace.json",
+      "bytes": 10877302,
+      "sha256": "3212bfd9032d9d4613322a8a9bba7244e9ee5a77aae4341f6ed7becf576d6df4"
+    },
+    {
+      "file": "compiler-search_budget-O2_fast_machine-trace.json",
+      "bytes": 10611201,
+      "sha256": "af34ede905d731daccdb36507cff96c44d4dc156ec3dd92e768db0547ceabc90"
+    }
+  ]
+}

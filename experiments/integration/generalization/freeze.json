@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "purpose": "Pre-registered held-out validation; reuse algorithm and constants frozen before source acquisition.",
+  "algorithm_pins": {
+    "experiments/integration/workspace/host.cpp": "ce424e6a9c6540d7218f546fe3ee00e2203698be19acbe1f58794c36c680a8e4",
+    "experiments/integration/refinements/refine_host.py": "93411f295f8174454e47aeb180652de31c81b6fb47a87d834780bbe0db615d80",
+    "experiments/integration/refinements/refined_protocol.py": "6ea6444e24f68c2f41021ac54340107165ee8bc32b047aec293cb06993fe3b28",
+    "experiments/_work/refinements/host-final": "c5dd20b8e013ecbcb91bcf432ee3a7a740247adcee14fa15d80aab329002ab5b"
+  },
+  "frozen_limits": {
+    "source_files": 10000,
+    "source_bytes": 67108864,
+    "request_frame_bytes": 4194304,
+    "history_versions_per_group": 8,
+    "history_entries": 256,
+    "history_payload_bytes": 134217728,
+    "frontend_workers": 1,
+    "backend_workers": 1,
+    "max_pending_backends": 1,
+    "initial_admission_chunk_bytes": 1048576
+  },
+  "workload_roles": [
+    "untouched C library/CLI",
+    "untouched template-heavy C++ library",
+    "untouched generated-code project",
+    "untouched larger application"
+  ],
+  "scenarios": [
+    "no_op",
+    "single_source_comment",
+    "single_source_semantic",
+    "observed_header_comment",
+    "observed_header_semantic",
+    "unused_numeric_definition",
+    "widely_used_definition",
+    "compiler_option_change",
+    "return_to_seen_state",
+    "explicit_generated_input_change"
+  ],
+  "controls": [
+    "frozen shared serial host",
+    "bounded frontend/backend queue",
+    "Ninja+ccache with frozen independently cached index"
+  ],
+  "measurement_policy": "Per-operation medians and ranges, no cross-project grand speedup; setup and break-even separately; resource diagnostics separate from primary clocks; rejected/unsupported outcomes retained. Reuse rules may not be tuned to project. Any correctness repair is identified and invalidates clean held-out status for that case.",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.44",
+  "affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ]
+}

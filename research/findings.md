@@ -4,6 +4,18 @@ The useful gains came from retaining information that tools would otherwise reco
 
 The comparisons below come from separate runs on one Linux developer laptop, mostly with warm filesystem pages. Read each row within its own experiment; the differences cannot be added into a combined speedup.
 
+## Retain native facts before adding another representation
+
+The [cross-field experiments](connections/findings.md) find useful gains from retained parsing and scoped namespace invalidation: 57% and 42% reductions in their respective designed traces. Extra shortest-proof maintenance, compact def-use materialization and forked test isolation do not establish an overall win against strong native controls. A source/test evidence view preserves native selection and stale-result checks at roughly 4–13% added cost; developer/agent productivity remains unmeasured. These results complement the compiler cache failures below: validity, ownership and avoided reconstruction matter more than sharing alone.
+
+## Concrete integration exposes both gains and missing boundaries
+
+The [four-project frozen-policy test](integration/generalization/README.md) validates 333 operations on xxHash, spdlog, re2c and curl. Shared serial work improves three controlled traces, but diagnostic exclusion makes re2c’s unchanged inputs expensive. The queue helps spdlog and slows curl’s edit trace; separate first-request and process-tree resource measurements explain why one headline speedup would be misleading. All object, dependency and complete declaration-digest checks pass.
+
+The [matched refinement](integration/refinements/README.md) now reduces the tested numeric configuration change from 14.36 seconds to 272 ms by reusing 32 unaffected targets. Early source-edit facts arrive at 126 versus 292 ms, while complete outputs remain exact. Retaining identities also cuts a separate scan from 4.93 to 1.19 ms. Serial multi-TU backends and increased retained memory remain limits.
+
+The [33-TU shared workspace](integration/findings.md) preserves complete build and query outputs across 108 operations. Source/header edit medians improve against Ninja + ccache/query, while conservative configuration invalidation makes the complete trace slower. Sharing also delays editor publication in the current controller. Native SIMD helps selected wide-mask cases; sparse representations remain stronger on sparse inputs. A separate CPU-dispatched SHA-256 substitution improves the actual retained scan from 10.35 to 6.06 ms without changing identities. Those scan results are not full-build speedups.
+
 ## Sharing and transformations have broader applications
 
 The [science round](science/README.md) tests set/patch theory, incremental observations, shared generations, queueing, adaptation, geometry, real consumers and accelerators. Actual Clang observation refresh improves a three-TU trace from 261 to 116 ms with matching objects and depfiles. Shared sealed source mappings reduce four workers' sampled PSS from 94.2 to 59.9 MiB. These are bounded fixtures, not a production compiler service or hard memory quota.

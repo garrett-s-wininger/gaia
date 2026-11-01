@@ -1,0 +1,1184 @@
+{
+  "cases": {
+    "noop": {
+      "shared": {
+        "complete_ms": {
+          "median": 17.189521,
+          "min": 17.037101,
+          "max": 23.579465,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 17.174923,
+          "min": 16.961294,
+          "max": 23.564145999999997,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 17.174923,
+          "min": 16.961294,
+          "max": 23.564145999999997,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 20.95299999996314,
+          "min": 20.858000000089305,
+          "max": 30.878999999913503,
+          "samples": 3
+        },
+        "compiled_targets": [
+          0,
+          0,
+          0
+        ]
+      },
+      "independent": {
+        "complete_ms": {
+          "median": 25.137062999999998,
+          "min": 22.665165,
+          "max": 39.022921,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 21.676163,
+          "min": 19.692496,
+          "max": 29.188874,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 23.131808,
+          "min": 20.835091,
+          "max": 36.35443,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 44.43799999990006,
+          "min": 44.417000000066764,
+          "max": 56.61100000008901,
+          "samples": 3
+        },
+        "compiled_targets": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ninja-ccache": {
+        "complete_ms": {
+          "median": 22.342468,
+          "min": 20.174443999999998,
+          "max": 22.957470999999998,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 20.273668999999998,
+          "min": 18.212491999999997,
+          "max": 21.033116,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 9.197443999999999,
+          "min": 8.732878999999999,
+          "max": 9.279872,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 30.349999999998545,
+          "min": 20.84999999988213,
+          "max": 30.73099999983242,
+          "samples": 3
+        },
+        "compiled_targets": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "source": {
+      "shared": {
+        "complete_ms": {
+          "median": 535.193256,
+          "min": 510.006061,
+          "max": 561.034988,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 535.167055,
+          "min": 509.952116,
+          "max": 560.997936,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 535.167055,
+          "min": 509.952116,
+          "max": 560.997936,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 536.5759999999682,
+          "min": 505.64399999962006,
+          "max": 561.3399999999729,
+          "samples": 3
+        },
+        "compiled_targets": [
+          1,
+          1,
+          1
+        ]
+      },
+      "independent": {
+        "complete_ms": {
+          "median": 529.067307,
+          "min": 522.406042,
+          "max": 543.505304,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 240.962945,
+          "min": 229.06680799999998,
+          "max": 241.416618,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 528.382516,
+          "min": 521.964312,
+          "max": 543.039507,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 775.2729999999701,
+          "min": 759.8009999999249,
+          "max": 775.6010000000515,
+          "samples": 3
+        },
+        "compiled_targets": [
+          1,
+          1,
+          1
+        ]
+      },
+      "ninja-ccache": {
+        "complete_ms": {
+          "median": 653.0241229999999,
+          "min": 625.809937,
+          "max": 674.8897939999999,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 229.86524899999998,
+          "min": 221.752716,
+          "max": 239.51001399999998,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 652.466455,
+          "min": 625.209718,
+          "max": 674.38456,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 874.6960000000854,
+          "min": 859.0599999999995,
+          "max": 890.8399999997982,
+          "samples": 3
+        },
+        "compiled_targets": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "rewire": {
+      "shared": {
+        "complete_ms": {
+          "median": 550.92332,
+          "min": 527.084385,
+          "max": 553.614482,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 550.887129,
+          "min": 527.0540149999999,
+          "max": 553.588892,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 550.887129,
+          "min": 527.0540149999999,
+          "max": 553.588892,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 538.3570000001328,
+          "min": 524.0959999999859,
+          "max": 552.1099999999706,
+          "samples": 3
+        },
+        "compiled_targets": [
+          1,
+          1,
+          1
+        ]
+      },
+      "independent": {
+        "complete_ms": {
+          "median": 530.6445279999999,
+          "min": 501.14089099999995,
+          "max": 536.28454,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 226.77937899999998,
+          "min": 217.99934499999998,
+          "max": 248.05085799999998,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 529.830236,
+          "min": 500.64354099999997,
+          "max": 535.852659,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 758.8399999999638,
+          "min": 710.9429999999293,
+          "max": 760.960999999952,
+          "samples": 3
+        },
+        "compiled_targets": [
+          1,
+          1,
+          1
+        ]
+      },
+      "ninja-ccache": {
+        "complete_ms": {
+          "median": 618.739647,
+          "min": 610.734743,
+          "max": 670.366214,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 228.75829199999998,
+          "min": 219.909773,
+          "max": 263.523231,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 618.240825,
+          "min": 610.083675,
+          "max": 669.898611,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 846.0139999999683,
+          "min": 831.8630000001122,
+          "max": 920.182000000068,
+          "samples": 3
+        },
+        "compiled_targets": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "old_header": {
+      "shared": {
+        "complete_ms": {
+          "median": 20.981651,
+          "min": 19.500773,
+          "max": 26.558571999999998,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 20.959849,
+          "min": 19.464351999999998,
+          "max": 26.526989999999998,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 20.959849,
+          "min": 19.464351999999998,
+          "max": 26.526989999999998,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 22.858000000155698,
+          "min": 20.95200000007935,
+          "max": 27.060000000346918,
+          "samples": 3
+        },
+        "compiled_targets": [
+          0,
+          0,
+          0
+        ]
+      },
+      "independent": {
+        "complete_ms": {
+          "median": 23.570152,
+          "min": 21.749997,
+          "max": 26.847020999999998,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 22.87073,
+          "min": 19.623372,
+          "max": 24.394074,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 23.070788999999998,
+          "min": 21.307676,
+          "max": 26.395232,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 43.55500000019674,
+          "min": 43.29700000005232,
+          "max": 45.05199999994147,
+          "samples": 3
+        },
+        "compiled_targets": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ninja-ccache": {
+        "complete_ms": {
+          "median": 20.586022999999997,
+          "min": 20.169524,
+          "max": 21.653495,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 19.75808,
+          "min": 19.530469999999998,
+          "max": 21.013415,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 11.671904,
+          "min": 9.394283999999999,
+          "max": 11.889451999999999,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 33.12299999993229,
+          "min": 31.60000000002583,
+          "max": 41.84599999996408,
+          "samples": 3
+        },
+        "compiled_targets": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "new_header": {
+      "shared": {
+        "complete_ms": {
+          "median": 518.9833209999999,
+          "min": 501.83106799999996,
+          "max": 555.229486,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 518.943754,
+          "min": 501.79591899999997,
+          "max": 555.18566,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 518.943754,
+          "min": 501.79591899999997,
+          "max": 555.18566,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 505.78999999993357,
+          "min": 503.76300000004903,
+          "max": 551.8920000000662,
+          "samples": 3
+        },
+        "compiled_targets": [
+          1,
+          1,
+          1
+        ]
+      },
+      "independent": {
+        "complete_ms": {
+          "median": 552.652055,
+          "min": 547.633151,
+          "max": 556.628927,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 250.918976,
+          "min": 241.900193,
+          "max": 264.232478,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 552.140165,
+          "min": 547.055606,
+          "max": 556.085697,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 798.2839999999669,
+          "min": 795.4259999999067,
+          "max": 814.9040000001833,
+          "samples": 3
+        },
+        "compiled_targets": [
+          1,
+          1,
+          1
+        ]
+      },
+      "ninja-ccache": {
+        "complete_ms": {
+          "median": 649.7091839999999,
+          "min": 648.3610649999999,
+          "max": 652.3113969999999,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 226.411811,
+          "min": 222.12593099999998,
+          "max": 236.07500299999998,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 649.06786,
+          "min": 647.8782689999999,
+          "max": 651.3772339999999,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 869.7649999999157,
+          "min": 853.0679999998938,
+          "max": 877.0989999999301,
+          "samples": 3
+        },
+        "compiled_targets": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "optional_appear": {
+      "shared": {
+        "complete_ms": {
+          "median": 545.6007599999999,
+          "min": 538.416311,
+          "max": 571.879739,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 545.572314,
+          "min": 538.390812,
+          "max": 571.836695,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 545.572314,
+          "min": 538.390812,
+          "max": 571.836695,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 543.8610000001063,
+          "min": 539.7470000001476,
+          "max": 565.9700000001067,
+          "samples": 3
+        },
+        "compiled_targets": [
+          1,
+          1,
+          1
+        ]
+      },
+      "independent": {
+        "complete_ms": {
+          "median": 515.980355,
+          "min": 506.04785699999996,
+          "max": 749.4618949999999,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 230.965152,
+          "min": 206.582458,
+          "max": 363.36665,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 515.454745,
+          "min": 505.603644,
+          "max": 748.7790249999999,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 742.3979999998664,
+          "min": 724.1360000000441,
+          "max": 1108.301999999867,
+          "samples": 3
+        },
+        "compiled_targets": [
+          1,
+          1,
+          1
+        ]
+      },
+      "ninja-ccache": {
+        "complete_ms": {
+          "median": 631.781721,
+          "min": 620.718696,
+          "max": 641.80881,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 230.79184099999998,
+          "min": 229.141256,
+          "max": 237.77816099999998,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 631.1080489999999,
+          "min": 619.996837,
+          "max": 641.371269,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 852.5979999999436,
+          "min": 842.574999999897,
+          "max": 859.8330000002079,
+          "samples": 3
+        },
+        "compiled_targets": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "optional_remove": {
+      "shared": {
+        "complete_ms": {
+          "median": 541.238511,
+          "min": 528.944076,
+          "max": 549.498351,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 541.2023009999999,
+          "min": 528.913476,
+          "max": 549.460227,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 541.2023009999999,
+          "min": 528.913476,
+          "max": 549.460227,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 543.128999999908,
+          "min": 531.1419999999316,
+          "max": 548.757999999907,
+          "samples": 3
+        },
+        "compiled_targets": [
+          1,
+          1,
+          1
+        ]
+      },
+      "independent": {
+        "complete_ms": {
+          "median": 532.3969569999999,
+          "min": 521.915365,
+          "max": 770.312245,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 238.882366,
+          "min": 231.221759,
+          "max": 310.170704,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 531.877986,
+          "min": 521.2981599999999,
+          "max": 769.426069,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 766.5040000000545,
+          "min": 742.8540000000794,
+          "max": 1061.3320000001067,
+          "samples": 3
+        },
+        "compiled_targets": [
+          1,
+          1,
+          1
+        ]
+      },
+      "ninja-ccache": {
+        "complete_ms": {
+          "median": 345.878832,
+          "min": 327.865343,
+          "max": 391.727214,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 261.970793,
+          "min": 242.829466,
+          "max": 303.65364999999997,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 345.407732,
+          "min": 327.37516,
+          "max": 391.253376,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 610.3590000000167,
+          "min": 567.7379999997356,
+          "max": 684.4690000000355,
+          "samples": 3
+        },
+        "compiled_targets": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "shadow": {
+      "shared": {
+        "complete_ms": {
+          "median": 574.432964,
+          "min": 547.429565,
+          "max": 594.540433,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 574.388858,
+          "min": 547.402052,
+          "max": 594.4956159999999,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 574.388858,
+          "min": 547.402052,
+          "max": 594.4956159999999,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 568.5549999999466,
+          "min": 535.2720000000772,
+          "max": 593.599999999924,
+          "samples": 3
+        },
+        "compiled_targets": [
+          1,
+          1,
+          1
+        ]
+      },
+      "independent": {
+        "complete_ms": {
+          "median": 526.029603,
+          "min": 508.187907,
+          "max": 864.034463,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 233.732027,
+          "min": 212.794466,
+          "max": 352.592382,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 525.522298,
+          "min": 507.704255,
+          "max": 863.4018239999999,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 746.9869999999901,
+          "min": 704.6160000001009,
+          "max": 1161.1879999999246,
+          "samples": 3
+        },
+        "compiled_targets": [
+          1,
+          1,
+          1
+        ]
+      },
+      "ninja-ccache": {
+        "complete_ms": {
+          "median": 645.324679,
+          "min": 608.673022,
+          "max": 658.964243,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 229.806884,
+          "min": 207.65909499999998,
+          "max": 257.981837,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 644.9209599999999,
+          "min": 608.127609,
+          "max": 658.286393,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 861.5790000000061,
+          "min": 827.876999999944,
+          "max": 888.9170000002196,
+          "samples": 3
+        },
+        "compiled_targets": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "unrelated": {
+      "shared": {
+        "complete_ms": {
+          "median": 20.806404999999998,
+          "min": 16.777684999999998,
+          "max": 21.267433,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 20.774212,
+          "min": 16.746593999999998,
+          "max": 21.231372999999998,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 20.774212,
+          "min": 16.746593999999998,
+          "max": 21.231372999999998,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 21.390000000110376,
+          "min": 21.048999999948137,
+          "max": 24.352000000135376,
+          "samples": 3
+        },
+        "compiled_targets": [
+          0,
+          0,
+          0
+        ]
+      },
+      "independent": {
+        "complete_ms": {
+          "median": 27.400357,
+          "min": 24.490453,
+          "max": 40.312166999999995,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 26.296426999999998,
+          "min": 20.957473,
+          "max": 37.329786999999996,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 26.86797,
+          "min": 23.818665,
+          "max": 39.659115,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 47.315000000025975,
+          "min": 44.07800000012685,
+          "max": 77.60000000007494,
+          "samples": 3
+        },
+        "compiled_targets": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ninja-ccache": {
+        "complete_ms": {
+          "median": 20.809354,
+          "min": 20.761478,
+          "max": 22.109472999999998,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 20.229070999999998,
+          "min": 20.089368999999998,
+          "max": 21.467776999999998,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 11.283356,
+          "min": 9.486511,
+          "max": 11.522834,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 31.06800000000476,
+          "min": 19.91899999995894,
+          "max": 32.78900000009344,
+          "samples": 3
+        },
+        "compiled_targets": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "header": {
+      "shared": {
+        "complete_ms": {
+          "median": 5468.367692,
+          "min": 5348.114544,
+          "max": 6650.096981,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 5468.321042,
+          "min": 5348.076419999999,
+          "max": 6650.056842999999,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 5468.321042,
+          "min": 5348.076419999999,
+          "max": 6650.056842999999,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 5473.236000000043,
+          "min": 5347.268999999869,
+          "max": 6652.461000000017,
+          "samples": 3
+        },
+        "compiled_targets": [
+          4,
+          4,
+          4
+        ]
+      },
+      "independent": {
+        "complete_ms": {
+          "median": 7002.225396999999,
+          "min": 6040.2095,
+          "max": 7708.229807,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 2771.7808689999997,
+          "min": 2592.425844,
+          "max": 3626.393655,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 7001.618339,
+          "min": 6039.469228,
+          "max": 7707.774007999999,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 9768.700999999965,
+          "min": 8616.74699999992,
+          "max": 11330.324000000019,
+          "samples": 3
+        },
+        "compiled_targets": [
+          4,
+          4,
+          4
+        ]
+      },
+      "ninja-ccache": {
+        "complete_ms": {
+          "median": 6025.671257999999,
+          "min": 5949.626682,
+          "max": 6799.889421,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 2535.58042,
+          "min": 2502.0843449999998,
+          "max": 2677.673283,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 6025.013683,
+          "min": 5948.929582,
+          "max": 6799.350219999999,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 8542.790999999852,
+          "min": 8428.996000000097,
+          "max": 9420.09499999972,
+          "samples": 3
+        },
+        "compiled_targets": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "configuration": {
+      "shared": {
+        "complete_ms": {
+          "median": 28392.313597,
+          "min": 27827.773532,
+          "max": 29206.111774999998,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 28392.281635,
+          "min": 27827.739935999998,
+          "max": 29206.069072,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 28392.281635,
+          "min": 27827.739935999998,
+          "max": 29206.069072,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 28385.719999999994,
+          "min": 27817.697999999837,
+          "max": 29210.715999999935,
+          "samples": 3
+        },
+        "compiled_targets": [
+          33,
+          33,
+          33
+        ]
+      },
+      "independent": {
+        "complete_ms": {
+          "median": 30211.872622,
+          "min": 29268.267952,
+          "max": 37154.912340999996,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 16960.93764,
+          "min": 16657.775379,
+          "max": 22380.555884999998,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 30210.693057999997,
+          "min": 29267.596105999997,
+          "max": 37154.231154,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 46730.7669999999,
+          "min": 46190.54299999993,
+          "max": 59502.41300000016,
+          "samples": 3
+        },
+        "compiled_targets": [
+          33,
+          33,
+          33
+        ]
+      },
+      "ninja-ccache": {
+        "complete_ms": {
+          "median": 14427.047408999999,
+          "min": 14299.560055,
+          "max": 14791.993766,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 14426.269875,
+          "min": 14298.920565999999,
+          "max": 14791.448284,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 4683.076986,
+          "min": 4522.966856,
+          "max": 4684.7283179999995,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 19025.00800000007,
+          "min": 18732.360999999855,
+          "max": 19352.433999999903,
+          "samples": 3
+        },
+        "compiled_targets": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "burst": {
+      "shared": {
+        "complete_ms": {
+          "median": 518.087167,
+          "min": 513.816613,
+          "max": 542.361542,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 518.070214,
+          "min": 513.798688,
+          "max": 542.341313,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 518.070214,
+          "min": 513.798688,
+          "max": 542.341313,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 526.9839999999704,
+          "min": 501.4720000001489,
+          "max": 531.383999999889,
+          "samples": 3
+        },
+        "compiled_targets": [
+          1,
+          1,
+          1
+        ]
+      },
+      "independent": {
+        "complete_ms": {
+          "median": 540.711248,
+          "min": 505.61368999999996,
+          "max": 583.65165,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 235.956423,
+          "min": 216.133616,
+          "max": 237.614192,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 540.132257,
+          "min": 504.85939099999996,
+          "max": 582.9998009999999,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 752.6940000000195,
+          "min": 739.6029999997609,
+          "max": 815.2170000000751,
+          "samples": 3
+        },
+        "compiled_targets": [
+          1,
+          1,
+          1
+        ]
+      },
+      "ninja-ccache": {
+        "complete_ms": {
+          "median": 658.182452,
+          "min": 613.9788229999999,
+          "max": 670.307774,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 239.889228,
+          "min": 233.05679099999998,
+          "max": 241.38465699999998,
+          "samples": 3
+        },
+        "build_ms": {
+          "median": 657.095923,
+          "min": 613.339217,
+          "max": 669.9107809999999,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 878.273999999692,
+          "min": 833.3119999999781,
+          "max": 896.2670000000799,
+          "samples": 3
+        },
+        "compiled_targets": [
+          null,
+          null,
+          null
+        ]
+      }
+    }
+  },
+  "timed_operation_sums_ms": {
+    "shared": {
+      "median": 38538.580466,
+      "min": 37067.873032,
+      "max": 38850.169628,
+      "samples": 3
+    },
+    "independent": {
+      "median": 42589.922889,
+      "min": 40019.376297,
+      "max": 46971.919709,
+      "samples": 3
+    },
+    "ninja-ccache": {
+      "median": 25005.305423,
+      "min": 24529.231972,
+      "max": 25569.972639,
+      "samples": 3
+    }
+  },
+  "sampled_worker_pss_mib": {
+    "shared": {
+      "median": 190.8037109375,
+      "min": 189.810546875,
+      "max": 225.8564453125,
+      "samples": 36
+    },
+    "independent": {
+      "median": 247.0556640625,
+      "min": 224.912109375,
+      "max": 286.642578125,
+      "samples": 36
+    },
+    "ninja-ccache": {
+      "median": 107.3603515625,
+      "min": 80.724609375,
+      "max": 111.9443359375,
+      "samples": 36
+    }
+  }
+}

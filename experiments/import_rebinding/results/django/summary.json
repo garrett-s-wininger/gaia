@@ -1,0 +1,4713 @@
+{
+  "blocks": 7,
+  "clock": "Sum of request spans, including edits, discovery, parser/reference work, graph mutation, native consumer and full JSON; validation between events excluded.",
+  "events": {
+    "add_dependency": {
+      "category": "edge",
+      "modes": {
+        "full_rescan": {
+          "consumer_and_output_ms": {
+            "max": 3.513762,
+            "median": 2.689945,
+            "min": 2.310875,
+            "samples": 7
+          },
+          "edge_delta": 1,
+          "elapsed_ms": {
+            "max": 5.299078,
+            "median": 3.970029,
+            "min": 3.598063,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 66486,
+              "median": 43492,
+              "min": 41038,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 1212607,
+              "median": 805703,
+              "min": 775244,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 1.395594,
+            "median": 0.959004,
+            "min": 0.897397,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3204,
+            "native_modules": 907,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3359,
+            "watched_names": 0,
+            "watcher_memberships": 0
+          }
+        },
+        "rebind": {
+          "consumer_and_output_ms": {
+            "max": 4.031598,
+            "median": 2.64968,
+            "min": 2.537958,
+            "samples": 7
+          },
+          "edge_delta": 1,
+          "elapsed_ms": {
+            "max": 5.845708,
+            "median": 3.933841,
+            "min": 3.783647,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 20118,
+              "median": 14207,
+              "min": 10480,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 65043,
+              "median": 43593,
+              "min": 42440,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 1210683,
+              "median": 813537,
+              "min": 784973,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 2,
+              "median": 2,
+              "min": 2,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 1.414059,
+            "median": 0.964845,
+            "min": 0.926242,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3204,
+            "native_modules": 907,
+            "reference_source_text_bytes": 292663,
+            "references": 6521,
+            "resolved_records": 3359,
+            "watched_names": 2869,
+            "watcher_memberships": 10058
+          }
+        },
+        "scoped_native": {
+          "consumer_and_output_ms": {
+            "max": 3.560712,
+            "median": 2.828699,
+            "min": 2.441784,
+            "samples": 7
+          },
+          "edge_delta": 1,
+          "elapsed_ms": {
+            "max": 5.207173,
+            "median": 4.224373,
+            "min": 3.75929,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 20890,
+              "median": 16681,
+              "min": 14738,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 73099,
+              "median": 44425,
+              "min": 42932,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 1053675,
+              "median": 888770,
+              "min": 820389,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 2,
+              "median": 2,
+              "min": 2,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 1.24609,
+            "median": 1.045017,
+            "min": 0.967431,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3204,
+            "native_modules": 907,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3359,
+            "watched_names": 2869,
+            "watcher_memberships": 10058
+          }
+        }
+      }
+    },
+    "body_only": {
+      "category": "body",
+      "modes": {
+        "full_rescan": {
+          "consumer_and_output_ms": {
+            "max": 0.714529,
+            "median": 0.671508,
+            "min": 0.616663,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 2.313961,
+            "median": 1.915963,
+            "min": 1.872641,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 65996,
+              "median": 44685,
+              "min": 41469,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 1051520,
+              "median": 775096,
+              "min": 734968,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 1.24604,
+            "median": 0.917135,
+            "min": 0.8678,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3203,
+            "native_modules": 907,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3358,
+            "watched_names": 0,
+            "watcher_memberships": 0
+          }
+        },
+        "rebind": {
+          "consumer_and_output_ms": {
+            "max": 0.681266,
+            "median": 0.65713,
+            "min": 0.632323,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 1.999964,
+            "median": 1.98198,
+            "min": 1.92969,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 14297,
+              "median": 10369,
+              "min": 9648,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 60034,
+              "median": 45907,
+              "min": 42811,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 855337,
+              "median": 821374,
+              "min": 778991,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 1.001325,
+            "median": 0.981788,
+            "min": 0.924438,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3203,
+            "native_modules": 907,
+            "reference_source_text_bytes": 292619,
+            "references": 6520,
+            "resolved_records": 3358,
+            "watched_names": 2869,
+            "watcher_memberships": 10056
+          }
+        },
+        "scoped_native": {
+          "consumer_and_output_ms": {
+            "max": 1.191707,
+            "median": 0.724187,
+            "min": 0.674864,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 2.802861,
+            "median": 2.026174,
+            "min": 1.927466,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 23625,
+              "median": 11522,
+              "min": 8987,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 59143,
+              "median": 44866,
+              "min": 42320,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 1066199,
+              "median": 800763,
+              "min": 778821,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 1.236093,
+            "median": 0.960537,
+            "min": 0.927214,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3203,
+            "native_modules": 907,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3358,
+            "watched_names": 2869,
+            "watcher_memberships": 10056
+          }
+        }
+      }
+    },
+    "cycle_loses_exit": {
+      "category": "edge",
+      "modes": {
+        "full_rescan": {
+          "consumer_and_output_ms": {
+            "max": 1.997309,
+            "median": 1.768677,
+            "min": 1.519179,
+            "samples": 7
+          },
+          "edge_delta": 1,
+          "elapsed_ms": {
+            "max": 3.344691,
+            "median": 3.074544,
+            "min": 2.694143,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 48142,
+              "median": 43382,
+              "min": 39986,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 909410,
+              "median": 831553,
+              "min": 757621,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 1.044336,
+            "median": 0.954858,
+            "min": 0.876467,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3206,
+            "native_modules": 909,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3361,
+            "watched_names": 0,
+            "watcher_memberships": 0
+          }
+        },
+        "rebind": {
+          "consumer_and_output_ms": {
+            "max": 1.870657,
+            "median": 1.740821,
+            "min": 1.685209,
+            "samples": 7
+          },
+          "edge_delta": 1,
+          "elapsed_ms": {
+            "max": 3.310135,
+            "median": 2.993944,
+            "min": 2.878095,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 14468,
+              "median": 12303,
+              "min": 10790,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 48001,
+              "median": 42121,
+              "min": 40557,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 952702,
+              "median": 807628,
+              "min": 730339,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 1.099501,
+            "median": 0.948786,
+            "min": 0.869454,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3206,
+            "native_modules": 909,
+            "reference_source_text_bytes": 292723,
+            "references": 6523,
+            "resolved_records": 3361,
+            "watched_names": 2871,
+            "watcher_memberships": 10062
+          }
+        },
+        "scoped_native": {
+          "consumer_and_output_ms": {
+            "max": 2.523919,
+            "median": 1.831604,
+            "min": 1.683873,
+            "samples": 7
+          },
+          "edge_delta": 1,
+          "elapsed_ms": {
+            "max": 4.367455,
+            "median": 3.261243,
+            "min": 2.866142,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 20389,
+              "median": 13536,
+              "min": 8757,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 63080,
+              "median": 44104,
+              "min": 38663,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 1214549,
+              "median": 863934,
+              "min": 721443,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 1.421292,
+            "median": 1.013257,
+            "min": 0.854936,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3206,
+            "native_modules": 909,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3361,
+            "watched_names": 2871,
+            "watcher_memberships": 10062
+          }
+        }
+      }
+    },
+    "cycle_regains_exit": {
+      "category": "edge",
+      "modes": {
+        "full_rescan": {
+          "consumer_and_output_ms": {
+            "max": 1.863153,
+            "median": 1.742503,
+            "min": 1.560408,
+            "samples": 7
+          },
+          "edge_delta": 1,
+          "elapsed_ms": {
+            "max": 3.218851,
+            "median": 3.131365,
+            "min": 2.766432,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 62739,
+              "median": 43814,
+              "min": 39505,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 946481,
+              "median": 874814,
+              "min": 765506,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 1.095223,
+            "median": 0.995393,
+            "min": 0.901925,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3207,
+            "native_modules": 909,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3362,
+            "watched_names": 0,
+            "watcher_memberships": 0
+          }
+        },
+        "rebind": {
+          "consumer_and_output_ms": {
+            "max": 2.330983,
+            "median": 1.828677,
+            "min": 1.713209,
+            "samples": 7
+          },
+          "edge_delta": 1,
+          "elapsed_ms": {
+            "max": 3.984949,
+            "median": 3.240863,
+            "min": 3.006228,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 22383,
+              "median": 16632,
+              "min": 12554,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 83418,
+              "median": 44395,
+              "min": 41950,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 1049205,
+              "median": 890604,
+              "min": 809911,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 2,
+              "median": 2,
+              "min": 2,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 1.276758,
+            "median": 1.042273,
+            "min": 0.964135,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3207,
+            "native_modules": 909,
+            "reference_source_text_bytes": 292751,
+            "references": 6524,
+            "resolved_records": 3362,
+            "watched_names": 2871,
+            "watcher_memberships": 10064
+          }
+        },
+        "scoped_native": {
+          "consumer_and_output_ms": {
+            "max": 2.145801,
+            "median": 1.807618,
+            "min": 1.743135,
+            "samples": 7
+          },
+          "edge_delta": 1,
+          "elapsed_ms": {
+            "max": 3.610757,
+            "median": 3.224994,
+            "min": 3.109975,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 19617,
+              "median": 14988,
+              "min": 12864,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 47330,
+              "median": 45046,
+              "min": 42521,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 1003548,
+              "median": 927414,
+              "min": 846930,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 2,
+              "median": 2,
+              "min": 2,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 1.174403,
+            "median": 1.073462,
+            "min": 0.996405,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3207,
+            "native_modules": 909,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3362,
+            "watched_names": 2871,
+            "watcher_memberships": 10064
+          }
+        }
+      }
+    },
+    "cycle_with_exit": {
+      "category": "membership",
+      "modes": {
+        "full_rescan": {
+          "consumer_and_output_ms": {
+            "max": 3.397553,
+            "median": 3.216988,
+            "min": 2.879016,
+            "samples": 7
+          },
+          "edge_delta": 2,
+          "elapsed_ms": {
+            "max": 39.456668,
+            "median": 38.030797,
+            "min": 36.615044,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 8279674,
+              "median": 5978952,
+              "min": 5723585,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 25792697,
+              "median": 24492555,
+              "min": 23362151,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 909,
+              "median": 909,
+              "min": 909,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 35.524021,
+            "median": 34.593229,
+            "min": 33.1847,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3207,
+            "native_modules": 909,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3362,
+            "watched_names": 0,
+            "watcher_memberships": 0
+          }
+        },
+        "rebind": {
+          "consumer_and_output_ms": {
+            "max": 2.674552,
+            "median": 2.406926,
+            "min": 1.777684,
+            "samples": 7
+          },
+          "edge_delta": 2,
+          "elapsed_ms": {
+            "max": 11.952975,
+            "median": 10.172292,
+            "min": 9.508604,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 51198,
+              "median": 27903,
+              "min": 20268,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 8325732,
+              "median": 5968292,
+              "min": 5649725,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 1323731,
+              "median": 995116,
+              "min": 884812,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 2,
+              "median": 2,
+              "min": 2,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 2,
+              "median": 2,
+              "min": 2,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 9.598061,
+            "median": 7.126929,
+            "min": 6.785927,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3207,
+            "native_modules": 909,
+            "reference_source_text_bytes": 292751,
+            "references": 6524,
+            "resolved_records": 3362,
+            "watched_names": 2871,
+            "watcher_memberships": 10064
+          }
+        },
+        "scoped_native": {
+          "consumer_and_output_ms": {
+            "max": 2.884025,
+            "median": 2.146782,
+            "min": 1.805645,
+            "samples": 7
+          },
+          "edge_delta": 2,
+          "elapsed_ms": {
+            "max": 11.202185,
+            "median": 9.779417,
+            "min": 8.928543,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 34245,
+              "median": 20589,
+              "min": 16421,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 6378771,
+              "median": 6052831,
+              "min": 5596775,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 1304110,
+              "median": 963546,
+              "min": 923788,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 2,
+              "median": 2,
+              "min": 2,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 2,
+              "median": 2,
+              "min": 2,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 7.890717,
+            "median": 7.186817,
+            "min": 6.688241,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3207,
+            "native_modules": 909,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3362,
+            "watched_names": 2871,
+            "watcher_memberships": 10064
+          }
+        }
+      }
+    },
+    "initial": {
+      "category": "initial",
+      "modes": {
+        "full_rescan": {
+          "consumer_and_output_ms": {
+            "max": 3.759851,
+            "median": 2.827498,
+            "min": 2.721927,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 53.506629,
+            "median": 51.514582,
+            "min": 45.799245,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 8590047,
+              "median": 6072680,
+              "min": 5941359,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 36696540,
+              "median": 34810669,
+              "min": 30386743,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 907,
+              "median": 907,
+              "min": 907,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 50.724878,
+            "median": 47.694209,
+            "min": 42.995764,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3203,
+            "native_modules": 907,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3358,
+            "watched_names": 0,
+            "watcher_memberships": 0
+          }
+        },
+        "rebind": {
+          "consumer_and_output_ms": {
+            "max": 3.047632,
+            "median": 2.832607,
+            "min": 2.77089,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 78.220624,
+            "median": 73.48928,
+            "min": 70.506626,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 10367407,
+              "median": 9995863,
+              "min": 9676945,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 6398820,
+              "median": 6159253,
+              "min": 5854204,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 44808912,
+              "median": 39831392,
+              "min": 37257930,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 907,
+              "median": 907,
+              "min": 907,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 907,
+              "median": 907,
+              "min": 907,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 6520,
+              "median": 6520,
+              "min": 6520,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 75.111905,
+            "median": 70.45521,
+            "min": 67.687665,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3203,
+            "native_modules": 907,
+            "reference_source_text_bytes": 292619,
+            "references": 6520,
+            "resolved_records": 3358,
+            "watched_names": 2869,
+            "watcher_memberships": 10056
+          }
+        },
+        "scoped_native": {
+          "consumer_and_output_ms": {
+            "max": 3.131926,
+            "median": 2.952827,
+            "min": 2.70769,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 78.26014,
+            "median": 72.962542,
+            "min": 71.33331,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 13307958,
+              "median": 10087615,
+              "min": 9933592,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 7142389,
+              "median": 6121844,
+              "min": 5992355,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 41070254,
+              "median": 38509753,
+              "min": 35668797,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 907,
+              "median": 907,
+              "min": 907,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 907,
+              "median": 907,
+              "min": 907,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 6520,
+              "median": 6520,
+              "min": 6520,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 75.227697,
+            "median": 69.96481,
+            "min": 68.566146,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3203,
+            "native_modules": 907,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3358,
+            "watched_names": 2869,
+            "watcher_memberships": 10056
+          }
+        }
+      }
+    },
+    "location_shift": {
+      "category": "location",
+      "modes": {
+        "full_rescan": {
+          "consumer_and_output_ms": {
+            "max": 1.583251,
+            "median": 1.048294,
+            "min": 0.999371,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 3.694987,
+            "median": 2.566601,
+            "min": 2.457033,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 102515,
+              "median": 46468,
+              "min": 42882,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 1385941,
+              "median": 982609,
+              "min": 920282,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 1.664325,
+            "median": 1.155999,
+            "min": 1.124539,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3203,
+            "native_modules": 907,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3358,
+            "watched_names": 0,
+            "watcher_memberships": 0
+          }
+        },
+        "rebind": {
+          "consumer_and_output_ms": {
+            "max": 1.672762,
+            "median": 1.070165,
+            "min": 1.02526,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 3.647418,
+            "median": 2.636204,
+            "min": 2.491539,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 25939,
+              "median": 21771,
+              "min": 16130,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 64923,
+              "median": 46228,
+              "min": 42691,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 1296436,
+              "median": 976808,
+              "min": 917946,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 11,
+              "median": 11,
+              "min": 11,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 1.55633,
+            "median": 1.175636,
+            "min": 1.108688,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3203,
+            "native_modules": 907,
+            "reference_source_text_bytes": 292619,
+            "references": 6520,
+            "resolved_records": 3358,
+            "watched_names": 2869,
+            "watcher_memberships": 10056
+          }
+        },
+        "scoped_native": {
+          "consumer_and_output_ms": {
+            "max": 1.597488,
+            "median": 1.152412,
+            "min": 1.046781,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 3.528872,
+            "median": 2.76058,
+            "min": 2.646623,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 23675,
+              "median": 21030,
+              "min": 18996,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 69923,
+              "median": 46208,
+              "min": 43833,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 1196064,
+              "median": 1060157,
+              "min": 995865,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 11,
+              "median": 11,
+              "min": 11,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 1.471208,
+            "median": 1.250979,
+            "min": 1.182879,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3203,
+            "native_modules": 907,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3358,
+            "watched_names": 2869,
+            "watcher_memberships": 10056
+          }
+        }
+      }
+    },
+    "missing_module_reference": {
+      "category": "edge",
+      "modes": {
+        "full_rescan": {
+          "consumer_and_output_ms": {
+            "max": 1.298011,
+            "median": 1.097367,
+            "min": 1.072139,
+            "samples": 7
+          },
+          "edge_delta": 1,
+          "elapsed_ms": {
+            "max": 2.827879,
+            "median": 2.54009,
+            "min": 2.442936,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 61016,
+              "median": 42480,
+              "min": 40637,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 1094492,
+              "median": 952441,
+              "min": 890874,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 1.236802,
+            "median": 1.075167,
+            "min": 1.013378,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3204,
+            "native_modules": 907,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3359,
+            "watched_names": 0,
+            "watcher_memberships": 0
+          }
+        },
+        "rebind": {
+          "consumer_and_output_ms": {
+            "max": 1.778032,
+            "median": 1.247004,
+            "min": 1.105883,
+            "samples": 7
+          },
+          "edge_delta": 1,
+          "elapsed_ms": {
+            "max": 3.69634,
+            "median": 2.832378,
+            "min": 2.495015,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 26841,
+              "median": 20129,
+              "min": 15039,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 65334,
+              "median": 47250,
+              "min": 43814,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 1351541,
+              "median": 1046701,
+              "min": 936992,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 7,
+              "median": 7,
+              "min": 7,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 1.560408,
+            "median": 1.198258,
+            "min": 1.081978,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3204,
+            "native_modules": 907,
+            "reference_source_text_bytes": 292654,
+            "references": 6521,
+            "resolved_records": 3359,
+            "watched_names": 2870,
+            "watcher_memberships": 10058
+          }
+        },
+        "scoped_native": {
+          "consumer_and_output_ms": {
+            "max": 1.49885,
+            "median": 1.225391,
+            "min": 1.129779,
+            "samples": 7
+          },
+          "edge_delta": 1,
+          "elapsed_ms": {
+            "max": 3.1019,
+            "median": 2.704324,
+            "min": 2.57694,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 23084,
+              "median": 17894,
+              "min": 13556,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 55686,
+              "median": 43924,
+              "min": 42261,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 1063543,
+              "median": 1006444,
+              "min": 939207,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 7,
+              "median": 7,
+              "min": 7,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 1.240279,
+            "median": 1.155117,
+            "min": 1.082389,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3204,
+            "native_modules": 907,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3359,
+            "watched_names": 2870,
+            "watcher_memberships": 10058
+          }
+        }
+      }
+    },
+    "module_appears": {
+      "category": "membership",
+      "modes": {
+        "full_rescan": {
+          "consumer_and_output_ms": {
+            "max": 3.245302,
+            "median": 3.016984,
+            "min": 2.783644,
+            "samples": 7
+          },
+          "edge_delta": 3,
+          "elapsed_ms": {
+            "max": 36.708802,
+            "median": 35.205711,
+            "min": 33.135965,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 7806650,
+              "median": 5948633,
+              "min": 5462698,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 23883252,
+              "median": 22287934,
+              "min": 20786170,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 908,
+              "median": 908,
+              "min": 908,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 33.286791,
+            "median": 32.014601,
+            "min": 29.941911,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3205,
+            "native_modules": 908,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3360,
+            "watched_names": 0,
+            "watcher_memberships": 0
+          }
+        },
+        "rebind": {
+          "consumer_and_output_ms": {
+            "max": 2.740212,
+            "median": 1.96119,
+            "min": 1.834359,
+            "samples": 7
+          },
+          "edge_delta": 3,
+          "elapsed_ms": {
+            "max": 12.582831,
+            "median": 9.052786,
+            "min": 8.834652,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 33824,
+              "median": 27031,
+              "min": 23776,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 8333730,
+              "median": 5962169,
+              "min": 5813637,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 839286,
+              "median": 674944,
+              "min": 622955,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 8,
+              "median": 8,
+              "min": 8,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 9.441597,
+            "median": 6.814564,
+            "min": 6.633046,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3205,
+            "native_modules": 908,
+            "reference_source_text_bytes": 292682,
+            "references": 6522,
+            "resolved_records": 3360,
+            "watched_names": 2870,
+            "watcher_memberships": 10060
+          }
+        },
+        "scoped_native": {
+          "consumer_and_output_ms": {
+            "max": 2.466361,
+            "median": 2.136823,
+            "min": 1.895224,
+            "samples": 7
+          },
+          "edge_delta": 3,
+          "elapsed_ms": {
+            "max": 10.685,
+            "median": 10.033853,
+            "min": 9.429825,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 20950,
+              "median": 13004,
+              "min": 12153,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 6273311,
+              "median": 6058072,
+              "min": 5837342,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 1458434,
+              "median": 1327866,
+              "min": 1217395,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 2,
+              "median": 2,
+              "min": 2,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 7.884354,
+            "median": 7.689476,
+            "min": 7.22379,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3205,
+            "native_modules": 908,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3360,
+            "watched_names": 2870,
+            "watcher_memberships": 10060
+          }
+        }
+      }
+    },
+    "module_disappears": {
+      "category": "membership",
+      "modes": {
+        "full_rescan": {
+          "consumer_and_output_ms": {
+            "max": 4.399447,
+            "median": 3.751445,
+            "min": 3.159829,
+            "samples": 7
+          },
+          "edge_delta": 4,
+          "elapsed_ms": {
+            "max": 43.645529,
+            "median": 38.46341,
+            "min": 36.90366,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 8501267,
+              "median": 6585714,
+              "min": 5717335,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 26579680,
+              "median": 23757510,
+              "min": 22475780,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 908,
+              "median": 908,
+              "min": 908,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 39.065298,
+            "median": 34.076408,
+            "min": 33.117659,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3205,
+            "native_modules": 908,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3360,
+            "watched_names": 0,
+            "watcher_memberships": 0
+          }
+        },
+        "rebind": {
+          "consumer_and_output_ms": {
+            "max": 2.404784,
+            "median": 2.056832,
+            "min": 2.004993,
+            "samples": 7
+          },
+          "edge_delta": 4,
+          "elapsed_ms": {
+            "max": 10.941082,
+            "median": 8.616659,
+            "min": 8.208582,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 30798,
+              "median": 22743,
+              "min": 18435,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 7975752,
+              "median": 6082107,
+              "min": 5726421,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 22343,
+              "median": 3437,
+              "min": 2845,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 8.198005,
+            "median": 6.260376,
+            "min": 5.902666,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3205,
+            "native_modules": 908,
+            "reference_source_text_bytes": 292688,
+            "references": 6522,
+            "resolved_records": 3360,
+            "watched_names": 2871,
+            "watcher_memberships": 10060
+          }
+        },
+        "scoped_native": {
+          "consumer_and_output_ms": {
+            "max": 2.140511,
+            "median": 1.994644,
+            "min": 1.826554,
+            "samples": 7
+          },
+          "edge_delta": 4,
+          "elapsed_ms": {
+            "max": 9.503956,
+            "median": 9.356805,
+            "min": 8.819945,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 5381,
+              "median": 4629,
+              "min": 2936,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 6296245,
+              "median": 6088790,
+              "min": 5683611,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 818626,
+              "median": 740839,
+              "min": 697366,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 7.211927,
+            "median": 6.992839,
+            "min": 6.552784,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3205,
+            "native_modules": 908,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3360,
+            "watched_names": 2871,
+            "watcher_memberships": 10060
+          }
+        }
+      }
+    },
+    "popular_name_restored": {
+      "category": "wide_membership",
+      "modes": {
+        "full_rescan": {
+          "consumer_and_output_ms": {
+            "max": 10.741228,
+            "median": 7.970229,
+            "min": 7.294193,
+            "samples": 7
+          },
+          "edge_delta": 109,
+          "elapsed_ms": {
+            "max": 50.056378,
+            "median": 41.96126,
+            "min": 40.362027,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 6915341,
+              "median": 6084091,
+              "min": 5842693,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 28088378,
+              "median": 23926623,
+              "min": 21713192,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 907,
+              "median": 907,
+              "min": 907,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 39.033594,
+            "median": 33.860692,
+            "min": 31.788703,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3203,
+            "native_modules": 907,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3358,
+            "watched_names": 0,
+            "watcher_memberships": 0
+          }
+        },
+        "rebind": {
+          "consumer_and_output_ms": {
+            "max": 8.491159,
+            "median": 6.048033,
+            "min": 5.612634,
+            "samples": 7
+          },
+          "edge_delta": 109,
+          "elapsed_ms": {
+            "max": 38.469325,
+            "median": 29.115472,
+            "min": 27.2269,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 62,
+              "median": 62,
+              "min": 62,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 20883201,
+              "median": 16009777,
+              "min": 13727305,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 8384416,
+              "median": 6328059,
+              "min": 5953232,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 4529,
+              "median": 4108,
+              "min": 3056,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 879,
+              "median": 879,
+              "min": 879,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 29.6334,
+            "median": 22.696683,
+            "min": 21.186141,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3203,
+            "native_modules": 907,
+            "reference_source_text_bytes": 292619,
+            "references": 6520,
+            "resolved_records": 3358,
+            "watched_names": 2869,
+            "watcher_memberships": 10056
+          }
+        },
+        "scoped_native": {
+          "consumer_and_output_ms": {
+            "max": 6.396465,
+            "median": 5.754714,
+            "min": 5.201073,
+            "samples": 7
+          },
+          "edge_delta": 109,
+          "elapsed_ms": {
+            "max": 33.797621,
+            "median": 31.304636,
+            "min": 28.367975,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 62,
+              "median": 62,
+              "min": 62,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 4689,
+              "median": 4448,
+              "min": 3296,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 6978493,
+              "median": 5891535,
+              "min": 5710890,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 20089509,
+              "median": 18085838,
+              "min": 16107495,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 62,
+              "median": 62,
+              "min": 62,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 27.861151,
+            "median": 24.77007,
+            "min": 22.561716,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3203,
+            "native_modules": 907,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3358,
+            "watched_names": 2869,
+            "watcher_memberships": 10056
+          }
+        }
+      }
+    },
+    "popular_name_shadowed": {
+      "category": "wide_membership",
+      "modes": {
+        "full_rescan": {
+          "consumer_and_output_ms": {
+            "max": 13.813883,
+            "median": 8.753556,
+            "min": 8.19797,
+            "samples": 7
+          },
+          "edge_delta": 109,
+          "elapsed_ms": {
+            "max": 75.230921,
+            "median": 61.471406,
+            "min": 56.371572,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 7948143,
+              "median": 6147812,
+              "min": 5877068,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 51283844,
+              "median": 41693669,
+              "min": 37466370,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 908,
+              "median": 908,
+              "min": 908,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 62.387895,
+            "median": 52.349549,
+            "min": 47.799892,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3220,
+            "native_modules": 908,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3362,
+            "watched_names": 0,
+            "watcher_memberships": 0
+          }
+        },
+        "rebind": {
+          "consumer_and_output_ms": {
+            "max": 9.636968,
+            "median": 7.199304,
+            "min": 6.478301,
+            "samples": 7
+          },
+          "edge_delta": 109,
+          "elapsed_ms": {
+            "max": 23.165467,
+            "median": 16.628057,
+            "min": 15.973755,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 62,
+              "median": 62,
+              "min": 62,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 2575959,
+              "median": 1715663,
+              "min": 1670397,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 8755111,
+              "median": 6242623,
+              "min": 5810461,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 968472,
+              "median": 784592,
+              "min": 694110,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 880,
+              "median": 880,
+              "min": 880,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 13.146843,
+            "median": 9.352598,
+            "min": 8.99651,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3220,
+            "native_modules": 908,
+            "reference_source_text_bytes": 292647,
+            "references": 6521,
+            "resolved_records": 3362,
+            "watched_names": 2869,
+            "watcher_memberships": 10058
+          }
+        },
+        "scoped_native": {
+          "consumer_and_output_ms": {
+            "max": 7.318179,
+            "median": 6.798461,
+            "min": 6.470787,
+            "samples": 7
+          },
+          "edge_delta": 109,
+          "elapsed_ms": {
+            "max": 23.944438,
+            "median": 21.626327,
+            "min": 21.200019,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 62,
+              "median": 62,
+              "min": 62,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 30818,
+              "median": 14758,
+              "min": 12143,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 8307832,
+              "median": 6280304,
+              "min": 5772138,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 8537507,
+              "median": 7239533,
+              "min": 6662172,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 63,
+              "median": 63,
+              "min": 63,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 16.85272,
+            "median": 14.287858,
+            "min": 13.772494,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3220,
+            "native_modules": 908,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3362,
+            "watched_names": 2869,
+            "watcher_memberships": 10058
+          }
+        }
+      }
+    },
+    "remove_dependency": {
+      "category": "edge",
+      "modes": {
+        "full_rescan": {
+          "consumer_and_output_ms": {
+            "max": 2.008389,
+            "median": 1.869292,
+            "min": 1.742915,
+            "samples": 7
+          },
+          "edge_delta": 1,
+          "elapsed_ms": {
+            "max": 3.306608,
+            "median": 3.117519,
+            "min": 2.971412,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 51688,
+              "median": 44354,
+              "min": 41418,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 872780,
+              "median": 837473,
+              "min": 755687,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 1.012055,
+            "median": 0.966248,
+            "min": 0.875365,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3203,
+            "native_modules": 907,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3358,
+            "watched_names": 0,
+            "watcher_memberships": 0
+          }
+        },
+        "rebind": {
+          "consumer_and_output_ms": {
+            "max": 2.699294,
+            "median": 1.970431,
+            "min": 1.789233,
+            "samples": 7
+          },
+          "edge_delta": 1,
+          "elapsed_ms": {
+            "max": 4.500841,
+            "median": 3.394285,
+            "min": 3.095297,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 14988,
+              "median": 9959,
+              "min": 6903,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 64082,
+              "median": 47451,
+              "min": 43563,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 1149206,
+              "median": 861579,
+              "min": 808558,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 1.358664,
+            "median": 1.033595,
+            "min": 0.945398,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3203,
+            "native_modules": 907,
+            "reference_source_text_bytes": 292619,
+            "references": 6520,
+            "resolved_records": 3358,
+            "watched_names": 2869,
+            "watcher_memberships": 10056
+          }
+        },
+        "scoped_native": {
+          "consumer_and_output_ms": {
+            "max": 2.032855,
+            "median": 1.935891,
+            "min": 1.819921,
+            "samples": 7
+          },
+          "edge_delta": 1,
+          "elapsed_ms": {
+            "max": 3.722109,
+            "median": 3.280268,
+            "min": 3.139972,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 12995,
+              "median": 9548,
+              "min": 7785,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 48853,
+              "median": 45006,
+              "min": 43012,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 1103509,
+              "median": 844937,
+              "min": 820119,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 1.271809,
+            "median": 1.026112,
+            "min": 0.966628,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3203,
+            "native_modules": 907,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3358,
+            "watched_names": 2869,
+            "watcher_memberships": 10056
+          }
+        }
+      }
+    },
+    "restore_branch": {
+      "category": "membership",
+      "modes": {
+        "full_rescan": {
+          "consumer_and_output_ms": {
+            "max": 3.667365,
+            "median": 3.235314,
+            "min": 2.406577,
+            "samples": 7
+          },
+          "edge_delta": 2,
+          "elapsed_ms": {
+            "max": 41.527073,
+            "median": 39.226286,
+            "min": 36.991039,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 8160216,
+              "median": 6008809,
+              "min": 5869222,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 26966283,
+              "median": 24833906,
+              "min": 22293929,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 907,
+              "median": 907,
+              "min": 907,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 37.291238,
+            "median": 34.943545,
+            "min": 33.571797,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3203,
+            "native_modules": 907,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3358,
+            "watched_names": 0,
+            "watcher_memberships": 0
+          }
+        },
+        "rebind": {
+          "consumer_and_output_ms": {
+            "max": 1.993263,
+            "median": 1.427088,
+            "min": 1.308939,
+            "samples": 7
+          },
+          "edge_delta": 2,
+          "elapsed_ms": {
+            "max": 10.862722,
+            "median": 9.952407,
+            "min": 9.280581,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 67669,
+              "median": 28454,
+              "min": 23555,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 6544209,
+              "median": 6026773,
+              "min": 5863031,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 2048286,
+              "median": 1276191,
+              "min": 1153493,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 2,
+              "median": 2,
+              "min": 2,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 2,
+              "median": 2,
+              "min": 2,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 17,
+              "median": 17,
+              "min": 17,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 8.169979,
+            "median": 7.789809,
+            "min": 7.351392,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3203,
+            "native_modules": 907,
+            "reference_source_text_bytes": 292619,
+            "references": 6520,
+            "resolved_records": 3358,
+            "watched_names": 2869,
+            "watcher_memberships": 10056
+          }
+        },
+        "scoped_native": {
+          "consumer_and_output_ms": {
+            "max": 1.668496,
+            "median": 1.430811,
+            "min": 1.375817,
+            "samples": 7
+          },
+          "edge_delta": 2,
+          "elapsed_ms": {
+            "max": 10.257068,
+            "median": 9.769831,
+            "min": 9.380038,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 64272,
+              "median": 27803,
+              "min": 24346,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 6230400,
+              "median": 6085535,
+              "min": 5763140,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 2150008,
+              "median": 1352673,
+              "min": 1216775,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 2,
+              "median": 2,
+              "min": 2,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 2,
+              "median": 2,
+              "min": 2,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 17,
+              "median": 17,
+              "min": 17,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 8.239982,
+            "median": 7.718701,
+            "min": 7.374865,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3203,
+            "native_modules": 907,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3358,
+            "watched_names": 2869,
+            "watcher_memberships": 10056
+          }
+        }
+      }
+    },
+    "retarget_dependency": {
+      "category": "edge",
+      "modes": {
+        "full_rescan": {
+          "consumer_and_output_ms": {
+            "max": 3.757908,
+            "median": 2.787,
+            "min": 2.647766,
+            "samples": 7
+          },
+          "edge_delta": 2,
+          "elapsed_ms": {
+            "max": 5.007525,
+            "median": 4.063127,
+            "min": 3.865773,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 43813,
+              "median": 43402,
+              "min": 42009,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 941992,
+              "median": 821161,
+              "min": 745540,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 1.06718,
+            "median": 0.94666,
+            "min": 0.867101,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3204,
+            "native_modules": 907,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3359,
+            "watched_names": 0,
+            "watcher_memberships": 0
+          }
+        },
+        "rebind": {
+          "consumer_and_output_ms": {
+            "max": 4.604457,
+            "median": 2.974277,
+            "min": 2.843498,
+            "samples": 7
+          },
+          "edge_delta": 2,
+          "elapsed_ms": {
+            "max": 6.295855,
+            "median": 4.344532,
+            "min": 4.199045,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 32402,
+              "median": 15049,
+              "min": 11713,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 67959,
+              "median": 45848,
+              "min": 44505,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 1100163,
+              "median": 848003,
+              "min": 832974,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 2,
+              "median": 2,
+              "min": 2,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 1.297097,
+            "median": 1.027114,
+            "min": 0.985034,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3204,
+            "native_modules": 907,
+            "reference_source_text_bytes": 292662,
+            "references": 6521,
+            "resolved_records": 3359,
+            "watched_names": 2869,
+            "watcher_memberships": 10058
+          }
+        },
+        "scoped_native": {
+          "consumer_and_output_ms": {
+            "max": 3.487332,
+            "median": 3.1974,
+            "min": 2.833199,
+            "samples": 7
+          },
+          "edge_delta": 2,
+          "elapsed_ms": {
+            "max": 4.891482,
+            "median": 4.432469,
+            "min": 4.036257,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 17804,
+              "median": 13044,
+              "min": 11482,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 48002,
+              "median": 44074,
+              "min": 42371,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 915952,
+              "median": 804791,
+              "min": 771789,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 2,
+              "median": 2,
+              "min": 2,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 1.070406,
+            "median": 0.947983,
+            "min": 0.913137,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3204,
+            "native_modules": 907,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3359,
+            "watched_names": 2869,
+            "watcher_memberships": 10058
+          }
+        }
+      }
+    },
+    "rule_target_change": {
+      "category": "configuration",
+      "modes": {
+        "full_rescan": {
+          "consumer_and_output_ms": {
+            "max": 2.206197,
+            "median": 2.003059,
+            "min": 1.981579,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 2.256653,
+            "median": 2.052554,
+            "min": 2.030516,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 0.01074,
+            "median": 0.009458,
+            "min": 0.008195,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3203,
+            "native_modules": 907,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3358,
+            "watched_names": 0,
+            "watcher_memberships": 0
+          }
+        },
+        "rebind": {
+          "consumer_and_output_ms": {
+            "max": 2.337673,
+            "median": 2.068013,
+            "min": 1.978913,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 2.390894,
+            "median": 2.124441,
+            "min": 2.036333,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 0.012323,
+            "median": 0.0106,
+            "min": 0.009057,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3203,
+            "native_modules": 907,
+            "reference_source_text_bytes": 292619,
+            "references": 6520,
+            "resolved_records": 3358,
+            "watched_names": 2869,
+            "watcher_memberships": 10056
+          }
+        },
+        "scoped_native": {
+          "consumer_and_output_ms": {
+            "max": 3.195256,
+            "median": 2.056091,
+            "min": 1.974135,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 3.260631,
+            "median": 2.101648,
+            "min": 2.026785,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 0.024717,
+            "median": 0.01046,
+            "min": 0.009138,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3203,
+            "native_modules": 907,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3358,
+            "watched_names": 2869,
+            "watcher_memberships": 10056
+          }
+        }
+      }
+    },
+    "unchanged": {
+      "category": "unchanged",
+      "modes": {
+        "full_rescan": {
+          "consumer_and_output_ms": {
+            "max": 1.059866,
+            "median": 0.705212,
+            "min": 0.630328,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 1.137333,
+            "median": 0.763452,
+            "min": 0.687577,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 0.014738,
+            "median": 0.010841,
+            "min": 0.009488,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3203,
+            "native_modules": 907,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3358,
+            "watched_names": 0,
+            "watcher_memberships": 0
+          }
+        },
+        "rebind": {
+          "consumer_and_output_ms": {
+            "max": 0.679512,
+            "median": 0.642383,
+            "min": 0.618066,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 0.742091,
+            "median": 0.702867,
+            "min": 0.687979,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 0.014066,
+            "median": 0.011451,
+            "min": 0.009959,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3203,
+            "native_modules": 907,
+            "reference_source_text_bytes": 292619,
+            "references": 6520,
+            "resolved_records": 3358,
+            "watched_names": 2869,
+            "watcher_memberships": 10056
+          }
+        },
+        "scoped_native": {
+          "consumer_and_output_ms": {
+            "max": 0.764055,
+            "median": 0.678461,
+            "min": 0.664974,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 0.82949,
+            "median": 0.752832,
+            "min": 0.720941,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 0.011933,
+            "median": 0.01031,
+            "min": 0.009788,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3203,
+            "native_modules": 907,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3358,
+            "watched_names": 2869,
+            "watcher_memberships": 10056
+          }
+        }
+      }
+    },
+    "unchanged_after_rule_change": {
+      "category": "unchanged",
+      "modes": {
+        "full_rescan": {
+          "consumer_and_output_ms": {
+            "max": 0.722965,
+            "median": 0.653603,
+            "min": 0.627894,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 0.772961,
+            "median": 0.695914,
+            "min": 0.670365,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 0.004769,
+            "median": 0.003898,
+            "min": 0.003396,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3203,
+            "native_modules": 907,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3358,
+            "watched_names": 0,
+            "watcher_memberships": 0
+          }
+        },
+        "rebind": {
+          "consumer_and_output_ms": {
+            "max": 0.756178,
+            "median": 0.695854,
+            "min": 0.645889,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 0.806614,
+            "median": 0.745308,
+            "min": 0.691677,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 0.005791,
+            "median": 0.004339,
+            "min": 0.003988,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3203,
+            "native_modules": 907,
+            "reference_source_text_bytes": 292619,
+            "references": 6520,
+            "resolved_records": 3358,
+            "watched_names": 2869,
+            "watcher_memberships": 10056
+          }
+        },
+        "scoped_native": {
+          "consumer_and_output_ms": {
+            "max": 0.724708,
+            "median": 0.698529,
+            "min": 0.642993,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 0.768692,
+            "median": 0.745157,
+            "min": 0.686947,
+            "samples": 7
+          },
+          "producer_counts": {
+            "affected_unchanged_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "binding_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "discovery_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "membership_names_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_scan_ns": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "parsed_modules": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "reference_extractions": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "references_bound": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          },
+          "producer_ms": {
+            "max": 0.004098,
+            "median": 0.003878,
+            "min": 0.003477,
+            "samples": 7
+          },
+          "state": {
+            "native_edges": 3203,
+            "native_modules": 907,
+            "reference_source_text_bytes": 0,
+            "references": 0,
+            "resolved_records": 3358,
+            "watched_names": 2869,
+            "watcher_memberships": 10056
+          }
+        }
+      }
+    }
+  },
+  "events_per_trace": 18,
+  "groups": {
+    "after_initial": {
+      "elapsed_ms": {
+        "full_rescan": {
+          "max": 293.309406,
+          "median": 288.60027,
+          "min": 275.109143,
+          "samples": 7
+        },
+        "rebind": {
+          "max": 128.301927,
+          "median": 121.448395,
+          "min": 111.308798,
+          "samples": 7
+        },
+        "scoped_native": {
+          "max": 126.309634,
+          "median": 121.557994,
+          "min": 117.8659,
+          "samples": 7
+        }
+      },
+      "paired_percent_change": {
+        "rebind_vs_full_rescan": {
+          "max": -53.36326317588072,
+          "median": -58.23547814370757,
+          "min": -61.7693559408047,
+          "samples": 7
+        },
+        "rebind_vs_scoped_native": {
+          "max": 7.741979687406508,
+          "median": 0.20723277154441888,
+          "min": -11.876240572433305,
+          "samples": 7
+        },
+        "scoped_native_vs_full_rescan": {
+          "max": -55.988655096094355,
+          "median": -57.20304315466236,
+          "min": -59.46745153230244,
+          "samples": 7
+        }
+      }
+    },
+    "all": {
+      "elapsed_ms": {
+        "full_rescan": {
+          "max": 344.823988,
+          "median": 338.51455,
+          "min": 323.030095,
+          "samples": 7
+        },
+        "rebind": {
+          "max": 200.030526,
+          "median": 194.937675,
+          "min": 184.535269,
+          "samples": 7
+        },
+        "scoped_native": {
+          "max": 199.818134,
+          "median": 196.943855,
+          "min": 190.828442,
+          "samples": 7
+        }
+      },
+      "paired_percent_change": {
+        "rebind_vs_full_rescan": {
+          "max": -38.45509874242523,
+          "median": -42.780906472849644,
+          "min": -46.28043394707214,
+          "samples": 7
+        },
+        "rebind_vs_scoped_native": {
+          "max": 2.7125116755757794,
+          "median": 0.10629265510007091,
+          "min": -6.631997446870653,
+          "samples": 7
+        },
+        "scoped_native_vs_full_rescan": {
+          "max": -39.16323090577676,
+          "median": -41.614638425438436,
+          "min": -43.98706935209735,
+          "samples": 7
+        }
+      }
+    },
+    "fixed_membership_edits": {
+      "elapsed_ms": {
+        "full_rescan": {
+          "max": 26.734704,
+          "median": 24.461018,
+          "min": 23.232857,
+          "samples": 7
+        },
+        "rebind": {
+          "max": 31.225669,
+          "median": 25.963758,
+          "min": 24.795759,
+          "samples": 7
+        },
+        "scoped_native": {
+          "max": 28.583058,
+          "median": 26.076531,
+          "min": 25.558993,
+          "samples": 7
+        }
+      },
+      "paired_percent_change": {
+        "rebind_vs_full_rescan": {
+          "max": 29.018505670887418,
+          "median": 4.517441207120543,
+          "min": -5.394205972880794,
+          "samples": 7
+        },
+        "rebind_vs_scoped_native": {
+          "max": 21.995394005815893,
+          "median": -1.0423493601645406,
+          "min": -8.675408348539904,
+          "samples": 7
+        },
+        "scoped_native_vs_full_rescan": {
+          "max": 17.068914553463664,
+          "median": 7.808096193227243,
+          "min": -4.397695968505955,
+          "samples": 7
+        }
+      }
+    },
+    "initial": {
+      "elapsed_ms": {
+        "full_rescan": {
+          "max": 53.506629,
+          "median": 51.514582,
+          "min": 45.799245,
+          "samples": 7
+        },
+        "rebind": {
+          "max": 78.220624,
+          "median": 73.48928,
+          "min": 70.506626,
+          "samples": 7
+        },
+        "scoped_native": {
+          "max": 78.26014,
+          "median": 72.962542,
+          "min": 71.33331,
+          "samples": 7
+        }
+      },
+      "paired_percent_change": {
+        "rebind_vs_full_rescan": {
+          "max": 61.21061602653057,
+          "median": 47.13110457404937,
+          "min": 41.74602178731912,
+          "samples": 7
+        },
+        "rebind_vs_scoped_native": {
+          "max": 3.025661097186272,
+          "median": 0.7219293428674556,
+          "min": -8.951451083856943,
+          "samples": 7
+        },
+        "scoped_native_vs_full_rescan": {
+          "max": 61.59632012318954,
+          "median": 46.2374589112311,
+          "min": 37.583219828705715,
+          "samples": 7
+        }
+      }
+    },
+    "local_membership": {
+      "elapsed_ms": {
+        "full_rescan": {
+          "max": 159.062277,
+          "median": 150.711704,
+          "min": 146.709094,
+          "samples": 7
+        },
+        "rebind": {
+          "max": 41.441477,
+          "median": 38.690323,
+          "min": 36.62097,
+          "samples": 7
+        },
+        "scoped_native": {
+          "max": 41.192944,
+          "median": 38.769861,
+          "min": 37.260845,
+          "samples": 7
+        }
+      },
+      "paired_percent_change": {
+        "rebind_vs_full_rescan": {
+          "max": -72.16848392467557,
+          "median": -74.32825588648377,
+          "min": -75.72886014819058,
+          "samples": 7
+        },
+        "rebind_vs_scoped_native": {
+          "max": 11.219906580218453,
+          "median": -0.2051542047055599,
+          "min": -11.098925097463287,
+          "samples": 7
+        },
+        "scoped_native_vs_full_rescan": {
+          "max": -71.92202413846275,
+          "median": -74.27548095402067,
+          "min": -75.1257399057713,
+          "samples": 7
+        }
+      }
+    },
+    "original_16": {
+      "elapsed_ms": {
+        "full_rescan": {
+          "max": 238.564043,
+          "median": 232.607878,
+          "min": 219.834011,
+          "samples": 7
+        },
+        "rebind": {
+          "max": 148.005616,
+          "median": 142.037295,
+          "min": 140.091924,
+          "samples": 7
+        },
+        "scoped_native": {
+          "max": 150.016502,
+          "median": 144.125567,
+          "min": 139.900885,
+          "samples": 7
+        }
+      },
+      "paired_percent_change": {
+        "rebind_vs_full_rescan": {
+          "max": -36.173760210379825,
+          "median": -36.73940484509299,
+          "min": -40.46156612126162,
+          "samples": 7
+        },
+        "rebind_vs_scoped_native": {
+          "max": 4.752093536207935,
+          "median": -0.9941662855405542,
+          "min": -2.6909376190536016,
+          "samples": 7
+        },
+        "scoped_native_vs_full_rescan": {
+          "max": -34.40874032908402,
+          "median": -38.097240174957555,
+          "min": -40.1672370316664,
+          "samples": 7
+        }
+      }
+    },
+    "wide_membership": {
+      "elapsed_ms": {
+        "full_rescan": {
+          "max": 115.592948,
+          "median": 106.259945,
+          "min": 96.78992,
+          "samples": 7
+        },
+        "rebind": {
+          "max": 54.884124,
+          "median": 51.664557,
+          "min": 43.200655,
+          "samples": 7
+        },
+        "scoped_native": {
+          "max": 57.742059,
+          "median": 52.751958,
+          "min": 49.801632,
+          "samples": 7
+        }
+      },
+      "paired_percent_change": {
+        "rebind_vs_full_rescan": {
+          "max": -43.29562003977273,
+          "median": -52.81733432118996,
+          "min": -60.862561442762065,
+          "samples": 7
+        },
+        "rebind_vs_scoped_native": {
+          "max": 9.37725063148196,
+          "median": -2.6841711965581383,
+          "min": -23.03124313596091,
+          "samples": 7
+        },
+        "scoped_native_vs_full_rescan": {
+          "max": -44.84719214879732,
+          "median": -51.322305303592394,
+          "min": -55.82673901587085,
+          "samples": 7
+        }
+      }
+    }
+  }
+}

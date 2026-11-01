@@ -1,0 +1,200 @@
+{
+  "namespace-tuple": {
+    "modes": {
+      "full_suite": {
+        "after_initial_s_median": 10.549231875,
+        "executed_by_stage": {
+          "fixed": 907,
+          "initial": 906,
+          "regression": 907,
+          "restored": 907,
+          "reverted": 907,
+          "unchanged": 907
+        },
+        "initial_s_median": 2.05022896,
+        "session_s_median": 12.613881251,
+        "session_s_range": [
+          12.486276947,
+          13.946170967
+        ],
+        "state_bytes_median": 2592053
+      },
+      "native_testmon": {
+        "after_initial_s_median": 16.959943457,
+        "executed_by_stage": {
+          "fixed": 818,
+          "initial": 906,
+          "regression": 63,
+          "restored": 818,
+          "reverted": 818,
+          "unchanged": 0
+        },
+        "initial_s_median": 5.112598529,
+        "session_s_median": 22.14594219,
+        "session_s_range": [
+          21.936271058,
+          22.192972614
+        ],
+        "state_bytes_median": 3028789
+      },
+      "shared_evidence": {
+        "after_initial_s_median": 19.340926464,
+        "executed_by_stage": {
+          "fixed": 818,
+          "initial": 906,
+          "regression": 63,
+          "restored": 818,
+          "reverted": 818,
+          "unchanged": 0
+        },
+        "initial_s_median": 5.739124023,
+        "session_s_median": 25.102962633,
+        "session_s_range": [
+          24.132211775,
+          33.67206291
+        ],
+        "state_bytes_median": 46021900
+      }
+    },
+    "shared_overhead_vs_native_percent": {
+      "by_block": [
+        10.010546966683087,
+        13.352425548799829,
+        51.72398711815038
+      ],
+      "median": 13.352425548799829
+    }
+  },
+  "overlay-async": {
+    "modes": {
+      "full_suite": {
+        "after_initial_s_median": 10.235375203,
+        "executed_by_stage": {
+          "fixed": 903,
+          "initial": 901,
+          "regression": 903,
+          "restored": 903,
+          "reverted": 903,
+          "unchanged": 903
+        },
+        "initial_s_median": 2.035629357,
+        "session_s_median": 12.293899138,
+        "session_s_range": [
+          12.174652601,
+          21.221002343
+        ],
+        "state_bytes_median": 2577909
+      },
+      "native_testmon": {
+        "after_initial_s_median": 16.467193239,
+        "executed_by_stage": {
+          "fixed": 833,
+          "initial": 901,
+          "regression": 35,
+          "restored": 833,
+          "reverted": 833,
+          "unchanged": 0
+        },
+        "initial_s_median": 4.895839679,
+        "session_s_median": 21.531443763,
+        "session_s_range": [
+          21.206102299,
+          22.552010196
+        ],
+        "state_bytes_median": 2802287
+      },
+      "shared_evidence": {
+        "after_initial_s_median": 17.624311706,
+        "executed_by_stage": {
+          "fixed": 833,
+          "initial": 901,
+          "regression": 35,
+          "restored": 833,
+          "reverted": 833,
+          "unchanged": 0
+        },
+        "initial_s_median": 5.411840353,
+        "session_s_median": 23.059866136,
+        "session_s_range": [
+          22.342284295,
+          23.60995455
+        ],
+        "state_bytes_median": 45162724
+      }
+    },
+    "shared_overhead_vs_native_percent": {
+      "by_block": [
+        3.7658437628477204,
+        11.335662806424152,
+        2.251932025509973
+      ],
+      "median": 3.7658437628477204
+    }
+  },
+  "scientific-int": {
+    "modes": {
+      "full_suite": {
+        "after_initial_s_median": 10.03997897,
+        "executed_by_stage": {
+          "fixed": 877,
+          "initial": 876,
+          "regression": 877,
+          "restored": 877,
+          "reverted": 877,
+          "unchanged": 877
+        },
+        "initial_s_median": 2.085242224,
+        "session_s_median": 12.200022807,
+        "session_s_range": [
+          11.994384179,
+          38.207604666
+        ],
+        "state_bytes_median": 2516547
+      },
+      "native_testmon": {
+        "after_initial_s_median": 4.628716261,
+        "executed_by_stage": {
+          "fixed": 14,
+          "initial": 876,
+          "regression": 132,
+          "restored": 14,
+          "reverted": 14,
+          "unchanged": 0
+        },
+        "initial_s_median": 4.901156261,
+        "session_s_median": 9.68735706,
+        "session_s_range": [
+          9.437602678,
+          9.893427945
+        ],
+        "state_bytes_median": 1611496
+      },
+      "shared_evidence": {
+        "after_initial_s_median": 5.418367284,
+        "executed_by_stage": {
+          "fixed": 14,
+          "initial": 876,
+          "regression": 132,
+          "restored": 14,
+          "reverted": 14,
+          "unchanged": 0
+        },
+        "initial_s_median": 5.509361391,
+        "session_s_median": 10.950493134,
+        "session_s_range": [
+          10.714555524,
+          10.960641548
+        ],
+        "state_bytes_median": 15117369
+      }
+    },
+    "shared_overhead_vs_native_percent": {
+      "by_block": [
+        10.60349543882715,
+        16.030452940413564,
+        10.787096332362278
+      ],
+      "median": 10.787096332362278
+    }
+  }
+}

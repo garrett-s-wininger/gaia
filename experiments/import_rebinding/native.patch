@@ -1,0 +1,70 @@
+--- a/rust/src/import_scanning.rs
++++ b/rust/src/import_scanning.rs
+@@ -87,6 +87,7 @@
+     include_external_packages: bool,
+     modules: &HashSet<Module>,
+     exclude_type_checking_imports: bool,
++    retain_references: bool,
+ ) -> GrimpResult<HashMap<Module, HashSet<DirectImport>>> {
+     let module_packages = get_modules_from_found_packages(found_packages);
+ 
+@@ -108,6 +109,7 @@
+                 &module_packages,
+                 include_external_packages,
+                 exclude_type_checking_imports,
++                retain_references,
+             )?;
+             Ok((module.clone(), imports))
+         })
+@@ -125,6 +127,7 @@
+     all_modules: &HashSet<Module>,
+     include_external_packages: bool,
+     exclude_type_checking_imports: bool,
++    retain_references: bool,
+ ) -> GrimpResult<HashSet<DirectImport>> {
+     let mut imports: HashSet<DirectImport> = HashSet::new();
+     let found_package_for_module = found_packages_by_module[module];
+@@ -145,6 +148,19 @@
+         // Resolve relative imports.
+         let imported_object_name =
+             _get_absolute_imported_object_name(module, is_package, &imported_object.name);
++
++        // Experimental boundary: retain the native parser's absolute references
++        // before module membership determines their resolved target.
++        if retain_references {
++            imports.insert(DirectImport {
++                importer: module.name.to_string(),
++                imported: imported_object_name,
++                line_number: imported_object.line_number,
++                line_contents: imported_object.line_contents,
++                is_lazy: imported_object.is_lazy,
++            });
++            continue;
++        }
+ 
+         // Resolve imported module.
+         match _get_internal_module(&imported_object_name, all_modules) {
+@@ -399,6 +415,7 @@
+ ///
+ /// Returns dict[Module, set[DirectImport]].
+ #[pyfunction]
++#[pyo3(signature = (module_files, found_packages, include_external_packages, exclude_type_checking_imports, file_system, retain_references=false))]
+ pub fn scan_for_imports<'py>(
+     py: Python<'py>,
+     module_files: Vec<Bound<'py, PyAny>>,
+@@ -406,6 +423,7 @@
+     include_external_packages: bool,
+     exclude_type_checking_imports: bool,
+     file_system: Bound<'py, PyAny>,
++    retain_references: bool,
+ ) -> PyResult<Bound<'py, PyDict>> {
+     let file_system_boxed = get_file_system_boxed(&file_system)?;
+     let found_packages_rust = py_found_packages_to_rust(&found_packages);
+@@ -427,6 +445,7 @@
+             include_external_packages,
+             &modules_rust,
+             exclude_type_checking_imports,
++            retain_references,
+         )
+     });
+ 

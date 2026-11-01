@@ -1,0 +1,31 @@
+{
+  "archive": {
+    "comment_text": null,
+    "core-metadata": false,
+    "digests": {
+      "blake2b_256": "ad2e95736b7c984705ff5ee376f07c6e71bb80fcbb22c8fa3b8c1cfbfa919d5c",
+      "md5": "c849703129672a09ef119c29061790ee",
+      "sha256": "5161e03c6f518fe4da43b06c97ff49a1e224ecb0e4b9fd6ef48235373d1b7b33"
+    },
+    "downloads": -1,
+    "filename": "grimp-3.17.tar.gz",
+    "has_sig": false,
+    "md5_digest": "c849703129672a09ef119c29061790ee",
+    "packagetype": "sdist",
+    "python_version": "source",
+    "requires_python": ">=3.10",
+    "size": 832923,
+    "upload_time": "2026-09-04T11:28:54",
+    "upload_time_iso_8601": "2026-09-04T11:28:54.609042Z",
+    "url": "https://files.pythonhosted.org/packages/ad/2e/95736b7c984705ff5ee376f07c6e71bb80fcbb22c8fa3b8c1cfbfa919d5c/grimp-3.17.tar.gz",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "build": "cargo build --manifest-path grimp-3.17/rust/Cargo.toml --locked --release -j 4; PYO3_PYTHON set to the recorded CPython 3.14 environment. Toolchain installed privately with the minimal profile. Preparation excluded from request clocks.",
+  "cargo": "cargo 1.99.1 (5f94df478 2026-08-27)\n",
+  "cargo_lock_sha256": "e878a3f0633d1f6dfad2778a8f32025fe50caf2ee6d81bdc3b8202be4aed9450",
+  "native_sha256": "1c853bc9fb5f33cc8eb06665ebf32876cc933d391a8d7d16481718443d692ef1",
+  "patch_sha256": "c69f18d3f09b71f43ae8a3572968f3ea25ecf02b290fe5f817c4acf7c8188ad1",
+  "patched_scanner_sha256": "c9d841a617f2a3568c0a30cffb47c49c2b6f354b398910baf6c8a6698c384bd4",
+  "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)\nbinary: rustc\ncommit-hash: 58cf8f9c35b355199727627d07ae34a4e2846d67\ncommit-date: 2026-10-13\nhost: x86_64-unknown-linux-gnu\nrelease: 1.99.1\nLLVM version: 23.1.1\n"
+}

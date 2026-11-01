@@ -1,0 +1,14 @@
+{
+  "all_witness_edges_and_locations_current": true,
+  "fresh_native_graph_all_edges_locations_and_lazy_flags_equal": true,
+  "fresh_real_linter_diagnostic_sets_and_minimum_witness_lengths_equal": true,
+  "limits": "Static imports under pinned Grimp semantics; no full Python execution, type or symbol semantics. Equal-length witness tie-breaking may differ. Single serialized client with declared file edits; no watcher, concurrent publication or general transaction recovery.",
+  "old_response_bytes_retained": true,
+  "passed": true,
+  "random_graph_update_batches": 3000,
+  "responses_checked": 336,
+  "source_and_selected_tool_identities_verified_after": true,
+  "stale_generation_rejection_and_syntax_failure_rollback_tested": true,
+  "tests": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.121s\n\nOK\n",
+  "traces": 21
+}

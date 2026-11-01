@@ -1,0 +1,53 @@
+{
+  "openssl_version": "OpenSSL 3.6.5 29 Sep 2026 (Library: OpenSSL 3.6.5 29 Sep 2026)",
+  "cpu_mask": "OPENSSL_ia32cap=0:0:0:0:0",
+  "mask_documentation": "https://docs.openssl.org/3.6/man3/OPENSSL_ia32cap/",
+  "scope": "Real 33-TU current observation and declaration-index scans. SHA-256 contract unchanged. LLVM portable hash versus OpenSSL dispatched and all-capability-masked paths. No full rebuild speedup extrapolation.",
+  "warmups": [
+    {
+      "mode": "llvm",
+      "ns": 13737900916,
+      "symbol_records": 20923
+    },
+    {
+      "mode": "crypto_auto",
+      "ns": 13607785780,
+      "symbol_records": 20923
+    },
+    {
+      "mode": "crypto_masked",
+      "ns": 13780786829,
+      "symbol_records": 20923
+    }
+  ],
+  "implementation_and_tool_sha256": {
+    "libncursesw.so.6.6": "7498a0b0f75deb5417e109d1853679f1a6b201e52e03b247c914fec0a36e3a5b",
+    "libstdc++.so.6.0.36": "f5fc7380f2ae46fa4053a64be04e7b98109f1066a4bbfff3c37042488aa0be0e",
+    "libLLVM.so.22.1": "abe476c377d94c4375d4d804ca555dd378c0437e7b9c01f60d51e403e8cc6d6a",
+    "libicudata.so.78.3": "d72003b08760852bee4c80cff32c1e6248ae6b1fda5bd313482733a4d5e70dc9",
+    "libicuuc.so.78.3": "c99f0dd0c797c07f9ab64413d36c595393cdded6fa04cc4edd6f6a521fd155ca",
+    "workspace-host-final": "12710dff797bf344cbc720ab5e08f2a5df33927edbe19ad9804c6420c32c6e8c",
+    "protocol.py": "65a798eef85f95f1eef4ca2771fc77366fbf11979527bde7215c74e5ca6ee701",
+    "libclang-cpp.so.22.1": "f8ad17a08eeab80c04e8c2f90986c43808fe760e30136ce199c945fe273b6cd6",
+    "variant.py": "718d3470add13ba4c2f7536aee6ca2c6e63bc6dab1ddef816e5893b103405d9f",
+    "libm.so.6": "965106704753eefe8c31ae7da6daba3ead3d18c52b19b5fcc41178bcc4aa999d",
+    "libzstd.so.1.5.7": "f023d49e85fb22057bfdd21857263d2638b73356c06f3b342f678a75212379f8",
+    "libcrypto.so.3": "a75a864dcda6ef9e4dc29fad4b7988ca832b904c3915a63c920062c40763dae1",
+    "run.py": "0457999e67ef88ec2e332dd77bd547f1e1f88d1b21d67ace5710f7acd029e713",
+    "hash-host": "66204b798792db9cf09f86ae709a2d76d878464a3469ad8e53eff59a837dba2c",
+    "libedit.so.0.0.78": "0bb14cee691695fd88a63c3cea14030ba4973c725239e15c1cd637c39d6a2007",
+    "host.cpp": "ce424e6a9c6540d7218f546fe3ee00e2203698be19acbe1f58794c36c680a8e4",
+    "libffi.so.8.5.0": "b38bb3a55ba04dfbb5be68e881a72385d6c30010afffb1cf1dfc373b72c2278c",
+    "libbrotlienc.so.1.2.0": "8dbc539197d276310ce2750dcb73de5465a1259d46a5d1894e6138fd354bf5c7",
+    "libbrotlidec.so.1.2.0": "0883fb05fa42aa6a883722098530ab08551ed317e38a2311f5c96e94dd460979",
+    "libxml2.so.16.1.4": "5ff12cee1e6992555ba638190cce88a0aab40acad51d5c826f6487888a0160ab",
+    "libbrotlicommon.so.1.2.0": "4f895094b7b6ff9c82909e6516bc9cf212e2ec5af451d39bf1bcbc5e5fa225b2",
+    "libc.so.6": "02c8c3d06180beee9c7d0392aa85736c7d19f274a81e7f8f0b3d9e28e0641524",
+    "ld-linux-x86-64.so.2": "f5e11cc62f8f2c24dff532982559f4303dba3b17e7450551372a88c8e7ea8757",
+    "libz.so.1.3.2": "6c78c5e58c3bb49a1cd151a95cdf1a17fe07a91a57a59e0279b984c533075ca9",
+    "libgcc_s.so.1": "e618cb9c90c2eb3a1dad1cfea5b6c1eebcf2e799ad805976f4ae47bdd61c716a"
+  },
+  "source_input_count": 127,
+  "source_input_manifest_sha256": "b44b64a8d45e507565561e37f7a4865c8938540ed2c769eb38c0ecf01bc24f85",
+  "measurement": "Seven shuffled blocks, ten repeated requests per backend/operation; request samples share retained processes and are not independent cold starts. Main workflow measurement finished before this scan study."
+}

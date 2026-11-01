@@ -1,0 +1,157 @@
+{
+  "machine": {
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.44",
+    "python": "3.14.8",
+    "cpu_model": "AMD Ryzen AI 7 PRO 450 w/ Radeon 860M",
+    "affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "clang": "clang version 22.1.8\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/lib/llvm22/bin\n"
+  },
+  "build": {
+    "commands": [
+      [
+        "/opt/odin/nightly/odin",
+        "build",
+        "/tmp/gaia-substrate-connections/experiments/pass_algebra/liveness.odin",
+        "-file",
+        "-build-mode:obj",
+        "-reloc-mode:pic",
+        "-o:speed",
+        "-microarch:native",
+        "-out:/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/tools-no-names/liveness.o"
+      ],
+      [
+        "/usr/lib/llvm22/bin/clang++",
+        "-shared",
+        "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/tools-no-names/liveness.o",
+        "-o",
+        "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/tools-no-names/liveness.so",
+        "-lm"
+      ],
+      [
+        "/usr/lib/llvm22/bin/clang++",
+        "-O3",
+        "-std=c++17",
+        "-march=native",
+        "-I/root/source/gaia/experiments/compiler/_work/toolchain/usr/lib/llvm22/include",
+        "/tmp/gaia-substrate-connections/experiments/pass_algebra/host.cpp",
+        "-L/usr/lib/llvm22/lib",
+        "-Wl,-rpath,/usr/lib/llvm22/lib",
+        "-lLLVM-22",
+        "-ldl",
+        "-o",
+        "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/tools-no-names/liveness-host"
+      ]
+    ],
+    "ns": 8637820800,
+    "inputs_sha256": {
+      "/tmp/gaia-substrate-connections/experiments/pass_algebra/build.py": "51718ed76029c968528d7de13a9416eb1dc7c72b8786e43a44e3b2ddc3d16e70",
+      "/tmp/gaia-substrate-connections/experiments/pass_algebra/liveness.odin": "3c700ea6971f3d52600d21c35d76b26fcbde529c8dab6fbd21c6bfa3f17c997c",
+      "/tmp/gaia-substrate-connections/experiments/pass_algebra/host.cpp": "49e325c8d8b29dcc81ca9f43aa8249c8c83e5c3a9b7d317ca2a426e9145a4559",
+      "/opt/odin/nightly/odin": "49e21d51855d60a618c493e929fe2b236d44de3daeb3a2c2f03f4c8aef566644",
+      "/usr/lib/llvm22/bin/clang++": "53b1b7a5078c8a3e3347a70068aa5c79fca0d49c4d891f6e92bf0807605a4502",
+      "/root/source/gaia/experiments/compiler/_work/toolchain/usr/lib/llvm22/include/llvm/Config/llvm-config.h": "c81f17bf2ef7b29d28e7dc6f8ea0269ddf139cf21b7513a6c68e9f28dd6ea928",
+      "/usr/lib/llvm22/lib/libLLVM-22.so": "abe476c377d94c4375d4d804ca555dd378c0437e7b9c01f60d51e403e8cc6d6a"
+    },
+    "outputs_sha256": {
+      "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/tools-no-names/liveness-host": "62125ca5c6df29f9c2f82cf66dfd4b5013ed120b806a58ff2bb50c2815158464",
+      "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/tools-no-names/liveness.so": "10fb82e2707e95411a94a6d6a4d53a6877cd88d35112c8df4d294228b538943e"
+    },
+    "odin_version": "/opt/odin/nightly/odin version dev-2026-10-nightly:84bc3fc\n",
+    "clang_version": "clang version 22.1.8\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/lib/llvm22/bin\n",
+    "scope": "Native measurement CPU target, not a portable deployment binary; selected SDK identity pins, not a complete header dependency manifest."
+  },
+  "commands": [
+    {
+      "command": [
+        "/usr/lib/llvm22/bin/clang-22",
+        "-O1",
+        "-S",
+        "-emit-llvm",
+        "-Werror=date-time",
+        "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/corpus-no-names/zstd-1.5.7/lib/common/zstd_common.c",
+        "-o",
+        "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/corpus-no-names/zstd-common-O1.ll"
+      ],
+      "ns": 89309085,
+      "source_sha256": "f49eb8023a90d3de925373bd9ee0d36ed46b26c529840b64220397446cd73795",
+      "ir_sha256": "2d66e05cec2432712d7b50fed9953e7ec7ec0f39704892a57cf2678ae28d97ae",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/lib/llvm22/bin/clang-22",
+        "-O1",
+        "-S",
+        "-emit-llvm",
+        "-Werror=date-time",
+        "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/corpus-no-names/zstd-1.5.7/lib/compress/zstd_lazy.c",
+        "-o",
+        "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/corpus-no-names/zstd-lazy-O1.ll"
+      ],
+      "ns": 1489889013,
+      "source_sha256": "dd6ccf357165dc8cb574ea56a34ff1db57b7b31728b32103d0c6b72319fd45b1",
+      "ir_sha256": "50197338113a0518d6a4f288693b750313f996b4045de8742ad6322b1e230717",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/lib/llvm22/bin/clang-22",
+        "-O1",
+        "-S",
+        "-emit-llvm",
+        "-Werror=date-time",
+        "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/corpus-no-names/zlib-1.3.2/deflate.c",
+        "-o",
+        "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/corpus-no-names/zlib-deflate-O1.ll"
+      ],
+      "ns": 196841482,
+      "source_sha256": "ea9ca4eb51b1a71aaf214b99f4a9fab177253d6268cae8e4c26d44d1812e52c2",
+      "ir_sha256": "4d8732031e861c2661462d159269bbd1ac374502929f659df2271300c281d374",
+      "stderr": ""
+    }
+  ],
+  "implementation_and_tools": {
+    "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/tools-no-names/liveness-host": "62125ca5c6df29f9c2f82cf66dfd4b5013ed120b806a58ff2bb50c2815158464",
+    "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/tools-no-names/liveness.so": "10fb82e2707e95411a94a6d6a4d53a6877cd88d35112c8df4d294228b538943e",
+    "/usr/lib/llvm22/bin/clang-22": "b852cb4597dc56b241bcd328544b5fee60717f35f66808098cc0413946ba42f2",
+    "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/tools-no-names/build.json": "6df516f744f4598f7bc1ee56c98607a13913101fb19bab835fb60e9efc774fe1",
+    "/tmp/gaia-substrate-connections/experiments/pass_algebra/build.py": "51718ed76029c968528d7de13a9416eb1dc7c72b8786e43a44e3b2ddc3d16e70",
+    "/tmp/gaia-substrate-connections/experiments/pass_algebra/run.py": "22fe5be0288b2363e43966ca830fc2226c711734fcf841f7cac0d4d77236c5b9",
+    "/tmp/gaia-substrate-connections/experiments/pass_algebra/test_liveness.py": "1d76186cf76c7212f020bcec4a97bace9b538fae23bd75390179544565013259",
+    "/tmp/gaia-substrate-connections/experiments/pass_algebra/host.cpp": "49e325c8d8b29dcc81ca9f43aa8249c8c83e5c3a9b7d317ca2a426e9145a4559",
+    "/tmp/gaia-substrate-connections/experiments/pass_algebra/liveness.odin": "3c700ea6971f3d52600d21c35d76b26fcbde529c8dab6fbd21c6bfa3f17c997c",
+    "/tmp/gaia-substrate-connections/experiments/pass_algebra/fixtures.ll": "b8b7791cca1607b40b19b2849a57bfcc0e16d3216480b46cc85d1ed5c2b01958"
+  },
+  "archives": {
+    "/root/source/gaia/experiments/compiler/_work/downloads/zstd-1.5.7.tar.gz": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3",
+    "/root/source/gaia/experiments/compiler/_work/downloads/zlib-1.3.2.tar.gz": "bb329a0a2cd0274d05519d61c667c062e06990d72e125ee2dfa8de64f0119d16"
+  },
+  "unit_tests": {
+    "passed": true,
+    "methods": 4,
+    "exhaustive_graph_fact_combinations": 4096,
+    "random_graph_fact_combinations": 175,
+    "hand_checked_llvm_functions": 6,
+    "stdout": "",
+    "stderr": "test_empty_and_invalid_dispatch (test_liveness.LivenessTests.test_empty_and_invalid_dispatch) ... ok\ntest_exhaustive_two_blocks_two_values (test_liveness.LivenessTests.test_exhaustive_two_blocks_two_values) ... ok\ntest_hand_checked_phi_and_unreachable_extraction (test_liveness.LivenessTests.test_hand_checked_phi_and_unreachable_extraction) ... ok\ntest_random_cycles_and_word_boundaries (test_liveness.LivenessTests.test_random_cycles_and_word_boundaries) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.443s\n\nOK\n"
+  },
+  "scope": "Warm native, single-threaded pass comparison on immutable LLVM IR. Shared advisory timing lock with integration thread; preparation and unrelated host activity are not excluded. Native-target Odin/C++ builds. No device dispatch, output code changes, incremental update policy, full compiler timing, peak RSS or enforced memory quota.",
+  "lock": "/root/source/gaia/experiments/_work/integration-20261102/measurement.lock"
+}

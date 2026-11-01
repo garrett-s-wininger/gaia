@@ -1,0 +1,30 @@
+{
+  "measured": {
+    "complete_ms": {
+      "median": 137.579423,
+      "min": 134.93062,
+      "max": 154.669145,
+      "samples": 7
+    },
+    "editor_ms": {
+      "median": 111.369744,
+      "min": 108.567206,
+      "max": 126.461536,
+      "samples": 7
+    }
+  },
+  "hardened": {
+    "complete_ms": {
+      "median": 140.471455,
+      "min": 137.180367,
+      "max": 161.562183,
+      "samples": 7
+    },
+    "editor_ms": {
+      "median": 113.990015,
+      "min": 111.062043,
+      "max": 131.694141,
+      "samples": 7
+    }
+  }
+}

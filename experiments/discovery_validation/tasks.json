@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/pallets/jinja.git",
+  "selection": "Three purposively selected real fixes spanning filter conversion, environment configuration, and parser/compiler behavior. Not a representative or blind sample. Fix/test patches are available only to the replay controller; initial evidence comes from the first parent.",
+  "tasks": [
+    {
+      "id": "scientific-int",
+      "commit": "3ef3ba885bc7a465b022abfd525d6bb4a1c8dd3c",
+      "issue": "https://github.com/pallets/jinja/issues/1921",
+      "query": "int",
+      "description": "The int filter raises OverflowError for very large scientific notation instead of returning its default.",
+      "upstream_regression": "tests/test_filters.py::TestFilter::test_int[1e10000-0]",
+      "inspect": [{"file": "src/jinja2/filters.py", "symbol": "do_int"}]
+    },
+    {
+      "id": "overlay-async",
+      "commit": "b4b28ec01c60b8753ab53fe60b10d7dbaa55842b",
+      "issue": "https://github.com/pallets/jinja/pull/2061",
+      "query": "overlay",
+      "description": "An overlay of an async environment should preserve async mode when enable_async is omitted.",
+      "upstream_regression": "tests/test_api.py::test_overlay_enable_async",
+      "inspect": [{"file": "src/jinja2/environment.py", "symbol": "Environment.overlay"}],
+      "additional_regression": "from jinja2 import Environment\n\ndef test_overlay_inherits_async_mode():\n    env = Environment(enable_async=True)\n    assert env.overlay().is_async\n"
+    },
+    {
+      "id": "namespace-tuple",
+      "commit": "fbc3a696c729d177340cc089531de7e2e5b6f065",
+      "issue": "https://github.com/pallets/jinja/issues/1413",
+      "query": "namespace",
+      "description": "Tuple assignment cannot assign to namespace attributes even though single assignment can.",
+      "upstream_regression": "tests/test_core_tags.py::TestSet::test_namespace_set_tuple",
+      "inspect": [{"file": "src/jinja2/parser.py", "symbol": "Parser.parse_assign_target"}, {"file": "src/jinja2/compiler.py", "symbol": "CodeGenerator.visit_Assign"}]
+    }
+  ]
+}

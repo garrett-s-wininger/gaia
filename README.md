@@ -8,6 +8,8 @@ We are testing whether explicit inputs, reusable tool processes and direct data 
 
 - [What we have learned](research/findings.md): the useful results, disappointments and limits in plain language.
 - [What looks worth trying next](research/prospects.md): prioritized experiments and the questions they would answer.
+- [Concrete integrations](research/integration/README.md): shared compiler observations across upstream projects, bounded backend queues, SIMD sets and CPU-dispatched identity scans.
+- [Native facts and source discovery](research/connections/findings.md): retained parsing, namespace invalidation, runtime isolation and source/test evidence, with their measured costs and limits.
 - [Transformations and shared computation](research/science/README.md): mathematical models, actual workflow experiments and heterogeneous-compute results.
 - [Platform direction](docs/platform.md): how the pieces fit together and the boundaries we want to preserve.
 - [Component map](components/README.md): source control, dependencies, compiler tools, editor and artifact host.

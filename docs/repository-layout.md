@@ -24,6 +24,8 @@ research/                         findings and prospects for human readers
   workflows/                      repository/schema sharing and cross-track coverage
   theory/                         mathematical models and cross-track experiment designs
   science/                        measured transformations, geometry, devices and shared work
+  integration/                    concrete shared-workspace and CPU follow-ups
+  connections/                    native facts, ownership and discovery; findings versus hypotheses
 experiments/                      runnable code, lab notes and evidence
   compiler/
     cpp_graph/                    multi-target C++ integration fixture
@@ -32,6 +34,14 @@ experiments/                      runnable code, lab notes and evidence
   artifacts/
     followthrough/                demand admission, cache lifecycle, shared catalogues
   science/                        bounded models and actual graph/data/compiler/device consumers
+  integration/                    real workspace, SIMD and dispatched hash experiments
+  connections/                    guide to native-fact and discovery experiments
+  pass_algebra/                   LLVM liveness formulations and retained def-use facts
+  backend_policy/                 genuine source edits and compiler/runtime policy tradeoffs
+  delta_analysis/                 retained native parsing and derived import diagnostics
+  import_rebinding/               observed namespace keys and contextual rebinding
+  branched_tests/                 initialized runtime and private test resources
+  discovery_validation/           current source joined to native test observations
   storage/
   python/dependency_bundles/
   python/dependency_solving/

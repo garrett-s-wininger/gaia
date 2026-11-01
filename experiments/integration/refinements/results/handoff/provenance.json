@@ -1,0 +1,12 @@
+{
+  "scope": "One actual production version.cc TU, seven changed bodies. Measured implementation/client versus post-review framing/restoration hardening; early publication is actual receipt, not backfilled. No full-graph rerun or timing-equivalence claim.",
+  "sources_and_binaries": {
+    "measured-tool/host": "b74d566b69fe6b652be6bb1f7f6baabbaef11ecd35a4868e9fdba3dd7a9c9546",
+    "measured-tool/host-final": "c5dd20b8e013ecbcb91bcf432ee3a7a740247adcee14fa15d80aab329002ab5b",
+    "measured-tool/refined_protocol.py": "e6c7bb090788c24b5fc97a31dac0aafc13b707e79580698063b0e0b0b1d2c08e",
+    "experiments/integration/refinements/refined_protocol.py": "6ea6444e24f68c2f41021ac54340107165ee8bc32b047aec293cb06993fe3b28",
+    "experiments/integration/refinements/refine_host.py": "93411f295f8174454e47aeb180652de31c81b6fb47a87d834780bbe0db615d80",
+    "experiments/integration/refinements/check_handoff.py": "fe0f7f86f266511e65085ab965e8b5229a31eb0be57cd5b1baa3d9a1d92cffc1"
+  },
+  "measurement": "Seven actual production version.cc changes, shuffled measured/hardened pairs. Source admission and callback receipt included; stock compiler oracle outside clocks. No full-graph timing-equivalence claim."
+}

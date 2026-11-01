@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "artifacts": [
+    {
+      "path": "experiments/_work/generalization/matrix-v2/results.json",
+      "bytes": 18169373,
+      "sha256": "724d7a41c6947df42b6ac8cc8fac2db2453d5be1f29bf55c113b5357c4ce8370",
+      "status": "accepted-or-provenance"
+    },
+    {
+      "path": "experiments/_work/generalization/matrix-v2/xxhash-graph.json",
+      "bytes": 1162,
+      "sha256": "365c5acbf30b86988ecbd71df6f21d57dccf646475222b06251765f2f6e18ac9",
+      "status": "accepted-or-provenance"
+    },
+    {
+      "path": "experiments/_work/generalization/matrix-v2/spdlog-graph.json",
+      "bytes": 1209,
+      "sha256": "3474ef81f3d2abb416467a3916007f1e0993da970fe122921bc544d24aa444d0",
+      "status": "accepted-or-provenance"
+    },
+    {
+      "path": "experiments/_work/generalization/matrix-v2/re2c-graph.json",
+      "bytes": 1166,
+      "sha256": "488736a502c67270de10f1b96cb98682ea6020b1f7d216d78c6fc72852b430c7",
+      "status": "accepted-or-provenance"
+    },
+    {
+      "path": "experiments/_work/generalization/matrix-v2/curl-graph.json",
+      "bytes": 1198,
+      "sha256": "b556665ca193ab716e4b4659d78eb84038bb41da544d39085c056d005e7f557b",
+      "status": "accepted-or-provenance"
+    },
+    {
+      "path": "experiments/_work/generalization/matrix-v2/source-pins.json",
+      "bytes": 720,
+      "sha256": "29b43cc77432686ccd4b4674eb35adfc92d877152d2b1b8c757190b084f0f52d",
+      "status": "accepted-or-provenance"
+    },
+    {
+      "path": "experiments/_work/generalization/environment.json",
+      "bytes": 2933,
+      "sha256": "9144b694d07f3672df838976a1478bac45998b4729c49dd63f232d9b2c051feb",
+      "status": "accepted-or-provenance"
+    },
+    {
+      "path": "experiments/_work/generalization/startup-v2.json",
+      "bytes": 4621,
+      "sha256": "2b1f50f8c7466315d6dffd1b07e4295145fd251a7010f2d30afd8bf4308a07d8",
+      "status": "accepted-or-provenance"
+    },
+    {
+      "path": "experiments/_work/generalization/resources-v2.json",
+      "bytes": 2449548,
+      "sha256": "6c0c16700b7ec8af643907248573559d8ea1c5897ba3f00f8a1daf4f3ea16437",
+      "status": "accepted-or-provenance"
+    },
+    {
+      "path": "experiments/_work/generalization/lifecycle-v2-source-pins.json",
+      "bytes": 997,
+      "sha256": "bab8cdada169b6d4fbcbcc97deb21e58fb4202563f9edcb9b0f221ec712a6298",
+      "status": "accepted-or-provenance"
+    },
+    {
+      "path": "experiments/_work/generalization/tests.txt",
+      "bytes": 4103,
+      "sha256": "3886a60f614e58acec743153145a7fa8b57caeb71cbcd40172d5bbe2096cc795",
+      "status": "accepted-or-provenance"
+    },
+    {
+      "path": "experiments/_work/generalization/rejected-control.json",
+      "bytes": 482,
+      "sha256": "26f9fef10edd1181cc5a7ad012249eeda541e56eb9c504879baee0e3d7897fe4",
+      "status": "rejected"
+    },
+    {
+      "path": "experiments/_work/generalization/matrix-v1/results.json",
+      "bytes": 681134,
+      "sha256": "be4ee5181e6c949557fcb1ce406e27ac11fc0a27c929d60776d304a060e6b3b3",
+      "status": "rejected"
+    },
+    {
+      "path": "experiments/_work/generalization/matrix-v1/source-pins.json",
+      "bytes": 720,
+      "sha256": "8ac2db4dea1021be6e782f3961a5879266ef3ba2553bdbe4336c5f74499021a4",
+      "status": "rejected"
+    },
+    {
+      "path": "experiments/_work/generalization/startup-v1.json",
+      "bytes": 718,
+      "sha256": "30a760dad0461ff317e44053deb6842da4488c871d881f52d3c32380e2d44f49",
+      "status": "rejected"
+    },
+    {
+      "path": "experiments/_work/generalization/startup-v1.log",
+      "bytes": 1033,
+      "sha256": "0bdec04fff8ef4001902e6768fb862d4ab251890e25e63cfb26d789203b853ab",
+      "status": "rejected"
+    },
+    {
+      "path": "experiments/_work/generalization/lifecycle-source-pins.json",
+      "bytes": 997,
+      "sha256": "d0eac9766f50b6b22fa1f8e42dde216329d883c92f3a43850f822edd0c22de3c",
+      "status": "rejected"
+    }
+  ]
+}

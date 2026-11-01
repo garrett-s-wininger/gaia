@@ -1,0 +1,3249 @@
+{
+  "diagnostic_only": true,
+  "profiles": [
+    {
+      "edit": "search_budget",
+      "policy": "O2",
+      "summary": {
+        "totals_inclusive_nonadditive": {
+          "ExecuteCompiler": {
+            "ms": 2282.695,
+            "count": 1,
+            "avg ms": 2282
+          },
+          "Backend": {
+            "ms": 2214.525,
+            "count": 1,
+            "avg ms": 2214
+          },
+          "Optimizer": {
+            "ms": 1168.288,
+            "count": 1,
+            "avg ms": 1168
+          },
+          "PassManager<Function>": {
+            "ms": 1065.243,
+            "count": 539,
+            "avg ms": 1
+          },
+          "CodeGenPasses": {
+            "ms": 1044.685,
+            "count": 1,
+            "avg ms": 1044
+          },
+          "OptModule": {
+            "ms": 1044.649,
+            "count": 1,
+            "avg ms": 1044
+          },
+          "OptFunction": {
+            "ms": 1042.192,
+            "count": 89,
+            "avg ms": 11
+          },
+          "RunPass": {
+            "ms": 1021.341,
+            "count": 17355,
+            "avg ms": 0
+          },
+          "ModuleInlinerWrapperPass": {
+            "ms": 718.629,
+            "count": 1,
+            "avg ms": 718
+          },
+          "ModuleToPostOrderCGSCCPassAdaptor": {
+            "ms": 716.081,
+            "count": 1,
+            "avg ms": 716
+          },
+          "DevirtSCCRepeatedPass": {
+            "ms": 712.595,
+            "count": 127,
+            "avg ms": 5
+          },
+          "PassManager<LazyCallGraph::SCC, AnalysisManager<LazyCallGraph::SCC, LazyCallGraph&>, LazyCallGraph&, CGSCCUpdateResult&>": {
+            "ms": 709.611,
+            "count": 127,
+            "avg ms": 5
+          },
+          "CGSCCToFunctionPassAdaptor": {
+            "ms": 659.722,
+            "count": 254,
+            "avg ms": 2
+          },
+          "ModuleToFunctionPassAdaptor": {
+            "ms": 408.449,
+            "count": 6,
+            "avg ms": 68
+          },
+          "FunctionToLoopPassAdaptor": {
+            "ms": 283.553,
+            "count": 559,
+            "avg ms": 0
+          },
+          "InstCombinePass": {
+            "ms": 263.911,
+            "count": 933,
+            "avg ms": 0
+          },
+          "PassManager<Loop, AnalysisManager<Loop, LoopStandardAnalysisResults&>, LoopStandardAnalysisResults&, LPMUpdater&>": {
+            "ms": 227.163,
+            "count": 1803,
+            "avg ms": 0
+          },
+          "RunLoopPass": {
+            "ms": 194.666,
+            "count": 1962,
+            "avg ms": 0
+          },
+          "LoopUnrollPass": {
+            "ms": 75.271,
+            "count": 89,
+            "avg ms": 0
+          },
+          "GVNPass": {
+            "ms": 74.184,
+            "count": 127,
+            "avg ms": 0
+          },
+          "IndVarSimplifyPass": {
+            "ms": 71.627,
+            "count": 613,
+            "avg ms": 0
+          },
+          "SLPVectorizerPass": {
+            "ms": 70.238,
+            "count": 89,
+            "avg ms": 0
+          },
+          "Frontend": {
+            "ms": 66.545,
+            "count": 2,
+            "avg ms": 33
+          },
+          "SimplifyCFGPass": {
+            "ms": 47.972,
+            "count": 1009,
+            "avg ms": 0
+          },
+          "ParseDeclarationOrFunctionDefinition": {
+            "ms": 44.643,
+            "count": 1341,
+            "avg ms": 0
+          },
+          "LoopIdiomRecognizePass": {
+            "ms": 40.676,
+            "count": 613,
+            "avg ms": 0
+          },
+          "CorrelatedValuePropagationPass": {
+            "ms": 38.032,
+            "count": 254,
+            "avg ms": 0
+          },
+          "InlinerPass": {
+            "ms": 37.843,
+            "count": 127,
+            "avg ms": 0
+          },
+          "LoopDeletionPass": {
+            "ms": 37.824,
+            "count": 1175,
+            "avg ms": 0
+          },
+          "LICMPass": {
+            "ms": 35.854,
+            "count": 2479,
+            "avg ms": 0
+          },
+          "JumpThreadingPass": {
+            "ms": 35.613,
+            "count": 254,
+            "avg ms": 0
+          },
+          "ParseFunctionDefinition": {
+            "ms": 33.613,
+            "count": 794,
+            "avg ms": 0
+          },
+          "LoopVectorizePass": {
+            "ms": 26.745,
+            "count": 89,
+            "avg ms": 0
+          },
+          "EarlyCSEPass": {
+            "ms": 26.046,
+            "count": 292,
+            "avg ms": 0
+          },
+          "LoopRotatePass": {
+            "ms": 24.71,
+            "count": 1190,
+            "avg ms": 0
+          },
+          "AlwaysInlinerPass": {
+            "ms": 20.325,
+            "count": 1,
+            "avg ms": 20
+          },
+          "MemorySSAAnalysis": {
+            "ms": 18.015,
+            "count": 420,
+            "avg ms": 0
+          },
+          "LoopFullUnrollPass": {
+            "ms": 16.857,
+            "count": 612,
+            "avg ms": 0
+          },
+          "LoopLoadEliminationPass": {
+            "ms": 16.638,
+            "count": 89,
+            "avg ms": 0
+          },
+          "SCCPPass": {
+            "ms": 15.019,
+            "count": 127,
+            "avg ms": 0
+          },
+          "BlockFrequencyAnalysis": {
+            "ms": 12.763,
+            "count": 302,
+            "avg ms": 0
+          },
+          "DSEPass": {
+            "ms": 11.358,
+            "count": 127,
+            "avg ms": 0
+          },
+          "LoopSimplifyPass": {
+            "ms": 10.864,
+            "count": 559,
+            "avg ms": 0
+          },
+          "ConstraintEliminationPass": {
+            "ms": 10.272,
+            "count": 127,
+            "avg ms": 0
+          },
+          "PostOrderFunctionAttrsPass": {
+            "ms": 10.238,
+            "count": 254,
+            "avg ms": 0
+          },
+          "CodeGen Function": {
+            "ms": 10.119,
+            "count": 165,
+            "avg ms": 0
+          },
+          "BranchProbabilityAnalysis": {
+            "ms": 9.126,
+            "count": 302,
+            "avg ms": 0
+          },
+          "SROAPass": {
+            "ms": 8.744,
+            "count": 508,
+            "avg ms": 0
+          },
+          "GlobalOptPass": {
+            "ms": 8.158,
+            "count": 2,
+            "avg ms": 4
+          },
+          "LoopAnalysis": {
+            "ms": 8.047,
+            "count": 803,
+            "avg ms": 0
+          },
+          "BDCEPass": {
+            "ms": 7.226,
+            "count": 127,
+            "avg ms": 0
+          },
+          "ReassociatePass": {
+            "ms": 6.519,
+            "count": 127,
+            "avg ms": 0
+          },
+          "LoopInstSimplifyPass": {
+            "ms": 6.427,
+            "count": 628,
+            "avg ms": 0
+          },
+          "ADCEPass": {
+            "ms": 6.121,
+            "count": 127,
+            "avg ms": 0
+          },
+          "InstSimplifyPass": {
+            "ms": 5.886,
+            "count": 89,
+            "avg ms": 0
+          },
+          "DominatorTreeAnalysis": {
+            "ms": 5.639,
+            "count": 1145,
+            "avg ms": 0
+          },
+          "LCSSAPass": {
+            "ms": 5.494,
+            "count": 559,
+            "avg ms": 0
+          },
+          "MemCpyOptPass": {
+            "ms": 5.28,
+            "count": 127,
+            "avg ms": 0
+          },
+          "BuildCFG": {
+            "ms": 3.762,
+            "count": 328,
+            "avg ms": 0
+          },
+          "AAManager": {
+            "ms": 3.737,
+            "count": 973,
+            "avg ms": 0
+          },
+          "ScalarEvolutionAnalysis": {
+            "ms": 3.571,
+            "count": 632,
+            "avg ms": 0
+          },
+          "IPSCCPPass": {
+            "ms": 3.536,
+            "count": 1,
+            "avg ms": 3
+          },
+          "InferAlignmentPass": {
+            "ms": 3.451,
+            "count": 178,
+            "avg ms": 0
+          },
+          "VectorCombinePass": {
+            "ms": 3.173,
+            "count": 216,
+            "avg ms": 0
+          },
+          "DropUnnecessaryAssumesPass": {
+            "ms": 3.017,
+            "count": 178,
+            "avg ms": 0
+          },
+          "TailCallElimPass": {
+            "ms": 2.858,
+            "count": 216,
+            "avg ms": 0
+          },
+          "CallGraphAnalysis": {
+            "ms": 2.754,
+            "count": 2,
+            "avg ms": 1
+          },
+          "AggressiveInstCombinePass": {
+            "ms": 2.753,
+            "count": 127,
+            "avg ms": 0
+          },
+          "AllocTokenPass": {
+            "ms": 2.655,
+            "count": 1,
+            "avg ms": 2
+          },
+          "PostDominatorTreeAnalysis": {
+            "ms": 2.481,
+            "count": 429,
+            "avg ms": 0
+          },
+          "LoopSimplifyCFGPass": {
+            "ms": 2.372,
+            "count": 628,
+            "avg ms": 0
+          },
+          "RequireAnalysisPass<GlobalsAA, Module>": {
+            "ms": 2.252,
+            "count": 1,
+            "avg ms": 2
+          },
+          "GlobalsAA": {
+            "ms": 2.249,
+            "count": 1,
+            "avg ms": 2
+          },
+          "Float2IntPass": {
+            "ms": 1.659,
+            "count": 89,
+            "avg ms": 0
+          },
+          "CalledValuePropagationPass": {
+            "ms": 1.595,
+            "count": 1,
+            "avg ms": 1
+          },
+          "DeadArgumentEliminationPass": {
+            "ms": 1.48,
+            "count": 1,
+            "avg ms": 1
+          },
+          "EvaluateAsRValue": {
+            "ms": 1.369,
+            "count": 5486,
+            "avg ms": 0
+          },
+          "ReversePostOrderFunctionAttrsPass": {
+            "ms": 1.366,
+            "count": 1,
+            "avg ms": 1
+          },
+          "TargetIRAnalysis": {
+            "ms": 1.26,
+            "count": 381,
+            "avg ms": 0
+          },
+          "BasicAA": {
+            "ms": 1.15,
+            "count": 973,
+            "avg ms": 0
+          },
+          "EvaluateForOverflow": {
+            "ms": 1.134,
+            "count": 1264,
+            "avg ms": 0
+          },
+          "RecomputeGlobalsAAPass": {
+            "ms": 0.891,
+            "count": 1,
+            "avg ms": 0
+          },
+          "EvaluateAsBooleanCondition": {
+            "ms": 0.841,
+            "count": 1053,
+            "avg ms": 0
+          },
+          "AssumptionAnalysis": {
+            "ms": 0.613,
+            "count": 381,
+            "avg ms": 0
+          },
+          "LowerConstantIntrinsicsPass": {
+            "ms": 0.603,
+            "count": 89,
+            "avg ms": 0
+          },
+          "SimpleLoopUnswitchPass": {
+            "ms": 0.593,
+            "count": 629,
+            "avg ms": 0
+          },
+          "MemProfRemoveInfo": {
+            "ms": 0.588,
+            "count": 1,
+            "avg ms": 0
+          },
+          "EvaluateAsInt": {
+            "ms": 0.584,
+            "count": 1488,
+            "avg ms": 0
+          },
+          "InjectTLIMappings": {
+            "ms": 0.491,
+            "count": 89,
+            "avg ms": 0
+          },
+          "LowerExpectIntrinsicPass": {
+            "ms": 0.475,
+            "count": 165,
+            "avg ms": 0
+          },
+          "LoopDistributePass": {
+            "ms": 0.459,
+            "count": 89,
+            "avg ms": 0
+          },
+          "WarnMissedTransformationsPass": {
+            "ms": 0.341,
+            "count": 89,
+            "avg ms": 0
+          },
+          "LazyCallGraphAnalysis": {
+            "ms": 0.327,
+            "count": 2,
+            "avg ms": 0
+          },
+          "LibCallsShrinkWrapPass": {
+            "ms": 0.301,
+            "count": 127,
+            "avg ms": 0
+          },
+          "DivRemPairsPass": {
+            "ms": 0.301,
+            "count": 89,
+            "avg ms": 0
+          },
+          "GlobalDCEPass": {
+            "ms": 0.268,
+            "count": 2,
+            "avg ms": 0
+          },
+          "EvaluateAsInitializer": {
+            "ms": 0.257,
+            "count": 411,
+            "avg ms": 0
+          },
+          "FunctionAnalysisManagerCGSCCProxy": {
+            "ms": 0.24,
+            "count": 127,
+            "avg ms": 0
+          },
+          "AssignmentTrackingPass": {
+            "ms": 0.222,
+            "count": 1,
+            "avg ms": 0
+          },
+          "ExtraLoopPassManager<ShouldRunExtraSimpleLoopUnswitch>": {
+            "ms": 0.198,
+            "count": 613,
+            "avg ms": 0
+          },
+          "LastRunTrackingAnalysis": {
+            "ms": 0.196,
+            "count": 856,
+            "avg ms": 0
+          },
+          "CoroAnnotationElidePass": {
+            "ms": 0.191,
+            "count": 127,
+            "avg ms": 0
+          },
+          "CoroElidePass": {
+            "ms": 0.183,
+            "count": 127,
+            "avg ms": 0
+          },
+          "RequireAnalysisPass<ShouldNotRunFunctionPassesAnalysis, Function>": {
+            "ms": 0.18,
+            "count": 127,
+            "avg ms": 0
+          },
+          "MemoryDependenceAnalysis": {
+            "ms": 0.176,
+            "count": 127,
+            "avg ms": 0
+          },
+          "MergedLoadStoreMotionPass": {
+            "ms": 0.175,
+            "count": 127,
+            "avg ms": 0
+          },
+          "CGProfilePass": {
+            "ms": 0.17,
+            "count": 1,
+            "avg ms": 0
+          },
+          "InnerAnalysisManagerProxy<AnalysisManager<LazyCallGraph::SCC, LazyCallGraph&>, Module>": {
+            "ms": 0.162,
+            "count": 1,
+            "avg ms": 0
+          },
+          "DemandedBitsAnalysis": {
+            "ms": 0.14,
+            "count": 305,
+            "avg ms": 0
+          },
+          "InnerAnalysisManagerProxy<AnalysisManager<Loop, LoopStandardAnalysisResults&>, Function>": {
+            "ms": 0.14,
+            "count": 460,
+            "avg ms": 0
+          },
+          "isIntegerConstantExpr": {
+            "ms": 0.136,
+            "count": 2442,
+            "avg ms": 0
+          },
+          "EvaluateKnownConstIntCheckOverflow": {
+            "ms": 0.128,
+            "count": 295,
+            "avg ms": 0
+          },
+          "MoveAutoInitPass": {
+            "ms": 0.124,
+            "count": 127,
+            "avg ms": 0
+          },
+          "LazyValueAnalysis": {
+            "ms": 0.119,
+            "count": 254,
+            "avg ms": 0
+          },
+          "TargetLibraryAnalysis": {
+            "ms": 0.104,
+            "count": 397,
+            "avg ms": 0
+          },
+          "OuterAnalysisManagerProxy<AnalysisManager<Module>, Function>": {
+            "ms": 0.103,
+            "count": 374,
+            "avg ms": 0
+          },
+          "OptimizationRemarkEmitterAnalysis": {
+            "ms": 0.101,
+            "count": 374,
+            "avg ms": 0
+          },
+          "CoroSplitPass": {
+            "ms": 0.097,
+            "count": 127,
+            "avg ms": 0
+          },
+          "EphemeralValuesAnalysis": {
+            "ms": 0.089,
+            "count": 147,
+            "avg ms": 0
+          },
+          "TypeBasedAA": {
+            "ms": 0.089,
+            "count": 374,
+            "avg ms": 0
+          },
+          "OpenMPOptCGSCCPass": {
+            "ms": 0.088,
+            "count": 127,
+            "avg ms": 0
+          },
+          "ScopedNoAliasAA": {
+            "ms": 0.082,
+            "count": 374,
+            "avg ms": 0
+          },
+          "SpeculativeExecutionPass": {
+            "ms": 0.076,
+            "count": 127,
+            "avg ms": 0
+          },
+          "OuterAnalysisManagerProxy<AnalysisManager<Module>, LazyCallGraph::SCC, LazyCallGraph&>": {
+            "ms": 0.064,
+            "count": 127,
+            "avg ms": 0
+          },
+          "LoopAccessAnalysis": {
+            "ms": 0.056,
+            "count": 89,
+            "avg ms": 0
+          },
+          "InvalidateAnalysisPass<ShouldNotRunFunctionPassesAnalysis>": {
+            "ms": 0.056,
+            "count": 93,
+            "avg ms": 0
+          },
+          "InferFunctionAttrsPass": {
+            "ms": 0.05,
+            "count": 1,
+            "avg ms": 0
+          },
+          "AlignmentFromAssumptionsPass": {
+            "ms": 0.043,
+            "count": 89,
+            "avg ms": 0
+          },
+          "CoroEarlyPass": {
+            "ms": 0.039,
+            "count": 1,
+            "avg ms": 0
+          },
+          "LoopSinkPass": {
+            "ms": 0.039,
+            "count": 89,
+            "avg ms": 0
+          },
+          "PromotePass": {
+            "ms": 0.039,
+            "count": 158,
+            "avg ms": 0
+          },
+          "EvaluateKnownConstInt": {
+            "ms": 0.031,
+            "count": 280,
+            "avg ms": 0
+          },
+          "EntryExitInstrumenterPass": {
+            "ms": 0.028,
+            "count": 165,
+            "avg ms": 0
+          },
+          "AnnotationRemarksPass": {
+            "ms": 0.024,
+            "count": 89,
+            "avg ms": 0
+          },
+          "ShouldNotRunFunctionPassesAnalysis": {
+            "ms": 0.014,
+            "count": 127,
+            "avg ms": 0
+          },
+          "ShouldRunExtraVectorPasses": {
+            "ms": 0.011,
+            "count": 27,
+            "avg ms": 0
+          },
+          "InvalidateAnalysisPass<AAManager>": {
+            "ms": 0.009,
+            "count": 130,
+            "avg ms": 0
+          },
+          "OpenMPOptPass": {
+            "ms": 0.008,
+            "count": 1,
+            "avg ms": 0
+          },
+          "PerformPendingInstantiations": {
+            "ms": 0.004,
+            "count": 1,
+            "avg ms": 0
+          },
+          "RelLookupTableConverterPass": {
+            "ms": 0.002,
+            "count": 1,
+            "avg ms": 0
+          },
+          "EliminateAvailableExternallyPass": {
+            "ms": 0.002,
+            "count": 1,
+            "avg ms": 0
+          },
+          "Annotation2MetadataPass": {
+            "ms": 0.002,
+            "count": 1,
+            "avg ms": 0
+          },
+          "CoroCleanupPass": {
+            "ms": 0.001,
+            "count": 1,
+            "avg ms": 0
+          },
+          "InnerAnalysisManagerProxy<AnalysisManager<Function>, Module>": {
+            "ms": 0.001,
+            "count": 4,
+            "avg ms": 0
+          },
+          "ConstantMergePass": {
+            "ms": 0.001,
+            "count": 1,
+            "avg ms": 0
+          },
+          "ProfileSummaryAnalysis": {
+            "ms": 0.001,
+            "count": 1,
+            "avg ms": 0
+          },
+          "ForceFunctionAttrsPass": {
+            "ms": 0.001,
+            "count": 1,
+            "avg ms": 0
+          },
+          "RequireAnalysisPass<ProfileSummaryAnalysis, Module>": {
+            "ms": 0.0,
+            "count": 1,
+            "avg ms": 0
+          },
+          "InlineAdvisorAnalysis": {
+            "ms": 0.0,
+            "count": 1,
+            "avg ms": 0
+          },
+          "ShouldRunExtraSimpleLoopUnswitch": {
+            "ms": 0.0,
+            "count": 1,
+            "avg ms": 0
+          }
+        },
+        "largest_machine_codegen_functions": [
+          {
+            "function": "ZSTD_compressBlock_lazy_row",
+            "ms": 27.38
+          },
+          {
+            "function": "ZSTD_compressBlock_lazy_dictMatchState_row",
+            "ms": 27.235
+          },
+          {
+            "function": "ZSTD_compressBlock_lazy_dedicatedDictSearch_row",
+            "ms": 26.034
+          },
+          {
+            "function": "ZSTD_RowFindBestMatch_dedicatedDictSearch_6_5",
+            "ms": 23.411
+          },
+          {
+            "function": "ZSTD_RowFindBestMatch_dedicatedDictSearch_6_4",
+            "ms": 22.734
+          },
+          {
+            "function": "ZSTD_compressBlock_greedy_row",
+            "ms": 22.268
+          },
+          {
+            "function": "ZSTD_compressBlock_lazy2_row",
+            "ms": 21.892
+          },
+          {
+            "function": "ZSTD_compressBlock_lazy_dictMatchState",
+            "ms": 21.82
+          },
+          {
+            "function": "ZSTD_DUBT_findBestMatch",
+            "ms": 21.304
+          },
+          {
+            "function": "ZSTD_compressBlock_lazy",
+            "ms": 20.779
+          },
+          {
+            "function": "ZSTD_compressBlock_lazy_dedicatedDictSearch",
+            "ms": 20.688
+          },
+          {
+            "function": "ZSTD_RowFindBestMatch_dictMatchState_6_5",
+            "ms": 19.49
+          }
+        ]
+      },
+      "trace_sha256": "3212bfd9032d9d4613322a8a9bba7244e9ee5a77aae4341f6ed7becf576d6df4",
+      "trace_bytes": 10877302,
+      "optimized_ir_sha256": "4772de107e5f3ae74cdcfce043df01dde73616cbe6a709c167aa897ae26c0bcc"
+    },
+    {
+      "edit": "search_budget",
+      "policy": "O2_fast_machine",
+      "summary": {
+        "totals_inclusive_nonadditive": {
+          "ExecuteCompiler": {
+            "ms": 1846.205,
+            "count": 1,
+            "avg ms": 1846
+          },
+          "Backend": {
+            "ms": 1780.22,
+            "count": 1,
+            "avg ms": 1780
+          },
+          "Optimizer": {
+            "ms": 1266.043,
+            "count": 1,
+            "avg ms": 1266
+          },
+          "PassManager<Function>": {
+            "ms": 1147.526,
+            "count": 539,
+            "avg ms": 2
+          },
+          "ModuleInlinerWrapperPass": {
+            "ms": 767.198,
+            "count": 1,
+            "avg ms": 767
+          },
+          "ModuleToPostOrderCGSCCPassAdaptor": {
+            "ms": 764.284,
+            "count": 1,
+            "avg ms": 764
+          },
+          "DevirtSCCRepeatedPass": {
+            "ms": 761.09,
+            "count": 127,
+            "avg ms": 5
+          },
+          "PassManager<LazyCallGraph::SCC, AnalysisManager<LazyCallGraph::SCC, LazyCallGraph&>, LazyCallGraph&, CGSCCUpdateResult&>": {
+            "ms": 757.942,
+            "count": 127,
+            "avg ms": 5
+          },
+          "CGSCCToFunctionPassAdaptor": {
+            "ms": 705.252,
+            "count": 254,
+            "avg ms": 2
+          },
+          "CodeGenPasses": {
+            "ms": 512.75,
+            "count": 1,
+            "avg ms": 512
+          },
+          "OptModule": {
+            "ms": 512.724,
+            "count": 1,
+            "avg ms": 512
+          },
+          "OptFunction": {
+            "ms": 510.868,
+            "count": 89,
+            "avg ms": 5
+          },
+          "RunPass": {
+            "ms": 494.552,
+            "count": 15041,
+            "avg ms": 0
+          },
+          "ModuleToFunctionPassAdaptor": {
+            "ms": 445.299,
+            "count": 6,
+            "avg ms": 74
+          },
+          "FunctionToLoopPassAdaptor": {
+            "ms": 304.715,
+            "count": 559,
+            "avg ms": 0
+          },
+          "InstCombinePass": {
+            "ms": 285.236,
+            "count": 933,
+            "avg ms": 0
+          },
+          "PassManager<Loop, AnalysisManager<Loop, LoopStandardAnalysisResults&>, LoopStandardAnalysisResults&, LPMUpdater&>": {
+            "ms": 245.706,
+            "count": 1803,
+            "avg ms": 0
+          },
+          "RunLoopPass": {
+            "ms": 167.705,
+            "count": 1962,
+            "avg ms": 0
+          },
+          "GVNPass": {
+            "ms": 81.453,
+            "count": 127,
+            "avg ms": 0
+          },
+          "LoopUnrollPass": {
+            "ms": 80.991,
+            "count": 89,
+            "avg ms": 0
+          },
+          "IndVarSimplifyPass": {
+            "ms": 77.793,
+            "count": 613,
+            "avg ms": 0
+          },
+          "SLPVectorizerPass": {
+            "ms": 73.792,
+            "count": 89,
+            "avg ms": 0
+          },
+          "Frontend": {
+            "ms": 64.647,
+            "count": 2,
+            "avg ms": 32
+          },
+          "SimplifyCFGPass": {
+            "ms": 52.145,
+            "count": 1009,
+            "avg ms": 0
+          },
+          "LoopIdiomRecognizePass": {
+            "ms": 43.373,
+            "count": 613,
+            "avg ms": 0
+          },
+          "ParseDeclarationOrFunctionDefinition": {
+            "ms": 41.827,
+            "count": 1341,
+            "avg ms": 0
+          },
+          "LoopDeletionPass": {
+            "ms": 40.876,
+            "count": 1175,
+            "avg ms": 0
+          },
+          "CorrelatedValuePropagationPass": {
+            "ms": 40.248,
+            "count": 254,
+            "avg ms": 0
+          },
+          "InlinerPass": {
+            "ms": 39.756,
+            "count": 127,
+            "avg ms": 0
+          },
+          "LICMPass": {
+            "ms": 38.565,
+            "count": 2479,
+            "avg ms": 0
+          },
+          "JumpThreadingPass": {
+            "ms": 36.0,
+            "count": 254,
+            "avg ms": 0
+          },
+          "ParseFunctionDefinition": {
+            "ms": 32.863,
+            "count": 794,
+            "avg ms": 0
+          },
+          "AlwaysInlinerPass": {
+            "ms": 30.785,
+            "count": 1,
+            "avg ms": 30
+          },
+          "EarlyCSEPass": {
+            "ms": 28.772,
+            "count": 292,
+            "avg ms": 0
+          },
+          "LoopVectorizePass": {
+            "ms": 28.689,
+            "count": 89,
+            "avg ms": 0
+          },
+          "LoopRotatePass": {
+            "ms": 27.33,
+            "count": 1190,
+            "avg ms": 0
+          },
+          "LoopLoadEliminationPass": {
+            "ms": 19.065,
+            "count": 89,
+            "avg ms": 0
+          },
+          "MemorySSAAnalysis": {
+            "ms": 18.875,
+            "count": 420,
+            "avg ms": 0
+          },
+          "LoopFullUnrollPass": {
+            "ms": 18.138,
+            "count": 612,
+            "avg ms": 0
+          },
+          "SCCPPass": {
+            "ms": 16.146,
+            "count": 127,
+            "avg ms": 0
+          },
+          "BlockFrequencyAnalysis": {
+            "ms": 13.388,
+            "count": 302,
+            "avg ms": 0
+          },
+          "CodeGen Function": {
+            "ms": 13.209,
+            "count": 165,
+            "avg ms": 0
+          },
+          "DSEPass": {
+            "ms": 12.291,
+            "count": 127,
+            "avg ms": 0
+          },
+          "LoopSimplifyPass": {
+            "ms": 11.383,
+            "count": 559,
+            "avg ms": 0
+          },
+          "SROAPass": {
+            "ms": 11.24,
+            "count": 508,
+            "avg ms": 0
+          },
+          "ConstraintEliminationPass": {
+            "ms": 11.202,
+            "count": 127,
+            "avg ms": 0
+          },
+          "PostOrderFunctionAttrsPass": {
+            "ms": 10.956,
+            "count": 254,
+            "avg ms": 0
+          },
+          "GlobalOptPass": {
+            "ms": 9.54,
+            "count": 2,
+            "avg ms": 4
+          },
+          "BranchProbabilityAnalysis": {
+            "ms": 9.484,
+            "count": 302,
+            "avg ms": 0
+          },
+          "LoopAnalysis": {
+            "ms": 8.48,
+            "count": 803,
+            "avg ms": 0
+          },
+          "BDCEPass": {
+            "ms": 7.605,
+            "count": 127,
+            "avg ms": 0
+          },
+          "LoopInstSimplifyPass": {
+            "ms": 6.73,
+            "count": 628,
+            "avg ms": 0
+          },
+          "ReassociatePass": {
+            "ms": 6.712,
+            "count": 127,
+            "avg ms": 0
+          },
+          "ADCEPass": {
+            "ms": 6.455,
+            "count": 127,
+            "avg ms": 0
+          },
+          "InstSimplifyPass": {
+            "ms": 6.364,
+            "count": 89,
+            "avg ms": 0
+          },
+          "DominatorTreeAnalysis": {
+            "ms": 6.01,
+            "count": 1145,
+            "avg ms": 0
+          },
+          "MemCpyOptPass": {
+            "ms": 5.68,
+            "count": 127,
+            "avg ms": 0
+          },
+          "LCSSAPass": {
+            "ms": 5.492,
+            "count": 559,
+            "avg ms": 0
+          },
+          "AAManager": {
+            "ms": 4.121,
+            "count": 973,
+            "avg ms": 0
+          },
+          "BuildCFG": {
+            "ms": 3.693,
+            "count": 328,
+            "avg ms": 0
+          },
+          "ScalarEvolutionAnalysis": {
+            "ms": 3.653,
+            "count": 632,
+            "avg ms": 0
+          },
+          "CallGraphAnalysis": {
+            "ms": 3.621,
+            "count": 2,
+            "avg ms": 1
+          },
+          "InferAlignmentPass": {
+            "ms": 3.547,
+            "count": 178,
+            "avg ms": 0
+          },
+          "IPSCCPPass": {
+            "ms": 3.52,
+            "count": 1,
+            "avg ms": 3
+          },
+          "VectorCombinePass": {
+            "ms": 3.371,
+            "count": 216,
+            "avg ms": 0
+          },
+          "DropUnnecessaryAssumesPass": {
+            "ms": 3.087,
+            "count": 178,
+            "avg ms": 0
+          },
+          "TailCallElimPass": {
+            "ms": 3.01,
+            "count": 216,
+            "avg ms": 0
+          },
+          "AggressiveInstCombinePass": {
+            "ms": 2.823,
+            "count": 127,
+            "avg ms": 0
+          },
+          "RequireAnalysisPass<GlobalsAA, Module>": {
+            "ms": 2.571,
+            "count": 1,
+            "avg ms": 2
+          },
+          "GlobalsAA": {
+            "ms": 2.568,
+            "count": 1,
+            "avg ms": 2
+          },
+          "PostDominatorTreeAnalysis": {
+            "ms": 2.567,
+            "count": 429,
+            "avg ms": 0
+          },
+          "LoopSimplifyCFGPass": {
+            "ms": 2.469,
+            "count": 628,
+            "avg ms": 0
+          },
+          "AllocTokenPass": {
+            "ms": 2.433,
+            "count": 1,
+            "avg ms": 2
+          },
+          "ReversePostOrderFunctionAttrsPass": {
+            "ms": 2.066,
+            "count": 1,
+            "avg ms": 2
+          },
+          "TargetIRAnalysis": {
+            "ms": 1.73,
+            "count": 381,
+            "avg ms": 0
+          },
+          "Float2IntPass": {
+            "ms": 1.708,
+            "count": 89,
+            "avg ms": 0
+          },
+          "CalledValuePropagationPass": {
+            "ms": 1.678,
+            "count": 1,
+            "avg ms": 1
+          },
+          "EvaluateAsRValue": {
+            "ms": 1.518,
+            "count": 5486,
+            "avg ms": 0
+          },
+          "RecomputeGlobalsAAPass": {
+            "ms": 1.46,
+            "count": 1,
+            "avg ms": 1
+          },
+          "BasicAA": {
+            "ms": 1.331,
+            "count": 973,
+            "avg ms": 0
+          },
+          "DeadArgumentEliminationPass": {
+            "ms": 1.305,
+            "count": 1,
+            "avg ms": 1
+          },
+          "EvaluateForOverflow": {
+            "ms": 1.036,
+            "count": 1264,
+            "avg ms": 0
+          },
+          "EvaluateAsBooleanCondition": {
+            "ms": 0.84,
+            "count": 1053,
+            "avg ms": 0
+          },
+          "AssumptionAnalysis": {
+            "ms": 0.649,
+            "count": 381,
+            "avg ms": 0
+          },
+          "EvaluateAsInt": {
+            "ms": 0.642,
+            "count": 1488,
+            "avg ms": 0
+          },
+          "LowerConstantIntrinsicsPass": {
+            "ms": 0.603,
+            "count": 89,
+            "avg ms": 0
+          },
+          "SimpleLoopUnswitchPass": {
+            "ms": 0.593,
+            "count": 629,
+            "avg ms": 0
+          },
+          "InjectTLIMappings": {
+            "ms": 0.472,
+            "count": 89,
+            "avg ms": 0
+          },
+          "LoopDistributePass": {
+            "ms": 0.457,
+            "count": 89,
+            "avg ms": 0
+          },
+          "LowerExpectIntrinsicPass": {
+            "ms": 0.393,
+            "count": 165,
+            "avg ms": 0
+          },
+          "WarnMissedTransformationsPass": {
+            "ms": 0.379,
+            "count": 89,
+            "avg ms": 0
+          },
+          "DivRemPairsPass": {
+            "ms": 0.331,
+            "count": 89,
+            "avg ms": 0
+          },
+          "MemProfRemoveInfo": {
+            "ms": 0.33,
+            "count": 1,
+            "avg ms": 0
+          },
+          "LibCallsShrinkWrapPass": {
+            "ms": 0.317,
+            "count": 127,
+            "avg ms": 0
+          },
+          "LazyCallGraphAnalysis": {
+            "ms": 0.305,
+            "count": 2,
+            "avg ms": 0
+          },
+          "ExtraLoopPassManager<ShouldRunExtraSimpleLoopUnswitch>": {
+            "ms": 0.267,
+            "count": 613,
+            "avg ms": 0
+          },
+          "GlobalDCEPass": {
+            "ms": 0.264,
+            "count": 2,
+            "avg ms": 0
+          },
+          "FunctionAnalysisManagerCGSCCProxy": {
+            "ms": 0.261,
+            "count": 127,
+            "avg ms": 0
+          },
+          "EvaluateAsInitializer": {
+            "ms": 0.256,
+            "count": 411,
+            "avg ms": 0
+          },
+          "LastRunTrackingAnalysis": {
+            "ms": 0.219,
+            "count": 856,
+            "avg ms": 0
+          },
+          "RequireAnalysisPass<ShouldNotRunFunctionPassesAnalysis, Function>": {
+            "ms": 0.192,
+            "count": 127,
+            "avg ms": 0
+          },
+          "MemoryDependenceAnalysis": {
+            "ms": 0.176,
+            "count": 127,
+            "avg ms": 0
+          },
+          "CoroAnnotationElidePass": {
+            "ms": 0.174,
+            "count": 127,
+            "avg ms": 0
+          },
+          "InnerAnalysisManagerProxy<AnalysisManager<LazyCallGraph::SCC, LazyCallGraph&>, Module>": {
+            "ms": 0.162,
+            "count": 1,
+            "avg ms": 0
+          },
+          "CGProfilePass": {
+            "ms": 0.158,
+            "count": 1,
+            "avg ms": 0
+          },
+          "DemandedBitsAnalysis": {
+            "ms": 0.149,
+            "count": 305,
+            "avg ms": 0
+          },
+          "MergedLoadStoreMotionPass": {
+            "ms": 0.146,
+            "count": 127,
+            "avg ms": 0
+          },
+          "InnerAnalysisManagerProxy<AnalysisManager<Loop, LoopStandardAnalysisResults&>, Function>": {
+            "ms": 0.142,
+            "count": 460,
+            "avg ms": 0
+          },
+          "isIntegerConstantExpr": {
+            "ms": 0.136,
+            "count": 2442,
+            "avg ms": 0
+          },
+          "MoveAutoInitPass": {
+            "ms": 0.135,
+            "count": 127,
+            "avg ms": 0
+          },
+          "LazyValueAnalysis": {
+            "ms": 0.128,
+            "count": 254,
+            "avg ms": 0
+          },
+          "OuterAnalysisManagerProxy<AnalysisManager<Module>, Function>": {
+            "ms": 0.124,
+            "count": 374,
+            "avg ms": 0
+          },
+          "TargetLibraryAnalysis": {
+            "ms": 0.117,
+            "count": 397,
+            "avg ms": 0
+          },
+          "AssignmentTrackingPass": {
+            "ms": 0.115,
+            "count": 1,
+            "avg ms": 0
+          },
+          "OptimizationRemarkEmitterAnalysis": {
+            "ms": 0.114,
+            "count": 374,
+            "avg ms": 0
+          },
+          "EphemeralValuesAnalysis": {
+            "ms": 0.106,
+            "count": 147,
+            "avg ms": 0
+          },
+          "OpenMPOptCGSCCPass": {
+            "ms": 0.102,
+            "count": 127,
+            "avg ms": 0
+          },
+          "CoroElidePass": {
+            "ms": 0.097,
+            "count": 127,
+            "avg ms": 0
+          },
+          "CoroSplitPass": {
+            "ms": 0.096,
+            "count": 127,
+            "avg ms": 0
+          },
+          "ScopedNoAliasAA": {
+            "ms": 0.092,
+            "count": 374,
+            "avg ms": 0
+          },
+          "TypeBasedAA": {
+            "ms": 0.085,
+            "count": 374,
+            "avg ms": 0
+          },
+          "InvalidateAnalysisPass<ShouldNotRunFunctionPassesAnalysis>": {
+            "ms": 0.076,
+            "count": 93,
+            "avg ms": 0
+          },
+          "EvaluateKnownConstIntCheckOverflow": {
+            "ms": 0.074,
+            "count": 295,
+            "avg ms": 0
+          },
+          "SpeculativeExecutionPass": {
+            "ms": 0.074,
+            "count": 127,
+            "avg ms": 0
+          },
+          "OuterAnalysisManagerProxy<AnalysisManager<Module>, LazyCallGraph::SCC, LazyCallGraph&>": {
+            "ms": 0.07,
+            "count": 127,
+            "avg ms": 0
+          },
+          "LoopAccessAnalysis": {
+            "ms": 0.055,
+            "count": 89,
+            "avg ms": 0
+          },
+          "InferFunctionAttrsPass": {
+            "ms": 0.054,
+            "count": 1,
+            "avg ms": 0
+          },
+          "EvaluateKnownConstInt": {
+            "ms": 0.047,
+            "count": 280,
+            "avg ms": 0
+          },
+          "PromotePass": {
+            "ms": 0.045,
+            "count": 158,
+            "avg ms": 0
+          },
+          "LoopSinkPass": {
+            "ms": 0.044,
+            "count": 89,
+            "avg ms": 0
+          },
+          "AlignmentFromAssumptionsPass": {
+            "ms": 0.042,
+            "count": 89,
+            "avg ms": 0
+          },
+          "EntryExitInstrumenterPass": {
+            "ms": 0.038,
+            "count": 165,
+            "avg ms": 0
+          },
+          "AnnotationRemarksPass": {
+            "ms": 0.023,
+            "count": 89,
+            "avg ms": 0
+          },
+          "CoroEarlyPass": {
+            "ms": 0.022,
+            "count": 1,
+            "avg ms": 0
+          },
+          "ShouldNotRunFunctionPassesAnalysis": {
+            "ms": 0.017,
+            "count": 127,
+            "avg ms": 0
+          },
+          "InvalidateAnalysisPass<AAManager>": {
+            "ms": 0.014,
+            "count": 130,
+            "avg ms": 0
+          },
+          "ShouldRunExtraVectorPasses": {
+            "ms": 0.013,
+            "count": 27,
+            "avg ms": 0
+          },
+          "PerformPendingInstantiations": {
+            "ms": 0.011,
+            "count": 1,
+            "avg ms": 0
+          },
+          "OpenMPOptPass": {
+            "ms": 0.011,
+            "count": 1,
+            "avg ms": 0
+          },
+          "RelLookupTableConverterPass": {
+            "ms": 0.002,
+            "count": 1,
+            "avg ms": 0
+          },
+          "Annotation2MetadataPass": {
+            "ms": 0.001,
+            "count": 1,
+            "avg ms": 0
+          },
+          "ConstantMergePass": {
+            "ms": 0.001,
+            "count": 1,
+            "avg ms": 0
+          },
+          "InnerAnalysisManagerProxy<AnalysisManager<Function>, Module>": {
+            "ms": 0.001,
+            "count": 4,
+            "avg ms": 0
+          },
+          "CoroCleanupPass": {
+            "ms": 0.001,
+            "count": 1,
+            "avg ms": 0
+          },
+          "EliminateAvailableExternallyPass": {
+            "ms": 0.001,
+            "count": 1,
+            "avg ms": 0
+          },
+          "ForceFunctionAttrsPass": {
+            "ms": 0.001,
+            "count": 1,
+            "avg ms": 0
+          },
+          "ProfileSummaryAnalysis": {
+            "ms": 0.001,
+            "count": 1,
+            "avg ms": 0
+          },
+          "RequireAnalysisPass<ProfileSummaryAnalysis, Module>": {
+            "ms": 0.0,
+            "count": 1,
+            "avg ms": 0
+          },
+          "ShouldRunExtraSimpleLoopUnswitch": {
+            "ms": 0.0,
+            "count": 1,
+            "avg ms": 0
+          },
+          "InlineAdvisorAnalysis": {
+            "ms": 0.0,
+            "count": 1,
+            "avg ms": 0
+          }
+        },
+        "largest_machine_codegen_functions": [
+          {
+            "function": "ZSTD_RowFindBestMatch_dedicatedDictSearch_5_6",
+            "ms": 14.81
+          },
+          {
+            "function": "ZSTD_compressBlock_lazy2_row",
+            "ms": 11.518
+          },
+          {
+            "function": "ZSTD_compressBlock_lazy_dictMatchState_row",
+            "ms": 11.414
+          },
+          {
+            "function": "ZSTD_compressBlock_lazy_dedicatedDictSearch_row",
+            "ms": 10.985
+          },
+          {
+            "function": "ZSTD_compressBlock_lazy_extDict_row",
+            "ms": 10.631
+          },
+          {
+            "function": "ZSTD_compressBlock_lazy_row",
+            "ms": 10.459
+          },
+          {
+            "function": "ZSTD_compressBlock_lazy_dictMatchState",
+            "ms": 9.508
+          },
+          {
+            "function": "ZSTD_RowFindBestMatch_dedicatedDictSearch_6_4",
+            "ms": 8.988
+          },
+          {
+            "function": "ZSTD_compressBlock_btlazy2",
+            "ms": 8.834
+          },
+          {
+            "function": "ZSTD_compressBlock_lazy_dedicatedDictSearch",
+            "ms": 8.732
+          },
+          {
+            "function": "ZSTD_RowFindBestMatch_dedicatedDictSearch_6_5",
+            "ms": 8.715
+          },
+          {
+            "function": "ZSTD_RowFindBestMatch_dedicatedDictSearch_4_4",
+            "ms": 8.615
+          }
+        ]
+      },
+      "trace_sha256": "af34ede905d731daccdb36507cff96c44d4dc156ec3dd92e768db0547ceabc90",
+      "trace_bytes": 10611201,
+      "optimized_ir_sha256": "4772de107e5f3ae74cdcfce043df01dde73616cbe6a709c167aa897ae26c0bcc"
+    },
+    {
+      "edit": "lazy_depth",
+      "policy": "O2",
+      "summary": {
+        "totals_inclusive_nonadditive": {
+          "ExecuteCompiler": {
+            "ms": 2356.686,
+            "count": 1,
+            "avg ms": 2356
+          },
+          "Backend": {
+            "ms": 2298.182,
+            "count": 1,
+            "avg ms": 2298
+          },
+          "Optimizer": {
+            "ms": 1295.615,
+            "count": 1,
+            "avg ms": 1295
+          },
+          "PassManager<Function>": {
+            "ms": 1187.926,
+            "count": 539,
+            "avg ms": 2
+          },
+          "CodeGenPasses": {
+            "ms": 1001.089,
+            "count": 1,
+            "avg ms": 1001
+          },
+          "OptModule": {
+            "ms": 1001.062,
+            "count": 1,
+            "avg ms": 1001
+          },
+          "OptFunction": {
+            "ms": 999.359,
+            "count": 89,
+            "avg ms": 11
+          },
+          "RunPass": {
+            "ms": 978.593,
+            "count": 17355,
+            "avg ms": 0
+          },
+          "ModuleInlinerWrapperPass": {
+            "ms": 811.483,
+            "count": 1,
+            "avg ms": 811
+          },
+          "ModuleToPostOrderCGSCCPassAdaptor": {
+            "ms": 808.869,
+            "count": 1,
+            "avg ms": 808
+          },
+          "DevirtSCCRepeatedPass": {
+            "ms": 805.842,
+            "count": 127,
+            "avg ms": 6
+          },
+          "PassManager<LazyCallGraph::SCC, AnalysisManager<LazyCallGraph::SCC, LazyCallGraph&>, LazyCallGraph&, CGSCCUpdateResult&>": {
+            "ms": 802.597,
+            "count": 127,
+            "avg ms": 6
+          },
+          "CGSCCToFunctionPassAdaptor": {
+            "ms": 746.434,
+            "count": 254,
+            "avg ms": 2
+          },
+          "ModuleToFunctionPassAdaptor": {
+            "ms": 444.734,
+            "count": 6,
+            "avg ms": 74
+          },
+          "FunctionToLoopPassAdaptor": {
+            "ms": 321.983,
+            "count": 559,
+            "avg ms": 0
+          },
+          "InstCombinePass": {
+            "ms": 297.287,
+            "count": 933,
+            "avg ms": 0
+          },
+          "PassManager<Loop, AnalysisManager<Loop, LoopStandardAnalysisResults&>, LoopStandardAnalysisResults&, LPMUpdater&>": {
+            "ms": 257.368,
+            "count": 1806,
+            "avg ms": 0
+          },
+          "RunLoopPass": {
+            "ms": 184.646,
+            "count": 1965,
+            "avg ms": 0
+          },
+          "GVNPass": {
+            "ms": 84.141,
+            "count": 127,
+            "avg ms": 0
+          },
+          "IndVarSimplifyPass": {
+            "ms": 81.334,
+            "count": 614,
+            "avg ms": 0
+          },
+          "LoopUnrollPass": {
+            "ms": 79.85,
+            "count": 89,
+            "avg ms": 0
+          },
+          "SLPVectorizerPass": {
+            "ms": 76.482,
+            "count": 89,
+            "avg ms": 0
+          },
+          "Frontend": {
+            "ms": 57.108,
+            "count": 2,
+            "avg ms": 28
+          },
+          "SimplifyCFGPass": {
+            "ms": 52.911,
+            "count": 1009,
+            "avg ms": 0
+          },
+          "LoopIdiomRecognizePass": {
+            "ms": 45.262,
+            "count": 614,
+            "avg ms": 0
+          },
+          "InlinerPass": {
+            "ms": 42.723,
+            "count": 127,
+            "avg ms": 0
+          },
+          "CorrelatedValuePropagationPass": {
+            "ms": 41.955,
+            "count": 254,
+            "avg ms": 0
+          },
+          "LoopDeletionPass": {
+            "ms": 41.73,
+            "count": 1177,
+            "avg ms": 0
+          },
+          "LICMPass": {
+            "ms": 40.511,
+            "count": 2483,
+            "avg ms": 0
+          },
+          "JumpThreadingPass": {
+            "ms": 39.47,
+            "count": 254,
+            "avg ms": 0
+          },
+          "ParseDeclarationOrFunctionDefinition": {
+            "ms": 38.027,
+            "count": 1341,
+            "avg ms": 0
+          },
+          "ParseFunctionDefinition": {
+            "ms": 29.552,
+            "count": 794,
+            "avg ms": 0
+          },
+          "EarlyCSEPass": {
+            "ms": 28.937,
+            "count": 292,
+            "avg ms": 0
+          },
+          "LoopRotatePass": {
+            "ms": 28.435,
+            "count": 1192,
+            "avg ms": 0
+          },
+          "LoopVectorizePass": {
+            "ms": 28.128,
+            "count": 89,
+            "avg ms": 0
+          },
+          "AlwaysInlinerPass": {
+            "ms": 21.277,
+            "count": 1,
+            "avg ms": 21
+          },
+          "MemorySSAAnalysis": {
+            "ms": 19.955,
+            "count": 420,
+            "avg ms": 0
+          },
+          "LoopFullUnrollPass": {
+            "ms": 19.918,
+            "count": 613,
+            "avg ms": 0
+          },
+          "SCCPPass": {
+            "ms": 16.648,
+            "count": 127,
+            "avg ms": 0
+          },
+          "LoopLoadEliminationPass": {
+            "ms": 16.349,
+            "count": 89,
+            "avg ms": 0
+          },
+          "BlockFrequencyAnalysis": {
+            "ms": 14.212,
+            "count": 302,
+            "avg ms": 0
+          },
+          "DSEPass": {
+            "ms": 13.137,
+            "count": 127,
+            "avg ms": 0
+          },
+          "LoopSimplifyPass": {
+            "ms": 12.129,
+            "count": 559,
+            "avg ms": 0
+          },
+          "ConstraintEliminationPass": {
+            "ms": 11.625,
+            "count": 127,
+            "avg ms": 0
+          },
+          "PostOrderFunctionAttrsPass": {
+            "ms": 11.436,
+            "count": 254,
+            "avg ms": 0
+          },
+          "BranchProbabilityAnalysis": {
+            "ms": 10.192,
+            "count": 302,
+            "avg ms": 0
+          },
+          "SROAPass": {
+            "ms": 10.13,
+            "count": 508,
+            "avg ms": 0
+          },
+          "CodeGen Function": {
+            "ms": 9.302,
+            "count": 165,
+            "avg ms": 0
+          },
+          "LoopAnalysis": {
+            "ms": 9.03,
+            "count": 803,
+            "avg ms": 0
+          },
+          "BDCEPass": {
+            "ms": 7.75,
+            "count": 127,
+            "avg ms": 0
+          },
+          "GlobalOptPass": {
+            "ms": 7.551,
+            "count": 2,
+            "avg ms": 3
+          },
+          "ReassociatePass": {
+            "ms": 7.094,
+            "count": 127,
+            "avg ms": 0
+          },
+          "ADCEPass": {
+            "ms": 6.973,
+            "count": 127,
+            "avg ms": 0
+          },
+          "LoopInstSimplifyPass": {
+            "ms": 6.876,
+            "count": 629,
+            "avg ms": 0
+          },
+          "InstSimplifyPass": {
+            "ms": 6.445,
+            "count": 89,
+            "avg ms": 0
+          },
+          "MemCpyOptPass": {
+            "ms": 6.276,
+            "count": 127,
+            "avg ms": 0
+          },
+          "DominatorTreeAnalysis": {
+            "ms": 6.165,
+            "count": 1145,
+            "avg ms": 0
+          },
+          "LCSSAPass": {
+            "ms": 5.865,
+            "count": 559,
+            "avg ms": 0
+          },
+          "AAManager": {
+            "ms": 4.296,
+            "count": 973,
+            "avg ms": 0
+          },
+          "ScalarEvolutionAnalysis": {
+            "ms": 4.048,
+            "count": 632,
+            "avg ms": 0
+          },
+          "VectorCombinePass": {
+            "ms": 3.777,
+            "count": 216,
+            "avg ms": 0
+          },
+          "InferAlignmentPass": {
+            "ms": 3.762,
+            "count": 178,
+            "avg ms": 0
+          },
+          "BuildCFG": {
+            "ms": 3.497,
+            "count": 328,
+            "avg ms": 0
+          },
+          "DropUnnecessaryAssumesPass": {
+            "ms": 3.319,
+            "count": 178,
+            "avg ms": 0
+          },
+          "TailCallElimPass": {
+            "ms": 3.166,
+            "count": 216,
+            "avg ms": 0
+          },
+          "AggressiveInstCombinePass": {
+            "ms": 2.97,
+            "count": 127,
+            "avg ms": 0
+          },
+          "PostDominatorTreeAnalysis": {
+            "ms": 2.873,
+            "count": 429,
+            "avg ms": 0
+          },
+          "AllocTokenPass": {
+            "ms": 2.708,
+            "count": 1,
+            "avg ms": 2
+          },
+          "LoopSimplifyCFGPass": {
+            "ms": 2.59,
+            "count": 629,
+            "avg ms": 0
+          },
+          "IPSCCPPass": {
+            "ms": 2.583,
+            "count": 1,
+            "avg ms": 2
+          },
+          "CallGraphAnalysis": {
+            "ms": 2.562,
+            "count": 2,
+            "avg ms": 1
+          },
+          "RequireAnalysisPass<GlobalsAA, Module>": {
+            "ms": 2.255,
+            "count": 1,
+            "avg ms": 2
+          },
+          "GlobalsAA": {
+            "ms": 2.252,
+            "count": 1,
+            "avg ms": 2
+          },
+          "Float2IntPass": {
+            "ms": 1.781,
+            "count": 89,
+            "avg ms": 0
+          },
+          "DeadArgumentEliminationPass": {
+            "ms": 1.46,
+            "count": 1,
+            "avg ms": 1
+          },
+          "TargetIRAnalysis": {
+            "ms": 1.314,
+            "count": 381,
+            "avg ms": 0
+          },
+          "BasicAA": {
+            "ms": 1.257,
+            "count": 973,
+            "avg ms": 0
+          },
+          "CalledValuePropagationPass": {
+            "ms": 1.229,
+            "count": 1,
+            "avg ms": 1
+          },
+          "EvaluateAsRValue": {
+            "ms": 1.168,
+            "count": 5476,
+            "avg ms": 0
+          },
+          "ReversePostOrderFunctionAttrsPass": {
+            "ms": 1.085,
+            "count": 1,
+            "avg ms": 1
+          },
+          "EvaluateForOverflow": {
+            "ms": 0.955,
+            "count": 1265,
+            "avg ms": 0
+          },
+          "EvaluateAsBooleanCondition": {
+            "ms": 0.802,
+            "count": 1050,
+            "avg ms": 0
+          },
+          "AssumptionAnalysis": {
+            "ms": 0.7,
+            "count": 381,
+            "avg ms": 0
+          },
+          "InjectTLIMappings": {
+            "ms": 0.67,
+            "count": 89,
+            "avg ms": 0
+          },
+          "LowerConstantIntrinsicsPass": {
+            "ms": 0.646,
+            "count": 89,
+            "avg ms": 0
+          },
+          "SimpleLoopUnswitchPass": {
+            "ms": 0.634,
+            "count": 630,
+            "avg ms": 0
+          },
+          "LoopDistributePass": {
+            "ms": 0.628,
+            "count": 89,
+            "avg ms": 0
+          },
+          "RecomputeGlobalsAAPass": {
+            "ms": 0.585,
+            "count": 1,
+            "avg ms": 0
+          },
+          "EvaluateAsInt": {
+            "ms": 0.524,
+            "count": 1483,
+            "avg ms": 0
+          },
+          "MemProfRemoveInfo": {
+            "ms": 0.473,
+            "count": 1,
+            "avg ms": 0
+          },
+          "DivRemPairsPass": {
+            "ms": 0.438,
+            "count": 89,
+            "avg ms": 0
+          },
+          "LowerExpectIntrinsicPass": {
+            "ms": 0.411,
+            "count": 165,
+            "avg ms": 0
+          },
+          "WarnMissedTransformationsPass": {
+            "ms": 0.389,
+            "count": 89,
+            "avg ms": 0
+          },
+          "LibCallsShrinkWrapPass": {
+            "ms": 0.328,
+            "count": 127,
+            "avg ms": 0
+          },
+          "GlobalDCEPass": {
+            "ms": 0.298,
+            "count": 2,
+            "avg ms": 0
+          },
+          "FunctionAnalysisManagerCGSCCProxy": {
+            "ms": 0.289,
+            "count": 127,
+            "avg ms": 0
+          },
+          "ExtraLoopPassManager<ShouldRunExtraSimpleLoopUnswitch>": {
+            "ms": 0.285,
+            "count": 614,
+            "avg ms": 0
+          },
+          "RequireAnalysisPass<ShouldNotRunFunctionPassesAnalysis, Function>": {
+            "ms": 0.246,
+            "count": 127,
+            "avg ms": 0
+          },
+          "LazyCallGraphAnalysis": {
+            "ms": 0.245,
+            "count": 2,
+            "avg ms": 0
+          },
+          "EvaluateAsInitializer": {
+            "ms": 0.237,
+            "count": 411,
+            "avg ms": 0
+          },
+          "LastRunTrackingAnalysis": {
+            "ms": 0.228,
+            "count": 856,
+            "avg ms": 0
+          },
+          "CoroAnnotationElidePass": {
+            "ms": 0.199,
+            "count": 127,
+            "avg ms": 0
+          },
+          "MemoryDependenceAnalysis": {
+            "ms": 0.198,
+            "count": 127,
+            "avg ms": 0
+          },
+          "DemandedBitsAnalysis": {
+            "ms": 0.194,
+            "count": 305,
+            "avg ms": 0
+          },
+          "CGProfilePass": {
+            "ms": 0.182,
+            "count": 1,
+            "avg ms": 0
+          },
+          "InnerAnalysisManagerProxy<AnalysisManager<Loop, LoopStandardAnalysisResults&>, Function>": {
+            "ms": 0.177,
+            "count": 460,
+            "avg ms": 0
+          },
+          "MergedLoadStoreMotionPass": {
+            "ms": 0.161,
+            "count": 127,
+            "avg ms": 0
+          },
+          "MoveAutoInitPass": {
+            "ms": 0.146,
+            "count": 127,
+            "avg ms": 0
+          },
+          "LazyValueAnalysis": {
+            "ms": 0.142,
+            "count": 254,
+            "avg ms": 0
+          },
+          "InnerAnalysisManagerProxy<AnalysisManager<LazyCallGraph::SCC, LazyCallGraph&>, Module>": {
+            "ms": 0.139,
+            "count": 1,
+            "avg ms": 0
+          },
+          "OptimizationRemarkEmitterAnalysis": {
+            "ms": 0.13,
+            "count": 374,
+            "avg ms": 0
+          },
+          "OuterAnalysisManagerProxy<AnalysisManager<Module>, Function>": {
+            "ms": 0.124,
+            "count": 374,
+            "avg ms": 0
+          },
+          "AssignmentTrackingPass": {
+            "ms": 0.122,
+            "count": 1,
+            "avg ms": 0
+          },
+          "isIntegerConstantExpr": {
+            "ms": 0.118,
+            "count": 2439,
+            "avg ms": 0
+          },
+          "OpenMPOptCGSCCPass": {
+            "ms": 0.105,
+            "count": 127,
+            "avg ms": 0
+          },
+          "CoroElidePass": {
+            "ms": 0.103,
+            "count": 127,
+            "avg ms": 0
+          },
+          "CoroSplitPass": {
+            "ms": 0.098,
+            "count": 127,
+            "avg ms": 0
+          },
+          "EphemeralValuesAnalysis": {
+            "ms": 0.094,
+            "count": 147,
+            "avg ms": 0
+          },
+          "OuterAnalysisManagerProxy<AnalysisManager<Module>, LazyCallGraph::SCC, LazyCallGraph&>": {
+            "ms": 0.093,
+            "count": 127,
+            "avg ms": 0
+          },
+          "TargetLibraryAnalysis": {
+            "ms": 0.09,
+            "count": 397,
+            "avg ms": 0
+          },
+          "ScopedNoAliasAA": {
+            "ms": 0.088,
+            "count": 374,
+            "avg ms": 0
+          },
+          "InvalidateAnalysisPass<ShouldNotRunFunctionPassesAnalysis>": {
+            "ms": 0.088,
+            "count": 93,
+            "avg ms": 0
+          },
+          "TypeBasedAA": {
+            "ms": 0.083,
+            "count": 374,
+            "avg ms": 0
+          },
+          "SpeculativeExecutionPass": {
+            "ms": 0.082,
+            "count": 127,
+            "avg ms": 0
+          },
+          "LoopAccessAnalysis": {
+            "ms": 0.077,
+            "count": 89,
+            "avg ms": 0
+          },
+          "EvaluateKnownConstIntCheckOverflow": {
+            "ms": 0.077,
+            "count": 295,
+            "avg ms": 0
+          },
+          "AlignmentFromAssumptionsPass": {
+            "ms": 0.063,
+            "count": 89,
+            "avg ms": 0
+          },
+          "LoopSinkPass": {
+            "ms": 0.057,
+            "count": 89,
+            "avg ms": 0
+          },
+          "PromotePass": {
+            "ms": 0.054,
+            "count": 158,
+            "avg ms": 0
+          },
+          "InferFunctionAttrsPass": {
+            "ms": 0.036,
+            "count": 1,
+            "avg ms": 0
+          },
+          "EvaluateKnownConstInt": {
+            "ms": 0.031,
+            "count": 280,
+            "avg ms": 0
+          },
+          "EntryExitInstrumenterPass": {
+            "ms": 0.026,
+            "count": 165,
+            "avg ms": 0
+          },
+          "AnnotationRemarksPass": {
+            "ms": 0.026,
+            "count": 89,
+            "avg ms": 0
+          },
+          "ShouldNotRunFunctionPassesAnalysis": {
+            "ms": 0.019,
+            "count": 127,
+            "avg ms": 0
+          },
+          "CoroEarlyPass": {
+            "ms": 0.015,
+            "count": 1,
+            "avg ms": 0
+          },
+          "ShouldRunExtraVectorPasses": {
+            "ms": 0.01,
+            "count": 27,
+            "avg ms": 0
+          },
+          "InvalidateAnalysisPass<AAManager>": {
+            "ms": 0.009,
+            "count": 130,
+            "avg ms": 0
+          },
+          "OpenMPOptPass": {
+            "ms": 0.006,
+            "count": 1,
+            "avg ms": 0
+          },
+          "PerformPendingInstantiations": {
+            "ms": 0.005,
+            "count": 1,
+            "avg ms": 0
+          },
+          "RelLookupTableConverterPass": {
+            "ms": 0.003,
+            "count": 1,
+            "avg ms": 0
+          },
+          "ConstantMergePass": {
+            "ms": 0.001,
+            "count": 1,
+            "avg ms": 0
+          },
+          "CoroCleanupPass": {
+            "ms": 0.001,
+            "count": 1,
+            "avg ms": 0
+          },
+          "Annotation2MetadataPass": {
+            "ms": 0.001,
+            "count": 1,
+            "avg ms": 0
+          },
+          "ProfileSummaryAnalysis": {
+            "ms": 0.001,
+            "count": 1,
+            "avg ms": 0
+          },
+          "EliminateAvailableExternallyPass": {
+            "ms": 0.001,
+            "count": 1,
+            "avg ms": 0
+          },
+          "InnerAnalysisManagerProxy<AnalysisManager<Function>, Module>": {
+            "ms": 0.001,
+            "count": 4,
+            "avg ms": 0
+          },
+          "ForceFunctionAttrsPass": {
+            "ms": 0.001,
+            "count": 1,
+            "avg ms": 0
+          },
+          "RequireAnalysisPass<ProfileSummaryAnalysis, Module>": {
+            "ms": 0.0,
+            "count": 1,
+            "avg ms": 0
+          },
+          "ShouldRunExtraSimpleLoopUnswitch": {
+            "ms": 0.0,
+            "count": 1,
+            "avg ms": 0
+          },
+          "InlineAdvisorAnalysis": {
+            "ms": 0.0,
+            "count": 1,
+            "avg ms": 0
+          }
+        },
+        "largest_machine_codegen_functions": [
+          {
+            "function": "ZSTD_compressBlock_lazy2_row",
+            "ms": 21.911
+          },
+          {
+            "function": "ZSTD_compressBlock_greedy_row",
+            "ms": 21.595
+          },
+          {
+            "function": "ZSTD_compressBlock_lazy_dictMatchState_row",
+            "ms": 19.747
+          },
+          {
+            "function": "ZSTD_compressBlock_lazy_row",
+            "ms": 19.721
+          },
+          {
+            "function": "ZSTD_compressBlock_lazy_dedicatedDictSearch_row",
+            "ms": 19.59
+          },
+          {
+            "function": "ZSTD_RowFindBestMatch_dictMatchState_6_5",
+            "ms": 19.352
+          },
+          {
+            "function": "ZSTD_compressBlock_lazy_extDict_row",
+            "ms": 18.669
+          },
+          {
+            "function": "ZSTD_compressBlock_lazy2_extDict_row",
+            "ms": 18.48
+          },
+          {
+            "function": "ZSTD_RowFindBestMatch_dictMatchState_5_5",
+            "ms": 18.467
+          },
+          {
+            "function": "ZSTD_RowFindBestMatch_dictMatchState_4_5",
+            "ms": 18.343
+          },
+          {
+            "function": "ZSTD_compressBlock_lazy2_dictMatchState_row",
+            "ms": 17.836
+          },
+          {
+            "function": "ZSTD_RowFindBestMatch_dictMatchState_5_4",
+            "ms": 17.777
+          }
+        ]
+      },
+      "trace_sha256": "152b4853ff7e5383595a46cd1ad365e278dae2b57696b35e11433a2e4afe87e4",
+      "trace_bytes": 10874124,
+      "optimized_ir_sha256": "b9412e775b87dad87d71ac0ae6eefda119899883d441c60b8f069290b5114f8b"
+    },
+    {
+      "edit": "lazy_depth",
+      "policy": "O2_fast_machine",
+      "summary": {
+        "totals_inclusive_nonadditive": {
+          "ExecuteCompiler": {
+            "ms": 2397.965,
+            "count": 1,
+            "avg ms": 2397
+          },
+          "Backend": {
+            "ms": 2308.83,
+            "count": 1,
+            "avg ms": 2308
+          },
+          "Optimizer": {
+            "ms": 1786.382,
+            "count": 1,
+            "avg ms": 1786
+          },
+          "PassManager<Function>": {
+            "ms": 1572.337,
+            "count": 539,
+            "avg ms": 2
+          },
+          "ModuleInlinerWrapperPass": {
+            "ms": 1163.92,
+            "count": 1,
+            "avg ms": 1163
+          },
+          "ModuleToPostOrderCGSCCPassAdaptor": {
+            "ms": 1156.898,
+            "count": 1,
+            "avg ms": 1156
+          },
+          "DevirtSCCRepeatedPass": {
+            "ms": 1150.174,
+            "count": 127,
+            "avg ms": 9
+          },
+          "PassManager<LazyCallGraph::SCC, AnalysisManager<LazyCallGraph::SCC, LazyCallGraph&>, LazyCallGraph&, CGSCCUpdateResult&>": {
+            "ms": 1145.724,
+            "count": 127,
+            "avg ms": 9
+          },
+          "CGSCCToFunctionPassAdaptor": {
+            "ms": 1062.026,
+            "count": 254,
+            "avg ms": 4
+          },
+          "CodeGenPasses": {
+            "ms": 520.953,
+            "count": 1,
+            "avg ms": 520
+          },
+          "OptModule": {
+            "ms": 520.926,
+            "count": 1,
+            "avg ms": 520
+          },
+          "OptFunction": {
+            "ms": 519.135,
+            "count": 89,
+            "avg ms": 5
+          },
+          "ModuleToFunctionPassAdaptor": {
+            "ms": 515.037,
+            "count": 6,
+            "avg ms": 85
+          },
+          "RunPass": {
+            "ms": 500.98,
+            "count": 15041,
+            "avg ms": 0
+          },
+          "FunctionToLoopPassAdaptor": {
+            "ms": 425.48,
+            "count": 559,
+            "avg ms": 0
+          },
+          "InstCombinePass": {
+            "ms": 394.816,
+            "count": 933,
+            "avg ms": 0
+          },
+          "PassManager<Loop, AnalysisManager<Loop, LoopStandardAnalysisResults&>, LoopStandardAnalysisResults&, LPMUpdater&>": {
+            "ms": 341.198,
+            "count": 1806,
+            "avg ms": 0
+          },
+          "RunLoopPass": {
+            "ms": 168.081,
+            "count": 1965,
+            "avg ms": 0
+          },
+          "GVNPass": {
+            "ms": 128.377,
+            "count": 127,
+            "avg ms": 1
+          },
+          "IndVarSimplifyPass": {
+            "ms": 110.764,
+            "count": 614,
+            "avg ms": 0
+          },
+          "LoopUnrollPass": {
+            "ms": 88.452,
+            "count": 89,
+            "avg ms": 0
+          },
+          "Frontend": {
+            "ms": 87.578,
+            "count": 2,
+            "avg ms": 43
+          },
+          "SLPVectorizerPass": {
+            "ms": 86.501,
+            "count": 89,
+            "avg ms": 0
+          },
+          "SimplifyCFGPass": {
+            "ms": 72.039,
+            "count": 1009,
+            "avg ms": 0
+          },
+          "AlwaysInlinerPass": {
+            "ms": 70.558,
+            "count": 1,
+            "avg ms": 70
+          },
+          "InlinerPass": {
+            "ms": 63.285,
+            "count": 127,
+            "avg ms": 0
+          },
+          "LoopIdiomRecognizePass": {
+            "ms": 60.948,
+            "count": 614,
+            "avg ms": 0
+          },
+          "CorrelatedValuePropagationPass": {
+            "ms": 59.454,
+            "count": 254,
+            "avg ms": 0
+          },
+          "ParseDeclarationOrFunctionDefinition": {
+            "ms": 55.163,
+            "count": 1341,
+            "avg ms": 0
+          },
+          "JumpThreadingPass": {
+            "ms": 54.417,
+            "count": 254,
+            "avg ms": 0
+          },
+          "LICMPass": {
+            "ms": 52.438,
+            "count": 2483,
+            "avg ms": 0
+          },
+          "LoopDeletionPass": {
+            "ms": 47.387,
+            "count": 1177,
+            "avg ms": 0
+          },
+          "EarlyCSEPass": {
+            "ms": 42.359,
+            "count": 292,
+            "avg ms": 0
+          },
+          "ParseFunctionDefinition": {
+            "ms": 41.961,
+            "count": 794,
+            "avg ms": 0
+          },
+          "LoopRotatePass": {
+            "ms": 38.851,
+            "count": 1192,
+            "avg ms": 0
+          },
+          "LoopVectorizePass": {
+            "ms": 31.269,
+            "count": 89,
+            "avg ms": 0
+          },
+          "LoopFullUnrollPass": {
+            "ms": 27.475,
+            "count": 613,
+            "avg ms": 0
+          },
+          "MemorySSAAnalysis": {
+            "ms": 27.323,
+            "count": 420,
+            "avg ms": 0
+          },
+          "SCCPPass": {
+            "ms": 23.542,
+            "count": 127,
+            "avg ms": 0
+          },
+          "BlockFrequencyAnalysis": {
+            "ms": 20.353,
+            "count": 302,
+            "avg ms": 0
+          },
+          "LoopLoadEliminationPass": {
+            "ms": 19.724,
+            "count": 89,
+            "avg ms": 0
+          },
+          "CodeGen Function": {
+            "ms": 19.145,
+            "count": 165,
+            "avg ms": 0
+          },
+          "SROAPass": {
+            "ms": 17.413,
+            "count": 508,
+            "avg ms": 0
+          },
+          "DSEPass": {
+            "ms": 17.0,
+            "count": 127,
+            "avg ms": 0
+          },
+          "PostOrderFunctionAttrsPass": {
+            "ms": 16.702,
+            "count": 254,
+            "avg ms": 0
+          },
+          "ConstraintEliminationPass": {
+            "ms": 16.66,
+            "count": 127,
+            "avg ms": 0
+          },
+          "LoopSimplifyPass": {
+            "ms": 16.207,
+            "count": 559,
+            "avg ms": 0
+          },
+          "BranchProbabilityAnalysis": {
+            "ms": 14.608,
+            "count": 302,
+            "avg ms": 0
+          },
+          "GlobalOptPass": {
+            "ms": 14.205,
+            "count": 2,
+            "avg ms": 7
+          },
+          "ReassociatePass": {
+            "ms": 13.173,
+            "count": 127,
+            "avg ms": 0
+          },
+          "LoopAnalysis": {
+            "ms": 12.257,
+            "count": 803,
+            "avg ms": 0
+          },
+          "BDCEPass": {
+            "ms": 10.338,
+            "count": 127,
+            "avg ms": 0
+          },
+          "LoopInstSimplifyPass": {
+            "ms": 9.78,
+            "count": 629,
+            "avg ms": 0
+          },
+          "ADCEPass": {
+            "ms": 9.092,
+            "count": 127,
+            "avg ms": 0
+          },
+          "MemCpyOptPass": {
+            "ms": 8.972,
+            "count": 127,
+            "avg ms": 0
+          },
+          "IPSCCPPass": {
+            "ms": 8.831,
+            "count": 1,
+            "avg ms": 8
+          },
+          "DominatorTreeAnalysis": {
+            "ms": 8.465,
+            "count": 1145,
+            "avg ms": 0
+          },
+          "InstSimplifyPass": {
+            "ms": 7.762,
+            "count": 89,
+            "avg ms": 0
+          },
+          "LCSSAPass": {
+            "ms": 7.515,
+            "count": 559,
+            "avg ms": 0
+          },
+          "CallGraphAnalysis": {
+            "ms": 7.503,
+            "count": 2,
+            "avg ms": 3
+          },
+          "AAManager": {
+            "ms": 6.748,
+            "count": 973,
+            "avg ms": 0
+          },
+          "RequireAnalysisPass<GlobalsAA, Module>": {
+            "ms": 6.466,
+            "count": 1,
+            "avg ms": 6
+          },
+          "GlobalsAA": {
+            "ms": 6.458,
+            "count": 1,
+            "avg ms": 6
+          },
+          "ScalarEvolutionAnalysis": {
+            "ms": 4.973,
+            "count": 632,
+            "avg ms": 0
+          },
+          "VectorCombinePass": {
+            "ms": 4.622,
+            "count": 216,
+            "avg ms": 0
+          },
+          "BuildCFG": {
+            "ms": 4.327,
+            "count": 328,
+            "avg ms": 0
+          },
+          "InferAlignmentPass": {
+            "ms": 4.28,
+            "count": 178,
+            "avg ms": 0
+          },
+          "PostDominatorTreeAnalysis": {
+            "ms": 4.086,
+            "count": 429,
+            "avg ms": 0
+          },
+          "AggressiveInstCombinePass": {
+            "ms": 4.041,
+            "count": 127,
+            "avg ms": 0
+          },
+          "TailCallElimPass": {
+            "ms": 3.855,
+            "count": 216,
+            "avg ms": 0
+          },
+          "CalledValuePropagationPass": {
+            "ms": 3.606,
+            "count": 1,
+            "avg ms": 3
+          },
+          "LoopSimplifyCFGPass": {
+            "ms": 3.435,
+            "count": 629,
+            "avg ms": 0
+          },
+          "DropUnnecessaryAssumesPass": {
+            "ms": 3.249,
+            "count": 178,
+            "avg ms": 0
+          },
+          "ReversePostOrderFunctionAttrsPass": {
+            "ms": 2.545,
+            "count": 1,
+            "avg ms": 2
+          },
+          "AllocTokenPass": {
+            "ms": 2.443,
+            "count": 1,
+            "avg ms": 2
+          },
+          "RecomputeGlobalsAAPass": {
+            "ms": 2.207,
+            "count": 1,
+            "avg ms": 2
+          },
+          "EvaluateAsRValue": {
+            "ms": 2.047,
+            "count": 5476,
+            "avg ms": 0
+          },
+          "BasicAA": {
+            "ms": 2.039,
+            "count": 973,
+            "avg ms": 0
+          },
+          "Float2IntPass": {
+            "ms": 1.919,
+            "count": 89,
+            "avg ms": 0
+          },
+          "TargetIRAnalysis": {
+            "ms": 1.889,
+            "count": 381,
+            "avg ms": 0
+          },
+          "DeadArgumentEliminationPass": {
+            "ms": 1.719,
+            "count": 1,
+            "avg ms": 1
+          },
+          "EvaluateForOverflow": {
+            "ms": 1.252,
+            "count": 1265,
+            "avg ms": 0
+          },
+          "EvaluateAsBooleanCondition": {
+            "ms": 1.066,
+            "count": 1050,
+            "avg ms": 0
+          },
+          "AssumptionAnalysis": {
+            "ms": 1.026,
+            "count": 381,
+            "avg ms": 0
+          },
+          "EvaluateAsInt": {
+            "ms": 0.912,
+            "count": 1483,
+            "avg ms": 0
+          },
+          "SimpleLoopUnswitchPass": {
+            "ms": 0.898,
+            "count": 630,
+            "avg ms": 0
+          },
+          "LowerExpectIntrinsicPass": {
+            "ms": 0.854,
+            "count": 165,
+            "avg ms": 0
+          },
+          "InjectTLIMappings": {
+            "ms": 0.705,
+            "count": 89,
+            "avg ms": 0
+          },
+          "LowerConstantIntrinsicsPass": {
+            "ms": 0.681,
+            "count": 89,
+            "avg ms": 0
+          },
+          "LoopDistributePass": {
+            "ms": 0.631,
+            "count": 89,
+            "avg ms": 0
+          },
+          "MemProfRemoveInfo": {
+            "ms": 0.63,
+            "count": 1,
+            "avg ms": 0
+          },
+          "LazyCallGraphAnalysis": {
+            "ms": 0.519,
+            "count": 2,
+            "avg ms": 0
+          },
+          "FunctionAnalysisManagerCGSCCProxy": {
+            "ms": 0.447,
+            "count": 127,
+            "avg ms": 0
+          },
+          "LibCallsShrinkWrapPass": {
+            "ms": 0.435,
+            "count": 127,
+            "avg ms": 0
+          },
+          "WarnMissedTransformationsPass": {
+            "ms": 0.427,
+            "count": 89,
+            "avg ms": 0
+          },
+          "LastRunTrackingAnalysis": {
+            "ms": 0.407,
+            "count": 856,
+            "avg ms": 0
+          },
+          "ExtraLoopPassManager<ShouldRunExtraSimpleLoopUnswitch>": {
+            "ms": 0.388,
+            "count": 614,
+            "avg ms": 0
+          },
+          "GlobalDCEPass": {
+            "ms": 0.387,
+            "count": 2,
+            "avg ms": 0
+          },
+          "RequireAnalysisPass<ShouldNotRunFunctionPassesAnalysis, Function>": {
+            "ms": 0.37,
+            "count": 127,
+            "avg ms": 0
+          },
+          "EvaluateAsInitializer": {
+            "ms": 0.366,
+            "count": 411,
+            "avg ms": 0
+          },
+          "InnerAnalysisManagerProxy<AnalysisManager<LazyCallGraph::SCC, LazyCallGraph&>, Module>": {
+            "ms": 0.363,
+            "count": 1,
+            "avg ms": 0
+          },
+          "DivRemPairsPass": {
+            "ms": 0.354,
+            "count": 89,
+            "avg ms": 0
+          },
+          "AssignmentTrackingPass": {
+            "ms": 0.347,
+            "count": 1,
+            "avg ms": 0
+          },
+          "CoroAnnotationElidePass": {
+            "ms": 0.326,
+            "count": 127,
+            "avg ms": 0
+          },
+          "MemoryDependenceAnalysis": {
+            "ms": 0.299,
+            "count": 127,
+            "avg ms": 0
+          },
+          "LazyValueAnalysis": {
+            "ms": 0.297,
+            "count": 254,
+            "avg ms": 0
+          },
+          "InnerAnalysisManagerProxy<AnalysisManager<Loop, LoopStandardAnalysisResults&>, Function>": {
+            "ms": 0.27,
+            "count": 460,
+            "avg ms": 0
+          },
+          "MoveAutoInitPass": {
+            "ms": 0.246,
+            "count": 127,
+            "avg ms": 0
+          },
+          "DemandedBitsAnalysis": {
+            "ms": 0.241,
+            "count": 305,
+            "avg ms": 0
+          },
+          "TargetLibraryAnalysis": {
+            "ms": 0.222,
+            "count": 397,
+            "avg ms": 0
+          },
+          "MergedLoadStoreMotionPass": {
+            "ms": 0.219,
+            "count": 127,
+            "avg ms": 0
+          },
+          "OuterAnalysisManagerProxy<AnalysisManager<Module>, Function>": {
+            "ms": 0.204,
+            "count": 374,
+            "avg ms": 0
+          },
+          "OptimizationRemarkEmitterAnalysis": {
+            "ms": 0.178,
+            "count": 374,
+            "avg ms": 0
+          },
+          "CGProfilePass": {
+            "ms": 0.177,
+            "count": 1,
+            "avg ms": 0
+          },
+          "OpenMPOptCGSCCPass": {
+            "ms": 0.172,
+            "count": 127,
+            "avg ms": 0
+          },
+          "CoroElidePass": {
+            "ms": 0.17,
+            "count": 127,
+            "avg ms": 0
+          },
+          "EphemeralValuesAnalysis": {
+            "ms": 0.169,
+            "count": 147,
+            "avg ms": 0
+          },
+          "isIntegerConstantExpr": {
+            "ms": 0.166,
+            "count": 2439,
+            "avg ms": 0
+          },
+          "PromotePass": {
+            "ms": 0.165,
+            "count": 158,
+            "avg ms": 0
+          },
+          "CoroSplitPass": {
+            "ms": 0.161,
+            "count": 127,
+            "avg ms": 0
+          },
+          "ScopedNoAliasAA": {
+            "ms": 0.133,
+            "count": 374,
+            "avg ms": 0
+          },
+          "OuterAnalysisManagerProxy<AnalysisManager<Module>, LazyCallGraph::SCC, LazyCallGraph&>": {
+            "ms": 0.133,
+            "count": 127,
+            "avg ms": 0
+          },
+          "SpeculativeExecutionPass": {
+            "ms": 0.128,
+            "count": 127,
+            "avg ms": 0
+          },
+          "TypeBasedAA": {
+            "ms": 0.126,
+            "count": 374,
+            "avg ms": 0
+          },
+          "EvaluateKnownConstIntCheckOverflow": {
+            "ms": 0.107,
+            "count": 295,
+            "avg ms": 0
+          },
+          "LoopAccessAnalysis": {
+            "ms": 0.085,
+            "count": 89,
+            "avg ms": 0
+          },
+          "InvalidateAnalysisPass<ShouldNotRunFunctionPassesAnalysis>": {
+            "ms": 0.08,
+            "count": 93,
+            "avg ms": 0
+          },
+          "EvaluateKnownConstInt": {
+            "ms": 0.064,
+            "count": 280,
+            "avg ms": 0
+          },
+          "EntryExitInstrumenterPass": {
+            "ms": 0.063,
+            "count": 165,
+            "avg ms": 0
+          },
+          "LoopSinkPass": {
+            "ms": 0.059,
+            "count": 89,
+            "avg ms": 0
+          },
+          "AlignmentFromAssumptionsPass": {
+            "ms": 0.057,
+            "count": 89,
+            "avg ms": 0
+          },
+          "InferFunctionAttrsPass": {
+            "ms": 0.046,
+            "count": 1,
+            "avg ms": 0
+          },
+          "InvalidateAnalysisPass<AAManager>": {
+            "ms": 0.035,
+            "count": 130,
+            "avg ms": 0
+          },
+          "ShouldNotRunFunctionPassesAnalysis": {
+            "ms": 0.034,
+            "count": 127,
+            "avg ms": 0
+          },
+          "AnnotationRemarksPass": {
+            "ms": 0.023,
+            "count": 89,
+            "avg ms": 0
+          },
+          "CoroEarlyPass": {
+            "ms": 0.018,
+            "count": 1,
+            "avg ms": 0
+          },
+          "OpenMPOptPass": {
+            "ms": 0.016,
+            "count": 1,
+            "avg ms": 0
+          },
+          "ShouldRunExtraVectorPasses": {
+            "ms": 0.014,
+            "count": 27,
+            "avg ms": 0
+          },
+          "PerformPendingInstantiations": {
+            "ms": 0.009,
+            "count": 1,
+            "avg ms": 0
+          },
+          "RelLookupTableConverterPass": {
+            "ms": 0.002,
+            "count": 1,
+            "avg ms": 0
+          },
+          "ProfileSummaryAnalysis": {
+            "ms": 0.002,
+            "count": 1,
+            "avg ms": 0
+          },
+          "Annotation2MetadataPass": {
+            "ms": 0.002,
+            "count": 1,
+            "avg ms": 0
+          },
+          "CoroCleanupPass": {
+            "ms": 0.002,
+            "count": 1,
+            "avg ms": 0
+          },
+          "InnerAnalysisManagerProxy<AnalysisManager<Function>, Module>": {
+            "ms": 0.002,
+            "count": 4,
+            "avg ms": 0
+          },
+          "ConstantMergePass": {
+            "ms": 0.001,
+            "count": 1,
+            "avg ms": 0
+          },
+          "EliminateAvailableExternallyPass": {
+            "ms": 0.001,
+            "count": 1,
+            "avg ms": 0
+          },
+          "InlineAdvisorAnalysis": {
+            "ms": 0.001,
+            "count": 1,
+            "avg ms": 0
+          },
+          "ForceFunctionAttrsPass": {
+            "ms": 0.001,
+            "count": 1,
+            "avg ms": 0
+          },
+          "RequireAnalysisPass<ProfileSummaryAnalysis, Module>": {
+            "ms": 0.001,
+            "count": 1,
+            "avg ms": 0
+          },
+          "ShouldRunExtraSimpleLoopUnswitch": {
+            "ms": 0.0,
+            "count": 1,
+            "avg ms": 0
+          }
+        },
+        "largest_machine_codegen_functions": [
+          {
+            "function": "ZSTD_RowFindBestMatch_dedicatedDictSearch_5_6",
+            "ms": 14.452
+          },
+          {
+            "function": "ZSTD_compressBlock_lazy2_row",
+            "ms": 11.907
+          },
+          {
+            "function": "ZSTD_compressBlock_lazy_dedicatedDictSearch_row",
+            "ms": 11.0
+          },
+          {
+            "function": "ZSTD_compressBlock_lazy_extDict_row",
+            "ms": 10.932
+          },
+          {
+            "function": "ZSTD_compressBlock_lazy_dictMatchState_row",
+            "ms": 10.924
+          },
+          {
+            "function": "ZSTD_RowFindBestMatch_dedicatedDictSearch_4_5",
+            "ms": 10.207
+          },
+          {
+            "function": "ZSTD_compressBlock_lazy_row",
+            "ms": 10.153
+          },
+          {
+            "function": "ZSTD_compressBlock_lazy_dictMatchState",
+            "ms": 9.74
+          },
+          {
+            "function": "ZSTD_compressBlock_lazy2_extDict_row",
+            "ms": 9.229
+          },
+          {
+            "function": "ZSTD_compressBlock_lazy",
+            "ms": 9.19
+          },
+          {
+            "function": "ZSTD_compressBlock_lazy2",
+            "ms": 9.116
+          },
+          {
+            "function": "ZSTD_compressBlock_greedy_row",
+            "ms": 9.028
+          }
+        ]
+      },
+      "trace_sha256": "13a6e546ef2675ab81cba9d52c20053fb97937f4a26e1ef713f7088f87880983",
+      "trace_bytes": 10622761,
+      "optimized_ir_sha256": "b9412e775b87dad87d71ac0ae6eefda119899883d441c60b8f069290b5114f8b"
+    }
+  ]
+}

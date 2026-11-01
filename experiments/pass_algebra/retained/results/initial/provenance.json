@@ -1,0 +1,178 @@
+{
+  "build": {
+    "kernel_and_original_adapter": {
+      "commands": [
+        [
+          "/opt/odin/nightly/odin",
+          "build",
+          "/tmp/gaia-substrate-connections/experiments/pass_algebra/liveness.odin",
+          "-file",
+          "-build-mode:obj",
+          "-reloc-mode:pic",
+          "-o:speed",
+          "-microarch:native",
+          "-out:/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/retained-tools/liveness.o"
+        ],
+        [
+          "/usr/lib/llvm22/bin/clang++",
+          "-shared",
+          "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/retained-tools/liveness.o",
+          "-o",
+          "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/retained-tools/liveness.so",
+          "-lm"
+        ],
+        [
+          "/usr/lib/llvm22/bin/clang++",
+          "-O3",
+          "-std=c++17",
+          "-march=native",
+          "-I/root/source/gaia/experiments/compiler/_work/toolchain/usr/lib/llvm22/include",
+          "/tmp/gaia-substrate-connections/experiments/pass_algebra/host.cpp",
+          "-L/usr/lib/llvm22/lib",
+          "-Wl,-rpath,/usr/lib/llvm22/lib",
+          "-lLLVM-22",
+          "-ldl",
+          "-o",
+          "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/retained-tools/liveness-host"
+        ]
+      ],
+      "ns": 4006231231,
+      "inputs_sha256": {
+        "/tmp/gaia-substrate-connections/experiments/pass_algebra/build.py": "51718ed76029c968528d7de13a9416eb1dc7c72b8786e43a44e3b2ddc3d16e70",
+        "/tmp/gaia-substrate-connections/experiments/pass_algebra/liveness.odin": "3c700ea6971f3d52600d21c35d76b26fcbde529c8dab6fbd21c6bfa3f17c997c",
+        "/tmp/gaia-substrate-connections/experiments/pass_algebra/host.cpp": "098efc3f2bf954a8f4d0daac9116413fb64b8c5c05d65271f2291b09ac4afa5e",
+        "/opt/odin/nightly/odin": "49e21d51855d60a618c493e929fe2b236d44de3daeb3a2c2f03f4c8aef566644",
+        "/usr/lib/llvm22/bin/clang++": "53b1b7a5078c8a3e3347a70068aa5c79fca0d49c4d891f6e92bf0807605a4502",
+        "/root/source/gaia/experiments/compiler/_work/toolchain/usr/lib/llvm22/include/llvm/Config/llvm-config.h": "c81f17bf2ef7b29d28e7dc6f8ea0269ddf139cf21b7513a6c68e9f28dd6ea928",
+        "/usr/lib/llvm22/lib/libLLVM-22.so": "abe476c377d94c4375d4d804ca555dd378c0437e7b9c01f60d51e403e8cc6d6a"
+      },
+      "outputs_sha256": {
+        "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/retained-tools/liveness-host": "62125ca5c6df29f9c2f82cf66dfd4b5013ed120b806a58ff2bb50c2815158464",
+        "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/retained-tools/liveness.so": "10fb82e2707e95411a94a6d6a4d53a6877cd88d35112c8df4d294228b538943e"
+      },
+      "odin_version": "/opt/odin/nightly/odin version dev-2026-10-nightly:84bc3fc\n",
+      "clang_version": "clang version 22.1.8\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/lib/llvm22/bin\n",
+      "scope": "Native measurement CPU target, not a portable deployment binary; selected SDK identity pins, not a complete header dependency manifest."
+    },
+    "command": [
+      "/usr/lib/llvm22/bin/clang++",
+      "-O3",
+      "-std=c++17",
+      "-march=native",
+      "-I/root/source/gaia/experiments/compiler/_work/toolchain/usr/lib/llvm22/include",
+      "/tmp/gaia-substrate-connections/experiments/pass_algebra/retained/host.cpp",
+      "-L/usr/lib/llvm22/lib",
+      "-Wl,-rpath,/usr/lib/llvm22/lib",
+      "-lLLVM-22",
+      "-ldl",
+      "-o",
+      "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/retained-tools/retained-host"
+    ],
+    "inputs_sha256": {
+      "/tmp/gaia-substrate-connections/experiments/pass_algebra/retained/host.cpp": "700fb902bb498b0f8d04c396cac8a206574d0f9bf6aa9d815699215d5fe776a8",
+      "/tmp/gaia-substrate-connections/experiments/pass_algebra/retained/build.py": "73f26899910857557dec0b4a49e04f15e15bceb38d567d45e179b2c78bcf6fac",
+      "/tmp/gaia-substrate-connections/experiments/pass_algebra/host.cpp": "098efc3f2bf954a8f4d0daac9116413fb64b8c5c05d65271f2291b09ac4afa5e",
+      "/usr/lib/llvm22/bin/clang++": "53b1b7a5078c8a3e3347a70068aa5c79fca0d49c4d891f6e92bf0807605a4502",
+      "/root/source/gaia/experiments/compiler/_work/toolchain/usr/lib/llvm22/include/llvm/Config/llvm-config.h": "c81f17bf2ef7b29d28e7dc6f8ea0269ddf139cf21b7513a6c68e9f28dd6ea928",
+      "/usr/lib/llvm22/lib/libLLVM-22.so": "abe476c377d94c4375d4d804ca555dd378c0437e7b9c01f60d51e403e8cc6d6a"
+    },
+    "outputs_sha256": {
+      "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/retained-tools/retained-host": "5eb7693350f7e79091e91cbfec27cb4ed9cb6e0b14f2098e5f2bf80f43ed01cd",
+      "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/retained-tools/liveness.so": "10fb82e2707e95411a94a6d6a4d53a6877cd88d35112c8df4d294228b538943e"
+    },
+    "scope": "Native CPU target; selected SDK identity pins, not a complete header dependency manifest."
+  },
+  "inputs_sha256": {
+    "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/corpus-no-names/zstd-common-O1.ll": "2d66e05cec2432712d7b50fed9953e7ec7ec0f39704892a57cf2678ae28d97ae",
+    "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/corpus-no-names/zstd-lazy-O1.ll": "50197338113a0518d6a4f288693b750313f996b4045de8742ad6322b1e230717",
+    "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/corpus-no-names/zlib-deflate-O1.ll": "4d8732031e861c2661462d159269bbd1ac374502929f659df2271300c281d374",
+    "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/retained-tools/retained-host": "5eb7693350f7e79091e91cbfec27cb4ed9cb6e0b14f2098e5f2bf80f43ed01cd",
+    "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/retained-tools/liveness.so": "10fb82e2707e95411a94a6d6a4d53a6877cd88d35112c8df4d294228b538943e",
+    "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/retained-tools/retained-build.json": "9da4a0c6b4e070590d652ba0a8ce87910db495c6ee5beed180a7b785237adf65",
+    "/tmp/gaia-substrate-connections/experiments/pass_algebra/retained/run.py": "fccef6d7d9ea8f359067f3a91d38d4b5071e94a0569f42f2b1c33fb659d2c146",
+    "/tmp/gaia-substrate-connections/experiments/pass_algebra/retained/host.cpp": "700fb902bb498b0f8d04c396cac8a206574d0f9bf6aa9d815699215d5fe776a8",
+    "/tmp/gaia-substrate-connections/experiments/pass_algebra/retained/build.py": "73f26899910857557dec0b4a49e04f15e15bceb38d567d45e179b2c78bcf6fac",
+    "/tmp/gaia-substrate-connections/experiments/pass_algebra/host.cpp": "098efc3f2bf954a8f4d0daac9116413fb64b8c5c05d65271f2291b09ac4afa5e",
+    "/tmp/gaia-substrate-connections/experiments/pass_algebra/liveness.odin": "3c700ea6971f3d52600d21c35d76b26fcbde529c8dab6fbd21c6bfa3f17c997c",
+    "/tmp/gaia-substrate-connections/experiments/pass_algebra/test_liveness.py": "1d76186cf76c7212f020bcec4a97bace9b538fae23bd75390179544565013259",
+    "/tmp/gaia-substrate-connections/experiments/pass_algebra/fixtures.ll": "b8b7791cca1607b40b19b2849a57bfcc0e16d3216480b46cc85d1ed5c2b01958",
+    "/usr/lib/llvm22/bin/clang++": "53b1b7a5078c8a3e3347a70068aa5c79fca0d49c4d891f6e92bf0807605a4502",
+    "/root/source/gaia/experiments/compiler/_work/toolchain/usr/lib/llvm22/include/llvm/Config/llvm-config.h": "c81f17bf2ef7b29d28e7dc6f8ea0269ddf139cf21b7513a6c68e9f28dd6ea928",
+    "/usr/lib/llvm22/lib/libLLVM-22.so": "abe476c377d94c4375d4d804ca555dd378c0437e7b9c01f60d51e403e8cc6d6a",
+    "/tmp/gaia-substrate-connections/experiments/pass_algebra/build.py": "51718ed76029c968528d7de13a9416eb1dc7c72b8786e43a44e3b2ddc3d16e70",
+    "/opt/odin/nightly/odin": "49e21d51855d60a618c493e929fe2b236d44de3daeb3a2c2f03f4c8aef566644"
+  },
+  "input_ir": {
+    "zstd-common-O1": {
+      "path": "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/corpus-no-names/zstd-common-O1.ll",
+      "sha256": "2d66e05cec2432712d7b50fed9953e7ec7ec0f39704892a57cf2678ae28d97ae"
+    },
+    "zstd-lazy-O1": {
+      "path": "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/corpus-no-names/zstd-lazy-O1.ll",
+      "sha256": "50197338113a0518d6a4f288693b750313f996b4045de8742ad6322b1e230717"
+    },
+    "zlib-deflate-O1": {
+      "path": "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/corpus-no-names/zlib-deflate-O1.ll",
+      "sha256": "4d8732031e861c2661462d159269bbd1ac374502929f659df2271300c281d374"
+    }
+  },
+  "machine": {
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.44",
+    "cpu": "AMD Ryzen AI 7 PRO 450 w/ Radeon 860M",
+    "affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "python": "3.14.8"
+  },
+  "lock": {
+    "path": "/root/source/gaia/experiments/_work/integration-20261102/measurement.lock",
+    "scope": "advisory, cooperating measured hosts only; unrelated load/preparation possible"
+  },
+  "commands": [
+    [
+      "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/retained-tools/retained-host",
+      "/tmp/gaia-substrate-connections/experiments/pass_algebra/fixtures.ll",
+      "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/retained-tools/liveness.so",
+      "1",
+      "731",
+      "--dump-slices"
+    ],
+    [
+      "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/retained-tools/retained-host",
+      "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/corpus-no-names/zstd-common-O1.ll",
+      "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/retained-tools/liveness.so",
+      "7",
+      "731"
+    ],
+    [
+      "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/retained-tools/retained-host",
+      "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/corpus-no-names/zstd-lazy-O1.ll",
+      "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/retained-tools/liveness.so",
+      "7",
+      "731"
+    ],
+    [
+      "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/retained-tools/retained-host",
+      "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/corpus-no-names/zlib-deflate-O1.ll",
+      "/tmp/gaia-substrate-connections/experiments/_work/pass-algebra/retained-tools/liveness.so",
+      "7",
+      "731"
+    ]
+  ],
+  "started_unix_ns": 1793499934951178096
+}

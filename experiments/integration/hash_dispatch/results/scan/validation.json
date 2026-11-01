@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "requests": 420,
+  "targets_per_request": 33,
+  "index_result_checks": 13860,
+  "changed_generation_checks": 3,
+  "four_workspace_tests_passed_with_variant": true,
+  "frozen_inputs_verified_after": true
+}

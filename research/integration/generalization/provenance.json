@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "freeze": "experiments/integration/generalization/freeze.json",
+  "acquisition": "experiments/integration/generalization/acquisition.json",
+  "primary_raw": "experiments/_work/generalization/matrix-v2/results.json",
+  "startup_raw": "experiments/_work/generalization/startup-v2.json",
+  "resources_raw": "experiments/_work/generalization/resources-v2.json",
+  "environment_raw": "experiments/_work/generalization/environment.json",
+  "primary_source_pins": {
+    "experiments/integration/generalization/run.py": "6f010e1c51ec07b4a04213cc5ade62a2e2686a49dc2962d0f41728a88eb3a24a",
+    "experiments/integration/generalization/queue_host.py": "52010bbf773b6dd5eefca26ec8b6733fd02815774b00dcdb68c59d4d18704632",
+    "experiments/integration/generalization/prepare.py": "fc56d7ccc0132caf979a73df191e9c8daf58d23478a4875cafb5af2751ce8f62",
+    "experiments/_work/generalization/queue.cpp": "6b4879b83b9210785bdc5557df0eed4d28a0b082a8eb013ea7efa98393b4af2c",
+    "experiments/_work/generalization/queue": "1284b76d40b6f4583f90a719455a5658167d0e056c6566ccf6bd8e196768f957",
+    "experiments/science/compiler/process_passes.inc": "7f004a4a957c2a6eb93d57c54730ca9c7259340a335dd0df9edcc6cc3cb9185c"
+  },
+  "lifecycle_source_pins": {
+    "experiments/integration/generalization/test_queue.py": "96949d3d5d30bbbf6e2598dd733e40d59a95a151cbb329c1075d2afa35a984c0",
+    "experiments/integration/generalization/startup.py": "062b00146f65fc3f137496d21f77ae32091b50cac849aa1aec869918013c4b6e",
+    "experiments/integration/generalization/diagnose.py": "3da0d2b416cf473d50fbf4aea9db46506d36b0e0d23dd27151a04ce2715d0e31",
+    "experiments/integration/generalization/run.py": "6f010e1c51ec07b4a04213cc5ade62a2e2686a49dc2962d0f41728a88eb3a24a",
+    "experiments/integration/generalization/prepare.py": "fc56d7ccc0132caf979a73df191e9c8daf58d23478a4875cafb5af2751ce8f62",
+    "experiments/integration/generalization/summarize.py": "adb2b22689555fe724c41f95dfa5cead814e8bcbfb4419385a3d4b443e03449d",
+    "experiments/integration/generalization/test_control.py": "50b5c2c2a56a51fb705900f3ed6c1e3b916c521d99409421bdcae548a9d31d01",
+    "experiments/integration/generalization/queue_host.py": "52010bbf773b6dd5eefca26ec8b6733fd02815774b00dcdb68c59d4d18704632"
+  },
+  "generated_serial_cpp_sha256": "f488f21f498c94abcef402e4b7af2cbc11fbca8a35350078f60c9692e260ff88",
+  "host_cpu": "AMD Ryzen AI 7 PRO 450 w/ Radeon 860M",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.44",
+  "tools": [
+    {
+      "tool": "/usr/lib/llvm22/bin/clang",
+      "bytes": 174288,
+      "sha256": "b852cb4597dc56b241bcd328544b5fee60717f35f66808098cc0413946ba42f2"
+    },
+    {
+      "tool": "/usr/lib/llvm22/lib/libclang-cpp.so.22.1",
+      "bytes": 74769024,
+      "sha256": "f8ad17a08eeab80c04e8c2f90986c43808fe760e30136ce199c945fe273b6cd6"
+    },
+    {
+      "tool": "/usr/lib/llvm22/lib/libLLVM.so.22.1",
+      "bytes": 171090976,
+      "sha256": "abe476c377d94c4375d4d804ca555dd378c0437e7b9c01f60d51e403e8cc6d6a"
+    },
+    {
+      "tool": "experiments/compiler/_work/comparison-tools/usr/bin/ninja",
+      "bytes": 354496,
+      "sha256": "386e7381e7664302b9add6890de5f09a37513bb8c1d034210ac757332898f5ab"
+    },
+    {
+      "tool": "experiments/compiler/_work/comparison-tools/usr/bin/ccache",
+      "bytes": 1485400,
+      "sha256": "92247b58bdeb29b7226ca0370bfa838d3d9a5bf995edccf20362d58a4a0c549c"
+    }
+  ],
+  "versions": {
+    "clang": "clang version 22.1.8",
+    "ninja": "1.13.2",
+    "ccache": "ccache version 4.14.1",
+    "cmake": "4.1.2"
+  },
+  "curl_features": "curl 8.16.0 (Linux) libcurl/8.16.0 OpenSSL/3.6.5 zlib/1.3.2 brotli/1.2.0 zstd/1.5.7 libidn2/2.3.8 libpsl/0.21.5 libssh2/1.11.1 nghttp2/1.70.0 OpenLDAP/2.7.1\nRelease-Date: 2025-09-10\nProtocols: dict file ftp ftps gopher gophers http https imap imaps ipfs ipns ldap ldaps mqtt pop3 pop3s rtsp scp sftp smb smbs smtp smtps telnet tftp ws wss\nFeatures: alt-svc AsynchDNS brotli HSTS HTTP2 HTTPS-proxy IDN IPv6 Largefile libz NTLM PSL SSL threadsafe TLS-SRP UnixSockets zstd\n",
+  "worker_budget": {
+    "serial_frontend_and_backend": 1,
+    "queue_frontend": 1,
+    "queue_backend": 1,
+    "physical_build_jobs": 1,
+    "independent_index": 1
+  },
+  "primary_order": [
+    "serial/queue/control",
+    "control/queue/serial",
+    "serial/queue/control"
+  ],
+  "clock_scope": "Warm OS page cache. Primary operation includes changed source writes, generator preparation, admission, validation, required build/index work and linking. Complete facts-component clock starts after admission. Oracle and validation hashes outside primary clocks. Startup includes fresh provider process, source admission and complete prepared target; configuration/download excluded. Resources sampled separately after final startup clock stops.",
+  "sdk_contract": "Source-root namespace is authoritative and closed; external compiler/SDK/system environment assumed immutable for this family. No arbitrary live SDK changes, plugins, PCH/modules, competing output writes or cancellation claims.",
+  "rejected": [
+    {
+      "id": "matrix-v1",
+      "reason": "CMake launcher pattern failed to insert ccache; entire control comparison rejected."
+    },
+    {
+      "id": "startup-v1",
+      "reason": "Export validator removed reference fields before reversed-order comparisons completed; stopped with KeyError, no object mismatch reported. Fresh-cache startup-v2 replaces it."
+    }
+  ],
+  "reproduction": "experiments/integration/generalization/README.md"
+}

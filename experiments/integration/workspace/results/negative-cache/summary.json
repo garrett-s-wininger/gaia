@@ -1,0 +1,16 @@
+{
+  "ccache_version": "4.14.1",
+  "passed": true,
+  "direct_stale": true,
+  "direct_hit_reported": true,
+  "preprocessor_correct": true,
+  "oracle_object_sha256": "efdb18c085cc43ec33aa52b13eab6faea4f490f9c9a7c294a4d5f5d89c242ddc",
+  "objects": {
+    "direct": "1bcc5df09bbea5a168e6556f48f72a37fcb15ca32d6b93299fc86a27610aff28",
+    "preprocessor": "efdb18c085cc43ec33aa52b13eab6faea4f490f9c9a7c294a4d5f5d89c242ddc"
+  },
+  "optional_header_in_depfile": {
+    "direct": false,
+    "preprocessor": true
+  }
+}

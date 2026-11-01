@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "complete_operations": 108,
+  "object_checks": 3564,
+  "depfile_checks": 3564,
+  "index_checks": 3564,
+  "executable_checks": 108,
+  "fresh_full_reference_generations": 12,
+  "stale_generation_rejections": 9,
+  "configuration_compilations": [
+    1,
+    1,
+    1
+  ],
+  "configuration_projected_targets": [
+    32,
+    32,
+    32
+  ],
+  "optional_return_compilations": [
+    0,
+    0,
+    0
+  ],
+  "post_review_refinement_tests": 16,
+  "post_review_compatibility_tests": 4,
+  "full_matrix_precedes_hardening": true
+}

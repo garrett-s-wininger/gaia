@@ -1,0 +1,3397 @@
+{
+  "blocks": 7,
+  "clock": "Sum of request event spans, including edits, producer, consumer and JSON. Validation between events excluded; process startup, module imports and corpus copying excluded. Not an uninterrupted session clock.",
+  "events": {
+    "add_dependency": {
+      "category": "edge",
+      "modes": {
+        "cached_library": {
+          "consumer_and_output_ms": {
+            "max": 2.478571,
+            "median": 2.288689,
+            "min": 2.154414,
+            "samples": 7
+          },
+          "edge_delta": null,
+          "elapsed_ms": {
+            "max": 32.251011,
+            "median": 29.420858,
+            "min": 27.643072,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 29.643075,
+            "median": 26.746775,
+            "min": 25.085701,
+            "samples": 7
+          },
+          "scanned_modules": null,
+          "state": {
+            "diagnostic_witness_edges": 133,
+            "native_edges": 3204,
+            "native_modules": 907,
+            "navigation_entries": 1849,
+            "retained_import_records": 0
+          },
+          "violations": 33,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 46,
+              "median": 46,
+              "min": 46,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 46,
+              "median": 46,
+              "min": 46,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        },
+        "delta": {
+          "consumer_and_output_ms": {
+            "max": 2.75123,
+            "median": 2.521673,
+            "min": 2.343163,
+            "samples": 7
+          },
+          "edge_delta": 1,
+          "elapsed_ms": {
+            "max": 4.031879,
+            "median": 3.725576,
+            "min": 3.514554,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 0.993673,
+            "median": 0.864377,
+            "min": 0.843506,
+            "samples": 7
+          },
+          "scanned_modules": 1,
+          "state": {
+            "diagnostic_witness_edges": 133,
+            "extra_adjacency_entries": 6408,
+            "native_edges": 3204,
+            "native_modules": 907,
+            "navigation_entries": 1849,
+            "proof_distances": 1852,
+            "proof_parent_entries": 1849,
+            "retained_import_records": 3359
+          },
+          "violations": 33,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 33,
+              "median": 33,
+              "min": 33,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 2165,
+              "median": 2165,
+              "min": 2165,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 317,
+              "median": 317,
+              "min": 317,
+              "samples": 7
+            }
+          }
+        },
+        "retained_native": {
+          "consumer_and_output_ms": {
+            "max": 2.631793,
+            "median": 2.369423,
+            "min": 2.144684,
+            "samples": 7
+          },
+          "edge_delta": 1,
+          "elapsed_ms": {
+            "max": 3.845375,
+            "median": 3.667496,
+            "min": 3.308381,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 0.904823,
+            "median": 0.849438,
+            "min": 0.816145,
+            "samples": 7
+          },
+          "scanned_modules": 1,
+          "state": {
+            "diagnostic_witness_edges": 133,
+            "native_edges": 3204,
+            "native_modules": 907,
+            "navigation_entries": 1849,
+            "retained_import_records": 3359
+          },
+          "violations": 33,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 33,
+              "median": 33,
+              "min": 33,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 33,
+              "median": 33,
+              "min": 33,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 4,
+              "median": 4,
+              "min": 4,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        }
+      }
+    },
+    "body_only": {
+      "category": "body",
+      "modes": {
+        "cached_library": {
+          "consumer_and_output_ms": {
+            "max": 2.541741,
+            "median": 2.47807,
+            "min": 2.362349,
+            "samples": 7
+          },
+          "edge_delta": null,
+          "elapsed_ms": {
+            "max": 32.262238,
+            "median": 29.555153,
+            "min": 27.705981,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 29.392202,
+            "median": 26.713732,
+            "min": 24.913622,
+            "samples": 7
+          },
+          "scanned_modules": null,
+          "state": {
+            "diagnostic_witness_edges": 164,
+            "native_edges": 3203,
+            "native_modules": 907,
+            "navigation_entries": 1798,
+            "retained_import_records": 0
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 46,
+              "median": 46,
+              "min": 46,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 46,
+              "median": 46,
+              "min": 46,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        },
+        "delta": {
+          "consumer_and_output_ms": {
+            "max": 0.910434,
+            "median": 0.80308,
+            "min": 0.788883,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 2.066196,
+            "median": 2.005871,
+            "min": 1.934585,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 0.920804,
+            "median": 0.833598,
+            "min": 0.818058,
+            "samples": 7
+          },
+          "scanned_modules": 1,
+          "state": {
+            "diagnostic_witness_edges": 164,
+            "extra_adjacency_entries": 6406,
+            "native_edges": 3203,
+            "native_modules": 907,
+            "navigation_entries": 1798,
+            "proof_distances": 1801,
+            "proof_parent_entries": 1798,
+            "retained_import_records": 3358
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        },
+        "retained_native": {
+          "consumer_and_output_ms": {
+            "max": 0.609962,
+            "median": 0.579313,
+            "min": 0.544938,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 1.888286,
+            "median": 1.725937,
+            "min": 1.629033,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 0.917748,
+            "median": 0.820402,
+            "min": 0.770748,
+            "samples": 7
+          },
+          "scanned_modules": 1,
+          "state": {
+            "diagnostic_witness_edges": 164,
+            "native_edges": 3203,
+            "native_modules": 907,
+            "navigation_entries": 1798,
+            "retained_import_records": 3358
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        }
+      }
+    },
+    "cycle_loses_exit": {
+      "category": "edge",
+      "modes": {
+        "cached_library": {
+          "consumer_and_output_ms": {
+            "max": 3.031373,
+            "median": 2.595404,
+            "min": 2.433986,
+            "samples": 7
+          },
+          "edge_delta": null,
+          "elapsed_ms": {
+            "max": 31.12351,
+            "median": 29.5897,
+            "min": 29.004155,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 27.778109,
+            "median": 26.845533,
+            "min": 26.063293,
+            "samples": 7
+          },
+          "scanned_modules": null,
+          "state": {
+            "diagnostic_witness_edges": 164,
+            "native_edges": 3206,
+            "native_modules": 909,
+            "navigation_entries": 1798,
+            "retained_import_records": 0
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 48,
+              "median": 48,
+              "min": 48,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 48,
+              "median": 48,
+              "min": 48,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        },
+        "delta": {
+          "consumer_and_output_ms": {
+            "max": 1.279177,
+            "median": 1.163647,
+            "min": 1.114142,
+            "samples": 7
+          },
+          "edge_delta": 1,
+          "elapsed_ms": {
+            "max": 2.612396,
+            "median": 2.348313,
+            "min": 2.26318,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 1.000115,
+            "median": 0.877652,
+            "min": 0.841453,
+            "samples": 7
+          },
+          "scanned_modules": 1,
+          "state": {
+            "diagnostic_witness_edges": 164,
+            "extra_adjacency_entries": 6412,
+            "native_edges": 3206,
+            "native_modules": 909,
+            "navigation_entries": 1798,
+            "proof_distances": 1801,
+            "proof_parent_entries": 1798,
+            "retained_import_records": 3361
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 24,
+              "median": 24,
+              "min": 24,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 11,
+              "median": 11,
+              "min": 11,
+              "samples": 7
+            }
+          }
+        },
+        "retained_native": {
+          "consumer_and_output_ms": {
+            "max": 1.614384,
+            "median": 1.445082,
+            "min": 1.384907,
+            "samples": 7
+          },
+          "edge_delta": 1,
+          "elapsed_ms": {
+            "max": 2.989183,
+            "median": 2.629608,
+            "min": 2.556339,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 0.97666,
+            "median": 0.888503,
+            "min": 0.807097,
+            "samples": 7
+          },
+          "scanned_modules": 1,
+          "state": {
+            "diagnostic_witness_edges": 164,
+            "native_edges": 3206,
+            "native_modules": 909,
+            "navigation_entries": 1798,
+            "retained_import_records": 3361
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        }
+      }
+    },
+    "cycle_regains_exit": {
+      "category": "edge",
+      "modes": {
+        "cached_library": {
+          "consumer_and_output_ms": {
+            "max": 2.565076,
+            "median": 2.469354,
+            "min": 2.402546,
+            "samples": 7
+          },
+          "edge_delta": null,
+          "elapsed_ms": {
+            "max": 34.307887,
+            "median": 30.976311,
+            "min": 27.423003,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 31.431068,
+            "median": 28.228405,
+            "min": 24.657926,
+            "samples": 7
+          },
+          "scanned_modules": null,
+          "state": {
+            "diagnostic_witness_edges": 170,
+            "native_edges": 3207,
+            "native_modules": 909,
+            "navigation_entries": 1807,
+            "retained_import_records": 0
+          },
+          "violations": 31,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 48,
+              "median": 48,
+              "min": 48,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 48,
+              "median": 48,
+              "min": 48,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        },
+        "delta": {
+          "consumer_and_output_ms": {
+            "max": 1.377694,
+            "median": 1.120394,
+            "min": 1.085006,
+            "samples": 7
+          },
+          "edge_delta": 1,
+          "elapsed_ms": {
+            "max": 2.681107,
+            "median": 2.243984,
+            "min": 2.153161,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 0.976079,
+            "median": 0.853506,
+            "min": 0.762762,
+            "samples": 7
+          },
+          "scanned_modules": 1,
+          "state": {
+            "diagnostic_witness_edges": 170,
+            "extra_adjacency_entries": 6414,
+            "native_edges": 3207,
+            "native_modules": 909,
+            "navigation_entries": 1807,
+            "proof_distances": 1810,
+            "proof_parent_entries": 1807,
+            "retained_import_records": 3362
+          },
+          "violations": 31,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 15,
+              "median": 15,
+              "min": 15,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 9,
+              "median": 9,
+              "min": 9,
+              "samples": 7
+            }
+          }
+        },
+        "retained_native": {
+          "consumer_and_output_ms": {
+            "max": 3.566984,
+            "median": 1.52794,
+            "min": 1.37035,
+            "samples": 7
+          },
+          "edge_delta": 1,
+          "elapsed_ms": {
+            "max": 5.914605,
+            "median": 2.817536,
+            "min": 2.480494,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 1.716726,
+            "median": 0.923278,
+            "min": 0.786679,
+            "samples": 7
+          },
+          "scanned_modules": 1,
+          "state": {
+            "diagnostic_witness_edges": 170,
+            "native_edges": 3207,
+            "native_modules": 909,
+            "navigation_entries": 1807,
+            "retained_import_records": 3362
+          },
+          "violations": 31,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 4,
+              "median": 4,
+              "min": 4,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        }
+      }
+    },
+    "cycle_with_exit": {
+      "category": "membership",
+      "modes": {
+        "cached_library": {
+          "consumer_and_output_ms": {
+            "max": 2.705263,
+            "median": 2.495874,
+            "min": 2.360706,
+            "samples": 7
+          },
+          "edge_delta": null,
+          "elapsed_ms": {
+            "max": 44.003514,
+            "median": 41.87165,
+            "min": 41.266387,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 41.081118,
+            "median": 39.05107,
+            "min": 38.132648,
+            "samples": 7
+          },
+          "scanned_modules": null,
+          "state": {
+            "diagnostic_witness_edges": 169,
+            "native_edges": 3207,
+            "native_modules": 909,
+            "navigation_entries": 1807,
+            "retained_import_records": 0
+          },
+          "violations": 31,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 48,
+              "median": 48,
+              "min": 48,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 48,
+              "median": 48,
+              "min": 48,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        },
+        "delta": {
+          "consumer_and_output_ms": {
+            "max": 3.030963,
+            "median": 2.429708,
+            "min": 1.897283,
+            "samples": 7
+          },
+          "edge_delta": 2,
+          "elapsed_ms": {
+            "max": 36.533653,
+            "median": 31.738994,
+            "min": 31.090589,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 33.020661,
+            "median": 28.985473,
+            "min": 28.50348,
+            "samples": 7
+          },
+          "scanned_modules": 909,
+          "state": {
+            "diagnostic_witness_edges": 169,
+            "extra_adjacency_entries": 6414,
+            "native_edges": 3207,
+            "native_modules": 909,
+            "navigation_entries": 1807,
+            "proof_distances": 1810,
+            "proof_parent_entries": 1807,
+            "retained_import_records": 3362
+          },
+          "violations": 31,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 9,
+              "median": 9,
+              "min": 9,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            }
+          }
+        },
+        "retained_native": {
+          "consumer_and_output_ms": {
+            "max": 3.2606,
+            "median": 2.473201,
+            "min": 2.279642,
+            "samples": 7
+          },
+          "edge_delta": 2,
+          "elapsed_ms": {
+            "max": 35.057809,
+            "median": 32.824121,
+            "min": 31.576413,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 31.351972,
+            "median": 30.13522,
+            "min": 28.445309,
+            "samples": 7
+          },
+          "scanned_modules": 909,
+          "state": {
+            "diagnostic_witness_edges": 169,
+            "native_edges": 3207,
+            "native_modules": 909,
+            "navigation_entries": 1807,
+            "retained_import_records": 3362
+          },
+          "violations": 31,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 4,
+              "median": 4,
+              "min": 4,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        }
+      }
+    },
+    "initial": {
+      "category": "initial",
+      "modes": {
+        "cached_library": {
+          "consumer_and_output_ms": {
+            "max": 2.535649,
+            "median": 2.516182,
+            "min": 2.476056,
+            "samples": 7
+          },
+          "edge_delta": null,
+          "elapsed_ms": {
+            "max": 70.966555,
+            "median": 51.400573,
+            "min": 49.086135,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 68.403023,
+            "median": 48.82624,
+            "min": 46.531379,
+            "samples": 7
+          },
+          "scanned_modules": null,
+          "state": {
+            "diagnostic_witness_edges": 164,
+            "native_edges": 3203,
+            "native_modules": 907,
+            "navigation_entries": 1798,
+            "retained_import_records": 0
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 46,
+              "median": 46,
+              "min": 46,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 46,
+              "median": 46,
+              "min": 46,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        },
+        "delta": {
+          "consumer_and_output_ms": {
+            "max": 7.660832,
+            "median": 6.670255,
+            "min": 6.46257,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 52.745986,
+            "median": 47.670979,
+            "min": 46.798978,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 45.039046,
+            "median": 40.838575,
+            "min": 40.234232,
+            "samples": 7
+          },
+          "scanned_modules": 907,
+          "state": {
+            "diagnostic_witness_edges": 164,
+            "extra_adjacency_entries": 6406,
+            "native_edges": 3203,
+            "native_modules": 907,
+            "navigation_entries": 1798,
+            "proof_distances": 1801,
+            "proof_parent_entries": 1798,
+            "retained_import_records": 3358
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 46,
+              "median": 46,
+              "min": 46,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 7761,
+              "median": 7761,
+              "min": 7761,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 1801,
+              "median": 1801,
+              "min": 1801,
+              "samples": 7
+            }
+          }
+        },
+        "retained_native": {
+          "consumer_and_output_ms": {
+            "max": 4.687458,
+            "median": 2.636632,
+            "min": 2.597196,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 62.389534,
+            "median": 45.597182,
+            "min": 43.84992,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 57.651841,
+            "median": 42.890137,
+            "min": 41.191177,
+            "samples": 7
+          },
+          "scanned_modules": 907,
+          "state": {
+            "diagnostic_witness_edges": 164,
+            "native_edges": 3203,
+            "native_modules": 907,
+            "navigation_entries": 1798,
+            "retained_import_records": 3358
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 46,
+              "median": 46,
+              "min": 46,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 46,
+              "median": 46,
+              "min": 46,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        }
+      }
+    },
+    "location_shift": {
+      "category": "location",
+      "modes": {
+        "cached_library": {
+          "consumer_and_output_ms": {
+            "max": 2.501935,
+            "median": 2.41511,
+            "min": 2.32102,
+            "samples": 7
+          },
+          "edge_delta": null,
+          "elapsed_ms": {
+            "max": 36.382606,
+            "median": 29.219384,
+            "min": 27.673239,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 33.630494,
+            "median": 26.551302,
+            "min": 24.912621,
+            "samples": 7
+          },
+          "scanned_modules": null,
+          "state": {
+            "diagnostic_witness_edges": 164,
+            "native_edges": 3203,
+            "native_modules": 907,
+            "navigation_entries": 1798,
+            "retained_import_records": 0
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 46,
+              "median": 46,
+              "min": 46,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 46,
+              "median": 46,
+              "min": 46,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        },
+        "delta": {
+          "consumer_and_output_ms": {
+            "max": 1.174196,
+            "median": 1.069376,
+            "min": 1.004012,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 2.660266,
+            "median": 2.477709,
+            "min": 2.344987,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 1.204644,
+            "median": 1.054889,
+            "min": 0.961691,
+            "samples": 7
+          },
+          "scanned_modules": 1,
+          "state": {
+            "diagnostic_witness_edges": 164,
+            "extra_adjacency_entries": 6406,
+            "native_edges": 3203,
+            "native_modules": 907,
+            "navigation_entries": 1798,
+            "proof_distances": 1801,
+            "proof_parent_entries": 1798,
+            "retained_import_records": 3358
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        },
+        "retained_native": {
+          "consumer_and_output_ms": {
+            "max": 1.17633,
+            "median": 0.986539,
+            "min": 0.952725,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 2.581046,
+            "median": 2.401484,
+            "min": 2.340668,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 1.112439,
+            "median": 1.069336,
+            "min": 0.991589,
+            "samples": 7
+          },
+          "scanned_modules": 1,
+          "state": {
+            "diagnostic_witness_edges": 164,
+            "native_edges": 3203,
+            "native_modules": 907,
+            "navigation_entries": 1798,
+            "retained_import_records": 3358
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        }
+      }
+    },
+    "missing_module_reference": {
+      "category": "edge",
+      "modes": {
+        "cached_library": {
+          "consumer_and_output_ms": {
+            "max": 2.518277,
+            "median": 2.435318,
+            "min": 2.379883,
+            "samples": 7
+          },
+          "edge_delta": null,
+          "elapsed_ms": {
+            "max": 32.228817,
+            "median": 29.338391,
+            "min": 28.063613,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 29.400089,
+            "median": 26.60749,
+            "min": 25.300029,
+            "samples": 7
+          },
+          "scanned_modules": null,
+          "state": {
+            "diagnostic_witness_edges": 164,
+            "native_edges": 3204,
+            "native_modules": 907,
+            "navigation_entries": 1798,
+            "retained_import_records": 0
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 46,
+              "median": 46,
+              "min": 46,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 46,
+              "median": 46,
+              "min": 46,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        },
+        "delta": {
+          "consumer_and_output_ms": {
+            "max": 1.291209,
+            "median": 1.171341,
+            "min": 1.059979,
+            "samples": 7
+          },
+          "edge_delta": 1,
+          "elapsed_ms": {
+            "max": 2.869195,
+            "median": 2.527654,
+            "min": 2.422083,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 1.286631,
+            "median": 1.022196,
+            "min": 0.975698,
+            "samples": 7
+          },
+          "scanned_modules": 1,
+          "state": {
+            "diagnostic_witness_edges": 164,
+            "extra_adjacency_entries": 6408,
+            "native_edges": 3204,
+            "native_modules": 907,
+            "navigation_entries": 1798,
+            "proof_distances": 1801,
+            "proof_parent_entries": 1798,
+            "retained_import_records": 3359
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        },
+        "retained_native": {
+          "consumer_and_output_ms": {
+            "max": 1.144239,
+            "median": 1.001237,
+            "min": 0.911617,
+            "samples": 7
+          },
+          "edge_delta": 1,
+          "elapsed_ms": {
+            "max": 2.560667,
+            "median": 2.320019,
+            "min": 2.207594,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 1.084145,
+            "median": 0.983684,
+            "min": 0.931484,
+            "samples": 7
+          },
+          "scanned_modules": 1,
+          "state": {
+            "diagnostic_witness_edges": 164,
+            "native_edges": 3204,
+            "native_modules": 907,
+            "navigation_entries": 1798,
+            "retained_import_records": 3359
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        }
+      }
+    },
+    "module_appears": {
+      "category": "membership",
+      "modes": {
+        "cached_library": {
+          "consumer_and_output_ms": {
+            "max": 2.77162,
+            "median": 2.636515,
+            "min": 2.433465,
+            "samples": 7
+          },
+          "edge_delta": null,
+          "elapsed_ms": {
+            "max": 43.907139,
+            "median": 40.776514,
+            "min": 40.086313,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 40.687988,
+            "median": 37.784275,
+            "min": 37.282383,
+            "samples": 7
+          },
+          "scanned_modules": null,
+          "state": {
+            "diagnostic_witness_edges": 167,
+            "native_edges": 3205,
+            "native_modules": 908,
+            "navigation_entries": 1804,
+            "retained_import_records": 0
+          },
+          "violations": 30,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 47,
+              "median": 47,
+              "min": 47,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 47,
+              "median": 47,
+              "min": 47,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        },
+        "delta": {
+          "consumer_and_output_ms": {
+            "max": 2.747273,
+            "median": 2.048952,
+            "min": 1.815248,
+            "samples": 7
+          },
+          "edge_delta": 3,
+          "elapsed_ms": {
+            "max": 32.429018,
+            "median": 31.514439,
+            "min": 30.53063,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 29.776125,
+            "median": 28.838466,
+            "min": 28.367463,
+            "samples": 7
+          },
+          "scanned_modules": 908,
+          "state": {
+            "diagnostic_witness_edges": 167,
+            "extra_adjacency_entries": 6410,
+            "native_edges": 3205,
+            "native_modules": 908,
+            "navigation_entries": 1804,
+            "proof_distances": 1807,
+            "proof_parent_entries": 1804,
+            "retained_import_records": 3360
+          },
+          "violations": 30,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 2,
+              "median": 2,
+              "min": 2,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 14,
+              "median": 14,
+              "min": 14,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 8,
+              "median": 8,
+              "min": 8,
+              "samples": 7
+            }
+          }
+        },
+        "retained_native": {
+          "consumer_and_output_ms": {
+            "max": 2.767421,
+            "median": 2.315721,
+            "min": 1.99502,
+            "samples": 7
+          },
+          "edge_delta": 3,
+          "elapsed_ms": {
+            "max": 31.551866,
+            "median": 30.958506,
+            "min": 30.402779,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 29.148024,
+            "median": 28.438007,
+            "min": 27.767869,
+            "samples": 7
+          },
+          "scanned_modules": 908,
+          "state": {
+            "diagnostic_witness_edges": 167,
+            "native_edges": 3205,
+            "native_modules": 908,
+            "navigation_entries": 1804,
+            "retained_import_records": 3360
+          },
+          "violations": 30,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 2,
+              "median": 2,
+              "min": 2,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 2,
+              "median": 2,
+              "min": 2,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 4,
+              "median": 4,
+              "min": 4,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        }
+      }
+    },
+    "module_disappears": {
+      "category": "membership",
+      "modes": {
+        "cached_library": {
+          "consumer_and_output_ms": {
+            "max": 2.642062,
+            "median": 2.521463,
+            "min": 2.474403,
+            "samples": 7
+          },
+          "edge_delta": null,
+          "elapsed_ms": {
+            "max": 43.492621,
+            "median": 41.144528,
+            "min": 39.840433,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 40.73057,
+            "median": 38.303887,
+            "min": 36.943064,
+            "samples": 7
+          },
+          "scanned_modules": null,
+          "state": {
+            "diagnostic_witness_edges": 164,
+            "native_edges": 3205,
+            "native_modules": 908,
+            "navigation_entries": 1798,
+            "retained_import_records": 0
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 47,
+              "median": 47,
+              "min": 47,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 47,
+              "median": 47,
+              "min": 47,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        },
+        "delta": {
+          "consumer_and_output_ms": {
+            "max": 2.897799,
+            "median": 2.240167,
+            "min": 1.994549,
+            "samples": 7
+          },
+          "edge_delta": 4,
+          "elapsed_ms": {
+            "max": 35.309674,
+            "median": 31.905987,
+            "min": 30.649227,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 32.131301,
+            "median": 29.428362,
+            "min": 28.358704,
+            "samples": 7
+          },
+          "scanned_modules": 908,
+          "state": {
+            "diagnostic_witness_edges": 164,
+            "extra_adjacency_entries": 6410,
+            "native_edges": 3205,
+            "native_modules": 908,
+            "navigation_entries": 1798,
+            "proof_distances": 1801,
+            "proof_parent_entries": 1798,
+            "retained_import_records": 3360
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 2,
+              "median": 2,
+              "min": 2,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 12,
+              "median": 12,
+              "min": 12,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 9,
+              "median": 9,
+              "min": 9,
+              "samples": 7
+            }
+          }
+        },
+        "retained_native": {
+          "consumer_and_output_ms": {
+            "max": 3.468336,
+            "median": 2.63605,
+            "min": 2.275434,
+            "samples": 7
+          },
+          "edge_delta": 4,
+          "elapsed_ms": {
+            "max": 35.866301,
+            "median": 32.85086,
+            "min": 30.85531,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 32.102994,
+            "median": 29.93646,
+            "min": 28.299022,
+            "samples": 7
+          },
+          "scanned_modules": 908,
+          "state": {
+            "diagnostic_witness_edges": 164,
+            "native_edges": 3205,
+            "native_modules": 908,
+            "navigation_entries": 1798,
+            "retained_import_records": 3360
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 2,
+              "median": 2,
+              "min": 2,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 2,
+              "median": 2,
+              "min": 2,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 4,
+              "median": 4,
+              "min": 4,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        }
+      }
+    },
+    "remove_dependency": {
+      "category": "edge",
+      "modes": {
+        "cached_library": {
+          "consumer_and_output_ms": {
+            "max": 2.571548,
+            "median": 2.440368,
+            "min": 2.327073,
+            "samples": 7
+          },
+          "edge_delta": null,
+          "elapsed_ms": {
+            "max": 40.750328,
+            "median": 35.249157,
+            "min": 34.162771,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 37.862848,
+            "median": 32.50555,
+            "min": 31.377315,
+            "samples": 7
+          },
+          "scanned_modules": null,
+          "state": {
+            "diagnostic_witness_edges": 164,
+            "native_edges": 3203,
+            "native_modules": 907,
+            "navigation_entries": 1798,
+            "retained_import_records": 0
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 46,
+              "median": 46,
+              "min": 46,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 46,
+              "median": 46,
+              "min": 46,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        },
+        "delta": {
+          "consumer_and_output_ms": {
+            "max": 2.803208,
+            "median": 2.634257,
+            "min": 2.455357,
+            "samples": 7
+          },
+          "edge_delta": 1,
+          "elapsed_ms": {
+            "max": 3.96961,
+            "median": 3.80616,
+            "min": 3.67511,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 0.925613,
+            "median": 0.866029,
+            "min": 0.844338,
+            "samples": 7
+          },
+          "scanned_modules": 1,
+          "state": {
+            "diagnostic_witness_edges": 164,
+            "extra_adjacency_entries": 6406,
+            "native_edges": 3203,
+            "native_modules": 907,
+            "navigation_entries": 1798,
+            "proof_distances": 1801,
+            "proof_parent_entries": 1798,
+            "retained_import_records": 3358
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 5,
+              "median": 5,
+              "min": 5,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 4072,
+              "median": 4072,
+              "min": 4072,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 477,
+              "median": 477,
+              "min": 477,
+              "samples": 7
+            }
+          }
+        },
+        "retained_native": {
+          "consumer_and_output_ms": {
+            "max": 1.78493,
+            "median": 1.589488,
+            "min": 1.501691,
+            "samples": 7
+          },
+          "edge_delta": 1,
+          "elapsed_ms": {
+            "max": 2.954296,
+            "median": 2.81378,
+            "min": 2.63532,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 0.979545,
+            "median": 0.868424,
+            "min": 0.821024,
+            "samples": 7
+          },
+          "scanned_modules": 1,
+          "state": {
+            "diagnostic_witness_edges": 164,
+            "native_edges": 3203,
+            "native_modules": 907,
+            "navigation_entries": 1798,
+            "retained_import_records": 3358
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 5,
+              "median": 5,
+              "min": 5,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 5,
+              "median": 5,
+              "min": 5,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        }
+      }
+    },
+    "restore_branch": {
+      "category": "membership",
+      "modes": {
+        "cached_library": {
+          "consumer_and_output_ms": {
+            "max": 2.647273,
+            "median": 2.476246,
+            "min": 2.322294,
+            "samples": 7
+          },
+          "edge_delta": null,
+          "elapsed_ms": {
+            "max": 48.409766,
+            "median": 40.857158,
+            "min": 39.776092,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 45.165978,
+            "median": 37.904475,
+            "min": 36.810634,
+            "samples": 7
+          },
+          "scanned_modules": null,
+          "state": {
+            "diagnostic_witness_edges": 164,
+            "native_edges": 3203,
+            "native_modules": 907,
+            "navigation_entries": 1798,
+            "retained_import_records": 0
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 46,
+              "median": 46,
+              "min": 46,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 46,
+              "median": 46,
+              "min": 46,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        },
+        "delta": {
+          "consumer_and_output_ms": {
+            "max": 2.756069,
+            "median": 2.174923,
+            "min": 2.009768,
+            "samples": 7
+          },
+          "edge_delta": 2,
+          "elapsed_ms": {
+            "max": 34.438788,
+            "median": 32.785507,
+            "min": 31.966035,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 31.274839,
+            "median": 29.860466,
+            "min": 29.264218,
+            "samples": 7
+          },
+          "scanned_modules": 907,
+          "state": {
+            "diagnostic_witness_edges": 164,
+            "extra_adjacency_entries": 6406,
+            "native_edges": 3203,
+            "native_modules": 907,
+            "navigation_entries": 1798,
+            "proof_distances": 1801,
+            "proof_parent_entries": 1798,
+            "retained_import_records": 3358
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        },
+        "retained_native": {
+          "consumer_and_output_ms": {
+            "max": 3.295166,
+            "median": 2.257091,
+            "min": 1.799568,
+            "samples": 7
+          },
+          "edge_delta": 2,
+          "elapsed_ms": {
+            "max": 34.083776,
+            "median": 32.532244,
+            "min": 30.606645,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 30.366692,
+            "median": 29.733845,
+            "min": 28.19974,
+            "samples": 7
+          },
+          "scanned_modules": 907,
+          "state": {
+            "diagnostic_witness_edges": 164,
+            "native_edges": 3203,
+            "native_modules": 907,
+            "navigation_entries": 1798,
+            "retained_import_records": 3358
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        }
+      }
+    },
+    "retarget_dependency": {
+      "category": "edge",
+      "modes": {
+        "cached_library": {
+          "consumer_and_output_ms": {
+            "max": 2.773844,
+            "median": 2.548814,
+            "min": 2.455127,
+            "samples": 7
+          },
+          "edge_delta": null,
+          "elapsed_ms": {
+            "max": 32.021381,
+            "median": 28.869688,
+            "min": 27.705681,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 29.03362,
+            "median": 26.042987,
+            "min": 24.884097,
+            "samples": 7
+          },
+          "scanned_modules": null,
+          "state": {
+            "diagnostic_witness_edges": 201,
+            "native_edges": 3204,
+            "native_modules": 907,
+            "navigation_entries": 1849,
+            "retained_import_records": 0
+          },
+          "violations": 33,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 46,
+              "median": 46,
+              "min": 46,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 46,
+              "median": 46,
+              "min": 46,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        },
+        "delta": {
+          "consumer_and_output_ms": {
+            "max": 4.106441,
+            "median": 3.922962,
+            "min": 3.731958,
+            "samples": 7
+          },
+          "edge_delta": 2,
+          "elapsed_ms": {
+            "max": 5.551226,
+            "median": 5.113499,
+            "min": 4.926514,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 1.18758,
+            "median": 0.893893,
+            "min": 0.847043,
+            "samples": 7
+          },
+          "scanned_modules": 1,
+          "state": {
+            "diagnostic_witness_edges": 201,
+            "extra_adjacency_entries": 6408,
+            "native_edges": 3204,
+            "native_modules": 907,
+            "navigation_entries": 1849,
+            "proof_distances": 1852,
+            "proof_parent_entries": 1849,
+            "retained_import_records": 3359
+          },
+          "violations": 33,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 33,
+              "median": 33,
+              "min": 33,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 5426,
+              "median": 5426,
+              "min": 5426,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 741,
+              "median": 741,
+              "min": 741,
+              "samples": 7
+            }
+          }
+        },
+        "retained_native": {
+          "consumer_and_output_ms": {
+            "max": 2.742023,
+            "median": 2.468572,
+            "min": 2.313557,
+            "samples": 7
+          },
+          "edge_delta": 2,
+          "elapsed_ms": {
+            "max": 3.972045,
+            "median": 3.686541,
+            "min": 3.419724,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 0.96082,
+            "median": 0.852123,
+            "min": 0.811676,
+            "samples": 7
+          },
+          "scanned_modules": 1,
+          "state": {
+            "diagnostic_witness_edges": 201,
+            "native_edges": 3204,
+            "native_modules": 907,
+            "navigation_entries": 1849,
+            "retained_import_records": 3359
+          },
+          "violations": 33,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 33,
+              "median": 33,
+              "min": 33,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 33,
+              "median": 33,
+              "min": 33,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 4,
+              "median": 4,
+              "min": 4,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        }
+      }
+    },
+    "rule_target_change": {
+      "category": "configuration",
+      "modes": {
+        "cached_library": {
+          "consumer_and_output_ms": {
+            "max": 2.528296,
+            "median": 2.252861,
+            "min": 2.100701,
+            "samples": 7
+          },
+          "edge_delta": null,
+          "elapsed_ms": {
+            "max": 2.56728,
+            "median": 2.292827,
+            "min": 2.140938,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 0.002255,
+            "median": 0.001833,
+            "min": 0.001383,
+            "samples": 7
+          },
+          "scanned_modules": null,
+          "state": {
+            "diagnostic_witness_edges": 159,
+            "native_edges": 3203,
+            "native_modules": 907,
+            "navigation_entries": 1798,
+            "retained_import_records": 0
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 46,
+              "median": 46,
+              "min": 46,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 46,
+              "median": 46,
+              "min": 46,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 3,
+              "median": 3,
+              "min": 3,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        },
+        "delta": {
+          "consumer_and_output_ms": {
+            "max": 1.478326,
+            "median": 1.364519,
+            "min": 1.298994,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 1.525977,
+            "median": 1.414073,
+            "min": 1.340403,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 0.009658,
+            "median": 0.008547,
+            "min": 0.007694,
+            "samples": 7
+          },
+          "scanned_modules": 0,
+          "state": {
+            "diagnostic_witness_edges": 159,
+            "extra_adjacency_entries": 6406,
+            "native_edges": 3203,
+            "native_modules": 907,
+            "navigation_entries": 1798,
+            "proof_distances": 1801,
+            "proof_parent_entries": 1798,
+            "retained_import_records": 3358
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 46,
+              "median": 46,
+              "min": 46,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        },
+        "retained_native": {
+          "consumer_and_output_ms": {
+            "max": 1.87394,
+            "median": 1.760764,
+            "min": 1.726338,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 1.919977,
+            "median": 1.805068,
+            "min": 1.778508,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 0.011422,
+            "median": 0.010169,
+            "min": 0.008987,
+            "samples": 7
+          },
+          "scanned_modules": 0,
+          "state": {
+            "diagnostic_witness_edges": 159,
+            "native_edges": 3203,
+            "native_modules": 907,
+            "navigation_entries": 1798,
+            "retained_import_records": 3358
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 46,
+              "median": 46,
+              "min": 46,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 46,
+              "median": 46,
+              "min": 46,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        }
+      }
+    },
+    "unchanged": {
+      "category": "unchanged",
+      "modes": {
+        "cached_library": {
+          "consumer_and_output_ms": {
+            "max": 0.423667,
+            "median": 0.401394,
+            "min": 0.377369,
+            "samples": 7
+          },
+          "edge_delta": null,
+          "elapsed_ms": {
+            "max": 0.464976,
+            "median": 0.445418,
+            "min": 0.41987,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 0.003737,
+            "median": 0.002174,
+            "min": 0.001984,
+            "samples": 7
+          },
+          "scanned_modules": null,
+          "state": {
+            "diagnostic_witness_edges": 164,
+            "native_edges": 3203,
+            "native_modules": 907,
+            "navigation_entries": 1798,
+            "retained_import_records": 0
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        },
+        "delta": {
+          "consumer_and_output_ms": {
+            "max": 0.730802,
+            "median": 0.65618,
+            "min": 0.625481,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 0.781188,
+            "median": 0.707758,
+            "min": 0.669415,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 0.009498,
+            "median": 0.008767,
+            "min": 0.008326,
+            "samples": 7
+          },
+          "scanned_modules": 0,
+          "state": {
+            "diagnostic_witness_edges": 164,
+            "extra_adjacency_entries": 6406,
+            "native_edges": 3203,
+            "native_modules": 907,
+            "navigation_entries": 1798,
+            "proof_distances": 1801,
+            "proof_parent_entries": 1798,
+            "retained_import_records": 3358
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        },
+        "retained_native": {
+          "consumer_and_output_ms": {
+            "max": 0.591196,
+            "median": 0.552322,
+            "min": 0.533706,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 0.645429,
+            "median": 0.600483,
+            "min": 0.583832,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 0.010831,
+            "median": 0.008466,
+            "min": 0.008276,
+            "samples": 7
+          },
+          "scanned_modules": 0,
+          "state": {
+            "diagnostic_witness_edges": 164,
+            "native_edges": 3203,
+            "native_modules": 907,
+            "navigation_entries": 1798,
+            "retained_import_records": 3358
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        }
+      }
+    },
+    "unchanged_after_rule_change": {
+      "category": "unchanged",
+      "modes": {
+        "cached_library": {
+          "consumer_and_output_ms": {
+            "max": 0.464365,
+            "median": 0.422295,
+            "min": 0.417225,
+            "samples": 7
+          },
+          "edge_delta": null,
+          "elapsed_ms": {
+            "max": 0.510673,
+            "median": 0.469946,
+            "min": 0.451741,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 0.001894,
+            "median": 0.001483,
+            "min": 0.001293,
+            "samples": 7
+          },
+          "scanned_modules": null,
+          "state": {
+            "diagnostic_witness_edges": 159,
+            "native_edges": 3203,
+            "native_modules": 907,
+            "navigation_entries": 1798,
+            "retained_import_records": 0
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        },
+        "delta": {
+          "consumer_and_output_ms": {
+            "max": 0.880647,
+            "median": 0.807729,
+            "min": 0.789153,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 0.914873,
+            "median": 0.846853,
+            "min": 0.82987,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 0.003767,
+            "median": 0.003226,
+            "min": 0.003136,
+            "samples": 7
+          },
+          "scanned_modules": 0,
+          "state": {
+            "diagnostic_witness_edges": 159,
+            "extra_adjacency_entries": 6406,
+            "native_edges": 3203,
+            "native_modules": 907,
+            "navigation_entries": 1798,
+            "proof_distances": 1801,
+            "proof_parent_entries": 1798,
+            "retained_import_records": 3358
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        },
+        "retained_native": {
+          "consumer_and_output_ms": {
+            "max": 1.033989,
+            "median": 0.602999,
+            "min": 0.560167,
+            "samples": 7
+          },
+          "edge_delta": 0,
+          "elapsed_ms": {
+            "max": 1.094324,
+            "median": 0.642133,
+            "min": 0.600194,
+            "samples": 7
+          },
+          "producer_ms": {
+            "max": 0.006903,
+            "median": 0.003918,
+            "min": 0.002945,
+            "samples": 7
+          },
+          "scanned_modules": 0,
+          "state": {
+            "diagnostic_witness_edges": 159,
+            "native_edges": 3203,
+            "native_modules": 907,
+            "navigation_entries": 1798,
+            "retained_import_records": 3358
+          },
+          "violations": 28,
+          "work_counts": {
+            "diagnostics_refreshed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_contract_sources": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "native_reachability": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_edges_examined": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            },
+            "proof_nodes_changed": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": 7
+            }
+          }
+        }
+      }
+    }
+  },
+  "events_per_trace": 16,
+  "groups": {
+    "after_initial": {
+      "cached_library": {
+        "max": 431.531312,
+        "median": 415.382578,
+        "min": 405.308161,
+        "samples": 7
+      },
+      "delta": {
+        "max": 166.856889,
+        "median": 156.185946,
+        "min": 153.050981,
+        "samples": 7
+      },
+      "retained_native": {
+        "max": 161.884758,
+        "median": 155.365681,
+        "min": 151.352487,
+        "samples": 7
+      }
+    },
+    "all_event_spans": {
+      "cached_library": {
+        "max": 491.045407,
+        "median": 467.342979,
+        "min": 455.801475,
+        "samples": 7
+      },
+      "delta": {
+        "max": 213.655867,
+        "median": 203.13646,
+        "min": 200.72196,
+        "samples": 7
+      },
+      "retained_native": {
+        "max": 217.829376,
+        "median": 199.63658,
+        "min": 195.523366,
+        "samples": 7
+      }
+    },
+    "configuration": {
+      "cached_library": {
+        "max": 2.56728,
+        "median": 2.292827,
+        "min": 2.140938,
+        "samples": 7
+      },
+      "delta": {
+        "max": 1.525977,
+        "median": 1.414073,
+        "min": 1.340403,
+        "samples": 7
+      },
+      "retained_native": {
+        "max": 1.919977,
+        "median": 1.805068,
+        "min": 1.778508,
+        "samples": 7
+      }
+    },
+    "fixed_namespace_edits": {
+      "cached_library": {
+        "max": 258.430076,
+        "median": 240.440199,
+        "min": 238.678142,
+        "samples": 7
+      },
+      "delta": {
+        "max": 25.624576,
+        "median": 24.574275,
+        "min": 23.840026,
+        "samples": 7
+      },
+      "retained_native": {
+        "max": 25.200408,
+        "median": 22.262204,
+        "min": 21.272517,
+        "samples": 7
+      }
+    },
+    "initial": {
+      "cached_library": {
+        "max": 70.966555,
+        "median": 51.400573,
+        "min": 49.086135,
+        "samples": 7
+      },
+      "delta": {
+        "max": 52.745986,
+        "median": 47.670979,
+        "min": 46.798978,
+        "samples": 7
+      },
+      "retained_native": {
+        "max": 62.389534,
+        "median": 45.597182,
+        "min": 43.84992,
+        "samples": 7
+      }
+    },
+    "membership_changes": {
+      "cached_library": {
+        "max": 173.297387,
+        "median": 165.876686,
+        "min": 163.453367,
+        "samples": 7
+      },
+      "delta": {
+        "max": 138.280612,
+        "median": 128.525353,
+        "min": 125.966952,
+        "samples": 7
+      },
+      "retained_native": {
+        "max": 133.039699,
+        "median": 129.923069,
+        "min": 127.018762,
+        "samples": 7
+      }
+    },
+    "unchanged": {
+      "cached_library": {
+        "max": 0.956091,
+        "median": 0.90815,
+        "min": 0.885567,
+        "samples": 7
+      },
+      "delta": {
+        "max": 1.696061,
+        "median": 1.560341,
+        "min": 1.516268,
+        "samples": 7
+      },
+      "retained_native": {
+        "max": 1.739753,
+        "median": 1.242616,
+        "min": 1.194626,
+        "samples": 7
+      }
+    }
+  },
+  "paired_percent_change": {
+    "after_initial": {
+      "delta_vs_cached_library": {
+        "max": -61.333770143659926,
+        "median": -62.20710937029467,
+        "min": -63.418150361923,
+        "samples": 7
+      },
+      "delta_vs_retained_native": {
+        "max": 6.4170329255566205,
+        "median": 1.4477447640734997,
+        "min": -5.456830593032114,
+        "samples": 7
+      },
+      "retained_native_vs_cached_library": {
+        "max": -60.48864907983873,
+        "median": -62.93608611577349,
+        "min": -63.665374993692225,
+        "samples": 7
+      }
+    },
+    "all_event_spans": {
+      "delta_vs_cached_library": {
+        "max": -55.05516688205131,
+        "median": -55.685115895795704,
+        "min": -58.98520663690883,
+        "samples": 7
+      },
+      "delta_vs_retained_native": {
+        "max": 6.400073269366291,
+        "median": 1.7531256045359989,
+        "min": -7.1411286602593,
+        "samples": 7
+      },
+      "retained_native_vs_cached_library": {
+        "max": -52.20959388075697,
+        "median": -57.470931001190884,
+        "min": -59.43030966991613,
+        "samples": 7
+      }
+    },
+    "configuration": {
+      "delta_vs_cached_library": {
+        "max": -31.294239557377146,
+        "median": -38.32622347870118,
+        "min": -41.509192498462774,
+        "samples": 7
+      },
+      "delta_vs_retained_native": {
+        "max": -17.004066277465025,
+        "median": -22.8370897938471,
+        "min": -29.63387015997707,
+        "samples": 7
+      },
+      "retained_native_vs_cached_library": {
+        "max": -11.025074056324847,
+        "median": -21.960722430583324,
+        "min": -26.549032439001586,
+        "samples": 7
+      }
+    },
+    "fixed_namespace_edits": {
+      "delta_vs_cached_library": {
+        "max": -89.57593805936904,
+        "median": -90.06388031860648,
+        "min": -90.1701188995974,
+        "samples": 7
+      },
+      "delta_vs_retained_native": {
+        "max": 14.864417660185559,
+        "median": 11.811167716563453,
+        "min": -5.398253869540525,
+        "samples": 7
+      },
+      "retained_native_vs_cached_library": {
+        "max": -89.51905375856056,
+        "median": -91.08736274643867,
+        "min": -91.34969742258346,
+        "samples": 7
+      }
+    },
+    "initial": {
+      "delta_vs_cached_library": {
+        "max": 2.1622805626902997,
+        "median": -7.255938567066167,
+        "min": -32.74487538531354,
+        "samples": 7
+      },
+      "delta_vs_retained_native": {
+        "max": 15.678170637825817,
+        "median": 6.339649349618859,
+        "min": -21.306945488645578,
+        "samples": 7
+      },
+      "retained_native_vs_cached_library": {
+        "max": 23.559990536568854,
+        "median": -11.684045486379723,
+        "min": -38.210442933294416,
+        "samples": 7
+      }
+    },
+    "membership_changes": {
+      "delta_vs_cached_library": {
+        "max": -18.61071147631388,
+        "median": -22.851187886512005,
+        "min": -25.31690624971743,
+        "samples": 7
+      },
+      "delta_vs_retained_native": {
+        "max": 5.4663425617220485,
+        "median": -0.7356731115020443,
+        "min": -5.1602702438465435,
+        "samples": 7
+      },
+      "retained_native_vs_cached_library": {
+        "max": -19.953794149705363,
+        "median": -21.458735316185418,
+        "min": -26.338690842464928,
+        "samples": 7
+      }
+    },
+    "unchanged": {
+      "delta_vs_cached_library": {
+        "max": 81.91716202272596,
+        "median": 71.22002061955786,
+        "min": 66.89531319190264,
+        "samples": 7
+      },
+      "delta_vs_retained_native": {
+        "max": 35.496482885523676,
+        "median": 24.72573989068223,
+        "min": -2.511390984812212,
+        "samples": 7
+      },
+      "retained_native_vs_cached_library": {
+        "max": 86.60350564073083,
+        "median": 37.06981469449797,
+        "min": 28.278508795386138,
+        "samples": 7
+      }
+    }
+  },
+  "response_contract": "Three dependency-navigation sets and real forbidden-rule decisions with one shortest current explanation per violation; not the full CLI multi-chain report.",
+  "schema_version": 1
+}

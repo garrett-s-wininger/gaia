@@ -1,0 +1,1329 @@
+{
+  "cases": {
+    "noop": {
+      "original": {
+        "complete_ms": {
+          "median": 10.224017,
+          "min": 10.080384,
+          "max": 12.333763,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 10.197636,
+          "min": 10.050446,
+          "max": 12.323013,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 10.609000000044944,
+          "min": 10.569999999972879,
+          "max": 10.739999999941574,
+          "samples": 3
+        },
+        "compiled_targets": [
+          0,
+          0,
+          0
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      },
+      "refined": {
+        "complete_ms": {
+          "median": 4.908722,
+          "min": 4.239709,
+          "max": 5.210156,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 4.878594,
+          "min": 4.217196,
+          "max": 5.164979,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 10.576000000014574,
+          "min": 0.6970000000023902,
+          "max": 10.648999999943953,
+          "samples": 3
+        },
+        "compiled_targets": [
+          0,
+          0,
+          0
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ninja-ccache": {
+        "complete_ms": {
+          "median": 8.036658,
+          "min": 5.824985,
+          "max": 10.069624,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 6.782908,
+          "min": 4.744453,
+          "max": 7.09164,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 8.112999999980275,
+          "min": 5.894999999952688,
+          "max": 9.411999999997533,
+          "samples": 3
+        },
+        "compiled_targets": [
+          null,
+          null,
+          null
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "source": {
+      "original": {
+        "complete_ms": {
+          "median": 291.692713,
+          "min": 276.65769,
+          "max": 322.208693,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 291.678636,
+          "min": 276.639024,
+          "max": 322.187161,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 292.822000000001,
+          "min": 274.460999999917,
+          "max": 316.0850000000437,
+          "samples": 3
+        },
+        "compiled_targets": [
+          1,
+          1,
+          1
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      },
+      "refined": {
+        "complete_ms": {
+          "median": 279.383486,
+          "min": 276.541957,
+          "max": 299.047096,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 125.936743,
+          "min": 122.768799,
+          "max": 133.041125,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 285.61899999999696,
+          "min": 267.84299999997074,
+          "max": 298.8309999999501,
+          "samples": 3
+        },
+        "compiled_targets": [
+          1,
+          1,
+          1
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ninja-ccache": {
+        "complete_ms": {
+          "median": 505.861488,
+          "min": 331.785176,
+          "max": 807.412263,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 197.011836,
+          "min": 114.258874,
+          "max": 289.042865,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 702.7460000000474,
+          "min": 432.9650000000811,
+          "max": 1073.270999999977,
+          "samples": 3
+        },
+        "compiled_targets": [
+          null,
+          null,
+          null
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "rewire": {
+      "original": {
+        "complete_ms": {
+          "median": 294.086475,
+          "min": 268.387285,
+          "max": 296.677152,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 294.070244,
+          "min": 268.368078,
+          "max": 296.660871,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 285.5809999999792,
+          "min": 270.47700000002806,
+          "max": 294.04300000010153,
+          "samples": 3
+        },
+        "compiled_targets": [
+          1,
+          1,
+          1
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      },
+      "refined": {
+        "complete_ms": {
+          "median": 276.242934,
+          "min": 274.601223,
+          "max": 304.562392,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 125.254733,
+          "min": 122.791068,
+          "max": 133.779815,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 283.62099999998236,
+          "min": 271.5880000000084,
+          "max": 290.76500000007854,
+          "samples": 3
+        },
+        "compiled_targets": [
+          1,
+          1,
+          1
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ninja-ccache": {
+        "complete_ms": {
+          "median": 511.16064,
+          "min": 325.745889,
+          "max": 543.684123,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 151.489545,
+          "min": 114.887432,
+          "max": 247.557856,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 646.9969999999989,
+          "min": 432.50399999999445,
+          "max": 769.4409999999721,
+          "samples": 3
+        },
+        "compiled_targets": [
+          null,
+          null,
+          null
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "old_header": {
+      "original": {
+        "complete_ms": {
+          "median": 10.069091,
+          "min": 9.685211,
+          "max": 11.987319,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 10.054873,
+          "min": 9.674771,
+          "max": 11.964665,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 10.754999999960546,
+          "min": 10.594999999966603,
+          "max": 11.012000000050648,
+          "samples": 3
+        },
+        "compiled_targets": [
+          0,
+          0,
+          0
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      },
+      "refined": {
+        "complete_ms": {
+          "median": 5.387032,
+          "min": 4.742675,
+          "max": 6.472857,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 5.346905,
+          "min": 4.71407,
+          "max": 6.442549,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 1.5300000000024738,
+          "min": 0.8520000000089567,
+          "max": 11.576999999988402,
+          "samples": 3
+        },
+        "compiled_targets": [
+          0,
+          0,
+          0
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ninja-ccache": {
+        "complete_ms": {
+          "median": 7.148365,
+          "min": 5.624159,
+          "max": 7.574798,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 6.816061,
+          "min": 5.280654,
+          "max": 6.915541,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 6.802000000050157,
+          "min": 5.676000000050863,
+          "max": 14.62699999990491,
+          "samples": 3
+        },
+        "compiled_targets": [
+          null,
+          null,
+          null
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "new_header": {
+      "original": {
+        "complete_ms": {
+          "median": 290.16086,
+          "min": 269.732551,
+          "max": 290.231411,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 290.144549,
+          "min": 269.712382,
+          "max": 290.200943,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 289.8710000001188,
+          "min": 260.03599999995686,
+          "max": 292.9219999999759,
+          "samples": 3
+        },
+        "compiled_targets": [
+          1,
+          1,
+          1
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      },
+      "refined": {
+        "complete_ms": {
+          "median": 277.320974,
+          "min": 273.704102,
+          "max": 289.844968,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 125.625856,
+          "min": 117.536958,
+          "max": 128.99004,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 282.5080000000071,
+          "min": 272.12500000007367,
+          "max": 291.71599999995124,
+          "samples": 3
+        },
+        "compiled_targets": [
+          1,
+          1,
+          1
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ninja-ccache": {
+        "complete_ms": {
+          "median": 398.516825,
+          "min": 340.998262,
+          "max": 484.239234,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 141.107714,
+          "min": 130.847395,
+          "max": 155.102253,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 543.640000000039,
+          "min": 462.0479999999816,
+          "max": 630.025000000046,
+          "samples": 3
+        },
+        "compiled_targets": [
+          null,
+          null,
+          null
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "optional_appear": {
+      "original": {
+        "complete_ms": {
+          "median": 289.411474,
+          "min": 275.169296,
+          "max": 289.821407,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 289.379332,
+          "min": 275.14528,
+          "max": 289.774888,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 286.6670000000795,
+          "min": 283.96099999991975,
+          "max": 290.42600000002494,
+          "samples": 3
+        },
+        "compiled_targets": [
+          1,
+          1,
+          1
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      },
+      "refined": {
+        "complete_ms": {
+          "median": 281.218841,
+          "min": 274.342559,
+          "max": 300.098213,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 126.332461,
+          "min": 121.631442,
+          "max": 136.686662,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 286.04699999993954,
+          "min": 266.07799999999315,
+          "max": 291.78399999989324,
+          "samples": 3
+        },
+        "compiled_targets": [
+          1,
+          1,
+          1
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ninja-ccache": {
+        "complete_ms": {
+          "median": 341.70965,
+          "min": 337.968069,
+          "max": 471.772548,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 129.720825,
+          "min": 113.984804,
+          "max": 165.460709,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 460.1079999999911,
+          "min": 433.8409999999726,
+          "max": 630.9469999999919,
+          "samples": 3
+        },
+        "compiled_targets": [
+          null,
+          null,
+          null
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "optional_remove": {
+      "original": {
+        "complete_ms": {
+          "median": 294.977348,
+          "min": 285.072173,
+          "max": 445.668352,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 294.961287,
+          "min": 285.055721,
+          "max": 445.643154,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 294.53799999998864,
+          "min": 276.5940000000455,
+          "max": 436.90699999990557,
+          "samples": 3
+        },
+        "compiled_targets": [
+          1,
+          1,
+          1
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      },
+      "refined": {
+        "complete_ms": {
+          "median": 129.673405,
+          "min": 127.376059,
+          "max": 142.436128,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 5.704467,
+          "min": 5.640187,
+          "max": 6.918374,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 122.85900000000538,
+          "min": 119.9799999999982,
+          "max": 142.3090000000684,
+          "samples": 3
+        },
+        "compiled_targets": [
+          0,
+          0,
+          0
+        ],
+        "restored_targets": [
+          1,
+          1,
+          1
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ninja-ccache": {
+        "complete_ms": {
+          "median": 182.314544,
+          "min": 169.089164,
+          "max": 187.321511,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 5.273083,
+          "min": 5.116827,
+          "max": 5.956768,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 178.65400000005138,
+          "min": 169.95199999996657,
+          "max": 182.57099999999582,
+          "samples": 3
+        },
+        "compiled_targets": [
+          null,
+          null,
+          null
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "shadow": {
+      "original": {
+        "complete_ms": {
+          "median": 289.383256,
+          "min": 279.556332,
+          "max": 338.414467,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 289.362105,
+          "min": 279.541173,
+          "max": 338.394779,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 285.3329999999801,
+          "min": 283.41199999999844,
+          "max": 336.88100000006216,
+          "samples": 3
+        },
+        "compiled_targets": [
+          1,
+          1,
+          1
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      },
+      "refined": {
+        "complete_ms": {
+          "median": 275.568845,
+          "min": 275.565159,
+          "max": 300.950751,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 124.106839,
+          "min": 122.727525,
+          "max": 133.644513,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 273.853000000031,
+          "min": 273.70799999994233,
+          "max": 295.90700000005654,
+          "samples": 3
+        },
+        "compiled_targets": [
+          1,
+          1,
+          1
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ninja-ccache": {
+        "complete_ms": {
+          "median": 352.132031,
+          "min": 318.563295,
+          "max": 361.293755,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 127.293833,
+          "min": 112.838739,
+          "max": 141.66712,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 461.5010000000552,
+          "min": 421.30800000001045,
+          "max": 481.0950000000389,
+          "samples": 3
+        },
+        "compiled_targets": [
+          null,
+          null,
+          null
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "unrelated": {
+      "original": {
+        "complete_ms": {
+          "median": 11.545831,
+          "min": 10.586085,
+          "max": 12.763059,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 11.528608,
+          "min": 10.573581,
+          "max": 12.743381,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 10.924999999986085,
+          "min": 10.734999999954198,
+          "max": 11.054999999942083,
+          "samples": 3
+        },
+        "compiled_targets": [
+          0,
+          0,
+          0
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      },
+      "refined": {
+        "complete_ms": {
+          "median": 4.794956,
+          "min": 4.66244,
+          "max": 5.544898,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 4.766701,
+          "min": 4.615139,
+          "max": 5.515381,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 10.896999999999935,
+          "min": 0.9169999999585343,
+          "max": 11.130999999977575,
+          "samples": 3
+        },
+        "compiled_targets": [
+          0,
+          0,
+          0
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ninja-ccache": {
+        "complete_ms": {
+          "median": 6.206946,
+          "min": 5.849912,
+          "max": 6.872287,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 5.95411,
+          "min": 5.661089,
+          "max": 6.633267,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 15.574000000015076,
+          "min": 5.311999999946693,
+          "max": 15.860999999972591,
+          "samples": 3
+        },
+        "compiled_targets": [
+          null,
+          null,
+          null
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "header": {
+      "original": {
+        "complete_ms": {
+          "median": 3114.324602,
+          "min": 3046.224971,
+          "max": 3741.270907,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 3114.302761,
+          "min": 3046.206305,
+          "max": 3741.25143,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 3106.2890000000607,
+          "min": 3040.074000000061,
+          "max": 3739.255999999955,
+          "samples": 3
+        },
+        "compiled_targets": [
+          4,
+          4,
+          4
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      },
+      "refined": {
+        "complete_ms": {
+          "median": 2880.630122,
+          "min": 2773.906851,
+          "max": 3279.454634,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 2725.950191,
+          "min": 2619.957522,
+          "max": 3116.104484,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 2887.0670000000587,
+          "min": 2775.92199999998,
+          "max": 3278.705999999943,
+          "samples": 3
+        },
+        "compiled_targets": [
+          4,
+          4,
+          4
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ninja-ccache": {
+        "complete_ms": {
+          "median": 3210.622405,
+          "min": 3003.183559,
+          "max": 3401.337282,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 1320.039361,
+          "min": 1248.841215,
+          "max": 1555.187566,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 4496.2620000000015,
+          "min": 4232.101000000057,
+          "max": 4934.228000000019,
+          "samples": 3
+        },
+        "compiled_targets": [
+          null,
+          null,
+          null
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "configuration": {
+      "original": {
+        "complete_ms": {
+          "median": 14360.019238,
+          "min": 14091.291338,
+          "max": 15843.143788,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 14359.999961,
+          "min": 14091.268855,
+          "max": 15843.126605,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 14357.632999999965,
+          "min": 14088.749999999947,
+          "max": 15845.775999999887,
+          "samples": 3
+        },
+        "compiled_targets": [
+          33,
+          33,
+          33
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      },
+      "refined": {
+        "complete_ms": {
+          "median": 272.327156,
+          "min": 269.966918,
+          "max": 334.349107,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 124.66802,
+          "min": 120.036202,
+          "max": 146.703447,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 267.996999999923,
+          "min": 260.4130000000282,
+          "max": 328.82599999993545,
+          "samples": 3
+        },
+        "compiled_targets": [
+          1,
+          1,
+          1
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          32,
+          32,
+          32
+        ]
+      },
+      "ninja-ccache": {
+        "complete_ms": {
+          "median": 2414.01158,
+          "min": 2313.561665,
+          "max": 2452.605301,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 118.257459,
+          "min": 117.802163,
+          "max": 124.054879,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 2404.6800000000417,
+          "min": 2337.4259999999367,
+          "max": 2465.4969999999707,
+          "samples": 3
+        },
+        "compiled_targets": [
+          null,
+          null,
+          null
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "burst": {
+      "original": {
+        "complete_ms": {
+          "median": 274.2026,
+          "min": 272.936298,
+          "max": 297.570838,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 274.193602,
+          "min": 272.925458,
+          "max": 297.562282,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 273.7300000000005,
+          "min": 273.1140000000778,
+          "max": 303.76400000000103,
+          "samples": 3
+        },
+        "compiled_targets": [
+          1,
+          1,
+          1
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      },
+      "refined": {
+        "complete_ms": {
+          "median": 271.588322,
+          "min": 270.478751,
+          "max": 306.141104,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 122.722644,
+          "min": 120.934136,
+          "max": 136.037477,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 271.29400000006854,
+          "min": 268.8630000000103,
+          "max": 308.18200000010165,
+          "samples": 3
+        },
+        "compiled_targets": [
+          1,
+          1,
+          1
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          32,
+          32,
+          32
+        ]
+      },
+      "ninja-ccache": {
+        "complete_ms": {
+          "median": 345.668584,
+          "min": 326.097661,
+          "max": 374.973201,
+          "samples": 3
+        },
+        "editor_ms": {
+          "median": 117.528888,
+          "min": 114.043571,
+          "max": 150.754244,
+          "samples": 3
+        },
+        "cpu_ms_estimate": {
+          "median": 441.53099999994083,
+          "min": 430.43800000003785,
+          "max": 519.0620000000195,
+          "samples": 3
+        },
+        "compiled_targets": [
+          null,
+          null,
+          null
+        ],
+        "restored_targets": [
+          0,
+          0,
+          0
+        ],
+        "projected_targets": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "timed_operation_sums_ms": {
+    "original": {
+      "median": 20282.578553,
+      "min": 19173.784924,
+      "max": 21071.204798,
+      "samples": 3
+    },
+    "refined": {
+      "median": 4956.601555,
+      "min": 4832.873077,
+      "max": 5573.81087,
+      "samples": 3
+    },
+    "ninja-ccache": {
+      "median": 8667.252385,
+      "min": 7484.291796,
+      "max": 8725.293258,
+      "samples": 3
+    }
+  },
+  "current_worker_pss_mib": {
+    "original": {
+      "median": 189.2568359375,
+      "min": 129.6865234375,
+      "max": 225.0625,
+      "samples": 36
+    },
+    "refined": {
+      "median": 208.2666015625,
+      "min": 167.1943359375,
+      "max": 244.2275390625,
+      "samples": 36
+    },
+    "ninja-ccache": {
+      "median": 129.3955078125,
+      "min": 91.6123046875,
+      "max": 145.0693359375,
+      "samples": 36
+    }
+  },
+  "trace_paired_wins_vs_ninja": 3
+}

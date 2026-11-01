@@ -1,0 +1,30 @@
+{
+  "build": {
+    "archive_sha256": "5161e03c6f518fe4da43b06c97ff49a1e224ecb0e4b9fd6ef48235373d1b7b33",
+    "build_ns": 23740623351,
+    "cargo": "cargo 1.99.1 (5f94df478 2026-08-27)\n",
+    "cargo_lock_sha256": "e878a3f0633d1f6dfad2778a8f32025fe50caf2ee6d81bdc3b8202be4aed9450",
+    "command": [
+      "/tmp/gaia-substrate-connections/experiments/_work/import-rebinding-source/cargo/bin/cargo",
+      "build",
+      "--manifest-path",
+      "/tmp/gaia-substrate-connections/experiments/_work/import-rebinding-build-check/grimp-3.17/rust/Cargo.toml",
+      "--locked",
+      "--release",
+      "-j",
+      "4",
+      "--offline"
+    ],
+    "native_path": "/tmp/gaia-substrate-connections/experiments/_work/import-rebinding-build-check/grimp-3.17/rust/target/release/lib_rustgrimp.so",
+    "native_sha256": "1c853bc9fb5f33cc8eb06665ebf32876cc933d391a8d7d16481718443d692ef1",
+    "patch_sha256": "c69f18d3f09b71f43ae8a3572968f3ea25ecf02b290fe5f817c4acf7c8188ad1",
+    "patched_scanner_sha256": "c9d841a617f2a3568c0a30cffb47c49c2b6f354b398910baf6c8a6698c384bd4",
+    "python": "3.14.8 (main, Oct  2 2026, 10:23:31) [GCC 16.2.1 20260810]",
+    "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)\nbinary: rustc\ncommit-hash: 58cf8f9c35b355199727627d07ae34a4e2846d67\ncommit-date: 2026-10-13\nhost: x86_64-unknown-linux-gnu\nrelease: 1.99.1\nLLVM version: 23.1.1\n"
+  },
+  "fresh_offline_build_with_documented_helper": true,
+  "helper_sha256": "e01b4ed25a2bde197cd74a97c52748bb3d6a9459cff188278a2cef4f715e69db",
+  "passed": true,
+  "patched_scanner_matches_measured_source": true,
+  "tests": "....\n----------------------------------------------------------------------\nRan 4 tests in 1.086s\n\nOK\n"
+}

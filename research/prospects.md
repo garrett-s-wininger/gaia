@@ -1,6 +1,8 @@
 # What is worth testing next
 
-The next experiments should connect the demonstrated pieces and broaden their workloads. The [broader sharing pass](workflows/coverage.md) now includes compiler, data, test, repository and schema controls. More isolated format tuning is useful only when a profile identifies meaningful work in the complete operation.
+The [cross-field continuations](connections/prospects.md) now connect real source discovery, diagnostics and recorded test execution. Reuse native facts and observed namespace keys, give retained results explicit source/configuration and lifetime contracts, and test unfamiliar tasks with varied queries. The added evidence view has measured overhead; it still needs a user-facing benefit study. Additional representations or isolation mechanisms must beat equally cached native controls over the complete operation.
+
+The [concrete integration](integration/README.md) connects compiler outputs with shared observations and editor queries, alongside SIMD and CPU-dispatched hash tests. After the [refinement](integration/refinements/README.md), the [four-project follow-up](integration/generalization/README.md) freezes reuse rules and tests bounded backend scheduling on different graphs. Diagnostic retention, cache working sets and handoff CPU now matter more than another scan kernel. Add natural edits and a real consumer before broadening performance claims. The [broader sharing pass](workflows/coverage.md) includes compiler, data, test, repository and schema controls. More isolated format tuning is useful when a profile identifies meaningful work in the complete operation.
 
 ## Use shared models across different workloads
 

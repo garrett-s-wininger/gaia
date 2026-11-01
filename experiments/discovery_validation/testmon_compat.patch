@@ -1,0 +1,11 @@
+--- a/testmon/testmon_core.py
++++ b/testmon/testmon_core.py
+@@ -90,7 +90,7 @@
+                     self.cache[filename] = Module(
+                         source_code=code,
+                         mtime=fs_mtime,
+-                        ext=filename.rsplit(".", 1)[1],
++                        ext=filename.rsplit(".", 1)[1] if "." in filename else "",
+                         fs_fsha=fsha,
+                         filename=filename,
+                         rootdir=self.rootdir,

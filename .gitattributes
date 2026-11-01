@@ -1,0 +1,2 @@
+# Preserve required blank context markers in the pinned upstream patch.
+experiments/import_rebinding/native.patch whitespace=-blank-at-eol,-blank-at-eof

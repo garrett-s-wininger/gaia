@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "odin_version": "/opt/odin/nightly/odin version dev-2026-10-nightly:84bc3fc",
+  "cpp_compiler": "clang version 22.1.8",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.44",
+  "cpu_model": "AMD Ryzen AI 7 PRO 450 w/ Radeon 860M",
+  "affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "builds": {
+    "generic": {
+      "odin_flags": [
+        "-file",
+        "-build-mode:obj",
+        "-reloc-mode:pic",
+        "-o:speed"
+      ],
+      "library_sha256": "0bc74972c9440a974a36d1906851a8889915d5f3912e05fe28c1d94e6191888f",
+      "static_ymm_lines": 48,
+      "static_zmm_lines": 0
+    },
+    "native": {
+      "odin_flags": [
+        "-file",
+        "-build-mode:obj",
+        "-reloc-mode:pic",
+        "-o:speed",
+        "-microarch:native"
+      ],
+      "library_sha256": "80adeedbf6f49bacd428540381865b5638e1468db1310b73f8e098e606644613",
+      "static_ymm_lines": 182,
+      "static_zmm_lines": 149
+    }
+  },
+  "harness_flags": [
+    "-O3",
+    "-std=c++17",
+    "-march=native"
+  ],
+  "harness_sha256": "8057544672571379ced480135a0e583fabdb8900e5bd18eb334dd2cc57eec90f",
+  "scope": "Instruction-line counts establish compiled vector code, not dynamic instruction counts. Runtime feature checks and exact-output runs establish supported execution."
+}

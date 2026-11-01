@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "workflow_operations": 108,
+  "targets_per_operation": 33,
+  "object_checks": 3564,
+  "depfile_checks": 3564,
+  "executable_checks": 108,
+  "symbol_index_checks": 3564,
+  "full_oracle_generations": 12,
+  "stale_generation_rejections": 9,
+  "unit_test_methods": 4,
+  "source_pins_verified_after": true
+}

@@ -6,8 +6,12 @@ The [broader sharing overview](workflows/coverage.md) maps the compiler, data, t
 
 The [shared theory track](theory/README.md) connects graph, set, patch, networking and adaptive/nature-inspired models to [proposed experiment sets](theory/experiments.md). The [science experiments](science/README.md) now test those proposals with bounded models, real consumers, compiler analyses and device execution.
 
+The [cross-field connections](connections/README.md) combine literature with seven measured continuations. Read the [findings](connections/findings.md) for retained native facts, namespace invalidation, compiler policy, runtime isolation and source/test evidence; the [prospects](connections/prospects.md) keep the remaining hypotheses separate from measured gains.
+
 | Topic | Findings | Next questions | Code and reproduction |
 | --- | --- | --- | --- |
+| [Shared workspace and CPU integration](integration/README.md) | [Read](integration/findings.md) | [Read](integration/prospects.md) | [Integration experiments](../experiments/integration/README.md) |
+| [Native facts, ownership and source discovery](connections/README.md) | [Read](connections/findings.md) | [Read](connections/prospects.md) | [Connections experiments](../experiments/connections/README.md) |
 | [Transformations, geometry and heterogeneous compute](science/README.md) | [Coverage and limits](science/coverage.md) | [Priorities](science/prospects.md) | [Science experiments](../experiments/science/README.md) |
 | [Native compiler execution and input reuse](compiler/README.md) | [Read](compiler/findings.md) | [Read](compiler/prospects.md) | [Compiler experiments](../experiments/compiler/README.md) |
 | [Managed JVM compilers](compiler/jvm/README.md) | [Read](compiler/jvm/findings.md) | [Read](compiler/jvm/prospects.md) | [Java compiler experiment](../experiments/java/compiler/README.md) |

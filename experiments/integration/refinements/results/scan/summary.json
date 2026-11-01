@@ -1,0 +1,30 @@
+{
+  "retained": {
+    "original": {
+      "median": 5.676606,
+      "min": 4.501808,
+      "max": 8.866292,
+      "samples": 70
+    },
+    "refined": {
+      "median": 1.278252,
+      "min": 1.106198,
+      "max": 3.268466,
+      "samples": 70
+    }
+  },
+  "admit_unchanged": {
+    "original": {
+      "median": 8.3505645,
+      "min": 6.854121,
+      "max": 10.969208,
+      "samples": 70
+    },
+    "refined": {
+      "median": 1.692312,
+      "min": 1.341979,
+      "max": 3.046852,
+      "samples": 70
+    }
+  }
+}

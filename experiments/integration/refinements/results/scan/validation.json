@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "responses": 280,
+  "index_checks": 9240,
+  "changed_generation_checks": 2,
+  "same_sha256_contract": true,
+  "frozen_inputs_verified_after": true
+}

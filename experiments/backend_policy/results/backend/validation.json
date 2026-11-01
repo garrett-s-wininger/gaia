@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "real_compiles_linked_and_executed": 70,
+  "round_trips_checked": 105840,
+  "exact_compressed_frames_match_current_edit_O2_reference": true,
+  "both_edits_change_observed_compressed_bytes": true,
+  "optimized_ir_identical_between_O2_policies": true,
+  "stable_objects_across_blocks": true,
+  "source_and_tools_verified_after": true,
+  "limits": "Deterministic experimental API workload, not upstream conformance suite or proof of all Zstandard/compiler behavior. No sanitizers, debug-info or multithreaded compression tested."
+}

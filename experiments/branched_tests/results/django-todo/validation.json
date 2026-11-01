@@ -1,0 +1,12 @@
+{
+  "all_responses_match": true,
+  "failure_and_termination_recovery": true,
+  "fork_alone_leaks_committed_database_write": true,
+  "fork_alone_leaks_file_write": true,
+  "normal_finalization_verified": true,
+  "real_source_and_settings_edits_verified": true,
+  "responses": 350,
+  "stale_template_rejections": 70,
+  "template_artifacts_unchanged": true,
+  "upstream_test_bodies_unchanged": true
+}

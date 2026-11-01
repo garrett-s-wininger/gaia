@@ -1,0 +1,459 @@
+{
+  "cases": {
+    "search_budget": {
+      "O0": {
+        "compile_ns": {
+          "median_ms": 472.493897,
+          "min_ms": 459.032919,
+          "max_ms": 560.728376,
+          "samples": 7,
+          "paired_wins_vs_O2": 7
+        },
+        "link_ns": {
+          "median_ms": 34.94192,
+          "min_ms": 34.323743,
+          "max_ms": 39.362864,
+          "samples": 7
+        },
+        "test_ns": {
+          "median_ms": 79.404518,
+          "min_ms": 79.247693,
+          "max_ms": 90.334309,
+          "samples": 7
+        },
+        "cycle_ns": {
+          "median_ms": 586.894799,
+          "min_ms": 573.419971,
+          "max_ms": 690.560578,
+          "samples": 7,
+          "paired_wins_vs_O2": 7
+        },
+        "long_test_ns": {
+          "median_ms": 629.205971,
+          "min_ms": 610.595295,
+          "max_ms": 711.886956,
+          "samples": 7
+        },
+        "long_demand_sum_ns": {
+          "median_ms": 1136.794675,
+          "min_ms": 1104.764506,
+          "max_ms": 1312.113225,
+          "samples": 7,
+          "paired_wins_vs_O2": 7
+        },
+        "object_bytes": [
+          1180040
+        ],
+        "cases_per_short_suite": 168
+      },
+      "Og": {
+        "compile_ns": {
+          "median_ms": 1572.712117,
+          "min_ms": 1508.121142,
+          "max_ms": 1689.874404,
+          "samples": 7,
+          "paired_wins_vs_O2": 7
+        },
+        "link_ns": {
+          "median_ms": 34.361462,
+          "min_ms": 33.724891,
+          "max_ms": 35.176395,
+          "samples": 7
+        },
+        "test_ns": {
+          "median_ms": 26.758013,
+          "min_ms": 25.658948,
+          "max_ms": 27.547221,
+          "samples": 7
+        },
+        "cycle_ns": {
+          "median_ms": 1634.794318,
+          "min_ms": 1568.211076,
+          "max_ms": 1751.881152,
+          "samples": 7,
+          "paired_wins_vs_O2": 7
+        },
+        "long_test_ns": {
+          "median_ms": 188.048168,
+          "min_ms": 186.170393,
+          "max_ms": 200.8834,
+          "samples": 7
+        },
+        "long_demand_sum_ns": {
+          "median_ms": 1795.773158,
+          "min_ms": 1729.771682,
+          "max_ms": 1921.631898,
+          "samples": 7,
+          "paired_wins_vs_O2": 7
+        },
+        "object_bytes": [
+          179952
+        ],
+        "cases_per_short_suite": 168
+      },
+      "O1": {
+        "compile_ns": {
+          "median_ms": 1719.310342,
+          "min_ms": 1521.873611,
+          "max_ms": 2646.913598,
+          "samples": 7,
+          "paired_wins_vs_O2": 6
+        },
+        "link_ns": {
+          "median_ms": 34.905373,
+          "min_ms": 33.684015,
+          "max_ms": 39.58434,
+          "samples": 7
+        },
+        "test_ns": {
+          "median_ms": 26.777592,
+          "min_ms": 25.536573,
+          "max_ms": 39.391881,
+          "samples": 7
+        },
+        "cycle_ns": {
+          "median_ms": 1780.746871,
+          "min_ms": 1581.487615,
+          "max_ms": 2710.860383,
+          "samples": 7,
+          "paired_wins_vs_O2": 6
+        },
+        "long_test_ns": {
+          "median_ms": 192.130038,
+          "min_ms": 180.723437,
+          "max_ms": 199.880751,
+          "samples": 7
+        },
+        "long_demand_sum_ns": {
+          "median_ms": 1946.099317,
+          "min_ms": 1736.586248,
+          "max_ms": 2881.427882,
+          "samples": 7,
+          "paired_wins_vs_O2": 6
+        },
+        "object_bytes": [
+          178560
+        ],
+        "cases_per_short_suite": 168
+      },
+      "O2": {
+        "compile_ns": {
+          "median_ms": 2045.269633,
+          "min_ms": 1981.130894,
+          "max_ms": 2733.577065,
+          "samples": 7,
+          "paired_wins_vs_O2": 0
+        },
+        "link_ns": {
+          "median_ms": 34.994863,
+          "min_ms": 33.479061,
+          "max_ms": 86.041896,
+          "samples": 7
+        },
+        "test_ns": {
+          "median_ms": 26.071305,
+          "min_ms": 25.144574,
+          "max_ms": 58.540556,
+          "samples": 7
+        },
+        "cycle_ns": {
+          "median_ms": 2104.127558,
+          "min_ms": 2041.457781,
+          "max_ms": 2870.165369,
+          "samples": 7,
+          "paired_wins_vs_O2": 0
+        },
+        "long_test_ns": {
+          "median_ms": 183.4579,
+          "min_ms": 180.552112,
+          "max_ms": 460.190933,
+          "samples": 7
+        },
+        "long_demand_sum_ns": {
+          "median_ms": 2259.535096,
+          "min_ms": 2196.913165,
+          "max_ms": 3105.77923,
+          "samples": 7,
+          "paired_wins_vs_O2": 0
+        },
+        "object_bytes": [
+          190000
+        ],
+        "cases_per_short_suite": 168
+      },
+      "O2_fast_machine": {
+        "compile_ns": {
+          "median_ms": 1697.901646,
+          "min_ms": 1568.413335,
+          "max_ms": 1764.609791,
+          "samples": 7,
+          "paired_wins_vs_O2": 7
+        },
+        "link_ns": {
+          "median_ms": 35.003277,
+          "min_ms": 34.158697,
+          "max_ms": 36.804319,
+          "samples": 7
+        },
+        "test_ns": {
+          "median_ms": 38.379986,
+          "min_ms": 36.553829,
+          "max_ms": 39.119031,
+          "samples": 7
+        },
+        "cycle_ns": {
+          "median_ms": 1771.5587,
+          "min_ms": 1641.70212,
+          "max_ms": 1838.033599,
+          "samples": 7,
+          "paired_wins_vs_O2": 7
+        },
+        "long_test_ns": {
+          "median_ms": 277.70072,
+          "min_ms": 272.633898,
+          "max_ms": 293.802416,
+          "samples": 7
+        },
+        "long_demand_sum_ns": {
+          "median_ms": 2019.032119,
+          "min_ms": 1880.289169,
+          "max_ms": 2092.716984,
+          "samples": 7,
+          "paired_wins_vs_O2": 7
+        },
+        "object_bytes": [
+          450392
+        ],
+        "cases_per_short_suite": 168
+      }
+    },
+    "lazy_depth": {
+      "O0": {
+        "compile_ns": {
+          "median_ms": 475.432534,
+          "min_ms": 460.117051,
+          "max_ms": 1005.691933,
+          "samples": 7,
+          "paired_wins_vs_O2": 7
+        },
+        "link_ns": {
+          "median_ms": 36.084605,
+          "min_ms": 34.895322,
+          "max_ms": 42.739061,
+          "samples": 7
+        },
+        "test_ns": {
+          "median_ms": 82.032074,
+          "min_ms": 80.914141,
+          "max_ms": 99.426708,
+          "samples": 7
+        },
+        "cycle_ns": {
+          "median_ms": 593.680164,
+          "min_ms": 576.086292,
+          "max_ms": 1147.655497,
+          "samples": 7,
+          "paired_wins_vs_O2": 7
+        },
+        "long_test_ns": {
+          "median_ms": 645.983397,
+          "min_ms": 615.71924,
+          "max_ms": 760.164947,
+          "samples": 7
+        },
+        "long_demand_sum_ns": {
+          "median_ms": 1157.631487,
+          "min_ms": 1115.688486,
+          "max_ms": 1808.393736,
+          "samples": 7,
+          "paired_wins_vs_O2": 7
+        },
+        "object_bytes": [
+          1179272
+        ],
+        "cases_per_short_suite": 168
+      },
+      "Og": {
+        "compile_ns": {
+          "median_ms": 1560.999726,
+          "min_ms": 1523.794826,
+          "max_ms": 3259.22527,
+          "samples": 7,
+          "paired_wins_vs_O2": 6
+        },
+        "link_ns": {
+          "median_ms": 33.70801,
+          "min_ms": 32.845475,
+          "max_ms": 59.099731,
+          "samples": 7
+        },
+        "test_ns": {
+          "median_ms": 27.748446,
+          "min_ms": 27.083527,
+          "max_ms": 40.202418,
+          "samples": 7
+        },
+        "cycle_ns": {
+          "median_ms": 1625.406699,
+          "min_ms": 1583.997909,
+          "max_ms": 3358.940363,
+          "samples": 7,
+          "paired_wins_vs_O2": 6
+        },
+        "long_test_ns": {
+          "median_ms": 203.018839,
+          "min_ms": 198.264987,
+          "max_ms": 244.739447,
+          "samples": 7
+        },
+        "long_demand_sum_ns": {
+          "median_ms": 1800.677092,
+          "min_ms": 1755.151353,
+          "max_ms": 3563.477392,
+          "samples": 7,
+          "paired_wins_vs_O2": 6
+        },
+        "object_bytes": [
+          180656
+        ],
+        "cases_per_short_suite": 168
+      },
+      "O1": {
+        "compile_ns": {
+          "median_ms": 1651.993519,
+          "min_ms": 1498.800772,
+          "max_ms": 4245.153684,
+          "samples": 7,
+          "paired_wins_vs_O2": 6
+        },
+        "link_ns": {
+          "median_ms": 34.631935,
+          "min_ms": 33.714635,
+          "max_ms": 92.348758,
+          "samples": 7
+        },
+        "test_ns": {
+          "median_ms": 28.205025,
+          "min_ms": 26.478888,
+          "max_ms": 67.459065,
+          "samples": 7
+        },
+        "cycle_ns": {
+          "median_ms": 1720.222046,
+          "min_ms": 1559.152399,
+          "max_ms": 4405.283276,
+          "samples": 7,
+          "paired_wins_vs_O2": 6
+        },
+        "long_test_ns": {
+          "median_ms": 202.815703,
+          "min_ms": 193.599032,
+          "max_ms": 433.633208,
+          "samples": 7
+        },
+        "long_demand_sum_ns": {
+          "median_ms": 1890.746951,
+          "min_ms": 1726.478975,
+          "max_ms": 4771.457419,
+          "samples": 7,
+          "paired_wins_vs_O2": 6
+        },
+        "object_bytes": [
+          179104
+        ],
+        "cases_per_short_suite": 168
+      },
+      "O2": {
+        "compile_ns": {
+          "median_ms": 2034.500166,
+          "min_ms": 1944.42961,
+          "max_ms": 2182.513359,
+          "samples": 7,
+          "paired_wins_vs_O2": 0
+        },
+        "link_ns": {
+          "median_ms": 33.851564,
+          "min_ms": 32.407482,
+          "max_ms": 41.960556,
+          "samples": 7
+        },
+        "test_ns": {
+          "median_ms": 26.827304,
+          "min_ms": 26.164663,
+          "max_ms": 34.40321,
+          "samples": 7
+        },
+        "cycle_ns": {
+          "median_ms": 2095.890155,
+          "min_ms": 2005.236098,
+          "max_ms": 2256.971507,
+          "samples": 7,
+          "paired_wins_vs_O2": 0
+        },
+        "long_test_ns": {
+          "median_ms": 193.076642,
+          "min_ms": 188.34785,
+          "max_ms": 205.301291,
+          "samples": 7
+        },
+        "long_demand_sum_ns": {
+          "median_ms": 2267.564814,
+          "min_ms": 2166.756644,
+          "max_ms": 2429.921556,
+          "samples": 7,
+          "paired_wins_vs_O2": 0
+        },
+        "object_bytes": [
+          190368
+        ],
+        "cases_per_short_suite": 168
+      },
+      "O2_fast_machine": {
+        "compile_ns": {
+          "median_ms": 1618.424451,
+          "min_ms": 1537.745955,
+          "max_ms": 1884.466064,
+          "samples": 7,
+          "paired_wins_vs_O2": 7
+        },
+        "link_ns": {
+          "median_ms": 35.54441,
+          "min_ms": 33.848931,
+          "max_ms": 36.576391,
+          "samples": 7
+        },
+        "test_ns": {
+          "median_ms": 39.390109,
+          "min_ms": 39.043965,
+          "max_ms": 41.464726,
+          "samples": 7
+        },
+        "cycle_ns": {
+          "median_ms": 1691.673392,
+          "min_ms": 1612.908945,
+          "max_ms": 1961.256536,
+          "samples": 7,
+          "paired_wins_vs_O2": 7
+        },
+        "long_test_ns": {
+          "median_ms": 292.076874,
+          "min_ms": 287.081926,
+          "max_ms": 318.549056,
+          "samples": 7
+        },
+        "long_demand_sum_ns": {
+          "median_ms": 1939.496229,
+          "min_ms": 1862.366024,
+          "max_ms": 2222.892121,
+          "samples": 7,
+          "paired_wins_vs_O2": 7
+        },
+        "object_bytes": [
+          451848
+        ],
+        "cases_per_short_suite": 168
+      }
+    }
+  },
+  "note": "Unprofiled requests; edit admission, compile, link, and first suite are inside cycle_ns. Long-suite cost is a separately measured alternative demand."
+}

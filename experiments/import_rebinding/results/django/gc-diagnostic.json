@@ -1,0 +1,1330 @@
+{
+  "instrumentation": "GC callbacks during request; one diagnostic trace per arm, separate from the seven-block timing matrix. Validation still runs between events.",
+  "runs": [
+    {
+      "events": [
+        {
+          "event": "initial",
+          "gc_events": [
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 222373,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 119597,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 55085,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 54574,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 52921,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 1,
+              "ns": 2261941,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 58361,
+              "uncollectable": 0
+            }
+          ],
+          "ns": 50154593,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 0,
+            "discovery_ns": 8765470,
+            "membership_names_changed": 0,
+            "native_scan_ns": 31772244,
+            "parsed_modules": 907,
+            "reference_extractions": 0,
+            "references_bound": 0
+          }
+        },
+        {
+          "event": "unchanged",
+          "gc_events": [],
+          "ns": 675916,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 0,
+            "discovery_ns": 0,
+            "membership_names_changed": 0,
+            "native_scan_ns": 0,
+            "parsed_modules": 0,
+            "reference_extractions": 0,
+            "references_bound": 0
+          }
+        },
+        {
+          "event": "location_shift",
+          "gc_events": [],
+          "ns": 2679727,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 0,
+            "discovery_ns": 46077,
+            "membership_names_changed": 0,
+            "native_scan_ns": 1087208,
+            "parsed_modules": 1,
+            "reference_extractions": 0,
+            "references_bound": 0
+          }
+        },
+        {
+          "event": "body_only",
+          "gc_events": [],
+          "ns": 2174184,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 0,
+            "discovery_ns": 54073,
+            "membership_names_changed": 0,
+            "native_scan_ns": 918196,
+            "parsed_modules": 1,
+            "reference_extractions": 0,
+            "references_bound": 0
+          }
+        },
+        {
+          "event": "add_dependency",
+          "gc_events": [],
+          "ns": 3861715,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 0,
+            "discovery_ns": 44315,
+            "membership_names_changed": 0,
+            "native_scan_ns": 886887,
+            "parsed_modules": 1,
+            "reference_extractions": 0,
+            "references_bound": 0
+          }
+        },
+        {
+          "event": "retarget_dependency",
+          "gc_events": [],
+          "ns": 4606604,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 0,
+            "discovery_ns": 39806,
+            "membership_names_changed": 0,
+            "native_scan_ns": 812425,
+            "parsed_modules": 1,
+            "reference_extractions": 0,
+            "references_bound": 0
+          }
+        },
+        {
+          "event": "remove_dependency",
+          "gc_events": [],
+          "ns": 2919983,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 0,
+            "discovery_ns": 41299,
+            "membership_names_changed": 0,
+            "native_scan_ns": 814009,
+            "parsed_modules": 1,
+            "reference_extractions": 0,
+            "references_bound": 0
+          }
+        },
+        {
+          "event": "missing_module_reference",
+          "gc_events": [],
+          "ns": 2626865,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 0,
+            "discovery_ns": 42762,
+            "membership_names_changed": 0,
+            "native_scan_ns": 981807,
+            "parsed_modules": 1,
+            "reference_extractions": 0,
+            "references_bound": 0
+          }
+        },
+        {
+          "event": "module_appears",
+          "gc_events": [
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 429407,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 78309,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 62158,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 65936,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 49003,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 52730,
+              "uncollectable": 0
+            }
+          ],
+          "ns": 31365868,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 0,
+            "discovery_ns": 5586133,
+            "membership_names_changed": 1,
+            "native_scan_ns": 19781057,
+            "parsed_modules": 908,
+            "reference_extractions": 0,
+            "references_bound": 0
+          }
+        },
+        {
+          "event": "cycle_with_exit",
+          "gc_events": [
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 511864,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 66096,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 58291,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 62609,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 1,
+              "ns": 853093,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 70284,
+              "uncollectable": 0
+            }
+          ],
+          "ns": 34282849,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 0,
+            "discovery_ns": 5543993,
+            "membership_names_changed": 1,
+            "native_scan_ns": 22076124,
+            "parsed_modules": 909,
+            "reference_extractions": 0,
+            "references_bound": 0
+          }
+        },
+        {
+          "event": "cycle_loses_exit",
+          "gc_events": [],
+          "ns": 3033800,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 0,
+            "discovery_ns": 41839,
+            "membership_names_changed": 0,
+            "native_scan_ns": 760827,
+            "parsed_modules": 1,
+            "reference_extractions": 0,
+            "references_bound": 0
+          }
+        },
+        {
+          "event": "cycle_regains_exit",
+          "gc_events": [],
+          "ns": 3054850,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 0,
+            "discovery_ns": 43072,
+            "membership_names_changed": 0,
+            "native_scan_ns": 833395,
+            "parsed_modules": 1,
+            "reference_extractions": 0,
+            "references_bound": 0
+          }
+        },
+        {
+          "event": "module_disappears",
+          "gc_events": [
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 444004,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 64262,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 101794,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 58451,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 136189,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 297546,
+              "uncollectable": 0
+            }
+          ],
+          "ns": 40065518,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 0,
+            "discovery_ns": 5522082,
+            "membership_names_changed": 1,
+            "native_scan_ns": 26302623,
+            "parsed_modules": 908,
+            "reference_extractions": 0,
+            "references_bound": 0
+          }
+        },
+        {
+          "event": "restore_branch",
+          "gc_events": [
+            {
+              "collected": 0,
+              "generation": 1,
+              "ns": 508116,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 97867,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 117273,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 83789,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 96283,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 87407,
+              "uncollectable": 0
+            }
+          ],
+          "ns": 35661848,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 0,
+            "discovery_ns": 5738934,
+            "membership_names_changed": 1,
+            "native_scan_ns": 22669713,
+            "parsed_modules": 907,
+            "reference_extractions": 0,
+            "references_bound": 0
+          }
+        },
+        {
+          "event": "rule_target_change",
+          "gc_events": [],
+          "ns": 1946552,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 0,
+            "discovery_ns": 0,
+            "membership_names_changed": 0,
+            "native_scan_ns": 0,
+            "parsed_modules": 0,
+            "reference_extractions": 0,
+            "references_bound": 0
+          }
+        },
+        {
+          "event": "unchanged_after_rule_change",
+          "gc_events": [],
+          "ns": 786325,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 0,
+            "discovery_ns": 0,
+            "membership_names_changed": 0,
+            "native_scan_ns": 0,
+            "parsed_modules": 0,
+            "reference_extractions": 0,
+            "references_bound": 0
+          }
+        },
+        {
+          "event": "popular_name_shadowed",
+          "gc_events": [
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 440467,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 123384,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 68851,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 1,
+              "ns": 898730,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 2,
+              "ns": 12526793,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 64723,
+              "uncollectable": 0
+            }
+          ],
+          "ns": 55421687,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 0,
+            "discovery_ns": 8764487,
+            "membership_names_changed": 1,
+            "native_scan_ns": 35177376,
+            "parsed_modules": 908,
+            "reference_extractions": 0,
+            "references_bound": 0
+          }
+        },
+        {
+          "event": "popular_name_restored",
+          "gc_events": [
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 477058,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 83599,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 90853,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 87306,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 77768,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 60004,
+              "uncollectable": 0
+            }
+          ],
+          "ns": 38066973,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 0,
+            "discovery_ns": 5826972,
+            "membership_names_changed": 1,
+            "native_scan_ns": 21112618,
+            "parsed_modules": 907,
+            "reference_extractions": 0,
+            "references_bound": 0
+          }
+        }
+      ],
+      "mode": "full_rescan"
+    },
+    {
+      "events": [
+        {
+          "event": "initial",
+          "gc_events": [
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 134506,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 112434,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 47831,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 46860,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 47721,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 1,
+              "ns": 2117517,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 46418,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 49193,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 50596,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 49003,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 47941,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 103748,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 61517,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 60946,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 62399,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 127642,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 181705,
+              "uncollectable": 0
+            }
+          ],
+          "ns": 65438620,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 9175650,
+            "discovery_ns": 5994570,
+            "membership_names_changed": 0,
+            "native_scan_ns": 34717684,
+            "parsed_modules": 907,
+            "reference_extractions": 907,
+            "references_bound": 6520
+          }
+        },
+        {
+          "event": "unchanged",
+          "gc_events": [],
+          "ns": 749355,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 0,
+            "discovery_ns": 0,
+            "membership_names_changed": 0,
+            "native_scan_ns": 0,
+            "parsed_modules": 0,
+            "reference_extractions": 0,
+            "references_bound": 0
+          }
+        },
+        {
+          "event": "location_shift",
+          "gc_events": [],
+          "ns": 2549188,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 18585,
+            "discovery_ns": 43543,
+            "membership_names_changed": 0,
+            "native_scan_ns": 979553,
+            "parsed_modules": 1,
+            "reference_extractions": 1,
+            "references_bound": 11
+          }
+        },
+        {
+          "event": "body_only",
+          "gc_events": [],
+          "ns": 1851962,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 9218,
+            "discovery_ns": 34185,
+            "membership_names_changed": 0,
+            "native_scan_ns": 698738,
+            "parsed_modules": 1,
+            "reference_extractions": 1,
+            "references_bound": 1
+          }
+        },
+        {
+          "event": "add_dependency",
+          "gc_events": [],
+          "ns": 3635805,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 15469,
+            "discovery_ns": 40336,
+            "membership_names_changed": 0,
+            "native_scan_ns": 825891,
+            "parsed_modules": 1,
+            "reference_extractions": 1,
+            "references_bound": 2
+          }
+        },
+        {
+          "event": "retarget_dependency",
+          "gc_events": [],
+          "ns": 4053479,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 9959,
+            "discovery_ns": 40357,
+            "membership_names_changed": 0,
+            "native_scan_ns": 708298,
+            "parsed_modules": 1,
+            "reference_extractions": 1,
+            "references_bound": 2
+          }
+        },
+        {
+          "event": "remove_dependency",
+          "gc_events": [],
+          "ns": 2839430,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 11432,
+            "discovery_ns": 54995,
+            "membership_names_changed": 0,
+            "native_scan_ns": 763752,
+            "parsed_modules": 1,
+            "reference_extractions": 1,
+            "references_bound": 1
+          }
+        },
+        {
+          "event": "missing_module_reference",
+          "gc_events": [],
+          "ns": 2493732,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 17994,
+            "discovery_ns": 41780,
+            "membership_names_changed": 0,
+            "native_scan_ns": 936981,
+            "parsed_modules": 1,
+            "reference_extractions": 1,
+            "references_bound": 7
+          }
+        },
+        {
+          "event": "module_appears",
+          "gc_events": [],
+          "ns": 9340473,
+          "producer_counts": {
+            "affected_unchanged_modules": 1,
+            "binding_ns": 12694,
+            "discovery_ns": 5891944,
+            "membership_names_changed": 1,
+            "native_scan_ns": 1215923,
+            "parsed_modules": 2,
+            "reference_extractions": 1,
+            "references_bound": 1
+          }
+        },
+        {
+          "event": "cycle_with_exit",
+          "gc_events": [],
+          "ns": 9839268,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 44344,
+            "discovery_ns": 5704529,
+            "membership_names_changed": 1,
+            "native_scan_ns": 1070707,
+            "parsed_modules": 2,
+            "reference_extractions": 2,
+            "references_bound": 3
+          }
+        },
+        {
+          "event": "cycle_loses_exit",
+          "gc_events": [],
+          "ns": 2587471,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 11181,
+            "discovery_ns": 32582,
+            "membership_names_changed": 0,
+            "native_scan_ns": 598849,
+            "parsed_modules": 1,
+            "reference_extractions": 1,
+            "references_bound": 1
+          }
+        },
+        {
+          "event": "cycle_regains_exit",
+          "gc_events": [],
+          "ns": 2849620,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 11822,
+            "discovery_ns": 35688,
+            "membership_names_changed": 0,
+            "native_scan_ns": 761598,
+            "parsed_modules": 1,
+            "reference_extractions": 1,
+            "references_bound": 2
+          }
+        },
+        {
+          "event": "module_disappears",
+          "gc_events": [],
+          "ns": 22898971,
+          "producer_counts": {
+            "affected_unchanged_modules": 1,
+            "binding_ns": 7534,
+            "discovery_ns": 16871718,
+            "membership_names_changed": 1,
+            "native_scan_ns": 1216584,
+            "parsed_modules": 1,
+            "reference_extractions": 0,
+            "references_bound": 0
+          }
+        },
+        {
+          "event": "restore_branch",
+          "gc_events": [],
+          "ns": 9439953,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 28785,
+            "discovery_ns": 5859644,
+            "membership_names_changed": 1,
+            "native_scan_ns": 1358043,
+            "parsed_modules": 2,
+            "reference_extractions": 2,
+            "references_bound": 17
+          }
+        },
+        {
+          "event": "rule_target_change",
+          "gc_events": [],
+          "ns": 1815162,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 0,
+            "discovery_ns": 0,
+            "membership_names_changed": 0,
+            "native_scan_ns": 0,
+            "parsed_modules": 0,
+            "reference_extractions": 0,
+            "references_bound": 0
+          }
+        },
+        {
+          "event": "unchanged_after_rule_change",
+          "gc_events": [],
+          "ns": 660506,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 0,
+            "discovery_ns": 0,
+            "membership_names_changed": 0,
+            "native_scan_ns": 0,
+            "parsed_modules": 0,
+            "reference_extractions": 0,
+            "references_bound": 0
+          }
+        },
+        {
+          "event": "popular_name_shadowed",
+          "gc_events": [
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 417003,
+              "uncollectable": 0
+            }
+          ],
+          "ns": 19524320,
+          "producer_counts": {
+            "affected_unchanged_modules": 62,
+            "binding_ns": 13335,
+            "discovery_ns": 5681534,
+            "membership_names_changed": 1,
+            "native_scan_ns": 6411604,
+            "parsed_modules": 63,
+            "reference_extractions": 1,
+            "references_bound": 1
+          }
+        },
+        {
+          "event": "popular_name_restored",
+          "gc_events": [
+            {
+              "collected": 0,
+              "generation": 1,
+              "ns": 374533,
+              "uncollectable": 0
+            }
+          ],
+          "ns": 18521785,
+          "producer_counts": {
+            "affected_unchanged_modules": 62,
+            "binding_ns": 4659,
+            "discovery_ns": 5929887,
+            "membership_names_changed": 1,
+            "native_scan_ns": 5682737,
+            "parsed_modules": 62,
+            "reference_extractions": 0,
+            "references_bound": 0
+          }
+        }
+      ],
+      "mode": "scoped_native"
+    },
+    {
+      "events": [
+        {
+          "event": "initial",
+          "gc_events": [
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 121711,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 125639,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 50667,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 49023,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 53051,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 1,
+              "ns": 2941193,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 59964,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 48202,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 48733,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 49805,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 48422,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 149885,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 83479,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 111983,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 79231,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 126460,
+              "uncollectable": 0
+            },
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 195933,
+              "uncollectable": 0
+            }
+          ],
+          "ns": 65336015,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 9276141,
+            "discovery_ns": 6043012,
+            "membership_names_changed": 0,
+            "native_scan_ns": 35541873,
+            "parsed_modules": 907,
+            "reference_extractions": 907,
+            "references_bound": 6520
+          }
+        },
+        {
+          "event": "unchanged",
+          "gc_events": [],
+          "ns": 686616,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 0,
+            "discovery_ns": 0,
+            "membership_names_changed": 0,
+            "native_scan_ns": 0,
+            "parsed_modules": 0,
+            "reference_extractions": 0,
+            "references_bound": 0
+          }
+        },
+        {
+          "event": "location_shift",
+          "gc_events": [],
+          "ns": 2537897,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 18155,
+            "discovery_ns": 40748,
+            "membership_names_changed": 0,
+            "native_scan_ns": 960627,
+            "parsed_modules": 1,
+            "reference_extractions": 1,
+            "references_bound": 11
+          }
+        },
+        {
+          "event": "body_only",
+          "gc_events": [],
+          "ns": 1917997,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 9919,
+            "discovery_ns": 40237,
+            "membership_names_changed": 0,
+            "native_scan_ns": 753253,
+            "parsed_modules": 1,
+            "reference_extractions": 1,
+            "references_bound": 1
+          }
+        },
+        {
+          "event": "add_dependency",
+          "gc_events": [],
+          "ns": 3735845,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 13756,
+            "discovery_ns": 42360,
+            "membership_names_changed": 0,
+            "native_scan_ns": 801365,
+            "parsed_modules": 1,
+            "reference_extractions": 1,
+            "references_bound": 2
+          }
+        },
+        {
+          "event": "retarget_dependency",
+          "gc_events": [],
+          "ns": 3915046,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 11312,
+            "discovery_ns": 40948,
+            "membership_names_changed": 0,
+            "native_scan_ns": 798749,
+            "parsed_modules": 1,
+            "reference_extractions": 1,
+            "references_bound": 2
+          }
+        },
+        {
+          "event": "remove_dependency",
+          "gc_events": [],
+          "ns": 2938869,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 6372,
+            "discovery_ns": 40878,
+            "membership_names_changed": 0,
+            "native_scan_ns": 796094,
+            "parsed_modules": 1,
+            "reference_extractions": 1,
+            "references_bound": 1
+          }
+        },
+        {
+          "event": "missing_module_reference",
+          "gc_events": [],
+          "ns": 3435254,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 22393,
+            "discovery_ns": 71877,
+            "membership_names_changed": 0,
+            "native_scan_ns": 1430681,
+            "parsed_modules": 1,
+            "reference_extractions": 1,
+            "references_bound": 7
+          }
+        },
+        {
+          "event": "module_appears",
+          "gc_events": [],
+          "ns": 10013102,
+          "producer_counts": {
+            "affected_unchanged_modules": 1,
+            "binding_ns": 26650,
+            "discovery_ns": 6918687,
+            "membership_names_changed": 1,
+            "native_scan_ns": 676547,
+            "parsed_modules": 1,
+            "reference_extractions": 1,
+            "references_bound": 8
+          }
+        },
+        {
+          "event": "cycle_with_exit",
+          "gc_events": [],
+          "ns": 9660332,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 19767,
+            "discovery_ns": 6077508,
+            "membership_names_changed": 1,
+            "native_scan_ns": 964193,
+            "parsed_modules": 2,
+            "reference_extractions": 2,
+            "references_bound": 3
+          }
+        },
+        {
+          "event": "cycle_loses_exit",
+          "gc_events": [],
+          "ns": 2958847,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 12644,
+            "discovery_ns": 39996,
+            "membership_names_changed": 0,
+            "native_scan_ns": 787959,
+            "parsed_modules": 1,
+            "reference_extractions": 1,
+            "references_bound": 1
+          }
+        },
+        {
+          "event": "cycle_regains_exit",
+          "gc_events": [],
+          "ns": 3690539,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 18235,
+            "discovery_ns": 88659,
+            "membership_names_changed": 0,
+            "native_scan_ns": 1012927,
+            "parsed_modules": 1,
+            "reference_extractions": 1,
+            "references_bound": 2
+          }
+        },
+        {
+          "event": "module_disappears",
+          "gc_events": [],
+          "ns": 11124983,
+          "producer_counts": {
+            "affected_unchanged_modules": 1,
+            "binding_ns": 33935,
+            "discovery_ns": 7636187,
+            "membership_names_changed": 1,
+            "native_scan_ns": 6182,
+            "parsed_modules": 0,
+            "reference_extractions": 0,
+            "references_bound": 1
+          }
+        },
+        {
+          "event": "restore_branch",
+          "gc_events": [],
+          "ns": 10467840,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 25749,
+            "discovery_ns": 7028808,
+            "membership_names_changed": 1,
+            "native_scan_ns": 1329651,
+            "parsed_modules": 2,
+            "reference_extractions": 2,
+            "references_bound": 17
+          }
+        },
+        {
+          "event": "rule_target_change",
+          "gc_events": [],
+          "ns": 2077121,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 0,
+            "discovery_ns": 0,
+            "membership_names_changed": 0,
+            "native_scan_ns": 0,
+            "parsed_modules": 0,
+            "reference_extractions": 0,
+            "references_bound": 0
+          }
+        },
+        {
+          "event": "unchanged_after_rule_change",
+          "gc_events": [],
+          "ns": 670595,
+          "producer_counts": {
+            "affected_unchanged_modules": 0,
+            "binding_ns": 0,
+            "discovery_ns": 0,
+            "membership_names_changed": 0,
+            "native_scan_ns": 0,
+            "parsed_modules": 0,
+            "reference_extractions": 0,
+            "references_bound": 0
+          }
+        },
+        {
+          "event": "popular_name_shadowed",
+          "gc_events": [
+            {
+              "collected": 0,
+              "generation": 0,
+              "ns": 322523,
+              "uncollectable": 0
+            }
+          ],
+          "ns": 26303481,
+          "producer_counts": {
+            "affected_unchanged_modules": 62,
+            "binding_ns": 2631315,
+            "discovery_ns": 9504313,
+            "membership_names_changed": 1,
+            "native_scan_ns": 980274,
+            "parsed_modules": 1,
+            "reference_extractions": 1,
+            "references_bound": 880
+          }
+        },
+        {
+          "event": "popular_name_restored",
+          "gc_events": [
+            {
+              "collected": 0,
+              "generation": 1,
+              "ns": 274753,
+              "uncollectable": 0
+            }
+          ],
+          "ns": 16707573,
+          "producer_counts": {
+            "affected_unchanged_modules": 62,
+            "binding_ns": 2098110,
+            "discovery_ns": 5990693,
+            "membership_names_changed": 1,
+            "native_scan_ns": 5140,
+            "parsed_modules": 0,
+            "reference_extractions": 0,
+            "references_bound": 879
+          }
+        }
+      ],
+      "mode": "rebind"
+    }
+  ],
+  "script_sha256": "537a15c1b006215cd27883f12e8dd503ade600af28046cf8ac5ae256c84cf6c0"
+}

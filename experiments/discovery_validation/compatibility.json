@@ -1,0 +1,10 @@
+{
+  "package": "pytest-testmon",
+  "version": "2.2.0",
+  "file": "testmon/testmon_core.py",
+  "original_sha256": "86b9f3175a76a35fa7174a78c413f56906c7e5079ba5331e9c4813531b7c523f",
+  "patched_sha256": "4a814a0779d5036619efa355ecc2db4b262e5280d739d6d8174512f25cd55333",
+  "reason": "SourceTree.get_file raised IndexError on traced extensionless Jinja template tests/res/templates2/foo. Use the existing non-Python whole-file block path for extensionless files. Both testmon arms receive the same patch.",
+  "coverage_core": "ctrace required because Coverage 7.17 sysmon does not support dynamic contexts",
+  "pytest_cache": "enabled; disabling cacheprovider removes the lf option required by testmon"
+}

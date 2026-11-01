@@ -4,6 +4,8 @@ Status: supporting literature and experiment designs. The [bounded implementatio
 
 There are two useful roles for theory: laws that describe valid transformations, and policies that choose where to spend resources. A correctness law can constrain an implementation. An adaptive policy needs empirical comparisons, including its own learning, coordination and retention costs. Inspiration from nature supplies candidate mechanisms; any benefit to software remains a hypothesis.
 
+The [cross-field connection map](../connections/README.md) extends this literature with demand, derivations, structural plans and ownership. Its [measured findings](../connections/findings.md) test selected connections separately from the broader proposals; retained native analysis wins some cases, while extra representations and isolation often fail to repay their cost.
+
 ## Models to connect across the research portfolio
 
 | Area | Useful concepts | Proposed Gaia application |

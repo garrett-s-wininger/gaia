@@ -1,0 +1,62 @@
+--- a/refine_host.py
++++ b/refine_host.py
+@@ -62 +62 @@
+-static bool materialize(State&s,ObservedEntry&e,const std::string&output,bool analysis){auto key=output+(analysis?":analysis":":build");if(s.published[key]==e.id)return false;s.published[key]=0;if(!analysis)write(output,e.object);for(const auto&p:e.sideproducts)write(p.first,p.second);s.published[key]=e.id;return !analysis;}
++static bool materialize(State&s,ObservedEntry&e,const std::string&output,bool analysis){auto key=output+(analysis?":analysis":":build");if(s.published[key]==e.id)return false;if(!analysis)write(output,e.object);for(const auto&p:e.sideproducts)write(p.first,p.second);s.published[key]=e.id;return !analysis;}
+@@ -77,2 +76,0 @@
+- std::set<std::string>defined_names;
+- void MacroDefined(const clang::Token&t,const clang::MacroDirective*directive)override{auto*id=t.getIdentifierInfo();if(!id)return;auto name=id->getName().str();auto*info=directive->getMacroInfo();auto loc=info->getDefinitionLoc();auto&sm=pp.getSourceManager();if(sm.isWrittenInBuiltinFile(loc)||(sm.isWrittenInCommandLineFile(loc)&&!s.projection.definitions.count(name))||!defined_names.insert(name).second)s.lexical.names.insert(name);}
+@@ -92 +89,0 @@
+- replace('ci.getPreprocessor().addPPCallbacks(', 'if(ci.getCodeGenOpts().MacroDebugInfo||!ci.getCodeGenOpts().DwarfDebugFlags.empty()||!ci.getCodeGenOpts().RecordCommandLine.empty()||ci.getCodeGenOpts().getEmbedBitcode()!=clang::CodeGenOptions::Embed_Off){s.lexical.safe=false;s.lexical.reason="recorded-command-or-macros";}ci.getPreprocessor().addPPCallbacks(')
+@@ -115 +112 @@
+-    if(cached){s.facts_info=cached->summary;publish_facts(s);s.published.erase(s.output+(s.analysis_only?":analysis":":build"));materialize(s,*cached,s.output,s.analysis_only);
++    if(cached){s.facts_info=cached->summary;publish_facts(s);materialize(s,*cached,s.output,s.analysis_only);
+--- a/refined_protocol.py
++++ b/refined_protocol.py
+@@ -2 +2 @@
+-import json,select,sys,time,os
++import json,select,sys,time
+@@ -8 +8 @@
+- def __init__(self,path,work,refined=False):super().__init__(path,work);self.refined=refined;self.pending=bytearray()
++ def __init__(self,path,work,refined=False):super().__init__(path,work);self.refined=refined
+@@ -11 +10,0 @@
+-  deadline=time.monotonic()+120
+@@ -13,8 +12,4 @@
+-   while b'\n' not in self.pending:
+-    timeout=deadline-time.monotonic()
+-    if timeout<=0 or not select.select([self.process.stdout],[],[],timeout)[0]:raise TimeoutError('host/event response')
+-    chunk=os.read(self.process.stdout.fileno(),65536)
+-    if not chunk:raise RuntimeError('host closed before final response')
+-    self.pending.extend(chunk)
+-    if len(self.pending)>16*1024*1024:raise RuntimeError('host response bound')
+-   end=self.pending.index(b'\n');line=bytes(self.pending[:end]);del self.pending[:end+1];response=json.loads(line)
++   if not select.select([self.process.stdout],[],[],120)[0]:raise TimeoutError('host/event response')
++   line=self.process.stdout.readline(16*1024*1024)
++   if not line.endswith('\n'):raise RuntimeError('host closed or response bound')
++   response=json.loads(line)
+--- a/test_refinements.py
++++ b/test_refinements.py
+@@ -1,2 +1 @@
+-import os,subprocess,tempfile,unittest,sys,json,select
+-from unittest.mock import patch
++import os,subprocess,tempfile,unittest
+@@ -49,19 +47,0 @@
+- def test_explicit_cached_compile_restores_deleted_outputs(self):
+-  self.compile();obj=(self.root/'main.o').read_bytes();dep=(self.root/'main.d').read_bytes();(self.root/'main.o').unlink();(self.root/'main.d').unlink();self.compile();self.assertEqual((self.root/'main.o').read_bytes(),obj);self.assertEqual((self.root/'main.d').read_bytes(),dep)
+- def test_partial_restore_failure_marks_output_unknown(self):
+-  self.compile();self.edit('int gaia_other(){return 2;}\n');self.compile();second=(self.root/'main.o').read_bytes();self.edit(self.body);(self.root/'main.d').unlink();(self.root/'main.d').mkdir()
+-  with self.assertRaises(RuntimeError):self.lookup()
+-  self.edit('int gaia_other(){return 2;}\n');(self.root/'main.d').rmdir();self.lookup();self.assertEqual((self.root/'main.o').read_bytes(),second);self.assertTrue((self.root/'main.d').is_file())
+- def framed_child(self,wrong=False):
+-  script="import os,json,sys; request=json.loads(sys.stdin.readline()); event={'event':'frontend_facts','frontend_ok':True,'generation':"+('0' if wrong else "request['generation']")+",'target':'main','facts':{}}; os.write(1,(json.dumps(event)+'\\n'+json.dumps({'ok':True})+'\\n').encode()); sys.stdin.readline()"
+-  h=Host.__new__(Host);h.log=(self.root/'child.log').open('wb');h.process=subprocess.Popen([sys.executable,'-u','-c',script],stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=h.log,text=True);h.refined=True;h.pending=bytearray();self.addCleanup(h.close);return h
+- def test_combined_event_and_final_frame_drain_before_polling(self):
+-  h=self.framed_child();original=select.select;calls=[]
+-  def poll(*args):calls.append(1);self.assertEqual(len(calls),1,'polled despite complete pending frame');return original(*args)
+-  with patch('refined_protocol.select.select',side_effect=poll):self.assertTrue(h.request({'target':'main','generation':1})['ok'])
+- def test_bad_event_is_drained_before_error(self):
+-  h=self.framed_child(True)
+-  with self.assertRaises(ValueError):h.request({'target':'main','generation':1})
+-  self.assertEqual(h.pending,bytearray())
+- def test_compiler_predefined_names_are_not_treated_as_unused_user_macros(self):
+-  base=['-std=gnu++14' if x=='-std=c++14' else x for x in self.cmd];a=base+['-Dlinux=1'];b=base+['-Dlinux=2'];row=self.compile(a);self.assertEqual(row['warnings'],0);self.assertEqual(self.lookup(b,'configuration-1')['dirty'],['main']);changed=self.compile(b,'configuration-1');self.assertGreater(changed['warnings'],0)

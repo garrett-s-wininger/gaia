@@ -1,0 +1,99 @@
+{
+  "clock": "session includes checkout, initial collection, all edits, queries and subprocess waits, evidence persistence; excludes diagnostics and final workspace cleanup",
+  "context": "d41503e6ba84e3aa5af2591051f1a4c304267a7a1cf093c29b49a48adf8b0380",
+  "finished_utc": "2026-11-01T04:53:13.938424+00:00",
+  "harness_sha256": {
+    "acquisition.json": "645ae1393ae7e05c0b5ab36e593016a0e1916283c716d70cd4221266b122963d",
+    "compatibility.json": "4f0e298526746b39dfe0c7e978eab68807551225e64737927bf9e61244089f4d",
+    "evidence.py": "4ca18f47c483164715b227c6b2a6ad4db9ce15c31821692e7594856a2ebac25b",
+    "observer.py": "fee9d7c850930fbe43f853227944ded751bd1d9f21aab7a02545880b17f76bcf",
+    "run.py": "3a08fae0ad6bbe4d564596d1f9916156bab875a4484dbacae705df8a73b69472",
+    "tasks.json": "e0d5eb9db3c08eb2dfba0d50e2c4ce81b58b072703a6f6e2324bacb6bce35e00",
+    "test_evidence.py": "d273ec3b209f36980eb52827d1784ee3f4ab1cbd519eeb8c0ce8e9efdd5c9e57",
+    "verify.py": "159e42985d9f764a9199acc9200235284aac11fa59e157bfba17abdb9d606104"
+  },
+  "lock": "/root/source/gaia/experiments/_work/integration-20261102/measurement.lock",
+  "packages": {
+    "MarkupSafe": "3.0.4",
+    "Pygments": "2.21.0",
+    "attrs": "26.1.0",
+    "babel": "2.18.0",
+    "coverage": "7.17.0",
+    "idna": "3.20",
+    "iniconfig": "2.3.1",
+    "jedi": "0.20.1",
+    "outcome": "1.3.0.post0",
+    "packaging": "26.3",
+    "parso": "0.8.7",
+    "pip": "26.2.1",
+    "pluggy": "1.7.0",
+    "pytest": "9.2.0",
+    "pytest-cov": "7.1.0",
+    "pytest-testmon": "2.2.0",
+    "sniffio": "1.3.1",
+    "sortedcontainers": "2.4.0",
+    "trio": "0.35.0"
+  },
+  "parent_commits": {
+    "namespace-tuple": "1d55cddbb28e433779511f28f13a2d8c4ec45826",
+    "overlay-async": "767b23617628419ae3709ccfb02f9602ae9fe51f",
+    "scientific-int": "20be10e566a505cc47bdec5fa6ad56d5fbdfb4ae"
+  },
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.44",
+  "python": "3.14.8 (main, Oct  2 2026, 10:23:31) [GCC 16.2.1 20260810]",
+  "random_seed_base": 81304,
+  "tasks": [
+    {
+      "commit": "3ef3ba885bc7a465b022abfd525d6bb4a1c8dd3c",
+      "description": "The int filter raises OverflowError for very large scientific notation instead of returning its default.",
+      "id": "scientific-int",
+      "inspect": [
+        {
+          "file": "src/jinja2/filters.py",
+          "symbol": "do_int"
+        }
+      ],
+      "issue": "https://github.com/pallets/jinja/issues/1921",
+      "query": "int",
+      "upstream_regression": "tests/test_filters.py::TestFilter::test_int[1e10000-0]"
+    },
+    {
+      "additional_regression": "from jinja2 import Environment\n\ndef test_overlay_inherits_async_mode():\n    env = Environment(enable_async=True)\n    assert env.overlay().is_async\n",
+      "commit": "b4b28ec01c60b8753ab53fe60b10d7dbaa55842b",
+      "description": "An overlay of an async environment should preserve async mode when enable_async is omitted.",
+      "id": "overlay-async",
+      "inspect": [
+        {
+          "file": "src/jinja2/environment.py",
+          "symbol": "Environment.overlay"
+        }
+      ],
+      "issue": "https://github.com/pallets/jinja/pull/2061",
+      "query": "overlay",
+      "upstream_regression": "tests/test_api.py::test_overlay_enable_async"
+    },
+    {
+      "commit": "fbc3a696c729d177340cc089531de7e2e5b6f065",
+      "description": "Tuple assignment cannot assign to namespace attributes even though single assignment can.",
+      "id": "namespace-tuple",
+      "inspect": [
+        {
+          "file": "src/jinja2/parser.py",
+          "symbol": "Parser.parse_assign_target"
+        },
+        {
+          "file": "src/jinja2/compiler.py",
+          "symbol": "CodeGenerator.visit_Assign"
+        }
+      ],
+      "issue": "https://github.com/pallets/jinja/issues/1413",
+      "query": "namespace",
+      "upstream_regression": "tests/test_core_tags.py::TestSet::test_namespace_set_tuple"
+    }
+  ],
+  "tool_sha256": {
+    "control.py": "f1448bd8b9237766d2f693c2626bb6888c4865e049b9f2b8f9ec3b29d1d4da3d",
+    "process_code.py": "7a6c1fe8ffb4f75b5139421c2fad942c9ca4bee5dba42c9b7910a0c0794e5134",
+    "testmon_core.py": "4a814a0779d5036619efa355ecc2db4b262e5280d739d6d8174512f25cd55333"
+  }
+}

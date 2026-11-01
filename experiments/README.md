@@ -4,6 +4,8 @@ This directory contains runnable research, technical lab notes and measured evid
 
 | Area | Code and reproduction | Evidence index |
 | --- | --- | --- |
+| Shared workspace, SIMD and dispatched hashing | [integration](integration/README.md) | [Integration runs](../research/integration/experiments.json) |
+| Native facts, ownership and source discovery | [connections](connections/README.md) | [Connection runs](../research/connections/experiments.json) |
 | Transformations and shared computation | [science](science/README.md) | [Coverage](../research/science/coverage.md) |
 | Native compiler tools | [compiler](compiler/README.md) | [Compiler runs](../research/compiler/experiments.json) |
 | C++ dependency graph | [compiler/cpp_graph](compiler/cpp_graph/README.md) | [Compiler runs](../research/compiler/experiments.json) |

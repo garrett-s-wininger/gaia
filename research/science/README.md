@@ -19,6 +19,8 @@ The studies run on one developer laptop. Compare numbers within each experiment;
 
 The [coverage map](coverage.md) distinguishes executed consumers from simulations and bounded laws. The [follow-up priorities](prospects.md) identify which mathematical directions deserve another experiment. Per-track run indexes link committed summaries, validation and provenance to ignored raw observations registered in the [evidence manifest](../evidence.json). These are research interfaces, not public protocol decisions.
 
-The next integration target is a real multi-consumer workflow sharing one authoritative generation and current dependency observations. Keep exact-input caches, batching and sparse CPU algorithms as controls. Require gains in the complete operation, including preparation, validation, retained memory, cancellation and publication.
+The [first concrete integration](../integration/README.md) now measures shared compiler/editor observations, native SIMD sets and CPU-dispatched identity scans.
+
+The broader integration target remains a real multi-consumer workflow sharing one authoritative generation and current dependency observations. Keep exact-input caches, batching and sparse CPU algorithms as controls. Require gains in the complete operation, including preparation, validation, retained memory, cancellation and publication.
 
 For accelerators, a distinct next question is repeated computation on device-resident state: iterative graph/geometry work or heavier independent analyses, compared with equally optimized native algorithms. The one-step frontier result supplies no general accelerator limit. Compiler parallelism likewise needs declared dependencies and invalidation between passes; separate independent analyses are a safer starting point than concurrent mutation of shared IR.

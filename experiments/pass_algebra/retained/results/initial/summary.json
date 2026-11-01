@@ -1,0 +1,2377 @@
+{
+  "cases": {
+    "zstd-common-O1": {
+      "target": "ZSTD_getErrorName",
+      "target_argument": 0,
+      "explore": [
+        "ZSTD_getErrorName",
+        "ZSTD_getErrorCode",
+        "ZSTD_isError"
+      ],
+      "original_functions": 6,
+      "modes": {
+        "native_cached": {
+          "request_span_sum": {
+            "median_ms": 0.013897,
+            "min_ms": 0.013566,
+            "max_ms": 0.02584,
+            "samples": 7
+          },
+          "peak_logical_payload_bytes": 992,
+          "counts_per_trace": {
+            "graphs": 0,
+            "live_hits": 45,
+            "productions": 16,
+            "slice_hits": 19,
+            "slice_misses": 10,
+            "solves": 16
+          },
+          "events": {
+            "initial": {
+              "median_ms": 0.002876,
+              "min_ms": 0.002605,
+              "max_ms": 0.004599,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.002355,
+                "min_ms": 0.002264,
+                "max_ms": 0.003316,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.000441,
+                "min_ms": 0.000241,
+                "max_ms": 0.001203,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 3e-05,
+                "min_ms": 2e-05,
+                "max_ms": 4e-05,
+                "samples": 7
+              }
+            },
+            "explore": {
+              "median_ms": 0.000661,
+              "min_ms": 0.000612,
+              "max_ms": 0.001042,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.00016,
+                "min_ms": 0.000141,
+                "max_ms": 0.000341,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.000441,
+                "min_ms": 0.000391,
+                "max_ms": 0.000611,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 3e-05,
+                "min_ms": 2e-05,
+                "max_ms": 3.1e-05,
+                "samples": 7
+              }
+            },
+            "unchanged": {
+              "median_ms": 0.000411,
+              "min_ms": 0.00038,
+              "max_ms": 0.001843,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.00014,
+                "min_ms": 0.00012,
+                "max_ms": 0.000711,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.000191,
+                "min_ms": 0.00016,
+                "max_ms": 0.000852,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 3e-05,
+                "min_ms": 2e-05,
+                "max_ms": 0.00022,
+                "samples": 7
+              }
+            },
+            "operand_edit": {
+              "median_ms": 0.001303,
+              "min_ms": 0.001192,
+              "max_ms": 0.004649,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.000762,
+                "min_ms": 0.000672,
+                "max_ms": 0.003326,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.000381,
+                "min_ms": 0.00029,
+                "max_ms": 0.000792,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.00014,
+                "min_ms": 0.000121,
+                "max_ms": 0.000471,
+                "samples": 7
+              }
+            },
+            "value_renumber": {
+              "median_ms": 0.001343,
+              "min_ms": 0.001203,
+              "max_ms": 0.002134,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.000752,
+                "min_ms": 0.000641,
+                "max_ms": 0.000932,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.000361,
+                "min_ms": 0.00029,
+                "max_ms": 0.000431,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.00019,
+                "min_ms": 0.000171,
+                "max_ms": 0.000762,
+                "samples": 7
+              }
+            },
+            "cfg_split": {
+              "median_ms": 0.001533,
+              "min_ms": 0.001503,
+              "max_ms": 0.003226,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.000972,
+                "min_ms": 0.000931,
+                "max_ms": 0.002024,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.000291,
+                "min_ms": 0.000261,
+                "max_ms": 0.000311,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.00022,
+                "min_ms": 0.000201,
+                "max_ms": 0.000841,
+                "samples": 7
+              }
+            },
+            "add_function": {
+              "median_ms": 0.001603,
+              "min_ms": 0.001533,
+              "max_ms": 0.003056,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.000862,
+                "min_ms": 0.000782,
+                "max_ms": 0.001153,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.00033,
+                "min_ms": 0.00029,
+                "max_ms": 0.00042,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.000421,
+                "min_ms": 0.00033,
+                "max_ms": 0.001422,
+                "samples": 7
+              }
+            },
+            "remove_function": {
+              "median_ms": 0.000722,
+              "min_ms": 0.000651,
+              "max_ms": 0.001834,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.00014,
+                "min_ms": 0.00013,
+                "max_ms": 0.00017,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.000191,
+                "min_ms": 0.00018,
+                "max_ms": 0.000241,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.000321,
+                "min_ms": 0.00026,
+                "max_ms": 0.001373,
+                "samples": 7
+              }
+            },
+            "context_refresh": {
+              "median_ms": 0.003236,
+              "min_ms": 0.003036,
+              "max_ms": 0.00509,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.002385,
+                "min_ms": 0.002214,
+                "max_ms": 0.003778,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.000421,
+                "min_ms": 0.0004,
+                "max_ms": 0.000491,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.000411,
+                "min_ms": 0.00034,
+                "max_ms": 0.000781,
+                "samples": 7
+              }
+            },
+            "final_hit": {
+              "median_ms": 0.000461,
+              "min_ms": 0.000441,
+              "max_ms": 0.000581,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.00018,
+                "min_ms": 0.00016,
+                "max_ms": 0.00027,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.000191,
+                "min_ms": 0.000181,
+                "max_ms": 0.00022,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 3e-05,
+                "min_ms": 3e-05,
+                "max_ms": 4e-05,
+                "samples": 7
+              }
+            }
+          }
+        },
+        "compact_eager": {
+          "request_span_sum": {
+            "median_ms": 0.017043,
+            "min_ms": 0.014507,
+            "max_ms": 0.036048,
+            "samples": 7,
+            "paired_wins_vs_native": 2
+          },
+          "peak_logical_payload_bytes": 1208,
+          "counts_per_trace": {
+            "graphs": 16,
+            "live_hits": 45,
+            "productions": 16,
+            "slice_hits": 19,
+            "slice_misses": 10,
+            "solves": 16
+          },
+          "events": {
+            "initial": {
+              "median_ms": 0.004168,
+              "min_ms": 0.003206,
+              "max_ms": 0.016161,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.003817,
+                "min_ms": 0.002906,
+                "max_ms": 0.014398,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.000271,
+                "min_ms": 0.00022,
+                "max_ms": 0.001643,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 3e-05,
+                "min_ms": 2e-05,
+                "max_ms": 0.00019,
+                "samples": 7
+              }
+            },
+            "explore": {
+              "median_ms": 0.000651,
+              "min_ms": 0.000611,
+              "max_ms": 0.001694,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.00015,
+                "min_ms": 0.00015,
+                "max_ms": 0.000491,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.000431,
+                "min_ms": 0.000381,
+                "max_ms": 0.001173,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 3e-05,
+                "min_ms": 2e-05,
+                "max_ms": 0.000121,
+                "samples": 7
+              }
+            },
+            "unchanged": {
+              "median_ms": 0.000421,
+              "min_ms": 0.000401,
+              "max_ms": 0.000641,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.000141,
+                "min_ms": 0.00014,
+                "max_ms": 0.00023,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.0002,
+                "min_ms": 0.00018,
+                "max_ms": 0.000331,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 3e-05,
+                "min_ms": 2e-05,
+                "max_ms": 3e-05,
+                "samples": 7
+              }
+            },
+            "operand_edit": {
+              "median_ms": 0.001532,
+              "min_ms": 0.001372,
+              "max_ms": 0.002985,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.001042,
+                "min_ms": 0.000942,
+                "max_ms": 0.001603,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.00027,
+                "min_ms": 0.00026,
+                "max_ms": 0.00039,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.00015,
+                "min_ms": 0.00011,
+                "max_ms": 0.000981,
+                "samples": 7
+              }
+            },
+            "value_renumber": {
+              "median_ms": 0.001413,
+              "min_ms": 0.001293,
+              "max_ms": 0.002124,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.000892,
+                "min_ms": 0.000802,
+                "max_ms": 0.001222,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.000261,
+                "min_ms": 0.000231,
+                "max_ms": 0.000341,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.00023,
+                "min_ms": 0.000181,
+                "max_ms": 0.000661,
+                "samples": 7
+              }
+            },
+            "cfg_split": {
+              "median_ms": 0.001613,
+              "min_ms": 0.001513,
+              "max_ms": 0.003277,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.001102,
+                "min_ms": 0.000972,
+                "max_ms": 0.002205,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.000261,
+                "min_ms": 0.00024,
+                "max_ms": 0.000281,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.00024,
+                "min_ms": 0.000201,
+                "max_ms": 0.000882,
+                "samples": 7
+              }
+            },
+            "add_function": {
+              "median_ms": 0.001703,
+              "min_ms": 0.001382,
+              "max_ms": 0.007635,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.000942,
+                "min_ms": 0.000742,
+                "max_ms": 0.004037,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.000351,
+                "min_ms": 0.00027,
+                "max_ms": 0.001352,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.000431,
+                "min_ms": 0.00032,
+                "max_ms": 0.002185,
+                "samples": 7
+              }
+            },
+            "remove_function": {
+              "median_ms": 0.000731,
+              "min_ms": 0.000631,
+              "max_ms": 0.002385,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.00014,
+                "min_ms": 0.00012,
+                "max_ms": 0.000321,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.00019,
+                "min_ms": 0.00018,
+                "max_ms": 0.000391,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.000361,
+                "min_ms": 0.000251,
+                "max_ms": 0.001633,
+                "samples": 7
+              }
+            },
+            "context_refresh": {
+              "median_ms": 0.003948,
+              "min_ms": 0.003647,
+              "max_ms": 0.007574,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.003026,
+                "min_ms": 0.002836,
+                "max_ms": 0.006242,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.000401,
+                "min_ms": 0.00034,
+                "max_ms": 0.000651,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.000511,
+                "min_ms": 0.00039,
+                "max_ms": 0.000781,
+                "samples": 7
+              }
+            },
+            "final_hit": {
+              "median_ms": 0.000441,
+              "min_ms": 0.000411,
+              "max_ms": 0.000571,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.00018,
+                "min_ms": 0.00015,
+                "max_ms": 0.00025,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.000181,
+                "min_ms": 0.00018,
+                "max_ms": 0.00025,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 3.1e-05,
+                "min_ms": 3e-05,
+                "max_ms": 5e-05,
+                "samples": 7
+              }
+            }
+          }
+        },
+        "compact_lazy": {
+          "request_span_sum": {
+            "median_ms": 0.017526,
+            "min_ms": 0.015361,
+            "max_ms": 0.028403,
+            "samples": 7,
+            "paired_wins_vs_native": 1
+          },
+          "peak_logical_payload_bytes": 1168,
+          "counts_per_trace": {
+            "graphs": 10,
+            "live_hits": 45,
+            "productions": 16,
+            "slice_hits": 19,
+            "slice_misses": 10,
+            "solves": 16
+          },
+          "events": {
+            "initial": {
+              "median_ms": 0.003918,
+              "min_ms": 0.002896,
+              "max_ms": 0.009408,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.002886,
+                "min_ms": 0.002385,
+                "max_ms": 0.007335,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.000942,
+                "min_ms": 0.000431,
+                "max_ms": 0.001813,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 3e-05,
+                "min_ms": 2e-05,
+                "max_ms": 0.0002,
+                "samples": 7
+              }
+            },
+            "explore": {
+              "median_ms": 0.001273,
+              "min_ms": 0.001032,
+              "max_ms": 0.001753,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.000211,
+                "min_ms": 0.00014,
+                "max_ms": 0.00031,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.000982,
+                "min_ms": 0.000802,
+                "max_ms": 0.001362,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 2e-05,
+                "min_ms": 2e-05,
+                "max_ms": 3e-05,
+                "samples": 7
+              }
+            },
+            "unchanged": {
+              "median_ms": 0.000441,
+              "min_ms": 0.000401,
+              "max_ms": 0.000551,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.000141,
+                "min_ms": 0.00013,
+                "max_ms": 0.000201,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.000201,
+                "min_ms": 0.00018,
+                "max_ms": 0.000291,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 3e-05,
+                "min_ms": 2e-05,
+                "max_ms": 9e-05,
+                "samples": 7
+              }
+            },
+            "operand_edit": {
+              "median_ms": 0.001853,
+              "min_ms": 0.001583,
+              "max_ms": 0.002064,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.000832,
+                "min_ms": 0.000771,
+                "max_ms": 0.001022,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.000661,
+                "min_ms": 0.000531,
+                "max_ms": 0.000842,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.000181,
+                "min_ms": 0.00012,
+                "max_ms": 0.000501,
+                "samples": 7
+              }
+            },
+            "value_renumber": {
+              "median_ms": 0.001613,
+              "min_ms": 0.001423,
+              "max_ms": 0.002244,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.000702,
+                "min_ms": 0.000631,
+                "max_ms": 0.000852,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.000561,
+                "min_ms": 0.000471,
+                "max_ms": 0.000671,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.000281,
+                "min_ms": 0.00019,
+                "max_ms": 0.000671,
+                "samples": 7
+              }
+            },
+            "cfg_split": {
+              "median_ms": 0.001783,
+              "min_ms": 0.001553,
+              "max_ms": 0.003166,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.000922,
+                "min_ms": 0.000791,
+                "max_ms": 0.001633,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.000551,
+                "min_ms": 0.000471,
+                "max_ms": 0.000642,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.00026,
+                "min_ms": 0.000211,
+                "max_ms": 0.000881,
+                "samples": 7
+              }
+            },
+            "add_function": {
+              "median_ms": 0.001733,
+              "min_ms": 0.001533,
+              "max_ms": 0.002595,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.000782,
+                "min_ms": 0.000711,
+                "max_ms": 0.000951,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.00043,
+                "min_ms": 0.000371,
+                "max_ms": 0.000521,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.000471,
+                "min_ms": 0.00039,
+                "max_ms": 0.001062,
+                "samples": 7
+              }
+            },
+            "remove_function": {
+              "median_ms": 0.000802,
+              "min_ms": 0.000671,
+              "max_ms": 0.001813,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.00014,
+                "min_ms": 0.000121,
+                "max_ms": 0.000151,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.00019,
+                "min_ms": 0.00018,
+                "max_ms": 0.00022,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.000401,
+                "min_ms": 0.000301,
+                "max_ms": 0.001422,
+                "samples": 7
+              }
+            },
+            "context_refresh": {
+              "median_ms": 0.003707,
+              "min_ms": 0.003497,
+              "max_ms": 0.004308,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.002375,
+                "min_ms": 0.002224,
+                "max_ms": 0.002735,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.000891,
+                "min_ms": 0.000812,
+                "max_ms": 0.001022,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.000431,
+                "min_ms": 0.000381,
+                "max_ms": 0.000501,
+                "samples": 7
+              }
+            },
+            "final_hit": {
+              "median_ms": 0.00045,
+              "min_ms": 0.000421,
+              "max_ms": 0.000501,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.00018,
+                "min_ms": 0.00015,
+                "max_ms": 0.00023,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.000181,
+                "min_ms": 0.00018,
+                "max_ms": 0.0002,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 3e-05,
+                "min_ms": 3e-05,
+                "max_ms": 4e-05,
+                "samples": 7
+              }
+            }
+          }
+        }
+      }
+    },
+    "zstd-lazy-O1": {
+      "target": "ZSTD_compressBlock_lazy2_row",
+      "target_argument": 4,
+      "explore": [
+        "ZSTD_compressBlock_lazy2_row",
+        "ZSTD_compressBlock_lazy_row",
+        "ZSTD_compressBlock_lazy2"
+      ],
+      "original_functions": 89,
+      "modes": {
+        "native_cached": {
+          "request_span_sum": {
+            "median_ms": 11.679472,
+            "min_ms": 11.348625,
+            "max_ms": 12.149092,
+            "samples": 7
+          },
+          "peak_logical_payload_bytes": 1569364,
+          "counts_per_trace": {
+            "graphs": 0,
+            "live_hits": 709,
+            "productions": 182,
+            "slice_hits": 91,
+            "slice_misses": 46,
+            "solves": 182
+          },
+          "events": {
+            "initial": {
+              "median_ms": 4.985656,
+              "min_ms": 4.868991,
+              "max_ms": 5.255147,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 4.938926,
+                "min_ms": 4.812582,
+                "max_ms": 5.189641,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.054385,
+                "min_ms": 0.045117,
+                "max_ms": 0.07207,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.001553,
+                "min_ms": 0.001303,
+                "max_ms": 0.001643,
+                "samples": 7
+              }
+            },
+            "explore": {
+              "median_ms": 0.391537,
+              "min_ms": 0.357581,
+              "max_ms": 0.446884,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.042873,
+                "min_ms": 0.039977,
+                "max_ms": 0.052171,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.343454,
+                "min_ms": 0.317143,
+                "max_ms": 0.397438,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.000511,
+                "min_ms": 0.000391,
+                "max_ms": 0.001162,
+                "samples": 7
+              }
+            },
+            "unchanged": {
+              "median_ms": 0.058022,
+              "min_ms": 0.048834,
+              "max_ms": 0.06193,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.048523,
+                "min_ms": 0.039707,
+                "max_ms": 0.050568,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.009769,
+                "min_ms": 0.008647,
+                "max_ms": 0.011092,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.000461,
+                "min_ms": 0.000371,
+                "max_ms": 0.000601,
+                "samples": 7
+              }
+            },
+            "operand_edit": {
+              "median_ms": 0.372209,
+              "min_ms": 0.337222,
+              "max_ms": 0.401436,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.264461,
+                "min_ms": 0.239613,
+                "max_ms": 0.287215,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.09828,
+                "min_ms": 0.094823,
+                "max_ms": 0.115163,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.003336,
+                "min_ms": 0.002665,
+                "max_ms": 0.003898,
+                "samples": 7
+              }
+            },
+            "value_renumber": {
+              "median_ms": 0.334918,
+              "min_ms": 0.322784,
+              "max_ms": 0.377991,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.230065,
+                "min_ms": 0.21726,
+                "max_ms": 0.277507,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.096987,
+                "min_ms": 0.093591,
+                "max_ms": 0.102128,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.00507,
+                "min_ms": 0.004559,
+                "max_ms": 0.006853,
+                "samples": 7
+              }
+            },
+            "cfg_split": {
+              "median_ms": 0.346009,
+              "min_ms": 0.307905,
+              "max_ms": 0.431244,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.244643,
+                "min_ms": 0.207662,
+                "max_ms": 0.321,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.096336,
+                "min_ms": 0.093752,
+                "max_ms": 0.102639,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.006753,
+                "min_ms": 0.005801,
+                "max_ms": 0.008496,
+                "samples": 7
+              }
+            },
+            "add_function": {
+              "median_ms": 0.070516,
+              "min_ms": 0.058713,
+              "max_ms": 0.076067,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.051229,
+                "min_ms": 0.043505,
+                "max_ms": 0.058524,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.009258,
+                "min_ms": 0.008326,
+                "max_ms": 0.011662,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.007704,
+                "min_ms": 0.006783,
+                "max_ms": 0.008536,
+                "samples": 7
+              }
+            },
+            "remove_function": {
+              "median_ms": 0.057851,
+              "min_ms": 0.054956,
+              "max_ms": 0.069825,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.042232,
+                "min_ms": 0.040518,
+                "max_ms": 0.05212,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.009187,
+                "min_ms": 0.008727,
+                "max_ms": 0.009989,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.006222,
+                "min_ms": 0.005601,
+                "max_ms": 0.007936,
+                "samples": 7
+              }
+            },
+            "context_refresh": {
+              "median_ms": 4.93541,
+              "min_ms": 4.837971,
+              "max_ms": 5.22518,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 4.55798,
+                "min_ms": 4.440372,
+                "max_ms": 4.791702,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.332483,
+                "min_ms": 0.329427,
+                "max_ms": 0.381858,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.045427,
+                "min_ms": 0.043294,
+                "max_ms": 0.05151,
+                "samples": 7
+              }
+            },
+            "final_hit": {
+              "median_ms": 0.053793,
+              "min_ms": 0.050347,
+              "max_ms": 0.059895,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.043604,
+                "min_ms": 0.040819,
+                "max_ms": 0.050167,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.008496,
+                "min_ms": 0.008175,
+                "max_ms": 0.018636,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.000391,
+                "min_ms": 0.00036,
+                "max_ms": 0.000601,
+                "samples": 7
+              }
+            }
+          }
+        },
+        "compact_eager": {
+          "request_span_sum": {
+            "median_ms": 16.171397,
+            "min_ms": 15.1373,
+            "max_ms": 16.31474,
+            "samples": 7,
+            "paired_wins_vs_native": 0
+          },
+          "peak_logical_payload_bytes": 1936568,
+          "counts_per_trace": {
+            "graphs": 182,
+            "live_hits": 709,
+            "productions": 182,
+            "slice_hits": 91,
+            "slice_misses": 46,
+            "solves": 182
+          },
+          "events": {
+            "initial": {
+              "median_ms": 7.235795,
+              "min_ms": 6.805013,
+              "max_ms": 7.50704,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 7.209284,
+                "min_ms": 6.778702,
+                "max_ms": 7.481531,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.024097,
+                "min_ms": 0.023245,
+                "max_ms": 0.024968,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.001523,
+                "min_ms": 0.001182,
+                "max_ms": 0.003176,
+                "samples": 7
+              }
+            },
+            "explore": {
+              "median_ms": 0.252217,
+              "min_ms": 0.249773,
+              "max_ms": 0.265072,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.044716,
+                "min_ms": 0.043053,
+                "max_ms": 0.054345,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.20655,
+                "min_ms": 0.205397,
+                "max_ms": 0.221378,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.000421,
+                "min_ms": 0.000361,
+                "max_ms": 0.000491,
+                "samples": 7
+              }
+            },
+            "unchanged": {
+              "median_ms": 0.050057,
+              "min_ms": 0.046661,
+              "max_ms": 0.057321,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.04119,
+                "min_ms": 0.037763,
+                "max_ms": 0.047151,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.008437,
+                "min_ms": 0.008095,
+                "max_ms": 0.009619,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.000401,
+                "min_ms": 0.00018,
+                "max_ms": 0.000501,
+                "samples": 7
+              }
+            },
+            "operand_edit": {
+              "median_ms": 0.426945,
+              "min_ms": 0.404211,
+              "max_ms": 0.489516,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.340759,
+                "min_ms": 0.317845,
+                "max_ms": 0.411175,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.074865,
+                "min_ms": 0.07261,
+                "max_ms": 0.088491,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.003386,
+                "min_ms": 0.002756,
+                "max_ms": 0.006222,
+                "samples": 7
+              }
+            },
+            "value_renumber": {
+              "median_ms": 0.415453,
+              "min_ms": 0.373462,
+              "max_ms": 0.437926,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.337803,
+                "min_ms": 0.297865,
+                "max_ms": 0.357711,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.072289,
+                "min_ms": 0.071308,
+                "max_ms": 0.075566,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.00503,
+                "min_ms": 0.003928,
+                "max_ms": 0.006633,
+                "samples": 7
+              }
+            },
+            "cfg_split": {
+              "median_ms": 0.408309,
+              "min_ms": 0.377459,
+              "max_ms": 0.464077,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.327974,
+                "min_ms": 0.296924,
+                "max_ms": 0.38292,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.07233,
+                "min_ms": 0.071919,
+                "max_ms": 0.074534,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.007144,
+                "min_ms": 0.005921,
+                "max_ms": 0.008065,
+                "samples": 7
+              }
+            },
+            "add_function": {
+              "median_ms": 0.066979,
+              "min_ms": 0.058463,
+              "max_ms": 0.084223,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.049766,
+                "min_ms": 0.042462,
+                "max_ms": 0.064715,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.008917,
+                "min_ms": 0.008406,
+                "max_ms": 0.010079,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.007915,
+                "min_ms": 0.007545,
+                "max_ms": 0.023065,
+                "samples": 7
+              }
+            },
+            "remove_function": {
+              "median_ms": 0.056098,
+              "min_ms": 0.051028,
+              "max_ms": 0.059404,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.040218,
+                "min_ms": 0.037983,
+                "max_ms": 0.043274,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.008085,
+                "min_ms": 0.007795,
+                "max_ms": 0.009789,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.006302,
+                "min_ms": 0.00515,
+                "max_ms": 0.007674,
+                "samples": 7
+              }
+            },
+            "context_refresh": {
+              "median_ms": 6.954131,
+              "min_ms": 6.678549,
+              "max_ms": 7.361257,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 6.692956,
+                "min_ms": 6.412383,
+                "max_ms": 7.097076,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.209916,
+                "min_ms": 0.20722,
+                "max_ms": 0.216208,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.055959,
+                "min_ms": 0.053774,
+                "max_ms": 0.060657,
+                "samples": 7
+              }
+            },
+            "final_hit": {
+              "median_ms": 0.052071,
+              "min_ms": 0.049847,
+              "max_ms": 0.055767,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.043684,
+                "min_ms": 0.04106,
+                "max_ms": 0.046731,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.008296,
+                "min_ms": 0.007846,
+                "max_ms": 0.008626,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.00037,
+                "min_ms": 0.000351,
+                "max_ms": 0.000481,
+                "samples": 7
+              }
+            }
+          }
+        },
+        "compact_lazy": {
+          "request_span_sum": {
+            "median_ms": 11.999534,
+            "min_ms": 11.591036,
+            "max_ms": 12.233928,
+            "samples": 7,
+            "paired_wins_vs_native": 1
+          },
+          "peak_logical_payload_bytes": 1593852,
+          "counts_per_trace": {
+            "graphs": 10,
+            "live_hits": 709,
+            "productions": 182,
+            "slice_hits": 91,
+            "slice_misses": 46,
+            "solves": 182
+          },
+          "events": {
+            "initial": {
+              "median_ms": 5.059348,
+              "min_ms": 4.939888,
+              "max_ms": 5.167639,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 4.93608,
+                "min_ms": 4.829484,
+                "max_ms": 5.04921,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.116305,
+                "min_ms": 0.102919,
+                "max_ms": 0.152054,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.001483,
+                "min_ms": 0.001323,
+                "max_ms": 0.001713,
+                "samples": 7
+              }
+            },
+            "explore": {
+              "median_ms": 0.437495,
+              "min_ms": 0.400615,
+              "max_ms": 0.456332,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.046941,
+                "min_ms": 0.043724,
+                "max_ms": 0.05671,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.391837,
+                "min_ms": 0.343334,
+                "max_ms": 0.412057,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.000471,
+                "min_ms": 0.00034,
+                "max_ms": 0.000511,
+                "samples": 7
+              }
+            },
+            "unchanged": {
+              "median_ms": 0.051619,
+              "min_ms": 0.047412,
+              "max_ms": 0.066879,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.042312,
+                "min_ms": 0.038815,
+                "max_ms": 0.0516,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.008496,
+                "min_ms": 0.008116,
+                "max_ms": 0.020069,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.000391,
+                "min_ms": 0.00036,
+                "max_ms": 0.000581,
+                "samples": 7
+              }
+            },
+            "operand_edit": {
+              "median_ms": 0.435541,
+              "min_ms": 0.394212,
+              "max_ms": 0.476992,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.273028,
+                "min_ms": 0.230565,
+                "max_ms": 0.298918,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.159578,
+                "min_ms": 0.152094,
+                "max_ms": 0.171552,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.003276,
+                "min_ms": 0.002545,
+                "max_ms": 0.006472,
+                "samples": 7
+              }
+            },
+            "value_renumber": {
+              "median_ms": 0.416234,
+              "min_ms": 0.386578,
+              "max_ms": 0.485769,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.239734,
+                "min_ms": 0.231427,
+                "max_ms": 0.313756,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.156493,
+                "min_ms": 0.149549,
+                "max_ms": 0.204695,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.005711,
+                "min_ms": 0.005251,
+                "max_ms": 0.006483,
+                "samples": 7
+              }
+            },
+            "cfg_split": {
+              "median_ms": 0.397659,
+              "min_ms": 0.373973,
+              "max_ms": 0.416876,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.233402,
+                "min_ms": 0.216939,
+                "max_ms": 0.256936,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.155621,
+                "min_ms": 0.147825,
+                "max_ms": 0.165881,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.006894,
+                "min_ms": 0.006082,
+                "max_ms": 0.007374,
+                "samples": 7
+              }
+            },
+            "add_function": {
+              "median_ms": 0.063072,
+              "min_ms": 0.061018,
+              "max_ms": 0.075586,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.04689,
+                "min_ms": 0.044987,
+                "max_ms": 0.057952,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.009037,
+                "min_ms": 0.008977,
+                "max_ms": 0.009899,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.007224,
+                "min_ms": 0.006983,
+                "max_ms": 0.008336,
+                "samples": 7
+              }
+            },
+            "remove_function": {
+              "median_ms": 0.056209,
+              "min_ms": 0.05167,
+              "max_ms": 0.065186,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.039486,
+                "min_ms": 0.038004,
+                "max_ms": 0.050908,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.008076,
+                "min_ms": 0.007735,
+                "max_ms": 0.009568,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.005771,
+                "min_ms": 0.0053,
+                "max_ms": 0.01059,
+                "samples": 7
+              }
+            },
+            "context_refresh": {
+              "median_ms": 4.992489,
+              "min_ms": 4.696989,
+              "max_ms": 5.426708,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 4.49597,
+                "min_ms": 4.240416,
+                "max_ms": 4.931962,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.452905,
+                "min_ms": 0.41366,
+                "max_ms": 0.477202,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.044846,
+                "min_ms": 0.042823,
+                "max_ms": 0.066669,
+                "samples": 7
+              }
+            },
+            "final_hit": {
+              "median_ms": 0.052151,
+              "min_ms": 0.05155,
+              "max_ms": 0.059164,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.043574,
+                "min_ms": 0.043314,
+                "max_ms": 0.050257,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.008076,
+                "min_ms": 0.007715,
+                "max_ms": 0.008356,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.000371,
+                "min_ms": 0.00035,
+                "max_ms": 0.000521,
+                "samples": 7
+              }
+            }
+          }
+        }
+      }
+    },
+    "zlib-deflate-O1": {
+      "target": "deflate",
+      "target_argument": 1,
+      "explore": [
+        "deflate",
+        "deflate_slow",
+        "deflate_stored"
+      ],
+      "original_functions": 26,
+      "modes": {
+        "native_cached": {
+          "request_span_sum": {
+            "median_ms": 1.907926,
+            "min_ms": 1.846046,
+            "max_ms": 2.002578,
+            "samples": 7
+          },
+          "peak_logical_payload_bytes": 190220,
+          "counts_per_trace": {
+            "graphs": 0,
+            "live_hits": 205,
+            "productions": 56,
+            "slice_hits": 37,
+            "slice_misses": 19,
+            "solves": 56
+          },
+          "events": {
+            "initial": {
+              "median_ms": 0.563078,
+              "min_ms": 0.5487,
+              "max_ms": 0.640377,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.560143,
+                "min_ms": 0.545294,
+                "max_ms": 0.633685,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.002676,
+                "min_ms": 0.002424,
+                "max_ms": 0.005981,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.00027,
+                "min_ms": 0.00026,
+                "max_ms": 0.001112,
+                "samples": 7
+              }
+            },
+            "explore": {
+              "median_ms": 0.094232,
+              "min_ms": 0.090805,
+              "max_ms": 0.148206,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.004769,
+                "min_ms": 0.004378,
+                "max_ms": 0.00493,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.089183,
+                "min_ms": 0.086256,
+                "max_ms": 0.142956,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.000131,
+                "min_ms": 3e-05,
+                "max_ms": 0.00023,
+                "samples": 7
+              }
+            },
+            "unchanged": {
+              "median_ms": 0.007856,
+              "min_ms": 0.006853,
+              "max_ms": 0.007945,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.004919,
+                "min_ms": 0.004458,
+                "max_ms": 0.00497,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.002716,
+                "min_ms": 0.002305,
+                "max_ms": 0.002776,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.00015,
+                "min_ms": 4e-05,
+                "max_ms": 0.00016,
+                "samples": 7
+              }
+            },
+            "operand_edit": {
+              "median_ms": 0.178435,
+              "min_ms": 0.174768,
+              "max_ms": 0.191991,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.13468,
+                "min_ms": 0.131614,
+                "max_ms": 0.147314,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.042372,
+                "min_ms": 0.042052,
+                "max_ms": 0.044226,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.001223,
+                "min_ms": 0.000932,
+                "max_ms": 0.001593,
+                "samples": 7
+              }
+            },
+            "value_renumber": {
+              "median_ms": 0.176711,
+              "min_ms": 0.17068,
+              "max_ms": 0.187612,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.130232,
+                "min_ms": 0.127597,
+                "max_ms": 0.144389,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.042142,
+                "min_ms": 0.041349,
+                "max_ms": 0.045949,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.001833,
+                "min_ms": 0.001292,
+                "max_ms": 0.011913,
+                "samples": 7
+              }
+            },
+            "cfg_split": {
+              "median_ms": 0.175309,
+              "min_ms": 0.164768,
+              "max_ms": 0.18609,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.131063,
+                "min_ms": 0.122417,
+                "max_ms": 0.144119,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.040939,
+                "min_ms": 0.038986,
+                "max_ms": 0.042002,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.002735,
+                "min_ms": 0.001994,
+                "max_ms": 0.002876,
+                "samples": 7
+              }
+            },
+            "add_function": {
+              "median_ms": 0.014548,
+              "min_ms": 0.012003,
+              "max_ms": 0.01569,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.007876,
+                "min_ms": 0.006393,
+                "max_ms": 0.008006,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.003376,
+                "min_ms": 0.002645,
+                "max_ms": 0.003387,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.003186,
+                "min_ms": 0.002825,
+                "max_ms": 0.004328,
+                "samples": 7
+              }
+            },
+            "remove_function": {
+              "median_ms": 0.009959,
+              "min_ms": 0.008256,
+              "max_ms": 0.01065,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.004739,
+                "min_ms": 0.004178,
+                "max_ms": 0.00491,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.002705,
+                "min_ms": 0.002245,
+                "max_ms": 0.002745,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.002365,
+                "min_ms": 0.001743,
+                "max_ms": 0.003156,
+                "samples": 7
+              }
+            },
+            "context_refresh": {
+              "median_ms": 0.641931,
+              "min_ms": 0.621371,
+              "max_ms": 0.670836,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.544222,
+                "min_ms": 0.530485,
+                "max_ms": 0.57982,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.086837,
+                "min_ms": 0.084834,
+                "max_ms": 0.09811,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.004679,
+                "min_ms": 0.004188,
+                "max_ms": 0.006102,
+                "samples": 7
+              }
+            },
+            "final_hit": {
+              "median_ms": 0.007364,
+              "min_ms": 0.007084,
+              "max_ms": 0.008105,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.0049,
+                "min_ms": 0.004629,
+                "max_ms": 0.0052,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.002304,
+                "min_ms": 0.002274,
+                "max_ms": 0.002746,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.00013,
+                "min_ms": 5e-05,
+                "max_ms": 0.00016,
+                "samples": 7
+              }
+            }
+          }
+        },
+        "compact_eager": {
+          "request_span_sum": {
+            "median_ms": 2.492897,
+            "min_ms": 2.392103,
+            "max_ms": 2.548488,
+            "samples": 7,
+            "paired_wins_vs_native": 0
+          },
+          "peak_logical_payload_bytes": 234692,
+          "counts_per_trace": {
+            "graphs": 56,
+            "live_hits": 205,
+            "productions": 56,
+            "slice_hits": 37,
+            "slice_misses": 19,
+            "solves": 56
+          },
+          "events": {
+            "initial": {
+              "median_ms": 0.841387,
+              "min_ms": 0.802551,
+              "max_ms": 0.852007,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.838781,
+                "min_ms": 0.799324,
+                "max_ms": 0.849491,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.002164,
+                "min_ms": 0.001953,
+                "max_ms": 0.002756,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.000261,
+                "min_ms": 0.00017,
+                "max_ms": 0.000391,
+                "samples": 7
+              }
+            },
+            "explore": {
+              "median_ms": 0.062782,
+              "min_ms": 0.06212,
+              "max_ms": 0.063332,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.004759,
+                "min_ms": 0.004569,
+                "max_ms": 0.00504,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.057852,
+                "min_ms": 0.057381,
+                "max_ms": 0.058082,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.000121,
+                "min_ms": 0.00012,
+                "max_ms": 0.00016,
+                "samples": 7
+              }
+            },
+            "unchanged": {
+              "median_ms": 0.006973,
+              "min_ms": 0.006783,
+              "max_ms": 0.008036,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.004468,
+                "min_ms": 0.004359,
+                "max_ms": 0.00507,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.002444,
+                "min_ms": 0.002284,
+                "max_ms": 0.002816,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 4e-05,
+                "min_ms": 4e-05,
+                "max_ms": 0.000161,
+                "samples": 7
+              }
+            },
+            "operand_edit": {
+              "median_ms": 0.221088,
+              "min_ms": 0.213683,
+              "max_ms": 0.235044,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.189516,
+                "min_ms": 0.182713,
+                "max_ms": 0.203223,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.030459,
+                "min_ms": 0.029718,
+                "max_ms": 0.03081,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.001052,
+                "min_ms": 0.000852,
+                "max_ms": 0.003176,
+                "samples": 7
+              }
+            },
+            "value_renumber": {
+              "median_ms": 0.215567,
+              "min_ms": 0.204295,
+              "max_ms": 0.289881,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.184046,
+                "min_ms": 0.173786,
+                "max_ms": 0.258089,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.029547,
+                "min_ms": 0.028515,
+                "max_ms": 0.031651,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.001794,
+                "min_ms": 0.001433,
+                "max_ms": 0.002245,
+                "samples": 7
+              }
+            },
+            "cfg_split": {
+              "median_ms": 0.214966,
+              "min_ms": 0.203423,
+              "max_ms": 0.218122,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.182513,
+                "min_ms": 0.172343,
+                "max_ms": 0.187192,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.028976,
+                "min_ms": 0.028114,
+                "max_ms": 0.029187,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.002695,
+                "min_ms": 0.002415,
+                "max_ms": 0.003207,
+                "samples": 7
+              }
+            },
+            "add_function": {
+              "median_ms": 0.012534,
+              "min_ms": 0.012263,
+              "max_ms": 0.015661,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.006843,
+                "min_ms": 0.006583,
+                "max_ms": 0.008406,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.002675,
+                "min_ms": 0.002615,
+                "max_ms": 0.003327,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.003096,
+                "min_ms": 0.002745,
+                "max_ms": 0.003878,
+                "samples": 7
+              }
+            },
+            "remove_function": {
+              "median_ms": 0.009679,
+              "min_ms": 0.008636,
+              "max_ms": 0.01022,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.004759,
+                "min_ms": 0.004168,
+                "max_ms": 0.004989,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.002675,
+                "min_ms": 0.002154,
+                "max_ms": 0.002706,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.002475,
+                "min_ms": 0.001994,
+                "max_ms": 0.002915,
+                "samples": 7
+              }
+            },
+            "context_refresh": {
+              "median_ms": 0.897595,
+              "min_ms": 0.846076,
+              "max_ms": 0.931621,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.817309,
+                "min_ms": 0.783765,
+                "max_ms": 0.855463,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.058193,
+                "min_ms": 0.057121,
+                "max_ms": 0.078191,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.00495,
+                "min_ms": 0.004499,
+                "max_ms": 0.006292,
+                "samples": 7
+              }
+            },
+            "final_hit": {
+              "median_ms": 0.008076,
+              "min_ms": 0.007254,
+              "max_ms": 0.010751,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.00514,
+                "min_ms": 0.00478,
+                "max_ms": 0.006843,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.002725,
+                "min_ms": 0.002265,
+                "max_ms": 0.003707,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.00015,
+                "min_ms": 0.00012,
+                "max_ms": 0.000191,
+                "samples": 7
+              }
+            }
+          }
+        },
+        "compact_lazy": {
+          "request_span_sum": {
+            "median_ms": 2.23004,
+            "min_ms": 2.176546,
+            "max_ms": 2.296379,
+            "samples": 7,
+            "paired_wins_vs_native": 0
+          },
+          "peak_logical_payload_bytes": 209652,
+          "counts_per_trace": {
+            "graphs": 10,
+            "live_hits": 205,
+            "productions": 56,
+            "slice_hits": 37,
+            "slice_misses": 19,
+            "solves": 56
+          },
+          "events": {
+            "initial": {
+              "median_ms": 0.616121,
+              "min_ms": 0.597976,
+              "max_ms": 0.646559,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.546346,
+                "min_ms": 0.531357,
+                "max_ms": 0.578148,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.066739,
+                "min_ms": 0.065727,
+                "max_ms": 0.069444,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.00026,
+                "min_ms": 0.00026,
+                "max_ms": 0.000662,
+                "samples": 7
+              }
+            },
+            "explore": {
+              "median_ms": 0.132235,
+              "min_ms": 0.125262,
+              "max_ms": 0.14467,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.004609,
+                "min_ms": 0.004419,
+                "max_ms": 0.005621,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.127677,
+                "min_ms": 0.120543,
+                "max_ms": 0.140131,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.00012,
+                "min_ms": 4e-05,
+                "max_ms": 0.00015,
+                "samples": 7
+              }
+            },
+            "unchanged": {
+              "median_ms": 0.007895,
+              "min_ms": 0.006873,
+              "max_ms": 0.008075,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.00497,
+                "min_ms": 0.004468,
+                "max_ms": 0.00503,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.002705,
+                "min_ms": 0.002325,
+                "max_ms": 0.002835,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.00015,
+                "min_ms": 4e-05,
+                "max_ms": 0.00016,
+                "samples": 7
+              }
+            },
+            "operand_edit": {
+              "median_ms": 0.231277,
+              "min_ms": 0.225376,
+              "max_ms": 0.283178,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.135392,
+                "min_ms": 0.131584,
+                "max_ms": 0.185288,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.094293,
+                "min_ms": 0.091107,
+                "max_ms": 0.104722,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.001463,
+                "min_ms": 0.001032,
+                "max_ms": 0.001774,
+                "samples": 7
+              }
+            },
+            "value_renumber": {
+              "median_ms": 0.224674,
+              "min_ms": 0.21253,
+              "max_ms": 0.236227,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.132005,
+                "min_ms": 0.122327,
+                "max_ms": 0.143577,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.090735,
+                "min_ms": 0.08811,
+                "max_ms": 0.091707,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.001833,
+                "min_ms": 0.001453,
+                "max_ms": 0.002435,
+                "samples": 7
+              }
+            },
+            "cfg_split": {
+              "median_ms": 0.214244,
+              "min_ms": 0.210307,
+              "max_ms": 0.235746,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.123599,
+                "min_ms": 0.120413,
+                "max_ms": 0.130893,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.088401,
+                "min_ms": 0.085846,
+                "max_ms": 0.102288,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.003056,
+                "min_ms": 0.002184,
+                "max_ms": 0.003297,
+                "samples": 7
+              }
+            },
+            "add_function": {
+              "median_ms": 0.015841,
+              "min_ms": 0.012053,
+              "max_ms": 0.029096,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.007986,
+                "min_ms": 0.006302,
+                "max_ms": 0.012234,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.003867,
+                "min_ms": 0.002986,
+                "max_ms": 0.003968,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.003988,
+                "min_ms": 0.002705,
+                "max_ms": 0.016131,
+                "samples": 7
+              }
+            },
+            "remove_function": {
+              "median_ms": 0.009669,
+              "min_ms": 0.009418,
+              "max_ms": 0.023244,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.004679,
+                "min_ms": 0.004198,
+                "max_ms": 0.017554,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.002705,
+                "min_ms": 0.002245,
+                "max_ms": 0.002855,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.002755,
+                "min_ms": 0.002164,
+                "max_ms": 0.002965,
+                "samples": 7
+              }
+            },
+            "context_refresh": {
+              "median_ms": 0.741874,
+              "min_ms": 0.717377,
+              "max_ms": 0.799735,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.547979,
+                "min_ms": 0.524503,
+                "max_ms": 0.606112,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.188564,
+                "min_ms": 0.183604,
+                "max_ms": 0.191249,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.00514,
+                "min_ms": 0.004469,
+                "max_ms": 0.006102,
+                "samples": 7
+              }
+            },
+            "final_hit": {
+              "median_ms": 0.008035,
+              "min_ms": 0.006974,
+              "max_ms": 0.008156,
+              "samples": 7,
+              "liveness": {
+                "median_ms": 0.00509,
+                "min_ms": 0.004579,
+                "max_ms": 0.00522,
+                "samples": 7
+              },
+              "queries": {
+                "median_ms": 0.002725,
+                "min_ms": 0.002294,
+                "max_ms": 0.002755,
+                "samples": 7
+              },
+              "mutation": {
+                "median_ms": 0.00015,
+                "min_ms": 4e-05,
+                "max_ms": 0.000161,
+                "samples": 7
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

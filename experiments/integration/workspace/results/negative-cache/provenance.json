@@ -1,0 +1,5 @@
+{
+  "implementation": "experiments/integration/workspace/probe_cache.py",
+  "implementation_sha256": "2fa30895e18dab6a4ccd78311cfaff16db52defbe3e3dcef6d9206f456923023",
+  "scope": "One prepared Ninja fixture with a newly created optional include and its existing direct manifest. No general ccache correctness or version comparison claim."
+}

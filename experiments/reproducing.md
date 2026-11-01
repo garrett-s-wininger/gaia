@@ -129,6 +129,16 @@ The real GPU experiment specifically requires a compatible WSL DXCore/D3D12 runt
 
 Measured compiler sources and postmeasurement hardening have separate identities in provenance. Current regression tests validate the hardened implementation; the historical timing matrix was not rerun. A new measurement must record the rebuilt source/binary identities and compare its own matched controls.
 
+## Concrete integration and CPU controls
+
+The [connections experiment guide](connections/README.md) maps seven continuations to their pinned inputs, native helpers and validation. Start with [the consolidated findings](../research/connections/findings.md) to distinguish retained native wins from extra representations and isolation costs. Keep historical timing data unchanged when rerunning focused correctness checks after import; new environments or implementations need separate measurements and output directories.
+
+The [additional-project replay](integration/generalization/README.md) freezes reuse on four upstream CMake targets, verifies that ccache actually runs, and tests a bounded backend queue. Keep its 333 edit operations, matched first requests and separately sampled process-tree resources apart. Rejected launcher and startup-export attempts are recorded rather than pooled. Use fresh output names/cache namespaces when repeating it.
+
+The [integration guide](integration/README.md) connects a fresh Ninja fixture, actual observation-aware build/query consumers, SIMD sets and CPU-dispatched SHA-256 scans. Run the workspace fixture first to capture a current dependency relation. Use its generated relation for the set kernel, and a stable prepared project for the hash scan. Keep mutation and scan studies on separate project copies. The created-header diagnostic documents the explicit Ninja/cache adapter required for a correct control.
+
+Native code generation and ISA dispatch have separate evidence: the SIMD guide compares generic and native compiler targets, and the hash guide preserves SHA-256 while masking only a child process's OpenSSL capabilities. Their raw identities, scoped validation and source/binary pins belong to their own runs; do not add kernel speedups to complete build timings.
+
 ## Review a combined research change
 
 Run `python3 -B tools/check_repository.py` and `git diff --check`. The repository check covers Markdown reports and topic guides, indexed paths, raw-data ignore rules and available evidence hashes. It also works in a clean source checkout where raw observations are absent. Run the affected experiment's regression tests; documentation consolidation alone does not require new performance measurements.

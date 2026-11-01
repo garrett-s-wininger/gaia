@@ -1,0 +1,15 @@
+{
+  "scope": "Warm native query batches, immutable inverted dependency masks. Loop/tiling/SIMD algorithms versus CSR representation; no complete compiler claim, no strict scalar control, portable loop may autovectorize.",
+  "fixture_preparation_ns": 4273755174,
+  "implementation_and_tool_sha256": {
+    "union-native.so": "80adeedbf6f49bacd428540381865b5638e1468db1310b73f8e098e606644613",
+    "simd-bench-native": "8057544672571379ced480135a0e583fabdb8900e5bd18eb334dd2cc57eec90f",
+    "union.odin": "66c275cc4d1766402c6bd0f2e1ad350f2f662a7416a6b3457d86687f314333fe",
+    "bench.cpp": "26c8b3a20a757e56d7543ab4aeb7b1649cb75d03278367279645d194984ed12d",
+    "run.py": "b45756ba9c77d617a85b7f4d4da4ab1d78d9f0df1db44fb5106fe4d2d8564295",
+    "test_union.py": "9b7105d43b149fb01c28fcb402bea25499fc2ab4bd92c8b319cac316c9923784"
+  },
+  "clock": "Native warm batch wall time; opaque shared-library calls, output clear/dispatch/ID checks and small checksum included. Seven shuffled blocks per fixture.",
+  "controls": "Odin optimized loops, word tiling, AVX2/AVX512; native C++ CSR list representation. No strict scalar claim. Native-target and generic-library matrices compared within their own run.",
+  "device_memory": "Retained input payload sizes and CSR preparation are measured; no RSS quota or machine-cold claim."
+}
